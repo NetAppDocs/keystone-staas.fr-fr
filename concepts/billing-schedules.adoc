@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules.html 
+keywords: billing schedules, schedule for payment 
+summary: Calendriers de facturation en trapèze 
+---
+= Calendriers de facturation
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les abonnements Keystone sont facturés chaque mois et chaque année.
+
+
+
+== Facturation mensuelle
+
+Les factures sont envoyées chaque mois. Pour le mois au cours duquel les services sont disponibles, une facture est envoyée le mois suivant. Par exemple, la facture des services que vous avez utilisés en janvier est livrée au début de février. Cette facture comprend les frais liés à la capacité engagée et, le cas échéant, à l'utilisation en rafale.
+
+
+
+== Facturation annuelle
+
+Une facture est générée au début de chaque année d'abonnement pour le paiement minimum de la capacité engagée. Il est généré à la date de début de l'abonnement. Une autre facture est envoyée à la fin d'un trimestre d'abonnement, qui comprend les frais applicables relatifs à toute utilisation en rafale accumulée au cours de ce trimestre. Si la capacité engagée est modifiée au cours d'un abonnement, une facture est envoyée le même jour que la modification de la capacité engagée, pour les paiements minimums au prorata pour le reste de l'année d'abonnement.

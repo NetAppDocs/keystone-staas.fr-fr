@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: concepts/capacity-requirements.html 
+keywords: storage capacity requirement for service levels, capacity definition per PSL, 
+summary: Exigences de capacité pour les niveaux de services 
+---
+= Exigences de capacité pour les niveaux de service
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les exigences de capacité pour chaque niveau de service varient en fonction du service de stockage, tel que le stockage de fichiers, de blocs et d'objets.
+
+
+
+== Exigences minimales en matière de capacité pour les services de fichiers et de blocs
+
+Le tableau suivant décrit la capacité minimale et la capacité incrémentale autorisées par abonnement. La capacité minimale par niveau de service est définie de la même manière pour les différentes propositions de vente de Keystone. La capacité au-delà de la capacité minimale, soit au début de l'abonnement, soit en tant que service d'extension dans l'abonnement, soit après réaffectation pendant l'abonnement, est également structurée dans le tableau.
+
+|===
+
+
+| Puissance | Extrême | Premium | Performance | Standard | Valeur 
+
+
+ a| 
+Capacité minimale [en Tio]
+3+| 25 2+| 100 
+
+
+ a| 
+Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
+3+| 25 2+| 25 
+
+
+ a| 
+Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
+3+| 25 2+| 25 
+|===
+
+
+== Exigences de capacité minimale pour le stockage objet
+
+Vous pouvez voir les exigences de capacité minimale pour le service de stockage objet dans le tableau ci-dessous :
+
+|===
+
+
+| Puissance | Tiering des données | Objet | Cloud Volumes ONTAP | Cloud Backup Service 
+
+
+ a| 
+Capacité minimale [en Tio]
+ a| 
+Sans objet
+ a| 
+500
+ a| 
+4
+ a| 
+4
+
+
+
+ a| 
+Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
+ a| 
+Sans objet
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+
+
+ a| 
+Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
+ a| 
+Sans objet
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
+|===
+
+
+== Ajustements de capacité
+
+Prenez note des clauses suivantes pour les ajustements de capacité :
+
+* La capacité peut être ajoutée à tout moment pendant la durée du contrat, sauf pour les 90 derniers jours de la durée du contrat, par incréments par niveau de service comme indiqué dans les tableaux de la section précédente. L'ajout de capacités et/ou de services est autorisé dans les 90 derniers jours de la durée du contrat, tant qu'il y a consentement au renouvellement du service. Tout ajout de capacité ou de nouveaux services sur site ou dans le cloud peut co-term avec l'échéance actuelle. La facture qui vous a été envoyée après l'activation des nouveaux services reflète la facture révisée. La capacité engagée des services cloud ne peut en aucun cas être réduite pendant la durée de l'abonnement. Pendant ce temps, la capacité engagée et les dépenses engagées dans les services sur site pendant la durée du contrat peuvent être réduites en fonction de certains critères définis dans la section suivante _réduction de la capacité_.
+* 20 % de la capacité en rafale est disponible sur chaque site. Toute utilisation en rafale est facturée uniquement pour cette période de facturation. Si vous avez besoin d'augmenter la capacité de rafale de plus de 20 %, contactez le service de support.
+* La capacité engagée peut être modifiée pendant une durée du contrat, seulement dans certaines conditions, comme décrit dans la section suivante _réduction de la capacité_.
+* Il est possible d'augmenter la capacité ou de passer à un niveau de service supérieur pendant une période d'abonnement. Toutefois, il est interdit de passer d'un niveau de service supérieur à un niveau de service inférieur.
+* Toute demande de changement au cours des 90 derniers jours de la durée du service nécessite le renouvellement du service pour un an minimum.
+
+
+
+
+=== Réduction de capacité
+
+La réduction de la capacité (annuelle) s'applique au modèle de paiement anticipé _annuel et aux déploiements sur site uniquement. Elle n'est pas disponible pour les services cloud ou de cloud hybride. Il fournit des provisions pour la capacité sur site, qui peuvent être réduites jusqu'à 25 % par niveau de service par abonnement. Cette réduction est autorisée une fois par année à prendre effet au début de la prochaine période de facturation annuelle. Les paiements annuels basés sur les services sur site doivent être >= 200 000 $ à tout moment pendant la durée afin de tirer parti de la réduction de la capacité. Dans la mesure où elle est prise en charge uniquement pour les déploiements sur site, ce modèle de facturation n'assure pas la réattribution des dépenses pour l'infrastructure sur site vers les services cloud. Un exemple de réduction annuelle de la capacité est illustré dans l'image suivante.
+
+image:capacity-reduction.png[""]
+
+
+
+=== Réattribution des dépenses trimestrielles
+
+Conditions requises au niveau de l'abonnement :
+
+* S'applique uniquement à la facturation mensuelle dans le modèle arrear.
+* S'applique uniquement aux abonnements avec des engagements de 1, 2 ou 3 ans.
+* La capacité Cloud Volumes ONTAP et Cloud Backup Service doit être achetée via Keystone.
+* Jusqu'à 25 % des paiements mensuels basés sur les services et sur site peuvent être utilisés pour la réaffectation vers les services cloud.
+* Les paiements mensuels basés sur les services sur site doivent être >= 16,7 000 $ à tout moment pendant la durée afin de pouvoir bénéficier de cette réaffectation.
+* Les demandes de réaffectation ne sont effectives qu'après 90 jours à compter de la date d'activation précédente de la réaffectation.
+* La réaffectation ne peut pas être effectuée à partir des services cloud vers l'environnement sur site.
+* Une demande de réaffectation doit être envoyée officiellement par le client ou le partenaire au responsable de la réussite Keystone (KSM) au moins une semaine avant le prochain cycle de facturation.
+* Les nouvelles demandes ne sont appliquées qu'à partir du cycle de facturation suivant.
+
+
+Un exemple de réaffectation des dépenses trimestrielles est illustré dans l'image suivante :
+
+image:spend-alloc.png[""]

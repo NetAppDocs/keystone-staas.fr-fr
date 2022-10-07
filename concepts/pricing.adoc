@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: concepts/pricing.html 
+keywords: pricing, billing introduction, Keystone billing 
+summary: Tarification Keystone 
+---
+= Tarification Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avec NetApp Keystone, vous bénéficiez d'une tarification en amont et prévisible pour votre abonnement au stockage.
+
+Si vous préférez le modèle de consommation des dépenses opérationnelles (OpEx) aux dépenses d'investissement (CapEx) ou à la location, vous pouvez opter pour le modèle Keystone de paiement à l'utilisation pour vos besoins flexibles et évolutifs.
+
+Keystone vous fournit les fonctionnalités de facturation suivantes :
+
+* Vous pouvez payer en fonction des IOPS et de la capacité qui est dédiée à la latence pour répondre aux différents besoins des charges de travail. Les différents tiers de service de performance : Extreme, Premium, Performance, Standard, Value Et objet vous permettent de gérer le stockage en fonction du niveau de service acheté pour Keystone.
+* Il présente une facturation prévisible de la capacité engagée et du paiement à l'utilisation pour l'utilisation variable (en rafale).
+* Vous pouvez sélectionner un prix de bundle pour le matériel, le système d'exploitation de base et le support pour un prix unitaire. Vous disposez d'une seule facture pour chaque type de stockage, service de fichier, bloc, objet ou service de stockage cloud.
+* Sélectionnez une durée flexible pour les services et le paiement : vous pouvez choisir entre 12 mois, 25 Tio ou plus par site. Vous pouvez ensuite procéder au renouvellement automatique pendant 12 mois.
+
+
+La facturation de Keystone repose sur la capacité engagement et sur la consommation en rafale variable.
+
+Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"]

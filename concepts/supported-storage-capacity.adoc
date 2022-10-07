@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-capacity.html 
+keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
+summary: Capacités de stockage prises en charge 
+---
+= Capacités de stockage prises en charge dans Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les capacités du service NetApp Keystone sont les suivantes :
+
+
+
+== Capacité logique
+
+Il s'agit des données placées dans l'infrastructure Keystone par un client. Toutes les capacités Keystone font référence à une capacité logique. Par exemple, si un fichier de 1 To est stocké dans l'infrastructure Keystone, vous devez acheter au moins 1 To de capacité.
+
+
+
+== De la capacité
+
+La capacité logique minimale facturée chaque mois pendant la durée de la période :
+
+* La capacité s'engage à chaque niveau de service.
+* Il est possible d'ajouter de la capacité dédiée et des niveaux de service supplémentaires pendant la période de validité.
+
+
+
+
+=== Modifications de la capacité engagée
+
+Pendant la durée d'un abonnement, vous pouvez modifier les capacités engagées. Toutefois, il existe certaines conditions préalables :
+
+* La capacité engagée peut être réduite en fonction de certaines conditions. Pour plus d'informations, reportez-vous à la section link:../concepts/capacity-requirements.html["Réduction de capacité"].
+* La capacité engagée ne peut pas être augmentée 90 jours avant l'expiration de votre abonnement, à moins que l'abonnement ne soit renouvelé pour une durée supplémentaire de 12 mois.
+* Vous pouvez demander des modifications de la capacité engagée dans l'interface de Cloud Manager ou via Keystone Success Manager. Pour plus d'informations sur la demande de modifications, reportez-vous à la section link:../concepts/gssc.html["Centre de support NetApp Global Services"].
+
+
+
+
+== Capacité consommée
+
+La capacité consommée fait référence à la capacité en Tio de stockage actuellement consommée sur le service. Le service Keystone prend en compte la somme des tailles logiques utilisées (et non de la capacité physique utilisée) de tous les volumes d'un niveau de services donné, à considérer comme la capacité consommée pour ce niveau de service.
+
+
+
+== Capacité en rafale
+
+Il s'agit de la capacité consommée qui a dépassé la capacité utilisée. Notez les points suivants :
+
+* Le service Keystone fournit une capacité de 20 % supérieure à la capacité engagée.
+* En effet, la capacité en rafale peut être consommée selon une base élastique et elle est facturée sur la base quotidienne de la moyenne consommée.
+* La capacité en rafale peut atteindre 20 % à la même vitesse que la capacité engagée.
+
+
+
+
+== Capacité facturée
+
+Facture mensuelle = (capacité de production [Tio] * taux d'engagement [$/Tio]) + (capacité moyenne approvisionnée par jour [Tio] * taux de bursting [$/Tio]). La facture mensuelle contient un montant minimal en fonction de la capacité engagée.
+
+La facture mensuelle varie au-delà de la charge minimale, en fonction de la consommation moyenne quotidienne de capacité en rafale.

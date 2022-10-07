@@ -1,0 +1,137 @@
+---
+settings:
+  name: Keystone
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+    langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de
+  langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de
+sidebar:
+  entries:
+  - title: Documents Keystone
+    url: "/index.html"
+  - title: Commencez
+    entries:
+    - title: Découvrez Keystone
+      url: "/concepts/overview.html"
+    - title: Capacité de stockage prise en charge dans Keystone
+      url: "/concepts/supported-storage-capacity.html"
+    - title: Metrics et définitions des services Keystone
+      url: "/concepts/metrics.html"
+    - title: Types de stockage pris en charge dans Keystone
+      url: "/concepts/supported-storage-services.html"
+    - title: Niveaux de service dans Keystone
+      url: "/concepts/service-levels.html"
+    - title: Services complémentaires
+      entries:
+      - title: Tiering des données
+        url: "/concepts/data-tiering.html"
+      - title: Protection avancée des données
+        url: "/concepts/adp.html"
+      - title: ÉTATS-UNIS Soutien à citoyens (USCS)
+        url: "/concepts/uscs.html"
+      - title: Composants non retournables et non volatiles et conformité au SnapLock
+        url: "/concepts/nrnvc.html"
+      - title: Keystone et Equinix
+        url: "/concepts/equinix.html"
+  - title: En savoir plus sur les niveaux de service
+    entries:
+    - title: Qualité de service
+      url: "/concepts/qos.html"
+    - title: Exigences de capacité pour les niveaux de services
+      url: "/concepts/capacity-requirements.html"
+  - title: Facturation
+    entries:
+    - title: Tarification Keystone
+      url: "/concepts/pricing.html"
+    - title: Facturation en fonction de la capacité engagement
+      url: "/concepts/committed-capacity-billing.html"
+    - title: Mesure basée sur la capacité consommée
+      url: "/concepts/consumed-capacity-billing.html"
+    - title: Facturation en fonction de la consommation en rafale
+      url: "/concepts/burst-consumption-billing.html"
+    - title: Facturation en fonction des divers types de volume
+      url: "/concepts/misc-volume-billing.html"
+    - title: Calendriers de facturation
+      url: "/concepts/billing-schedules.html"
+  - title: Environnements exploités par les partenaires et par les clients
+    url: "/concepts/operational-models.html"
+  - title: Infrastructure Keystone
+    entries:
+    - title: Détails de l'infrastructure
+      url: "/concepts/infra.html"
+    - title: Composants
+      url: "/concepts/components.html"
+    - title: Opsrampe en tant qu'application de surveillance
+      url: "/concepts/opsramp.html"
+    - title: Flux de données
+      url: "/concepts/data-flow.html"
+  - title: Centre de support NetApp Global Services
+    url: "/concepts/gssc.html"
+  - title: Faites plus avec les services Keystone
+    entries:
+    - title: Keystone et Cloud Manager
+      url: "/integrations/keystone-cm.html"
+    - title: Keystone et le conseiller digital Active IQ
+      url: "/integrations/keystone-aiq.html"
+  - title: Mentions légales
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: Commencez
+    links:
+    - title: Qu'est-ce que NetApp Keystone ?
+      url: "/concepts/overview.html"
+    - title: Quelles sont les unités de mesure ?
+      url: "/concepts/metrics.html"
+    - title: Qu'est-ce que le stockage de base pris en charge ?
+      url: "/concepts/supported-storage-services.html"
+    - title: Qu'est-ce que le Tiering des données ?
+      url: "/concepts/data-tiering.html"
+    - title: Mes données Keystone sont-elles protégées ?
+      url: "/concepts/adp.html"
+  - title: Niveaux de service dans Keystone
+    links:
+    - title: Niveaux de services Keystone
+      url: "/concepts/service-levels.html"
+    - title: Qualité de service (QoS)
+      url: "/concepts/qos.html"
+    - title: Exigences de capacité pour les niveaux de services
+      url: "/concepts/capacity-requirements.html"
+    - title: Comment visualiser les données de consommation ?
+      url: "/integrations/keystone-aiq.html"
+  - title: Tarification Keystone
+    links:
+    - title: En savoir plus sur la facturation Keystone
+      url: "/concepts/pricing.html"
+    - title: Mes calendriers de facturation
+      url: "/concepts/billing-schedules.html"
+    - title: Facturation en fonction de la capacité engagement
+      url: "/concepts/committed-capacity-billing.html"
+    - title: Mesure basée sur la capacité consommée
+      url: "/concepts/consumed-capacity-billing.html"
+    - title: Que se passe-t-il si j'ai consommé plus de capacité que ma capacité dédiée
+        ?
+      url: "/concepts/burst-consumption-billing.html"
+  - title: Faites plus avec les services Keystone
+    links:
+    - title: Connaître votre équipe de support (Keystone GSSC)
+      url: "/concepts/gssc.html"
+    - title: Keystone et Cloud Manager
+      url: "/integrations/keystone-cm.html"
+    - title: Keystone et le conseiller digital Active IQ
+      url: "/integrations/keystone-aiq.html"
+    - title: Aide des citoyens AUX ÉTATS-UNIS
+      url: "/concepts/uscs.html"
+  - title: En savoir plus
+    links:
+    - title: Abonnement Keystone Flex
+      url: https://docs.netapp.com/us-en/keystone/
+    - title: Conseiller digital Active IQ
+      url: https://docs.netapp.com/us-en/active-iq/index.html
+    - title: Le gestionnaire Cloud
+      url: https://docs.netapp.com/us-en/cloud-manager-family/
+    - title: Active IQ Unified Manager
+      url: https://docs.netapp.com/us-en/active-iq-unified-manager/

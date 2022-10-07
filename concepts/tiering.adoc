@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: concepts/data-tiering.html 
+keywords: add-on services, add-on, data tiering 
+summary: Add-on, Détails des services supplémentaires, Tiering des données 
+---
+= Tiering des données
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le service NetApp Keystone (Keystone) inclut une fonctionnalité de Tiering avec vos services de blocs et de fichiers souscrits qui identifient les données moins fréquemment utilisées et les hiérarchise dans un stockage à froid qui est détenu, déployé et géré par NetApp.
+
+Vous pouvez vous abonner à ce module complémentaire dans le cadre de votre abonnement Keystone. Pour plus d'informations sur le service de stockage de base et de stockage cloud, voir link:../concepts/supported-storage-services.html["Services de stockage pris en charge"]
+
+Pour plus d'informations sur les niveaux de service, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"]
+
+
+NOTE: Le Tiering des données vers la cible de stockage NetApp est inclus par défaut dans les niveaux de service de stockage en mode bloc et fichier. Le service d'extension est uniquement requis lorsque les données sont hiérarchisées n'importe quel stockage non-NetApp, tel que AWS S3, Azure Blob et EMC ECS.
+
+La fonctionnalité de Tiering exploite la technologie NetApp FabricPool qui permet le Tiering automatisé des données vers des tiers de stockage objet à faible coût, sur site ou hors site. Les données rarement utilisées sont ainsi automatiquement transférées vers un stockage à moindre coût sur site ou dans le cloud, en fonction des services convenus.
+
+Le service de Tiering permet le Tiering à partir de niveaux Extreme, Premium, Performance, Standard et Value Tier vers la cible objet. Le Tier actif et le Tier à froid sont mesurés et facturés séparément. Le Tiering peut être ajouté à tout moment, sans modification du prix, et offre plus de flexibilité en termes de ratio chaud/froid.
+
+Passez en revue les calculs suivants pour mieux comprendre cela :
+
+Si la cible pour un Tier de stockage à froid est :
+
+* Tier de valeur (jusqu'à 500 Tio), Tier d'objet (500Tio), réseau SGWS existant (propriété du client) : il n'y a aucun frais supplémentaire et fait partie du service de stockage de base.
+* Le cloud public (AWS, Azure, Google) et tout autre stockage objet pris en charge par un tiers : la capacité de stockage supplémentaire est facturé pour ce qui est du Tier de stockage.
+
+
+Les frais liés à l'abonnement à la hiérarchisation complémentaire ne sont pas des frais unique. Vous devez payer pour toute la durée de la relation de Tiering entre Keystone sur site et les services de fichiers et de blocs et la cible de stockage objet prise en charge par le fournisseur tiers.
+
+Il est ainsi possible de transférer uniquement les données inactives vers un système de stockage cible moins onéreux, et non vers une infrastructure de cloud public/Hyperscalers.
+
+
+NOTE: NetApp ne fournit pas d'infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone. Vous devez en outre les procurer auprès d'un fournisseur de services cloud hyperscale.

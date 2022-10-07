@@ -1,0 +1,137 @@
+---
+sidebar: sidebar 
+permalink: concepts/equinix.html 
+keywords: netapp, keystone, Equinix 
+summary: Keystone et Equinix 
+---
+= Services de colocation Keystone optimisés par Equinix
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp s'est associé à Equinix pour héberger les services NetApp Keystone dans un data Center Equinix afin de fournir une solution unifiée à vos besoins.
+
+Les services de colocation Keystone (Co-Lo) optimisés par Equinix restent inchangés par rapport à l'offre de service Keystone standard.
+
+Dans ce service :
+
+* Equinix fournit des ressources d'espace, d'alimentation, de refroidissement, de réseau et de facturation, et le stockage tous les mois.
+* L'assistance est fournie pour certains déplacements de vente de Keystone.
+* Les services sont pris en charge par 21 data centers répartis dans 11 pays.
+
+
+Equinix dispose des data centers suivants :
+
+|===
+| Le data Center | Pays 
+
+
+ a| 
+Amsterdam
+| Pays-Bas 
+
+
+ a| 
+Atlanta
+| ÉTATS-UNIS 
+
+
+ a| 
+Chicago
+| ÉTATS-UNIS 
+
+
+ a| 
+Dallas
+| ÉTATS-UNIS 
+
+
+ a| 
+Denver
+| ÉTATS-UNIS 
+
+
+ a| 
+Francfort
+| Allemagne 
+
+
+ a| 
+Londres
+| ROYAUME-UNI 
+
+
+ a| 
+Angeles perdu
+| ÉTATS-UNIS 
+
+
+ a| 
+Madrid
+| Espagne 
+
+
+ a| 
+Melbourne
+| Australie 
+
+
+ a| 
+Miami
+| ÉTATS-UNIS 
+
+
+ a| 
+Milan
+| Italie 
+
+
+ a| 
+Osaka
+| Japon 
+
+
+ a| 
+Paris
+| France 
+
+
+ a| 
+Seattle
+| ÉTATS-UNIS 
+
+
+ a| 
+Silicon Valley
+| ÉTATS-UNIS 
+
+
+ a| 
+Sydney
+| Australie 
+
+
+ a| 
+Tokyo
+| Japon 
+
+
+ a| 
+Toronto
+| Canada 
+
+
+ a| 
+Washington, DC
+| ÉTATS-UNIS 
+
+
+ a| 
+Zurich
+| Suisse 
+|===

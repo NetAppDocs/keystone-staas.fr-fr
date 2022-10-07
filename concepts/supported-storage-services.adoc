@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-services.html 
+keywords: storage service, service definition, keystone STaaS storage service, 
+summary: Services de stockage pris en charge 
+---
+= Services de stockage pris en charge
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le service Keystone prend en charge les types de stockage de base d'ONTAP, comme le stockage bloc et de fichiers. Il prend également en charge le stockage objet pour la plateforme StorageGRID. Les fonctionnalités de gestion des données pour Cloud Volumes ONTAP sont également prises en charge.
+
+Pour plus d'informations sur les niveaux de service, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"]
+
+
+
+== Services de stockage de base
+
+|===
+| Service de stockage | Base | Fonctionnalités prises en charge | Protocoles 
+
+
+ a| 
+Stockage de fichiers
+| Basée sur la technologie ONTAP | Fonctionnalités ONTAP prises en charge : copies FlexVol FlexGroup Snapshot copies SnapMirror (asynchrones) SnapVault SnapLock Enterprise FabricPool/Tiering cloud SnapCenter de clonage (la licence est incluse, mais cela ne fait pas partie des services Keystone et aucune gestion garantie n'est fournie) | NFS, CIFS et S3 (utilisé pour la cible FabricPool) 
+
+
+ a| 
+Stockage basé sur des blocs
+| Basée sur la technologie ONTAP | Fonctionnalités ONTAP prises en charge : copies FlexVol FlexGroup Snapshot copies SnapMirror (asynchrones) SnapVault SnapLock Enterprise FabricPool/Tiering cloud SnapCenter de clonage (la licence est incluse, mais cela ne fait pas partie des services Keystone et aucune gestion garantie n'est fournie) | FC, iSCSI et S3 (utilisé pour la cible FabricPool) 
+
+
+ a| 
+Stockage objet
+| Basé sur la plateforme StorageGRID | Prise en charge de plusieurs règles de gestion du cycle de vie des informations (ILM) sur plusieurs sites Remarque : chaque site doit avoir un abonnement séparé. | S3 
+|===
+
+NOTE: Le Tiering des données vers la cible de stockage NetApp est inclus par défaut dans les niveaux de service de stockage en mode bloc et fichier.
+
+Pour plus d'informations sur le Tiering des données, voir link:../concepts/data-tiering.html["Tiering des données"]Pour plus d'informations sur les services de protection des données, reportez-vous à la section link:../concepts/adp.html["Protection avancée des données"]
+
+
+
+== Services de stockage cloud
+
+Keystone prend en charge les _fonctionnalités de gestion de données pour Cloud Volumes ONTAP, prises en charge sur AWS, Azure et Google_. Ce service peut être associé à vos abonnements existants. Le service cloud peut être inclus à tout moment pendant la durée du service. Toutefois, si vous ne prévoyez pas de renouveler votre abonnement, vous ne pouvez pas inclure le service cloud au cours des 90 derniers jours de votre abonnement.
+
+
+NOTE: NetApp ne fournit pas d'infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone. Vous devez en outre les procurer auprès d'un fournisseur de services cloud hyperscale.

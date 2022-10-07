@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-aiq.html 
+keywords: Keystone, Active IQ	Digital Advisor, keystone-aiq, aiq 
+summary: Keystone et le conseiller digital Active IQ 
+---
+= Keystone et le conseiller digital Active IQ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+Si vous vous êtes abonné aux services NetApp Keystone, vous pouvez consulter vos rapports d'utilisation et vos graphiques sur le tableau de bord du conseiller digital Active IQ. Grâce à l'outil Active IQ Digital Advisor, vous pouvez consulter les informations de stockage à la demande et consulter l'infrastructure NetApp dont vous disposez. Avec le conseiller digital Active IQ, vous disposez d'une vue centralisée sur l'utilisation de la capacité et les tendances à partir de rapports détaillés. Vous pouvez également gérer vos abonnements Keystone via Active IQ Digital Advisor avec la possibilité de commander de nouveaux services pour votre abonnement et de mettre à jour la capacité de tous les services existants.
+
+Pour plus d'informations sur le conseiller numérique Active IQ, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Documentation du conseiller digital Active IQ"]
+
+Pour plus d'informations sur le flux de données, voir link:../concepts/infra.html["Les outils de suivi"].

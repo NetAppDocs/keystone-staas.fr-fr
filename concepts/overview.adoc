@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/overview.html 
+keywords: learn about keystone, keystone introduction, keystone, STaaS, service, offering, overview 
+summary: Bienvenue dans Keystone 
+---
+= Découvrez NetApp Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp Keystone (Keystone) est un modèle de service avec paiement à l'utilisation basé sur un abonnement. Il offre une expérience de cloud hybride transparente pour les modèles de consommation des dépenses d'exploitation, de préférence en matière de CapEx ou de leasing à l'avance.
+
+Il permet aux clients d'accélérer le retour sur investissement en réduisant les obstacles liés à la gestion de la croissance imprévisible de la capacité et à la complexité des cycles d'approvisionnement. Keystone permet aux clients d'aligner le modèle économique et les opérations sur leurs priorités métier.
+
+image:nkfsosm_image2.png["Erreur : image graphique manquante"]
+
+Keystone est une offre de services basée sur un abonnement qui fournit une capacité de stockage, avec des niveaux de service prédéfinis, pour les types de données en mode bloc, fichier et objet pouvant être déployés sur site et peut être exploitée par NetApp, un partenaire ou le client. De plus, il peut être utilisé en association avec des services cloud NetApp, comme Cloud Volumes ONTAP, qui peut être déployé sur un environnement Hyperscalers de votre choix.
+
+
+
+== Stockage à la demande Keystone
+
+La majorité des entreprises travaille encore à leur stratégie de cloud hybride, mais en tant que client, ne souhaite pas retarder votre transition vers un modèle de consommation basé sur les OpEx. Vous n'avez peut-être pas l'idée de savoir quand migrer une certaine partie ou l'ensemble de vos workloads vers le cloud, même si votre migration vers le cloud peut être définitive. Le stockage en tant que service Keystone est flexible grâce auquel vous pouvez commencer avec les services sur site et décider plus tard des charges de travail appropriées et un point dans le temps pour migrer vers le cloud. Le stockage en tant que service (STaaS) de Keystone offre une protection de l'engagement entre les modèles de déploiement. Plutôt que d'augmenter les coûts des services cloud en plus des infrastructures sur site, les clients peuvent réallouer leurs dépenses sur site pour ajouter des services cloud et payer au moins la facture mensuelle préalablement à la réaffectation.
