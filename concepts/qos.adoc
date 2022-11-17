@@ -22,9 +22,9 @@ La QoS garantit que les applications bénéficient à tout moment de performance
 
 == La QoS adaptative
 
-La QoS adaptative est utilisée pour les services Keystone qui conservent le rapport entre les IOPS et To/Go lorsque la taille varie, la règle de QoS est automatiquement appliquée. Pour plus d'informations sur la QoS adaptative, reportez-vous à la section https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["À propos de la QoS adaptative"].
+La QoS adaptative est utilisée pour les services Keystone afin de maintenir le rapport entre les IOPS et les To/Go lorsque la taille varie. La règle de QoS est automatiquement appliquée. Pour plus d'informations sur la QoS adaptative, reportez-vous à la section https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["À propos de la QoS adaptative"].
 
-Keystone vous fournit des règles de QoS adaptatives que vous pouvez configurer une fois votre cluster en production. Vous devez vous assurer que tous vos volumes sont associés à la règle de QoS adaptative correcte qui est déjà créée et disponible dans votre système.
+Keystone vous fournit des règles de QoS adaptatives que vous pouvez configurer une fois votre cluster en production. Vous devez vous assurer que tous vos volumes sont associés aux règles de QoS adaptatives créées et disponibles dans votre système.
 
 
 NOTE: Si vous n'avez pas appliqué correctement des règles de qualité de service adaptatives sur vos volumes, ces volumes seront mesurés et facturés au niveau de service le plus élevé conformément à votre abonnement. Cela peut entraîner des frais d'éclatement intempestive.
@@ -60,7 +60,7 @@ Les paramètres des règles de QoS adaptative varient selon les niveaux de servi
 
 === Des paramètres pour le niveau de service extrême
 
-Pour le niveau de service extrême, il s'agit des paramètres et des commandes suivants :
+Paramètres et commandes du niveau de service Extreme :
 
 * Exemple de commande :
 
@@ -76,8 +76,7 @@ qos adaptive-policy-group create -policy group <Keystone_extreme> -vserver <SVM_
 
 === Paramètres du niveau de service Premium
 
-Pour le niveau de service Premium, il s'agit des paramètres et des commandes suivants :
-
+ Settings and commands for the Premium service level:
 * Exemple de commande :
 
 
@@ -92,7 +91,7 @@ qos adaptive-policy-group create -policy group <Keystone_premium> -vserver <SVM_
 
 === Paramètres du niveau de service Performance
 
-Pour le niveau de service Performance, il s'agit des paramètres et des commandes suivants :
+Paramètres et commandes du niveau de service Performance :
 
 * Exemple de commande :
 
@@ -108,8 +107,7 @@ qos adaptive-policy-group create -policy group <Keystone_performance> -vserver <
 
 === Paramètres du niveau de service valeur
 
-Pour le niveau de service Value, il s'agit des paramètres et des commandes suivants :
-
+ Settings and commands for the Value  service level:
 * Exemple de commande :
 
 

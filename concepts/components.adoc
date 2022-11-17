@@ -14,7 +14,7 @@ summary: 'Composants de l"infrastructure'
 
 
 [role="lead"]
-Une configuration comprenant plusieurs exigences s'est requise pour activer les services NetApp Keystone dans votre environnement.
+Cette section répertorie les composants requis pour activer les services NetApp Keystone dans votre environnement.
 
 
 
@@ -115,6 +115,6 @@ NetApp fournit uniquement les émetteurs-récepteurs requis pour les dispositifs
 
 == Besoin d'accès à distance
 
-La connectivité réseau est requise entre l'infrastructure de stockage installée dans le data Center du client ou des services en colocation appartenant au client et le centre d'exploitation Keystone. Le client est responsable de la fourniture des ressources de calcul et des machines virtuelles, ainsi que des services Internet. La conception du réseau sera via un protocole sécurisé, et les politiques de pare-feu seront approuvées à la fois par NetApp et par les clients.
+La connectivité réseau est requise entre l'infrastructure de stockage installée dans le data Center du client ou des services en colocation détenus par le client et le centre d'exploitation Keystone. Le client doit fournir les ressources de calcul, les machines virtuelles et les services Internet. La conception du réseau doit se faire via un protocole sécurisé, et les politiques de pare-feu seront approuvées par NetApp et par les clients.
 
 NetApp doit accéder aux composants matériels et logiciels installés à des fins de contrôle et de gestion, afin de fournir des services tels que la surveillance et la facturation aux clients Keystone. La méthode la plus courante consiste à établir une connexion VPN (réseau privé virtuel) au réseau du client et à accéder aux données requises. Pour surmonter toute complexité opérationnelle perçue par les clients à l'origine de l'ouverture de ports pare-feu à de nouveaux services, les outils de surveillance lancent une connexion externe. Les applications cloud NetApp, telles que OpsRamp et Zuora, utilisent cette connexion pour effectuer les services respectifs. Cette méthode répond aux exigences du client quant à la non-ouverture des ports de pare-feu, mais elle fournit l'accès aux composants de surveillance qui font partie de ce service.

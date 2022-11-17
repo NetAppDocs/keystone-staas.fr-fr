@@ -14,9 +14,9 @@ summary: Niveaux de service pris en charge
 
 
 [role="lead"]
-Keystone propose un service est une capacité de stockage souscrite à un niveau de service associé.
+Keystone propose des services dans un modèle par abonnement en fournissant une capacité de stockage dédiée et en l'associant à des niveaux de services prédéfinis.
 
-Chaque niveau de service est défini par sa densité d'E/S, qui correspond au rapport de performance (opérations d'entrée/sortie par seconde [IOPS]) et de stockage utilisé (Tio de données stockées), correspondant aux IOPS/Tio.
+Chaque niveau de service est défini par sa densité d'E/S, qui correspond au rapport de performance (opérations d'entrée/sortie par seconde [IOPS]) et de stockage utilisé (Tio de données stockées), soit IOPS/Tio.
 
 Chaque volume géré par les services Keystone est associé à un niveau de service. Toutes les opérations d'E/S et tous les stockages utilisés sur le volume respectif sont pris en compte dans le calcul de la densité d'E/S du volume.
 
@@ -24,7 +24,7 @@ Chaque volume géré par les services Keystone est associé à un niveau de serv
 
 == Des niveaux de service pour les différents types de stockage
 
-Les niveaux de service pour les services fichier, bloc, stockage objet et cloud sont répertoriés ici.
+Les niveaux de service pour les services fichier, bloc, objet et cloud sont répertoriés ici.
 
 Les calculs de densité des E/S au niveau du volume sont rapportés pour indiquer le pic de densité des E/S au cours de la semaine précédente. Les performances maximales sont déterminées sur un intervalle horaire. Les rapports de densité d'E/S par volume sont générés tous les mois pour évaluer le respect des niveaux de service respectifs.
 
@@ -52,7 +52,7 @@ Les calculs de densité des E/S au niveau du volume sont rapportés pour indique
 | * Latence* | <1 ms | <1 ms | <1 ms | <17 ms | <17 ms 
 |===
 
-NOTE: Notez ce qui suit :
+NOTE: Remarque :
 
 * Les mesures de performance du débit (applicables uniquement aux services de fichiers et de blocs) sont basées sur :
 +
@@ -60,8 +60,8 @@ NOTE: Notez ce qui suit :
 ** 70 % de lectures/30 % de IOPS en écriture
 
 
-* Les IOPS/Tio et/ou Mbit/s/Tio réels peuvent varier en fonction des caractéristiques de la charge de travail
-* La latence n'inclut pas la latence du réseau du client, de l'hôte ou de l'application vers ou depuis les ports du contrôleur
+* Les IOPS/Tio et/ou Mbit/s/Tio réels varient en fonction des caractéristiques des charges de travail.
+* La latence n'inclut pas la latence du réseau du client, de l'hôte ou de l'application vers ou depuis les ports du contrôleur.
 
 
 
@@ -91,10 +91,10 @@ NOTE: Notez ce qui suit :
 | * Latence* | S/O 
 |===
 
-NOTE: Notez ce qui suit :
+NOTE: Remarque :
 
-* Les IOPS/Tio et/ou Mbit/s/Tio réels peuvent varier en fonction des caractéristiques de la charge de travail
-* La latence n'inclut pas la latence du réseau du client, de l'hôte ou de l'application vers ou depuis les ports du contrôleur
+* Les IOPS/Tio et/ou Mbit/s/Tio réels varient en fonction des caractéristiques des charges de travail.
+* La latence n'inclut pas la latence du réseau du client, de l'hôte ou de l'application vers ou depuis les ports du contrôleur.
 
 
 
@@ -124,8 +124,8 @@ NOTE: Notez ce qui suit :
 | * Latence* | S/O 
 |===
 
-NOTE: Notez ce qui suit :
+NOTE: Remarque :
 
-* Les services cloud natifs, tels que le calcul, le stockage et le réseau, sont facturés par les fournisseurs cloud
-* Ces services dépendent des caractéristiques de stockage et de calcul dans le cloud
+* Les services cloud natifs, tels que le calcul, le stockage et le réseau, sont facturés par les fournisseurs cloud.
+* Ces services dépendent des caractéristiques de stockage et de calcul dans le cloud.
 

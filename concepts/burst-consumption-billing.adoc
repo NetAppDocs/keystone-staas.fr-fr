@@ -14,8 +14,8 @@ summary: Facturation en fonction de la consommation en rafale
 
 
 [role="lead"]
-La facturation de NetApp Keystone (Keystone) repose sur la capacité en rafale, c'est-à-dire la capacité consommée par votre entreprise, en plus de la capacité engagement des niveaux de services auxquels vous êtes abonné.
+La facturation des niveaux de service (Keystone) repose sur la capacité en rafale, c'est-à-dire la capacité consommée par votre entreprise, en plus de la capacité engagement des niveaux de service de votre abonnement. NetApp Keystone
 
-Lorsque la capacité consommée est supérieure à la capacité engagée pour un niveau de services, la consommation en rafale est enregistrée et des frais sont appliqués en conséquence. Ce processus se produit pour chaque enregistrement de consommation généré. La consommation en rafale reflète donc à la fois le montant et la durée de vos capacités surconsommées en plus de vos capacités engagées.
+Lorsque la capacité consommée est supérieure à la capacité engagée pour un niveau de services, la consommation en rafale est enregistrée et facturée en conséquence. Ce processus se produit pour chaque enregistrement de consommation généré. La consommation en rafale reflète donc à la fois le montant et la durée de vos capacités surconsommées en plus de vos capacités engagées.
 
-Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"]
+Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"].

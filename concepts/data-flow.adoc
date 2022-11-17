@@ -14,19 +14,19 @@ summary: Flux de données Keystone
 
 
 [role="lead"]
-Les systèmes Keystone rencontrent le flux de données via deux systèmes, le trafic Keystone Collector et la surveillance des flux de données.
+Les systèmes Keystone rencontrent le flux de données via Keystone Collector, le trafic et la surveillance des flux de données.
 
 
 
 == Collecteur de données Keystone
 
-Keystone Collector lance régulièrement des appels d'API REST vers les contrôleurs de stockage et obtient les détails d'utilisation des contrôleurs, comme décrit dans l'image suivante :.
+Keystone Collector lance des appels d'API REST vers les contrôleurs de stockage et obtient régulièrement les détails d'utilisation des contrôleurs.
 
 image:collector-data-flow.png[""]
 
 .Légende
-. NetApp Collector lance une session HTTPS vers le portail Active-IQ Cloud.
-. Le pare-feu exploité par le client doit autoriser cette connexion.
+. NetApp Collector lance une session HTTPS vers le portail cloud Active-IQ.
+. Le pare-feu actionné par le client autorise la connexion.
 . Le portail cloud Active IQ accepte la connexion et établit un tunnel vers le collecteur NetApp.
 . Le collecteur NetApp établit une session d'API REST avec la connexion de gestion du contrôleur de stockage, obtient les données environnementales et les envoie au portail Active IQ.
 
@@ -35,15 +35,15 @@ image:collector-data-flow.png[""]
 
 == Surveillance des flux de données
 
-La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour le contrôle, Keystone utilise OpsRamp, qui requiert un accès à distance au réseau client. L'image suivante décrit comment l'accès à distance à l'emplacement client est sécurisé par l'outil OpsRamp.
+La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour le contrôle, Keystone utilise OpsRamp, qui nécessite un accès à distance au réseau du client. L'image suivante décrit comment l'accès à distance à l'emplacement client est sécurisé par l'outil OpsRamp.
 
 image:monitoring-flow.png[""]
 
 .Légende
 . La passerelle de OpsRamp initie une session TLS vers le portail cloud de OpsRamp dans le cloud.
-. Le pare-feu exploité par le client doit autoriser cette connexion.
+. Le pare-feu actionné par le client autorise la connexion.
 . Le serveur OpsRamp dans le cloud accepte la connexion.
-. Le tunnel TLS est établi entre le portail de choisirNetAppRamp et la passerelle locale OpsRamp.
+. Un tunnel TLS est établi entre le portail Cloud de OpsRamp et la passerelle locale de OpsRamp.
 . Les contrôleurs NetApp envoient des alertes via le protocole SNMP ou répondent aux demandes d'API à la passerelle locale de OpsRamp.
 . La passerelle locale de OpsRamp envoie ces alertes à son portail cloud à l'aide de la session TLS, qui a été établie auparavant.
 

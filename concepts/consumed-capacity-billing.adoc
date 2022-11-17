@@ -16,6 +16,6 @@ summary: Facturation en fonction de la capacité consommée
 [role="lead"]
 Keystone propose également des mesures en fonction de la capacité consommée par vous lors de votre utilisation des services.
 
-Dans le cadre du déploiement du service Keystone, NetApp contrôle en continu et mesure la consommation du service. Toutes les cinq minutes, un enregistrement de consommation est généré par le système, en précisant la capacité actuelle consommée pour votre abonnement. Ces enregistrements sont agrégés au cours de la période de facturation afin de générer des factures et des rapports d'utilisation
+Dans le cadre du déploiement du service Keystone, NetApp contrôle en continu et mesure la consommation du service. Toutes les cinq minutes, un enregistrement de consommation est généré par le système, en précisant la capacité actuelle consommée pour votre abonnement. Ces enregistrements sont agrégés au cours de la période de facturation afin de générer des factures et des rapports d'utilisation.
 
-Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"]
+Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"].

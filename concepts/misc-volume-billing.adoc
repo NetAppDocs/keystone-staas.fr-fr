@@ -13,26 +13,26 @@ summary: Facturation en fonction des divers types de volume
 :imagesdir: ../media/
 
 
-[role="lead"]
-Vous devez vous familiariser avec ces scénarios pour la facturation Keystone dans plusieurs scénarios.
-
 
 
 == Facturation des volumes clonés
 
 Si les volumes sont clonés dans ONTAP et que vous les utilisez pour la sauvegarde et la restauration de vos données, vous pouvez continuer à utiliser ces clones sans paiements supplémentaires. Toutefois, les volumes clonés utilisés à d'autres fins dans votre entreprise pendant une durée étendue sont facturés.
 
-Notez ce qui suit :
+
+NOTE: Remarque :
 
 * La consommation des volumes clonés n'est pas prise en compte au cours des 24 premières heures de la création des clones. Aucun frais n'est engagé au cours de cette période.
-* Les volumes clonés avec les niveaux Standard et Value Service ne sont pas pris en compte pour la consommation si de nouvelles données ne sont pas écrites sur le volume. Par exemple, dans le cas d'une sauvegarde ou d'une restauration, la sauvegarde ou la restauration des données à partir d'un volume cloné ne modifie pas les données du volume cloné lui-même et n'est pas considérée comme une consommation.
+* Les volumes clonés avec les niveaux Standard et Value Service ne sont pas pris en compte lors de la consommation de nouvelles données sans écriture sur le volume. Par exemple, dans le cas d'une sauvegarde ou d'une restauration, la sauvegarde ou la restauration des données à partir d'un volume cloné ne modifie pas les données du volume cloné lui-même et n'est pas considérée comme une consommation.
 
 
 
 
 == Facturation pour la protection avancée des données
 
-La protection avancée des données utilise NetApp MetroCluster pour mettre en miroir les données entre deux clusters physiquement séparés. Pour les agrégats MetroCluster en miroir, les données sont écrites deux fois, une fois sur chaque cluster. Le service Keystone facture la consommation de chaque côté de manière indépendante, ce qui engendre deux enregistrements de consommation identiques. Si vous surveillez les clusters via ONTAP System Manager (System Manager) ou Active IQ Unified Manager (Unified Manager), vous risquez de ne pas concorder avec le taux de consommation signalé sur ces outils et sur Keystone. System Manager et Unified Manager ne signalent pas les volumes sur le cluster (distant) en miroir, et ce faisant, indiquent la moitié des metrics de consommation que le service Keystone fournit.
+La protection avancée des données utilise NetApp MetroCluster pour mettre en miroir les données entre deux clusters physiquement séparés. Pour les agrégats MetroCluster en miroir, les données sont écrites deux fois, une fois sur chaque cluster. Le service Keystone facture la consommation de chaque côté de manière indépendante, ce qui engendre deux enregistrements de consommation identiques. Les frais d'extension sont appliqués à toutes les capacités de l'abonnement, que les données soient à la source ou qu'elles soient mises en miroir ou non.
+
+Si vous surveillez les clusters via ONTAP System Manager (System Manager) ou Active IQ Unified Manager (Unified Manager), vous risquez de ne pas concorder avec le taux de consommation signalé sur ces outils et sur Keystone. System Manager et Unified Manager ne signalent pas les volumes sur le cluster (distant) en miroir, et ce faisant, indiquent la moitié des metrics de consommation que le service Keystone fournit.
 
 Les sites A et B sont configurés dans une configuration MetroCluster. Lorsqu'un utilisateur crée un volume de 10 To sur le site A, un volume identique de 10 To est créé sur le site B. Keystone identifie les 10 To de consommation sur chaque site pour une augmentation totale de 20 To. System Manager et Unified Manager créent un volume de 10 To créé sur le site A, mais ne signalent pas un volume de 10 To dans le site B.
 
@@ -54,13 +54,13 @@ Keystone mesure la consommation en fonction des niveaux de service. Chaque nivea
 
 == Facturation des destinations SnapMirror
 
-Le prix du volume de destination SnapMirror est régi par la règle de QoS appliquée au niveau de service affecté à la source. Toutefois, si la source n'a pas de règle de QoS associée, la destination est facturée en fonction du niveau de service le plus bas disponible.
+Le prix du volume de destination SnapMirror est régi par la règle de QoS du niveau de service attribué à la source. Toutefois, si la source n'a pas de règle de QoS associée, la destination est facturée en fonction du niveau de service le plus bas disponible.
 
 
 
 == Facturation des LUN
 
-Pour les LUN, il s'agit généralement du même modèle de facturation que pour les volumes régis par les règles de QoS. Si des règles de QoS distinctes sont définies sur les LUN, alors :
+Pour les LUN, le même modèle de facturation est suivi de pour les volumes régis par les règles de QoS. Si des règles de QoS distinctes sont définies sur les LUN, alors :
 
 * La taille de la LUN est comptabilisée pour consommation en fonction du niveau de service associé à cette LUN.
 * Le reste de l'espace du volume, le cas échéant, est facturé conformément à la politique de QoS définie au niveau de service du volume.

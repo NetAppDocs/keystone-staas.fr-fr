@@ -21,7 +21,7 @@ Les services de colocation Keystone (Co-Lo) optimisés par Equinix restent incha
 Dans ce service :
 
 * Equinix fournit des ressources d'espace, d'alimentation, de refroidissement, de réseau et de facturation, et le stockage tous les mois.
-* L'assistance est fournie pour certains déplacements de vente de Keystone.
+* Des propositions de vente de Keystone sont prises en charge.
 * Les services sont pris en charge par 21 data centers répartis dans 11 pays.
 
 

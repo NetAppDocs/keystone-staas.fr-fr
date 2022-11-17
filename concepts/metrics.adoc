@@ -27,18 +27,18 @@ Les termes et définitions suivants sont utilisés dans le service NetApp Keysto
 
 == Mesure des metrics
 
-* *Mesure de la capacité en Gio, Tio et PIB.* mesures de la capacité de stockage des données en utilisant la base de 1024 (1 Gio = 1024^3^ octets, 1 Tio = 1024^4^ octets et 1 Pio = 1024^5^ octets).
+* *Mesure de la capacité en Gio, Tio et PIB.* : mesures de la capacité de stockage des données utilisant la base de 1024 (1 Gio = 1024^3^ octets, 1 Tio = 1024^4^ octets et 1 Pio = 1024^5^ octets).
 * *Operations Counter Chart: IOPS/Tio* les opérations de protocole par seconde demandées par l'application, divisées par la taille du volume utilisé par les charges de travail.
-* *La disponibilité* est mesurée en pourcentage du nombre de demandes d'E/S auxquelles le service a répondu avec succès, divisé par le nombre total de demandes d'E/S faites au service. Cette mesure est mesurée à la ligne de démarcation du service au cours d'un mois et n'inclut pas les temps d'arrêt programmés ou l'indisponibilité des installations, du réseau ou des autres services fournis par le client.
-* *La durabilité* est le pourcentage de données accessibles sans perte de fidélité, à l'exclusion de la suppression ou de la corruption causées par le client.
-* *Latence.* temps de traitement d'une demande d'E/S reçue d'un client, mesuré à la ligne de démarcation du service (port E/S du contrôleur de stockage).
+* *Disponibilité* : mesuré en pourcentage du nombre de demandes d'E/S auxquelles le service a répondu avec succès, divisé par le nombre total de demandes d'E/S faites au service. Cette mesure est mesurée à la ligne de démarcation du service au cours d'un mois et n'inclut pas les temps d'arrêt programmés ou l'indisponibilité des installations, du réseau ou des autres services fournis par le client.
+* *Durabilité* : pourcentage de données consultées sans perte de fidélité, à l'exclusion de la suppression ou de la corruption causées par le client.
+* *Latence* : temps de traitement d'une demande d'E/S reçue d'un client, mesuré à la ligne de démarcation du service (port E/S du contrôleur de stockage).
 
 
 
 
 === Mesures de performances de débit
 
-Les mesures de performances du débit sont applicables uniquement aux services de fichiers et de blocs. Ces solutions sont basées sur :
+Les mesures de performances de débit s'appliquent uniquement aux services de fichiers et de blocs et sont basées sur :
 
 * Tailles de bloc de 32 Ko
 * 70 % de lectures et 30 % d'E/S en écriture
@@ -48,9 +48,9 @@ Les mesures de performances du débit sont applicables uniquement aux services d
 
 === Variations de la densité des E/S
 
-La densité d'E/S calculée en IOPS/Tio et/ou Mbit/s/Tio peut varier selon les facteurs suivants :
+La densité d'E/S calculée en IOPS/Tio et/ou Mbit/s/Tio varie selon les facteurs suivants :
 
-* Caractéristiques de la charge de travail.
+* Caractéristiques de la charge de travail
 * Latence, hors ce qui suit :
 +
 ** Latence des applications
@@ -61,14 +61,14 @@ La densité d'E/S calculée en IOPS/Tio et/ou Mbit/s/Tio peut varier selon les f
 
 
 * L'utilisateur et les données de copie Snapshot comptabilisés dans la capacité utilisée
-* Le nombre minimal d'IOPS allouées à chaque volume ONTAP, indépendamment de la quantité de données y figurant :
+* Le nombre minimal d'IOPS allouées à chaque volume ONTAP, indépendamment de la quantité de données dans le volume :
 +
 ** Extrême : 1,000 000 IOPS
 ** Premium : 500 000 IOPS
 ** Performance, Standard et valeur : 75 IOPS
 
 
-* Lors de l'utilisation des services complémentaires Advanced Data protection, la latence cible s'applique uniquement au traitement des demandes d'E/S depuis le stockage local
+* Lors de l'utilisation des services complémentaires Advanced Data protection, la latence cible ne s'applique qu'au traitement des demandes d'E/S depuis le stockage local.
 
 
 

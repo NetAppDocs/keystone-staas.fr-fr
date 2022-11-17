@@ -14,13 +14,15 @@ summary: Services de stockage pris en charge
 
 
 [role="lead"]
-Le service Keystone prend en charge les types de stockage de base d'ONTAP, comme le stockage bloc et de fichiers. Il prend également en charge le stockage objet pour la plateforme StorageGRID. Les fonctionnalités de gestion des données pour Cloud Volumes ONTAP sont également prises en charge.
+Le service Keystone prend en charge les types de stockage de base de ONTAP, de fichier et de bloc. Il prend également en charge le stockage objet pour la plateforme StorageGRID et ses fonctionnalités de gestion des données pour Cloud Volumes ONTAP.
 
-Pour plus d'informations sur les niveaux de service, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"]
+Pour plus d'informations sur les niveaux de service, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
 
 
 
 == Services de stockage de base
+
+Les services de stockage de base de Keystone proposent des services de protection des données en exploitant les technologies NetApp, telles que SnapMirror, SnapVault et Snapshot, ainsi que des fonctionnalités de Tiering sur les cibles de stockage NetApp prises en charge pour les services de stockage bloc et de fichiers. Vous pouvez en outre opter pour des services d'extension pour le Tiering et la protection des données. Pour plus d'informations sur les services complémentaires, reportez-vous à la section link:../concepts/adp.html["Protection avancée des données"] et link:../concepts/data-tiering.html["Tiering des données"].
 
 |===
 | Service de stockage | Base | Fonctionnalités prises en charge | Protocoles 
@@ -43,13 +45,13 @@ Stockage objet
 
 NOTE: Le Tiering des données vers la cible de stockage NetApp est inclus par défaut dans les niveaux de service de stockage en mode bloc et fichier.
 
-Pour plus d'informations sur le Tiering des données, voir link:../concepts/data-tiering.html["Tiering des données"]Pour plus d'informations sur les services de protection des données, reportez-vous à la section link:../concepts/adp.html["Protection avancée des données"]
+Pour plus d'informations sur le Tiering des données, voir link:../concepts/data-tiering.html["Tiering des données"]. Pour plus d'informations sur les services de protection des données, reportez-vous à la section link:../concepts/adp.html["Protection avancée des données"].
 
 
 
 == Services de stockage cloud
 
-Keystone prend en charge les _fonctionnalités de gestion de données pour Cloud Volumes ONTAP, prises en charge sur AWS, Azure et Google_. Ce service peut être associé à vos abonnements existants. Le service cloud peut être inclus à tout moment pendant la durée du service. Toutefois, si vous ne prévoyez pas de renouveler votre abonnement, vous ne pouvez pas inclure le service cloud au cours des 90 derniers jours de votre abonnement.
+Keystone prend en charge les fonctionnalités de gestion des données pour Cloud Volumes ONTAP sur Amazon Web Services (AWS), Microsoft Azure et Google Cloud Platform. Ce service peut être associé à vos abonnements existants. Le service cloud peut être inclus à tout moment pendant la durée du service. Toutefois, si vous ne prévoyez pas de renouveler votre abonnement, vous ne pouvez pas inclure le service cloud au cours des 90 derniers jours de votre abonnement.
 
 
-NOTE: NetApp ne fournit pas d'infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone. Vous devez en outre les procurer auprès d'un fournisseur de services cloud hyperscale.
+NOTE: NetApp ne fournit pas d'infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone : vous devez les procurer auprès d'un fournisseur de services cloud hyperscale.
