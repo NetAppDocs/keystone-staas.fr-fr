@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/fr-fr/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
   <script src='/fr-fr/keystone-staas/js/clouddocs.js'></script>
   <script src='/fr-fr/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/fr-fr/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Commencez</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Découvrez Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Services complémentaires</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tiering des données"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> En savoir plus sur les niveaux de service</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Qualité de service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Facturation</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tarification Keystone"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Infrastructure Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Détails de l'infrastructure"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Faites plus avec les services Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone et Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:28:36 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
     
   
 
@@ -919,21 +907,23 @@
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph lead">
-<p>Vous devez vous familiariser avec ces scénarios pour la facturation Keystone dans plusieurs scénarios.</p>
-</div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="facturation-des-volumes-clonés">Facturation des volumes clonés</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Si les volumes sont clonés dans ONTAP et que vous les utilisez pour la sauvegarde et la restauration de vos données, vous pouvez continuer à utiliser ces clones sans paiements supplémentaires. Toutefois, les volumes clonés utilisés à d&#8217;autres fins dans votre entreprise pendant une durée étendue sont facturés.</p>
 </div>
-<div class="paragraph">
-<p>Notez ce qui suit :</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone-staas/images/note.svg" alt="Note">
+</td>
+<td class="content">
+Remarque :
+</td>
+</tr>
+</table>
 </div>
 <div class="ulist">
 <ul>
@@ -941,7 +931,7 @@
 <p>La consommation des volumes clonés n&#8217;est pas prise en compte au cours des 24 premières heures de la création des clones. Aucun frais n&#8217;est engagé au cours de cette période.</p>
 </li>
 <li>
-<p>Les volumes clonés avec les niveaux Standard et Value Service ne sont pas pris en compte pour la consommation si de nouvelles données ne sont pas écrites sur le volume. Par exemple, dans le cas d&#8217;une sauvegarde ou d&#8217;une restauration, la sauvegarde ou la restauration des données à partir d&#8217;un volume cloné ne modifie pas les données du volume cloné lui-même et n&#8217;est pas considérée comme une consommation.</p>
+<p>Les volumes clonés avec les niveaux Standard et Value Service ne sont pas pris en compte lors de la consommation de nouvelles données sans écriture sur le volume. Par exemple, dans le cas d&#8217;une sauvegarde ou d&#8217;une restauration, la sauvegarde ou la restauration des données à partir d&#8217;un volume cloné ne modifie pas les données du volume cloné lui-même et n&#8217;est pas considérée comme une consommation.</p>
 </li>
 </ul>
 </div>
@@ -951,7 +941,10 @@
 <h2 id="facturation-pour-la-protection-avancée-des-données">Facturation pour la protection avancée des données</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>La protection avancée des données utilise NetApp MetroCluster pour mettre en miroir les données entre deux clusters physiquement séparés. Pour les agrégats MetroCluster en miroir, les données sont écrites deux fois, une fois sur chaque cluster. Le service Keystone facture la consommation de chaque côté de manière indépendante, ce qui engendre deux enregistrements de consommation identiques. Si vous surveillez les clusters via ONTAP System Manager (System Manager) ou Active IQ Unified Manager (Unified Manager), vous risquez de ne pas concorder avec le taux de consommation signalé sur ces outils et sur Keystone. System Manager et Unified Manager ne signalent pas les volumes sur le cluster (distant) en miroir, et ce faisant, indiquent la moitié des metrics de consommation que le service Keystone fournit.</p>
+<p>La protection avancée des données utilise NetApp MetroCluster pour mettre en miroir les données entre deux clusters physiquement séparés. Pour les agrégats MetroCluster en miroir, les données sont écrites deux fois, une fois sur chaque cluster. Le service Keystone facture la consommation de chaque côté de manière indépendante, ce qui engendre deux enregistrements de consommation identiques. Les frais d&#8217;extension sont appliqués à toutes les capacités de l&#8217;abonnement, que les données soient à la source ou qu&#8217;elles soient mises en miroir ou non.</p>
+</div>
+<div class="paragraph">
+<p>Si vous surveillez les clusters via ONTAP System Manager (System Manager) ou Active IQ Unified Manager (Unified Manager), vous risquez de ne pas concorder avec le taux de consommation signalé sur ces outils et sur Keystone. System Manager et Unified Manager ne signalent pas les volumes sur le cluster (distant) en miroir, et ce faisant, indiquent la moitié des metrics de consommation que le service Keystone fournit.</p>
 </div>
 <div class="paragraph">
 <p>Les sites A et B sont configurés dans une configuration MetroCluster. Lorsqu&#8217;un utilisateur crée un volume de 10 To sur le site A, un volume identique de 10 To est créé sur le site B. Keystone identifie les 10 To de consommation sur chaque site pour une augmentation totale de 20 To. System Manager et Unified Manager créent un volume de 10 To créé sur le site A, mais ne signalent pas un volume de 10 To dans le site B.</p>
@@ -981,7 +974,7 @@
 <h2 id="facturation-des-destinations-snapmirror">Facturation des destinations SnapMirror</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Le prix du volume de destination SnapMirror est régi par la règle de QoS appliquée au niveau de service affecté à la source. Toutefois, si la source n&#8217;a pas de règle de QoS associée, la destination est facturée en fonction du niveau de service le plus bas disponible.</p>
+<p>Le prix du volume de destination SnapMirror est régi par la règle de QoS du niveau de service attribué à la source. Toutefois, si la source n&#8217;a pas de règle de QoS associée, la destination est facturée en fonction du niveau de service le plus bas disponible.</p>
 </div>
 </div>
 </div>
@@ -989,7 +982,7 @@
 <h2 id="facturation-des-lun">Facturation des LUN</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Pour les LUN, il s&#8217;agit généralement du même modèle de facturation que pour les volumes régis par les règles de QoS. Si des règles de QoS distinctes sont définies sur les LUN, alors :</p>
+<p>Pour les LUN, le même modèle de facturation est suivi de pour les volumes régis par les règles de QoS. Si des règles de QoS distinctes sont définies sur les LUN, alors :</p>
 </div>
 <div class="ulist">
 <ul>

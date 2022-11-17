@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/fr-fr/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
   <script src='/fr-fr/keystone-staas/js/clouddocs.js'></script>
   <script src='/fr-fr/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/fr-fr/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Commencez</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Découvrez Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Services complémentaires</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tiering des données"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> En savoir plus sur les niveaux de service</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Qualité de service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Facturation</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tarification Keystone"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Infrastructure Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Détails de l'infrastructure"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Faites plus avec les services Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone et Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:28:36 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
     
   
 
@@ -922,7 +910,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Les systèmes Keystone rencontrent le flux de données via deux systèmes, le trafic Keystone Collector et la surveillance des flux de données.</p>
+<p>Les systèmes Keystone rencontrent le flux de données via Keystone Collector, le trafic et la surveillance des flux de données.</p>
 </div>
 </div>
 </div>
@@ -930,7 +918,7 @@
 <h2 id="collecteur-de-données-keystone">Collecteur de données Keystone</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Keystone Collector lance régulièrement des appels d&#8217;API REST vers les contrôleurs de stockage et obtient les détails d&#8217;utilisation des contrôleurs, comme décrit dans l&#8217;image suivante :.</p>
+<p>Keystone Collector lance des appels d&#8217;API REST vers les contrôleurs de stockage et obtient régulièrement les détails d&#8217;utilisation des contrôleurs.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../media/collector-data-flow.png" alt=""></span></p>
@@ -939,10 +927,10 @@
 <div class="title">Légende</div>
 <ol class="arabic">
 <li>
-<p>NetApp Collector lance une session HTTPS vers le portail Active-IQ Cloud.</p>
+<p>NetApp Collector lance une session HTTPS vers le portail cloud Active-IQ.</p>
 </li>
 <li>
-<p>Le pare-feu exploité par le client doit autoriser cette connexion.</p>
+<p>Le pare-feu actionné par le client autorise la connexion.</p>
 </li>
 <li>
 <p>Le portail cloud Active IQ accepte la connexion et établit un tunnel vers le collecteur NetApp.</p>
@@ -958,7 +946,7 @@
 <h2 id="surveillance-des-flux-de-données">Surveillance des flux de données</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>La surveillance continue de l&#8217;état de santé de l&#8217;infrastructure de stockage est l&#8217;une des fonctionnalités les plus importantes du service Keystone. Pour le contrôle, Keystone utilise OpsRamp, qui requiert un accès à distance au réseau client. L&#8217;image suivante décrit comment l&#8217;accès à distance à l&#8217;emplacement client est sécurisé par l&#8217;outil OpsRamp.</p>
+<p>La surveillance continue de l&#8217;état de santé de l&#8217;infrastructure de stockage est l&#8217;une des fonctionnalités les plus importantes du service Keystone. Pour le contrôle, Keystone utilise OpsRamp, qui nécessite un accès à distance au réseau du client. L&#8217;image suivante décrit comment l&#8217;accès à distance à l&#8217;emplacement client est sécurisé par l&#8217;outil OpsRamp.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="../media/monitoring-flow.png" alt=""></span></p>
@@ -970,13 +958,13 @@
 <p>La passerelle de OpsRamp initie une session TLS vers le portail cloud de OpsRamp dans le cloud.</p>
 </li>
 <li>
-<p>Le pare-feu exploité par le client doit autoriser cette connexion.</p>
+<p>Le pare-feu actionné par le client autorise la connexion.</p>
 </li>
 <li>
 <p>Le serveur OpsRamp dans le cloud accepte la connexion.</p>
 </li>
 <li>
-<p>Le tunnel TLS est établi entre le portail de choisirNetAppRamp et la passerelle locale OpsRamp.</p>
+<p>Un tunnel TLS est établi entre le portail Cloud de OpsRamp et la passerelle locale de OpsRamp.</p>
 </li>
 <li>
 <p>Les contrôleurs NetApp envoient des alertes via le protocole SNMP ou répondent aux demandes d&#8217;API à la passerelle locale de OpsRamp.</p>

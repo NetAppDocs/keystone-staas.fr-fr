@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/fr-fr/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
   <script src='/fr-fr/keystone-staas/js/clouddocs.js'></script>
   <script src='/fr-fr/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/fr-fr/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Commencez</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Découvrez Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Services complémentaires</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tiering des données"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> En savoir plus sur les niveaux de service</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Qualité de service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Facturation</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tarification Keystone"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Infrastructure Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Détails de l'infrastructure"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Faites plus avec les services Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone et Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:28:36 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
     
   
 
@@ -923,10 +911,10 @@
 <p>Keystone propose également des mesures en fonction de la capacité consommée par vous lors de votre utilisation des services.</p>
 </div>
 <div class="paragraph">
-<p>Dans le cadre du déploiement du service Keystone, NetApp contrôle en continu et mesure la consommation du service. Toutes les cinq minutes, un enregistrement de consommation est généré par le système, en précisant la capacité actuelle consommée pour votre abonnement. Ces enregistrements sont agrégés au cours de la période de facturation afin de générer des factures et des rapports d&#8217;utilisation</p>
+<p>Dans le cadre du déploiement du service Keystone, NetApp contrôle en continu et mesure la consommation du service. Toutes les cinq minutes, un enregistrement de consommation est généré par le système, en précisant la capacité actuelle consommée pour votre abonnement. Ces enregistrements sont agrégés au cours de la période de facturation afin de générer des factures et des rapports d&#8217;utilisation.</p>
 </div>
 <div class="paragraph">
-<p>Pour plus d&#8217;informations sur les différentes capacités prises en charge par Keystone, reportez-vous à <a href="../concepts/supported-storage-capacity.html">"Capacités de stockage prises en charge dans Keystone"</a></p>
+<p>Pour plus d&#8217;informations sur les différentes capacités prises en charge par Keystone, reportez-vous à <a href="../concepts/supported-storage-capacity.html">"Capacités de stockage prises en charge dans Keystone"</a>.</p>
 </div>
 
     </article>

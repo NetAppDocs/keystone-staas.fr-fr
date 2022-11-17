@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/fr-fr/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
   <script src='/fr-fr/keystone-staas/js/clouddocs.js'></script>
   <script src='/fr-fr/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/fr-fr/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Commencez</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Découvrez Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Services complémentaires</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tiering des données"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> En savoir plus sur les niveaux de service</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Qualité de service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Facturation</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tarification Keystone"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Infrastructure Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Détails de l'infrastructure"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Faites plus avec les services Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone et Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:28:36 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
     
   
 
@@ -933,10 +921,10 @@
 <h2 id="la-qos-adaptative">La QoS adaptative</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>La QoS adaptative est utilisée pour les services Keystone qui conservent le rapport entre les IOPS et To/Go lorsque la taille varie, la règle de QoS est automatiquement appliquée. Pour plus d&#8217;informations sur la QoS adaptative, reportez-vous à la section <a href="https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos">"À propos de la QoS adaptative"</a>.</p>
+<p>La QoS adaptative est utilisée pour les services Keystone afin de maintenir le rapport entre les IOPS et les To/Go lorsque la taille varie. La règle de QoS est automatiquement appliquée. Pour plus d&#8217;informations sur la QoS adaptative, reportez-vous à la section <a href="https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos">"À propos de la QoS adaptative"</a>.</p>
 </div>
 <div class="paragraph">
-<p>Keystone vous fournit des règles de QoS adaptatives que vous pouvez configurer une fois votre cluster en production. Vous devez vous assurer que tous vos volumes sont associés à la règle de QoS adaptative correcte qui est déjà créée et disponible dans votre système.</p>
+<p>Keystone vous fournit des règles de QoS adaptatives que vous pouvez configurer une fois votre cluster en production. Vous devez vous assurer que tous vos volumes sont associés aux règles de QoS adaptatives créées et disponibles dans votre système.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1009,7 +997,7 @@ Il ne s&#8217;agit pas de la densité des IOPS (par exemple 75 IOPS/Tio), mais d
 <div class="sect2">
 <h3 id="des-paramètres-pour-le-niveau-de-service-extrême">Des paramètres pour le niveau de service extrême</h3>
 <div class="paragraph">
-<p>Pour le niveau de service extrême, il s&#8217;agit des paramètres et des commandes suivants :</p>
+<p>Paramètres et commandes du niveau de service Extreme :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1036,15 +1024,11 @@ Il ne s&#8217;agit pas de la densité des IOPS (par exemple 75 IOPS/Tio), mais d
 </div>
 <div class="sect2">
 <h3 id="paramètres-du-niveau-de-service-premium">Paramètres du niveau de service Premium</h3>
-<div class="paragraph">
-<p>Pour le niveau de service Premium, il s&#8217;agit des paramètres et des commandes suivants :</p>
+<div class="literalblock">
+<div class="content">
+<pre> Settings and commands for the Premium service level:
+* Exemple de commande :</pre>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Exemple de commande :</p>
-</li>
-</ul>
 </div>
 <div class="literalblock">
 <div class="content">
@@ -1065,7 +1049,7 @@ Il ne s&#8217;agit pas de la densité des IOPS (par exemple 75 IOPS/Tio), mais d
 <div class="sect2">
 <h3 id="paramètres-du-niveau-de-service-performance">Paramètres du niveau de service Performance</h3>
 <div class="paragraph">
-<p>Pour le niveau de service Performance, il s&#8217;agit des paramètres et des commandes suivants :</p>
+<p>Paramètres et commandes du niveau de service Performance :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1092,15 +1076,11 @@ Il ne s&#8217;agit pas de la densité des IOPS (par exemple 75 IOPS/Tio), mais d
 </div>
 <div class="sect2">
 <h3 id="paramètres-du-niveau-de-service-valeur">Paramètres du niveau de service valeur</h3>
-<div class="paragraph">
-<p>Pour le niveau de service Value, il s&#8217;agit des paramètres et des commandes suivants :</p>
+<div class="literalblock">
+<div class="content">
+<pre> Settings and commands for the Value  service level:
+* Exemple de commande :</pre>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Exemple de commande :</p>
-</li>
-</ul>
 </div>
 <div class="literalblock">
 <div class="content">

@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/fr-fr/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
   <script src='/fr-fr/keystone-staas/js/clouddocs.js'></script>
   <script src='/fr-fr/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/fr-fr/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Commencez</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Découvrez Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Services complémentaires</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tiering des données"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> En savoir plus sur les niveaux de service</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Qualité de service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Facturation</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tarification Keystone"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Infrastructure Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Détails de l'infrastructure"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Faites plus avec les services Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone et Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:28:36 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
     
   
 
@@ -920,34 +908,28 @@
 </p>
 
 <div class="paragraph lead">
-<p>Le service NetApp Keystone (Keystone) inclut une fonctionnalité de Tiering avec vos services de blocs et de fichiers souscrits qui identifient les données moins fréquemment utilisées et les hiérarchise dans un stockage à froid qui est détenu, déployé et géré par NetApp.</p>
+<p>Par défaut, les services de base Keystone incluent des fonctionnalités de Tiering avec vos services de fichiers et de blocs souscrits qui identifient les données moins fréquemment utilisées et les hiérarchise dans un stockage à froid qui est détenu, déployé et géré par NetApp. Vous pouvez utiliser le Tiering à titre d&#8217;extension si vous souhaitez hiérarchiser vos données inactives vers n&#8217;importe quel stockage non NetApp, tel que tout stockage cloud d&#8217;entreprise.</p>
 </div>
 <div class="paragraph">
-<p>Vous pouvez vous abonner à ce module complémentaire dans le cadre de votre abonnement Keystone. Pour plus d&#8217;informations sur le service de stockage de base et de stockage cloud, voir <a href="../concepts/supported-storage-services.html">"Services de stockage pris en charge"</a></p>
+<p>Le service d&#8217;extension de Tiering n&#8217;est requis que lorsque les données sont envoyées vers un stockage non-NetApp, tel que AWS S3, Azure Blob et EMC ECS.</p>
 </div>
 <div class="paragraph">
-<p>Pour plus d&#8217;informations sur les niveaux de service, reportez-vous à la section <a href="../concepts/service-levels.html">"Niveaux de service dans Keystone"</a></p>
+<p>Pour plus d&#8217;informations sur le service de stockage de base et de stockage cloud, voir <a href="../concepts/supported-storage-services.html">"Services de stockage pris en charge"</a>.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/keystone-staas/images/note.svg" alt="Note">
-</td>
-<td class="content">
-Le Tiering des données vers la cible de stockage NetApp est inclus par défaut dans les niveaux de service de stockage en mode bloc et fichier. Le service d&#8217;extension est uniquement requis lorsque les données sont hiérarchisées n&#8217;importe quel stockage non-NetApp, tel que AWS S3, Azure Blob et EMC ECS.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations sur les niveaux de service, reportez-vous à la section <a href="../concepts/service-levels.html">"Niveaux de service dans Keystone"</a>.</p>
 </div>
 <div class="paragraph">
 <p>La fonctionnalité de Tiering exploite la technologie NetApp FabricPool qui permet le Tiering automatisé des données vers des tiers de stockage objet à faible coût, sur site ou hors site. Les données rarement utilisées sont ainsi automatiquement transférées vers un stockage à moindre coût sur site ou dans le cloud, en fonction des services convenus.</p>
 </div>
 <div class="paragraph">
-<p>Le service de Tiering permet le Tiering à partir de niveaux Extreme, Premium, Performance, Standard et Value Tier vers la cible objet. Le Tier actif et le Tier à froid sont mesurés et facturés séparément. Le Tiering peut être ajouté à tout moment, sans modification du prix, et offre plus de flexibilité en termes de ratio chaud/froid.</p>
+<p>Le service de Tiering complémentaire permet de Tiering depuis les niveaux Extreme, Premium, Performance, Standard et Value Tier vers la cible objet. Le Tier actif et le Tier à froid sont mesurés et facturés séparément.</p>
 </div>
 <div class="paragraph">
-<p>Passez en revue les calculs suivants pour mieux comprendre cela :</p>
+<p>Le Tiering peut être ajouté à tout moment, sans modification du prix, ce qui offre plus de flexibilité en termes de ratio chaud/froid. Le rapport entre les données fortement sollicitées et les données inactives à hiérarchiser n&#8217;est pas fixe et le nombre de blocs physiques hiérarchisés est mesuré séparément.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, consultez les calculs suivants :</p>
 </div>
 <div class="paragraph">
 <p>Si la cible pour un Tier de stockage à froid est :</p>
@@ -955,7 +937,7 @@ Le Tiering des données vers la cible de stockage NetApp est inclus par défaut 
 <div class="ulist">
 <ul>
 <li>
-<p>Tier de valeur (jusqu&#8217;à 500 Tio), Tier d&#8217;objet (500Tio), réseau SGWS existant (propriété du client) : il n&#8217;y a aucun frais supplémentaire et fait partie du service de stockage de base.</p>
+<p>Tier de valeur (jusqu&#8217;à 500 Tio), Tier d&#8217;objet (500Tio), réseau SGWS existant (propriété du client) : il n&#8217;y a aucun frais supplémentaire. Il fait partie du service de stockage de base.</p>
 </li>
 <li>
 <p>Le cloud public (AWS, Azure, Google) et tout autre stockage objet pris en charge par un tiers : la capacité de stockage supplémentaire est facturé pour ce qui est du Tier de stockage.</p>
@@ -963,7 +945,7 @@ Le Tiering des données vers la cible de stockage NetApp est inclus par défaut 
 </ul>
 </div>
 <div class="paragraph">
-<p>Les frais liés à l&#8217;abonnement à la hiérarchisation complémentaire ne sont pas des frais unique. Vous devez payer pour toute la durée de la relation de Tiering entre Keystone sur site et les services de fichiers et de blocs et la cible de stockage objet prise en charge par le fournisseur tiers.</p>
+<p>Les frais liés à l&#8217;abonnement à la hiérarchisation du service complémentaire ne sont pas des frais unique. Vous devez payer à l&#8217;IT pendant toute la durée du terme pour maintenir la relation de Tiering entre Keystone avec des services de fichiers et de blocs sur site, et la cible de stockage objet prise en charge par le tiers.</p>
 </div>
 <div class="paragraph">
 <p>Il est ainsi possible de transférer uniquement les données inactives vers un système de stockage cible moins onéreux, et non vers une infrastructure de cloud public/Hyperscalers.</p>
@@ -975,7 +957,7 @@ Le Tiering des données vers la cible de stockage NetApp est inclus par défaut 
 <img src="/us-en/keystone-staas/images/note.svg" alt="Note">
 </td>
 <td class="content">
-NetApp ne fournit pas d&#8217;infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone. Vous devez en outre les procurer auprès d&#8217;un fournisseur de services cloud hyperscale.
+NetApp ne fournit pas d&#8217;infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone : vous devez les procurer auprès d&#8217;un fournisseur de services cloud hyperscale.
 </td>
 </tr>
 </table>

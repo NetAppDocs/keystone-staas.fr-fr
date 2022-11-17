@@ -25,28 +25,8 @@
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
 
-  <!-- Controls AsciiDoctor Admonition Blocks -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/font-awesome.min.css">
-
-  <!-- Controls the shadow effect for search dropdown menu -->
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/boxshadowproperties.css">
-
-  <!-- NetApp CSS controls the technical content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netapp.css">
-
-  <!-- WWW CSS Content -->
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-luci-dotcom.min.css">
-  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/www-netapp-dotcom.css">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-critical.min.css" media="all" >
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="stylesheet" href="/fr-fr/keystone-staas/css/www-netapp-library-global-header-footer.min.css">
-
-  <!-- NetApp IE Customizations -->
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-utility.css' type='text/css'>
-  <link rel="stylesheet" href='/fr-fr/keystone-staas/css/na-sidebar.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/clouddocs.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/custom-dropdown.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/na-pagenav.css' type='text/css'>
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/keystone-staas/css/netappdocs.css">
 
   
   <link rel="stylesheet" href="/fr-fr/keystone-staas/css/landing-page.css" type="text/css">
@@ -98,11 +78,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism.css' type='text/css'>
-  <link rel='stylesheet' href='/fr-fr/keystone-staas/css/prism-netapp.css' type='text/css'>
-
-
-  <script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/keystone-staas/js/na-search.js'></script><script src='/fr-fr/keystone-staas/js/na-pagenav.js'></script><script src='/fr-fr/keystone-staas/js/na-utility.js'></script>
   <script src='/fr-fr/keystone-staas/js/clouddocs.js'></script>
   <script src='/fr-fr/keystone-staas/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -141,6 +117,17 @@
           $("#expandAll").click(function(e) {
               e.preventDefault();
               $("#mysidebar").navgoco('toggle', true);
+          });
+
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/fr-fr/keystone-staas"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
           });
 
       });
@@ -612,7 +599,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Commencez</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Découvrez Keystone"
@@ -656,7 +643,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Services complémentaires</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tiering des données"
@@ -700,7 +687,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> En savoir plus sur les niveaux de service</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Qualité de service"
@@ -723,7 +710,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Facturation</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Tarification Keystone"
@@ -781,7 +768,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Infrastructure Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Détails de l'infrastructure"
@@ -825,7 +812,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Faites plus avec les services Keystone</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Keystone et Cloud Manager"
@@ -858,6 +845,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -909,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-10-07 21:28:36 +0000">10/07/2022</time>
+    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
     
   
 
@@ -922,16 +910,19 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Le service Keystone prend en charge les types de stockage de base d&#8217;ONTAP, comme le stockage bloc et de fichiers. Il prend également en charge le stockage objet pour la plateforme StorageGRID. Les fonctionnalités de gestion des données pour Cloud Volumes ONTAP sont également prises en charge.</p>
+<p>Le service Keystone prend en charge les types de stockage de base de ONTAP, de fichier et de bloc. Il prend également en charge le stockage objet pour la plateforme StorageGRID et ses fonctionnalités de gestion des données pour Cloud Volumes ONTAP.</p>
 </div>
 <div class="paragraph">
-<p>Pour plus d&#8217;informations sur les niveaux de service, reportez-vous à la section <a href="../concepts/service-levels.html">"Niveaux de service dans Keystone"</a></p>
+<p>Pour plus d&#8217;informations sur les niveaux de service, reportez-vous à la section <a href="../concepts/service-levels.html">"Niveaux de service dans Keystone"</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="services-de-stockage-de-base">Services de stockage de base</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Les services de stockage de base de Keystone proposent des services de protection des données en exploitant les technologies NetApp, telles que SnapMirror, SnapVault et Snapshot, ainsi que des fonctionnalités de Tiering sur les cibles de stockage NetApp prises en charge pour les services de stockage bloc et de fichiers. Vous pouvez en outre opter pour des services d&#8217;extension pour le Tiering et la protection des données. Pour plus d&#8217;informations sur les services complémentaires, reportez-vous à la section <a href="../concepts/adp.html">"Protection avancée des données"</a> et <a href="../concepts/data-tiering.html">"Tiering des données"</a>.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -987,7 +978,7 @@ Le Tiering des données vers la cible de stockage NetApp est inclus par défaut 
 </table>
 </div>
 <div class="paragraph">
-<p>Pour plus d&#8217;informations sur le Tiering des données, voir <a href="../concepts/data-tiering.html">"Tiering des données"</a>Pour plus d&#8217;informations sur les services de protection des données, reportez-vous à la section <a href="../concepts/adp.html">"Protection avancée des données"</a></p>
+<p>Pour plus d&#8217;informations sur le Tiering des données, voir <a href="../concepts/data-tiering.html">"Tiering des données"</a>. Pour plus d&#8217;informations sur les services de protection des données, reportez-vous à la section <a href="../concepts/adp.html">"Protection avancée des données"</a>.</p>
 </div>
 </div>
 </div>
@@ -995,7 +986,7 @@ Le Tiering des données vers la cible de stockage NetApp est inclus par défaut 
 <h2 id="services-de-stockage-cloud">Services de stockage cloud</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Keystone prend en charge les <em>fonctionnalités de gestion de données pour Cloud Volumes ONTAP, prises en charge sur AWS, Azure et Google</em>. Ce service peut être associé à vos abonnements existants. Le service cloud peut être inclus à tout moment pendant la durée du service. Toutefois, si vous ne prévoyez pas de renouveler votre abonnement, vous ne pouvez pas inclure le service cloud au cours des 90 derniers jours de votre abonnement.</p>
+<p>Keystone prend en charge les fonctionnalités de gestion des données pour Cloud Volumes ONTAP sur Amazon Web Services (AWS), Microsoft Azure et Google Cloud Platform. Ce service peut être associé à vos abonnements existants. Le service cloud peut être inclus à tout moment pendant la durée du service. Toutefois, si vous ne prévoyez pas de renouveler votre abonnement, vous ne pouvez pas inclure le service cloud au cours des 90 derniers jours de votre abonnement.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1004,7 +995,7 @@ Le Tiering des données vers la cible de stockage NetApp est inclus par défaut 
 <img src="/us-en/keystone-staas/images/note.svg" alt="Note">
 </td>
 <td class="content">
-NetApp ne fournit pas d&#8217;infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone. Vous devez en outre les procurer auprès d&#8217;un fournisseur de services cloud hyperscale.
+NetApp ne fournit pas d&#8217;infrastructure de stockage et de calcul basée sur des hyperscalers dans vos abonnements Keystone : vous devez les procurer auprès d&#8217;un fournisseur de services cloud hyperscale.
 </td>
 </tr>
 </table>
