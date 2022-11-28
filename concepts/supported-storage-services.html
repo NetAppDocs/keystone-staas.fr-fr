@@ -623,11 +623,11 @@
         Metrics et définitions des services Keystone
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Types de stockage pris en charge dans Keystone"
+      data-pdf-filename="Services de stockage pris en charge dans Keystone"
       data-li-level="2#" 
       class="  active "
     ><a class="na-navbar-padding" href="/fr-fr/keystone-staas/concepts/supported-storage-services.html">
-        Types de stockage pris en charge dans Keystone
+        Services de stockage pris en charge dans Keystone
       </a></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Niveaux de service dans Keystone"
@@ -815,18 +815,18 @@
       <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
-      data-pdf-filename="Keystone et Cloud Manager"
+      data-pdf-filename="Keystone et BlueXP"
       data-li-level="2#" 
       class=" "
     ><a class="na-navbar-padding" href="/fr-fr/keystone-staas/integrations/keystone-cm.html">
-        Keystone et Cloud Manager
+        Keystone et BlueXP
       </a></li><li 
       data-pdf-exists="true" 
-      data-pdf-filename="Keystone et le conseiller digital Active IQ"
+      data-pdf-filename="Keystone et conseiller digital"
       data-li-level="2#" 
       class=" "
     ><a class="na-navbar-padding" href="/fr-fr/keystone-staas/integrations/keystone-aiq.html">
-        Keystone et le conseiller digital Active IQ
+        Keystone et conseiller digital
       </a></li></ul></li><li 
       data-pdf-exists="true" 
       data-pdf-filename="Mentions légales"
@@ -897,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
+    <time datetime="2022-11-28 10:31:10 +0000">11/28/2022</time>
     
   
 
@@ -921,7 +921,7 @@
 <h2 id="services-de-stockage-de-base">Services de stockage de base</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Les services de stockage de base de Keystone proposent des services de protection des données en exploitant les technologies NetApp, telles que SnapMirror, SnapVault et Snapshot, ainsi que des fonctionnalités de Tiering sur les cibles de stockage NetApp prises en charge pour les services de stockage bloc et de fichiers. Vous pouvez en outre opter pour des services d&#8217;extension pour le Tiering et la protection des données. Pour plus d&#8217;informations sur les services complémentaires, reportez-vous à la section <a href="../concepts/adp.html">"Protection avancée des données"</a> et <a href="../concepts/data-tiering.html">"Tiering des données"</a>.</p>
+<p>Les services de stockage de base pour les fichiers et les blocs offrent des services de protection des données par défaut en exploitant les technologies NetApp, telles que SnapMirror, SnapVault et Snapshot. Le Tiering des données vers la cible de stockage NetApp est également inclus par défaut dans les niveaux de service de stockage en mode bloc et fichier. Vous pouvez en outre opter pour des services d&#8217;extension pour le Tiering et la protection des données. Pour plus d&#8217;informations sur les services complémentaires, reportez-vous à la section <a href="../concepts/adp.html">"Protection avancée des données"</a> et <a href="../concepts/data-tiering.html">"Tiering des données"</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -945,7 +945,7 @@
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Basée sur la technologie ONTAP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fonctionnalités ONTAP prises en charge : copies FlexVol FlexGroup Snapshot copies SnapMirror (asynchrones) SnapVault SnapLock Enterprise FabricPool/Tiering cloud SnapCenter de clonage (la licence est incluse, mais cela ne fait pas partie des services Keystone et aucune gestion garantie n&#8217;est fournie)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">NFS, CIFS et S3 (utilisé pour la cible FabricPool)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS et CIFS.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -953,7 +953,7 @@
 </div></div></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Basée sur la technologie ONTAP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fonctionnalités ONTAP prises en charge : copies FlexVol FlexGroup Snapshot copies SnapMirror (asynchrones) SnapVault SnapLock Enterprise FabricPool/Tiering cloud SnapCenter de clonage (la licence est incluse, mais cela ne fait pas partie des services Keystone et aucune gestion garantie n&#8217;est fournie)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">FC, iSCSI et S3 (utilisé pour la cible FabricPool)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FC et iSCSI</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
@@ -965,21 +965,6 @@
 </tr>
 </tbody>
 </table>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/keystone-staas/images/note.svg" alt="Note">
-</td>
-<td class="content">
-Le Tiering des données vers la cible de stockage NetApp est inclus par défaut dans les niveaux de service de stockage en mode bloc et fichier.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Pour plus d&#8217;informations sur le Tiering des données, voir <a href="../concepts/data-tiering.html">"Tiering des données"</a>. Pour plus d&#8217;informations sur les services de protection des données, reportez-vous à la section <a href="../concepts/adp.html">"Protection avancée des données"</a>.</p>
-</div>
 </div>
 </div>
 <div class="sect1">
