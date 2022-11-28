@@ -16,7 +16,7 @@ summary: Add-on, Détails des services supplémentaires, Tiering des données
 [role="lead"]
 Par défaut, les services de base Keystone incluent des fonctionnalités de Tiering avec vos services de fichiers et de blocs souscrits qui identifient les données moins fréquemment utilisées et les hiérarchise dans un stockage à froid qui est détenu, déployé et géré par NetApp. Vous pouvez utiliser le Tiering à titre d'extension si vous souhaitez hiérarchiser vos données inactives vers n'importe quel stockage non NetApp, tel que tout stockage cloud d'entreprise.
 
-Le service d'extension de Tiering n'est requis que lorsque les données sont envoyées vers un stockage non-NetApp, tel que AWS S3, Azure Blob et EMC ECS.
+Le service d'extension de Tiering n'est nécessaire que lorsque les données sont envoyées vers un stockage non-NetApp, tel qu'Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP), et d'autres systèmes de stockage objet tiers compatibles S3 pris en charge.
 
 Pour plus d'informations sur le service de stockage de base et de stockage cloud, voir link:../concepts/supported-storage-services.html["Services de stockage pris en charge"].
 
