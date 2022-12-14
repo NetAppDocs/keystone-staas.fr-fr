@@ -136,6 +136,7 @@ Notez ces points avant de calculer la taille du bloc à l'aide des paramètres s
 * TB = 1000 Go ; GB = 1000 Mo ; MB = 1000 Ko ; KB = 1000 octets ; par base 10
 
 
+.Calcul de la taille du bloc d'échantillons
 Pour calculer le débit du niveau de service a, par exemple le niveau de service «Extreme» :
 
 * IOPS à maximum : 12,288

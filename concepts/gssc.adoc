@@ -48,6 +48,7 @@ Pour plus d'informations, voir :
 
 Le centre de support et de services NetApp Global Services (GSSC) surveille l'état de vos produits et services abonnés, fournit un support à distance et collabore avec votre responsable de la réussite Keystone. Toutes les personnes qui surveillent les produits associés aux bons d'abonnement Keystone appartiennent aux États-Unis au américain.
 
+.Gestionnaire de réussite de Keystone
 Le responsable réussite de Keystone est une Vivant sur le sol américain. Les responsabilités sont précisées dans votre contrat NetApp Keystone.
 
 Pour plus d'informations, reportez-vous à la section link:../concepts/uscs.html["ÉTATS-UNIS Soutien à citoyens (USCS)"].
