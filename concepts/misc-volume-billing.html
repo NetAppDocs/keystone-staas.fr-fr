@@ -897,7 +897,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-17 09:48:14 +0000">11/17/2022</time>
+    <time datetime="2022-12-15 15:06:29 +0000">12/15/2022</time>
     
   
 
@@ -947,6 +947,7 @@ Remarque :
 <p>Si vous surveillez les clusters via ONTAP System Manager (System Manager) ou Active IQ Unified Manager (Unified Manager), vous risquez de ne pas concorder avec le taux de consommation signalé sur ces outils et sur Keystone. System Manager et Unified Manager ne signalent pas les volumes sur le cluster (distant) en miroir, et ce faisant, indiquent la moitié des metrics de consommation que le service Keystone fournit.</p>
 </div>
 <div class="paragraph">
+<div class="title">Exemple :</div>
 <p>Les sites A et B sont configurés dans une configuration MetroCluster. Lorsqu&#8217;un utilisateur crée un volume de 10 To sur le site A, un volume identique de 10 To est créé sur le site B. Keystone identifie les 10 To de consommation sur chaque site pour une augmentation totale de 20 To. System Manager et Unified Manager créent un volume de 10 To créé sur le site A, mais ne signalent pas un volume de 10 To dans le site B.</p>
 </div>
 <div class="paragraph">
