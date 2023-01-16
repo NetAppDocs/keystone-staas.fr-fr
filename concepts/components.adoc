@@ -14,7 +14,7 @@ summary: 'Composants de l"infrastructure'
 
 
 [role="lead"]
-Cette section répertorie les composants requis pour activer les services NetApp Keystone dans votre environnement.
+Cette section répertorie les composants requis pour activer les services NetApp Keystone STaaS dans votre environnement.
 
 
 

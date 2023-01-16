@@ -14,10 +14,10 @@ summary: Calculs et définitions de metrics des services Keystone
 
 
 [role="lead"]
-Les termes et définitions suivants sont utilisés dans le service NetApp Keystone (Keystone) pour mesurer les metrics :
+Les termes et définitions suivants sont utilisés dans le service STaaS NetApp Keystone (Keystone) pour mesurer les indicateurs :
 
 * Unités de mesure de la capacité : Gio, Tio et Pio
-* Densité d'E/S : nombre d'opérations d'entrée/sortie traitées par seconde en fonction de l'espace total consommé par la charge de travail, en téraoctets.
+* Densité d'E/S : nombre d'opérations d'entrée/sortie traitées par seconde en fonction de l'espace total consommé par la charge de travail, et de tébioctets.
 * Disponibilité du service
 * Durabilité dans un accès précis aux données
 * Latence et vitesse
@@ -27,8 +27,8 @@ Les termes et définitions suivants sont utilisés dans le service NetApp Keysto
 
 == Mesure des metrics
 
-* *Mesure de la capacité en Gio, Tio et PIB.* : mesures de la capacité de stockage des données utilisant la base de 1024 (1 Gio = 1024^3^ octets, 1 Tio = 1024^4^ octets et 1 Pio = 1024^5^ octets).
-* *Operations Counter Chart: IOPS/Tio* les opérations de protocole par seconde demandées par l'application, divisées par la taille du volume utilisé par les charges de travail.
+* *Mesure de la capacité en Gio, Tio et PIB* : mesures de la capacité de stockage des données utilisant la base de 1024 (1 Gio = 1024^3^ octets, 1 Tio = 1024^4^ octets et 1 Pio = 1024^5^ octets).
+* *Diagramme des compteurs d'opérations en IOPS/Tio* : opérations de protocole par seconde demandées par l'application, divisées par la taille du volume utilisé par les charges de travail.
 * *Disponibilité* : mesuré en pourcentage du nombre de demandes d'E/S auxquelles le service a répondu avec succès, divisé par le nombre total de demandes d'E/S faites au service. Cette mesure est mesurée à la ligne de démarcation du service au cours d'un mois et n'inclut pas les temps d'arrêt programmés ou l'indisponibilité des installations, du réseau ou des autres services fournis par le client.
 * *Durabilité* : pourcentage de données consultées sans perte de fidélité, à l'exclusion de la suppression ou de la corruption causées par le client.
 * *Latence* : temps de traitement d'une demande d'E/S reçue d'un client, mesuré à la ligne de démarcation du service (port E/S du contrôleur de stockage).

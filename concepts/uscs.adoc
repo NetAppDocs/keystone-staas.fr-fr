@@ -28,7 +28,7 @@ Le centre de support et de services NetApp Global Services (GSSC) surveille l'é
 
 == Gestionnaire de réussite de Keystone
 
-Le responsable réussite de Keystone est une Vivant sur le sol américain. Leurs responsabilités sont précisées dans votre contrat NetApp Keystone.
+Le responsable de la réussite Keystone (KSM) est un département américain Vivant sur le sol américain. Leurs responsabilités sont précisées dans votre contrat NetApp Keystone.
 
 
 

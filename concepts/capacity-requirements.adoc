@@ -14,7 +14,7 @@ summary: Exigences de capacité pour les niveaux de services
 
 
 [role="lead"]
-Les exigences de capacité pour chaque niveau de service varient en fonction du service de stockage, tel que le stockage de fichiers, de blocs et d'objets.
+Les exigences de capacité des niveaux de service STaaS Keystone diffèrent avec le stockage de fichiers, bloc, objet ou cloud pris en charge par l'abonnement Keystone STaaS.
 
 
 
@@ -46,7 +46,7 @@ Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pend
 
 == Exigences de capacité minimale pour le stockage objet
 
-Vous pouvez voir les exigences de capacité minimale pour le service de stockage objet dans le tableau ci-dessous :
+Vous trouverez les exigences de capacité minimale pour le stockage objet dans le tableau ci-dessous :
 
 |===
 
@@ -99,7 +99,7 @@ Sans objet
 Prenez note des clauses suivantes pour les ajustements de capacité :
 
 * La capacité peut être ajoutée à tout moment pendant la durée du contrat, sauf pour les 90 derniers jours de la durée du contrat, par incréments par niveau de service comme indiqué dans les tableaux de la section précédente. L'ajout de capacités et/ou de services est autorisé dans les 90 derniers jours de la durée du contrat, tant qu'il y a consentement au renouvellement du service. Tout ajout de capacité ou de nouveaux services sur site ou dans le cloud peut co-term avec l'échéance actuelle. La facture qui vous a été envoyée après l'activation des nouveaux services reflète la facture révisée. La capacité engagée des services cloud ne peut en aucun cas être réduite pendant la durée de l'abonnement. Pendant ce temps, la capacité engagée et les dépenses engagées dans les services sur site pendant la durée du contrat peuvent être réduites en fonction de certains critères définis dans la section suivante _réduction de la capacité_.
-* 20 % de la capacité en rafale est disponible sur chaque site. Toute utilisation en rafale est facturée uniquement pour cette période de facturation. Si vous avez besoin d'augmenter la capacité de rafale de plus de 20 %, contactez le service de support.
+* Une capacité en rafale est disponible sur chaque site, en fonction du contrat Keystone. Généralement, il dépasse de 20 % la capacité validée pour un niveau de service. Toute utilisation en rafale est facturée uniquement pour cette période de facturation. Si vous avez besoin d'une rafale supplémentaire supérieure à la capacité convenue, contactez l'assistance.
 * La capacité engagée peut être modifiée pendant une durée du contrat, seulement dans certaines conditions, comme décrit dans la section suivante _réduction de la capacité_.
 * Il est possible d'augmenter la capacité ou de passer à un niveau de service supérieur pendant une période d'abonnement. Toutefois, il est interdit de passer d'un niveau de service supérieur à un niveau de service inférieur.
 * Toute demande de changement au cours des 90 derniers jours de la durée du service nécessite le renouvellement du service pour un an minimum.

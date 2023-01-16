@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: installation/linux-installation.html 
+keywords: Linux installation Keystone, Linux Collector installation 
+summary: Installation de Keystone Collector sur Linux 
+---
+= Installation de Keystone Collector sur des systèmes Linux
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le logiciel Keystone Collector est distribué par un référentiel logiciel YUM en ligne. Vous devez importer et installer le fichier sur un serveur Linux.
+
+Procédez comme suit pour installer le logiciel sur votre serveur Linux :
+
+. SSH vers le serveur Keystone Collector et passez à `root` privilège.
+. Importer la signature publique Keystone :
+`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
+. Vérifiez que le bon certificat public a été importé en vérifiant l'empreinte de la plate-forme de facturation Keystone dans la base de données RPM :
+`# rpm -qa gpg-pubkey --qf '%_<Description>_'|gpg --show-keys --fingerprint`La bonne empreinte se présente comme suit :
+`90B3 83AF E07B 658A 6058  5B4E 76C2 45E4 33B6 C17D`
+. Téléchargez le `keystonerepo.rpm` fichier :
+`# wget https://keystone.netapp.com/repo/keystonerepo.rpm`
+. Vérifiez l'authenticité du fichier :
+`rpm --checksig -v keystonerepo.rpm`La signature d'un fichier authentique se présente comme suit :
+`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+. Installez le fichier de référentiel du logiciel YUM :
+`# yum install keystonerepo.rpm`
+. Lorsque Keystone repo est installé, installez le package trapèze-Collector via le gestionnaire de package YUM :
+`# yum install keystone-collector`
+

@@ -14,7 +14,7 @@ summary: Calendriers de facturation en trapèze
 
 
 [role="lead"]
-Les abonnements Keystone sont facturés chaque mois et chaque année.
+Les abonnements Keystone STaaS sont facturés chaque mois et chaque année.
 
 
 

@@ -22,6 +22,8 @@ image:nkfsosm_image2.png["Erreur : image graphique manquante"]
 
 Keystone fournit une capacité de stockage avec des niveaux de service prédéfinis pour les types de données en mode bloc, fichier et objet qui peuvent être déployés sur site et exploités par NetApp, un partenaire ou le client. Keystone peut être utilisé en association avec des services cloud NetApp, comme Cloud Volumes ONTAP, qui peut être déployé sur un environnement Hyperscalers de votre choix.
 
+Un abonnement Keystone est associé à des plans tarifaires. Il peut y avoir plusieurs forfaits tarifaires associés à un seul abonnement.
+
 
 
 == Stockage à la demande Keystone

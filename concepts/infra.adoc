@@ -14,7 +14,7 @@ summary: Infrastructure Keystone
 
 
 [role="lead"]
-Cette section décrit l'infrastructure, l'architecture et l'application de gestion NetApp Keystone pour les environnements NetApp et ceux utilisés par le client.
+Cette section décrit l'infrastructure STaaS NetApp Keystone, l'architecture et l'application de gestion des environnements NetApp et des environnements client.
 
 L'infrastructure, la conception, le choix de la technologie et les composants Keystone sont exclusivement hébergés par NetApp. NetApp se réserve le droit de prendre les mesures suivantes :
 

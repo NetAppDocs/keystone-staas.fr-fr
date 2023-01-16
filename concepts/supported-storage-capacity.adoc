@@ -40,7 +40,7 @@ Pendant la durée d'un abonnement, vous pouvez modifier les capacités engagées
 
 * La capacité engagée peut être réduite en fonction de certaines conditions. Pour plus d'informations, reportez-vous à la section link:../concepts/capacity-requirements.html["Réduction de capacité"].
 * La capacité engagée ne peut pas être augmentée 90 jours avant l'expiration de votre abonnement, à moins que l'abonnement ne soit renouvelé pour une durée supplémentaire de 12 mois.
-* Vous pouvez demander des modifications de la capacité engagée via l'interface BlueXP ou via Keystone Success Manager. Pour plus d'informations sur la demande de modifications, reportez-vous à la section link:../concepts/gssc.html["Centre de support NetApp Global Services"].
+* Vous pouvez demander des modifications de la capacité engagée via l'interface BlueXP ou via Keystone Success Manager (KSM). Pour plus d'informations sur la demande de modifications, reportez-vous à la section link:../concepts/gssc.html["Centre de support NetApp Global Services"].
 
 
 
@@ -58,9 +58,9 @@ Il s'agit de la capacité consommée qui a dépassé la capacité utilisée.
 
 NOTE: Remarque :
 
-* Le service Keystone fournit une capacité de 20 % supérieure à la capacité engagée.
+* Le service Keystone fournit une capacité supplémentaire à utiliser en plus de la capacité engagement. Il s'agit de la capacité en rafale.
 * En effet, la capacité en rafale peut être consommée selon une base élastique et elle est facturée quotidiennement pour la moyenne utilisée.
-* La capacité en rafale peut atteindre 20 % au même rythme que la capacité engagée.
+* En général, la capacité en rafale peut dépasser de 20 % la capacité engagée. Elle est facturée au même rythme que la capacité engagée.
 
 
 

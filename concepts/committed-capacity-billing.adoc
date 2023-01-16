@@ -14,8 +14,8 @@ summary: Capacités de stockage prises en charge
 
 
 [role="lead"]
-La facturation de NetApp Keystone (Keystone) dépend de la capacité qui vous est engagée dans le cadre de l'abonnement au service Keystone.
+La facturation de NetApp Keystone (Keystone) repose sur la capacité dont vous avez besoin dans le cadre de l'abonnement Keystone.
 
-La capacité d'engagement fait référence aux capacités des différents services dans un seul abonnement, comme vous l'avez accepté par vous et NetApp/partenaire. Cette capacité est indiquée sur chaque commande Keystone et facturée indépendamment de la consommation réelle.
+La capacité dédiée correspond à la capacité engagée pour un niveau de service donné lors de l'achat de l'abonnement. La capacité engagée peut être la capacité totale pour les différents niveaux de service dans un seul abonnement, comme vous l'avez accepté par vous et NetApp/partenaire. Cette capacité est indiquée sur chaque commande Keystone et est facturée, indépendamment de la consommation de la capacité réelle.
 
 Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"].

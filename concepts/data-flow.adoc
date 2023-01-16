@@ -14,7 +14,7 @@ summary: Flux de données Keystone
 
 
 [role="lead"]
-Les systèmes Keystone rencontrent le flux de données via Keystone Collector, le trafic et la surveillance des flux de données.
+Les systèmes STaaS Keystone rencontrent le flux de données via Keystone Collector, et surveillent les flux de données.
 
 
 

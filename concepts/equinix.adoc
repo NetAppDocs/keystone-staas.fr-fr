@@ -14,7 +14,7 @@ summary: Keystone et Equinix
 
 
 [role="lead"]
-NetApp s'est associé à Equinix pour héberger les services NetApp Keystone dans un data Center Equinix afin de fournir une solution unifiée à vos besoins.
+NetApp s'est associé à Equinix pour héberger les services NetApp Keystone STaaS dans un data Center Equinix afin de fournir une solution unifiée qui vous convient.
 
 Les services de colocation Keystone (Co-Lo) optimisés par Equinix restent inchangés par rapport à l'offre de service Keystone standard.
 

@@ -14,10 +14,10 @@ summary: Modèles opérationnels dans Keystone
 
 
 [role="lead"]
-NetApp Keystone (Keystone) propose deux modèles opérationnels de prestation de services : le modèle géré par les partenaires et le modèle géré par le client.
+Le service NetApp Keystone (Keystone) STaaS offre deux modèles opérationnels pour la prestation de services : le modèle géré par les partenaires et le modèle géré par le client.
 
 * *Modèle géré par un partenaire* : un partenaire ou un fournisseur de services exploite les services pour ses clients finaux. Pour NetApp, le partenaire est la partie sous-traitance référencée. Les locataires sont des clients de partenaires et n'ont aucune relation de facturation avec NetApp. Un modèle géré par un partenaire dispose d'un environnement mutualisé, où les locataires et clients finaux/sous-locataires disposent de leurs propres abonnements facturés par le partenaire. L'administrateur partenaire effectue les tâches administratives de tous les locataires.
-* *Modèle exploité par le client* : en tant que client, vous pouvez vous abonner aux services Keystone en fonction des tiers de performance et des types de service de stockage sélectionnés. NetApp définit l'architecture et les produits, et déploie Keystone dans vos locaux. Vous devez gérer l'infrastructure au moyen de vos ressources de stockage et IT. En tant que client, vous êtes le locataire ou le sous-locataire de NetApp ou d'un partenaire/fournisseur de services. Selon votre contrat, vous pouvez augmenter le nombre de demandes de service traitées par NetApp ou votre fournisseur de services. Un administrateur de votre côté peut effectuer les tâches administratives de votre site (environnement). Ces tâches sont liées aux utilisateurs de votre environnement.
+* *Modèle exploité par le client* : en tant que client, vous pouvez vous abonner aux services Keystone en fonction des niveaux de service et du stockage sélectionnés. NetApp définit l'architecture et les produits, et déploie Keystone dans vos locaux. Vous devez gérer l'infrastructure au moyen de vos ressources de stockage et IT. En tant que client, vous êtes le locataire ou le sous-locataire de NetApp ou d'un partenaire/fournisseur de services. Selon votre contrat, vous pouvez augmenter le nombre de demandes de service traitées par NetApp ou votre fournisseur de services. Un administrateur de votre côté peut effectuer les tâches administratives de votre site (environnement). Ces tâches sont liées aux utilisateurs de votre environnement.
 
 
 

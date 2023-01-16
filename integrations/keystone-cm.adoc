@@ -18,7 +18,7 @@ Si vous achetez un service cloud sur votre abonnement Keystone, vous pouvez acc�
 
 En tant que client Keystone, si vous disposez d'un abonnement Cloud Volumes ONTAP, vous pouvez utiliser les services Keystone pour facturer votre utilisation de Cloud Volumes ONTAP et consulter vos informations de facturation et de consommation via BlueXP.
 
-Pour cela, vous devez créer un ou plusieurs comptes BlueXP et les lier à votre compte Keystone. Pendant que vous achetez un service cloud via Keystone, vous devez fournir les informations de vos comptes BlueXP à votre gestionnaire de réussite Keystone. Cela permet de mesurer et de facturer correctement l'utilisation de vos services cloud via votre abonnement Keystone.
+Pour cela, vous devez créer un ou plusieurs comptes BlueXP et les lier à votre compte Keystone. Pendant que vous achetez un service cloud via Keystone, vous devez fournir les détails de vos comptes BlueXP à votre Keystone Success Manager (KSM). Cela permet de mesurer et de facturer correctement l'utilisation de vos services cloud via votre abonnement Keystone.
 
 Pour plus d'informations, consultez les liens suivants dans les documents BlueXP :
 

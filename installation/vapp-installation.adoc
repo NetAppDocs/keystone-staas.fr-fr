@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: installation/vapp-installation.html 
+keywords: install, VMware 
+summary: Installation de Keystone Collector sur des systèmes VMware 
+---
+= Déployez Keystone Collector sur des systèmes VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le déploiement de Keystone Collector sur des systèmes VMware vSphere inclut le téléchargement du modèle OVA, le déploiement du modèle à l'aide de l'assistant *Deploy OVF Template*, la vérification de l'intégrité des certificats et la vérification de l'état de préparation de la machine virtuelle.
+
+
+
+== Déploiement du modèle OVA
+
+Voici la procédure à suivre :
+
+.Étapes
+. Téléchargez le fichier OVA à partir de https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova[] Et stockez-les sur votre système VMware vSphere.
+. Sur votre système VMware vSphere, accédez à la vue *VM et modèles*.
+. Cliquez avec le bouton droit de la souris sur le dossier requis pour la machine virtuelle (VM) (ou le centre de données, si vous n'utilisez pas les dossiers VM) et sélectionnez *déployer le modèle OVF*.
+. À l'étape 1_ de l'assistant *déployer modèle OVF*, cliquez sur *Sélectionner et modèle OVF* pour sélectionner le fichier téléchargé `KeystoneCollector-latest.ova` fichier.
+. Sous _Etape 2_, spécifiez le nom de la VM et sélectionnez le dossier VM.
+. Sur _Etape 3_, spécifiez la ressource de calcul requise pour exécuter la machine virtuelle.
+. Sur _Etape 4 : passez en revue les détails_, vérifiez l'exactitude et l'authenticité de l'OVA. Le nom du produit doit apparaître sous la forme _NetApp Keystone Collector_.image:ova-deploy.png[""]VCenter valide l'intégrité du contenu du fichier OVA et fournit une dirésumé de signature de code valide pour les fichiers contenus dans le fichier OVA. Toutefois, il ne valide pas l'authenticité du certificat de signature de code. Pour vérifier l'intégrité, téléchargez le certificat de signature complète et vérifiez-le par rapport au certificat public publié par Keystone.
++
+.. Cliquez sur le lien *Publisher* pour télécharger le certificat de signature complet.
+.. Téléchargez le certificat public _Keystone Billing_ : https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem[].
+.. Vérifiez l'authenticité du certificat de signature OVA par rapport au certificat public en utilisant OpenSSL :
+`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
+
+
+. À l'étape _5_ de l'assistant *Deploy OVF Template*, indiquez l'emplacement de stockage de la machine virtuelle.
+. Sur _Etape 6_, sélectionnez le réseau de destination de la VM à utiliser.
+. Sur _Etape 7 Personnaliser le modèle_, spécifiez l'adresse réseau initiale et le mot de passe du compte utilisateur admin.
++
+
+NOTE: Le mot de passe administrateur est stocké dans un format réversible dans vCenter et doit être utilisé comme identifiant de bootstrap pour accéder au système VMware vSphere initial. Lors de la configuration logicielle initiale, ce mot de passe administrateur doit être modifié. Le masque de sous-réseau de l'adresse IPv4 doit être fourni en notation CIDR. Par exemple, utilisez la valeur 24 pour un masque de sous-réseau de 255.255.255.0.
+
+. À l'étape _8 prêt à compléter_ de l'assistant *déployer modèle OVF*, examinez la configuration et vérifiez que vous avez correctement défini les paramètres pour le déploiement OVA.
+
+
+Une fois la machine virtuelle déployée à partir du modèle et sous tension, ouvrez une session SSH sur la machine virtuelle et connectez-vous avec les identifiants d'administration temporaires pour vérifier que la machine virtuelle est prête pour la configuration.
+
+
+
+== Configuration initiale du système
+
+Effectuez ces étapes sur vos systèmes VMware vSphere pour obtenir une configuration initiale de serveurs Keystone Collector déployés via OVA :
+
+
+NOTE: Lors de la réalisation du déploiement, vous pouvez utiliser l'utilitaire TUI (Keystone Collector Management terminal User interface) pour effectuer les activités de configuration et de surveillance. Vous pouvez utiliser diverses commandes du clavier, telles que les touches entrée et flèche, pour sélectionner les options et naviguer dans cette TUI.
+
+. Ouvrez une session SSH sur le serveur Keystone Collector. Lors de la connexion, le TUI s'affiche. Vous pouvez également lancer la TUI manuellement en exécutant la `keystone-collector-tui` Commande CLI.
+. Si nécessaire, configurez les détails du proxy dans la section *Configuration > réseau* du TUI.
+. Mettez à jour le système/collecteur à l'aide de l'option *Maintenance > mettre à jour le système*. Certains miroirs sélectionnés peuvent ne pas être disponibles et les détails du système sont mis à jour après quelques tentatives.
+. Configurez le nom d'hôte du système, l'emplacement et le serveur NTP dans la section *Configuration > système*.
+. Mettez à jour le mot de passe administrateur dans la section *Maintenance > utilisateur*.
+. Marquez la configuration initiale d'OVA comme complète dans la section *Configuration > Avancé*.
+

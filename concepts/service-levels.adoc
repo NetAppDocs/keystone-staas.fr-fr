@@ -14,23 +14,25 @@ summary: Niveaux de service pris en charge
 
 
 [role="lead"]
-Keystone propose des services dans un modèle par abonnement en fournissant une capacité de stockage dédiée et en l'associant à des niveaux de services prédéfinis.
+Le service Keystone STaaS offre la capacité de stockage des données avec des niveaux de service (niveaux de service) prédéfinis sur la base d'un abonnement.
 
-Chaque niveau de service est défini par sa densité d'E/S, qui correspond au rapport de performance (opérations d'entrée/sortie par seconde [IOPS]) et de stockage utilisé (Tio de données stockées), soit IOPS/Tio.
+Les niveaux de service sont définis selon :
 
-Chaque volume géré par les services Keystone est associé à un niveau de service. Toutes les opérations d'E/S et tous les stockages utilisés sur le volume respectif sont pris en compte dans le calcul de la densité d'E/S du volume.
+* Latence moyenne
+* IOPS maximales par To logiques stocké par volume
+
+
+Un volume doit être associé à un niveau de service.
 
 
 
-== Des niveaux de service pour les différents types de stockage
+== Niveaux de service pour le stockage pris en charge
 
 Les niveaux de service pour les services fichier, bloc, objet et cloud sont répertoriés ici.
 
-Les calculs de densité des E/S au niveau du volume sont rapportés pour indiquer le pic de densité des E/S au cours de la semaine précédente. Les performances maximales sont déterminées sur un intervalle horaire. Les rapports de densité d'E/S par volume sont générés tous les mois pour évaluer le respect des niveaux de service respectifs.
 
 
-
-=== Services de fichiers et de blocs
+=== Stockage basé sur des fichiers et des blocs
 
 *Protocoles pris en charge* : NFS, CIFS, iSCSI et FC
 
@@ -40,28 +42,30 @@ Les calculs de densité des E/S au niveau du volume sont rapportés pour indique
 | *Niveau de service* | *Extrême* | *Premium* | *Performance* | *Standard* | *Valeur* 
 
 
-| *Type de charge de travail* | Analyses, bases de données, applications stratégiques | VDI, VSI, développement logiciel | OLTP, OLAP, conteneurs, développement logiciel | Partages de fichiers, serveurs web | Sauvegarde 
+| *Exemples de types de charge de travail* | Analyses, bases de données, applications stratégiques | VDI, VSI, développement logiciel | OLTP, OLAP, conteneurs, développement logiciel | Partages de fichiers, serveurs web | Sauvegarde 
 
 
-| *IOPS max./Tio* | 12,288 | 4,096 | 2,048 | 512 | 128 
+| *Nombre maximal d'IOPS/tibides logiques stockés par volume* | 12,288 | 4,096 | 2,048 | 512 | 128 
 
 
-| *Débit max. Mbit/s/Tio* | 384 | 128 | 64 | 16 | 4 
+| *Nombre maximum de Mbit/s/tibides logiques stockés par volume* | 384 | 128 | 64 | 16 | 4 
 
 
-| * Latence* | <1 ms | <1 ms | <1 ms | <17 ms | <17 ms 
+| * Latence* | <1 ms | <2 ms | <4 ms | <17 ms | <17 ms 
 |===
 
-NOTE: Remarque :
+NOTE: Notez les points suivants pour les mesures de performances de débit (uniquement applicables aux services de niveau bloc et fichier) :
 
-* Les mesures de performance du débit (applicables uniquement aux services de fichiers et de blocs) sont basées sur :
+* Les niveaux de service de fichiers et de blocs sont basés sur ONTAP 9.7 et versions ultérieures.
+* Les valeurs des IOPS/Tio et de latence pour les niveaux de service sont basées sur la quantité de données logiques stockées dans le volume, sur la taille de bloc de 32 Ko et sur une combinaison aléatoire de 70 % de lectures et de 30 % d'E/S en écriture.
+* Les IOPS/Tio et/ou Mbit/s/Tio réels varient en fonction des modèles d'utilisation et de la simultanéité des charges de travail.
+* La latence n'inclut pas les éléments suivants :
 +
-** Tailles de bloc de 32 Ko
-** 70 % de lectures/30 % de IOPS en écriture
+** Les applications, les hôtes ou les temps de latence du réseau du client vers ou depuis les ports du contrôleur.
+** Latence automatiquement appliquée par QoS pour maintenir les E/S dans les limites maximales de niveau de service.
 
 
-* Les IOPS/Tio et/ou Mbit/s/Tio réels varient en fonction des caractéristiques des charges de travail.
-* La latence n'inclut pas la latence du réseau du client, de l'hôte ou de l'application vers ou depuis les ports du contrôleur.
+* Lorsque vous utilisez le service d'extension Advanced Data protection, la latence cible s'applique uniquement au traitement des demandes d'E/S des produits Keystone locaux.
 
 
 
@@ -79,49 +83,39 @@ NOTE: Remarque :
 | *Type de charge de travail* | Référentiel multimédia, archivage 
 
 
-| *IOPS cibles/Tio* | S/O 
+| *Nombre maximal d'IOPS/Tio logique stockée par volume* | S/O 
 
 
-| *IOPS max./Tio* | S/O 
+| *Nombre maximum de Mbit/s/Tio logique stockée par volume* | S/O 
 
 
-| *Débit max. Mbit/s (32 Ko/IOP)* | S/O 
-
-
-| * Latence* | S/O 
+| * Latence moyenne* | S/O 
 |===
 
-NOTE: Remarque :
-
-* Les IOPS/Tio et/ou Mbit/s/Tio réels varient en fonction des caractéristiques des charges de travail.
-* La latence n'inclut pas la latence du réseau du client, de l'hôte ou de l'application vers ou depuis les ports du contrôleur.
-
+NOTE: La latence n'inclut pas les surcharges associées au transfert de données vers le magasin d'objets en cas de stockage FabricPool.
 
 
 
 === Le stockage cloud
 
-*Protocole pris en charge* : NFS, CIFS, iSCSI
+*Protocole pris en charge* : NFS, CIFS, iSCSI et S3 (AWS et Azure uniquement)
 
 |===
 
 
-| *Niveau de service* | Cloud Volumes ONTAP®** (tous les nuages) 
+| *Niveau de service* | Cloud Volumes ONTAP® 
 
 
 | *Type de charge de travail* | Reprise après incident, développement/test de logiciels, applications d'entreprise 
 
 
-| *IOPS cibles/Tio* | S/O 
+| *Nombre maximal d'IOPS/Tio logique stockée par volume* | S/O 
 
 
-| *IOPS max./Tio* | S/O 
+| *Nombre maximum de Mbit/s/Tio logique stockée par volume* | S/O 
 
 
-| *Débit max. Mbit/s (32 Ko/IOP)* | S/O 
-
-
-| * Latence* | S/O 
+| * Latence moyenne* | S/O 
 |===
 
 NOTE: Remarque :
