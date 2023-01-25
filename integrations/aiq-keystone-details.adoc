@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: integrations/aiq-keystone-details.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+summary: Graphiques et rapports sur les abonnements Keystone 
+---
+= Tableau de bord et reporting des abonnements Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous êtes abonné aux services STaaS NetApp Keystone, vous pouvez contrôler votre utilisation dans le widget *abonnements Keystone* du tableau de bord conseiller numérique.
+
+Pour plus d'informations sur le widget Digital Advisor, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Consultez l'utilisation de la capacité sur l'abonnement NetApp Keystone"^].
+
+Cliquez sur *Afficher plus de détails* dans le widget pour afficher les détails d'utilisation et les alertes sur vos volumes sur la page *abonnement Keystone*. Sinon, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnement Keystone*.
+
+Les détails des abonnements, les graphiques d'utilisation pour chaque niveau de service et les détails du volume sont affichés dans les différents onglets de cet écran.
+
+
+NOTE: La consommation de capacité des abonnements Keystone s'affiche dans les tibides des tableaux de bord et des rapports, avec un maximum de deux décimales. Si l'utilisation est inférieure à 0.01 Tio, la valeur est alors indiquée comme 0 ou `No Usage`. Pour les autres mesures d'utilisation, voir link:../concepts/metrics.html#metrics-measurement["Mesure des metrics"]. Pour plus d'informations sur les différentes capacités utilisées dans Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge"].
+
+
+
+== Afficher les détails de l'abonnement
+
+Vous pouvez afficher tous les abonnements pour un nom de compte dans l'onglet *Détails de l'abonnement*.
+
+image:aiq-ks-dtls.png[""]
+
+Pour chaque numéro d'abonnement, vous pouvez consulter les informations suivantes :
+
+* *Numéro d'abonnement* : numéro d'abonnement de l'abonnement Keystone attribué par NetApp.
+* *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
+* *Période de facturation* : période de facturation de l'abonnement, telle que mensuelle, trimestrielle ou annuelle.
+* *Date de début* : la date de début de l'abonnement.
+* *Date de fin* : date de fin de l'abonnement. En fonction de cette date, il se peut que vous voyiez des messages d'information pour les abonnements dont l'expiration est proche ou dont le délai de grâce est fixé.
+* *Statut d'utilisation* : indique la quantité d'abonnement utilisée ou excédentaire. Vous pouvez trier la liste en fonction de cette colonne si vous souhaitez afficher les enregistrements de consommation les plus élevés.
+* image:aiq-ks-time-icon.png[""]: Cliquez sur cette icône pour ouvrir l'onglet *Subscription Time Series* où vous pouvez voir les données d'utilisation historiques pour chaque niveau de service inclus dans cet abonnement
+
+
+Pour plus de détails, cliquez sur la flèche vers le bas pour obtenir un enregistrement d'abonnement. Les détails, tels que le nom du niveau de service, engagé, consommé, capacités disponibles et utilisation actuelle et en rafale sont affichés en Tio. Les niveaux de service spécifiques qui enregistrent une plus forte consommation sont mis en évidence. Tous les avertissements et alertes générés pour vos volumes sont également affichés.
+
+Vous pouvez consulter les indicateurs d'utilisation suivants pour vérifier l'état d'utilisation de chaque abonnement :
+
+image:usage-indicator.png[""]
+
+.Indexer
+image:icon-grey.png[""]: Pas d'utilisation de capacité enregistrée par rapport à la capacité engagée du niveau de serviceimage:icon-green.png[""]: La consommation est normale, à moins de 80 % de la capacité engagéeimage:icon-amber.png[""]: Consommation maximale, c'est-à-dire l'utilisation est sur le point d'atteindre 100% ou plus de la capacité engagée. La colonne *Uconsommé* affiche cet indicateur pour toute consommation supérieure à 80 % de la capacité engagéeimage:icon-red.png[""]: La consommation est dans la limite de rafale. La consommation en rafale est la consommation qui occupe la capacité engagement de 100 % d'un niveau de service. Elle est conforme à la limite convenue d'utilisation en rafale, notamment 120 %image:icon-purple.png[""]: Indique la consommation au-dessus de la limite de rafale stipulée
+
+
+
+== Afficher l'historique des données d'abonnement
+
+L'onglet *Subscription Time Series* affiche les données historiques de vos abonnements pour une période donnée. Les graphiques verticaux affichent les détails d'utilisation de la plage de temps sélectionnée, ainsi que les indicateurs appropriés pour vous permettre de comparer et de générer des rapports.
+
+.Étapes
+. Cliquez sur l'onglet *Subscription Time Series*.
+. Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Le premier abonnement dans votre nom de compte est sélectionné par défaut.
+. Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. La plage horaire par défaut sélectionnée est comprise entre la date de début de la période de facturation et la date actuelle.
+. Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée. Vous pouvez passer le curseur de la souris sur les graphiques pour afficher la ventilation d'utilisation en termes de données validées, consommées, Burst et au-dessus de la limite d'éclatement à ce point.
+
+
+image:aiq-ks-subtime-2.png[""]
+
+Les détails suivants s'affichent :
+
+* *Courant consommé*: Ce graphique de jauge/donut à gauche indique la capacité consommée pour un niveau de service pour la période de facturation. Ce tableau affiche des couleurs spécifiques pour indiquer l'utilisation suivante :
++
+** Gris : aucun
+** Vert : dans les 80 % de la capacité engagée
+** Orange : toute consommation supérieure à 80 % de la capacité engagée
+
+
+* *Courant Burst* : ce graphique jauge/donut indique la capacité consommée pour un niveau de service qui se situe dans la limite de rafale ou au-dessus. Pour un niveau de service, toute utilisation comprise entre 100 % et la limite autorisée, par exemple 20 % au-dessus de la capacité engagée, se situe dans la limite en rafale. Une utilisation supplémentaire est considérée comme une utilisation au-dessus de la limite de rafale . Ce tableau affiche des couleurs spécifiques pour indiquer l'utilisation suivante :
++
+** Gris : aucun
+** Rouge : rafale
+** Violet : au-dessus de la limite d'éclatement
+
+
+* *Burst accumulé* : l'utilisation des rafales accumulées ou la capacité utilisée est calculée par mois pour la période de facturation actuelle. L'utilisation des rafales cumulées est calculée en fonction de la capacité engagée et consommée pour un niveau de service : `(consumed - committed)/365.25/12`
+* *Séries de temps* : les graphiques à barres affichent l'utilisation de la capacité pour le temps sélectionné. La date et l'heure de la collection sont affichées en bas du graphique. Les graphiques à barres s'affichent dans les couleurs suivantes pour indiquer l'utilisation :
++
+** Vert : dans un rayon de 80 %
+** Orange : 80 % - 100 %
+** Rouge : utilisation en rafale (100 % de la capacité validée par rapport à la limite de rafale convenue)
+** Violet : au-dessus de la limite d'éclatement ou `Above Limit`
+** Gris : utilisation provisoire - utilisation enregistrée lorsque les données exactes de la période sont indisponibles et substituées par les données disponibles au point de collecte précédent
+
+
+
+
+
+
+== Afficher les détails du volume
+
+Cliquez sur l'onglet *Détails du système* pour afficher les détails de chaque volume de votre environnement de stockage géré par abonnement Keystone.
+
+image:aiq-ks-sysdtls.png[""]
+
+Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
+
+
+
+== Générer des rapports
+
+Vous pouvez générer et afficher des rapports pour les détails de votre abonnement, les données d'historique d'utilisation pour une plage horaire et les détails du système à partir de chacun des onglets en cliquant sur le bouton de téléchargement : image:download-icon.png[""]
+
+Les détails sont générés au format CSV que vous pouvez enregistrer pour une utilisation ultérieure.
+
+Un exemple de rapport pour l'onglet *Subscription Time Series*, où les données graphiques sont converties :
+
+image:report.png[""]
+
+
+
+== Afficher les alertes
+
+Les alertes du tableau de bord envoient des messages d'avertissement pour vous permettre de comprendre les problèmes qui se produisent dans votre environnement de stockage.
+
+Les alertes peuvent être de deux types :
+
+* *Information*: Pour les problèmes, comme vos abonnements arrivant à la fin ou atteignant la période de grâce, vous pouvez voir les alertes d'information. Passez le curseur de la souris sur l'icône d'information pour obtenir plus d'informations sur le problème.
+* *Avertissement* : les problèmes, tels que non-conformité, sont affichés comme avertissements. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Vous pouvez cliquer sur le lien du message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *Détails du système*.
++
+Pour plus d'informations sur les stratégies AQoS, voir link:../concepts/qos.html["La QoS adaptative"].
+
+
+
+image:alert-aiq.png[""]
+
+Contactez l'assistance pour plus d'informations sur ces messages d'avertissement et d'avertissement. Pour plus d'informations, reportez-vous à la section link:../concepts/gssc.html["Génération de demandes de service"].

@@ -27,7 +27,7 @@ Les termes et définitions suivants sont utilisés dans le service STaaS NetApp 
 
 == Mesure des metrics
 
-* *Mesure de la capacité en Gio, Tio et PIB* : mesures de la capacité de stockage des données utilisant la base de 1024 (1 Gio = 1024^3^ octets, 1 Tio = 1024^4^ octets et 1 Pio = 1024^5^ octets).
+* *Mesure de la capacité en gibibyte (Gio), tébibyte (Tio) et pebibyte (Pio)* : mesures de la capacité de stockage des données utilisant la base de 1024 (1 Gio = 1024^3^ octets, 1 = 1024^4^ octets et 1 Tio = 1024^5^ octets).
 * *Diagramme des compteurs d'opérations en IOPS/Tio* : opérations de protocole par seconde demandées par l'application, divisées par la taille du volume utilisé par les charges de travail.
 * *Disponibilité* : mesuré en pourcentage du nombre de demandes d'E/S auxquelles le service a répondu avec succès, divisé par le nombre total de demandes d'E/S faites au service. Cette mesure est mesurée à la ligne de démarcation du service au cours d'un mois et n'inclut pas les temps d'arrêt programmés ou l'indisponibilité des installations, du réseau ou des autres services fournis par le client.
 * *Durabilité* : pourcentage de données consultées sans perte de fidélité, à l'exclusion de la suppression ou de la corruption causées par le client.

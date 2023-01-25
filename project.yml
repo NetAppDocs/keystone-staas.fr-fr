@@ -99,6 +99,8 @@ sidebar:
       url: "/integrations/keystone-cm.html"
     - title: Keystone et conseiller digital
       url: "/integrations/keystone-aiq.html"
+    - title: Tableau de bord et reporting Digital Advisor Keystone
+      url: "/integrations/aiq-keystone-details.html"
   - title: Mentions légales
     url: "/legal-notices.html"
 homepage:
@@ -127,6 +129,8 @@ homepage:
       url: "/concepts/data-tiering.html"
     - title: Mes données Keystone sont-elles protégées ?
       url: "/concepts/adp.html"
+    - title: Comment voir ma consommation par niveau de service ?
+      url: "/integrations/aiq-keystone-details.html"
   - title: Tarification Keystone
     links:
     - title: En savoir plus sur la facturation Keystone

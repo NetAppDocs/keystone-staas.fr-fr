@@ -32,7 +32,7 @@ Ces codes d'état sont renvoyés :
 
 .Les utilisateurs Linux, notez ce problème connu :
 
-NOTE: *Description du problème* : Keystone Collector exécute un certain nombre de conteneurs dans le cadre du système de mesure de l'utilisation. Lorsque le serveur Red Hat Enterprise Linux 8.x est renforcé avec les stratégies de mise en œuvre technique de sécurité (STIG) de l'agence américaine de systèmes d'information de défense (DISA), un problème connu de fapolicyd (File Access Policy Daemon) a été constaté par intermittence. Ce problème est identifié comme link:https://bugzilla.redhat.com/show_bug.cgi?id=1907870["bug 1907870"]. *Solution de contournement* : jusqu'à sa résolution par Red Hat Enterprise, NetApp vous recommande de contourner ce problème en mettant en place `fapolicyd` en mode permissif. Dans /`etc/fapolicyd/fapolicyd.conf`, définissez la valeur de `permissive = 1`.
+NOTE: *Description du problème* : Keystone Collector exécute un certain nombre de conteneurs dans le cadre du système de mesure de l'utilisation. Lorsque le serveur Red Hat Enterprise Linux 8.x est renforcé avec les stratégies de mise en œuvre technique de sécurité (STIG) de l'agence américaine de systèmes d'information de défense (DISA), un problème connu de fapolicyd (File Access Policy Daemon) a été constaté par intermittence. Ce problème est identifié comme link:https://bugzilla.redhat.com/show_bug.cgi?id=1907870["bug 1907870"^]. *Solution de contournement* : jusqu'à sa résolution par Red Hat Enterprise, NetApp vous recommande de contourner ce problème en mettant en place `fapolicyd` en mode permissif. Dans /`etc/fapolicyd/fapolicyd.conf`, définissez la valeur de `permissive = 1`.
 
 
 

@@ -53,21 +53,18 @@ Les niveaux de service pour les services fichier, bloc, objet et cloud sont rép
 
 | * Latence* | <1 ms | <2 ms | <4 ms | <17 ms | <17 ms 
 |===
-
-NOTE: Notez les points suivants pour les mesures de performances de débit (uniquement applicables aux services de niveau bloc et fichier) :
+[NOTE]
+====
+Notez les points suivants pour les mesures de performances de débit (uniquement applicables au fichier
 
 * Les niveaux de service de fichiers et de blocs sont basés sur ONTAP 9.7 et versions ultérieures.
 * Les valeurs des IOPS/Tio et de latence pour les niveaux de service sont basées sur la quantité de données logiques stockées dans le volume, sur la taille de bloc de 32 Ko et sur une combinaison aléatoire de 70 % de lectures et de 30 % d'E/S en écriture.
 * Les IOPS/Tio et/ou Mbit/s/Tio réels varient en fonction des modèles d'utilisation et de la simultanéité des charges de travail.
-* La latence n'inclut pas les éléments suivants :
-+
-** Les applications, les hôtes ou les temps de latence du réseau du client vers ou depuis les ports du contrôleur.
-** Latence automatiquement appliquée par QoS pour maintenir les E/S dans les limites maximales de niveau de service.
-
-
+* La latence n'inclut pas les éléments suivants : -- les applications, les hôtes ou la latence réseau du client vers ou depuis les ports du contrôleur. -- la latence automatiquement appliquée par QoS pour conserver les E/S dans les limites maximales de niveau de service.
 * Lorsque vous utilisez le service d'extension Advanced Data protection, la latence cible s'applique uniquement au traitement des demandes d'E/S des produits Keystone locaux.
 
 
+====
 
 
 === Stockage objet
@@ -117,9 +114,10 @@ NOTE: La latence n'inclut pas les surcharges associées au transfert de données
 
 | * Latence moyenne* | S/O 
 |===
-
-NOTE: Remarque :
-
+[NOTE]
+====
 * Les services cloud natifs, tels que le calcul, le stockage et le réseau, sont facturés par les fournisseurs cloud.
 * Ces services dépendent des caractéristiques de stockage et de calcul dans le cloud.
 
+
+====

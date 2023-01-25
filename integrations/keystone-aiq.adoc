@@ -16,8 +16,10 @@ summary: Keystone et conseiller digital
 [role="lead"]
 Si vous vous êtes abonné aux services NetApp Keystone, vous pouvez consulter vos rapports d'utilisation et vos graphiques sur le tableau de bord de Digital Advisor.
 
-Digital Advisor vous permet d'afficher les informations relatives au stockage à la demande et les informations sur l'infrastructure NetApp que vous possédez. Digital Advisor offre un tableau de bord unique avec une visibilité sur l'utilisation des capacités et les données sur les tendances et la possibilité de créer des rapports détaillés. Vous pouvez également gérer vos abonnements Keystone via Digital Advisor avec la possibilité de commander de nouveaux services pour votre abonnement et de mettre à jour la capacité de tous les services existants.
+Digital Advisor vous permet d'afficher les informations relatives au stockage à la demande et les informations sur l'infrastructure NetApp que vous possédez. Grâce à Digital Advisor, vous disposez d'un tableau de bord unique qui vous permet de consulter vos abonnements, vos niveaux de service et votre utilisation de la capacité, tout en créant des rapports détaillés.
 
-Pour plus d'informations sur Digital Advisor, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Documentation de Digital Advisor"].
+Pour plus d'informations sur le widget du tableau de bord Digital Advisor pour Keystone, voir https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Documentation de Digital Advisor"^].
+
+Pour plus d'informations sur le tableau de bord et le reporting Keystone, reportez-vous à link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"].
 
 Pour plus d'informations sur le flux de données, voir link:../concepts/infra.html["Les outils de suivi"].
