@@ -14,9 +14,9 @@ summary: Graphiques et rapports sur les abonnements Keystone
 
 
 [role="lead"]
-Si vous êtes abonné aux services STaaS NetApp Keystone, vous pouvez contrôler votre utilisation dans le widget *abonnements Keystone* du tableau de bord conseiller numérique.
+Si vous avez souscrit aux services STaaS de NetApp Keystone, vous pouvez contrôler votre utilisation via le widget *abonnements Keystone* du tableau de bord Active IQ Digital Advisor (conseiller digital).
 
-Pour plus d'informations sur le widget Digital Advisor, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_view_keystone_capacity_utilization.html["Consultez l'utilisation de la capacité sur l'abonnement NetApp Keystone"^].
+Pour plus d'informations sur le widget Digital Advisor, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Consultez l'utilisation de la capacité sur l'abonnement NetApp Keystone"^].
 
 Cliquez sur *Afficher plus de détails* dans le widget pour afficher les détails d'utilisation et les alertes sur vos volumes sur la page *abonnement Keystone*. Sinon, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnement Keystone*.
 

@@ -28,7 +28,7 @@ Les services STaaS Keystone peuvent coexister les uns avec les autres. Par exemp
 
 == Services pour le stockage fichier, bloc et objet
 
-Les services Keystone STaaS pour le stockage de fichiers et de blocs ONTAP, ainsi que le stockage objet StorageGRID, prennent en charge plusieurs fonctionnalités et protocoles, et sont décrits dans le tableau suivant :
+Les services Keystone de stockage en tant que service pour le stockage fichier et bloc ONTAP, ainsi que le stockage objet StorageGRID, prennent en charge plusieurs fonctionnalités et protocoles. Description détaillée dans le tableau suivant :
 
 |===
 | Stockage | Plateforme | Protocoles | Fonctionnalités prises en charge 

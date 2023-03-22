@@ -14,7 +14,7 @@ summary: Centre de support NetApp Global Services GSSC
 
 
 [role="lead"]
-Les services NetApp Keystone sont gérés en utilisant le centre NetApp Global Services and support Center (GSSC), le responsable NetApp Keystone Success Manager et le responsable de prestation de services NetApp Keystone.
+Le centre de services et de support global NetApp (GSSC) et le responsable de la réussite NetApp Keystone (KSM) sont chargés de vous fournir des services pour les abonnements Keystone.
 
 
 
@@ -36,7 +36,7 @@ L'équipe du Centre de support et de services NetApp (GSSC) soutient principalem
 
 NOTE: Dans un modèle opéré par les partenaires, les demandes de service des locataires et des sous-locataires sont attribuées au centre de service du partenaire. L'outil de support du partenaire pourrait être intégré aux applications OpsRamp et GSSC. Seuls les problèmes de niveau 3 sont transmis à NetApp via le GSSC.
 
-Pour plus d'informations, voir :
+Pour en savoir plus sur les services Keystone, consultez :
 
 * NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
 * Documentation produit NetApphttps://docs.netapp.com["https://docs.netapp.com"^]

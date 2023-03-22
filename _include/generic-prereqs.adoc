@@ -24,7 +24,7 @@ NOTE: Keystone Collector nécessite une connectivité Internet. Vous pouvez four
 
 
  a| 
-Collecteur Keystone
+Collecteur Keystone (pour Keystone ONTAP)
  a| 
 Active IQ Unified Manager (Unified Manager)
  a| 
@@ -32,14 +32,29 @@ HTTPS
  a| 
 TCP 443
  a| 
-Obligatoire
+Obligatoire (en cas d'utilisation de Keystone ONTAP)
  a| 
-Collecte des metrics d'utilisation du Keystone Collector
+Collecte de metrics d'utilisation du collecteur Keystone pour ONTAP
 
 
 
  a| 
-Collecteur Keystone
+Collecteur Keystone (pour Keystone StorageGRID)
+ a| 
+Nœuds d'administration StorageGRID
+ a| 
+HTTPS
+ a| 
+TCP 443
+ a| 
+Obligatoire (en cas d'utilisation de Keystone StorageGRID)
+ a| 
+Collecte de metrics d'utilisation du collecteur Keystone pour StorageGRID
+
+
+
+ a| 
+Collecteur Keystone (générique)
  a| 
 Internet (conformément aux exigences d'URL fournies ultérieurement)
  a| 
@@ -54,7 +69,7 @@ Le logiciel Keystone Collector, les mises à jour du système d'exploitation et 
 
 
  a| 
-Collecteur Keystone
+Collecteur Keystone (générique)
  a| 
 Proxy HTTP client
  a| 
@@ -69,7 +84,7 @@ Le logiciel Keystone Collector, les mises à jour du système d'exploitation et 
 
 
  a| 
-Collecteur Keystone
+Collecteur Keystone (générique)
  a| 
 Serveurs DNS du client
  a| 
@@ -84,7 +99,7 @@ Résolution DNS
 
 
  a| 
-Collecteur Keystone
+Collecteur Keystone (générique)
  a| 
 Serveurs NTP du client
  a| 
@@ -95,6 +110,36 @@ UDP 123
 Obligatoire
  a| 
 Synchronisation de l'heure
+
+
+
+ a| 
+Collecteur Keystone (pour Keystone ONTAP)
+ a| 
+Unified Manager
+ a| 
+MYSQL
+ a| 
+TCP 3306
+ a| 
+En option
+ a| 
+Collecte de metrics de performance pour Keystone Collector
+
+
+
+ a| 
+Collecteur Keystone (générique)
+ a| 
+Système de surveillance client
+ a| 
+HTTP
+ a| 
+TCP 777
+ a| 
+En option
+ a| 
+Reporting sur l'état du collecteur Keystone
 
 
 
@@ -125,36 +170,6 @@ TCP 8000, demande/réponse d'écho ICMP
 En option
  a| 
 Serveur Web pour les mises à jour du micrologiciel ONTAP
-
-
-
- a| 
-Collecteur Keystone
- a| 
-Unified Manager
- a| 
-MYSQL
- a| 
-TCP 3306
- a| 
-En option
- a| 
-Collecte de metrics de performance pour Keystone Collector
-
-
-
- a| 
-Collecteur Keystone
- a| 
-Système de surveillance client
- a| 
-HTTP
- a| 
-TCP 777
- a| 
-En option
- a| 
-Reporting sur l'état du collecteur Keystone
 
 |===
 

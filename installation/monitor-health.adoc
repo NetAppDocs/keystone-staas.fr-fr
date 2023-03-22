@@ -21,7 +21,7 @@ Par défaut, les services de santé Keystone n'acceptent pas les connexions de n
 [listing]
 ----
 $ curl http://127.0.0.1:7777/uber/health
-{"is_healthy": true, "component_details": {"vicmet": "Running", "minio": "Running", "ks-collector": "Running", "ks-billing": "Running", "chronyd": "Running"}}
+{"is_healthy": true, "component_details": {"vicmet": "Running", "ks-collector": "Running", "ks-billing": "Running", "chronyd": "Running"}}
 ----
 Ces codes d'état sont renvoyés :
 
@@ -103,5 +103,5 @@ L'interface utilisateur du collecteur Keystone vous permet de générer des pack
 `$ keystone-collector-tui`
 . Accédez à *Troubleshooting > Generate support Bundle*.image:tui-sup-bundl.png[""]
 . Lorsqu'il est généré, l'emplacement où le bundle est enregistré s'affiche. Utilisez FTP, SFTP ou SCP pour vous connecter à l'emplacement et télécharger le fichier journal sur un système local.image:tui-sup-bundl-2.png[""]
-. Une fois le fichier téléchargé, vous pouvez le joindre au ticket de support Keystone ServiceNow. Pour plus d'informations, reportez-vous à la section link:../concepts/gssc.html["Génération de demandes de service"].
+. Une fois le fichier téléchargé, vous pouvez le joindre au ticket de support Keystone ServiceNow. Pour plus d'informations sur la levée de billets, reportez-vous à la section link:../concepts/gssc.html["Génération de demandes de service"].
 

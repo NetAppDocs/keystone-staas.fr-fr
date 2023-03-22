@@ -26,7 +26,7 @@ Avec le service complémentaire de Tiering des données, vous pouvez effectuer l
 
 Par exemple, si la cible pour le Tier de stockage à froid est :
 
-* Le niveau Keystone STaaS, le niveau d'objet Keystone StorageGRID STaaS ou le grid SGWS existant (propriété du client) est gratuit. Il fait partie du service standard.
+* Tier de valeur STaaS Keystone, Tier objet StorageGRID STaaS Keystone ou grid SGWS existant (propriété du client) : il n'y a pas de frais supplémentaires et fait partie du service standard.
 * Cloud public (AWS, Azure, Google) ou stockage objet tiers pris en charge par Keystone : des frais supplémentaires sont facturés pour la capacité de données à Tier vers les cibles de stockage à froid.
 
 

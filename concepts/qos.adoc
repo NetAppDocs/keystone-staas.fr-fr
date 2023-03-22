@@ -22,26 +22,26 @@ La QoS garantit que les applications bénéficient à tout moment de performance
 
 == La QoS adaptative
 
-La QoS adaptative (AQoS) est utilisée pour les services Keystone afin de maintenir le rapport entre les IOPS et les To/Go lorsque la taille modifie la règle de QoS est automatiquement appliquée. Pour plus d'informations sur la QoS adaptative, reportez-vous à la section https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["À propos de la QoS adaptative"^].
+La QoS adaptative (AQoS) est utilisée pour les services Keystone afin de maintenir le rapport entre les IOPS et les To/Go lorsque la taille modifie la règle de QoS est automatiquement appliquée. Pour plus d'informations sur les stratégies AQoS, voir https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["À propos de la QoS adaptative"^].
 
-Keystone vous fournit des règles de QoS adaptatives que vous pouvez configurer une fois votre cluster en production. Vous devez vous assurer que tous vos volumes sont associés aux règles de QoS adaptatives créées et disponibles dans votre système.
+Keystone vous fournit des règles AQoS que vous pouvez configurer une fois que votre cluster est en production. Vous devez vous assurer que tous vos volumes sont associés aux règles AQoS correctes qui sont déjà créées et disponibles dans votre système.
 
 
-NOTE: Si vous n'avez pas appliqué correctement des règles de qualité de service adaptatives sur vos volumes, ces volumes seront mesurés et facturés au niveau de service le plus élevé conformément à votre abonnement. Cela peut entraîner des frais d'éclatement intempestive.
+NOTE: Si vous n'avez pas appliqué correctement les stratégies AQoS sur vos volumes, ces volumes seront mesurés et facturés au niveau de service le plus élevé selon votre abonnement. Cela peut entraîner des frais d'éclatement intempestive.
 
 
 
 == Configuration du groupe de règles de QoS adaptative
 
-Vous pouvez configurer des règles de QoS adaptative pour adapter automatiquement une taille maximale ou maximale du volume à une taille maximale. Pour configurer une stratégie, vous devez connaître les éléments suivants :
+Vous pouvez configurer des règles de QoS adaptative (AQoS) pour faire évoluer automatiquement un plafond de débit ou un volume au sol en fonction de sa taille. Pour configurer une stratégie, vous devez connaître les éléments suivants :
 
-* *Nom du groupe de règles* : le nom du groupe de règles de qualité de service adaptative. Par exemple : `Keystone_extreme`.
+* *Nom du groupe de règles* : le nom du groupe de stratégies AQoS. Par exemple : `Keystone_extreme`.
 * *VServer* : nom de la machine virtuelle de stockage ou VServer (machine virtuelle de stockage).
 * *IOPS attendues* : le nombre d'IOPS/Tio ONTAP fournit au moins tant que la performance est garantie.
 * *Peak IOPS* : le nombre maximal d'IOPS/Tio qui sera disponible pour un volume avant que les performances ne soient limitées.
 * *Allocation d'IOPS prévue* : ce champ contrôle si les IOPS disponibles attendues pour le volume sont basées sur la taille allouée ou utilisée du volume. Dans Keystone, il s'agit de la base de l'espace alloué.
 * *Affectation des IOPS de pointe* : ce champ contrôle si les IOPS de pointe disponibles pour le volume sont basées sur la taille allouée ou utilisée du volume. Dans Keystone, il s'agit de l'espace utilisé.
-* *IOPS minimum absolu* : le nombre le plus faible d'IOPS attendu qui sera appliqué à un volume si sa taille est très petite, ce qui se traduit par un nombre inacceptable d'IOPS. Cette valeur est par défaut de 1,000 pour `Extreme`, 500 pour `Premium`, et 75 pour les autres niveaux de service.
+* *IOPS minimum absolu* : le nombre le plus faible d'IOPS attendu qui sera appliqué à un volume si sa taille est très petite, ce qui se traduit par un nombre inacceptable d'IOPS. Cette valeur est par défaut de 1,000 pour `Extreme`, 500 pour `Premium`, et 250 pour `Performance`, et 75 pour `Standard` et `Value` niveaux de services
 +
 
 NOTE: Il ne s'agit pas de la densité des IOPS (par exemple 75 IOPS/Tio), mais d'un nombre minimal absolu d'IOPS.
@@ -54,7 +54,7 @@ Pour plus d'informations sur la densité des E/S, voir link:../concepts/metrics.
 
 == Paramètres des règles de QoS adaptative
 
-Les paramètres des règles de QoS adaptative pour chaque niveau de service sont décrits dans les sections suivantes. Les tailles minimale et maximale des volumes pour chaque niveau de service fournies ici permettent d'optimiser les valeurs d'IOPS et de latence pour un volume. La création de trop de volumes en dehors de ces instructions peut nuire aux performances de ces volumes.
+Les paramètres des règles de QoS adaptative (AQoS) pour chaque niveau de service sont décrits dans les sections suivantes. Les tailles minimale et maximale des volumes pour chaque niveau de service fournies ici permettent d'optimiser les valeurs d'IOPS et de latence pour un volume. La création de trop de volumes en dehors de ces instructions peut nuire aux performances de ces volumes.
 
 
 
@@ -66,7 +66,7 @@ Paramètres et commandes du niveau de service Extreme :
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 1000
+qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
 ....
 * Taille minimale du volume : 100 Gio, 0,Tio
 * Taille maximale du volume : 10 Tio
@@ -82,7 +82,7 @@ Paramètres et commandes du niveau de service Premium :
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 500
+qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
 ....
 * Taille minimale du volume : 500 Gio, 0,5 Tio
 * Taille maximale du volume : 50 Tio
@@ -98,7 +98,7 @@ Paramètres et commandes du niveau de service Performance :
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 250
+qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
 ....
 * Taille minimale du volume : 500 Gio, 0,5 Tio
 * Taille maximale du volume : 80 Tio
@@ -114,7 +114,7 @@ Paramètres et commandes du niveau de service Standard :
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 77
+qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
 * Taille minimale du volume : Tio
 * Taille maximale du volume : 100 Tio
@@ -130,7 +130,7 @@ Paramètres et commandes du niveau de service de valeur :
 
 
 ....
-qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size Any -absolute-min-iops 59
+qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
 * Taille minimale du volume : Tio
 * Taille maximale du volume : 100 Tio

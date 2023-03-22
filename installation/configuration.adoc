@@ -14,15 +14,36 @@ summary: Configuration du collecteur Keystone
 
 
 [role="lead"]
-Vous devez effectuer quelques tâches de configuration pour permettre à Keystone Collector de collecter des données d'utilisation dans votre environnement de stockage. Il s'agit d'une activité ponctuelle pour activer et associer le composant collecteur requis à Active IQ Unified Manager (Unified Manager).
+Vous devez effectuer quelques tâches de configuration pour permettre à Keystone Collector de collecter des données d'utilisation dans votre environnement de stockage. Il s'agit d'une activité unique permettant d'activer et d'associer le composant collecteur requis à votre environnement de stockage.
 
-Il est possible de surveiller tous les clusters ONTAP gérés par Unified Manager. Voici la procédure à suivre :
+
+NOTE: Le collecteur Keystone fournit l'utilitaire TUI (Keystone Collector Management terminal User interface) pour effectuer les activités de configuration et de surveillance. Vous pouvez utiliser diverses commandes du clavier, telles que les touches entrée et flèche, pour sélectionner les options et naviguer dans cette TUI.
 
 .Étapes
 . Ouvrez l'utilitaire TUI de gestion Keystone Collector :
 `$ keystone-collector-tui`
-. Accédez à **configurer > KS-Collector** pour ouvrir l'écran de configuration Keystone Collector et ajouter les détails du serveur Unified Manager et du compte de service. Si la surveillance des performances est requise dans cet environnement à des fins de contrats de niveau de service, activez l'option **collecter les données de performances ONTAP** et fournissez les détails du compte utilisateur de la base de données Unified Manager. Pour plus d'informations, reportez-vous à la section link:../aiqum-req.html["Créer les utilisateurs Unified Manager"].
-. Activez le champ **Activer KS-Collector Service**.
+. Accédez à **configurer > KS-Collector** pour ouvrir l'écran de configuration du collecteur Keystone et afficher les options de mise à jour disponibles.
+. Mettez à jour les options requises.
++
+.<strong>® ou ONTTHI </strong>
+[%collapsible]
+====
+** *Collect ONTAP usage* : cette option permet la collecte des données d'utilisation pour ONTAP. Ajoutez les détails du serveur Active IQ Unified Manager (Unified Manager) et du compte de service.
+** *Collecter les données de performances ONTAP* : cette option permet la collecte des données de performances pour ONTAP. Cette option est désactivée par défaut. Activez cette option si un contrôle des performances est requis dans votre environnement pour des objectifs de niveau de service. Fournissez les détails du compte d'utilisateur de la base de données Unified Manager. Pour plus d'informations sur la création d'utilisateurs de base de données, voir link:../addl-req.html["Créer les utilisateurs Unified Manager"].
+** *Supprimer les données privées* : cette option supprime des données privées spécifiques des clients et est activée par défaut. Pour plus d'informations sur les données exclues des mesures si cette option est activée, reportez-vous à la section link:../installation/configuration.html#limit-collection-of-private-data["Limite la collecte de données privées"].
+
+
+====
++
+.<strong>® ou </strong>
+[%collapsible]
+====
+** *Collect StorageGRID usage* : cette option permet de collecter les détails d'utilisation des nœuds. Ajoutez l'adresse du nœud StorageGRID et les détails de l'utilisateur.
+** *Supprimer les données privées* : cette option supprime des données privées spécifiques des clients et est activée par défaut. Pour plus d'informations sur les données exclues des mesures si cette option est activée, reportez-vous à la section link:../configuration.html#limit-collection-of-private-data["Limite la collecte de données privées"].
+
+
+====
+. Activez/désactivez le champ **Démarrer KS-Collector avec System**.
 . Cliquez sur **Enregistrer**.image:tui-1.png[""]
 . Assurez-vous que le collecteur Keystone est en bon état en retournant à l'écran principal de l'interface utilisateur TUI et en vérifiant les informations **État du service**. Le système devrait montrer que les services sont dans un **état général : sain**.image:tui-2.png[""]
 . Quittez l'interface TUI de gestion du collecteur Keystone en sélectionnant l'option **Quitter vers Shell** sur l'écran d'accueil.
@@ -47,113 +68,8 @@ Le logiciel Collector prend en charge l'utilisation d'un proxy HTTP pour communi
 
 Le collecteur Keystone collecte des informations limitées sur la configuration, l'état et les performances requises pour effectuer les mesures d'abonnement. Il existe une option permettant de limiter davantage les informations recueillies en masquant les informations sensibles du contenu téléchargé. Cela n'a aucune incidence sur le calcul de la facturation. Toutefois, la limitation des informations peut avoir un impact sur la facilité d'utilisation des informations de reporting, car certains éléments, facilement identifiables par les utilisateurs, tels que le nom du volume, sont remplacés par des UUID.
 
-L'option permettant de limiter les données, **Supprimer les données privées**, est configurable sur l'écran de configuration TUI. Cette option est désactivée par défaut.
+La limitation de la collecte de données client spécifiques est une option configurable sur l'écran de l'interface utilisateur Keystone Collector. Cette option, *Supprimer les données privées*, est activée par défaut.
 
 image:tui-4.png[""]
 
-
-
-=== Liste exemple d'informations collectées pour la collecte des données d'utilisation
-
-La liste suivante présente un échantillon représentatif des éléments inclus dans la collecte de l'utilisation :
-
-* Cluster
-+
-** UUID de cluster
-** Numéro de série
-** Emplacement (basé sur la valeur saisie dans le cluster ONTAP)
-** Contactez
-
-
-* Nœuds
-+
-** Numéro de série
-** Nom du nœud
-
-
-* Volumes
-+
-** Nom de l'agrégat
-** Nom du volume
-** VolumeInstanceUUID
-** Indicateur IsononeVolume
-** Indicateur IsFlexGroupCongent
-** Balise IsSpaceEnforcelogique
-** IsSpaceReportDédrapeau logique
-** LogicalSpaceUsedByAfs
-** PercentSnapshotSpace
-** PerformanceTierInactiveUserData
-** PerformanceTierInactiveUserDataPercent
-** QosAdaptativPolicyGroup Nom
-** Nom QosPolicyGroup
-** Taille
-** SizeUsedBysnapshots
-** Type
-** VolumeStyleExtended
-** Nom d'un vserver
-** Drapeau IsVsRoot
-
-
-* StorageAggrs
-+
-** StorageType
-** Nom de l'agrégat
-** UUID d'agrégat
-
-
-* AgrégateObjectStore
-+
-** ObjectStoreName
-** ObjectStoreUUID
-** ProviderType
-** Nom de l'agrégat
-
-
-* StorageZone
-+
-** UUID de LUN
-** Taille
-** Utilisé
-** Indicateur réservé
-** Indicateur IsRequested
-** Nom de l'unité LogicalUnit
-** QosPolicyUUID
-** QosPolicyName
-** VolumeUUID
-** Nom du volume
-** SvmUUID
-** Nom du SVM
-
-
-* Mesures de l'observabilité du collecteur
-+
-** Heure de collecte
-** Point final API AIQUM interrogé
-** Temps de réponse
-** Nombre d'enregistrements
-** IP de l'instance
-** ID de Collectorinstance
-
-
-
-
-
-
-=== Liste des éléments supprimés pour limiter l'accès aux données privées
-
-Lorsque l'option *Supprimer les données privées* est activée, les informations suivantes sont supprimées :
-
-* Nom de cluster
-* Emplacement du cluster
-* Contact de cluster
-* Nom du nœud
-* Nom de l'agrégat
-* Nom du volume
-* QosAdaptativPolicyGroup Nom
-* Nom QosPolicyGroup
-* Nom d'un vserver
-* Nom de l'agrégat
-* Nom de l'unité LogicalUnit
-* Nom du SVM
-* IP de l'instance
-
+Pour plus d'informations sur les éléments supprimés lors de la limitation de l'accès privé aux données dans ONTAP et StorageGRID, reportez-vous à la section link:../installation/data-collection.html["Liste des éléments supprimés pour limiter l'accès aux données privées"].

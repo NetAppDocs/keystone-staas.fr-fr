@@ -25,7 +25,7 @@ Procédez comme suit pour installer le logiciel sur votre serveur Linux :
 `# rpm -qa gpg-pubkey --qf '%_<Description>_'|gpg --show-keys --fingerprint`La bonne empreinte se présente comme suit :
 `90B3 83AF E07B 658A 6058  5B4E 76C2 45E4 33B6 C17D`
 . Téléchargez le `keystonerepo.rpm` fichier :
-`# wget https://keystone.netapp.com/repo/keystonerepo.rpm`
+`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
 . Vérifiez l'authenticité du fichier :
 `rpm --checksig -v keystonerepo.rpm`La signature d'un fichier authentique se présente comme suit :
 `Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
@@ -34,3 +34,6 @@ Procédez comme suit pour installer le logiciel sur votre serveur Linux :
 . Lorsque Keystone repo est installé, installez le package trapèze-Collector via le gestionnaire de package YUM :
 `# yum install keystone-collector`
 
+
+
+NOTE: Une fois l'installation terminée, vous pouvez utiliser l'utilitaire TUI (Keystone Collector Management terminal User interface) pour effectuer les activités de configuration et de surveillance. Vous pouvez utiliser diverses commandes du clavier, telles que les touches entrée et flèche, pour sélectionner les options et naviguer dans cette TUI. Voir link:../installation/configuration.html["Configurer le collecteur Keystone"] et link:../installation/monitor-health.html["Contrôle de l'état des systèmes"].
