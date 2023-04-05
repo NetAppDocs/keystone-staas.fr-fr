@@ -39,12 +39,14 @@ Pour chaque numéro d'abonnement, vous pouvez consulter les informations suivant
 * *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
 * *Période de facturation* : période de facturation de l'abonnement, telle que mensuelle, trimestrielle ou annuelle.
 * *Date de début* : la date de début de l'abonnement.
-* *Date de fin* : date de fin de l'abonnement. En fonction de cette date, il se peut que vous voyiez des messages d'information pour les abonnements dont l'expiration est proche ou dont le délai de grâce est fixé.
+* *Date de fin* : date de fin de l'abonnement. En fonction de cette date, il se peut que vous voyiez des messages d'information pour les abonnements qui approchent de leur expiration.
 * *Statut d'utilisation* : indique la quantité d'abonnement utilisée ou excédentaire. Vous pouvez trier la liste en fonction de cette colonne si vous souhaitez afficher les enregistrements de consommation les plus élevés.
 * image:aiq-ks-time-icon.png[""]: Cliquez sur cette icône pour ouvrir l'onglet *Subscription Time Series* où vous pouvez voir les données d'utilisation historiques pour chaque niveau de service inclus dans cet abonnement
 
 
 Pour plus de détails, cliquez sur la flèche vers le bas pour obtenir un enregistrement d'abonnement. Les détails, tels que le nom du niveau de service, engagé, consommé, capacités disponibles et utilisation actuelle et en rafale sont affichés en Tio. Les niveaux de service spécifiques qui enregistrent une plus forte consommation sont mis en évidence. Tous les avertissements et alertes générés pour vos volumes sont également affichés.
+
+Pour plus d'informations sur vos services de stockage Keystone et sur les niveaux de service appropriés, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
 
 Vous pouvez consulter les indicateurs d'utilisation suivants pour vérifier l'état d'utilisation de chaque abonnement :
 
@@ -62,50 +64,95 @@ L'onglet *Subscription Time Series* affiche les données historiques de vos abon
 .Étapes
 . Cliquez sur l'onglet *Subscription Time Series*.
 . Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Le premier abonnement dans votre nom de compte est sélectionné par défaut.
-. Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. La plage horaire par défaut sélectionnée est comprise entre la date de début de la période de facturation et la date actuelle.
-. Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée. Vous pouvez passer le curseur de la souris sur les graphiques pour afficher la ventilation d'utilisation en termes de données validées, consommées, Burst et au-dessus de la limite d'éclatement à ce point.
+. Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. La plage horaire par défaut va de la date de début de la période de facturation à la date actuelle.
+. Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée. Vous pouvez placer le curseur de la souris sur les graphiques pour afficher la répartition de l'utilisation en termes de données validées, consommées, en rafale et au-dessus de la limite de rafale à ce point de données.
 
 
 image:aiq-ks-subtime-2.png[""]
 
 Les détails suivants s'affichent :
 
-* *Courant consommé*: Ce graphique de jauge/donut à gauche indique la capacité consommée pour un niveau de service pour la période de facturation. Ce tableau affiche des couleurs spécifiques pour indiquer l'utilisation suivante :
+* *Détails de l'abonnement* : les dates de début et de fin de l'abonnement, ainsi que la période de facturation, par exemple, trimestrielle, annuelle, etc.
+* *Tableaux d'utilisation* : les graphiques à barres affichent le nom du niveau de service et la capacité consommée par rapport à ce niveau de service pour la plage de dates. La date et l'heure de la collection sont affichées en bas du graphique.
 +
-** Gris : aucun
-** Vert : dans les 80 % de la capacité engagée
-** Orange : toute consommation supérieure à 80 % de la capacité engagée
 
+NOTE: En fonction de la plage de dates de votre requête, les graphiques d'utilisation sont affichés dans une plage de 30 points de données.
 
-* *Courant Burst* : ce graphique jauge/donut indique la capacité consommée pour un niveau de service qui se situe dans la limite de rafale ou au-dessus. Pour un niveau de service, toute utilisation comprise entre 100 % et la limite autorisée, par exemple 20 % au-dessus de la capacité engagée, se situe dans la limite en rafale. Une utilisation supplémentaire est considérée comme une utilisation au-dessus de la limite de rafale . Ce tableau affiche des couleurs spécifiques pour indiquer l'utilisation suivante :
 +
-** Gris : aucun
-** Rouge : rafale
-** Violet : au-dessus de la limite d'éclatement
+Les couleurs suivantes dans les graphiques à barres indiquent la capacité consommée telle que définie dans le niveau de service :
 
-
-* *Burst accumulé* : l'utilisation des rafales accumulées ou la capacité utilisée est calculée par mois pour la période de facturation actuelle. L'utilisation des rafales cumulées est calculée en fonction de la capacité engagée et consommée pour un niveau de service : `(consumed - committed)/365.25/12`
-* *Séries de temps* : les graphiques à barres affichent l'utilisation de la capacité pour le temps sélectionné. La date et l'heure de la collection sont affichées en bas du graphique. Les graphiques à barres s'affichent dans les couleurs suivantes pour indiquer l'utilisation :
 +
-** Vert : dans un rayon de 80 %
-** Orange : 80 % - 100 %
+** Vert : à moins de 80 %.
+** Ambre: 80% - 100%.
 ** Rouge : utilisation en rafale (100 % de la capacité validée par rapport à la limite de rafale convenue)
-** Violet : au-dessus de la limite d'éclatement ou `Above Limit`
-** Gris : utilisation provisoire - utilisation enregistrée lorsque les données exactes de la période sont indisponibles et substituées par les données disponibles au point de collecte précédent
+** Violet : au-dessus de la limite d'éclatement ou `Above Limit`.
++
+
+NOTE: Lorsque vous placez le curseur de la souris sur un graphique à barres, vous pouvez afficher les données _usage provisoire_. Il s'agit de l'utilisation enregistrée lorsque les données exactes de la période ne sont pas disponibles et sont remplacées par les données disponibles au point de collecte des données précédent.
+
+
+
+* *Courant consommé* : indicateur de la capacité consommée (en Tio) définie pour le niveau de service. Ce champ utilise des couleurs spécifiques pour l'utilisation :
++
+** Gris : aucun.
+** Vert : dans un délai de 80 % de la capacité allouée.
+** Orange : toute consommation supérieure à 80 % de la capacité allouée.
+
+
+* *Burst courant* : indicateur de la capacité consommée dans la limite de rafale définie ou au-dessus. Toute utilisation comprise dans la limite de capacité supplémentaire convenue, par exemple, 20 % de plus que la capacité allouée se situe dans la limite de capacité supplémentaire. Autre utilisation : utilisation supérieure à la limite d'augmentation. Ce champ utilise des couleurs spécifiques pour l'utilisation :
++
+** Gris : aucun.
+** Rouge : rafale.
+** Violet : au-dessus de la limite d'éclatement.
+
+
+* *Burst cumulé* : indicateur de l'utilisation ou de la capacité consommée cumulée calculée par mois pour la période de facturation en cours. L'utilisation des rafales cumulées est calculée en fonction de la capacité engagée et consommée pour un niveau de service : `(consumed - committed)/365.25/12`.
++
+
+NOTE: Les indicateurs *courant consommé*, *courant Burst* et *Accrued Burst* déterminent la consommation par rapport à la période de facturation de l'abonnement et ne sont pas basés sur la plage de dates de la requête.
 
 
 
 
 
+== Afficher les détails du système
 
-== Afficher les détails du volume
+Dans l'onglet *Détails du système*, vous pouvez afficher la consommation et d'autres détails pour vos volumes dans ONTAP. Pour StorageGRID, cet onglet affiche les nœuds et leur utilisation individuelle dans votre environnement de stockage objet.
 
-Cliquez sur l'onglet *Détails du système* pour afficher les détails de chaque volume de votre environnement de stockage géré par abonnement Keystone.
+.<strong> </strong>
+[%collapsible]
+====
+Pour ONTAP, l'onglet *Détails du système* affiche des informations telles que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et le niveau de service des volumes de votre environnement de stockage géré par votre abonnement Keystone.
+
+.Étapes
+. Cliquez sur l'onglet *Détails du système*.
+. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné.
++
+Les détails du volume s'affichent. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
+
+
 
 image:aiq-ks-sysdtls.png[""]
 
-Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
+====
+.Nœuds <strong> et description de la consommations </strong>
+[%collapsible]
+====
+Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds dans l'environnement de stockage objet.
 
+.Étapes
+. Cliquez sur l'onglet *Détails du système*.
+. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné. Lorsque vous sélectionnez le numéro d'abonnement, le lien pour les détails du stockage objet est activé.
++
+image:sg-link.png[""]
+
+. Cliquez sur le lien pour afficher les noms des nœuds et les détails d'utilisation physique de chaque nœud.
++
+image:sg-link-2.png[""]
+
+
+
+====
 
 
 == Générer des rapports
@@ -126,7 +173,7 @@ Les alertes du tableau de bord envoient des messages d'avertissement pour vous p
 
 Les alertes peuvent être de deux types :
 
-* *Information*: Pour les problèmes, comme vos abonnements arrivant à la fin ou atteignant la période de grâce, vous pouvez voir les alertes d'information. Passez le curseur de la souris sur l'icône d'information pour obtenir plus d'informations sur le problème.
+* *Information* : pour les problèmes, tels que vos abonnements qui approchent d'une fin, vous pouvez voir les alertes d'information. Placez le curseur sur l'icône d'information pour en savoir plus sur le problème.
 * *Avertissement* : les problèmes, tels que non-conformité, sont affichés comme avertissements. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Vous pouvez cliquer sur le lien du message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *Détails du système*.
 +
 Pour plus d'informations sur les stratégies AQoS, voir link:../concepts/qos.html["La QoS adaptative"].
