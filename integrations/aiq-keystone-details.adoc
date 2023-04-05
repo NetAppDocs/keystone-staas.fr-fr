@@ -14,13 +14,20 @@ summary: Graphiques et rapports sur les abonnements Keystone
 
 
 [role="lead"]
-Si vous avez souscrit aux services STaaS de NetApp Keystone, vous pouvez contrôler votre utilisation via le widget *abonnements Keystone* du tableau de bord Active IQ Digital Advisor (conseiller digital).
+Le tableau de bord Active IQ Digital Advisor (conseiller digital) vous permet de contrôler l'utilisation de vos abonnements NetApp Keystone et de générer des rapports. Lorsque vous vous abonnez aux services Keystone, vous pouvez afficher les détails de votre abonnement et de votre utilisation dans le widget *abonnements Keystone* du tableau de bord Digital Advisor.
 
-Pour plus d'informations sur le widget Digital Advisor, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Consultez l'utilisation de la capacité sur l'abonnement NetApp Keystone"^].
 
-Cliquez sur *Afficher plus de détails* dans le widget pour afficher les détails d'utilisation et les alertes sur vos volumes sur la page *abonnement Keystone*. Sinon, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnement Keystone*.
+NOTE: Les informations disponibles ici s'appliquent à ONTAP et à StorageGRID. Des exceptions ont été signalées dans les sections pertinentes.
 
-Les détails des abonnements, les graphiques d'utilisation pour chaque niveau de service et les détails du volume sont affichés dans les différents onglets de cet écran.
+Pour plus d'informations sur le widget Keystone Digital Advisor, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Consultez l'utilisation de la capacité sur l'abonnement NetApp Keystone"^].
+
+Pour afficher les détails, procédez comme suit :
+
+.Étapes
+. Sur Digital Advisor, cliquez sur *Afficher plus de détails* sur le widget pour afficher les détails d'utilisation et les alertes sur vos volumes sur la page *abonnements Keystone*. Dans le volet de navigation de gauche, vous pouvez également accéder à *GÉNÉRAL > abonnements Keystone*.
+
+
+Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de service et des détails sur le volume s'affichent dans les différents onglets de l'écran *abonnements Keystone*.
 
 
 NOTE: La consommation de capacité des abonnements Keystone s'affiche dans les tibides des tableaux de bord et des rapports, avec un maximum de deux décimales. Si l'utilisation est inférieure à 0.01 Tio, la valeur est alors indiquée comme 0 ou `No Usage`. Pour les autres mesures d'utilisation, voir link:../concepts/metrics.html#metrics-measurement["Mesure des metrics"]. Pour plus d'informations sur les différentes capacités utilisées dans Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge"].
@@ -182,4 +189,4 @@ Pour plus d'informations sur les stratégies AQoS, voir link:../concepts/qos.htm
 
 image:alert-aiq.png[""]
 
-Contactez l'assistance pour plus d'informations sur ces messages d'avertissement et d'avertissement. Pour plus d'informations, reportez-vous à la section link:../concepts/gssc.html["Génération de demandes de service"].
+Pour plus d'informations sur ces messages d'avertissement et d'avertissement, contactez le support NetApp. Pour plus d'informations sur l'augmentation des demandes de service, reportez-vous à la section link:../concepts/gssc.html#generating-service-requests["Génération de demandes de service"].
