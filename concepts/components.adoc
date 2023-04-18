@@ -56,23 +56,7 @@ NetApp peut fournir les spécifications relatives à la climatisation (BTU typiq
 
 === Machines virtuelles de stockage
 
-Les machines virtuelles de stockage (VM de stockage) doivent être déployées avec les éléments suivants pour la surveillance et la mesure des abonnements Keystone. Une machine virtuelle de stockage est requise pour le collecteur Keystone. Une autre est requise pour la passerelle de OpsRamp
-
-* Keystone Collector- utilisé pour collecter des metrics d'utilisation :
-+
-** VCPU : 4
-** VRAM : 16 Go
-** VDisk : 200 Go
-
-
-* OpsRamp Gateway – utilisé pour contrôler en temps réel + support à distance ONTAP par le GSSC Keystone :
-+
-** VCPU : 8
-** VRAM : 16 Go
-** VDisk : 100 Go
-
-
-
+Une machine virtuelle de stockage (VM de stockage) est requise pour le déploiement du collecteur Keystone et de la passerelle de solution tout-en-un. Les conditions préalables à l'installation de Keystone Collector sont disponibles ici : link:..//installation/installation-overview.html["Guide d'installation de Keystone Collector"]. Les autres exigences sont partagées lors du déploiement.
 
 
 
@@ -81,10 +65,10 @@ Les machines virtuelles de stockage (VM de stockage) doivent être déployées a
 Le collecteur Keystone peut être déployé à l'aide des méthodes suivantes :
 
 * Modèle VMware OVA (VMware vCenter Server 6.7 ou version ultérieure requis)
-* Le client fournit un serveur Red Hat Enterprise Linux 7 ou 8 ou CentOS 7 Linux, et le logiciel Keystone est installé via le processus d'installation `.rpm.
+* Le client fournit un serveur Linux Red Hat Enterprise Linux 7 ou 8 ou CentOS 7. Le logiciel Keystone est installé via `.rpm` processus d'installation.
 
 
-OpsRamp Gateway est déployé dans la configuration suivante :
+La passerelle de la solution tout-en-un est déployée sur la configuration suivante :
 
 * Modèle VMware OVA (VMware vCenter Server 6.7 ou version ultérieure requis)
 * Programme d'installation .iso amorçable pour
@@ -100,7 +84,7 @@ OpsRamp Gateway est déployé dans la configuration suivante :
 
 === Mise en réseau
 
-Un accès sortant est requis pour les services suivants pour les opérations et la maintenance du collecteur Keystone et de la passerelle OpsRamp :
+Un accès sortant est requis pour les services suivants pour les opérations et la maintenance de la passerelle de la solution Keystone Collector et AIO :
 
 * support.netapp.com (chargement des données d'utilisation)
 * keystone.netapp.com (mises à jour logicielles)
@@ -117,4 +101,4 @@ NetApp fournit uniquement les émetteurs-récepteurs requis pour les dispositifs
 
 La connectivité réseau est requise entre l'infrastructure de stockage installée dans le data Center du client ou des services en colocation détenus par le client et le centre d'exploitation Keystone. Le client doit fournir les ressources de calcul, les machines virtuelles et les services Internet. La conception du réseau doit se faire via un protocole sécurisé, et les politiques de pare-feu seront approuvées par NetApp et par les clients.
 
-NetApp doit accéder aux composants matériels et logiciels installés à des fins de contrôle et de gestion, afin de fournir des services tels que la surveillance et la facturation aux clients Keystone. La méthode la plus courante consiste à établir une connexion VPN (réseau privé virtuel) au réseau du client et à accéder aux données requises. Pour surmonter toute complexité opérationnelle perçue par les clients à l'origine de l'ouverture de ports pare-feu à de nouveaux services, les outils de surveillance lancent une connexion externe. Les applications cloud NetApp, telles que OpsRamp et Zuora, utilisent cette connexion pour effectuer les services respectifs. Cette méthode répond aux exigences du client quant à la non-ouverture des ports de pare-feu, mais elle fournit l'accès aux composants de surveillance qui font partie de ce service.
+NetApp doit accéder aux composants matériels et logiciels installés à des fins de contrôle et de gestion, afin de fournir des services tels que la surveillance et la facturation aux clients Keystone. La méthode la plus courante consiste à établir une connexion VPN (réseau privé virtuel) au réseau du client et à accéder aux données requises. Pour surmonter toute complexité opérationnelle perçue par les clients à l'origine de l'ouverture de ports pare-feu à de nouveaux services, les outils de surveillance lancent une connexion externe. Les applications cloud NetApp, telles que la solution AIO et Zuora, utilisent cette connexion pour exécuter les services correspondants. Cette méthode répond aux exigences du client quant à la non-ouverture des ports de pare-feu, mais elle fournit l'accès aux composants de surveillance qui font partie de ce service.

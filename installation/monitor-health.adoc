@@ -99,7 +99,7 @@ Voici un exemple de travail réussi pour la collecte facultative de données de 
 L'interface utilisateur du collecteur Keystone vous permet de générer des packs de support, puis d'ajouter des demandes de service pour résoudre des problèmes de support. Suivre cette procédure :
 
 .Étapes
-. Ouvrez l'utilitaire TUI de gestion Keystone Collector :
+. Démarrez l'utilitaire TUI de gestion du collecteur Keystone :
 `$ keystone-collector-tui`
 . Accédez à *Troubleshooting > Generate support Bundle*.image:tui-sup-bundl.png[""]
 . Lorsqu'il est généré, l'emplacement où le bundle est enregistré s'affiche. Utilisez FTP, SFTP ou SCP pour vous connecter à l'emplacement et télécharger le fichier journal sur un système local.image:tui-sup-bundl-2.png[""]

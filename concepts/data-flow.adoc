@@ -14,13 +14,13 @@ summary: Flux de données Keystone
 
 
 [role="lead"]
-Les systèmes STaaS Keystone rencontrent le flux de données via Keystone Collector, et surveillent les flux de données.
+Les données des systèmes Keystone STaaS transitent par Keystone Collector et le système de surveillance associé, l'outil de solution AIO.
 
 
 
 == Collecteur de données Keystone
 
-Keystone Collector lance des appels d'API REST vers les contrôleurs de stockage et obtient régulièrement les détails d'utilisation des contrôleurs.
+Keystone Collector lance les appels de l'API REST vers les contrôleurs de stockage et obtient périodiquement les détails d'utilisation des contrôleurs, comme indiqué dans ce schéma de flux :
 
 image:collector-data-flow.png[""]
 
@@ -28,22 +28,22 @@ image:collector-data-flow.png[""]
 . NetApp Collector lance une session HTTPS vers le portail cloud Active-IQ.
 . Le pare-feu actionné par le client autorise la connexion.
 . Le portail cloud Active IQ accepte la connexion et établit un tunnel vers le collecteur NetApp.
-. Le collecteur NetApp établit une session d'API REST avec la connexion de gestion du contrôleur de stockage, obtient les données environnementales et les envoie au portail Active IQ.
+. Le collecteur NetApp établit une session d'API REST vers la connexion de gestion du contrôleur de stockage, obtient les données environnementales et les envoie vers le portail Active IQ.
 
 
 
 
 == Surveillance des flux de données
 
-La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour le contrôle, Keystone utilise OpsRamp, qui nécessite un accès à distance au réseau du client. L'image suivante décrit comment l'accès à distance à l'emplacement client est sécurisé par l'outil OpsRamp.
+La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour la surveillance et le reporting, Keystone utilise une solution AIO qui nécessite un accès distant au réseau du client. L'image suivante décrit comment l'accès à distance à l'emplacement du client est sécurisé par l'outil de solution tout-en-un.
 
 image:monitoring-flow.png[""]
 
 .Légende
-. La passerelle de OpsRamp initie une session TLS vers le portail cloud de OpsRamp dans le cloud.
+. La passerelle de la solution tout-en-un initie une session TLS vers son portail cloud.
 . Le pare-feu actionné par le client autorise la connexion.
-. Le serveur OpsRamp dans le cloud accepte la connexion.
-. Un tunnel TLS est établi entre le portail Cloud de OpsRamp et la passerelle locale de OpsRamp.
-. Les contrôleurs NetApp envoient des alertes via le protocole SNMP ou répondent aux demandes d'API à la passerelle locale de OpsRamp.
-. La passerelle locale de OpsRamp envoie ces alertes à son portail cloud à l'aide de la session TLS, qui a été établie auparavant.
+. Le serveur de solutions tout-en-un dans le cloud accepte la connexion.
+. Un tunnel TLS est établi entre le portail cloud et la passerelle locale.
+. Les contrôleurs NetApp envoient des alertes via le protocole SNMP ou répondent aux requêtes d'API à la passerelle locale.
+. La passerelle locale envoie ces alertes à son portail cloud à l'aide de la session TLS établie précédemment.
 
