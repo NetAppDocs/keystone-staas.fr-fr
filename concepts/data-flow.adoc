@@ -22,7 +22,7 @@ Les données des systèmes Keystone STaaS transitent par Keystone Collector et l
 
 Keystone Collector lance les appels de l'API REST vers les contrôleurs de stockage et obtient périodiquement les détails d'utilisation des contrôleurs, comme indiqué dans ce schéma de flux :
 
-image:collector-data-flow.png[""]
+image:collector-data-flow.png["affiche le flux de données dans les composants du collecteur"]
 
 .Légende
 . NetApp Collector lance une session HTTPS vers le portail cloud Active-IQ.
@@ -37,7 +37,7 @@ image:collector-data-flow.png[""]
 
 La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour la surveillance et le reporting, Keystone utilise une solution AIO qui nécessite un accès distant au réseau du client. L'image suivante décrit comment l'accès à distance à l'emplacement du client est sécurisé par l'outil de solution tout-en-un.
 
-image:monitoring-flow.png[""]
+image:monitoring-flow.png["flux de données"]
 
 .Légende
 . La passerelle de la solution tout-en-un initie une session TLS vers son portail cloud.

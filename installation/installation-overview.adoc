@@ -23,4 +23,4 @@ Keystone Collector est le composant d'acquisition d'utilisation de la plateforme
 
 Ce diagramme d'architecture présente les composants constitutifs et leur connectivité dans un environnement Keystone standard.
 
-image:collector-arch.png[""]
+image:collector-arch.png["architecture du collecteur"]

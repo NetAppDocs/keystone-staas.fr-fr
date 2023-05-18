@@ -44,8 +44,8 @@ NOTE: Le collecteur Keystone fournit l'utilitaire TUI (Keystone Collector Manage
 
 ====
 . Activez/désactivez le champ **Démarrer KS-Collector avec System**.
-. Cliquez sur **Enregistrer**.image:tui-1.png[""]
-. Assurez-vous que le collecteur Keystone est en bon état en retournant à l'écran principal de l'interface utilisateur TUI et en vérifiant les informations **État du service**. Le système devrait montrer que les services sont dans un **état général : sain**.image:tui-2.png[""]
+. Cliquez sur **Enregistrer**.image:tui-1.png["ecran tui"]
+. Assurez-vous que le collecteur Keystone est en bon état en retournant à l'écran principal de l'interface utilisateur TUI et en vérifiant les informations **État du service**. Le système devrait montrer que les services sont dans un **état général : sain**.image:tui-2.png["ecran tui"]
 . Quittez l'interface TUI de gestion du collecteur Keystone en sélectionnant l'option **Quitter vers Shell** sur l'écran d'accueil.
 
 
@@ -59,7 +59,7 @@ Le logiciel Collector prend en charge l'utilisation d'un proxy HTTP pour communi
 . Redémarrez l'utilitaire TUI de gestion du collecteur Keystone s'il est déjà fermé :
 `$ keystone-collector-tui`
 . Activez le champ **HTTP Proxy** et ajoutez les détails du serveur proxy HTTP, du port et des informations d'identification, si l'authentification est requise.
-. Cliquez sur **Enregistrer**.image:tui-3.png[""]
+. Cliquez sur **Enregistrer**.image:tui-3.png["ecran tui"]
 
 
 
@@ -70,6 +70,6 @@ Le collecteur Keystone collecte des informations limitées sur la configuration,
 
 La limitation de la collecte de données client spécifiques est une option configurable sur l'écran de l'interface utilisateur Keystone Collector. Cette option, *Supprimer les données privées*, est activée par défaut.
 
-image:tui-4.png[""]
+image:tui-4.png["ecran tui"]
 
 Pour plus d'informations sur les éléments supprimés lors de la limitation de l'accès privé aux données dans ONTAP et StorageGRID, reportez-vous à la section link:../installation/data-collection.html["Liste des éléments supprimés pour limiter l'accès aux données privées"].

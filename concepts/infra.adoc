@@ -48,6 +48,6 @@ En plus de l'équipement de stockage, deux outils de surveillance sont provision
 * Collecteur de données Keystone : le collecteur Keystone fournit des services de facturation aux clients Keystone. Cette application est fournie avec Active IQ Unified Manager. Il collecte les données des contrôleurs ONTAP et StorageGRID toutes les cinq minutes. Les données sont traitées et les métadonnées sont envoyées vers le data Lake centralisé Active IQ via le mécanisme AutoSupport utilisé pour la génération des données de facturation. Active IQ Data Lake traite les données de facturation et les envoie à Zuora pour facturation.
 
 
-image:mgmt-stack.png[""]
+image:mgmt-stack.png["pile de gestion"]
 
 Active IQ Digital Advisor (Digital Advisor) vous permet de vous connecter et de consulter les informations sur l'abonnement et la consommation pour vos abonnements Keystone. Pour plus d'informations sur les rapports Keystone sur le tableau de bord Digital Advisor, reportez-vous à la section link:../integrations/keystone-aiq.html["Keystone et conseiller digital"].

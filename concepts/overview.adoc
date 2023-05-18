@@ -18,7 +18,7 @@ NetApp Keystone (Keystone) est un modèle de service avec paiement basé sur l'a
 
 Keystone permet aux clients d'accélérer le retour sur investissement en réduisant les obstacles liés à la gestion de la croissance imprévisible de la capacité et des cycles d'approvisionnement complexes. Keystone permet aux clients d'aligner le modèle économique et les opérations sur leurs priorités métier.
 
-image:nkfsosm_image2.png["Erreur : image graphique manquante"]
+image:nkfsosm_image2.png["keystone"]
 
 Keystone fournit une capacité de stockage avec des niveaux de service prédéfinis pour les types de données en mode bloc, fichier et objet qui peuvent être déployés sur site et exploités par NetApp, un partenaire ou le client. Keystone peut être utilisé en association avec des services cloud NetApp, comme Cloud Volumes ONTAP, qui peut être déployé sur un environnement Hyperscalers de votre choix.
 

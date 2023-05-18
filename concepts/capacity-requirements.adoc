@@ -111,7 +111,7 @@ Prenez note des clauses suivantes pour les ajustements de capacité :
 
 La réduction de la capacité (annuelle) s'applique au modèle de paiement anticipé _annuel et aux déploiements sur site uniquement. Elle n'est pas disponible pour les services cloud ou de cloud hybride. Il fournit des provisions pour la capacité sur site, qui peuvent être réduites jusqu'à 25 % par niveau de service par abonnement. Cette réduction est autorisée une fois par année à prendre effet au début de la prochaine période de facturation annuelle. Les paiements annuels basés sur les services doivent être >= 200 000 $ à tout moment pendant la durée afin de tirer parti de la réduction de la capacité. Dans la mesure où elle est prise en charge uniquement pour les déploiements sur site, ce modèle de facturation n'assure pas la réattribution des dépenses pour l'infrastructure sur site vers les services cloud. Un exemple de réduction annuelle de la capacité est illustré dans l'image suivante.
 
-image:capacity-reduction.png[""]
+image:capacity-reduction.png["image affichant la réduction de capacité"]
 
 
 
@@ -132,4 +132,4 @@ Conditions requises au niveau de l'abonnement :
 
 Un exemple de réaffectation des dépenses trimestrielles est illustré dans l'image suivante :
 
-image:spend-alloc.png[""]
+image:spend-alloc.png["comment les dépenses sont allouées"]

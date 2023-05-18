@@ -36,4 +36,4 @@ Si vous avez acheté ce service, notez ce qui suit :
 
 La technologie SnapLock active la fonction NRNVC en rendant le disque inutilisable après la date d'expiration définie dans le volume. Pour utiliser la technologie SnapLock sur vos volumes, vous devez vous abonner à NRNVC. Ceci s'applique uniquement aux services de fichiers et de blocs.
 
-Pour plus d'informations sur la technologie SnapLock, reportez-vous à la section https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html["Qu'est-ce que SnapLock"].
+Pour plus d'informations sur la technologie SnapLock, reportez-vous à la section https://["Qu'est-ce que SnapLock"].

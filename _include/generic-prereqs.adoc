@@ -6,13 +6,13 @@
 
 == Autres exigences
 
-Endurer que les exigences génériques suivantes sont respectées :
+S'assurer que les exigences génériques suivantes sont respectées :
 
 
 
 === Exigences de mise en réseau
 
-Le tableau suivant décrit les exigences de mise en réseau de Keystone Collector.
+Les exigences de mise en réseau de Keystone Collector sont répertoriées dans le tableau suivant.
 
 
 NOTE: Keystone Collector nécessite une connectivité Internet. Vous pouvez fournir une connectivité Internet par routage direct via la passerelle par défaut (via NAT) ou via le proxy HTTP. Les deux variantes sont décrites ici.
@@ -185,30 +185,30 @@ Le collecteur Keystone doit accéder aux hôtes Internet suivants :
 
 
  a| 
-https://keystone.netapp.com[]
+https://[]
  a| 
 Mises à jour logicielles Keystone Collector et rapports d'utilisation
 
 
 
  a| 
-https://support.netapp.com[]
+https://[]
  a| 
 Siège de NetApp, pour la facturation et la livraison AutoSupport
 
 
 
  a| 
-https://mirror.centos.org[]
-https://mirrorlist.centos.org[]
+https://[]
+https://[]
  a| 
 Mises à jour du système d'exploitation pour Keystone Collector (déploiements OVA uniquement)
 
 
 
  a| 
-http://repo.mysql.com[]
+https://[]
  a| 
-Télécharger et mettre à jour les dépendances mysql (pour les déploiements Linux uniquement)
+Téléchargement et mise à jour des dépendances MySQL (pour les déploiements Linux uniquement)
 
 |===

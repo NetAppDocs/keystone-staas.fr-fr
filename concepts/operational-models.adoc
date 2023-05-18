@@ -40,7 +40,7 @@ Installation et tâches associées
 * Déployez
 * Intégration
 
-| image:check.png[""] | Aucune 
+| image:check.png["cochez la case"] | Aucune 
 
 
  a| 
@@ -51,7 +51,7 @@ Administration et contrôle
 * Effectuer des tâches administratives
 * Alerte
 
-| Aucune | image:check.png[""] 
+| Aucune | image:check.png["cochez la case"] 
 
 
  a| 
@@ -61,7 +61,7 @@ Opérations et optimisation
 * Gestion des performances
 * Gestion du niveau de service
 
-| Aucune | image:check.png[""] 
+| Aucune | image:check.png["cochez la case"] 
 
 
  a| 
@@ -72,6 +72,6 @@ Assistance
 * Support logiciel
 * Mises à niveau et correctifs
 
-| image:check.png[""] | Aucune 
+| image:check.png["cochez la case"] | Aucune 
 |===
 Pour plus d'informations sur le déploiement, voir link:../concepts/infra.html["Infrastructure Keystone"] et link:..//concepts/components.html["Composants pour le déploiement"].

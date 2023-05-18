@@ -22,7 +22,7 @@ Dans ce service :
 
 * Equinix fournit des ressources d'espace, d'alimentation, de refroidissement, de réseau et de facturation, et le stockage tous les mois.
 * Des propositions de vente de Keystone sont prises en charge.
-* Les services sont pris en charge par 21 data centers répartis dans 11 pays.
+* Les services sont pris en charge dans les data centers de 11 pays.
 
 
 Equinix dispose des data centers suivants :
@@ -67,7 +67,7 @@ Londres
 
 
  a| 
-Angeles perdu
+Los Angeles
 | ÉTATS-UNIS 
 
 

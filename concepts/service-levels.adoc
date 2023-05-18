@@ -14,25 +14,15 @@ summary: Niveaux de service pris en charge
 
 
 [role="lead"]
-Le service Keystone STaaS offre la capacité de stockage des données avec des niveaux de service (niveaux de service) prédéfinis sur la base d'un abonnement.
+Le service Keystone STaaS offre la capacité de stockage des données avec des niveaux de service (niveaux de service) prédéfinis sur la base d'un abonnement. Chaque volume géré par les services Keystone est associé à un niveau de service.
 
-Les niveaux de service sont définis selon :
+Chaque niveau de services est défini par sa densité d'E/S, à savoir IOPS/Tio/volume. Il s'agit du rapport entre les performances (opérations d'entrée/sortie par seconde [IOPS]) et la capacité de stockage utilisée (Tio), qui correspond au nombre d'IOPS/Tio à la latence moyenne par volume.
 
-* Latence moyenne
-* IOPS maximales par To logiques stocké par volume
-
-
-Un volume doit être associé à un niveau de service.
+Les niveaux de service des types de stockage, des services fichier, bloc, objet et cloud pris en charge sont répertoriés ici.
 
 
 
-== Niveaux de service pour le stockage pris en charge
-
-Les niveaux de service pour les services fichier, bloc, objet et cloud sont répertoriés ici.
-
-
-
-=== Stockage basé sur des fichiers et des blocs
+== Niveaux de service pour le stockage fichier et bloc
 
 *Protocoles pris en charge* : NFS, CIFS, iSCSI et FC
 
@@ -48,26 +38,43 @@ Les niveaux de service pour les services fichier, bloc, objet et cloud sont rép
 | *Nombre maximal d'IOPS/tibides logiques stockés par volume* | 12,288 | 4,096 | 2,048 | 512 | 128 
 
 
-| *Nombre maximum de Mbit/s/tibides logiques stockés par volume* | 384 | 128 | 64 | 16 | 4 
+| *Nombre maximal d'IOPS/de Tibs logiques alloués par volume* | 6,144 | 2,048 | 1,024 | 256 | 64 
 
 
-| * Latence* | <1 ms | <2 ms | <4 ms | <17 ms | <17 ms 
+| *Nombre maximum de Mbit/s/Tibs logiques stockés par volume à 32 K B/S* | 384 | 128 | 64 | 16 | 4 
+
+
+| * Latence moyenne* | 1 ms. | 2 ms. | 4 ms. | 17 ms. | 17 ms. 
+
+
+| *Taille de bloc* 5+| 32 KO 
 |===
-[NOTE]
-====
-Notez les points suivants pour les mesures de performances de débit (uniquement applicables au fichier
-
-* Les niveaux de service de fichiers et de blocs sont basés sur ONTAP 9.7 et versions ultérieures.
-* Les valeurs des IOPS/Tio et de latence pour les niveaux de service sont basées sur la quantité de données logiques stockées dans le volume, sur la taille de bloc de 32 Ko et sur une combinaison aléatoire de 70 % de lectures et de 30 % d'E/S en écriture.
-* Les IOPS/Tio et/ou Mbit/s/Tio réels varient en fonction des modèles d'utilisation et de la simultanéité des charges de travail.
-* La latence n'inclut pas les éléments suivants : -- les applications, les hôtes ou la latence réseau du client vers ou depuis les ports du contrôleur. -- la latence automatiquement appliquée par QoS pour conserver les E/S dans les limites maximales de niveau de service.
-* Lorsque vous utilisez le service d'extension Advanced Data protection, la latence cible s'applique uniquement au traitement des demandes d'E/S des produits Keystone locaux.
 
 
-====
+=== En savoir plus sur les niveaux de service pour le stockage fichier et bloc
+
+Les indicateurs de niveau de service dépendent des conditions suivantes :
+
+* Les niveaux de service pour le stockage fichier et bloc prennent en charge ONTAP 9.7 et versions ultérieures.
+* Les valeurs d'IOPS/Tio/volume, de Mo/sec/Tio/volume et de latence pour les niveaux de services sont basées sur la quantité de données stockées dans le volume, la taille de bloc de 32 Ko et une combinaison aléatoire d'opérations d'E/S de 70 % en lecture et 30 % en écriture.
+* La quantité réelle d'IOPS/Tio/volume et de Mo/sec/Tio/volume peut varier en fonction de la taille de bloc réelle ou estimée, de la simultanéité des workloads du système ou des opérations d'entrée/sortie.
+* La latence n'inclut pas les éléments suivants :
++
+** latence de l'hôte ou de l'application
+** latence du réseau du client vers ou depuis les ports du contrôleur
+** Frais généraux associés au transfert des données vers le magasin d'objets en cas de FabricPool
+** La latence est automatiquement appliquée par la QoS pour maintenir les E/S dans les limites des limites maximales du niveau de service
 
 
-=== Stockage objet
+* Les valeurs de latence ne s'appliquent pas aux opérations d'écriture MetroCluster. Ces opérations d'écriture dépendent de la distance entre les systèmes distants.
+* Si une règle AQoS n'est pas attribuée à un ou plusieurs volumes d'un système de stockage, ces volumes sont considérés comme des volumes non conformes et aucun niveau de service cible n'est applicable à ces systèmes.
+* La règle _IOPS attendues_ est destinée à FabricPool uniquement si la règle de Tiering est définie sur « aucun » et qu'aucun bloc n'est dans le cloud. _IOPS attendues_ est destiné aux volumes qui ne font pas partie d'une relation synchrone SnapMirror.
+* Les opérations d'E/S des workloads doivent être équilibrées sur tous les contrôleurs déployés, comme le détermine l'ordre Keystone.
+
+
+
+
+== Stockage objet
 
 *Protocole pris en charge* : S3
 
@@ -93,7 +100,7 @@ NOTE: La latence n'inclut pas les surcharges associées au transfert de données
 
 
 
-=== Le stockage cloud
+== Le stockage cloud
 
 *Protocole pris en charge* : NFS, CIFS, iSCSI et S3 (AWS et Azure uniquement)
 
