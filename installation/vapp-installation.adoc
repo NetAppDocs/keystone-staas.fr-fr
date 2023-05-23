@@ -23,7 +23,7 @@ Le déploiement de Keystone Collector sur des systèmes VMware vSphere inclut le
 Voici la procédure à suivre :
 
 .Étapes
-. Téléchargez le fichier OVA à partir de https://[] Et stockez-les sur votre système VMware vSphere.
+. Téléchargez le fichier OVA à partir de https://keystone.netapp.com/downloads/KeystoneCollector-latest.ova[] Et stockez-les sur votre système VMware vSphere.
 . Sur votre système VMware vSphere, accédez à la vue *VM et modèles*.
 . Cliquez avec le bouton droit de la souris sur le dossier requis pour la machine virtuelle (VM) (ou le centre de données, si vous n'utilisez pas les dossiers VM) et sélectionnez *déployer le modèle OVF*.
 . À l'étape 1_ de l'assistant *déployer modèle OVF*, cliquez sur *Sélectionner et modèle OVF* pour sélectionner le fichier téléchargé `KeystoneCollector-latest.ova` fichier.
@@ -32,7 +32,7 @@ Voici la procédure à suivre :
 . A l'étape 4 : vérifier les détails_, vérifier l'exactitude et l'authenticité du fichier OVA. Le nom du produit doit apparaître sous la forme _NetApp Keystone Collector_.image:ova-deploy.png["Interface utilisateur OVA"]VCenter valide l'intégrité du contenu du fichier OVA et qu'un résumé de signature de code valide est fourni pour les fichiers contenus dans le fichier OVA. Toutefois, il ne valide pas l'authenticité du certificat de signature de code. Pour vérifier l'intégrité, téléchargez le certificat de signature complète et vérifiez-le par rapport au certificat public publié par Keystone. Voici la procédure à suivre :
 +
 .. Cliquez sur le lien *Publisher* pour télécharger le certificat de signature complet.
-.. Téléchargez le certificat public _Keystone Billing_ : https://[].
+.. Téléchargez le certificat public _Keystone Billing_ : https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem[].
 .. Vérifiez l'authenticité du certificat de signature OVA par rapport au certificat public en utilisant OpenSSL :
 `openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
 

@@ -28,7 +28,7 @@ NetApp propose des services d'exploitation à distance aux clients NetApp Keysto
 
 L'équipe du Centre de support et de services NetApp (GSSC) soutient principalement les services fournis aux clients NetApp Keystone. Vous pouvez utiliser les informations suivantes pour contacter l'équipe de support.
 
-* Contacts du service mondial :https://[]
+* Contacts du service mondial :https://www.netapp.com/us/contact-us/support.aspx[]
 * Si votre dossier/ticket ouvert doit être réaffecté de la manière suivante, envoyez un e-mail à l'une des adresses suivantes : keystone.services@netapp.com keystone.escalations@netapp.com
 * NetApp utilise une solution tout-en-un pour surveiller de manière proactive l'environnement NetApp Keystone et se connecter à des fins de résolution de problèmes.
 
@@ -38,8 +38,8 @@ NOTE: Dans un modèle opéré par les partenaires, les demandes de service des l
 
 Pour en savoir plus sur les services Keystone, consultez :
 
-* NetApp Keystonehttps://["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
-* Documentation produit NetApphttps://["https://docs.netapp.com"^]
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* Documentation produit NetApphttps://docs.netapp.com["https://docs.netapp.com"^]
 
 
 
@@ -57,7 +57,7 @@ Le responsable des réussites Keystone (KSM) travaille en étroite collaboration
 
 Lors de votre intégration, si vous avez reçu les informations d'identification pour accéder à NetApp Keystone ServiceNow, vous pouvez utiliser le portail pour générer des demandes de service pour les problèmes liés à vos abonnements Keystone :
 
-https://[]
+https://netappgssc.service-now.com/csm[]
 
 Assurez-vous que vous disposez des informations système, des journaux et des informations associées avant de lancer la demande de service. Lorsque vous effectuez une demande de service, l'équipe GSSC reçoit le ticket de support et accède aux informations de dépannage. Vous pouvez suivre votre ticket ServiceNow pour connaître le statut et la résolution.
 

@@ -206,29 +206,29 @@ Le collecteur Keystone doit accéder aux hôtes Internet suivants :
 
 
  a| 
-https://[]
+https://keystone.netapp.com[]
  a| 
 Mises à jour logicielles Keystone Collector et rapports d'utilisation
 
 
 
  a| 
-https://[]
+https://support.netapp.com[]
  a| 
 Siège de NetApp, pour la facturation et la livraison AutoSupport
 
 
 
  a| 
-https://[]
-https://[]
+https://mirror.centos.org[]
+https://mirrorlist.centos.org[]
  a| 
 Mises à jour du système d'exploitation pour Keystone Collector (déploiements OVA uniquement)
 
 
 
  a| 
-https://[]
+https://repo.mysql.com[]
  a| 
 Téléchargement et mise à jour des dépendances MySQL (pour les déploiements Linux uniquement)
 

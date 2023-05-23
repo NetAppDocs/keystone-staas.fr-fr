@@ -19,7 +19,7 @@ Le tableau de bord Active IQ Digital Advisor (conseiller digital) vous permet de
 
 NOTE: Les informations disponibles ici s'appliquent à ONTAP et à StorageGRID. Des exceptions ont été signalées dans les sections pertinentes.
 
-Pour plus d'informations sur le widget Keystone Digital Advisor, reportez-vous à la section https://["Consultez l'utilisation de la capacité sur l'abonnement NetApp Keystone"^].
+Pour plus d'informations sur le widget Keystone Digital Advisor, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Consultez l'utilisation de la capacité sur l'abonnement NetApp Keystone"^].
 
 Pour afficher les détails, procédez comme suit :
 
@@ -75,6 +75,10 @@ L'onglet *Subscription Time Series* affiche les données historiques de vos abon
 . Cliquez sur l'onglet *Subscription Time Series*.
 . Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Le premier abonnement dans votre nom de compte est sélectionné par défaut.
 . Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. La plage horaire par défaut va de la date de début de la période de facturation à la date actuelle.
++
+
+NOTE: Pour des performances et une expérience utilisateur optimales, limitez la plage de dates de votre requête à trois mois maximum.
+
 . Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée. Vous pouvez passer le curseur de la souris sur les graphiques pour afficher la ventilation d'utilisation en termes de données validées, consommées, Burst et au-dessus de la limite d'éclatement à ce point.
 
 
