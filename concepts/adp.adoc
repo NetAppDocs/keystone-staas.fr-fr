@@ -14,25 +14,27 @@ summary: Protection avancée des données
 
 
 [role="lead"]
-Vous pouvez vous abonner au service d'extension Advanced Data protection dans le cadre de votre abonnement Keystone STaaS. Ce service complémentaire tire parti de la technologie NetApp MetroCluster pour assurer une protection efficace des données pour vos charges de travail stratégiques à un objectif de point de récupération (RPO) de 0.
+Vous pouvez souscrire au service add-on de protection avancée des données dans le cadre de votre abonnement Keystone STaaS. Ce service complémentaire tire parti de la technologie NetApp MetroCluster pour assurer une protection efficace des données pour vos charges de travail stratégiques à un objectif de point de récupération (RPO) de 0.
 
 
 NOTE: Les services standard Keystone STaaS pour le stockage des fichiers et blocs proposent des services de protection des données par défaut en exploitant les technologies NetApp, telles que SnapMirror, SnapVault et Snapshot.
 
 Pour plus d'informations sur le service standard et cloud, voir link:../concepts/supported-storage-services.html["Services STaaS Keystone"].
 
-Pour plus d'informations sur les niveaux de service, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
+Le service avancé de protection des données Keystone peut mettre en miroir les données de manière synchrone sur un site secondaire. En cas d'incident sur le site primaire, le site secondaire peut prendre le contrôle sans perte de données. Ces fonctionnalités tirent parti de la configuration MetroCluster entre deux sites pour assurer la protection des données. Vous pouvez bénéficier des services d'extension avancée de protection des données pour uniquement vos services de stockage bloc et de fichiers. Dans le cadre de ce service complémentaire, le `Advanced Data-Protect` le niveau de service est attribué à votre abonnement.
+Pour plus d'informations sur ONTAP MetroCluster, reportez-vous à la section link:https://docs.netapp.com/us-en/ontap-metrocluster["Documentation MetroCluster"^].
 
-Le service avancé de protection des données Keystone peut mettre en miroir les données de manière synchrone sur un site secondaire. En cas d'incident sur le site primaire, le site secondaire peut prendre le contrôle sans perte de données. Ces fonctionnalités tirent parti de la configuration MetroCluster entre deux sites pour assurer la protection des données. Vous pouvez bénéficier des services d'extension avancée de protection des données pour uniquement vos services de stockage bloc et de fichiers. Pour plus d'informations sur ONTAP MetroCluster, reportez-vous à la section link:https://docs.netapp.com/us-en/ontap-metrocluster["Documentation MetroCluster"^].
+Pour plus d'informations sur l'affichage de la consommation dans une configuration MetroCluster, reportez-vous à la section link:../integrations/aiq-keystone-details.html#additional-details-for-advanced-data-protection["Informations supplémentaires sur la protection avancée des données"].
 
 Les frais d'extension sont applicables à toutes les capacités de l'abonnement : la source, la copie en miroir et les données non mises en miroir.
 
-
-NOTE: Remarque :
+Notez ce qui suit :
 
 * Pour ce service, 100 % de la capacité dédiée sur un stockage associé est configurée en tant que capacité engagée.
 * L'espace de stockage est facturé pour les clusters source et de destination. Ce service d'extension est également chargé à la fois pour les volumes primaires et secondaires (en miroir).
-* Les frais ne s'appliquent qu'à votre stockage de fichiers et de blocs. Les scénarios MetroCluster suivants sont pris en charge :
+* Les frais ne s'appliquent qu'à votre stockage de fichiers et de blocs.
 
+
+Les scénarios MetroCluster suivants sont pris en charge :
 
 image:mcc.png["Configurations MetroCluster prises en charge par Keystone"]
