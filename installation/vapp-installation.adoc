@@ -32,7 +32,7 @@ Voici la procédure à suivre :
 . A l'étape 4 : vérifier les détails_, vérifier l'exactitude et l'authenticité du fichier OVA.
 Les versions vCenter antérieures à 7.0u2 ne peuvent pas vérifier automatiquement l'authenticité du certificat de signature de code. VCenter 7.0u2 et versions ultérieures peuvent effectuer les vérifications. Toutefois, pour cela, l'autorité de certification de signature doit être ajoutée à vCenter. Suivez ces instructions pour votre version de vCenter :
 +
-.VCenter 7.0u1 et versions antérieures : cliquez ici
+.VCenter 7.0u1 et versions antérieures : en savoir plus
 [%collapsible]
 ====
 VCenter valide l'intégrité du contenu du fichier OVA et qu'un résumé de signature de code valide est fourni pour les fichiers contenus dans le fichier OVA. Toutefois, il ne valide pas l'authenticité du certificat de signature de code. Pour vérifier l'intégrité, téléchargez le certificat de signature complète et vérifiez-le par rapport au certificat public publié par Keystone.
@@ -45,7 +45,7 @@ VCenter valide l'intégrité du contenu du fichier OVA et qu'un résumé de sign
 
 ====
 +
-.VCenter 7.0u2 et versions ultérieures : cliquez ici
+.VCenter 7.0u2 et versions ultérieures : en savoir plus
 [%collapsible]
 ====
 7.0u2 et versions ultérieures de vCenter sont capables de valider l'intégrité du contenu du fichier OVA et l'authenticité du certificat de signature de code, lorsqu'un résumé de signature de code valide est fourni. Le magasin de confiance racine vCenter contient uniquement des certificats VMware. NetApp utilise Entrust comme autorité de certification et ces certificats doivent être ajoutés au magasin de confiance vCenter.

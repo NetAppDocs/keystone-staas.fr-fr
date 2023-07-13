@@ -20,7 +20,7 @@ Keystone collecte des informations sur la configuration, l'état et l'utilisatio
 
 == Collecte de données ONTAP
 
-.Données <strong> de recherche de données pour ONTAP : cliquez sur </strong> de recherche de données
+.Données <strong> requises pour ONTAP : apprenez-en plus sur </strong>
 [%collapsible]
 ====
 La liste suivante présente un échantillon représentatif des données de consommation de capacité collectées pour ONTAP :
@@ -198,7 +198,7 @@ La liste suivante présente un échantillon représentatif des données de conso
 
 
 ====
-.Données <strong> de recherche de données pour ONTAP : cliquez sur </strong> de recherche de données
+.Données <strong> requises pour ONTAP : apprenez-en plus sur </strong>
 [%collapsible]
 ====
 La liste suivante présente un échantillon représentatif des données de performances collectées pour ONTAP :
@@ -247,7 +247,7 @@ La liste suivante présente un échantillon représentatif des données de perfo
 
 
 ====
-.<strong> - sélection d'éléments supprimés lors de la limitation de l'accès privé aux données : cliquez sur </strong> de la carte
+.<strong> : suppression des éléments limitant l'accès aux données privées : apprenez au mieux </strong>
 [%collapsible]
 ====
 Lorsque l'option *Supprimer les données privées* est activée sur le collecteur Keystone, les informations d'utilisation suivantes sont supprimées pour ONTAP. Cette option est activée par défaut.
@@ -275,7 +275,7 @@ Lorsque l'option *Supprimer les données privées* est activée sur le collecteu
 
 == Collecte de données StorageGRID
 
-.Données <strong> de recherche de données pour StorageGRID : cliquez sur </strong> de recherche de données
+.Données <strong> requises pour StorageGRID : apprenez-en plus sur </strong>
 [%collapsible]
 ====
 La liste suivante est un échantillon représentatif du `Logical Data` Collectées pour StorageGRID :
@@ -301,7 +301,7 @@ La liste suivante est un échantillon représentatif du `Physical Data` Collect�
 
 
 ====
-.<strong> - sélection d'éléments supprimés lors de la limitation de l'accès privé aux données : cliquez sur </strong> de la carte
+.<strong> : suppression des éléments limitant l'accès aux données privées : apprenez au mieux </strong>
 [%collapsible]
 ====
 Lorsque l'option *Supprimer les données privées* est activée sur le collecteur Keystone, les informations d'utilisation suivantes sont supprimées pour StorageGRID. Cette option est activée par défaut.

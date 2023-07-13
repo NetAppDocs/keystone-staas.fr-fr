@@ -69,6 +69,8 @@ sidebar:
       url: "/concepts/qos.html"
     - title: Exigences de capacité pour les niveaux de services
       url: "/concepts/capacity-requirements.html"
+    - title: Niveaux de service des SLA de durabilité
+      url: "/concepts/sla-sustainability.html"
   - title: Facturation
     entries:
     - title: Tarification Keystone
