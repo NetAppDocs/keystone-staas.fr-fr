@@ -200,16 +200,16 @@ Si les clusters de votre environnement de stockage ONTAP sont configurés dans u
 NOTE: Les graphiques à barres de consommation sont divisés uniquement pour les niveaux de service de base. Pour le service complémentaire de protection avancée des données, c'est-à-dire le niveau de service _Advanced Data-Protect_, cette démarcation n'apparaît pas.
 
 .Niveau de service avancé de protection des données
-Pour le niveau de service _Advanced Data-Protect_, la consommation totale est répartie entre les sites partenaires, et l'utilisation sur chaque site partenaire est reflétée et facturée dans un abonnement distinct, c'est-à-dire un abonnement pour le site principal et un autre pour le site miroir. C'est pourquoi, lorsque vous sélectionnez le numéro d'abonnement pour le site principal dans l'onglet *Time Series*, les graphiques de consommation pour le service complémentaire de protection avancée des données affichent les détails de consommation discrète pour le site principal uniquement. Étant donné MetroCluster que chaque site partenaire fait office de source et de miroir, la consommation totale sur chaque site inclut la source et les volumes en miroir créés sur ce site.
+Pour le niveau de service _Advanced Data-Protect_, la consommation totale est répartie entre les sites partenaires, et l'utilisation sur chaque site partenaire est reflétée et facturée dans un abonnement distinct, un abonnement pour le site principal et un autre pour le site miroir. C'est la raison pour laquelle, lorsque vous sélectionnez le numéro d'abonnement pour le site principal dans l'onglet *Time Series*, les graphiques de consommation pour le service complémentaire de protection avancée des données affichent les détails de consommation discrète du site principal uniquement. Étant donné MetroCluster que chaque site partenaire fait office de source et de miroir, la consommation totale sur chaque site inclut la source et les volumes en miroir créés sur ce site.
 
 
-TIP: L'info-bulle en regard de l'ID de sélection de votre abonnement dans l'onglet *Détails de l'abonnement* vous aide à identifier l'abonnement partenaire dans la configuration MetroCluster.
+TIP: L'info-bulle en regard de l'ID de suivi de votre abonnement dans l'onglet *Détails de l'abonnement* vous aide à identifier l'abonnement partenaire dans la configuration MetroCluster.
 
 .Niveaux de services de base
-Pour les niveaux de service de base, chaque volume est facturé comme provisionné sur le site primaire et le site miroir. Le même graphique à barres est donc divisé en fonction de la consommation au niveau des sites primaire et miroir.
+Pour les niveaux de service de base, chaque volume est facturé comme provisionné sur les sites primaire et miroir. Le même graphique à barres est donc divisé en fonction de la consommation au niveau des sites primaire et miroir.
 
 .Ce que vous pouvez voir pour l'abonnement principal
-L'image suivante affiche les graphiques pour le niveau de service _Extreme_ (niveau de service de base) et un numéro d'abonnement principal. Le même tableau de séries chronologiques marque la consommation du site miroir dans une nuance plus claire du code de couleur utilisé pour le site principal. L'infobulle qui s'affiche lorsque vous passez la souris, affiche l'éclatement de la consommation (en Tio) pour les sites principaux et miroirs, 1.02 Tio et 1.05 Tio respectivement.
+L'image suivante affiche les graphiques pour le niveau de service _Extreme_ (niveau de service de base) et un numéro d'abonnement principal. Le même tableau de séries chronologiques indique également la consommation du site miroir dans une nuance plus claire du même code de couleur que celui utilisé pour le site principal. L'info-bulle affichée avec le curseur de la souris affiche l'éclatement de la consommation (en Tio) pour les sites principaux et en miroir, 1.02 Tio et 1.05 Tio respectivement.
 
 image:mcc-chart.png["mcc principal"]
 
