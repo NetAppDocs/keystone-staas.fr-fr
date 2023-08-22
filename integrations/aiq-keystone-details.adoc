@@ -34,27 +34,27 @@ NOTE: Dans les abonnements Keystone, la consommation de capacité s'affiche en T
 
 
 
-== Afficher tous les abonnements
+== Afficher les abonnements
 
-Vous pouvez afficher la liste de tous vos abonnements dans l'onglet *tous les abonnements*.
+Vous pouvez afficher la liste de tous vos abonnements dans l'onglet *abonnements*.
 
-image:all-subs.png["image de l'onglet tous les abonnements"]
+image:all-subs.png["Image de l'onglet abonnements"]
 
-Pour chaque abonnement, vous pouvez consulter les informations suivantes :
+Vous pouvez voir les informations suivantes. Pour certains champs et certaines colonnes, vous pouvez voir des informations ou des icônes d'avertissement et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
 
 * *Numéro d'abonnement* : numéro d'abonnement de l'abonnement Keystone attribué par NetApp.
 * *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
 +
 
-TIP: Si vous avez souscrit à un service complémentaire de protection avancée des données, cliquez sur l'info-bulle correspondant à votre numéro d'abonnement pour afficher l'ID de suivi de l'abonnement partenaire dans une configuration MetroCluster. Pour savoir comment afficher les abonnements détaillés de la consommation par partenaire dans une configuration MetroCluster, reportez-vous à la section link:../integrations/aiq-keystone-details.html#additional-details-for-advanced-data-protection["Informations supplémentaires sur la protection avancée des données"].
+TIP: Si vous avez souscrit à un service complémentaire de protection avancée des données, cliquez sur l'info-bulle correspondant à votre numéro d'abonnement pour afficher l'ID de suivi de l'abonnement partenaire dans une configuration MetroCluster. Pour savoir comment afficher les abonnements détaillés de la consommation par partenaire dans une configuration MetroCluster, reportez-vous à la section link:../integrations/aiq-keystone-details.html#reference-charts-for-advanced-data-protection["Des graphiques de référence pour la protection avancée des données"].
 
-* *Type d'utilisation* : vous avez peut-être souscrit à plusieurs abonnements Keystone (version 1) ou Keystone STaaS (version 2). Les règles de plan tarifaire pour les niveaux de service peuvent varier selon les deux types d'abonnement. En regardant la valeur de cette colonne, vous savez si le type d'utilisation est facturé en fonction de l'utilisation provisionnée ou logique pour l'un ou l'autre `v1` ou `v2`. Pour plus d'informations sur les abonnements Keystone version 1, reportez-vous à la section https://docs.netapp.com/us-en/keystone/index.html["Documentation relative à NetApp Keystone"].
+* *Type d'utilisation* : vous avez peut-être souscrit à plusieurs abonnements Keystone (version 1) ou Keystone STaaS (version 2). Les règles de plan tarifaire pour les niveaux de service peuvent varier selon les deux types d'abonnement. En regardant la valeur de cette colonne, vous savez si le type d'utilisation est facturé en fonction de l'utilisation provisionnée ou logique pour l'un ou l'autre `v1` ou `v2`. Pour plus d'informations sur les abonnements Keystone version 1, reportez-vous à la section https://docs.netapp.com/us-en/keystone/index.html["Documentation relative à NetApp Keystone"^].
 * *Période de facturation* : période de facturation de l'abonnement, par exemple mensuelle, trimestrielle ou annuelle.
 * *Date de début* : la date de début de l'abonnement.
 * *Date de fin* : la date de fin de l'abonnement. Un champ de date vide indique que l'abonnement n'a pas de date de fin et qu'il est renouvelé automatiquement. En fonction de cette date, vous pouvez voir des notifications pour les abonnements qui sont sur le point de se terminer ou auxquels des polices de renouvellement automatique sont associées.
 * *Etat d'utilisation* : affiche l'indicateur d'utilisation pour indiquer si la consommation se situe dans la limite d'abonnement ou si elle dépasse cette limite. Vous pouvez trier la liste en fonction de cette colonne si vous souhaitez afficher les enregistrements de consommation les plus élevés.
-* image:subs-dtls-icon.png["icône"]: Cliquer sur cette icône pour un abonnement ouvre l'onglet *Détails de l'abonnement* avec des détails supplémentaires sur cet abonnement.
-* image:aiq-ks-time-icon.png["icône"]: Cliquez sur cette icône pour ouvrir l'onglet *Time Series* où vous pouvez voir les données d'utilisation historiques pour chaque niveau de service inclus dans cet abonnement.
+* image:subs-dtls-icon.png["icône"]: Cliquer sur cette icône pour un abonnement ouvre l'onglet *usage actuel* avec les détails d'utilisation de cet abonnement.
+* image:aiq-ks-time-icon.png["icône"]: Cliquez sur cette icône pour ouvrir l'onglet *Capacity Trend*, dans lequel vous pouvez afficher l'historique des données d'utilisation pour chaque niveau de service inclus dans cet abonnement.
 
 
 Vous pouvez consulter les indicateurs d'utilisation suivants pour vérifier l'état d'utilisation de chaque abonnement :
@@ -66,11 +66,11 @@ image:icon-grey.png["icône en forme de point gris"]: Pas d'utilisation de capac
 
 
 
-== Afficher les détails de l'abonnement
+== Afficher les détails d'utilisation de vos abonnements
 
-Pour connaître les détails de vos abonnements, cliquez sur l'onglet *Détails de l'abonnement* et sélectionnez le numéro d'abonnement requis.
+Pour connaître les détails d'utilisation de vos abonnements, cliquez sur l'onglet *utilisation actuelle* et sélectionnez le numéro d'abonnement requis.
 
-image:aiq-ks-dtls.png["onglet détails de l'abonnement"]
+image:aiq-ks-dtls.png["Onglet utilisation actuelle"]
 
 Les détails, tels que le nom du niveau de service, engagé, consommé, capacités disponibles et utilisation actuelle et en rafale sont affichés en Tio.
 
@@ -93,18 +93,17 @@ L'onglet *détails SLA* vous fournit les détails du SLA Sustainability.
 .Étapes
 . Cliquez sur l'onglet *Détails SLA*.
 . Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Vous pouvez afficher uniquement les abonnements qui répondent aux critères du contrat de niveau de service Sustainability. Pour plus d'informations sur les critères, reportez-vous à la section link:../concepts/sla-sustainability.html#eligibility-criteria-for-sustainability-sla["Critères d'éligibilité pour les SLA de durabilité"].
+. Sélectionnez l'année et le mois pour lesquels vous souhaitez afficher les détails. Vous pouvez sélectionner l'année et le mois pendant lesquels l'abonnement a été actif.
 
 
-Vous pouvez voir une ventilation quotidienne des mesures de durabilité mesurées pour le mois en cours :
+Vous pouvez voir une ventilation quotidienne des mesures de durabilité mesurées pour le mois sélectionné :
 
 image:sla-sustainability.png["onglet sla details répertoriant les détails de durabilité"]
 
-Les détails suivants s'affichent :
+Les détails suivants s'affichent. Pour certains champs et certaines colonnes, vous pouvez voir des icônes d'information et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
 
-* *Abonnement* : le numéro d'abonnement, ainsi que la date de début, la date de fin et la période de facturation de l'abonnement que vous avez sélectionné.
 * *Durabilité moyenne* : la consommation moyenne en watts/Tio au cours de la dernière période de facturation de cet abonnement.
-* *Jour* : jour du mois où cet élément de données est récupéré.
-* *Date de génération* : la date réelle du mois.
+* *Date* : date des données SLA recueillies.
 * *Watts moyens* : watts moyens consommés ce jour-là par le cluster.
 * *Capacité effective (Tio*) : somme de la capacité allouée et de la capacité supplémentaire allouée pour le niveau de service.
 * *Watts réels (Tio*) : la consommation réelle en watts/Tio correspond à la consommation électrique réelle par Tio pour ce jour par le cluster. Vous pouvez le comparer à la valeur dans *SLA Watts/Tio* pour analyser tout dépassement.
@@ -113,7 +112,7 @@ Les détails suivants s'affichent :
 * *Ratio d'efficacité du stockage* : ratio d'efficacité du stockage dans l'environnement de stockage Keystone. Il s'agit du rapport entre l'espace logique total utilisé par le système après l'activation des paramètres d'efficacité du stockage et l'espace physique total utilisé pour stocker les données. Pour plus d'informations sur le taux d'efficacité du stockage, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/concept_overview_storage_efficiency.html["Compréhension de l'efficacité du stockage"^].
 
 
-En cas de non-respect du SLA, une icône s'affiche image:warning.png["icône d'avertissement"] à côté de la colonne vous informe de la nature de la violation. Les avertissements suivants s'affichent :
+En cas de non-respect du SLA, un image:warning.png["icône d'avertissement"] l'icône d'avertissement située à côté de la colonne vous informe de la nature de la violation. Les avertissements suivants s'affichent :
 
 * Température ambiante : si la température est en dehors de la plage de 25^o^C - 27^o^C.
 * SLA Watts/Tio : si les metrics SLA de niveau de service ne sont pas remplis. Pour plus d'informations, reportez-vous à la section link:../concepts/sla-sustainability.html#sustainability-service-level["Niveau de service durabilité"].
@@ -123,12 +122,12 @@ En cas de non-respect du SLA, une icône s'affiche image:warning.png["icône d'a
 ====
 
 
-== Afficher les graphiques de données historiques des abonnements
+== Afficher l'historique des données d'utilisation
 
-L'onglet *série temporelle* affiche les données historiques de vos abonnements pour une période spécifique. Les graphiques verticaux affichent les détails d'utilisation de la plage de temps sélectionnée, ainsi que les indicateurs appropriés pour vous permettre de comparer et de générer des rapports.
+L'onglet *Capacity Trend* affiche les données historiques de vos abonnements pour une période spécifique. Les graphiques verticaux affichent les détails d'utilisation de la plage de temps sélectionnée, ainsi que les indicateurs appropriés pour vous permettre de comparer et de générer des rapports.
 
 .Étapes
-. Cliquez sur l'onglet *série temporelle*.
+. Cliquez sur l'onglet *tendance capacité*.
 . Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Le premier abonnement dans votre nom de compte est sélectionné par défaut.
 . Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. La plage horaire par défaut va de la date de début de la période de facturation à la date actuelle.
 +
@@ -138,12 +137,12 @@ NOTE: Pour des performances et une expérience utilisateur optimales, limitez la
 . Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée. Vous pouvez passer le curseur de la souris sur les graphiques pour afficher la ventilation d'utilisation en termes de données validées, consommées, Burst et au-dessus de la limite d'éclatement à ce point.
 
 
-image:aiq-ks-subtime-2.png["onglet séries chronologiques"]
+image:aiq-ks-subtime-2.png["Onglet tendances de capacité"]
 
 Les détails suivants s'affichent :
 
-* Détails de l'abonnement : les dates de début et de fin de l'abonnement, ainsi que la période de facturation, par exemple, trimestrielle, annuelle, etc.
-* Graphiques d'utilisation : les graphiques à barres affichent le nom du niveau de service et la capacité consommée par rapport à ce niveau de service pour la plage de dates. La date et l'heure de la collection sont affichées en bas du graphique.
+* *Utilisation actuelle* : les dates de début et de fin de l'abonnement, ainsi que la période de facturation, par exemple, trimestrielle, annuelle, etc.
+* *Tableaux d'utilisation* : les graphiques à barres affichent le nom du niveau de service et la capacité consommée par rapport à ce niveau de service pour la plage de dates. La date et l'heure de la collection sont affichées en bas du graphique.
 +
 
 NOTE: En fonction de la plage de dates de votre requête, les graphiques d'utilisation sont affichés dans une plage de 30 points de collecte de données.
@@ -185,31 +184,31 @@ NOTE: Les indicateurs *courant consommé*, *courant Burst* et *Accrued Burst* d�
 
 
 
-=== Informations supplémentaires sur la protection avancée des données
+=== Des graphiques de référence pour la protection avancée des données
 
 .En savoir plus >>
 [%collapsible]
 ====
-Si vous vous êtes abonné au service complémentaire de protection avancée des données, vous pouvez voir l'éclatement des données de consommation pour les sites partenaires MetroCluster dans l'onglet *série chronologique*.
+Si vous avez souscrit au service complémentaire de protection avancée des données, vous pouvez afficher la répartition des données de consommation pour les sites partenaires MetroCluster dans l'onglet *tendance de capacité*.
 
 Pour plus d'informations sur le service complémentaire de protection avancée des données, reportez-vous à la section link:../concepts/adp.html["Protection avancée des données"].
 
-Si les clusters de votre environnement de stockage ONTAP sont configurés dans une configuration MetroCluster, les données de consommation de votre abonnement Keystone sont réparties dans le même graphique afin d'afficher la consommation au niveau des sites principaux et en miroir pour les niveaux de service de base.
+Si les clusters de votre environnement de stockage ONTAP sont configurés dans une configuration MetroCluster, les données de consommation de votre abonnement Keystone sont divisées dans le même graphique de données d'historique pour afficher la consommation au niveau des sites principaux et en miroir pour les niveaux de service de base.
 
 
 NOTE: Les graphiques à barres de consommation sont divisés uniquement pour les niveaux de service de base. Pour le service complémentaire de protection avancée des données, c'est-à-dire le niveau de service _Advanced Data-Protect_, cette démarcation n'apparaît pas.
 
 .Niveau de service avancé de protection des données
-Pour le niveau de service _Advanced Data-Protect_, la consommation totale est répartie entre les sites partenaires, et l'utilisation sur chaque site partenaire est reflétée et facturée dans un abonnement distinct, un abonnement pour le site principal et un autre pour le site miroir. C'est la raison pour laquelle, lorsque vous sélectionnez le numéro d'abonnement pour le site principal dans l'onglet *Time Series*, les graphiques de consommation pour le service complémentaire de protection avancée des données affichent les détails de consommation discrète du site principal uniquement. Étant donné MetroCluster que chaque site partenaire fait office de source et de miroir, la consommation totale sur chaque site inclut la source et les volumes en miroir créés sur ce site.
+Pour le niveau de service _Advanced Data-Protect_, la consommation totale est répartie entre les sites partenaires, et l'utilisation sur chaque site partenaire est reflétée et facturée dans un abonnement distinct, un abonnement pour le site principal et un autre pour le site miroir. C'est la raison pour laquelle, lorsque vous sélectionnez le numéro d'abonnement pour le site principal dans l'onglet *Capacity Trend*, les graphiques de consommation pour le service complémentaire Advanced Data protection affichent les détails de consommation discrète du site principal uniquement. Étant donné MetroCluster que chaque site partenaire fait office de source et de miroir, la consommation totale sur chaque site inclut la source et les volumes en miroir créés sur ce site.
 
 
-TIP: L'info-bulle en regard de l'ID de suivi de votre abonnement dans l'onglet *Détails de l'abonnement* vous aide à identifier l'abonnement partenaire dans la configuration MetroCluster.
+TIP: L'info-bulle en regard de l'ID de suivi de votre abonnement dans l'onglet *Current usage* vous aide à identifier l'abonnement partenaire dans la configuration MetroCluster.
 
 .Niveaux de services de base
 Pour les niveaux de service de base, chaque volume est facturé comme provisionné sur les sites primaire et miroir. Le même graphique à barres est donc divisé en fonction de la consommation au niveau des sites primaire et miroir.
 
 .Ce que vous pouvez voir pour l'abonnement principal
-L'image suivante affiche les graphiques pour le niveau de service _Extreme_ (niveau de service de base) et un numéro d'abonnement principal. Le même tableau de séries chronologiques indique également la consommation du site miroir dans une nuance plus claire du même code de couleur que celui utilisé pour le site principal. L'info-bulle affichée avec le curseur de la souris affiche l'éclatement de la consommation (en Tio) pour les sites principaux et en miroir, 1.02 Tio et 1.05 Tio respectivement.
+L'image suivante affiche les graphiques pour le niveau de service _Extreme_ (niveau de service de base) et un numéro d'abonnement principal. Le même graphique de données historiques indique également la consommation du site miroir dans une ombre plus claire du même code de couleur utilisé pour le site principal. L'info-bulle affichée avec le curseur de la souris affiche l'éclatement de la consommation (en Tio) pour les sites principaux et en miroir, 1.02 Tio et 1.05 Tio respectivement.
 
 image:mcc-chart.png["mcc principal"]
 
@@ -218,7 +217,7 @@ Pour le niveau de service _Advanced Data-Protect_, les graphiques apparaissent c
 image:adp-src.png["base principale mcc"]
 
 .Ce que vous pouvez voir pour l'abonnement secondaire (site miroir)
-Lorsque vous cochez l'abonnement secondaire, vous constatez que le graphique à barres du niveau de service _Extreme_ (niveau de service de base) au même point de collecte de données que le site partenaire est inversé, et que l'éclatement de la consommation au niveau des sites principal et miroir est respectivement de 1.05 Tio et 1.02 Tio.
+Lorsque vous vérifiez l'abonnement secondaire, vous pouvez voir que le graphique à barres du niveau de service _Extreme_ (niveau de service de base Usagel) au même point de collecte de données que le site partenaire est inversé, l'éclatement de la consommation sur les sites primaire et en miroir est respectivement de 1.05 Tio et de 1.02 Tio.
 
 image:mcc-chart-mirror.png["miroir mcc"]
 
@@ -231,9 +230,12 @@ Pour plus d'informations sur la protection de vos données par MetroCluster, rep
 ====
 
 
-== Afficher les détails du système
+== Afficher les détails des volumes et des objets
 
-Dans l'onglet *Détails du système*, vous pouvez afficher la consommation et d'autres détails pour vos volumes dans ONTAP. Pour StorageGRID, cet onglet affiche les nœuds et leur utilisation individuelle dans votre environnement de stockage objet.
+Dans l'onglet *volumes et objets*, vous pouvez afficher la consommation et d'autres détails pour vos volumes dans ONTAP. Pour StorageGRID, cet onglet affiche les nœuds et leur utilisation individuelle dans votre environnement de stockage objet.
+
+
+NOTE: Le nom de cet onglet varie selon la nature du déploiement sur votre site. Si vous disposez à la fois de volumes et d'un stockage objet, vous pouvez voir l'onglet *volumes et objets*. Si votre environnement de stockage ne contient que des volumes ONTAP, le nom devient *volumes*. Pour le stockage d'objets StorageGRID, vous pouvez voir l'onglet *objets*.
 
 
 
@@ -242,10 +244,10 @@ Dans l'onglet *Détails du système*, vous pouvez afficher la consommation et d'
 .En savoir plus >>
 [%collapsible]
 ====
-Pour ONTAP, l'onglet *Détails du système* affiche des informations telles que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et le niveau de service des volumes de votre environnement de stockage géré par votre abonnement Keystone.
+Pour ONTAP, l'onglet *volumes* affiche des informations telles que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et le niveau de service des volumes de votre environnement de stockage géré par votre abonnement Keystone.
 
 .Étapes
-. Cliquez sur l'onglet *Détails du système*.
+. Cliquez sur l'onglet *volumes*.
 . Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné.
 +
 Les détails du volume s'affichent. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques.
@@ -256,7 +258,7 @@ NOTE: Pour le service complémentaire de protection avancée des données, une c
 
 
 
-image:aiq-ks-sysdtls.png["onglet détails du système"]
+image:aiq-ks-sysdtls.png["Volumes  amp; objets"]
 
 ====
 
@@ -269,7 +271,7 @@ image:aiq-ks-sysdtls.png["onglet détails du système"]
 Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds dans l'environnement de stockage objet.
 
 .Étapes
-. Cliquez sur l'onglet *Détails du système*.
+. Cliquez sur l'onglet *objets*.
 . Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné. Lorsque vous sélectionnez le numéro d'abonnement, le lien pour les détails du stockage objet est activé.
 +
 image:sg-link.png["Fenêtre contextuelle StorageGRID"]
@@ -285,11 +287,11 @@ image:sg-link-2.png["Fenêtre contextuelle StorageGRID"]
 
 == Générer des rapports
 
-Vous pouvez générer et afficher des rapports pour les détails de votre abonnement, les données d'historique d'utilisation pour une plage horaire et les détails du système à partir de chacun des onglets en cliquant sur le bouton de téléchargement : image:download-icon.png["icône de téléchargement de rapport"]
+Vous pouvez générer et afficher des rapports pour les détails de votre abonnement, les données historiques d'utilisation d'une plage horaire et les détails du volume à partir de chacun des onglets en cliquant sur le bouton de téléchargement : image:download-icon.png["icône de téléchargement de rapport"]
 
 Les détails sont générés au format CSV que vous pouvez enregistrer pour une utilisation ultérieure.
 
-Exemple de rapport pour l'onglet *série chronologique*, dans lequel les données graphiques sont converties :
+Un exemple de rapport pour l'onglet *Capacity Trend*, où les données graphiques sont converties :
 
 image:report.png["csv de rapport"]
 
@@ -302,7 +304,7 @@ Les alertes du tableau de bord envoient des messages d'avertissement pour vous p
 Les alertes peuvent être de deux types :
 
 * *Information* : pour les problèmes, tels que vos abonnements qui approchent d'une fin, vous pouvez voir les alertes d'information. Placez le curseur sur l'icône d'information pour en savoir plus sur le problème.
-* *Avertissement* : les problèmes, tels que non-conformité, sont affichés comme avertissements. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Vous pouvez cliquer sur le lien du message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *Détails du système*.
+* *Avertissement* : les problèmes, tels que non-conformité, sont affichés comme avertissements. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Vous pouvez cliquer sur le lien du message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *volumes*.
 +
 
 NOTE: Si vous avez souscrit à un seul niveau de service ou plan tarifaire, vous ne pourrez pas voir l'alerte pour les volumes non conformes.

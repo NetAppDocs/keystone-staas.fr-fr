@@ -14,12 +14,42 @@ summary: Keystone et conseiller digital
 
 
 [role="lead"]
-Si vous vous êtes abonné aux services NetApp Keystone, vous pouvez consulter les rapports d'utilisation et les graphiques du tableau de bord Active IQ Digital Advisor (Digital Advisor).
+Si vous avez souscrit aux services STaaS de NetApp Keystone, vous obtenez une vue d'ensemble de vos abonnements via le widget *abonnements Keystone* du tableau de bord Active IQ Digital Advisor (Digital Advisor).
 
-Digital Advisor vous permet d'afficher les informations relatives au stockage à la demande et les informations sur l'infrastructure NetApp que vous possédez. Grâce à Digital Advisor, vous disposez d'un tableau de bord unique qui vous permet de consulter vos abonnements, vos niveaux de service et votre utilisation de la capacité, tout en créant des rapports détaillés.
+Digital Advisor offre un tableau de bord unifié qui fournit des informations sur les différents niveaux de données d'abonnement et d'utilisation via le bouton *passer à l'ancien/nouveau tableau de bord*.
+
+.Tableau de bord par défaut (ancien)
+Vous pouvez afficher votre numéro d'abonnement, le nom de votre compte, les dates de début et de fin de l'abonnement, ainsi que les graphiques d'utilisation de la capacité en fonction de vos niveaux de service souscrits.
+
+image:old-db.png["ancien tableau de bord"]
+
+.Tableau de bord alternatif (nouveau)
+Vous pouvez voir l'éclatement de l'utilisation de la capacité selon vos abonnements, ainsi que les avertissements et alertes qui requièrent une intervention immédiate ou immédiate. Les informations s'affichent de manière sélective, en fonction de vos abonnements et de l'état de votre utilisation. Vous pouvez afficher ces informations :
+
+* Utilisation de la capacité, par exemple :
++
+** Aucune utilisation.
+** Consommation supérieure à 80 % de la capacité allouée.
+** Utilisation en rafale.
+** Consommations au-delà de la capacité supplémentaire.
+
+
+* Contrat de niveau de service : indique si les abonnements respectent les objectifs de durabilité définis dans votre contrat de niveau de service (SLA). Si vos abonnements répondent aux critères du contrat de niveau de service, vous pouvez voir le statut _All OK_.
+* Des avertissements divers s'affichent s'ils s'appliquent à vous.
++
+** *Expire bientôt* : en cas d'expiration de vos abonnements dans un délai de 90 jours.
+** *Mises à niveau matérielles critiques* : si des mises à niveau matérielles critiques sont en attente.
+** *AQoS Avertissements* : vous avez des volumes sans stratégies AQoS attribuées.
++
+
+TIP: Cliquez sur le lien *abonnements* pour afficher la liste des abonnements filtrés dans l'onglet *abonnements*.
+
+
+
+
+
+image:new-db.png["nouveau tableau de bord"]
 
 Pour plus d'informations sur le widget du tableau de bord Digital Advisor pour Keystone, voir https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Documentation de Digital Advisor"^].
 
 Pour plus d'informations sur le tableau de bord et le reporting Keystone, reportez-vous à link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"].
-
-Pour plus d'informations sur le flux de données, voir link:../concepts/infra.html["Les outils de suivi"].
