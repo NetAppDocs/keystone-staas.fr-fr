@@ -73,3 +73,31 @@ La limitation de la collecte de données client spécifiques est une option conf
 image:tui-4.png["ecran tui"]
 
 Pour plus d'informations sur les éléments supprimés lors de la limitation de l'accès privé aux données dans ONTAP et StorageGRID, reportez-vous à la section link:../installation/data-collection.html["Liste des éléments supprimés pour limiter l'accès aux données privées"].
+
+
+
+== Faites confiance à une autorité de certification racine personnalisée
+
+La vérification des certificats par rapport à une autorité de certification (CA) racine publique fait partie des fonctionnalités de sécurité du collecteur Keystone. Toutefois, si nécessaire, vous pouvez configurer Keystone Collector pour qu'il puisse faire confiance à une autorité de certification racine personnalisée.
+
+Si vous utilisez l'inspection SSL/TLS dans le pare-feu de votre système, le trafic basé sur Internet est de nouveau chiffré avec votre certificat d'autorité de certification personnalisé. Il est nécessaire de configurer les paramètres pour vérifier la source en tant qu'autorité de certification approuvée avant d'accepter le certificat racine et d'autoriser les connexions. Voici la procédure à suivre :
+
+.Étapes
+. Préparez le certificat de l'autorité de certification. Il doit être au format de fichier X.509_ codé en _base64.
++
+
+NOTE: Les extensions de fichier prises en charge sont `.pem`, `.crt`, `.cert`. Assurez-vous que le certificat est dans l'un de ces formats.
+
+. Copiez le certificat sur le serveur Keystone Collector. Notez l'emplacement où le fichier est copié.
+. Ouvrez un terminal sur le serveur et exécutez l'utilitaire de gestion TUI.
+`$ keystone-collector-tui`
+. Accédez à *Configuration > Avancé*.
+. Activez l'option *Activer le certificat racine personnalisé*.
+. Pour *sélectionnez le chemin du certificat racine personnalisé :*, sélectionnez `- Unset -`
+. Appuyez sur entrée. Une boîte de dialogue permettant de sélectionner le chemin du certificat s'affiche.
+. Sélectionnez le certificat racine dans le navigateur du système de fichiers ou entrez le chemin exact.
+. Appuyez sur entrée. Vous revenez à l'écran *Avancé*.
+. Sélectionnez *Enregistrer*. la configuration est appliquée.
+
+
+image:kc-custom-ca.png["Ecran TUI pour la personnalisation de CA"]

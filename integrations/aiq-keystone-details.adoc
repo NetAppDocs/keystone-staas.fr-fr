@@ -51,7 +51,7 @@ TIP: Si vous avez souscrit à un service complémentaire de protection avancée 
 * *Type d'utilisation* : vous avez peut-être souscrit à plusieurs abonnements Keystone (version 1) ou Keystone STaaS (version 2). Les règles de plan tarifaire pour les niveaux de service peuvent varier selon les deux types d'abonnement. En regardant la valeur de cette colonne, vous savez si le type d'utilisation est facturé en fonction de l'utilisation provisionnée ou logique pour l'un ou l'autre `v1` ou `v2`. Pour plus d'informations sur les abonnements Keystone version 1, reportez-vous à la section https://docs.netapp.com/us-en/keystone/index.html["Documentation relative à NetApp Keystone"^].
 * *Période de facturation* : période de facturation de l'abonnement, par exemple mensuelle, trimestrielle ou annuelle.
 * *Date de début* : la date de début de l'abonnement.
-* *Date de fin* : la date de fin de l'abonnement. Un champ de date vide indique que l'abonnement n'a pas de date de fin et qu'il est renouvelé automatiquement. En fonction de cette date, vous pouvez voir des notifications pour les abonnements qui sont sur le point de se terminer ou auxquels des polices de renouvellement automatique sont associées.
+* *Date de fin* : la date de fin de l'abonnement. Si vous avez un abonnement mensuel qui se renouvelle automatiquement tous les mois, vous voyez `Month-on-month` au lieu de la date de fin. En fonction de cette date, vous pouvez voir des notifications pour les abonnements qui sont sur le point de se terminer ou auxquels des polices de renouvellement automatique sont associées.
 * *Etat d'utilisation* : affiche l'indicateur d'utilisation pour indiquer si la consommation se situe dans la limite d'abonnement ou si elle dépasse cette limite. Vous pouvez trier la liste en fonction de cette colonne si vous souhaitez afficher les enregistrements de consommation les plus élevés.
 * image:subs-dtls-icon.png["icône"]: Cliquer sur cette icône pour un abonnement ouvre l'onglet *usage actuel* avec les détails d'utilisation de cet abonnement.
 * image:aiq-ks-time-icon.png["icône"]: Cliquez sur cette icône pour ouvrir l'onglet *Capacity Trend*, dans lequel vous pouvez afficher l'historique des données d'utilisation pour chaque niveau de service inclus dans cet abonnement.
@@ -129,10 +129,10 @@ L'onglet *Capacity Trend* affiche les données historiques de vos abonnements po
 .Étapes
 . Cliquez sur l'onglet *tendance capacité*.
 . Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Le premier abonnement dans votre nom de compte est sélectionné par défaut.
-. Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. La plage horaire par défaut va de la date de début de la période de facturation à la date actuelle.
+. Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. Pour les abonnements qui ont expiré, la plage de dates par défaut est les dates de début et de fin de l'abonnement. Pour les abonnements existants, la plage horaire par défaut va de la date de début de la période de facturation à la date actuelle. Vous ne pouvez pas sélectionner une date future.
 +
 
-NOTE: Pour des performances et une expérience utilisateur optimales, limitez la plage de dates de votre requête à trois mois maximum.
+NOTE: Pour des performances et une expérience utilisateur optimales, limitez la plage de dates de votre requête à trois mois.
 
 . Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée. Vous pouvez passer le curseur de la souris sur les graphiques pour afficher la ventilation d'utilisation en termes de données validées, consommées, Burst et au-dessus de la limite d'éclatement à ce point.
 
@@ -161,17 +161,18 @@ NOTE: Un graphique vide indique qu'aucune donnée n'est disponible dans votre en
 
 
 
-* *Courant consommé* : indicateur de la capacité consommée (en Tio) définie pour le niveau de service. Ce champ utilise des couleurs spécifiques pour l'utilisation :
+* *Courant consommé* : indicateur de la capacité consommée (en Tio) définie pour le niveau de service. Ce champ utilise des couleurs spécifiques :
 +
-** Gris : aucun.
+** Pas de couleur : utilisation en rafale ou supérieure.
+** Gris : aucune utilisation.
 ** Vert : dans un délai de 80 % de la capacité allouée.
-** Orange : toute consommation supérieure à 80 % de la capacité allouée.
+** Orange : 80 % de la capacité allouée à la capacité de rafale.
 
 
-* *Burst courant* : indicateur de la capacité consommée dans la limite de rafale définie ou au-dessus. Toute utilisation comprise dans la limite de capacité supplémentaire convenue, par exemple, 20 % de plus que la capacité allouée se situe dans la limite de capacité supplémentaire. Autre utilisation : utilisation supérieure à la limite d'augmentation. Ce champ utilise des couleurs spécifiques pour l'utilisation :
+* *Burst courant* : indicateur de la capacité consommée dans la limite de rafale définie ou au-dessus. Toute utilisation comprise dans la limite de capacité supplémentaire convenue, par exemple, 20 % de plus que la capacité allouée se situe dans la limite de capacité supplémentaire. Autre utilisation : utilisation supérieure à la limite d'augmentation. Ce champ affiche des couleurs spécifiques :
 +
-** Gris : aucun.
-** Rouge : rafale.
+** Pas de couleur : pas d'utilisation de rafale.
+** Rouge : utilisation en rafale.
 ** Violet : au-dessus de la limite d'éclatement.
 
 
@@ -274,11 +275,11 @@ Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds dans l'en
 . Cliquez sur l'onglet *objets*.
 . Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné. Lorsque vous sélectionnez le numéro d'abonnement, le lien pour les détails du stockage objet est activé.
 +
-image:sg-link.png["Fenêtre contextuelle StorageGRID"]
+image:sg-link.png["Boîte de dialogue StorageGRID"]
 
 . Cliquez sur le lien pour afficher les noms des nœuds et les détails d'utilisation physique de chaque nœud.
 +
-image:sg-link-2.png["Fenêtre contextuelle StorageGRID"]
+image:sg-link-2.png["Boîte de dialogue StorageGRID"]
 
 
 

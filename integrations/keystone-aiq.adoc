@@ -34,7 +34,7 @@ Vous pouvez voir l'éclatement de l'utilisation de la capacité selon vos abonne
 ** Consommations au-delà de la capacité supplémentaire.
 
 
-* Contrat de niveau de service : indique si les abonnements respectent les objectifs de durabilité définis dans votre contrat de niveau de service (SLA). Si vos abonnements répondent aux critères du contrat de niveau de service, vous pouvez voir le statut _All OK_.
+* Contrat de niveau de service : ce statut s'affiche si au moins un de vos abonnements est associé à un contrat de niveau de service (SLA) Sustainability avec NetApp. L'état indique si les abonnements répondent aux critères de durabilité définis dans votre SLA. Si vos abonnements répondent aux critères du contrat de niveau de service, vous pouvez voir le statut _All OK_.
 * Des avertissements divers s'affichent s'ils s'appliquent à vous.
 +
 ** *Expire bientôt* : en cas d'expiration de vos abonnements dans un délai de 90 jours.
