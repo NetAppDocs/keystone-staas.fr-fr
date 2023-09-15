@@ -14,7 +14,7 @@ summary: Qualité de service dans Keystone
 
 
 [role="lead"]
-La qualité de service (QoS) du stockage est une technologie stratégique qui permet aux applications d'obtenir des performances cohérentes et prévisibles. Sans la QoS, certaines charges de travail, telles que celles pour le démarrage de plusieurs systèmes, peuvent consommer la plupart ou la totalité des ressources pendant une période et affecter d'autres charges de travail. Pour plus d'informations sur la QoS, reportez-vous à la section https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Débit garanti avec les QoS"^].
+La qualité de service (QoS) du stockage est une technologie stratégique qui permet aux applications d'obtenir des performances cohérentes et prévisibles. Sans la QoS, certaines charges de travail, telles que celles pour le démarrage de plusieurs systèmes, peuvent consommer la plupart, voire la totalité, des ressources pendant une période et affecter d'autres charges de travail. Pour plus d'informations sur la QoS, reportez-vous à la section https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Débit garanti avec les QoS"^].
 
 
 
@@ -175,7 +175,7 @@ Notez ces points avant de calculer la taille du bloc à l'aide des paramètres s
 
 
 .Calcul de la taille du bloc d'échantillons
-Pour calculer le débit du niveau de service a, par exemple le niveau de service «Extreme» :
+Pour calculer le débit d'un niveau de service, par exemple `Extreme` niveau de services :
 
 * IOPS à maximum : 12,288
 * Taille de bloc par E/S : 32 Ko

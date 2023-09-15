@@ -64,7 +64,7 @@ image:ova-deploy.png["Interface UTILISATEUR OVA affichant un certificat vérifi�
 . Sur _Etape 7 Personnaliser le modèle_, spécifiez l'adresse réseau initiale et le mot de passe du compte utilisateur admin.
 +
 
-NOTE: Le mot de passe administrateur est stocké dans un format réversible dans vCenter et doit être utilisé comme identifiant de bootstrap pour accéder au système VMware vSphere initial. Lors de la configuration logicielle initiale, ce mot de passe administrateur doit être modifié. Le masque de sous-réseau de l'adresse IPv4 doit être fourni en notation CIDR. Par exemple, utilisez la valeur 24 pour un masque de sous-réseau de 255.255.255.0.
+NOTE: Le mot de passe admin est stocké dans un format réversible dans vCenter et doit être utilisé comme informations d'identification d'amorçage pour obtenir un accès initial au système VMware vSphere. Lors de la configuration logicielle initiale, ce mot de passe administrateur doit être modifié. Le masque de sous-réseau de l'adresse IPv4 doit être fourni en notation CIDR. Par exemple, utilisez la valeur 24 pour un masque de sous-réseau de 255.255.255.0.
 
 . À l'étape _8 prêt à compléter_ de l'assistant *déployer modèle OVF*, examinez la configuration et vérifiez que vous avez correctement défini les paramètres pour le déploiement OVA.
 

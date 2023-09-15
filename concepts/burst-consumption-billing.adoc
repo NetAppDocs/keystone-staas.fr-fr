@@ -16,9 +16,10 @@ summary: Facturation en fonction de la consommation en rafale
 [role="lead"]
 L'STaaS (NetApp Keystone) s'appuie sur la capacité d'rafale, c'est-à-dire la capacité consommée par votre entreprise, en plus de la capacité validée de votre abonnement.
 
-Votre limite de rafale est déterminée et spécifiée dans votre contrat Keystone. Généralement, il dépasse de 20 % la capacité engagée.
+Votre limite de rafale est déterminée et spécifiée dans votre contrat Keystone. En général, elle est supérieure de 20 % à la capacité allouée.
 
-La capacité dédiée correspond à la capacité qui vous est engagée lors de l'achat de l'abonnement. La capacité engagée et la capacité en rafale sont mesurées par niveau de service. La capacité consommée est la capacité que vos charges de travail utilisent réellement. Lorsque la capacité consommée est supérieure à la capacité réellement utilisée pour un niveau de services, la consommation en rafale est enregistrée et facturée en conséquence. Généralement, il dépasse de 20 % la capacité engagée. L'utilisation au-dessus de la capacité de rafale est indiquée comme « au-dessus de la limite de rafale ».
+La capacité dédiée correspond à la capacité qui vous est engagée lors de l'achat de l'abonnement. La capacité engagée et la capacité en rafale sont mesurées par niveau de service. La capacité consommée est la capacité que vos charges de travail utilisent réellement.
+Lorsque la capacité consommée est supérieure à la capacité réellement utilisée pour un niveau de services, la consommation en rafale est enregistrée et facturée en conséquence. En général, elle est supérieure de 20 % à la capacité allouée. L'utilisation au-dessus de la capacité de rafale est indiquée comme « au-dessus de la limite de rafale ».
 
 Ce processus se produit pour chaque enregistrement de consommation généré. La consommation en rafale reflète donc à la fois le montant et la durée de vos capacités surconsommées en plus de vos capacités engagées.
 

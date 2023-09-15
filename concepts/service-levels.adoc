@@ -130,8 +130,8 @@ NOTE: La latence n'inclut pas les surcharges associées au transfert de données
 |===
 [NOTE]
 ====
-* Les services cloud natifs, tels que le calcul, le stockage et le réseau, sont facturés par les fournisseurs cloud.
-* Ces services dépendent des caractéristiques de stockage et de calcul dans le cloud.
+* Les services cloud natifs, tels que le calcul, le stockage et la mise en réseau, sont facturés par les fournisseurs cloud.
+* Ces services dépendent de caractéristiques de stockage et de calcul cloud.
 
 
 ====

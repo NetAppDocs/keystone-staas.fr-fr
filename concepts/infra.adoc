@@ -26,7 +26,7 @@ L'infrastructure, la conception, le choix de la technologie et les composants Ke
 
 L'infrastructure Keystone comprend plusieurs composants, tels que :
 
-* Infrastructure Keystone incluant des contrôleurs de stockage.
+* Infrastructure Keystone avec contrôleurs de stockage
 * Outils de gestion et d'exploitation du service tels que les solutions tout-en-un, Active IQ et Active IQ Unified Manager.
 
 

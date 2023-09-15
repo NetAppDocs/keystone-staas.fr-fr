@@ -218,7 +218,7 @@ Pour le niveau de service _Advanced Data-Protect_, les graphiques apparaissent c
 image:adp-src.png["base principale mcc"]
 
 .Ce que vous pouvez voir pour l'abonnement secondaire (site miroir)
-Lorsque vous vérifiez l'abonnement secondaire, vous pouvez voir que le graphique à barres du niveau de service _Extreme_ (niveau de service de base Usagel) au même point de collecte de données que le site partenaire est inversé, l'éclatement de la consommation sur les sites primaire et en miroir est respectivement de 1.05 Tio et de 1.02 Tio.
+Lorsque vous cochez l'abonnement secondaire, vous constatez que le graphique à barres du niveau de service _Extreme_ (niveau de service de base) au même point de collecte de données que le site partenaire est inversé, et que l'éclatement de la consommation au niveau des sites principal et miroir est respectivement de 1.05 Tio et 1.02 Tio.
 
 image:mcc-chart-mirror.png["miroir mcc"]
 

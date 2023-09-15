@@ -14,13 +14,13 @@ summary: Centre de support NetApp Global Services GSSC
 
 
 [role="lead"]
-Le centre de services et de support global NetApp (GSSC) et le responsable de la réussite NetApp Keystone (KSM) sont chargés de vous fournir des services pour les abonnements Keystone.
+Le centre NetApp Global Services and support Center (GSSC) et le responsable NetApp Keystone Success Manager (KSM) sont chargés de vous fournir des services pour vos abonnements Keystone.
 
 
 
 == Centre de support et de services NetApp (GSSC)
 
-NetApp propose des services d'exploitation à distance aux clients NetApp Keystone. Ces services englobent diverses disciplines opérationnelles dans l'ensemble des activités de gestion du stockage. Il s'agit notamment de la gestion des ressources et de la configuration, de la gestion de la capacité et des performances, de la gestion des changements, des événements, de la gestion des incidents et des problèmes, de l'exécution des demandes de service et des rapports. NetApp démontre son état de contrôle et témoigne de l'existence au besoin.
+NetApp propose des services d'exploitation à distance aux clients NetApp Keystone. Ces services englobent diverses disciplines opérationnelles dans l'ensemble des activités de gestion du stockage. Il s'agit notamment de la gestion des ressources et de la configuration, de la gestion de la capacité et des performances, de la gestion des changements, des événements, de la gestion des incidents et des problèmes, de l'exécution des demandes de service et des rapports. NetApp démontre un état de contrôle et des preuves à l'appui, le cas échéant.
 
 
 
@@ -49,7 +49,7 @@ Pour en savoir plus sur les services Keystone, consultez :
 Le centre de support et de services NetApp Global Services (GSSC) surveille l'état de vos produits et services abonnés, fournit un support à distance et collabore avec votre responsable de la réussite Keystone. Toutes les personnes qui surveillent les produits associés aux bons d'abonnement Keystone appartiennent aux États-Unis au américain.
 
 .Gestionnaire de réussite de Keystone
-Le responsable des réussites Keystone (KSM) travaille en étroite collaboration avec vous sur vos services Keystone et vous met à jour à partir de rapports opérationnels et de facturation hebdomadaires ou mensuels. Les responsabilités sont précisées dans l'accord NetApp Keystone.
+Le gestionnaire de réussite Keystone (KSM) travaille en étroite collaboration avec vous pour vous aider à gérer vos services Keystone. Il vous informe sur la facturation hebdomadaire ou mensuelle et les rapports opérationnels. Les responsabilités sont précisées dans l'accord NetApp Keystone.
 
 
 
@@ -59,6 +59,6 @@ Lors de votre intégration, si vous avez reçu les informations d'identification
 
 https://netappgssc.service-now.com/csm[]
 
-Assurez-vous que vous disposez des informations système, des journaux et des informations associées avant de lancer la demande de service. Lorsque vous effectuez une demande de service, l'équipe GSSC reçoit le ticket de support et accède aux informations de dépannage. Vous pouvez suivre votre ticket ServiceNow pour connaître le statut et la résolution.
+Assurez-vous que vous disposez des informations système, des journaux et des informations associées avant de lancer la demande de service. Lorsque vous effectuez une demande de service, l'équipe GSSC reçoit le ticket de support et accède aux informations de dépannage. Vous pouvez suivre votre ticket ServiceNow pour connaître l'état et la résolution du problème.
 
 Pour plus d'informations sur l'ajout de modules de support, reportez-vous à la section link:../installation/monitor-health.html["Générer et collecter un bundle de support"].

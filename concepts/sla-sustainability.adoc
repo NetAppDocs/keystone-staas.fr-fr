@@ -90,6 +90,6 @@ Pour plus d'informations sur le tableau de bord et le reporting Keystone, report
 
 == Crédits de service de développement durable
 
-Si la consommation en watts/Tio dépasse ou ne répond pas aux critères spécifiés dans le SLA pour un niveau de services, NetApp propose un paiement de crédit de service pour les différences signalées pendant la période de facturation, pour tous les abonnements éligibles. Si les mesures du SLA de niveau de service ne sont pas respectées, contactez le Centre de support des services globaux (GSSC) de NetApp au plus tard une semaine avant la fin du mois de service Lorsqu'ils déterminent la violation du niveau de service, les crédits sont calculés sur la base de la capacité allouée du niveau de service et sont crédités sur la facture du mois suivant.
+Si la consommation en watts/Tio dépasse ou ne répond pas aux critères spécifiés dans le SLA pour un niveau de services, NetApp propose le paiement des crédits de service pour les différences signalées pendant la période de facturation, pour tous les abonnements éligibles. Si les mesures du SLA de niveau de service ne sont pas respectées, contactez le Centre de support des services globaux (GSSC) de NetApp au plus tard une semaine avant la fin du mois de service Après avoir déterminé le manquement au niveau de service, les crédits sont calculés sur la base de la capacité engagée du niveau de service et crédités sur la facture du mois suivant.
 
 Pour plus d'informations, reportez-vous à la section link:../concepts/gssc.html["Centre de support NetApp Global Services"].

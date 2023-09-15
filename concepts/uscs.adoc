@@ -34,7 +34,7 @@ Le responsable de la réussite Keystone (KSM) est un département américain Viv
 
 == Activités de déploiement
 
-Le cas échéant, les activités de déploiement et d'installation sur site et à distance sont menées par les États-Unis Citoyens américains américain. Note de bas de page :Disclaimer[disponibilité du personnel compétent pour les activités sur site dépend de l'emplacement géographique où les systèmes Keystone sont déployés.]
+Le cas échéant, les activités de déploiement et d'installation sur site et à distance sont menées par les États-Unis Citoyens américains américain. Note de bas de page :Avis de non-responsabilité[la disponibilité du personnel approprié pour les activités sur site dépend de l'emplacement géographique où les systèmes Keystone sont déployés.]
 
 
 

@@ -14,15 +14,15 @@ summary: Add-on, Détails des services supplémentaires, Tiering des données
 
 
 [role="lead"]
-Les services standard Keystone STaaS pour le stockage des fichiers et blocs incluent des fonctionnalités de Tiering qui identifient les données moins utilisées et les répartissent à l'aide de Keystone STaaS (stockage à froid NetApp pris en charge). Vous pouvez bénéficier du Tiering des données à titre d'extension si vous souhaitez transférer vos données inactives vers un stockage non NetApp Keystone STaaS pris en charge.
+Les services standard Keystone STaaS pour le stockage des fichiers et blocs incluent des fonctionnalités de Tiering qui identifient les données moins utilisées et les répartissent à l'aide de Keystone STaaS (stockage à froid NetApp pris en charge). Si vous souhaitez transférer vos données inactives vers un stockage Keystone STaaS non NetApp, le Tiering des données inactives est possible en tant que service complémentaire.
 
 Pour plus d'informations sur les services standard et complémentaires, reportez-vous à la section link:../concepts/supported-storage-services.html["Services STaaS Keystone"]. Pour plus d'informations sur les niveaux de service, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
 
-Le service d'extension de Tiering est requis uniquement lorsque les données sont envoyées vers un stockage non-NetApp, tel qu'Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP), et d'autres systèmes de stockage objet tiers compatible Keystone STaaS, compatible S3.
+Le service d'extension de Tiering n'est requis que lorsque les données sont hiérarchisées vers un système de stockage non NetApp tel qu'Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) et d'autres systèmes de stockage objet tiers compatibles Keystone STaaS.
 
 La fonctionnalité de Tiering exploite la technologie NetApp FabricPool pour le Tiering automatisé des données peu utilisées vers des tiers de stockage objet sur site et hors site.
 
-Avec le service complémentaire de Tiering des données, vous pouvez effectuer le Tiering à partir de Extreme, Premium, Performance, Standard et Value Tier de stockage objet. Le rapport entre les données actives et inactives à hiérarchiser n'est pas fixe et chaque Tier est mesuré et facturé séparément.
+Avec le service complémentaire de Tiering des données, vous pouvez effectuer le Tiering à partir de Extreme, Premium, Performance, Standard et Value Tier de stockage objet. Le rapport entre les données actives et les données inactives à hiérarchiser n'est pas fixe et chaque Tier est mesuré et facturé séparément.
 
 Par exemple, si la cible pour le Tier de stockage à froid est :
 

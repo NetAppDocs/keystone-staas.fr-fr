@@ -40,7 +40,7 @@ La surveillance continue de l'état de santé de l'infrastructure de stockage es
 image:monitoring-flow.png["flux de données"]
 
 .Légende
-. La passerelle de la solution tout-en-un initie une session TLS vers son portail cloud.
+. La passerelle de la solution tout-en-un initie une session TLS vers le portail cloud.
 . Le pare-feu actionné par le client autorise la connexion.
 . Le serveur de solutions tout-en-un dans le cloud accepte la connexion.
 . Un tunnel TLS est établi entre le portail cloud et la passerelle locale.
