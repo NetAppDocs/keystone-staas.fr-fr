@@ -53,14 +53,10 @@ La capacité consommée fait référence à la capacité (en Tio de stockage) ac
 
 == Capacité en rafale
 
-La capacité en rafale est la capacité de tout type de consommation dépassant la capacité engagement d'un niveau de services.
+Le service Keystone vous permet d'utiliser de la capacité supplémentaire en plus de la capacité validée pour un niveau de service. Il s'agit de l'utilisation de la capacité supplémentaire. Notez ces points :
 
-
-NOTE: Remarque :
-
-* Le service Keystone vous permet d'utiliser de la capacité supplémentaire en plus de la capacité validée pour un niveau de service. Il s'agit de la capacité en rafale.
-* En effet, la capacité en rafale peut être consommée selon une base élastique et elle est facturée quotidiennement pour la moyenne utilisée.
 * La capacité en rafale est convenue dans le contrat Keystone. Il est généralement configuré jusqu'à 20 % au-dessus de la capacité engagée et est facturé au même rythme que la capacité engagée.
+* En effet, la capacité en rafale peut être consommée selon une base élastique et elle est facturée quotidiennement pour la moyenne utilisée.
 
 
 
