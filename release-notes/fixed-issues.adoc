@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: release-notes/fixed-issues.html 
+keywords: fixed issues 
+summary: Problèmes résolus dans les différentes versions de Keystone STaaS 
+---
+= Problèmes résolus
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les problèmes détectés dans les versions précédentes des services de stockage en tant que service NetApp Keystone ont été résolus dans les versions ultérieures. Le tableau suivant répertorie les correctifs.
+
+[cols="3*"]
+|===
+| Description du problème | Après la réparation | Corrigé dans la libération 
+
+
+ a| 
+L'indicateur d'utilisation d'un enregistrement de consommation en rafale était affiché en orange.
+ a| 
+L'indicateur apparaît en rouge.
+ a| 
+13 décembre 2023
+
+
+
+ a| 
+La plage de dates et les données des onglets tendance de la capacité, utilisation actuelle et performances n'ont pas été converties en fuseau horaire UTC.
+ a| 
+La plage de dates pour la requête et les données de tous les onglets s'affiche en heure UTC (fuseau horaire du serveur). Le fuseau horaire UTC est également affiché pour chaque champ de date sur les onglets.
+ a| 
+13 décembre 2023
+
+
+
+ a| 
+La date de début et la date de fin ne correspondent pas entre les onglets et les rapports CSV téléchargés.
+ a| 
+Fixe.
+ a| 
+13 décembre 2023
+
+|===

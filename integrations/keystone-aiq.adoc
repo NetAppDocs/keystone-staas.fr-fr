@@ -4,7 +4,7 @@ permalink: integrations/keystone-aiq.html
 keywords: Keystone, Digital Advisor, keystone-aiq, aiq 
 summary: Keystone et conseiller digital 
 ---
-= Keystone et conseiller digital
+= Affichez le tableau de bord Keystone sur le conseiller digital Active IQ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,10 +16,12 @@ summary: Keystone et conseiller digital
 [role="lead"]
 Si vous avez souscrit aux services STaaS de NetApp Keystone, vous obtenez une vue d'ensemble de vos abonnements via le widget *abonnements Keystone* du tableau de bord Active IQ Digital Advisor (Digital Advisor).
 
+Vous pouvez rechercher les détails d'un abonnement Keystone en effectuant une recherche par nom de client ou par nom de liste de suivi qui inclut plusieurs clients. Pour plus d'informations sur la recherche d'abonnements Keystone STaaS par listes de suivi, reportez-vous à la section link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Effectuez une recherche à l'aide des listes de surveillance Keystone"].
+
 Digital Advisor offre un tableau de bord unifié qui fournit des informations sur les différents niveaux de données d'abonnement et d'utilisation via le bouton *passer à l'ancien/nouveau tableau de bord*.
 
 .Tableau de bord par défaut (ancien)
-Vous pouvez afficher votre numéro d'abonnement, le nom de votre compte, les dates de début et de fin de l'abonnement, ainsi que les graphiques d'utilisation de la capacité en fonction de vos niveaux de service souscrits.
+Vous pouvez consulter le nom et le numéro d'abonnement de votre client, le nom de votre compte, les dates de début et de fin de l'abonnement, ainsi que les graphiques d'utilisation de la capacité, selon les niveaux de service que vous avez souscrits.
 
 image:old-db.png["ancien tableau de bord"]
 
@@ -53,3 +55,24 @@ image:new-db.png["nouveau tableau de bord"]
 Pour plus d'informations sur le widget du tableau de bord Digital Advisor pour Keystone, voir https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Documentation de Digital Advisor"^].
 
 Pour plus d'informations sur le tableau de bord et le reporting Keystone, reportez-vous à link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"].
+
+
+
+== Effectuez une recherche à l'aide des listes de surveillance Keystone
+
+La liste de surveillance est une fonction du conseiller numérique Active IQ (conseiller numérique). Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Comprendre la liste de surveillance"^]. Pour plus d'informations sur la création de listes de contrôle, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Créer une liste de surveillance"^].
+
+Keystone STaaS prend en charge la création de listes de suivi et les recherches effectuées par ces entreprises pour afficher les détails de l'abonnement de plusieurs clients. La procédure suivante permet de créer une liste de suivi pour les clients Keystone :
+
+. Sur l'écran *Créer une liste de surveillance*, indiquez un nom pour la liste de surveillance Keystone.
+. Sélectionnez *Catégorie* dans le champ *Ajouter des systèmes par*. *Client* est sélectionné par défaut dans le champ *choisir une catégorie*.
+. Recherchez les clients requis par leur nom et ajoutez-les. Vous pouvez uniquement ajouter des clients dont vous avez le droit de consulter les détails.
+. Cliquez sur *Créer une liste de surveillance*. L'écran Conseiller numérique affiche les données de la nouvelle liste de surveillance.
+
+
+Lorsque vous effectuez une recherche par liste de surveillance sur l'écran Digital Advisor, vous pouvez afficher les clients et leurs abonnements dans la liste déroulante *abonnement* du widget *abonnements Keystone*.
+
+
+TIP: Si vous affichez le tableau de bord _New_ sur le widget *abonnements Keystone*, cliquez sur *basculer vers l'ancien tableau de bord* pour afficher la liste.
+
+image:watchlist.png["écran liste de surveillance"]

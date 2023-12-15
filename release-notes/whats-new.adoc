@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: release-notes/whats-new.html 
+keywords: 'new features, release notes, enhancements, what"s new' 
+summary: Nouvelles fonctionnalités et améliorations de Keystone STaaS 
+---
+= Nouveautés du stockage en tant que service Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque version des services de stockage en tant que service Keystone.
+
+
+
+== Nouvelles fonctionnalités et améliorations pour le 15 décembre 2023
+
+Découvrez les nouveautés de cette version.
+
+
+
+=== Possibilité de rechercher par listes de surveillance
+
+La prise en charge des listes de suivi dans Active IQ Digital Advisor (Digital Advisor) a été étendue aux systèmes Keystone. Vous pouvez maintenant afficher les détails des abonnements de plusieurs clients en effectuant une recherche à l'aide de listes de contrôle. Pour plus d'informations sur l'utilisation des listes de suivi dans Keystone STaaS, voir link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Effectuez une recherche à l'aide des listes de surveillance Keystone"^].
+
+
+
+=== Date convertie en fuseau horaire UTC
+
+Les données renvoyées dans les onglets de l'écran *abonnements Keystone* de Active IQ Digital Advisor s'affichent en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"^].

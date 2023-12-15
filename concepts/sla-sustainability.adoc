@@ -16,6 +16,8 @@ summary: durabilité, sla, accord de niveau de service
 [role="lead"]
 Le stockage en tant que service NetApp Keystone fournit des niveaux de service associés à un contrat de niveau de service ou à un développement durable avec SLA qui définissent le nombre maximal de watts/Tio consommés par niveau de service, afin de vous aider à planifier, contrôler et atteindre vos objectifs de durabilité IT.
 
+Pour en savoir plus sur les problèmes liés aux SLA, consultez le widget Keystone du tableau de bord Active IQ Digital Advisor.
+
 
 
 == Mesures de durabilité
@@ -61,7 +63,7 @@ Performance
 
 == Critères d'éligibilité pour les SLA de durabilité
 
-Les abonnements Keystone STaaS répondant aux critères suivants sont éligibles pour les SLA :
+Les abonnements Keystone STaaS remplissant les critères suivants sont éligibles pour les SLA de durabilité :
 
 * Abonnements Keystone STaaS standard non personnalisés avec un niveau de services unique, facturés mensuellement à terme échu.
 * Les abonnements associés aux niveaux de service suivants sont éligibles : niveaux de service Extreme, Premium et Performance.
@@ -88,7 +90,7 @@ Pour plus d'informations sur le tableau de bord et le reporting Keystone, report
 
 
 
-== Crédits de service de développement durable
+== Crédits de service
 
 Si la consommation en watts/Tio dépasse ou ne répond pas aux critères spécifiés dans le SLA pour un niveau de services, NetApp propose le paiement des crédits de service pour les différences signalées pendant la période de facturation, pour tous les abonnements éligibles. Si les mesures du SLA de niveau de service ne sont pas respectées, contactez le Centre de support des services globaux (GSSC) de NetApp au plus tard une semaine avant la fin du mois de service Après avoir déterminé le manquement au niveau de service, les crédits sont calculés sur la base de la capacité engagée du niveau de service et crédités sur la facture du mois suivant.
 

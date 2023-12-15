@@ -4,7 +4,7 @@ permalink: integrations/keystone-cm.html
 keywords: Keystone-BlueXP 
 summary: Keystone et BlueXP 
 ---
-= Keystone et BlueXP
+= Découvrez Keystone et BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

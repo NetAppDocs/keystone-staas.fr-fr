@@ -4,7 +4,7 @@ permalink: integrations/aiq-keystone-details.html
 keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, iq sustainability, digital advisor sustainability, metrocluster, storagegrid, ontap, tracking id, burst usage, alerts 
 summary: Graphiques et rapports sur les abonnements Keystone 
 ---
-= Tableau de bord et reporting des abonnements Keystone
+= Utilisez le tableau de bord et le reporting Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -30,13 +30,13 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
 
 
 
-NOTE: Dans les abonnements Keystone, la consommation de capacité s'affiche en Tibs sur les tableaux de bord et les rapports, puis est arrondie à deux décimales. Si l'utilisation est inférieure à 0.01 Tio, la valeur est alors indiquée comme 0 ou `No Usage`. L'heure locale saisie pour la requête dans ces onglets est convertie en heure UTC. Par conséquent, vous pouvez voir des différences mineures dans les données renvoyées en fonction de l'heure de la requête.
+NOTE: Dans les abonnements Keystone, la consommation de capacité s'affiche en Tibs sur les tableaux de bord et les rapports, puis est arrondie à deux décimales. Si l'utilisation est inférieure à 0.01 Tio, la valeur est alors indiquée comme 0 ou `No Usage`. Les données de ces écrans sont affichées en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC.
 
 Pour plus d'informations sur les mesures d'utilisation, reportez-vous à la section link:../concepts/metrics.html#metrics-measurement["Mesure des metrics"]. Pour plus d'informations sur les différentes capacités utilisées dans Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge"].
 
 
 
-== Afficher les abonnements
+== Abonnements
 
 Vous pouvez afficher la liste de tous vos abonnements dans l'onglet *abonnements*.
 
@@ -68,7 +68,7 @@ image:icon-grey.png["icône en forme de point gris"]: Pas d'utilisation de capac
 
 
 
-== Afficher les détails d'utilisation de vos abonnements
+== Utilisation actuelle
 
 Pour connaître les détails d'utilisation de vos abonnements, cliquez sur l'onglet *utilisation actuelle* et sélectionnez le numéro d'abonnement requis.
 
@@ -83,22 +83,29 @@ Pour plus d'informations sur vos services de stockage Keystone et sur les niveau
 
 
 
-== Afficher les détails des SLA de durabilité
+== Détails SLA
+
+Les contrats de niveau de service (SLA) sont un composant clé des solutions de stockage cloud de NetApp. Les SLA ont pour objectif de proposer une solution de stockage efficace, de haute qualité et fiable dans le cadre des offres de service Keystone de stockage en tant que service. L'onglet *Détails SLA* est disponible uniquement si vous avez un SLA Sustainability valide avec NetApp.
+
+
+
+=== Afficher les détails des SLA de durabilité
 
 .En savoir plus >>
 [%collapsible]
 ====
-L'onglet *Détails SLA* est disponible uniquement si vous avez un accord de niveau de service (SLA) Sustainability valide avec NetApp. Pour plus d'informations sur les SLA de durabilité dans Keystone STaaS, voir link:../concepts/sla-sustainability.html["SLA de durabilité pour Keystone"].
+L'onglet *Sustainability SLA* est disponible uniquement si vous avez un contrat de niveau de service (SLA) Sustainability valide avec NetApp. Pour plus d'informations sur la durabilité dans Keystone STaaS, voir link:../concepts/sla-sustainability.html["SLA de durabilité pour Keystone"].
 
-L'onglet *détails SLA* vous fournit les détails du SLA Sustainability.
+L'onglet *Sustainability SLA* vous fournit les détails du contrat de niveau de service Sustainability.
 
 .Étapes
-. Cliquez sur l'onglet *Détails SLA*.
+. Cliquez sur *Détails SLA > Sustainability SLA*.
 . Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Vous pouvez afficher uniquement les abonnements qui répondent aux critères du contrat de niveau de service Sustainability. Pour plus d'informations sur les critères, reportez-vous à la section link:../concepts/sla-sustainability.html#eligibility-criteria-for-sustainability-sla["Critères d'éligibilité pour les SLA de durabilité"].
-. Sélectionnez l'année et le mois pour lesquels vous souhaitez afficher les détails. Vous pouvez sélectionner l'année et le mois pendant lesquels l'abonnement a été actif.
+. Sélectionnez l'année et le mois pour lesquels vous souhaitez afficher les détails. Par défaut, les données du mois en cours sont affichées. Vous pouvez sélectionner l'année et le mois pendant lesquels l'abonnement a été actif.
+. Cliquez sur *Afficher les détails*.
 
 
-Vous pouvez voir une ventilation quotidienne des mesures de durabilité mesurées pour le mois sélectionné :
+Vous pouvez voir une ventilation quotidienne des mesures de durabilité pour le mois sélectionné :
 
 image:sla-sustainability.png["onglet sla details répertoriant les détails de durabilité"]
 
@@ -124,7 +131,7 @@ En cas de non-respect du SLA, un image:warning.png["icône d'avertissement"] l'i
 ====
 
 
-== Afficher l'historique des données d'utilisation
+== Tendance de la capacité
 
 L'onglet *Capacity Trend* affiche les données historiques de vos abonnements Keystone pour une période spécifique. Les graphiques verticaux affichent les détails d'utilisation de la plage de temps sélectionnée, ainsi que les indicateurs appropriés pour vous permettre de comparer et de générer des rapports.
 
@@ -253,7 +260,7 @@ Pour plus d'informations sur la protection de vos données par MetroCluster, rep
 ====
 
 
-== Afficher les détails des volumes et des objets
+== Volumes et objets
 
 Dans l'onglet *volumes et objets*, vous pouvez afficher la consommation et d'autres détails pour vos volumes dans ONTAP. Pour StorageGRID, cet onglet affiche les nœuds et leur utilisation individuelle dans votre environnement de stockage objet.
 
@@ -262,7 +269,7 @@ NOTE: Le nom de cet onglet varie selon la nature du déploiement sur votre site.
 
 
 
-=== Détails du volume ONTAP
+=== Afficher les détails du volume ONTAP
 
 .En savoir plus >>
 [%collapsible]
@@ -286,12 +293,12 @@ image:aiq-ks-sysdtls.png["Volumes  amp; objets"]
 ====
 
 
-=== Nœuds StorageGRID et détails de consommation
+=== Afficher les nœuds StorageGRID et la consommation
 
 .En savoir plus >>
 [%collapsible]
 ====
-Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds dans l'environnement de stockage objet.
+Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds pour le stockage objet.
 
 .Étapes
 . Cliquez sur l'onglet *objets*.
@@ -308,11 +315,12 @@ image:sg-link-2.png["Boîte de dialogue StorageGRID"]
 ====
 
 
-== Afficher les performances des volumes ONTAP
+== Performance
 
-Vous pouvez cliquer sur l'onglet *Performance* pour afficher les détails de performances des volumes ONTAP gérés par vos abonnements Keystone.
+L'onglet *Performance* vous permet de consulter les metrics de performances des volumes ONTAP gérés par vos abonnements Keystone.
 
-Il se peut que vous ne puissiez pas accéder à cet onglet pour afficher les metrics de performances de vos volumes ONTAP. Contactez le support technique pour afficher cet onglet.
+
+TIP: Cet onglet est disponible en option. Contactez le support technique pour afficher cet onglet.
 
 .Étapes
 . Cliquez sur l'onglet *Performance*.

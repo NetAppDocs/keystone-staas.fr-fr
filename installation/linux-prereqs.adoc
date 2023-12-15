@@ -233,8 +233,8 @@ Siège de NetApp, pour la facturation et la livraison AutoSupport
 
 
  a| 
-https://mirror.centos.org[]
-https://mirrorlist.centos.org[]
+http://mirror.centos.org[]
+http://mirrorlist.centos.org[]
  a| 
 Mises à jour du système d'exploitation pour Keystone Collector (déploiements OVA uniquement)
 

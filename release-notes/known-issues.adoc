@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: release-notes/known-issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: Problèmes connus dans le moteur de service NetApp 
+---
+= Problèmes connus dans le moteur de service NetApp
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le problème connu suivant a été signalé dans le stockage en tant que service NetApp Keystone. Ce problème peut se produire lorsque vous provisionnez ou utilisez votre stockage dans le cadre de vos abonnements Keystone.
+
+[cols="3*"]
+|===
+| Problème connu | Description | Solution de contournement 
+
+
+ a| 
+Niveau de service incorrect dérivé pour les volumes en miroir.
+ a| 
+Si MetroCluster et FabricPool sont tous deux activés dans un environnement où des plans de taux pour la hiérarchisation et le stockage objet sont applicables, les niveaux de service dérivés pour les volumes en miroir (à la fois les volumes constitutifs et FabricPool) peuvent être incorrects.
+ a| 
+Aucune.
+
+|===

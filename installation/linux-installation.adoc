@@ -36,4 +36,4 @@ Procédez comme suit pour installer le logiciel sur votre serveur Linux :
 
 
 
-NOTE: Une fois l'installation terminée, vous pouvez utiliser l'utilitaire TUI (Keystone Collector Management terminal User interface) pour effectuer les activités de configuration et de surveillance. Vous pouvez utiliser diverses commandes du clavier, telles que les touches entrée et flèche, pour sélectionner les options et naviguer dans cette TUI. Voir link:../installation/configuration.html["Configurer le collecteur Keystone"] et link:../installation/monitor-health.html["Contrôle de l'état des systèmes"].
+NOTE: Une fois l'installation terminée, vous pouvez utiliser l'utilitaire TUI (Keystone Collector Management terminal User interface) pour effectuer les activités de configuration et de surveillance. Vous pouvez utiliser diverses commandes du clavier, telles que les touches entrée et flèche, pour sélectionner les options et naviguer dans cette TUI. Voir link:../installation/configuration.html["Configurer le collecteur Keystone"] et link:../installation/monitor-health.html["Contrôle de l'état des systèmes"] pour plus d'informations.
