@@ -53,7 +53,7 @@ sidebar:
       url: "/installation/asup-config.html"
     - title: Données collectées pour la facturation
       url: "/installation/data-collection.html"
-  - title: Faites plus avec les services Keystone
+  - title: Affichez le tableau de bord Keystone et gérez vos abonnements
     entries:
     - title: Affichez le tableau de bord Keystone sur le conseiller digital Active
         IQ
@@ -74,6 +74,8 @@ sidebar:
       url: "/concepts/service-levels.html"
     - title: Services complémentaires
       entries:
+      - title: Services complémentaires dans Keystone STaaS
+        url: "/concepts/add-on.html"
       - title: Tiering des données
         url: "/concepts/data-tiering.html"
       - title: Protection avancée des données

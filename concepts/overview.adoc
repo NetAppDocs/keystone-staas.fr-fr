@@ -29,3 +29,12 @@ Un abonnement Keystone est associé à des plans tarifaires. Il peut y avoir plu
 == Stockage à la demande Keystone
 
 Les offres de stockage en tant que service (STaaS) permettent de proposer un modèle similaire au cloud public pour l'approvisionnement, le déploiement et la gestion de l'infrastructure de stockage. Alors que la majorité des entreprises travaillent encore sur leur stratégie de cloud hybride, vous, en tant que client, pouvez opter pour un modèle de consommation basé sur OpEx et basé sur le paiement à l'utilisation. Vous avez peut-être besoin de migrer tous vos workloads vers le cloud, sans avoir à planifier de migrer des parties spécifiques ou la totalité de vos charges de travail vers le cloud. Le stockage en tant que service Keystone vous apporte la flexibilité nécessaire pour commencer avec les services sur site, décider plus tard des workloads appropriés et déplacer vers le cloud à un point dans le temps. Le service STaaS de Keystone assure la protection des engagements entre les modèles de déploiement. Au lieu de payer plus pour les services cloud, vous, en tant que client sur site, pouvez réaffecter vos dépenses sur site pour ajouter des services cloud et payer à peu près la même facture mensuelle que celle allouée avant cette réaffectation.
+
+*Informations connexes*
+
+* link:../concepts/pricing.html["Tarification Keystone"]
+* link:../concepts/add-on.html["Services complémentaires dans Keystone STaaS"]
+* link:../concepts/service-levels.html["Niveaux de service dans Keystone"]
+* link:../concepts/infra.html["Infrastructure Keystone"]
+* link:../concepts/operational-models.html["Modèles opérationnels dans Keystone"]
+

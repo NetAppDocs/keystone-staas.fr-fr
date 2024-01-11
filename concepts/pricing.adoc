@@ -29,3 +29,12 @@ Keystone vous fournit les fonctionnalités de facturation suivantes :
 La facturation de Keystone repose sur la capacité engagement et sur la consommation en rafale variable.
 
 Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"].
+
+*Informations connexes*
+
+* link:../concepts/committed-capacity-billing.html["Facturation en fonction de la capacité engagement"]
+* link:../concepts/consumed-capacity-billing.html["Mesure basée sur la capacité consommée"]
+* link:../concepts/burst-consumption-billing.html["Facturation en fonction de la consommation en rafale"]
+* link:../concepts/misc-volume-billing.html["Facturation en fonction des divers types de volume"]
+* link:../concepts/billing-schedules.html["Calendriers de facturation"]
+

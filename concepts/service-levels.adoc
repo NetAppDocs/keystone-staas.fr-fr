@@ -135,3 +135,10 @@ NOTE: La latence n'inclut pas les surcharges associées au transfert de données
 
 
 ====
+*Informations connexes*
+
+* link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge"]
+* link:..//concepts/metrics.html["Mesures et définitions utilisées dans les services Keystone"]
+* link:../concepts/qos.html["Qualité de service (QoS) dans Keystone"]
+* link:../concepts/pricing.html["Tarification Keystone"]
+

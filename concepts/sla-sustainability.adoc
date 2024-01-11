@@ -16,7 +16,7 @@ summary: durabilité, sla, accord de niveau de service
 [role="lead"]
 Le stockage en tant que service NetApp Keystone fournit des niveaux de service associés à un contrat de niveau de service ou à un développement durable avec SLA qui définissent le nombre maximal de watts/Tio consommés par niveau de service, afin de vous aider à planifier, contrôler et atteindre vos objectifs de durabilité IT.
 
-Pour en savoir plus sur les problèmes liés aux SLA, consultez le widget Keystone du tableau de bord Active IQ Digital Advisor.
+Pour en savoir plus sur les problèmes liés aux SLA, consultez le widget Keystone du tableau de bord Active IQ Digital Advisor (également appelé Digital Advisor).
 
 
 
@@ -84,7 +84,7 @@ Les configurations MetroCluster et commuées ne sont pas prises en charge.
 
 == Rapports sur le développement durable
 
-L'onglet SLA du tableau de bord Active IQ Digital Advisor (Digital Advisor) Keystone fournit une vue détaillée des metrics de durabilité de vos abonnements Keystone. Vous pouvez afficher ces metrics et générer des rapports pour mener à bien des analyses et des actions futures.
+Le tableau de bord Keystone de l'onglet SLA de Digital Advisor fournit une vue détaillée des metrics de durabilité de vos abonnements Keystone. Vous pouvez afficher ces metrics et générer des rapports pour mener à bien des analyses et des actions futures.
 
 Pour plus d'informations sur le tableau de bord et le reporting Keystone, reportez-vous à link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"].
 
