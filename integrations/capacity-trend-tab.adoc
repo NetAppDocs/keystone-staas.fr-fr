@@ -1,0 +1,140 @@
+---
+sidebar: sidebar 
+permalink: integrations/capacity-trend-tab.html 
+keywords: keystone-aiq, digital advisor keystone, capacity trend tab, historical usage, accrued burst, accrued, consumption 
+summary: 'Onglet de tendance de la capacité du tableau de bord de l"abonnement Keystone' 
+---
+= Onglet tendances de capacité
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'onglet *Capacity Trend* affiche les données historiques de vos abonnements Keystone pour une période spécifique.
+
+Les graphiques verticaux affichent les détails d'utilisation de la plage de temps sélectionnée, ainsi que les indicateurs appropriés pour vous permettre de comparer et de générer des rapports.
+
+.Étapes
+. Cliquez sur *GÉNÉRAL > abonnements Keystone > tendance de la capacité*.
+. Sélectionnez l'abonnement requis pour lequel vous souhaitez afficher les détails. Le premier abonnement dans votre nom de compte est sélectionné par défaut.
+. Sélectionnez *tendance capacité* si vous souhaitez afficher les données historiques et analyser la tendance d'utilisation de la capacité. Sélectionnez *facturé Burst cumulé* si vous souhaitez afficher les données historiques d'utilisation en rafale, pour lesquelles des factures ont été générées. Vous pouvez utiliser ces données pour analyser l'utilisation facturée selon votre facture.
+
+
+
+
+== Affichez la tendance de la capacité
+
+Si vous avez sélectionné l'option *Capacity Trend*, procédez comme suit :
+
+.Étapes
+. Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. Sélectionnez la plage de dates de la requête. La plage de dates peut être le début du mois, la date de début de l'abonnement à la date actuelle ou la date de fin de l'abonnement. Vous ne pouvez pas sélectionner une date future.
++
+
+TIP: Pour des performances et une expérience utilisateur optimales, limitez la plage de dates de votre requête à trois mois.
+
+. Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée.
+
+
+Les graphiques à barres affichent le nom du niveau de service et la capacité consommée par rapport à ce niveau de service pour la plage de dates. La date et l'heure de la collection sont affichées en bas du graphique. En fonction de la plage de dates de votre requête, les graphiques d'utilisation sont affichés dans une plage de 30 points de collecte de données. Vous pouvez placer le curseur de la souris sur les graphiques pour afficher la répartition de l'utilisation en termes de données validées, consommées, en rafale et au-dessus de la limite de rafale à ce point de collecte de données.
+
+image:aiq-ks-subtime-2.png["Onglet Capacity Trend avec détails"]
+
+Les couleurs suivantes dans les graphiques à barres indiquent la capacité consommée comme défini dans le niveau de service. Les données mensuelles dans les graphiques sont séparées par une ligne verticale.
+
+* Vert : à moins de 80 %.
+* Ambre: 80% - 100%.
+* Rouge : utilisation en rafale (100 % de la capacité validée par rapport à la limite de rafale convenue)
+* Violet : au-dessus de la limite d'éclatement ou `Above Limit`.
+
+
+
+NOTE: Un graphique vide indique qu'aucune donnée n'est disponible dans votre environnement à ce point de collecte de données.
+
+Vous pouvez cliquer sur le bouton à bascule *Afficher l'utilisation actuelle* pour afficher les données de consommation, d'utilisation en rafale et d'accumulation en rafale pour la période de facturation en cours. Ces détails ne sont pas basés sur la plage de dates de la requête.
+
+* *Courant consommé* : indicateur de la capacité consommée (en Tio) définie pour le niveau de service. Ce champ utilise des couleurs spécifiques :
++
+** Pas de couleur : utilisation en rafale ou supérieure.
+** Gris : aucune utilisation.
+** Vert : dans un délai de 80 % de la capacité allouée.
+** Orange : 80 % de la capacité allouée à la capacité de rafale.
+
+
+* *Burst courant* : indicateur de la capacité consommée dans la limite de rafale définie ou au-dessus. Toute utilisation comprise dans la limite de capacité supplémentaire pour votre abonnement, par exemple, 20 % de plus que la capacité allouée se situe dans la limite de capacité supplémentaire. Autre utilisation : utilisation supérieure à la limite d'augmentation. Ce champ affiche des couleurs spécifiques :
++
+** Pas de couleur : pas d'utilisation de rafale.
+** Rouge : utilisation en rafale.
+** Violet : au-dessus de la limite d'éclatement.
+
+
+* *Augmentation cumulée* : indicateur de l'utilisation ou de la capacité consommée cumulée calculée par mois pour la période de facturation en cours. L'utilisation des rafales cumulées est calculée en fonction de la capacité engagée et consommée pour un niveau de service : `(consumed - committed)/365.25/12`.
+
+
+
+
+== Afficher les frais supplémentaires facturés
+
+Si vous avez sélectionné l'option *facturé Burst cumulé*, par défaut, vous pouvez voir les données d'utilisation de la capacité supplémentaire cumulée mensuelle des 12 derniers mois qui ont été facturés. Vous pouvez effectuer une requête par période allant jusqu'à 30 mois. Les graphiques à barres sont affichés pour les données facturées et si l'utilisation n'a pas encore été facturée, vous voyez _Pending_ pour ce mois-ci.
+
+
+TIP: L'utilisation de capacité supplémentaire facturée accumulée est calculée par période de facturation en fonction de la capacité allouée et consommée pour un niveau de service.
+
+image:accr-burst.png["graphiques d'utilisation des ressources supplémentaires cumulées"]
+
+Cette fonctionnalité est disponible en mode d'aperçu uniquement. Contactez votre KSM pour en savoir plus sur cette fonctionnalité.
+
+
+
+== Des graphiques de référence pour la protection avancée des données
+
+Si vous avez souscrit au service complémentaire de protection avancée des données, vous pouvez afficher la répartition des données de consommation pour les sites partenaires MetroCluster dans l'onglet *tendance de capacité*.
+
+Pour plus d'informations sur le service complémentaire de protection avancée des données, reportez-vous à la section link:../concepts/adp.html["Protection avancée des données"].
+
+Si les clusters de votre environnement de stockage ONTAP sont configurés dans une configuration MetroCluster, les données de consommation de votre abonnement Keystone sont divisées dans le même graphique de données d'historique pour afficher la consommation au niveau des sites principaux et en miroir pour les niveaux de service de base.
+
+
+NOTE: Les graphiques à barres de consommation sont divisés uniquement pour les niveaux de service de base. Pour le service complémentaire de protection avancée des données, c'est-à-dire le niveau de service _Advanced Data-Protect_, cette démarcation n'apparaît pas.
+
+.Niveau de service avancé de protection des données
+Pour le niveau de service _Advanced Data-Protect_, la consommation totale est répartie entre les sites partenaires, et l'utilisation sur chaque site partenaire est reflétée et facturée dans un abonnement distinct, un abonnement pour le site principal et un autre pour le site miroir. C'est la raison pour laquelle, lorsque vous sélectionnez le numéro d'abonnement pour le site principal dans l'onglet *Capacity Trend*, les graphiques de consommation pour le service complémentaire Advanced Data protection affichent les détails de consommation discrète du site principal uniquement. Étant donné MetroCluster que chaque site partenaire fait office de source et de miroir, la consommation totale sur chaque site inclut la source et les volumes en miroir créés sur ce site.
+
+
+TIP: L'info-bulle en regard de l'ID de suivi de votre abonnement dans l'onglet *Current usage* vous aide à identifier l'abonnement partenaire dans la configuration MetroCluster.
+
+.Niveaux de services de base
+Pour les niveaux de service de base, chaque volume est facturé comme provisionné sur les sites primaire et miroir. Le même graphique à barres est donc divisé en fonction de la consommation au niveau des sites primaire et miroir.
+
+.Ce que vous pouvez voir pour l'abonnement principal
+L'image suivante affiche les graphiques pour le niveau de service _Extreme_ (niveau de service de base) et un numéro d'abonnement principal. Le même graphique de données historiques indique également la consommation du site miroir dans une ombre plus claire du même code de couleur utilisé pour le site principal. L'info-bulle affichée avec le curseur de la souris affiche l'éclatement de la consommation (en Tio) pour les sites principaux et en miroir, 1.02 Tio et 1.05 Tio respectivement.
+
+image:mcc-chart.png["mcc principal"]
+
+Pour le niveau de service _Advanced Data-Protect_, les graphiques apparaissent comme suit :
+
+image:adp-src.png["base principale mcc"]
+
+.Ce que vous pouvez voir pour l'abonnement secondaire (site miroir)
+Lorsque vous cochez l'abonnement secondaire, vous constatez que le graphique à barres du niveau de service _Extreme_ (niveau de service de base) au même point de collecte de données que le site partenaire est inversé, et que l'éclatement de la consommation au niveau des sites principal et miroir est respectivement de 1.05 Tio et 1.02 Tio.
+
+image:mcc-chart-mirror.png["miroir mcc"]
+
+Pour le niveau de service _Advanced Data-Protect_, le graphique s'affiche comme suit pour le même point de collecte que sur le site partenaire :
+
+image:adp-mir.png["base de rétroviseur mcc"]
+
+Pour plus d'informations sur la protection de vos données par MetroCluster, reportez-vous à la section https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["Tout savoir sur la protection des données et la reprise après incident MetroCluster"^].
+
+*Informations connexes*
+
+* link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
+* link:../integrations/subscriptions-tab.html["Abonnements"]
+* link:../integrations/current-usage-tab.html["Utilisation actuelle"]
+* link:../integrations/sla-details-tab.html["Détails SLA"]
+* link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
+* link:../integrations/performance-tab.html["Performance"]
+

@@ -18,6 +18,18 @@ NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque ver
 
 
 
+== Nouvelles fonctionnalités et améliorations pour le 13 février 2024
+
+Les modifications suivantes ont été effectuées sur l'écran *abonnements Keystone* du conseiller numérique Active IQ (également appelé Conseiller numérique).
+
+
+
+=== Possibilité d'afficher les abonnements liés à un abonnement principal
+
+Certains de vos abonnements principaux peuvent avoir des abonnements secondaires liés. Si c'est le cas, le numéro d'abonnement principal continuera d'être affiché dans la colonne *Numéro d'abonnement*, tandis que les numéros d'abonnement liés seront répertoriés dans une nouvelle colonne *abonnements liés* dans l'onglet *abonnements*. La colonne *abonnements liés* devient disponible uniquement si vous avez des abonnements liés, et vous pouvez voir des messages d'information vous en informer.
+
+
+
 == Nouvelles fonctionnalités et améliorations pour le 11 janvier 2024
 
 Découvrez les nouveautés de cette version.

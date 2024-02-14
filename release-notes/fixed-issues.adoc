@@ -14,7 +14,7 @@ summary: Problèmes résolus dans les différentes versions de Keystone STaaS
 
 
 [role="lead"]
-Les problèmes détectés dans les versions précédentes des services de stockage en tant que service NetApp Keystone ont été résolus dans les versions ultérieures. Le tableau suivant répertorie les correctifs.
+Les problèmes détectés dans les versions précédentes des services de stockage en tant que service NetApp Keystone ont été résolus dans les versions ultérieures. Le tableau suivant répertorie ces correctifs.
 
 [cols="3*"]
 |===

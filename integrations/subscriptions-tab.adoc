@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: integrations/subscriptions-tab.html 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab 
+summary: Onglet abonnements du tableau de bord AIQ DA Keystone 
+---
+= Onglet abonnements
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher la liste de tous vos abonnements dans l'onglet *abonnements*.
+
+Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > abonnements*.
+
+image:all-subs.png["Image de l'onglet abonnements"]
+
+Vous pouvez voir les informations suivantes. Pour certains champs et certaines colonnes, vous pouvez voir des informations ou des icônes d'avertissement et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
+
+* *Numéro d'abonnement* : numéro d'abonnement de l'abonnement Keystone attribué par NetApp.
+* *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
++
+
+TIP: Si vous avez souscrit à un service complémentaire de protection avancée des données, cliquez sur l'info-bulle correspondant à votre numéro d'abonnement pour afficher l'ID de suivi de l'abonnement partenaire dans une configuration MetroCluster. Pour savoir comment afficher les abonnements détaillés de la consommation par partenaire dans une configuration MetroCluster, reportez-vous à la section link:../integrations/capacity-trend-tab.html#reference-charts-for-advanced-data-protection["Des graphiques de référence pour la protection avancée des données"].
+
+* *Type d'utilisation* : vous avez peut-être souscrit à plusieurs abonnements Keystone (version 1) ou Keystone STaaS (version 2). Les règles de plan tarifaire pour les niveaux de service peuvent varier selon les deux types d'abonnement. En regardant la valeur de cette colonne, vous savez si le type d'utilisation est facturé en fonction de l'utilisation provisionnée ou logique pour l'un ou l'autre `v1` ou `v2`. Pour plus d'informations sur les abonnements Keystone version 1, reportez-vous à la section https://docs.netapp.com/us-en/keystone/index.html["Documentation relative à NetApp Keystone"^].
+* *Période de facturation* : période de facturation de l'abonnement, par exemple mensuelle, trimestrielle ou annuelle.
+* *Date de début* : la date de début de l'abonnement.
+* *Date de fin* : la date de fin de l'abonnement. Si vous avez un abonnement mensuel qui se renouvelle automatiquement tous les mois, vous voyez `Month-on-month` au lieu de la date de fin. En fonction de cette date, vous pouvez voir des notifications pour les abonnements qui sont sur le point de se terminer ou auxquels des polices de renouvellement automatique sont associées.
+* *Etat d'utilisation* : affiche l'indicateur d'utilisation pour indiquer si la consommation se situe dans la limite d'abonnement ou si elle dépasse cette limite. Vous pouvez trier la liste en fonction de cette colonne si vous souhaitez afficher les enregistrements de consommation les plus élevés.
+* image:subs-dtls-icon.png["icône"]: Cliquer sur cette icône pour un abonnement ouvre l'onglet *usage actuel* avec les détails d'utilisation de cet abonnement.
+* image:aiq-ks-time-icon.png["icône"]: Cliquez sur cette icône pour ouvrir l'onglet *Capacity Trend*, dans lequel vous pouvez afficher l'historique des données d'utilisation pour chaque niveau de service inclus dans cet abonnement.
+
+
+Vous pouvez consulter les indicateurs d'utilisation suivants pour vérifier l'état d'utilisation de chaque abonnement :
+
+image:usage-indicator.png["icône"]
+
+.Indexer
+image:icon-grey.png["icône en forme de point gris"]: Pas d'utilisation de capacité enregistrée par rapport à la capacité engagée du niveau de serviceimage:icon-green.png["icône de point vert"]: La consommation est normale, à moins de 80 % de la capacité engagéeimage:icon-amber.png["icône en forme de point orange"]: Consommation maximale, c'est-à-dire l'utilisation est sur le point d'atteindre 100% ou plus de la capacité engagée. La colonne *Uconsommé* affiche cet indicateur pour toute consommation supérieure à 80 % de la capacité engagéeimage:icon-red.png["icône point rouge"]: La consommation est dans la limite de rafale. La consommation en rafale est la consommation qui occupe la capacité engagement de 100 % d'un niveau de service. Elle est conforme à la limite convenue d'utilisation en rafale, notamment 120 %image:icon-purple.png["icône en forme de point violet"]: Indique la consommation au-dessus de la limite de rafale stipulée
+
+*Informations connexes*
+
+* link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
+* link:../integrations/current-usage-tab.html["Utilisation actuelle"]
+* link:../integrations/sla-details-tab.html["Détails SLA"]
+* link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
+* link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
+* link:../integrations/performance-tab.html["Performance"]
+

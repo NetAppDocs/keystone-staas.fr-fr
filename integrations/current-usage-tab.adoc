@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: integrations/current-usage-tab.html 
+keywords: keystone-aiq, digital advisor keystone, current usage tab 
+summary: Onglet utilisation actuelle du tableau de bord AIQ DA Keystone 
+---
+= Onglet utilisation actuelle
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'onglet *usage actuel* affiche les détails d'utilisation de vos abonnements.
+
+Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > utilisation actuelle*, puis sélectionnez le numéro d'abonnement requis.
+
+image:aiq-ks-dtls.png["Onglet utilisation actuelle"]
+
+Pour l'abonnement sélectionné, vous pouvez afficher des détails, tels que les dates de début et de fin de l'abonnement et la période de facturation, par exemple mensuelle ou annuelle. Dans le cadre de l'utilisation de l'abonnement, vous pouvez afficher le nom du niveau de service, l'engagement, la consommation, la capacité disponible et l'utilisation en rafale actuelle et accumulée (en Tio).
+
+
+TIP: Le image:icon-info.png["icône informations"] l'icône en regard de chaque colonne fournit des informations complètes sur cette colonne. Les niveaux de service spécifiques qui enregistrent une plus forte consommation sont mis en évidence. Vous pouvez également afficher les avertissements et les alertes générés pour vos volumes.
+
+Pour plus d'informations sur vos services de stockage Keystone et sur les niveaux de service appropriés, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
+
+Associé à l'utilisation actuelle, vous pouvez afficher l'historique des données d'utilisation à des fins de comparaison. Cliquez sur le bouton *Afficher les données historiques* pour accéder à l'onglet *tendance capacité* et afficher les données historiques de la même souscription.
+
+*Informations connexes*
+
+* link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
+* link:../integrations/subscriptions-tab.html["Abonnements"]
+* link:../integrations/sla-details-tab.html["Détails SLA"]
+* link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
+* link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
+* link:../integrations/performance-tab.html["Performance"]
+

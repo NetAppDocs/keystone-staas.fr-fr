@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: integrations/volumes-objects-tab.html 
+keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
+summary: onglet volumes-objets 
+---
+= Volumes et objets
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans l'onglet *volumes et objets*, vous pouvez afficher la consommation et d'autres détails pour vos volumes dans ONTAP. Pour StorageGRID, cet onglet affiche les nœuds et leur utilisation individuelle dans votre environnement de stockage objet.
+
+
+NOTE: Le nom de cet onglet varie selon la nature du déploiement sur votre site. Si vous disposez à la fois de volumes et d'un stockage objet, vous pouvez voir l'onglet *volumes et objets*. Si votre environnement de stockage ne contient que des volumes ONTAP, le nom devient *volumes*. Pour le stockage d'objets StorageGRID, vous pouvez voir l'onglet *objets*.
+
+
+
+== Afficher les détails du volume ONTAP
+
+Pour ONTAP, l'onglet *volumes* affiche des informations telles que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et le niveau de service des volumes de votre environnement de stockage géré par votre abonnement Keystone.
+
+.Étapes
+. Cliquez sur *GÉNÉRAL > abonnements Keystone > volumes*.
+. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné.
++
+Les détails du volume s'affichent. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques.
+
++
+
+NOTE: Pour le service complémentaire de protection avancée des données, une colonne supplémentaire apparaît pour indiquer si le volume est un volume primaire ou miroir dans la configuration MetroCluster. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
+
+
+
+image:aiq-ks-sysdtls.png["Volumes  amp; objets"]
+
+
+
+== Afficher les nœuds StorageGRID et la consommation
+
+Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds pour le stockage objet.
+
+.Étapes
+. Cliquez sur *GÉNÉRAL > abonnements Keystone > objets*.
+. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné. Lorsque vous sélectionnez le numéro d'abonnement, le lien pour les détails du stockage objet est activé.
++
+image:sg-link.png["Boîte de dialogue StorageGRID"]
+
+. Cliquez sur le lien pour afficher les noms des nœuds et les détails d'utilisation physique de chaque nœud.
++
+image:sg-link-2.png["Boîte de dialogue StorageGRID"]
+
+
+
+*Informations connexes*
+
+* link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
+* link:../integrations/subscriptions-tab.html["Abonnements"]
+* link:../integrations/current-usage-tab.html["Utilisation actuelle"]
+* link:../integrations/sla-details-tab.html["Détails SLA"]
+* link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
+* link:../integrations/performance-tab.html["Performance"]
+

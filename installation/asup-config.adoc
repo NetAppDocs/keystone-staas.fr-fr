@@ -52,9 +52,9 @@ Ces sous-systèmes sont inclus par défaut dans les packs AutoSupport hebdomadai
 
 .Étapes
 . En tant qu'administrateur système, connectez-vous au cluster Keystone ONTAP à l'aide de SSH. Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-ssh-task.html["Accéder au cluster via SSH"^].
-. Exécutez la commande suivante et vérifiez la configuration existante :
+. Exécutez la commande suivante et vérifiez la configuration existante par rapport aux sous-systèmes existants :
 +
-`autosupport trigger show -node * -autosupport-message management.log -instance`
+`autosupport trigger show -node * -autosupport-message management.log -fields basic-additional`
 
 +
 Pour plus d'informations sur cette commande, voir https://docs.netapp.com/us-en/ontap-cli-9131/system-node-autosupport-manifest-show.html#parameters["le manifeste AutoSupport du nœud système s'affiche"^].

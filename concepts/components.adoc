@@ -56,7 +56,7 @@ NetApp peut fournir les spécifications relatives à la climatisation (BTU typiq
 
 === Machines virtuelles de stockage
 
-Une machine virtuelle de stockage (VM de stockage) est requise pour le déploiement du collecteur Keystone et de la passerelle de solution tout-en-un. Les conditions préalables à l'installation de Keystone Collector sont disponibles ici : link:..//installation/installation-overview.html["Guide d'installation de Keystone Collector"]. Les autres exigences sont partagées lors du déploiement.
+Une machine virtuelle de stockage (VM de stockage) est requise pour le déploiement du collecteur Keystone et de la passerelle de solution tout-en-un. Les conditions préalables à l'installation de Keystone Collector sont disponibles ici : link:../installation/installation-overview.html["Guide d'installation de Keystone Collector"]. Les autres exigences sont partagées lors du déploiement.
 
 
 
