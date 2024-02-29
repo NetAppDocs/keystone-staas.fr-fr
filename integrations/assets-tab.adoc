@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: integrations/assets-tab.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab 
+summary: Graphiques et rapports sur les abonnements Keystone 
+---
+= Onglet actifs
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez l'onglet *Assets* pour recueillir des points de vue sur votre cluster et les nœuds gérés par vos abonnements Keystone.
+
+Le conseiller digital Active IQ vous fournit des informations complètes sur vos déploiements au niveau de l'inventaire. L'onglet *Assets* du tableau de bord Keystone, en revanche, accumule les informations au niveau du cluster en fonction de vos abonnements, puis les sépare et les présente avec le niveau de détails précis.
+
+.Étapes
+. Cliquez sur *GÉNÉRAL > abonnements Keystone > actifs*.
+. Sélectionnez le numéro d'abonnement pour lequel vous souhaitez afficher les clusters.
+
+
+Vous pouvez consulter les détails sur le cluster, répartis par les paramètres d'efficacité du stockage, le type de plateforme et les détails sur la capacité. Cliquez sur l'un des clusters pour accéder au widget *clusters* de l'écran Digital Advisor, où vous pouvez obtenir des informations supplémentaires sur ce cluster.
+
+image:assets-tab.png["Onglet actifs"]
+
+*Informations connexes*
+
+* link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
+* link:../integrations/subscriptions-tab.html["Abonnements"]
+* link:../integrations/current-usage-tab.html["Utilisation actuelle"]
+* link:../integrations/sla-details-tab.html["Détails SLA"]
+* link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
+* link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
+* link:../integrations/performance-tab.html["Performance"]
+

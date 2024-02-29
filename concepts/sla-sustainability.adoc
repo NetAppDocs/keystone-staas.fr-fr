@@ -22,7 +22,7 @@ Pour en savoir plus sur les problèmes liés aux SLA, consultez le widget Keysto
 
 == Mesures de durabilité
 
-Les mesures suivantes sont utilisées pour définir et mesurer la durabilité :
+Les mesures suivantes définissent et mesurent la durabilité :
 
 * Watts : consommation électrique quotidienne des baies ONTAP AFF A-Series et des tiroirs SSD associés.
 * TIB : le plus grand de :

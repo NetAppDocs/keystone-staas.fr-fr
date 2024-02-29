@@ -16,11 +16,11 @@ summary: Onglet abonnements du tableau de bord AIQ DA Keystone
 [role="lead"]
 Vous pouvez afficher la liste de tous vos abonnements dans l'onglet *abonnements*.
 
-Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > abonnements*.
+Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > abonnements*. Tous vos abonnements sont répertoriés.
 
 image:all-subs.png["Image de l'onglet abonnements"]
 
-Vous pouvez voir les informations suivantes. Pour certains champs et certaines colonnes, vous pouvez voir des informations ou des icônes d'avertissement et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
+Vous pouvez filtrer la sélection en cliquant sur l'icône hamburger image:icon-hamburger.png["icône hamburger"] Pour une colonne, ou affichez tous les abonnements en cliquant sur le bouton *Effacer les filtres*. Pour certains champs et certaines colonnes, vous pouvez voir des informations ou des icônes d'avertissement et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
 
 * *Numéro d'abonnement* : numéro d'abonnement de l'abonnement Keystone attribué par NetApp.
 * *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
@@ -52,4 +52,5 @@ image:icon-grey.png["icône en forme de point gris"]: Pas d'utilisation de capac
 * link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
 * link:../integrations/performance-tab.html["Performance"]
+* link:../integrations/assets-tab.html["Ressources"]
 

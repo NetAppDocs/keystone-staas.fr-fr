@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: release-notes/known-issues.html 
 keywords: netapp, keystone, release notes, known issues 
-summary: Problèmes connus dans le moteur de service NetApp 
+summary: Problèmes connus dans le stockage en tant que service Keystone 
 ---
-= Problèmes connus dans le moteur de service NetApp
+= Problèmes connus dans le stockage en tant que service Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,9 @@ summary: Problèmes connus dans le moteur de service NetApp
 
 
 [role="lead"]
-Les problèmes connus suivants ont été signalés dans le stockage en tant que service NetApp Keystone. Ces problèmes peuvent se produire lorsque vous provisionnez ou utilisez le stockage géré par vos abonnements Keystone.
+Les problèmes connus identifient les problèmes susceptibles de vous empêcher d'utiliser efficacement les services d'abonnement Keystone.
+
+Les problèmes connus suivants ont été signalés dans le stockage en tant que service NetApp Keystone.
 
 [cols="3*"]
 |===
@@ -22,19 +24,28 @@ Les problèmes connus suivants ont été signalés dans le stockage en tant que 
 
 
  a| 
-Niveau de service incorrect dérivé pour les volumes en miroir.
+Incohérence occasionnelle du nombre de volumes non conformes AQoS dans l'onglet *volumes*.
  a| 
-Si MetroCluster et FabricPool sont tous deux activés dans un environnement où des plans de taux pour la hiérarchisation et le stockage objet sont applicables, les niveaux de service dérivés pour les volumes en miroir (à la fois les volumes constitutifs et FabricPool) peuvent être incorrects.
+Si deux niveaux de service sont attribués à un volume qui répond à la conformité AQoS pour un seul niveau de service, le nombre de volumes non conformes AQoS répertoriés dans les onglets *Volume Summary* et *Volume Details* peut varier.
  a| 
-Aucune.
+Aucune
 
 
 
  a| 
-Liens et icônes partiellement visibles dans l'onglet *abonnements*.
+*Onglet Assets* non renseigné pour les abonnements AutoSupport.
  a| 
-Quelques liens et icônes, tels que le lien vers l'onglet *Current usage* et les info-bulles de certaines colonnes sont partiellement visibles.
+Si la télémétrie AutoSupport est utilisée pour collecter des données Keystone pour un numéro d'abonnement, aucune information n'est récupérée dans l'onglet *Assets*.
  a| 
-Aucune solution n'est requise. Les liens fonctionnent comme prévu.
+Aucune
+
+
+
+ a| 
+Apparence incorrecte de l'info-bulle.
+ a| 
+L'infobulle de l'icône de l'index *Burst* actuel apparaît de manière incorrecte dans l'onglet *Capacity Trend*.
+ a| 
+Reportez-vous au texte de l'info-bulle correct «_la quantité de capacité de rafale actuellement consommée. Remarque : il s'agit de la période de facturation en cours et non de la plage de dates sélectionnée._ »
 
 |===

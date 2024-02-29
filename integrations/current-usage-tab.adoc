@@ -37,4 +37,5 @@ Associé à l'utilisation actuelle, vous pouvez afficher l'historique des donné
 * link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
 * link:../integrations/performance-tab.html["Performance"]
+* link:../integrations/assets-tab.html["Onglet actifs"]
 

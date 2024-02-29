@@ -84,4 +84,5 @@ image:perf-log-usd.png["graphique de capacité logique utilisée"]
 * link:../integrations/sla-details-tab.html["Détails SLA"]
 * link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
+* link:../integrations/assets-tab.html["Ressources"]
 

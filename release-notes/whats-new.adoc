@@ -18,9 +18,39 @@ NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque ver
 
 
 
+== Nouvelles fonctionnalités et améliorations pour le 29 février 2024
+
+Plusieurs améliorations ont été apportées au tableau de bord Active IQ Digital Advisor (également appelé Digital Advisor) et à l'écran *abonnements Keystone* pour cette version :
+
+
+
+=== Ajout de l'onglet actifs
+
+L'écran *abonnements Keystone* comprend maintenant l'onglet *actifs*. Ce nouvel onglet fournit des informations au niveau du cluster en fonction de vos abonnements. Pour plus d'informations, voir link:../integrations/assets-tab.html["Onglet actifs"^].
+
+
+
+=== Améliorations apportées à l'onglet volumes et objets
+
+Pour plus de clarté sur les volumes de votre système ONTAP, deux nouveaux boutons d'onglet, *Volume Summary* et *Volume Details*, ont été ajoutés à l'onglet *volumes*. L'onglet *Volume Summary* fournit un nombre global de volumes associés aux niveaux de service auxquels vous êtes abonné, y compris leur état de conformité AQoS et leurs informations de capacité. L'onglet *Détails du volume* répertorie tous les volumes et leurs détails. Pour plus d'informations, voir link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
+
+
+
+=== Expérience de recherche améliorée sur Digital Advisor
+
+Les paramètres de recherche de l'écran *Digital Advisor* incluent désormais les numéros d'abonnement Keystone et les listes de contrôle créées pour les abonnements Keystone. Vous pouvez entrer les trois premiers caractères d'un numéro d'abonnement ou d'un nom de liste de contrôle. Pour plus d'informations, voir link:../integrations/keystone-aiq.html["Affichez le tableau de bord Keystone sur le conseiller digital Active IQ"^].
+
+
+
+=== Afficher l'horodatage des données de consommation
+
+Vous pouvez afficher l'horodatage des données de consommation (UTC) dans l'ancien tableau de bord du widget *Keystone Subscriptions*.
+
+
+
 == Nouvelles fonctionnalités et améliorations pour le 13 février 2024
 
-Les modifications suivantes ont été effectuées sur l'écran *abonnements Keystone* du conseiller numérique Active IQ (également appelé Conseiller numérique).
+L'amélioration suivante a été apportée à l'écran *abonnements Keystone* du conseiller numérique Active IQ (également appelé Conseiller numérique).
 
 
 
@@ -34,7 +64,7 @@ Certains de vos abonnements principaux peuvent avoir des abonnements secondaires
 
 Découvrez les nouveautés de cette version.
 
-Les modifications suivantes ont été effectuées sur l'écran *abonnements Keystone* du conseiller numérique Active IQ (également appelé Conseiller numérique).
+Les améliorations suivantes ont été apportées à l'écran *abonnements Keystone* de Active IQ Digital Advisor (également appelé Conseiller numérique).
 
 
 

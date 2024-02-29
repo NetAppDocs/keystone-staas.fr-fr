@@ -20,14 +20,12 @@ Vous devez remplir quelques conditions préalables supplémentaires pour ONTAP e
 ====
 .ONTAP
 --
-.Configuration logicielle requise
+.Versions logicielles
 . ONTAP 9.8 ou version ultérieure
 . Active IQ Unified Manager (Unified Manager) 9.10 ou version ultérieure
 
 
-.Prérequis
-Pour installer le collecteur Keystone sur ONTAP, effectuez les étapes suivantes en tant que conditions préalables :
-
+.Avant de commencer
 . Assurez-vous que Unified Manager 9.10 ou version ultérieure est configuré. Pour plus d'informations sur l'installation de Unified Manager, consultez les liens suivants :
 +
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["Installation de Unified Manager sur des systèmes VMware vSphere"^]

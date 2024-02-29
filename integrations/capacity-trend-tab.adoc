@@ -137,4 +137,5 @@ Pour plus d'informations sur la protection de vos données par MetroCluster, rep
 * link:../integrations/sla-details-tab.html["Détails SLA"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
 * link:../integrations/performance-tab.html["Performance"]
+* link:../integrations/assets-tab.html["Ressources"]
 
