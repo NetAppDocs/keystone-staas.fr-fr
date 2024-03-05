@@ -44,15 +44,16 @@ Les liens suivants fournissent des informations supplémentaires sur chacun de c
 * link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
 * link:../integrations/performance-tab.html["Performance"]
+* link:../integrations/assets-tab.html["Ressources"]
 
 
 
 
 == Générer des rapports
 
-Vous pouvez générer et afficher des rapports pour les détails de votre abonnement, les données historiques d'utilisation d'une plage horaire et les détails du volume à partir de chacun des onglets en cliquant sur le bouton de téléchargement : image:download-icon.png["icône de téléchargement de rapport"]
+Vous pouvez générer et afficher des rapports pour vos données Keystone. Chaque onglet de la page *abonnements Keystone* vous permet de générer des rapports sur vos abonnements, l'historique d'utilisation et l'utilisation en rafale, les performances, les ressources, les volumes et les objets en cliquant sur le bouton de téléchargement : image:download-icon.png["icône de téléchargement de rapport"]
 
-Les détails sont générés au format CSV que vous pouvez enregistrer pour une utilisation ultérieure.
+Les détails sont générés au format CSV que vous pouvez enregistrer pour une utilisation ultérieure et une comparaison.
 
 Un exemple de rapport pour l'onglet *Capacity Trend*, où les données graphiques sont converties :
 
