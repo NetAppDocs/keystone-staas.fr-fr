@@ -25,7 +25,7 @@ Le conseiller digital Active IQ vous fournit des informations complètes sur vos
 
 Vous pouvez consulter les détails sur le cluster, répartis par les paramètres d'efficacité du stockage, le type de plateforme et les détails sur la capacité. Cliquez sur l'un des clusters pour accéder au widget *clusters* de l'écran Digital Advisor, où vous pouvez obtenir des informations supplémentaires sur ce cluster.
 
-image:assets-tab.png["Onglet actifs"]
+image:assets-tab-2.png["Onglet actifs"]
 
 *Informations connexes*
 

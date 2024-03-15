@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Aucune information n'est disponible dans l'onglet *Assets* pour les abonnements AutoSupport.
+ a| 
+Fixe
+ a| 
+14 mars 2024
+
+
+
+ a| 
 Si MetroCluster et FabricPool étaient tous deux activés dans un environnement où des plans de taux pour la hiérarchisation et le stockage objet étaient applicables, les niveaux de service pourraient être incorrectement dérivés pour les volumes en miroir (à la fois les volumes constituant et FabricPool).
  a| 
 Des niveaux de service corrects sont appliqués aux volumes en miroir.
