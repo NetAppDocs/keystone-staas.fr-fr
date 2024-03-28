@@ -18,6 +18,44 @@ NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque ver
 
 
 
+== Nouvelles fonctionnalités et améliorations pour le 28 mars 2024
+
+Les améliorations suivantes ont été apportées à l'écran *abonnements Keystone* du conseiller digital Active IQ (également appelé Conseiller numérique) :
+
+
+
+=== L'amélioration de la conformité à la règle QoS s'affiche dans l'onglet Détails du volume
+
+L'onglet *Détails du volume* de l'onglet *volumes et objets* offre désormais une meilleure visibilité sur la conformité aux règles de qualité de service (QoS). La colonne précédemment connue sous le nom de *AQoS* est renommée *compatible*, ce qui indique si la stratégie QoS est conforme. En outre, une nouvelle colonne *QoS Policy Type* est ajoutée, qui indique si la règle est fixe ou adaptative. Si aucune de ces deux conditions ne s'applique, la colonne affiche _not available_. Pour plus d'informations, voir link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
+
+
+
+=== Nouvelle colonne et affichage simplifié de l'abonnement dans l'onglet Volume Summary
+
+* L'onglet *Volume Summary* de l'onglet *volumes et objets* inclut désormais une nouvelle colonne intitulée *Protected*. Cette colonne indique le nombre de volumes protégés associés aux niveaux de service auxquels vous êtes abonné. Si vous cliquez sur le nombre de volumes protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée de volumes protégés.
+* L'onglet *Volume Summary* est mis à jour pour afficher uniquement les abonnements de base, à l'exclusion des services complémentaires. Pour plus d'informations, voir link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
+
+
+
+
+=== Passez à l'affichage détaillé des rafales accumulées dans l'onglet tendance de capacité
+
+L'info-bulle qui s'affiche lorsque vous passez le curseur sur le graphique à barres d'utilisation de la capacité dans l'onglet *Capacity Trend* affiche les détails des rafales accumulées pour le mois en cours. Les détails ne seront pas disponibles pour les mois précédents.
+
+
+
+=== Accès amélioré pour afficher les données historiques des abonnements Keystone
+
+Vous pouvez désormais afficher les données historiques en cas de modification ou de renouvellement d'un abonnement Keystone. Vous pouvez définir la date de début d'un abonnement à une date précédente pour afficher :
+
+* Données relatives à la consommation et à l'utilisation des pics accumulés dans l'onglet *Capacity Trend*,
+* Mesures de performances des volumes ONTAP à partir de l'onglet *Performance*,
+
+
+tous affichent les données en fonction de la date sélectionnée de l'abonnement.
+
+
+
 == Nouvelles fonctionnalités et améliorations pour le 29 février 2024
 
 Plusieurs améliorations ont été apportées au tableau de bord Active IQ Digital Advisor (également appelé Digital Advisor) et à l'écran *abonnements Keystone* pour cette version :

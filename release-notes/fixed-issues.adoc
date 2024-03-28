@@ -22,6 +22,33 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Texte d'info-bulle incorrect pour l'icône d'index *Burst* actuel dans l'onglet *Capacity Trend*.
+ a| 
+Affiche le texte correct de l'info-bulle «_la quantité de capacité de rafale actuellement consommée. Remarque : il s'agit de la période de facturation en cours et non de la plage de dates sélectionnée._ »
+ a| 
+28 mars 2024
+
+
+
+ a| 
+Les informations sur les volumes non conformes AQoS et les partenaires MetroCluster ne sont pas disponibles pour les abonnements AutoSupport si les données Keystone ne sont pas présentes pendant 24 heures.
+ a| 
+Fixe
+ a| 
+28 mars 2024
+
+
+
+ a| 
+Incohérence occasionnelle dans le nombre de volumes non conformes AQoS répertoriés dans les onglets *Volume Summary* et *Volume Details* si deux niveaux de service sont affectés à un volume qui satisfait à la conformité AQoS pour un seul niveau de service.
+ a| 
+Fixe
+ a| 
+28 mars 2024
+
+
+
+ a| 
 Aucune information n'est disponible dans l'onglet *Assets* pour les abonnements AutoSupport.
  a| 
 Fixe

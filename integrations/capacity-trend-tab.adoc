@@ -134,7 +134,6 @@ Pour plus d'informations sur la protection de vos données par MetroCluster, rep
 * link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
 * link:../integrations/current-usage-tab.html["Utilisation actuelle"]
-* link:../integrations/sla-details-tab.html["Détails SLA"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
 * link:../integrations/performance-tab.html["Performance"]
 * link:../integrations/assets-tab.html["Ressources"]

@@ -48,7 +48,6 @@ image:icon-grey.png["icône en forme de point gris"]: Pas d'utilisation de capac
 
 * link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
 * link:../integrations/current-usage-tab.html["Utilisation actuelle"]
-* link:../integrations/sla-details-tab.html["Détails SLA"]
 * link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
 * link:../integrations/performance-tab.html["Performance"]

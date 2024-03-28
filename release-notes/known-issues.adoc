@@ -16,36 +16,4 @@ summary: Problèmes connus dans le stockage en tant que service Keystone
 [role="lead"]
 Les problèmes connus identifient les problèmes susceptibles de vous empêcher d'utiliser efficacement les services d'abonnement Keystone.
 
-Les problèmes connus suivants ont été signalés dans le stockage en tant que service NetApp Keystone.
-
-[cols="3*"]
-|===
-| Problème connu | Description | Solution de contournement 
-
-
- a| 
-Les informations sur les volumes non conformes AQoS et les partenaires MetroCluster ne sont pas disponibles pour les abonnements AutoSupport.
- a| 
-Si la télémétrie AutoSupport est utilisée pour collecter des données Keystone, le nombre de volumes AQoS non conformes répertoriés dans les onglets *Récapitulatif du volume* et *utilisation actuelle*, ainsi que les informations sur les partenaires MetroCluster, ne sont pas disponibles si les données Keystone ne sont pas présentes pendant 24 heures.
- a| 
-Aucune
-
-
-
- a| 
-Incohérence occasionnelle du nombre de volumes non conformes AQoS dans l'onglet *volumes*.
- a| 
-Si deux niveaux de service sont attribués à un volume qui répond à la conformité AQoS pour un seul niveau de service, le nombre de volumes non conformes AQoS répertoriés dans les onglets *Volume Summary* et *Volume Details* peut varier.
- a| 
-Aucune
-
-
-
- a| 
-Apparence incorrecte de l'info-bulle.
- a| 
-L'infobulle de l'icône de l'index *Burst* actuel apparaît de manière incorrecte dans l'onglet *Capacity Trend*.
- a| 
-Reportez-vous au texte de l'info-bulle correct «_la quantité de capacité de rafale actuellement consommée. Remarque : il s'agit de la période de facturation en cours et non de la plage de dates sélectionnée._ »
-
-|===
+Aucun problème connu n'est identifié.

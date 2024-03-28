@@ -66,8 +66,6 @@ sidebar:
         url: "/integrations/subscriptions-tab.html"
       - title: Onglet utilisation actuelle
         url: "/integrations/current-usage-tab.html"
-      - title: Détails SLA
-        url: "/integrations/sla-details-tab.html"
       - title: Onglet tendances de capacité
         url: "/integrations/capacity-trend-tab.html"
       - title: Volumes et objets
@@ -108,8 +106,6 @@ sidebar:
       url: "/concepts/qos.html"
     - title: Exigences de capacité pour les niveaux de services
       url: "/concepts/capacity-requirements.html"
-    - title: SLA de durabilité
-      url: "/concepts/sla-sustainability.html"
   - title: Facturation
     entries:
     - title: Tarification Keystone
