@@ -94,7 +94,7 @@ Collecteur Keystone (générique)
  a| 
 Internet (conformément aux exigences d'URL fournies ultérieurement)
  a| 
-HTTP, HTTPS
+HTTPS
  a| 
 TCP 80, TCP 443
  a| 
@@ -169,7 +169,7 @@ Collecteur Keystone (générique)
  a| 
 Système de surveillance client
  a| 
-HTTP
+HTTPS
  a| 
 TCP 777
  a| 

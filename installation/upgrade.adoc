@@ -24,7 +24,10 @@ La fonctionnalité de mise à jour automatique de Keystone Collector est activé
 image:upgrade-1.png["ecran tui"]
 
 +
-Vous pouvez également exécuter cette commande pour mettre à niveau la version :
+Vous pouvez également exécuter les commandes suivantes pour mettre à niveau la version :
+
++
+Pour CentOS :
 
 +
 [listing]
@@ -34,13 +37,32 @@ sudo yum clean metadata && sudo yum install keystone-collector
 +
 image:upgrade-2.png["ecran tui"]
 
++
+Pour Debian :
+
++
+[listing]
+----
+sudo apt-get update && sudo apt-get upgrade keystone-collector
+----
 . Redémarrez Keystone Collector Management TUI, vous pouvez voir la dernière version dans la partie supérieure gauche de l'écran d'accueil.
 +
-Vous pouvez également exécuter cette commande pour afficher la dernière version :
+Vous pouvez également exécuter ces commandes pour afficher la dernière version :
+
++
+Pour CentOS :
 
 +
 [listing]
 ----
 rpm -q keystone-collector
+----
++
+Pour Debian :
+
++
+[listing]
+----
+dpkg -l | grep keystone-collector
 ----
 
