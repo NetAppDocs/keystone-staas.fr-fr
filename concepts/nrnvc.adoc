@@ -27,7 +27,7 @@ Si vous avez acheté ce service, notez ce qui suit :
 
 * Il n'est pas nécessaire de renvoyer les disques et la mémoire non volatile à la fin de la période de service, ou s'ils sont défectueux ou s'ils ont été détectés comme défectueux pendant la période de service.
 * Toutefois, vous devez produire un certificat de destruction pour les disques et/ou la mémoire non volatile et ne peut pas être utilisé à d'autres fins.
-* Le coût supplémentaire associé à la NRNVC est facturé en pourcentage du service d'abonnement total (inclut le service standard, la protection avancée des données et le Tiering des données).
+* Les coûts supplémentaires associés à la NRNVC sont facturés en pourcentage du total des services d'abonnement (incluant le service standard, la protection avancée des données et le Tiering des données) par mois.
 * Ce service s'applique uniquement aux services de fichiers, de blocs et d'objets.
 
 

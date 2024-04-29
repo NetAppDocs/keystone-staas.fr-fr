@@ -23,7 +23,7 @@ Chaque niveau de services est défini par sa densité d'E/S, à savoir IOPS/Tio/
 Vous sélectionnez des niveaux de service en fonction de votre environnement de stockage, ainsi que des besoins de stockage et de consommation. Les niveaux de service de base sont disponibles par défaut. Si vous avez opté pour des services complémentaires, des niveaux de service spécifiques sont également disponibles. Par exemple, pour le service complémentaire Advanced Data protection, le niveau de service _Advanced Data-Protect_ est attribué à votre abonnement.
 
 
-TIP: Une description détaillée des services de stockage en tant que service NetApp Keystone est disponible https://www.netapp.com/pdf.html?item=/media/77179-Keystone-STaaS-Service-Description-On-Prem.pdf["ici"^].
+TIP: Une description détaillée des services de stockage en tant que service NetApp Keystone est disponible https://www.netapp.com/services/keystone/terms-and-conditions/["ici"^].
 
 Les niveaux de service de base des types de stockage, des services fichier, bloc, objet et cloud pris en charge sont décrits dans les sections suivantes :
 
