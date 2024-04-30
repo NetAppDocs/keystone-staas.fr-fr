@@ -80,10 +80,12 @@ Effectuez les étapes suivantes sur vos systèmes VMware vSphere pour une config
 
 NOTE: Lors de la réalisation du déploiement, vous pouvez utiliser l'utilitaire TUI (Keystone Collector Management terminal User interface) pour effectuer les activités de configuration et de surveillance. Vous pouvez utiliser diverses commandes du clavier, telles que les touches entrée et flèche, pour sélectionner les options et naviguer dans cette TUI.
 
-. Ouvrez une session SSH sur le serveur Keystone Collector. Lors de la connexion, le TUI s'affiche. Vous pouvez également lancer manuellement l'interface utilisateur en exécutant le `keystone-collector-tui` Commande CLI.
-. Si nécessaire, configurez les détails du proxy dans la section *Configuration > réseau* du TUI.
-. Mettez à jour le collecteur Keystone à l'aide de l'option *Maintenance > mettre à jour le système*. Certains miroirs sélectionnés peuvent ne pas être disponibles et les détails du système sont mis à jour après quelques tentatives.
+. Ouvrez une session SSH sur le serveur Keystone Collector. Lorsque vous vous connectez, le système vous invite à mettre à jour le mot de passe d'administration. Effectuez la mise à jour du mot de passe d'administration si nécessaire.
+. Connectez-vous à l'aide du nouveau mot de passe pour accéder à l'interface utilisateur.  Lors de la connexion, le TUI s'affiche.
++
+Vous pouvez également le lancer manuellement en exécutant le `keystone-collector-tui` Commande CLI.
+
+. Si nécessaire, configurez les détails du proxy dans la section *Configuration > réseau* de l'interface utilisateur.
 . Configurez le nom d'hôte du système, l'emplacement et le serveur NTP dans la section *Configuration > système*.
-. Mettez à jour le mot de passe administrateur dans la section *Maintenance > utilisateur*.
-. Marquez la configuration initiale d'OVA comme complète dans la section *Configuration > Avancé*.
+. Mettez à jour les collecteurs Keystone à l'aide de l'option *Maintenance > mettre à jour les collecteurs*. Après la mise à jour, redémarrez l'utilitaire TUI de gestion du collecteur Keystone pour appliquer les modifications.
 
