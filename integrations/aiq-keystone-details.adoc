@@ -27,7 +27,7 @@ Pour afficher votre abonnement Keystone et les détails d'utilisation, effectuez
 
 .Étapes
 . Connectez-vous à Digital Advisor. Le widget *abonnements Keystone* qui résume l'utilisation de la capacité par rapport aux services Keystone achetés s'affiche.
-. Dans le widget *abonnements Keystone*, cliquez sur *Afficher plus de détails* pour afficher les détails d'utilisation et les alertes sur vos volumes sur la page *abonnements Keystone*. Dans le volet de navigation de gauche, vous pouvez également accéder à *GÉNÉRAL > abonnements Keystone*.
+. Dans le widget *abonnements Keystone*, cliquez sur *Afficher tous les abonnements* pour afficher les détails d'utilisation et les alertes sur vos volumes sur la page *abonnements Keystone*. Dans le volet de navigation de gauche, vous pouvez également accéder à *GÉNÉRAL > abonnements Keystone*.
 Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de service et des détails sur le volume s'affichent dans les différents onglets de l'écran *abonnements Keystone*.
 
 
@@ -56,27 +56,19 @@ Les détails sont générés au format CSV que vous pouvez enregistrer pour une 
 
 Un exemple de rapport pour l'onglet *Capacity Trend*, où les données graphiques sont converties :
 
-image:report.png["csv de rapport"]
+image:report_1.png["csv de rapport"]
 
 
 
 == Afficher les alertes
 
-Les alertes du tableau de bord envoient des messages d'avertissement pour vous permettre de comprendre les problèmes qui se produisent dans votre environnement de stockage.
+Le tableau de bord fournit des notifications d'alerte qui vous permettent de comprendre les problèmes survenant dans votre environnement de stockage. Ces notifications peuvent s'afficher sous forme d'alertes ou d'avertissements informatifs. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Vous pouvez cliquer sur le lien du message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *volumes et objets*.
 
-Les alertes peuvent être de deux types :
-
-* *Information* : pour les problèmes, tels que vos abonnements qui approchent d'une fin, vous pouvez voir les alertes d'information. Placez le curseur sur l'icône d'information pour en savoir plus sur le problème.
-* *Avertissement* : les problèmes, tels que non-conformité, sont affichés comme avertissements. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Vous pouvez cliquer sur le lien du message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *volumes*.
-+
 
 NOTE: Si vous avez souscrit à un seul niveau de service ou plan tarifaire, vous ne pourrez pas voir l'alerte pour les volumes non conformes.
 
-+
+image:alert-aiq-1.png["alerte"]
+
 Pour plus d'informations sur les stratégies AQoS, voir link:../concepts/qos.html["La QoS adaptative"].
 
-
-
-image:alert-aiq.png["alerte"]
-
-Pour plus d'informations sur ces messages d'avertissement et d'avertissement, contactez le support NetApp. Pour plus d'informations sur l'augmentation des demandes de service, reportez-vous à la section link:../concepts/gssc.html#generating-service-requests["Génération de demandes de service"].
+Pour plus d'informations sur ces messages, contactez le support NetApp. Pour plus d'informations sur l'augmentation des demandes de service, reportez-vous à la section link:../concepts/gssc.html#generating-service-requests["Génération de demandes de service"].

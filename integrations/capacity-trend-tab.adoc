@@ -41,7 +41,7 @@ TIP: Pour des performances et une expérience utilisateur optimales, limitez la 
 
 Les graphiques à barres affichent le nom du niveau de service et la capacité consommée par rapport à ce niveau de service pour la plage de dates. La date et l'heure de la collection sont affichées en bas du graphique. En fonction de la plage de dates de votre requête, les graphiques d'utilisation sont affichés dans une plage de 30 points de collecte de données. Vous pouvez placer le curseur de la souris sur les graphiques pour afficher la répartition de l'utilisation en termes de données validées, consommées, en rafale et au-dessus de la limite de rafale à ce point de collecte de données.
 
-image:aiq-ks-subtime-2.png["Onglet Capacity Trend avec détails"]
+image:aiq-ks-subtime-3.png["Onglet Capacity Trend avec détails"]
 
 Les couleurs suivantes dans les graphiques à barres indiquent la capacité consommée comme défini dans le niveau de service. Les données mensuelles dans les graphiques sont séparées par une ligne verticale.
 

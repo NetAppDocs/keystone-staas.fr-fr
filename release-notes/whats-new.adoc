@@ -18,9 +18,33 @@ NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque ver
 
 
 
+== Nouvelles fonctionnalités et améliorations pour le 09 mai 2024
+
+Les améliorations suivantes sont apportées à l'écran *abonnements Keystone* de Active IQ Digital Advisor (également appelé Conseiller numérique) :
+
+
+
+=== Nouvelles colonnes dans les rapports CSV
+
+Les rapports CSV de l'onglet *Capacity Trend* incluent désormais les colonnes *Subscription Number* et *Account Name* pour plus de détails.
+
+
+
+=== Colonne Type d'utilisation améliorée
+
+La colonne *Type d'utilisation* de l'onglet *abonnements* est améliorée pour afficher les utilisations logiques et physiques sous forme de valeurs séparées par des virgules pour les abonnements qui couvrent les niveaux de service pour les fichiers et les objets.
+
+
+
+=== Accédez aux détails du stockage objet à partir de l'onglet Détails du volume
+
+L'onglet *Détails du volume* de l'onglet *volumes et objets* fournit désormais des détails sur le stockage d'objet ainsi que des informations sur le volume pour les abonnements qui incluent des niveaux de service pour le fichier et l'objet. Vous pouvez cliquer sur le bouton *Détails du stockage objet* dans l'onglet *Détails du volume* pour afficher les détails.
+
+
+
 == Nouvelles fonctionnalités et améliorations pour le 28 mars 2024
 
-Les améliorations suivantes ont été apportées à l'écran *abonnements Keystone* du conseiller digital Active IQ (également appelé Conseiller numérique) :
+L'amélioration suivante a été apportée à l'écran *abonnements Keystone* du conseiller digital Active IQ :
 
 
 

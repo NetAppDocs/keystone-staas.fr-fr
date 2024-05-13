@@ -49,9 +49,14 @@ Vous pouvez consulter la liste tabulaire des volumes, telle que l'utilisation de
 
 NOTE: Pour le service complémentaire de protection avancée des données, une colonne supplémentaire apparaît pour indiquer si le volume est un volume primaire ou miroir dans la configuration MetroCluster. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
 
++
+
+NOTE: Pour les abonnements qui couvrent les niveaux de service pour les fichiers et les objets, vous pouvez afficher les détails du stockage objet en cliquant sur le bouton *Détails du stockage objet*.
+
++
+image:volume-details-2.png["Onglet Détails des volumes"]
 
 
-image:volume-details-1.png["Onglet Détails des volumes"]
 
 --
 ====
