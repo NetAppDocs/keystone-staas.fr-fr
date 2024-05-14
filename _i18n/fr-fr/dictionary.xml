@@ -1307,7 +1307,6 @@ Dans le cadre du déploiement du service Keystone, NetApp contrôle en continu e
   <block id="c58866f1ef5f53d12f483be3139c8b21" category="paragraph">Les données renvoyées dans les onglets de l'écran *abonnements Keystone* de Active IQ Digital Advisor s'affichent en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir <block ref="fd9d2abed6b27ddb199966f81ac84d0e" category="inline-link-macro-rx"></block>.</block>
   <block id="ba72cb24d1620c10dda9d29d238cd62f" category="summary">Problèmes résolus dans les différentes versions de Keystone STaaS</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="doc">Problèmes résolus</block>
-  <block id="3e6913b831218e5028d3a4532f801a65" category="cell">Description du problème</block>
   <block id="ad7fffc52967fac2195a87d71ddfefed" category="cell">Après la réparation</block>
   <block id="daacdb57878cbe5d9fa64d7c020a2e9d" category="cell">Corrigé dans la libération</block>
   <block id="ab8fe64a75f26e766fbdddeb24ad2b52" category="paragraph">L'indicateur d'utilisation d'un enregistrement de consommation en rafale était affiché en orange.</block>
@@ -1501,7 +1500,6 @@ La bonne empreinte se présente comme suit :<block ref="821b59fa560f6b692841b490
   <block id="f9fb20285d9c1550cfd8af36cedeebff" category="list-text">Données relatives à la consommation et à l'utilisation des pics accumulés dans l'onglet *Capacity Trend*,</block>
   <block id="2edc64c57ca29e2f950fd753874bafbc" category="list-text">Mesures de performances des volumes ONTAP à partir de l'onglet *Performance*,</block>
   <block id="7a7b2bda8aa958fd2f922e2acb85ca1e" category="paragraph">tous affichent les données en fonction de la date sélectionnée de l'abonnement.</block>
-  <block id="f37be92ace88534a02480f8f04d48882" category="paragraph">Aucun problème connu n'est identifié.</block>
   <block id="5f2b8b9897b51974b3e829ddd4511e8e" category="paragraph">Vous pouvez également exécuter les commandes suivantes pour mettre à niveau la version :</block>
   <block id="014327995266184e82832bad8c943216" category="paragraph">Pour CentOS :</block>
   <block id="21a26c88c032eccbe4aba03b7481511e" category="paragraph">Pour Debian :</block>
@@ -1568,4 +1566,11 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="001d654c5d010b25a953ace0dce0f14d" category="list-text">Modifier le contenu du journal.</block>
   <block id="a35e5b3497716ca18010e0be265afb3b" category="list-text">Exécutez cette commande pour modifier le contenu du journal quotidien :</block>
   <block id="9060a638913c522309cdbab6919eef2b" category="list-text">Exécutez cette commande pour modifier le contenu du journal hebdomadaire :</block>
+  <block id="f7168a4acbbbaa603715b2a0aeb4cea5" category="paragraph">Les problèmes connus suivants ont été signalés dans le stockage en tant que service NetApp Keystone.</block>
+  <block id="e83464ce8bd634efb1f099c956ec64a8" category="cell">Problème connu</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
+  <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">Solution de contournement</block>
+  <block id="05890055e47d7356b21b212f915e3d3b" category="paragraph">Affichage incorrect des données Keystone dans les rapports CSV.</block>
+  <block id="cf57a91fb76a6fe323d7bc94294753a2" category="paragraph">Si la colonne *Nom du compte* dans les rapports CSV, générée à partir de l'onglet *tendance de capacité*, inclut un nom de compte avec une virgule<block ref="e1266d71c305ae3767d9d953acaf0aae" prefix=" " category="inline-code"></block>, Les données Keystone apparaissent mal placées dans les rapports CSV.</block>
+  <block id="7186d4f0f71f9b706a05940b8abcacd0" category="cell">Description du problème</block>
 </blocks>

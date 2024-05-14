@@ -16,4 +16,18 @@ summary: Problèmes connus dans le stockage en tant que service Keystone
 [role="lead"]
 Les problèmes connus identifient les problèmes susceptibles de vous empêcher d'utiliser efficacement les services d'abonnement Keystone.
 
-Aucun problème connu n'est identifié.
+Les problèmes connus suivants ont été signalés dans le stockage en tant que service NetApp Keystone.
+
+[cols="3*"]
+|===
+| Problème connu | Description | Solution de contournement 
+
+
+ a| 
+Affichage incorrect des données Keystone dans les rapports CSV.
+ a| 
+Si la colonne *Nom du compte* dans les rapports CSV, générée à partir de l'onglet *tendance de capacité*, inclut un nom de compte avec une virgule `(,)`, Les données Keystone apparaissent mal placées dans les rapports CSV.
+ a| 
+Aucune
+
+|===
