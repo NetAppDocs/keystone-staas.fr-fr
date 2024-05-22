@@ -16,7 +16,7 @@ summary: Keystone et conseiller digital
 [role="lead"]
 Si vous avez souscrit aux services STaaS de NetApp Keystone, vous obtenez une vue d'ensemble de vos abonnements via le widget *abonnements Keystone* du tableau de bord Active IQ Digital Advisor (également appelé Conseiller digital).
 
-Pour rechercher un abonnement Keystone, entrez les trois premiers caractères du nom d'un client ou d'une liste de suivi, ou le numéro d'abonnement Keystone. Pour plus d'informations sur la recherche d'abonnements Keystone STaaS par listes de suivi, reportez-vous à la section link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Effectuez une recherche à l'aide des listes de surveillance Keystone"].
+Pour rechercher un abonnement Keystone, entrez les trois premiers caractères du nom d'un client ou d'une liste de suivi, ou le numéro d'abonnement Keystone. Pour plus d'informations sur la recherche d'abonnements Keystone STaaS par listes de suivi, reportez-vous à la section link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Effectuez une recherche à l'aide des listes de surveillance Keystone"].
 
 Digital Advisor offre un tableau de bord unifié qui fournit des informations sur les différents niveaux de données d'abonnement et d'utilisation via le bouton *passer à l'ancien/nouveau tableau de bord*.
 
