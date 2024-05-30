@@ -18,9 +18,9 @@ Le collecteur Keystone inclut des fonctionnalités de sécurité qui surveillent
 
 Le fonctionnement du collecteur Keystone repose sur les principes de sécurité suivants :
 
-* *Privacy*-Keystone Collector collecte une quantité limitée de données pour effectuer des mesures d'utilisation et une surveillance des performances. Pour plus d'informations, voir link:../installation/data-collection.html["Données collectées pour la facturation"^]. Le link:../installation/configuration.html#limit-collection-of-private-data["Supprimer les données privées"] l'option est activée par défaut, qui masque et protège les informations sensibles.
-* *Access*-Keystone Collector requiert des autorisations minimales pour surveiller les systèmes de stockage, ce qui minimise les risques de sécurité et empêche toute modification involontaire des données. Cette approche s'aligne sur le principe du privilège minimum et améliore la sécurité globale des environnements surveillés.
-* *Framework*- Keystone utilise une structure de développement logiciel sécurisée tout au long du cycle de développement, qui réduit les risques, réduit les vulnérabilités et protège le système contre les menaces potentielles.
+* *Privacy by design*-Keystone Collector collecte des données minimales pour effectuer des mesures d'utilisation et une surveillance des performances. Pour plus d'informations, voir link:data-collection.html["Données collectées pour la facturation"^]. Le link:configuration.html#limit-collection-of-private-data["Supprimer les données privées"] l'option est activée par défaut, qui masque et protège les informations sensibles.
+* *Accès avec le moindre privilège*-Keystone Collector requiert des autorisations minimales pour surveiller les systèmes de stockage, ce qui minimise les risques de sécurité et empêche toute modification involontaire des données. Cette approche s'aligne sur le principe du privilège minimum et améliore la sécurité globale des environnements surveillés.
+* *Cadre de développement logiciel sécurisé*- Keystone utilise un framework de développement logiciel sécurisé tout au long du cycle de développement, qui limite les risques, réduit les vulnérabilités et protège le système contre les menaces potentielles.
 
 
 
@@ -31,19 +31,19 @@ Par défaut, Keystone Collector est configuré pour utiliser des configurations 
 
 * Système d'exploitation de la machine virtuelle Keystone Collector :
 +
-** Conforme à la norme CIS Debian Linux 12 Benchmark. Toute modification de la configuration du système d'exploitation en dehors du logiciel de gestion Keystone Collector peut réduire la sécurité du système. Pour plus d'informations, voir link:https://learn.cisecurity.org/benchmarks["Guide de référence CIS"].
-** Reçoit et installe automatiquement les correctifs de sécurité vérifiés par Keystone Collector via la fonction de mise à jour automatique. La désactivation de cette fonction peut entraîner des vulnérabilités logicielles.
+** Conforme à la norme CIS Debian Linux 12 Benchmark. Toute modification de la configuration du système d'exploitation en dehors du logiciel de gestion Keystone Collector peut réduire la sécurité du système. Pour plus d'informations, voir link:https://learn.cisecurity.org/benchmarks["Guide de référence CIS"^].
+** Reçoit et installe automatiquement les correctifs de sécurité vérifiés par Keystone Collector via la fonction de mise à jour automatique. La désactivation de cette fonctionnalité peut entraîner des logiciels vulnérables non corrigés.
 ** Authentifie les mises à jour reçues du collecteur Keystone. La désactivation de la vérification du référentiel APT peut entraîner l'installation automatique de correctifs non autorisés, ce qui peut entraîner des vulnérabilités.
 
 
 * Le collecteur Keystone valide automatiquement les certificats HTTPS pour assurer la sécurité de la connexion. La désactivation de cette fonction peut entraîner l'usurpation d'identité des terminaux externes et une fuite de données d'utilisation.
-* Prise en charge de Keystone Collector link:../installation/configuration.html#trust-a-custom-root-ca["Autorité de certification approuvée personnalisée"] certification. Par défaut, elle fait confiance aux certificats signés par les autorités de certification racine publiques reconnues par le link:https://wiki.mozilla.org/CA["Programme de certificat Mozilla CA"]. En activant d'autres autorités de certification approuvées, Keystone Collector active la validation du certificat HTTPS pour les connexions aux terminaux qui présentent ces certificats.
-* Le collecteur Keystone active par défaut l'option *Supprimer les données privées*, qui masque et protège les informations sensibles. Pour plus d'informations, voir link:../installation/configuration.html#limit-collection-of-private-data["Limite la collecte de données privées"^]. Si cette option est désactivée, d'autres données sont communiquées au système Keystone. Par exemple, il peut inclure des informations saisies par l'utilisateur, telles que les noms de volume, qui peuvent être considérées comme des informations sensibles.
+* Prise en charge de Keystone Collector link:configuration.html#trust-a-custom-root-ca["Autorité de certification approuvée personnalisée"] certification. Par défaut, elle fait confiance aux certificats signés par les autorités de certification racine publiques reconnues par le link:https://wiki.mozilla.org/CA["Programme de certificat Mozilla CA"^]. En activant d'autres autorités de certification approuvées, Keystone Collector active la validation du certificat HTTPS pour les connexions aux terminaux qui présentent ces certificats.
+* Le collecteur Keystone active par défaut l'option *Supprimer les données privées*, qui masque et protège les informations sensibles. Pour plus d'informations, voir link:configuration.html#limit-collection-of-private-data["Limite la collecte de données privées"^]. Si cette option est désactivée, d'autres données sont communiquées au système Keystone. Par exemple, il peut inclure des informations saisies par l'utilisateur, telles que les noms de volume, qui peuvent être considérées comme des informations sensibles.
 
 
 *Informations connexes*
 
-* link:../installation/installation-overview.html["Présentation du collecteur Keystone"]
-* link:../installation/vapp-prereqs.html["Besoins de l'infrastructure virtuelle"]
-* link:../installation/configuration.html["Configurer le collecteur Keystone"]
+* link:installation-overview.html["Présentation du collecteur Keystone"]
+* link:vapp-prereqs.html["Besoins de l'infrastructure virtuelle"]
+* link:configuration.html["Configurer le collecteur Keystone"]
 

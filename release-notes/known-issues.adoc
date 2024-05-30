@@ -24,9 +24,36 @@ Les problèmes connus suivants ont été signalés dans le stockage en tant que 
 
 
  a| 
-Affichage incorrect des données Keystone dans les rapports CSV.
+Affichage étendu des données pour la sélection d'une journée dans l'onglet *tendances de capacité*.
  a| 
-Si la colonne *Nom du compte* dans les rapports CSV, générée à partir de l'onglet *tendance de capacité*, inclut un nom de compte avec une virgule `(,)`, Les données Keystone apparaissent mal placées dans les rapports CSV.
+Lorsque la date correspondant à aujourd'hui est sélectionnée comme date de début et de fin pour le mois précédent à partir de l'option *Capacity Trend* de l'onglet *Capacity Trends*, les graphiques d'utilisation affichent les données d'une période allant de la date de début sélectionnée à la date du jour, au lieu d'afficher les données pour la période d'une journée spécifiée.
+ a| 
+Aucune
+
+
+
+ a| 
+Les données historiques de capacité supplémentaire accumulée ne sont pas disponibles pour les niveaux de service.
+ a| 
+Les données historiques d'utilisation de rafale accumulées pour les niveaux de service *CVO primaire* et *CVO secondaire* dans l'onglet *tendance capacité* ne sont pas disponibles pour les abonnements qui ne sont pas configurés avec une configuration MetroCluster.
+ a| 
+Aucune
+
+
+
+ a| 
+Affichage incorrect de la valeur de consommation du stockage objet pour les abonnements AutoSupport.
+ a| 
+Si la télémétrie AutoSupport est utilisée pour collecter les données Keystone, la valeur consommée pour le stockage objet répertorié dans l'onglet *Détails du volume* s'affiche de manière incorrecte pour les abonnements avec des services de fichiers, de blocs et d'objets.
+ a| 
+Reportez-vous à la valeur consommée pour le stockage objet mentionnée dans l'onglet *Current usage* pour obtenir des informations correctes.
+
+
+
+ a| 
+Impossible d'afficher les informations au niveau du cluster dans l'onglet *Assets*.
+ a| 
+Les détails au niveau du cluster ne sont pas disponibles dans l'onglet *Assets* pour les abonnements AutoSupport configurés avec une configuration MetroCluster.
  a| 
 Aucune
 

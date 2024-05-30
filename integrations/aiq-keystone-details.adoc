@@ -67,7 +67,7 @@ Le tableau de bord fournit des notifications d'alerte qui vous permettent de com
 
 NOTE: Si vous avez souscrit à un seul niveau de service ou plan tarifaire, vous ne pourrez pas voir l'alerte pour les volumes non conformes.
 
-image:alert-aiq-1.png["alerte"]
+image:alert-aiq-2.png["alerte"]
 
 Pour plus d'informations sur les stratégies AQoS, voir link:../concepts/qos.html["La QoS adaptative"].
 

@@ -18,7 +18,7 @@ Vous pouvez afficher la liste de tous vos abonnements dans l'onglet *abonnements
 
 Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > abonnements*. Tous vos abonnements sont répertoriés.
 
-image:all-subs.png["Image de l'onglet abonnements"]
+image:all-subs-2.png["Image de l'onglet abonnements"]
 
 Vous pouvez filtrer la sélection en cliquant sur l'icône hamburger image:icon-hamburger.png["icône hamburger"] Pour une colonne, ou affichez tous les abonnements en cliquant sur le bouton *Effacer les filtres*. Pour certains champs et certaines colonnes, vous pouvez voir des informations ou des icônes d'avertissement et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
 
@@ -39,7 +39,7 @@ TIP: Si vous avez souscrit à un service complémentaire de protection avancée 
 
 Vous pouvez consulter les indicateurs d'utilisation suivants pour vérifier l'état d'utilisation de chaque abonnement :
 
-image:usage-indicator.png["icône"]
+image:usage-indicator-1.png["icône"]
 
 .Indexer
 image:icon-grey.png["icône en forme de point gris"]: Pas d'utilisation de capacité enregistrée par rapport à la capacité engagée du niveau de serviceimage:icon-green.png["icône de point vert"]: La consommation est normale, à moins de 80 % de la capacité engagéeimage:icon-amber.png["icône en forme de point orange"]: Consommation maximale, c'est-à-dire l'utilisation est sur le point d'atteindre 100% ou plus de la capacité engagée. La colonne *Uconsommé* affiche cet indicateur pour toute consommation supérieure à 80 % de la capacité engagéeimage:icon-red.png["icône point rouge"]: La consommation est dans la limite de rafale. La consommation en rafale est la consommation qui occupe la capacité engagement de 100 % d'un niveau de service. Elle est conforme à la limite convenue d'utilisation en rafale, notamment 120 %image:icon-purple.png["icône en forme de point violet"]: Indique la consommation au-dessus de la limite de rafale stipulée

@@ -16,11 +16,49 @@ summary: Nouvelles fonctionnalités et améliorations de Keystone STaaS
 [role="lead"]
 NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque version des services de stockage en tant que service Keystone.
 
+Les améliorations suivantes sont introduites dans l'écran *abonnements Keystone* du conseiller digital Active IQ (également appelé conseiller digital) :
 
 
-== Nouvelles fonctionnalités et améliorations pour le 09 mai 2024
 
-Les améliorations suivantes sont apportées à l'écran *abonnements Keystone* de Active IQ Digital Advisor (également appelé Conseiller numérique) :
+== 29 mai 2024
+
+
+
+=== Indicateur de rafale amélioré
+
+L'indicateur *Burst* dans l'index du graphique d'utilisation est amélioré pour afficher la valeur du pourcentage de limite de rafale. Cette valeur varie en fonction de la limite de capacité supplémentaire convenue pour un abonnement. Vous pouvez également afficher la valeur de la limite de rafale dans l'onglet *abonnements* en survolant l'indicateur *Burst usage* dans la colonne *Etat d'utilisation*.
+
+
+
+=== Ajout de niveaux de service
+
+Les niveaux de service *CVO Primary* et *CVO Secondary* sont inclus pour prendre en charge Cloud Volumes ONTAP pour les abonnements avec des plans tarifaires sans capacité allouée ou ceux configurés avec un cluster métropolitain.
+
+* Vous pouvez afficher le graphique d'utilisation de la capacité pour ces niveaux de service à partir de l'ancien tableau de bord du widget *Keystone Subscriptions* et de l'onglet *Capacity Trend*, ainsi que des informations détaillées sur l'utilisation à partir de l'onglet *Current usage*.
+* Dans l'onglet *abonnement*, ces niveaux de service sont affichés sous la forme `CVO (v2)` Dans la colonne *Type d'utilisation*, permettant l'identification de la facturation en fonction de ces niveaux de service.
+
+
+
+
+=== Fonction de zoom avant pour obtenir des informations sur les microrafales
+
+L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des surtensions à court terme, appelées microrafales, dans les graphiques d'utilisation. Pour plus d'informations, voir link:../integrations/capacity-trend-tab.html["Onglet tendances de capacité"^].
+
+
+
+=== Affichage amélioré des abonnements
+
+L'affichage par défaut des abonnements est amélioré pour trier par ID de suivi. Les abonnements de l'onglet *abonnements*, y compris dans la liste déroulante *abonnements* et les rapports CSV, seront maintenant affichés en fonction de la séquence alphabétique des ID de suivi, suivant l'ordre de a, A, b, B, etc.
+
+
+
+=== Affichage amélioré de la rafale accumulée
+
+L'info-bulle qui apparaît lorsque vous passez le curseur sur le graphique à barres d'utilisation de la capacité dans l'onglet *Capacity Trend* affiche désormais le type de rafale accumulée en fonction de la capacité allouée. Il établit une distinction entre les rafales cumulées provisoires et facturées, indiquant *la consommation cumulée provisoire* et *la consommation cumulée facturée* pour les abonnements avec des plans à taux de capacité engagée zéro, et *la capacité cumulée provisoire* et *la capacité cumulée facturée* pour ceux dont la capacité allouée n'est pas égale à zéro.
+
+
+
+== 09 mai 2024
 
 
 
@@ -42,9 +80,7 @@ L'onglet *Détails du volume* de l'onglet *volumes et objets* fournit désormais
 
 
 
-== Nouvelles fonctionnalités et améliorations pour le 28 mars 2024
-
-L'amélioration suivante a été apportée à l'écran *abonnements Keystone* du conseiller digital Active IQ :
+== 28 mars 2024
 
 
 
@@ -110,9 +146,7 @@ Vous pouvez afficher l'horodatage des données de consommation (UTC) dans l'anci
 
 
 
-== Nouvelles fonctionnalités et améliorations pour le 13 février 2024
-
-L'amélioration suivante a été apportée à l'écran *abonnements Keystone* du conseiller numérique Active IQ (également appelé Conseiller numérique).
+== 13 février 2024
 
 
 
@@ -122,11 +156,7 @@ Certains de vos abonnements principaux peuvent avoir des abonnements secondaires
 
 
 
-== Nouvelles fonctionnalités et améliorations pour le 11 janvier 2024
-
-Découvrez les nouveautés de cette version.
-
-Les améliorations suivantes ont été apportées à l'écran *abonnements Keystone* de Active IQ Digital Advisor (également appelé Conseiller numérique).
+== 11 janvier 2024
 
 
 
@@ -142,9 +172,7 @@ Si vous disposez d'un abonnement avec des abonnements ayant une capacité allou�
 
 
 
-== Nouvelles fonctionnalités et améliorations pour le 15 décembre 2023
-
-Découvrez les nouveautés de cette version.
+== 15 décembre 2023
 
 
 

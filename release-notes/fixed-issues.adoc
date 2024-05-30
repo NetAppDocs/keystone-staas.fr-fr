@@ -22,6 +22,24 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Placement erroné des données Keystone dans les rapports CSV si la colonne *Nom du compte* dans les rapports CSV, générée à partir de l'onglet *tendance de capacité*, inclut un nom de compte avec une virgule `(,)`.
+ a| 
+Les données Keystone sont correctement alignées dans les rapports CSV.
+ a| 
+29 mai 2024
+
+
+
+ a| 
+Affichez l'utilisation de rafale accumulée à partir de l'onglet *Capacity Trend* même si la consommation est inférieure à la capacité allouée.
+ a| 
+Fixe
+ a| 
+29 mai 2024
+
+
+
+ a| 
 Texte d'info-bulle incorrect pour l'icône d'index *Burst* actuel dans l'onglet *Capacity Trend*.
  a| 
 Affiche le texte correct de l'info-bulle «_la quantité de capacité de rafale actuellement consommée. Remarque : il s'agit de la période de facturation en cours et non de la plage de dates sélectionnée._ »
