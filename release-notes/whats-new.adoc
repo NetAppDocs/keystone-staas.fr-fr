@@ -20,6 +20,20 @@ Les améliorations suivantes sont introduites dans l'écran *abonnements Keyston
 
 
 
+== 27 juin 2024
+
+
+
+=== Affichage cohérent de l'abonnement
+
+L'écran *abonnements Keystone* est mis à jour pour afficher le numéro d'abonnement sélectionné dans tous les onglets.
+
+* Lorsqu'un onglet de l'écran *abonnements Keystone* est actualisé, l'écran navigue automatiquement jusqu'à l'onglet *abonnements* et réinitialise tous les onglets au premier abonnement répertorié dans la liste déroulante *abonnement*.
+* Si l'abonnement sélectionné n'est pas abonné aux mesures de performances, l'onglet *Performance* affiche le premier abonnement répertorié dans la liste déroulante *abonnement* lors de la navigation.
+
+
+
+
 == 29 mai 2024
 
 
@@ -35,7 +49,7 @@ L'indicateur *Burst* dans l'index du graphique d'utilisation est amélioré pour
 Les niveaux de service *CVO Primary* et *CVO Secondary* sont inclus pour prendre en charge Cloud Volumes ONTAP pour les abonnements avec des plans tarifaires sans capacité allouée ou ceux configurés avec un cluster métropolitain.
 
 * Vous pouvez afficher le graphique d'utilisation de la capacité pour ces niveaux de service à partir de l'ancien tableau de bord du widget *Keystone Subscriptions* et de l'onglet *Capacity Trend*, ainsi que des informations détaillées sur l'utilisation à partir de l'onglet *Current usage*.
-* Dans l'onglet *abonnement*, ces niveaux de service sont affichés sous la forme `CVO (v2)` Dans la colonne *Type d'utilisation*, permettant l'identification de la facturation en fonction de ces niveaux de service.
+* Dans l'onglet *abonnements*, ces niveaux de service sont affichés sous la forme `CVO (v2)` Dans la colonne *Type d'utilisation*, permettant l'identification de la facturation en fonction de ces niveaux de service.
 
 
 
@@ -48,7 +62,7 @@ L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour affi
 
 === Affichage amélioré des abonnements
 
-L'affichage par défaut des abonnements est amélioré pour trier par ID de suivi. Les abonnements de l'onglet *abonnements*, y compris dans la liste déroulante *abonnements* et les rapports CSV, seront maintenant affichés en fonction de la séquence alphabétique des ID de suivi, suivant l'ordre de a, A, b, B, etc.
+L'affichage par défaut des abonnements est amélioré pour trier par ID de suivi. Les abonnements de l'onglet *abonnements*, y compris dans la liste déroulante *abonnement* et les rapports CSV, seront maintenant affichés en fonction de la séquence alphabétique des ID de suivi, suivant l'ordre de a, A, b, B, etc.
 
 
 
@@ -116,9 +130,7 @@ tous affichent les données en fonction de la date sélectionnée de l'abonnemen
 
 
 
-== Nouvelles fonctionnalités et améliorations pour le 29 février 2024
-
-Plusieurs améliorations ont été apportées au tableau de bord Active IQ Digital Advisor (également appelé Digital Advisor) et à l'écran *abonnements Keystone* pour cette version :
+== 29 février 2024
 
 
 
@@ -178,10 +190,10 @@ Si vous disposez d'un abonnement avec des abonnements ayant une capacité allou�
 
 === Possibilité de rechercher par listes de surveillance
 
-La prise en charge des listes de suivi dans Active IQ Digital Advisor (également appelé Digital Advisor) a été étendue aux systèmes Keystone. Vous pouvez maintenant afficher les détails des abonnements de plusieurs clients en effectuant une recherche à l'aide de listes de contrôle. Pour plus d'informations sur l'utilisation des listes de suivi dans Keystone STaaS, voir link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Effectuez une recherche à l'aide des listes de surveillance Keystone"^].
+La prise en charge des listes de suivi dans Digital Advisor a été étendue aux systèmes Keystone. Vous pouvez maintenant afficher les détails des abonnements de plusieurs clients en effectuant une recherche à l'aide de listes de contrôle. Pour plus d'informations sur l'utilisation des listes de suivi dans Keystone STaaS, voir link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Effectuez une recherche à l'aide des listes de surveillance Keystone"^].
 
 
 
 === Date convertie en fuseau horaire UTC
 
-Les données renvoyées dans les onglets de l'écran *abonnements Keystone* de Active IQ Digital Advisor s'affichent en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"^].
+Les données renvoyées dans les onglets de l'écran *Keystone Subscriptions* de Digital Advisor s'affichent en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"^].

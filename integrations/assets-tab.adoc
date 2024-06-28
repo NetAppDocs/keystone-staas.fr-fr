@@ -16,7 +16,7 @@ summary: Graphiques et rapports sur les abonnements Keystone
 [role="lead"]
 Utilisez l'onglet *Assets* pour recueillir des points de vue sur votre cluster et les nœuds gérés par vos abonnements Keystone.
 
-Le conseiller digital Active IQ vous fournit des informations complètes sur vos déploiements au niveau de l'inventaire. L'onglet *Assets* du tableau de bord Keystone, en revanche, accumule les informations au niveau du cluster en fonction de vos abonnements, puis les sépare et les présente avec le niveau de détails précis.
+Digital Advisor fournit des informations complètes sur vos déploiements au niveau de l'inventaire. L'onglet *Assets* du tableau de bord Keystone, en revanche, accumule les informations au niveau du cluster en fonction de vos abonnements, puis les sépare et les présente avec le niveau de détails précis.
 
 .Étapes
 . Cliquez sur *GÉNÉRAL > abonnements Keystone > actifs*.

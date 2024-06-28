@@ -31,7 +31,7 @@ Avant de configurer AutoSupport pour inclure des données Keystone, veillez à n
 +
 [source]
 ----
-autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,nfs,performance,snapshot,platform,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
+autosupport trigger modify -node * -autosupport-message management.log -basic-additional wafl,performance,snapshot,platform,object_store_server,san,raid,snapmirror -troubleshooting-additional wafl
 ----
 ** Exécutez cette commande pour modifier le contenu du journal hebdomadaire :
 +

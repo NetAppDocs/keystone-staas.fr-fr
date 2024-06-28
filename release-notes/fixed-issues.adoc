@@ -22,6 +22,42 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Les graphiques d'utilisation affichent les données au-delà de la période d'une journée spécifiée lorsque la date correspondant au jour en cours est sélectionnée comme date de début et de fin pour le mois précédent à partir de l'option *Capacity Trend* de l'onglet *Capacity Trends*.
+ a| 
+Les graphiques d'utilisation affichent désormais correctement les données pour la période d'une journée spécifiée.
+ a| 
+27 juin 2024
+
+
+
+ a| 
+Les données historiques cumulées en rafale ne sont pas disponibles pour les niveaux de service *CVO primaire* et *CVO secondaire* dans l'onglet *tendance de capacité* pour les abonnements qui ne sont pas configurés avec une configuration MetroCluster.
+ a| 
+Fixe
+ a| 
+21 juin 2024
+
+
+
+ a| 
+Affichage incorrect de la valeur de consommation du stockage objet indiquée dans l'onglet *Détails du volume* pour les abonnements AutoSupport.
+ a| 
+La valeur consommée pour le stockage objet s'affiche désormais correctement.
+ a| 
+21 juin 2024
+
+
+
+ a| 
+Impossible d'afficher les informations au niveau du cluster dans l'onglet *Assets* pour les abonnements AutoSupport configurés avec une configuration MetroCluster.
+ a| 
+Fixe
+ a| 
+21 juin 2024
+
+
+
+ a| 
 Placement erroné des données Keystone dans les rapports CSV si la colonne *Nom du compte* dans les rapports CSV, générée à partir de l'onglet *tendance de capacité*, inclut un nom de compte avec une virgule `(,)`.
  a| 
 Les données Keystone sont correctement alignées dans les rapports CSV.

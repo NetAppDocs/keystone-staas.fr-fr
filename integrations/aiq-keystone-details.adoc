@@ -14,7 +14,7 @@ summary: Graphiques et rapports sur les abonnements Keystone
 
 
 [role="lead"]
-Le tableau de bord Active IQ Digital Advisor (également appelé Digital Advisor) vous permet d'afficher le détail de vos abonnements Keystone, de contrôler l'utilisation de la capacité et de générer des rapports.
+Le tableau de bord Digital Advisor vous permet d'afficher le détail de vos abonnements Keystone, de contrôler l'utilisation de la capacité et de générer des rapports.
 
 Lorsque vous vous abonnez aux services Keystone, vous pouvez afficher les détails de votre abonnement et de votre utilisation dans le widget *abonnements Keystone* du tableau de bord Digital Advisor.
 

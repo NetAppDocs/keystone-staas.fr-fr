@@ -43,7 +43,7 @@ Les graphiques à barres affichent le nom du niveau de service et la capacité c
 
 Vous pouvez afficher les surtensions à court terme dans les graphiques d'utilisation, appelés microrafales, à l'aide de la fonction de zoom avant. Lorsqu'une microrafale est présente, elle est indiquée par un point bleu sur la barre correspondante ou directement sur l'axe X si aucune donnée n'est consommée. Pour afficher les détails, cliquez sur la barre ou sur l'axe des x où apparaît le point bleu et maintenez-le enfoncé, puis faites glisser le curseur sur la carte pour sélectionner l'intervalle de temps souhaité, puis relâchez pour confirmer votre sélection. Cette action effectue un zoom sur les données, fournissant une vue détaillée de la capacité utilisée à ce niveau de service pour l'intervalle sélectionné. Vous pouvez effectuer un zoom avant pour afficher les détails jusqu'à un intervalle de 2 minutes. Vous pouvez cliquer sur le bouton *Réinitialiser le zoom* pour revenir à la vue de carte d'origine.
 
-image:aiq-ks-subtime-4.png["Onglet Capacity Trend avec détails"]
+image:aiq-ks-subtime-5.png["Onglet Capacity Trend avec détails"]
 
 Les couleurs suivantes dans les graphiques à barres indiquent la capacité consommée comme défini dans le niveau de service. Les données mensuelles dans les graphiques sont séparées par une ligne verticale.
 
@@ -56,7 +56,7 @@ Les couleurs suivantes dans les graphiques à barres indiquent la capacité cons
 
 NOTE: Un graphique vide indique qu'aucune donnée n'est disponible dans votre environnement à ce point de collecte de données.
 
-Vous pouvez cliquer sur le bouton à bascule *Afficher l'utilisation actuelle* pour afficher les données de consommation, d'utilisation en rafale et d'accumulation en rafale pour la période de facturation en cours. Ces détails ne sont pas basés sur la plage de dates de la requête.
+Vous pouvez cliquer sur le bouton à bascule *Afficher l'utilisation actuelle* pour afficher la consommation, l'utilisation en rafale et les données de rafale accumulées pour la période de facturation en cours. Ces détails ne sont pas basés sur la plage de dates de la requête.
 
 * *Courant consommé* : indicateur de la capacité consommée (en Tio) définie pour le niveau de service. Ce champ utilise des couleurs spécifiques :
 +
@@ -73,7 +73,7 @@ Vous pouvez cliquer sur le bouton à bascule *Afficher l'utilisation actuelle* p
 ** Violet : au-dessus de la limite d'éclatement.
 
 
-* *Augmentation cumulée* : indicateur de l'utilisation ou de la capacité consommée cumulée calculée par mois pour la période de facturation en cours. L'utilisation des rafales cumulées est calculée en fonction de la capacité engagée et consommée pour un niveau de service : `(consumed - committed)/365.25/12`.
+* *Burst cumulé* : indicateur de l'utilisation ou de la capacité consommée cumulée calculée par mois pour la période de facturation en cours. L'utilisation des rafales cumulées est calculée en fonction de la capacité engagée et consommée pour un niveau de service : `(consumed - committed)/365.25/12`.
 
 
 

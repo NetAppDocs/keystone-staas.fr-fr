@@ -21,40 +21,52 @@ sidebar:
       url: "/release-notes/known-issues.html"
     - title: Limites connues
       url: "/release-notes/known-limitations.html"
-  - title: Bienvenue dans Keystone
-    url: "/concepts/overview.html"
+  - title: Découvrez Keystone
+    entries:
+    - title: Présentation
+      url: "/concepts/overview.html"
+    - title: Infrastructure Keystone
+      url: "/concepts/infra.html"
+    - title: Composants
+      url: "/concepts/components.html"
+    - title: Flux de données
+      url: "/concepts/data-flow.html"
+    - title: Modèles opérationnels
+      url: "/concepts/operational-models.html"
+    - title: Collecteur Keystone
+      url: "/installation/installation-overview.html"
   - title: Installer et configurer Keystone
     entries:
-    - title: Qu'est-ce que le collecteur Keystone
-      url: "/installation/installation-overview.html"
-    - title: Préparez votre système
+    - title: De formation
       entries:
-      - title: Configuration requise pour VMware vSphere
+      - title: VMware vSphere
         url: "/installation/vapp-prereqs.html"
-      - title: Configuration Linux requise
+      - title: Linux
         url: "/installation/linux-prereqs.html"
-      - title: Configuration requise pour ONTAP et StorageGRID
+      - title: ONTAP et StorageGRID
         url: "/installation/addl-req.html"
     - title: Installez le collecteur Keystone
       entries:
-      - title: Déploiement VMware vSphere
+      - title: Déployez sur VMware vSphere
         url: "/installation/vapp-installation.html"
-      - title: Installation de Linux
+      - title: Installez sous Linux
         url: "/installation/linux-installation.html"
-      - title: Validation automatique de l'intégrité
+      - title: Validez l'intégrité
         url: "/installation/validation.html"
     - title: Configurer le collecteur Keystone
       url: "/installation/configuration.html"
-    - title: Contrôle de l'état des systèmes
-      url: "/installation/monitor-health.html"
-    - title: Mettez à niveau Keystone Collector
-      url: "/installation/upgrade.html"
-    - title: Configurez AutoSupport pour Keystone
+    - title: Configurez AutoSupport
       url: "/installation/asup-config.html"
     - title: Sécurité du collecteur Keystone
       url: "/installation/security.html"
     - title: Données collectées pour la facturation
       url: "/installation/data-collection.html"
+  - title: Surveillance et mise à niveau
+    entries:
+    - title: Contrôle de l'état des systèmes
+      url: "/installation/monitor-health.html"
+    - title: Mettez à niveau Keystone Collector
+      url: "/installation/upgrade.html"
   - title: Tableau de bord Keystone
     entries:
     - title: Afficher le tableau de bord Keystone
@@ -117,16 +129,6 @@ sidebar:
       url: "/concepts/misc-volume-billing.html"
     - title: Calendriers de facturation
       url: "/concepts/billing-schedules.html"
-  - title: Environnements exploités par les partenaires et par les clients
-    url: "/concepts/operational-models.html"
-  - title: Infrastructure Keystone
-    entries:
-    - title: Détails de l'infrastructure
-      url: "/concepts/infra.html"
-    - title: Composants
-      url: "/concepts/components.html"
-    - title: Flux de données
-      url: "/concepts/data-flow.html"
   - title: Centre de support NetApp Global Services
     url: "/concepts/gssc.html"
   - title: Mentions légales

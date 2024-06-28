@@ -4,7 +4,7 @@ permalink: integrations/keystone-aiq.html
 keywords: Keystone, Digital Advisor, keystone-aiq, aiq 
 summary: Keystone et conseiller digital 
 ---
-= Affichez le tableau de bord Keystone sur le conseiller digital Active IQ
+= Affichez le tableau de bord Keystone sur Digital Advisor
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -58,7 +58,7 @@ Pour plus d'informations sur le tableau de bord et le reporting Keystone, report
 
 == Rechercher par listes de surveillance Keystone
 
-La liste de surveillance est une fonction du conseiller numérique Active IQ (conseiller numérique). Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Comprendre la liste de surveillance"^]. Pour plus d'informations sur la création de listes de contrôle, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Créer une liste de surveillance"^].
+Watchlist est une fonction de conseiller numérique. Pour plus d'informations, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Comprendre la liste de surveillance"^]. Pour plus d'informations sur la création de listes de contrôle, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Créer une liste de surveillance"^].
 
 Pour le stockage en tant que service Keystone, vous pouvez créer des listes de suivi pour les clients ou les numéros d'abonnement. Vous pouvez effectuer une recherche par nom de liste de surveillance sur l'écran Conseiller numérique. Lorsque vous effectuez une recherche par liste de surveillance, vous pouvez afficher les clients et leurs abonnements dans la liste déroulante *abonnement* du widget *abonnements Keystone*.
 
