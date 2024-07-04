@@ -73,7 +73,19 @@ Vous pouvez cliquer sur le bouton à bascule *Afficher l'utilisation actuelle* p
 ** Violet : au-dessus de la limite d'éclatement.
 
 
-* *Burst cumulé* : indicateur de l'utilisation ou de la capacité consommée cumulée calculée par mois pour la période de facturation en cours. L'utilisation des rafales cumulées est calculée en fonction de la capacité engagée et consommée pour un niveau de service : `(consumed - committed)/365.25/12`.
+* *Burst cumulé* : indicateur de la capacité totale de rafale (en Tio) accumulée au cours de chaque intervalle de 2 minutes au cours d'un mois pour le cycle de facturation actuel. L'utilisation de capacité supplémentaire accumulée pour un mois complet est calculée de la façon suivante :
++
+[somme des rafales en mois / ((jours en mois) x 24 x 60)] x durée de l'intervalle
+
++
+Vous pouvez calculer la capacité supplémentaire accumulée pour de courtes périodes, par exemple toutes les deux minutes, à l'aide des éléments suivants :
+
++
+[burst / ((jours en mois) x 24 x 60)] x durée de l'intervalle
+
++
+L'augmentation correspond à la différence entre la capacité consommée et la capacité allouée. Par exemple, avec un intervalle de 30 jours par mois, si la capacité consommée atteint 120 Tio et que la capacité allouée est de 100 Tio pour un intervalle de 2 minutes, cela se traduit par une capacité supplémentaire de 20 Tio, ce qui équivaut à une utilisation de 0.000925926 Tio pour cet intervalle.
+
 
 
 
