@@ -14,34 +14,39 @@ summary: onglet volumes-objets
 
 
 [role="lead"]
-Utilisez l'onglet *volumes et objets* pour afficher les informations récapitulatives et les détails de vos volumes ONTAP. Pour StorageGRID, vous pouvez utiliser cet onglet pour lire l'utilisation par les différents nœuds de votre environnement de stockage objet.
+Utilisez l'onglet *volumes et objets* pour afficher les détails des volumes ONTAP et du stockage objet. Pour StorageGRID, vous pouvez utiliser cet onglet pour lire l'utilisation par les différents nœuds de votre environnement de stockage objet.
 
 
 NOTE: Le titre de cet onglet varie selon la nature du déploiement sur votre site. Si vous disposez à la fois de ONTAP et du stockage objet, le titre de l'onglet apparaît sous la forme *volumes et objets*. Pour ONTAP uniquement, le nom apparaît *volumes*. Pour le stockage d'objets StorageGRID, vous pouvez voir l'onglet *objets*.
 
 
 
-== Affichez le récapitulatif du volume ONTAP et les détails
+== Consultez les volumes ONTAP et les détails du stockage objet
 
-L'onglet volumes offre différents niveaux de détails sur les volumes système ONTAP. Deux onglets sont disponibles, un pour la vue récapitulative et détaillée de vos volumes ONTAP. L'onglet *Volume Summary* fournit un nombre total de volumes mappés aux niveaux de service souscrits. Les volumes correspondants sont de nouveau répertoriés dans l'onglet *Détails du volume* avec leurs détails.
+L'onglet *volumes et objets* offre des informations sur les volumes système ONTAP et le stockage objet à différents niveaux de détail. Pour les volumes ONTAP, il existe deux sous-onglets : *Résumé du volume*, qui fournit un nombre total de volumes mappés aux niveaux de service souscrits, et *Détails du volume*, qui répertorie ces volumes avec leurs informations spécifiques. Le sous-onglet *Objects* fournit des détails sur le stockage d'objets pour les abonnements qui incluent des niveaux de service pour le stockage de fichiers et d'objets.
+
+
+NOTE: Le sous-onglet *objets* n'est pas disponible sous l'onglet *volumes* et dans l'onglet *objets*, les sous-onglets *Volume Summary* et *Volume Details* ne contiennent aucune donnée.
 
 [role="tabbed-block"]
 ====
 .Résumé du volume
 --
 . Cliquez sur *GÉNÉRAL > abonnements Keystone > volumes et objets > Récapitulatif du volume*.
-. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné.
-
-
+. Sélectionnez le numéro d'abonnement.
++
 L'abonnement Keystone STaaS sélectionné permet d'afficher le nombre total de volumes, leur état de conformité AQoS, le nombre de volumes protégés et la capacité totale allouée, consommée et disponible sur tous ces volumes. Si vous cliquez sur le nombre de volumes non conformes ou protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée indiquant les volumes non conformes ou les volumes protégés, en fonction de votre sélection.
 
-image:volume-summary-1.png["Onglet Volume Summary"]
++
+image:volume-summary-2.png["Onglet Volume Summary"]
+
+
 
 --
 .Détails du volume
 --
 . Cliquez sur *GÉNÉRAL > abonnements Keystone > volumes > Détails du volume*.
-. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné.
+. Sélectionnez le numéro d'abonnement.
 +
 Vous pouvez consulter la liste tabulaire des volumes, telle que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et les niveaux de service Keystone attribués. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques.
 
@@ -50,40 +55,32 @@ Vous pouvez consulter la liste tabulaire des volumes, telle que l'utilisation de
 NOTE: Pour le service complémentaire de protection avancée des données, une colonne supplémentaire apparaît pour indiquer si le volume est un volume primaire ou miroir dans la configuration MetroCluster. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
 
 +
+image:volume-details-3.png["Onglet Détails des volumes"]
 
-NOTE: Pour les abonnements qui couvrent les niveaux de service pour les fichiers et les objets, vous pouvez afficher les détails du stockage objet en cliquant sur le bouton *Détails du stockage objet*.
+
+
+--
+.Objets
+--
+. Cliquez sur *GÉNÉRAL > abonnements Keystone > objets*.
+. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné si l'abonnement précédemment sélectionné n'inclut pas les niveaux de service pour le stockage fichier et objet.
++
+
+NOTE: Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds pour le stockage objet.
 
 +
-image:volume-details-2.png["Onglet Détails des volumes"]
+image:objects-details.png["Onglet objets"]
 
 
 
 --
 ====
-
-
-== Afficher les nœuds StorageGRID et la consommation
-
-Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds pour le stockage objet.
-
-.Étapes
-. Cliquez sur *GÉNÉRAL > abonnements Keystone > objets*.
-. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné. Lorsque vous sélectionnez le numéro d'abonnement, le lien pour les détails du stockage objet est activé.
-+
-image:sg-link.png["Boîte de dialogue StorageGRID"]
-
-. Cliquez sur le lien pour afficher les noms des nœuds et les détails d'utilisation physique de chaque nœud.
-+
-image:sg-link-2.png["Boîte de dialogue StorageGRID"]
-
-
-
 *Informations connexes*
 
 * link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Utilisation actuelle"]
-* link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
-* link:../integrations/performance-tab.html["Performance"]
+* link:../integrations/current-usage-tab.html["Consommation de courant"]
+* link:../integrations/capacity-trend-tab.html["Tendance de consommation"]
 * link:../integrations/assets-tab.html["Ressources"]
+* link:../integrations/performance-tab.html["Performance"]
 

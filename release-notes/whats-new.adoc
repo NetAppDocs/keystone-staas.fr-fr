@@ -20,6 +20,22 @@ Les améliorations suivantes sont introduites dans l'écran *abonnements Keyston
 
 
 
+== 10 juillet 2024
+
+
+
+=== Modifications de libellé
+
+Le libellé *utilisation actuelle* est remplacé par *consommation actuelle* et *tendance capacité* est remplacé par *tendance consommation*.
+
+
+
+=== Barre de recherche pour les abonnements
+
+Le menu déroulant *abonnements* de tous les onglets de l'écran *abonnements Keystone* comprend désormais une barre de recherche. Vous pouvez rechercher des abonnements spécifiques répertoriés dans la liste déroulante *abonnements*.
+
+
+
 == 27 juin 2024
 
 
@@ -174,7 +190,7 @@ Certains de vos abonnements principaux peuvent avoir des abonnements secondaires
 
 === Données facturées renvoyées pour le cumul de capacité supplémentaire
 
-Les étiquettes de *Accrued Burst* sont maintenant modifiées en *facturé Burst cumulé* dans l'onglet *Capacity Trend*. La sélection de cette option vous permet d'afficher les graphiques mensuels des données de dépassement cumulées facturées. Pour plus d'informations, voir link:../integrations/aiq-keystone-details.html#view-invoiced-accrued-burst["Afficher les frais supplémentaires facturés"^].
+Les étiquettes de *Accrued Burst* sont maintenant modifiées en *facturé Burst cumulé* dans l'onglet *Capacity Trend*. La sélection de cette option vous permet d'afficher les graphiques mensuels des données de dépassement cumulées facturées. Pour plus d'informations, voir link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Afficher les frais supplémentaires facturés"^].
 
 
 
@@ -190,7 +206,7 @@ Si vous disposez d'un abonnement avec des abonnements ayant une capacité allou�
 
 === Possibilité de rechercher par listes de surveillance
 
-La prise en charge des listes de suivi dans Digital Advisor a été étendue aux systèmes Keystone. Vous pouvez maintenant afficher les détails des abonnements de plusieurs clients en effectuant une recherche à l'aide de listes de contrôle. Pour plus d'informations sur l'utilisation des listes de suivi dans Keystone STaaS, voir link:../integrations/keystone-aiq.html#search-by-using-keystone-watchlists["Effectuez une recherche à l'aide des listes de surveillance Keystone"^].
+La prise en charge des listes de suivi dans Digital Advisor a été étendue aux systèmes Keystone. Vous pouvez maintenant afficher les détails des abonnements de plusieurs clients en effectuant une recherche à l'aide de listes de contrôle. Pour plus d'informations sur l'utilisation des listes de suivi dans Keystone STaaS, consultez la section link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Rechercher par listes de surveillance Keystone"^].
 
 
 

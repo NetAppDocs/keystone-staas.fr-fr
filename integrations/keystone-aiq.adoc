@@ -23,7 +23,7 @@ Digital Advisor offre un tableau de bord unifié qui fournit des informations su
 .Tableau de bord par défaut (ancien)
 Vous pouvez consulter le nom et le numéro d'abonnement de votre client, le nom de votre compte, les dates de début et de fin de l'abonnement, ainsi que les graphiques d'utilisation de la capacité, selon les niveaux de service que vous avez souscrits. Vous pouvez voir l'horodatage de collecte des données de consommation en heure UTC.
 
-image:old-db-1.png["ancien tableau de bord"]
+image:old-db-2.png["ancien tableau de bord"]
 
 .Tableau de bord alternatif (nouveau)
 Vous pouvez voir l'éclatement de l'utilisation de la capacité selon vos abonnements, ainsi que les avertissements et alertes qui requièrent une intervention immédiate ou immédiate. Les informations s'affichent de manière sélective, en fonction de vos abonnements et de l'état de votre utilisation. Vous pouvez afficher ces informations :

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/current-usage-tab.html 
-keywords: keystone-aiq, digital advisor keystone, current usage tab 
-summary: Onglet utilisation actuelle du tableau de bord AIQ DA Keystone 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab 
+summary: Onglet consommation en cours du tableau de bord AIQ DA Keystone 
 ---
-= Onglet utilisation actuelle
+= Consommation actuelle
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: Onglet utilisation actuelle du tableau de bord AIQ DA Keystone
 
 
 [role="lead"]
-L'onglet *usage actuel* affiche les détails d'utilisation de vos abonnements.
+L'onglet *consommation actuelle* affiche les détails d'utilisation de vos abonnements.
 
-Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > utilisation actuelle*, puis sélectionnez le numéro d'abonnement requis.
+Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > consommation actuelle*, puis sélectionnez le numéro d'abonnement requis.
 
-image:aiq-ks-dtls-2.png["Onglet utilisation actuelle"]
+image:aiq-ks-dtls-2.png["Consommation actuelle"]
 
 Pour l'abonnement sélectionné, vous pouvez afficher des détails, tels que les dates de début et de fin de l'abonnement et la période de facturation, par exemple mensuelle ou annuelle. Dans le cadre de l'utilisation de l'abonnement, vous pouvez afficher le nom du niveau de service, l'engagement, la consommation, la capacité disponible et l'utilisation en rafale actuelle et accumulée (en Tio).
 
@@ -27,14 +27,14 @@ TIP: Le image:icon-info.png["icône informations"] l'icône en regard de chaque 
 
 Pour plus d'informations sur vos services de stockage Keystone et sur les niveaux de service appropriés, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
 
-Associé à l'utilisation actuelle, vous pouvez afficher l'historique des données d'utilisation à des fins de comparaison. Cliquez sur le bouton *Afficher les données historiques* pour accéder à l'onglet *tendance capacité* et afficher les données historiques de la même souscription.
+Associé à la consommation actuelle, vous pouvez afficher l'historique des données d'utilisation pour les comparer. Cliquez sur le bouton *Afficher les données historiques* pour accéder à l'onglet *tendances de consommation* et afficher les données historiques pour le même abonnement.
 
 *Informations connexes*
 
 * link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
+* link:../integrations/capacity-trend-tab.html["Tendance de consommation"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
-* link:../integrations/performance-tab.html["Performance"]
 * link:../integrations/assets-tab.html["Onglet actifs"]
+* link:../integrations/performance-tab.html["Performance"]
 

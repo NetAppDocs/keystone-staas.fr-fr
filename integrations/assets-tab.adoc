@@ -21,18 +21,19 @@ Digital Advisor fournit des informations complètes sur vos déploiements au niv
 .Étapes
 . Cliquez sur *GÉNÉRAL > abonnements Keystone > actifs*.
 . Sélectionnez le numéro d'abonnement pour lequel vous souhaitez afficher les clusters.
-
-
++
 Vous pouvez consulter les détails sur le cluster, répartis par les paramètres d'efficacité du stockage, le type de plateforme et les détails sur la capacité. Cliquez sur l'un des clusters pour accéder au widget *clusters* de l'écran Digital Advisor, où vous pouvez obtenir des informations supplémentaires sur ce cluster.
 
-image:assets-tab-2.png["Onglet actifs"]
+
+
+image:assets-tab-3.png["Onglet actifs"]
 
 *Informations connexes*
 
 * link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
 * link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Utilisation actuelle"]
+* link:../integrations/current-usage-tab.html["Consommation de courant"]
 * link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
-* link:../integrations/capacity-trend-tab.html["Tendance de la capacité"]
+* link:../integrations/capacity-trend-tab.html["Tendance de consommation"]
 * link:../integrations/performance-tab.html["Performance"]
 
