@@ -48,7 +48,7 @@ TIP: Cliquez sur le lien *abonnements* pour afficher la liste des abonnements fi
 
 
 
-image:new-db-2.png["nouveau tableau de bord"]
+image:new-db-3.png["nouveau tableau de bord"]
 
 Pour plus d'informations sur le widget du tableau de bord Digital Advisor pour Keystone, voir https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Documentation de Digital Advisor"^].
 

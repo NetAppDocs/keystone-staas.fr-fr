@@ -43,7 +43,7 @@ Les graphiques à barres affichent le nom du niveau de service et la capacité c
 
 Vous pouvez afficher les surtensions à court terme dans les graphiques d'utilisation, appelés microrafales, à l'aide de la fonction de zoom avant. Lorsqu'une microrafale est présente, elle est indiquée par un point bleu sur la barre correspondante ou directement sur l'axe X si aucune donnée n'est consommée. Pour afficher les détails, cliquez sur la barre ou sur l'axe des x où apparaît le point bleu et maintenez-le enfoncé, puis faites glisser le curseur sur la carte pour sélectionner l'intervalle de temps souhaité, puis relâchez pour confirmer votre sélection. Cette action effectue un zoom sur les données, fournissant une vue détaillée de la capacité utilisée à ce niveau de service pour l'intervalle sélectionné. Vous pouvez effectuer un zoom avant pour afficher les détails jusqu'à un intervalle de 2 minutes. Vous pouvez cliquer sur le bouton *Réinitialiser le zoom* pour revenir à la vue de carte d'origine.
 
-image:aiq-ks-subtime-5.png["Onglet Capacity Trend avec détails"]
+image:aiq-ks-subtime-6.png["Onglet Capacity Trend avec détails"]
 
 Les couleurs suivantes dans les graphiques à barres indiquent la capacité consommée comme défini dans le niveau de service. Les données mensuelles dans les graphiques sont séparées par une ligne verticale.
 

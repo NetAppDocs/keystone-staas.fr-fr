@@ -38,6 +38,10 @@ Vous devez remplir quelques conditions préalables supplémentaires pour ONTAP e
 .. Connectez-vous à l'interface utilisateur Web d'Unified Manager à l'aide des informations d'identification utilisateur par défaut de l'administrateur de l'application générées lors de l'installation. Voir https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_access_unified_manager_web_ui.html["Accès à l'interface utilisateur Web de Unified Manager"^].
 .. Créez un compte de service pour Keystone Collector avec `Operator` rôle utilisateur. Les API du service Keystone Collector utilisent ce compte de service pour communiquer avec Unified Manager et collecter les données d'utilisation. Voir https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_add_users.html["Ajout d'utilisateurs"^].
 .. Créer un `Database` compte utilisateur, avec le `Report Schema` rôle. Cet utilisateur est requis pour la collecte des données de performances. Voir https://docs.netapp.com/us-en/active-iq-unified-manager/config/task_create_database_user.html["Création d'un utilisateur de base de données"^].
++
+
+NOTE: Le port par défaut pour MySQL, 3306, est limité à localhost uniquement lors d'une nouvelle installation d'Unified Manager, qui empêche la collecte des données de performances pour Keystone ONTAP. Cette configuration peut être modifiée et la connexion peut être mise à disposition d'autres hôtes à l'aide de l' `Control access to MySQL port 3306` option de la console de maintenance d'Unified Manager. Pour plus d'informations, voir link:https://docs.netapp.com/us-en/active-iq-unified-manager/config/reference_additional_menu_options.html["Options de menu supplémentaires"^].
+
 
 
 . Activez API Gateway dans Unified Manager. Keystone Collector utilise la fonctionnalité de passerelle d'API pour communiquer avec les clusters ONTAP. Vous pouvez activer la passerelle d'API depuis l'interface utilisateur Web ou en exécutant quelques commandes via l'interface de ligne de commande Unified Manager.

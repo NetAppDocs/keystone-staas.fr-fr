@@ -18,7 +18,7 @@ L'onglet *consommation actuelle* affiche les détails d'utilisation de vos abonn
 
 Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > consommation actuelle*, puis sélectionnez le numéro d'abonnement requis.
 
-image:aiq-ks-dtls-2.png["Consommation actuelle"]
+image:aiq-ks-dtls-3.png["Consommation actuelle"]
 
 Pour l'abonnement sélectionné, vous pouvez afficher des détails, tels que les dates de début et de fin de l'abonnement et la période de facturation, par exemple mensuelle ou annuelle. Dans le cadre de l'utilisation de l'abonnement, vous pouvez afficher le nom du niveau de service, l'engagement, la consommation, la capacité disponible et l'utilisation en rafale actuelle et accumulée (en Tio).
 

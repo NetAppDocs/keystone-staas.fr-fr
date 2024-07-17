@@ -194,6 +194,9 @@ Serveur Web pour les mises à jour du micrologiciel ONTAP
 
 |===
 
+NOTE: Le port par défaut de MySQL, 3306, est limité à localhost uniquement lors d'une nouvelle installation d'Unified Manager, ce qui empêche la collecte des mesures de performances pour Keystone Collector. Pour plus d'informations, voir link:addl-req.html["Configuration requise pour ONTAP"].
+
+
 
 === Accès à l'URL
 
