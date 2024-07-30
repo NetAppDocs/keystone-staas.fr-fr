@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/pricing.html 
 keywords: pricing, billing introduction, Keystone billing 
-summary: Tarification Keystone 
+summary: 'Keystone propose un modèle de paiement à l"utilisation pour répondre à vos besoins de consommation flexible et évolutif.' 
 ---
 = Tarification Keystone
 :hardbreaks:
@@ -14,9 +14,7 @@ summary: Tarification Keystone
 
 
 [role="lead"]
-Le service NetApp Keystone STaaS offre des prix prévisibles et initiaux pour votre abonnement au stockage.
-
-Si vous préférez le modèle de consommation des dépenses opérationnelles (OpEx) aux dépenses d'investissement (CapEx) ou à la location, vous pouvez opter pour le modèle Keystone de paiement à l'utilisation pour vos besoins flexibles et évolutifs.
+Si vous préférez un modèle de consommation OpEx plutôt que CapEx ou leasing, vous pouvez opter pour le modèle de paiement en tant que service NetApp Keystone qui assure une consommation flexible et évolutive avec des tarifs prévisibles et initiaux pour votre abonnement de stockage.
 
 Keystone vous fournit les fonctionnalités de facturation suivantes :
 

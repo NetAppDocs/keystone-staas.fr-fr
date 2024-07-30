@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/volumes-objects-tab.html 
 keywords: keystone-aiq, digital advisor keystone, volumes-objects-tab, StorageGRID objects details, ONTAP volumes 
-summary: onglet volumes-objets 
+summary: Affichez les détails de la capacité au niveau du volume ou du stockage objet. 
 ---
-= Volumes et objets
+= Afficher des détails sur les volumes ONTAP et le stockage objet
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: onglet volumes-objets
 
 
 [role="lead"]
-Utilisez l'onglet *volumes et objets* pour afficher les détails des volumes ONTAP et du stockage objet. Pour StorageGRID, vous pouvez utiliser cet onglet pour lire l'utilisation par les différents nœuds de votre environnement de stockage objet.
+Si vous souhaitez afficher les détails de la capacité au niveau du stockage du volume ou de l'objet, vous pouvez naviguer jusqu'au *volumes et objets*. Pour StorageGRID, vous pouvez utiliser cet onglet pour lire l'utilisation par les différents nœuds de votre environnement de stockage objet.
 
 
 NOTE: Le titre de cet onglet varie selon la nature du déploiement sur votre site. Si vous disposez à la fois de ONTAP et du stockage objet, le titre de l'onglet apparaît sous la forme *volumes et objets*. Pour ONTAP uniquement, le nom apparaît *volumes*. Pour le stockage d'objets StorageGRID, vous pouvez voir l'onglet *objets*.
@@ -35,7 +35,7 @@ NOTE: Le sous-onglet *objets* n'est pas disponible sous l'onglet *volumes* et da
 . Cliquez sur *GÉNÉRAL > abonnements Keystone > volumes et objets > Récapitulatif du volume*.
 . Sélectionnez le numéro d'abonnement.
 +
-L'abonnement Keystone STaaS sélectionné permet d'afficher le nombre total de volumes, leur état de conformité AQoS, le nombre de volumes protégés et la capacité totale allouée, consommée et disponible sur tous ces volumes. Si vous cliquez sur le nombre de volumes non conformes ou protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée indiquant les volumes non conformes ou les volumes protégés, en fonction de votre sélection.
+L'abonnement Keystone STaaS sélectionné permet d'afficher le nombre total de volumes, leur état de conformité QoS, le nombre de volumes protégés et la capacité totale allouée, consommée et disponible de tous ces volumes. Si vous cliquez sur le nombre de volumes non conformes ou protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée indiquant les volumes non conformes ou les volumes protégés, en fonction de votre sélection.
 
 +
 image:volume-summary-2.png["Onglet Volume Summary"]

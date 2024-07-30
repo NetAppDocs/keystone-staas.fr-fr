@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/vapp-prereqs.html 
 keywords: prerequisites, VMware vSphere, vApp 
-summary: 'Conditions préalables à l"installation de Keystone Collector sur des systèmes VMware vSphere' 
+summary: Votre système VMware vSphere doit répondre à plusieurs exigences avant de pouvoir installer Keystone Collector. 
 ---
 = Besoins de l'infrastructure virtuelle
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Conditions préalables à l"installation de Keystone Collector sur des
 
 
 [role="lead"]
-Quelques configurations d'infrastructure virtuelle sont requises pour installer Keystone Collector sur vos systèmes VMware vSphere.
+Votre système VMware vSphere doit répondre à plusieurs exigences avant de pouvoir installer Keystone Collector.
 
 .Prérequis pour la machine virtuelle du serveur Keystone Collector :
 * Système d'exploitation : serveur VMware vCenter et ESXi 6.5 ou version ultérieure

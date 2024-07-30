@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/supported-storage-services.html 
 keywords: storage, service, service definition, keystone STaaS services, 
-summary: Services STaaS Keystone 
+summary: Les services Keystone de stockage en tant que service prennent en charge ONTAP et StorageGRID. 
 ---
-= Stockage pris en charge dans les services STaaS Keystone
+= Stockage pris en charge dans Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

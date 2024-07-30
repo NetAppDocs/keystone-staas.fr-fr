@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/supported-storage-capacity.html 
 keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
-summary: Capacités de stockage prises en charge 
+summary: Découvrez les types de capacités de stockage pris en charge par le service de stockage en tant que service NetApp Keystone. 
 ---
 = Capacités de stockage prises en charge dans Keystone
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Capacités de stockage prises en charge
 
 
 [role="lead"]
-Les fonctionnalités du service NetApp Keystone STaaS sont les suivantes :
+Le service STaaS de NetApp Keystone prend en charge plusieurs types de capacités de stockage. La compréhension de ces différents termes de capacité peut vous être utile lorsque vous utilisez Keystone.
 
 
 

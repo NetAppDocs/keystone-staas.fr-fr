@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/overview.html 
 keywords: learn about keystone, keystone introduction, keystone, STaaS, service, offering, overview 
-summary: Bienvenue dans Keystone 
+summary: 'Keystone est un modèle de services par abonnement avec paiement à l"utilisation destiné aux entreprises qui préfèrent un modèle de consommation OpEx aux dépenses CapEx en amont ou au leasing.' 
 ---
 = Découvrez NetApp Keystone
 :hardbreaks:

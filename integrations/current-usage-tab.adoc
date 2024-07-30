@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/current-usage-tab.html 
 keywords: keystone-aiq, digital advisor keystone, current consumption tab 
-summary: Onglet consommation en cours du tableau de bord AIQ DA Keystone 
+summary: 'Pour comprendre l"utilisation de votre abonnement, vous pouvez afficher la capacité allouée, la capacité consommée, la capacité disponible, etc.' 
 ---
-= Consommation actuelle
+= Afficher la consommation actuelle de vos abonnements
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Onglet consommation en cours du tableau de bord AIQ DA Keystone
 
 
 [role="lead"]
-L'onglet *consommation actuelle* affiche les détails d'utilisation de vos abonnements.
+Pour comprendre l'utilisation de votre abonnement, vous pouvez afficher les informations d'utilisation telles que la capacité allouée, la capacité consommée, la capacité disponible, etc.
 
 Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > consommation actuelle*, puis sélectionnez le numéro d'abonnement requis.
 

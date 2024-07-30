@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: installation/monitor-health.html 
 keywords: monitoring system health 
-summary: 'Contrôle de l"état du système grâce au collecteur Keystone' 
+summary: 'Pour vous assurer que les données sont disponibles, vous pouvez contrôler l"état de santé du collecteur Keystone à l"aide de n"importe quel système de surveillance qui prend en charge les requêtes HTTP.' 
 ---
-= Contrôle de l'état des systèmes
+= Surveillez l'état du collecteur Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Contrôle de l"état du système grâce au collecteur Keystone'
 
 
 [role="lead"]
-Vous pouvez contrôler l'état de santé de votre système via les services Keystone Collector en utilisant n'importe quel système de surveillance prenant en charge les requêtes HTTP.
+Vous pouvez contrôler l'état de santé du collecteur Keystone à l'aide de n'importe quel système de surveillance qui prend en charge les requêtes HTTP. La surveillance de l'état permet de vérifier que les données sont disponibles dans le tableau de bord Keystone.
 
 Par défaut, les services d'intégrité Keystone n'acceptent pas les connexions provenant d'une adresse IP autre que localhost. Le terminal de santé Keystone est `/uber/health`, Et il écoute toutes les interfaces du serveur Keystone Collector sur le port `7777`. Lors d'une requête, un code d'état de requête HTTP avec une sortie JSON est renvoyé du noeud final comme réponse, décrivant l'état du système Keystone Collector.
 Le corps JSON fournit un état de santé global à `is_healthy` attribut, qui est un booléen ; et une liste détaillée des états par composant pour l' `component_details` attribut.

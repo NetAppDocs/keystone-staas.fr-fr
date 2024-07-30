@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/billing-schedules.html 
 keywords: billing schedules, schedule for payment 
-summary: Calendriers de facturation en trapèze 
+summary: Les abonnements Keystone STaaS sont facturés chaque mois et chaque année. 
 ---
 = Calendriers de facturation
 :hardbreaks:

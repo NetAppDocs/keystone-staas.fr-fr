@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concepts/data-flow.html 
 keywords: data flow 
-summary: Flux de données Keystone 
+summary: 'Les données des systèmes Keystone STaaS transitent par Keystone Collector et l"outil de solution AIO, qui est le système de surveillance associé.' 
 ---
 = Flux de données Keystone
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Flux de données Keystone
 
 
 [role="lead"]
-Les données des systèmes Keystone STaaS transitent par Keystone Collector et le système de surveillance associé, l'outil de solution AIO.
+Les données des systèmes Keystone STaaS transitent par Keystone Collector et l'outil de solution AIO, qui est le système de surveillance associé.
 
 
 

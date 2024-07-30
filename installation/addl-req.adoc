@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: installation/addl-req.html 
 keywords: keystone unified manager prerequisites, aiqum config keystone 
-summary: 'conditions préalables à l"utilisation d"un gestionnaire unifié keystone' 
+summary: Avant de commencer à utiliser Keystone, vous devez vous assurer que les clusters ONTAP et les systèmes StorageGRID répondent à quelques exigences. 
 ---
 = Conditions requises pour ONTAP et StorageGRID
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'conditions préalables à l"utilisation d"un gestionnaire unifié keys
 
 
 [role="lead"]
-Vous devez remplir quelques conditions préalables supplémentaires pour ONTAP et StorageGRID. Assurez-vous d'avoir rempli ces conditions préalables spécifiques en plus de la configuration système requise pour Linux/VMware vSphere. Cliquez sur l'onglet requis pour en savoir plus.
+Avant de commencer à utiliser Keystone, vous devez vous assurer que les clusters ONTAP et les systèmes StorageGRID répondent à quelques exigences.
 
 [role="tabbed-block"]
 ====

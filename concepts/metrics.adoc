@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concepts/metrics.html 
 keywords: metrics, GiB, IOPS, latency, durability 
-summary: Calculs et définitions de metrics des services Keystone 
+summary: Le service STaaS de NetApp Keystone utilise plusieurs termes pour mesurer les mesures. Si vous utilisez Keystone, vous pouvez en savoir plus sur ces conditions. 
 ---
-= Mesures et définitions utilisées dans les services Keystone
+= Metrics et définitions utilisés dans Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,9 @@ summary: Calculs et définitions de metrics des services Keystone
 
 
 [role="lead"]
-Les termes et définitions suivants sont utilisés dans le service STaaS NetApp Keystone (Keystone) pour mesurer les indicateurs :
+Le service STaaS de NetApp Keystone utilise plusieurs termes pour mesurer les mesures. Si vous utilisez Keystone, vous pouvez en savoir plus sur ces conditions.
+
+Les termes et définitions suivants sont utilisés dans le service de stockage en tant que service Keystone pour mesurer les metrics :
 
 * Unités de mesure de la capacité : Gio, Tio et Pio
 * Densité d'E/S : nombre d'opérations d'entrée/sortie traitées par seconde en fonction de l'espace total consommé par la charge de travail, et de tébioctets.

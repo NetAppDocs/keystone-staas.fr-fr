@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: installation/validation.html 
 keywords: validate, validation 
-summary: Validez le collecteur Keystone sur les systèmes Linux 
+summary: 'Le référentiel Keystone est configuré de manière à valider automatiquement l"intégrité du logiciel Keystone.' 
 ---
-= Validation automatique de l'intégrité logicielle
+= Validation automatique du logiciel Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,6 @@ summary: Validez le collecteur Keystone sur les systèmes Linux
 
 
 [role="lead"]
-Il existe un processus de validation de l'intégrité du logiciel Keystone.
+Le référentiel Keystone est configuré de manière à valider automatiquement l'intégrité du logiciel Keystone de sorte que seul un logiciel valide et authentique soit installé sur votre site.
 
-La configuration du client de référentiel Keystone YUM fournie dans `keystonerepo.rpm` Utilise la vérification GPG appliquée (`gpgcheck=1`) sur tous les logiciels téléchargés via ce référentiel. N'importe quel RPM téléchargé via le référentiel Keystone dont la validation de la signature échoue n'est pas possible. Cette fonctionnalité est utilisée dans la fonctionnalité de mise à jour automatique planifiée du collecteur Keystone afin de garantir que seuls les logiciels valides et authentiques sont installés sur votre site.
+La configuration du client de référentiel Keystone YUM fournie dans utilise la `keystonerepo.rpm` vérification GPG appliquée (`gpgcheck=1`) sur tous les logiciels téléchargés via ce référentiel. N'importe quel RPM téléchargé via le référentiel Keystone dont la validation de la signature échoue n'est pas possible. Cette fonctionnalité est utilisée dans la fonctionnalité de mise à jour automatique planifiée de Keystone Collector pour garantir que seul un logiciel valide et authentique est installé sur votre site.

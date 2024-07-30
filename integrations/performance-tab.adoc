@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/performance-tab.html 
 keywords: keystone-aiq, digital advisor keystone, performance tab 
-summary: Onglet Performance du tableau de bord Keystone Subscription AIQ DA 
+summary: Pour contrôler les performances de vos systèmes, vous pouvez consulter les metrics de performance des volumes ONTAP gérés par vos abonnements Keystone. 
 ---
-= Onglet performances
+= Affichez les mesures de performances
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Onglet Performance du tableau de bord Keystone Subscription AIQ DA
 
 
 [role="lead"]
-L'onglet *Performance* vous permet de consulter les metrics de performances des volumes ONTAP gérés par vos abonnements Keystone.
+Pour contrôler les performances de vos systèmes, vous pouvez consulter les metrics de performance des volumes ONTAP gérés par vos abonnements Keystone.
 
 
 TIP: Cet onglet est disponible en option. Contactez le support technique pour afficher cet onglet.

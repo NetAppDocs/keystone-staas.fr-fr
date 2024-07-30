@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/capacity-trend-tab.html 
 keywords: keystone-aiq, digital advisor keystone, consumption trend tab, historical usage, accrued burst, accrued, consumption 
-summary: 'Onglet de tendance de consommation du tableau de bord de l"abonnement Keystone' 
+summary: 'Pour vous aider à contrôler l"utilisation de votre abonnement, vous pouvez afficher les données historiques de vos abonnements Keystone pour une période spécifique.' 
 ---
-= Onglet tendances de consommation
+= Affichez les tendances de consommation
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Onglet de tendance de consommation du tableau de bord de l"abonnement 
 
 
 [role="lead"]
-L'onglet *tendance de consommation* affiche les données historiques de vos abonnements Keystone pour une période spécifique.
+Pour vous aider à contrôler l'utilisation de votre abonnement, vous pouvez afficher les données historiques de vos abonnements Keystone pour une période spécifique.
 
 Les graphiques verticaux affichent les détails d'utilisation de la plage de temps sélectionnée, ainsi que les indicateurs appropriés pour vous permettre de comparer et de générer des rapports.
 

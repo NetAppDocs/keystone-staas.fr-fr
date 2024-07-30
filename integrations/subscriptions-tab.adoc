@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: integrations/subscriptions-tab.html 
 keywords: keystone-aiq, digital advisor keystone, subscriptions-tab 
-summary: Onglet abonnements du tableau de bord AIQ DA Keystone 
+summary: 'Pour en savoir plus sur vos abonnements Keystone, vous pouvez afficher la liste de tous vos abonnements dans l"onglet abonnements.' 
 ---
-= Onglet abonnements
+= Afficher les détails de vos abonnements
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Onglet abonnements du tableau de bord AIQ DA Keystone
 
 
 [role="lead"]
-Vous pouvez afficher la liste de tous vos abonnements dans l'onglet *abonnements*.
+Pour en savoir plus sur vos abonnements Keystone, vous pouvez afficher la liste de tous vos abonnements dans l'onglet *abonnements*.
 
 Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > abonnements*. Tous vos abonnements sont répertoriés.
 
