@@ -70,9 +70,9 @@ Les niveaux de service *CVO Primary* et *CVO Secondary* sont inclus pour prendre
 
 
 
-=== Fonction de zoom avant pour obtenir des informations sur les microrafales
+=== Fonction de zoom avant pour les pics à court terme
 
-L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des surtensions à court terme, appelées microrafales, dans les graphiques d'utilisation. Pour plus d'informations, voir link:../integrations/capacity-trend-tab.html["Onglet tendances de capacité"^].
+L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des pics à court terme dans les graphiques d'utilisation. Pour plus d'informations, voir link:../integrations/capacity-trend-tab.html["Onglet tendances de capacité"^].
 
 
 

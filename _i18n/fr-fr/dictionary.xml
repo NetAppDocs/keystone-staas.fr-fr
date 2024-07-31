@@ -1098,7 +1098,6 @@ Voici un exemple :</block>
   <block id="f4c8dae91522d3ec93e26aff56248527" category="list-text">Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. Sélectionnez la plage de dates de la requête. La plage de dates peut être le début du mois, la date de début de l'abonnement à la date actuelle ou la date de fin de l'abonnement. Vous ne pouvez pas sélectionner une date future.</block>
   <block id="9a1db55a20b384661303cf6789a6fed8" category="list-text">Cliquez sur *Afficher les détails*. Les données historiques de consommation de l'abonnement pour chaque niveau de service s'affichent en fonction de la plage horaire sélectionnée.</block>
   <block id="5c0d50dc2c715b658984931c688519eb" category="paragraph">Les graphiques à barres affichent le nom du niveau de service et la capacité consommée par rapport à ce niveau de service pour la plage de dates. La date et l'heure de la collection sont affichées en bas du graphique. En fonction de la plage de dates de votre requête, les graphiques d'utilisation sont affichés dans une plage de 30 points de collecte de données. Vous pouvez placer le curseur de la souris sur les graphiques pour afficher la répartition de l'utilisation en termes de données validées, consommées, en rafale et au-dessus de la limite de rafale à ce point de collecte de données.</block>
-  <block id="85c7c9dc88496ccb44926915d526201d" category="inline-image-macro">Onglet Capacity Trend avec détails</block>
   <block id="f8eaf321d70fdf3e9d097bb407d56130" category="paragraph">Les couleurs suivantes dans les graphiques à barres indiquent la capacité consommée comme défini dans le niveau de service. Les données mensuelles dans les graphiques sont séparées par une ligne verticale.</block>
   <block id="952c204f277570032cf6454e003c63da" category="inline-image-macro">graphiques d'utilisation des ressources supplémentaires cumulées</block>
   <block id="36234decc68306d26e71012f98474aa1" category="paragraph">Cette fonctionnalité est disponible en mode d'aperçu uniquement. Contactez votre KSM pour en savoir plus sur cette fonctionnalité.</block>
@@ -1402,8 +1401,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="09202d1f550debc90536918fe48073d2" category="section-title">Ajout de niveaux de service</block>
   <block id="698a24cda3201383036fa310a4f6dcdc" category="paragraph">Les niveaux de service *CVO Primary* et *CVO Secondary* sont inclus pour prendre en charge Cloud Volumes ONTAP pour les abonnements avec des plans tarifaires sans capacité allouée ou ceux configurés avec un cluster métropolitain.</block>
   <block id="b4a4e7fcb0047788c24de350740273e2" category="list-text">Vous pouvez afficher le graphique d'utilisation de la capacité pour ces niveaux de service à partir de l'ancien tableau de bord du widget *Keystone Subscriptions* et de l'onglet *Capacity Trend*, ainsi que des informations détaillées sur l'utilisation à partir de l'onglet *Current usage*.</block>
-  <block id="997bfb6646529389b763e6cabd21c37a" category="section-title">Fonction de zoom avant pour obtenir des informations sur les microrafales</block>
-  <block id="c93882722f26936f556f483ae7c22259" category="paragraph">L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des surtensions à court terme, appelées microrafales, dans les graphiques d'utilisation. Pour plus d'informations, voir <block ref="45b36c44a7c4fb4ef2168b619f60755c" category="inline-link-macro-rx"></block>.</block>
   <block id="6c48d999111838f1ba95a5cf4091e681" category="section-title">Affichage amélioré des abonnements</block>
   <block id="f5bd7be5a51d8e07eec34f2c9ddb662a" category="section-title">Affichage amélioré de la rafale accumulée</block>
   <block id="f42805586acc16ac661193d0d72e676a" category="paragraph">L'info-bulle qui apparaît lorsque vous passez le curseur sur le graphique à barres d'utilisation de la capacité dans l'onglet *Capacity Trend* affiche désormais le type de rafale accumulée en fonction de la capacité allouée. Il établit une distinction entre les rafales cumulées provisoires et facturées, indiquant *la consommation cumulée provisoire* et *la consommation cumulée facturée* pour les abonnements avec des plans à taux de capacité engagée zéro, et *la capacité cumulée provisoire* et *la capacité cumulée facturée* pour ceux dont la capacité allouée n'est pas égale à zéro.</block>
@@ -1411,7 +1408,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="b45b03a249b5f6cfa9e1cc559ba79e40" category="section-title">13 février 2024</block>
   <block id="b06c73c3805ce52954e13f27b28cb072" category="section-title">11 janvier 2024</block>
   <block id="6171bdf5841e2bfa70f97036e02d1f44" category="section-title">15 décembre 2023</block>
-  <block id="c3d408e303aadca10fcde3732cec0448" category="paragraph">Vous pouvez afficher les surtensions à court terme dans les graphiques d'utilisation, appelés microrafales, à l'aide de la fonction de zoom avant. Lorsqu'une microrafale est présente, elle est indiquée par un point bleu sur la barre correspondante ou directement sur l'axe X si aucune donnée n'est consommée. Pour afficher les détails, cliquez sur la barre ou sur l'axe des x où apparaît le point bleu et maintenez-le enfoncé, puis faites glisser le curseur sur la carte pour sélectionner l'intervalle de temps souhaité, puis relâchez pour confirmer votre sélection. Cette action effectue un zoom sur les données, fournissant une vue détaillée de la capacité utilisée à ce niveau de service pour l'intervalle sélectionné. Vous pouvez effectuer un zoom avant pour afficher les détails jusqu'à un intervalle de 2 minutes. Vous pouvez cliquer sur le bouton *Réinitialiser le zoom* pour revenir à la vue de carte d'origine.</block>
   <block id="8a19ac37aa90f4bbe7f16a2f7767bbcd" category="list-text">*Privacy by design*-Keystone Collector collecte des données minimales pour effectuer des mesures d'utilisation et une surveillance des performances. Pour plus d'informations, voir <block ref="d45e4cc5f7d31c567a5a7e94087cf357" category="inline-link-macro-rx"></block>. Le <block ref="056e2bf20fc58bf3ad9e840fe1ebc39f" category="inline-link-macro-rx"></block> l'option est activée par défaut, qui masque et protège les informations sensibles.</block>
   <block id="252857c59cbe54ddba7bda3d2d19b7a3" category="list-text">*Accès avec le moindre privilège*-Keystone Collector requiert des autorisations minimales pour surveiller les systèmes de stockage, ce qui minimise les risques de sécurité et empêche toute modification involontaire des données. Cette approche s'aligne sur le principe du privilège minimum et améliore la sécurité globale des environnements surveillés.</block>
   <block id="8f14f42f9cacaaf485cd3e478fca2ae7" category="list-text">*Cadre de développement logiciel sécurisé*- Keystone utilise un framework de développement logiciel sécurisé tout au long du cycle de développement, qui limite les risques, réduit les vulnérabilités et protège le système contre les menaces potentielles.</block>
@@ -1518,7 +1514,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="479449c6cb6b88b7c379b1672435686c" category="admonition">Le port par défaut de MySQL, 3306, est limité à localhost uniquement lors d'une nouvelle installation d'Unified Manager, ce qui empêche la collecte des mesures de performances pour Keystone Collector. Pour plus d'informations, voir <block ref="997798a1af398517058dc0d935faaa2c" category="inline-link-macro-rx"></block>.</block>
   <block id="1b1d9e9b28e55ae75dd476a860b48088" category="inline-link-macro">Options de menu supplémentaires</block>
   <block id="915546b63309e4afc31cc6f77934d3f4" category="admonition">Le port par défaut pour MySQL, 3306, est limité à localhost uniquement lors d'une nouvelle installation d'Unified Manager, qui empêche la collecte des données de performances pour Keystone ONTAP. Cette configuration peut être modifiée et la connexion peut être mise à disposition d'autres hôtes à l'aide de l'<block ref="dd441ca9450a58c2c7b09ab86e8f7a28" prefix=" " category="inline-code"></block> option de la console de maintenance d'Unified Manager. Pour plus d'informations, voir <block ref="df7524dc87f6643f2fa76eb53a86ec87" category="inline-link-macro-rx"></block>.</block>
-  <block id="f693bd6f9d65926fbf70950854618f50" category="paragraph"><block ref="f693bd6f9d65926fbf70950854618f50" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82417085e656251b41cd76814fd5b48a" category="paragraph"><block ref="82417085e656251b41cd76814fd5b48a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4927a3debc365e92273fa3de8985ec2" category="paragraph"><block ref="f4927a3debc365e92273fa3de8985ec2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3173b2ec37a82d2973529cd167d6287e" category="summary">Utilisez le service complémentaire de protection avancée des données pour assurer une protection efficace des données des workloads stratégiques.</block>
@@ -1639,4 +1634,140 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="d339106c5234c4fffed6b25356ff263d" category="sidebar">Contrôle et mise à niveau</block>
   <block id="7b373ff6530e34788cfaf1ee2a5d46b5" category="sidebar">Surveillez l'état du collecteur Keystone</block>
   <block id="be373fb58d77d15be6b1ad3433c36936" category="sidebar">Qualité de service du stockage</block>
+  <block id="22b84f9f97a424698d7726d02f067c07" category="summary">disponibilité, sla, contrat de niveau de service</block>
+  <block id="b809b21522a310a2526e263d79f9259a" category="doc">SLA de disponibilité</block>
+  <block id="a383f57fb1f133e23d708fa682c4de38" category="paragraph">Le SLA de disponibilité cible une disponibilité de 99.999 % au cours d'une période de facturation pour toutes les baies de stockage Flash NetApp ONTAP déployées pour délivrer la commande Keystone.</block>
+  <block id="f32c3edaacea72c0ddb30ecf0135c4de" category="section-title">Métriques</block>
+  <block id="e67906640477f8681e506869bc6e612e" category="list-text">*Pourcentage mensuel de disponibilité* = [(nombre de secondes admissibles par mois - moyenne du nombre de secondes d'indisponibilité pour toutes les baies de stockage AFF déployées pour passer la commande Keystone au cours du mois en question) / nombre de secondes admissibles par mois] x 100 %</block>
+  <block id="53ca36728241336dcf15ee413e4d7946" category="list-text">*Temps d'arrêt* : période pendant laquelle les deux contrôleurs d'une paire au sein d'une baie de stockage ne sont pas disponibles, telle que déterminée par NetApp.</block>
+  <block id="e3af360bffb0ac501e3dff5765197e4e" category="list-text">*Nombre admissible de secondes* : ce sont des secondes dans un mois qui comptent pour le calcul de la disponibilité. Il n'inclut pas la période pendant laquelle les services STaaS ne sont pas disponibles en raison d'une maintenance planifiée, de mises à niveau et des activités de support convenues avec NetApp, ou en raison de circonstances indépendantes de la volonté ou de la responsabilité des services NetApp ou Keystone.</block>
+  <block id="b8cbf0764e5d7f6f10308786d0f252b5" category="paragraph">Tous les niveaux de service pris en charge par les baies de stockage Flash ONTAP sont éligibles pour les SLA de disponibilité. Pour en savoir plus, reportez-vous <block ref="5ac7feee2bb1965f2cc5b973896ee439" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="3b916544092c6bba180097d47f80505f" category="section-title">Crédits de service</block>
+  <block id="563fcbc0524e38c0a55e5aece4d67824" category="paragraph">Si la disponibilité des baies de stockage Flash ONTAP pour les abonnements éligibles est inférieure à l'objectif de disponibilité mensuelle de 99.999 % au cours d'une période de facturation, NetApp émet des crédits de service comme suit :</block>
+  <block id="e92fc6300f495b762ab94da55380457b" category="cell">*Temps de disponibilité mensuel (inférieur à)*</block>
+  <block id="5178c68cc936db933ad4703eeb49414c" category="cell">*Crédit de service*</block>
+  <block id="4976c7cf214ee731a167dd46c1579825" category="paragraph">99.999%</block>
+  <block id="159a57128f3918d387e13cc8a5a7f2f2" category="paragraph">5%</block>
+  <block id="19fb9916968211db983d13bffe0cc6af" category="paragraph">99.99%</block>
+  <block id="bb1a5a2b7eec4f940f8e78abe48d68bf" category="paragraph">10%</block>
+  <block id="ebb51b0b7e8f1fcf89ef483709bd61c6" category="paragraph">99.9%</block>
+  <block id="ae0ce64fc49cd0aa826b50099f869922" category="paragraph">25%</block>
+  <block id="35a2d0b107eb0fd223479b0ab02ffd0d" category="paragraph">99.0%</block>
+  <block id="2496af30b64c3a4ff21e8505ea439a73" category="paragraph">50%</block>
+  <block id="f086e6ea351565075aec266b27d7808a" category="section-title">Calcul du crédit de service</block>
+  <block id="b71fb0239a9f9bd482967a91eeab0936" category="paragraph">Les crédits de service sont déterminés selon la formule suivante :</block>
+  <block id="25c407ad6633f6e284ed84bee3a409db" category="paragraph">Crédits de service = (capacité impactée / capacité totale allouée) X frais de capacité X pourcentage de crédit</block>
+  <block id="4cd361459ea2bb087ed6c989579796c7" category="paragraph">Où ?</block>
+  <block id="b40f8895b827f227835eb3bc2f25b9e6" category="list-text">*Capacité impactée* : la quantité de capacité stockée affectée.</block>
+  <block id="7dbf58090874a3542e3d87aa654d8cad" category="list-text">*Capacité totale allouée* : capacité allouée du niveau de service pour la commande Keystone.</block>
+  <block id="3d1f89c9f1a96ed5b2b2badbb5aa02dc" category="list-text">*Frais de capacité*: Les frais pour le niveau de service affecté pour le mois.</block>
+  <block id="44582b33017b5fbb933f27e3c80d845a" category="list-text">*Pourcentage de crédit* : pourcentage prédéterminé pour le crédit de service.</block>
+  <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">*Exemple*</block>
+  <block id="1bddd707a0359d778b1d813a90c93052" category="paragraph">L'exemple suivant illustre la méthode de calcul des crédits de service :</block>
+  <block id="8675aaab182cd1ede22d88336898c1ea" category="list-text">Calculer le temps de disponibilité mensuel pour déterminer le pourcentage de crédit de service :</block>
+  <block id="fefccd3601226bfde489bb3cb07d859b" category="list-text">Secondes admissibles dans un mois de 30 jours : 30 (jours) X 24 (heures/jour) X 60 (minutes/heure) X 60 (secondes/minute) = 2,592,000 secondes</block>
+  <block id="df212c5e5de67c296152f5d72add0126" category="list-text">Temps d'indisponibilité : 95 secondes</block>
+  <block id="b40d5e2f3db898060ede6a53207406c4" category="paragraph">En utilisant la formule : pourcentage de disponibilité mensuelle = [(2,592,000 - 95)/(2,592,000)] X 100</block>
+  <block id="d5a0ad93e7cae0cea5d2164c32e6c7bb" category="paragraph">Selon le calcul, le temps de fonctionnement mensuel sera de 99.996 % et le pourcentage de crédit de service sera de 5 %.</block>
+  <block id="b63c272bec6c081cf8f64799562fc87e" category="list-text">Calculer les crédits de service :</block>
+  <block id="57083671d3a4c5d078576f2774acaae3" category="cell">*Capacité impactée*</block>
+  <block id="6319b3ae1be9dc9c6905e608cb789a7a" category="cell">*Capacité totale engagée*</block>
+  <block id="159b517c08e421584e24e48d485c1ccc" category="cell">*Frais de capacité*</block>
+  <block id="4446d2e739a007870c02f013ca45ebde" category="cell">*Pourcentage de crédit*</block>
+  <block id="b76181e0697998338d4a37bf656675c7" category="cell">10 Tib pendant 95 secondes</block>
+  <block id="6855eef8daff30988247789b63790191" category="cell">100 Tib</block>
+  <block id="6ff79498e54770f62cf549ca824c38fc" category="cell">1000 $</block>
+  <block id="9eae698db2f9979943823c8ee1440c7d" category="paragraph">En utilisant la formule: Crédits de service = ( 10 / 100 ) X 1000 x 0.05</block>
+  <block id="df3634b399ce52d35f1816fa036f42b4" category="paragraph">Selon le calcul, les crédits de service seront de 5 $.</block>
+  <block id="182bf07a2845568515ca20b4e4654296" category="section-title">Demande de crédit de service</block>
+  <block id="d914d7b4a96bed82ab1c41c97e6c5742" category="paragraph">En cas de non-respect du SLA, ouvrez un ticket de support de priorité 3 (P3) avec le Centre de services et de support global Keystone (GSSC).</block>
+  <block id="6d3089ef2f50007a659aa12b3a7415f8" category="list-text">Les informations suivantes sont requises :</block>
+  <block id="e3e23368bff57e5796042f5fba6c3fbd" category="list-text">Numéro d'abonnement Keystone</block>
+  <block id="5e27e36d07d4a7286d88cd834cfbd611" category="list-text">Détails des volumes et du contrôleur de stockage</block>
+  <block id="3b6a4c4dee52c0519690b8a93c60159e" category="list-text">Site, heure, date et description du problème</block>
+  <block id="de0480c0f5c929948100ece899e9724e" category="list-text">Durée calculée de la détection de latence</block>
+  <block id="f657fc20931370f67393f5612ec70ffe" category="list-text">Outils et méthodes de mesure</block>
+  <block id="2ecd994c3d59e0ce0211ab40d4167837" category="list-text">Tout autre document applicable</block>
+  <block id="dc33a5089714f6579a5ab21118922cef" category="list-text">Fournissez les détails dans la feuille Excel comme indiqué ci-dessous pour un ticket P3 ouvert avec Keystone GSSC.</block>
+  <block id="892db0165f2238f40c3370386d79cac7" category="inline-image-macro">modèle de feuille excel</block>
+  <block id="f0fbc9cddebee973debd106e878bebdd" category="paragraph"><block ref="f0fbc9cddebee973debd106e878bebdd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb0abc09e7b5678911ee2656102c8868" category="list-text">Une demande de crédit de service doit être lancée dans les six semaines qui suivent la validation d'une violation par le GSSC. Tous les crédits de service doivent être validés et approuvés par NetApp.</block>
+  <block id="45a3835755fcd6b1bf728c884bcc8d34" category="list-text">Les crédits de service peuvent être appliqués à une future facture. Les crédits de service ne s'appliquent pas aux abonnements Keystone expirés. Pour en savoir plus, reportez-vous <block ref="3dc9ad4ab1c3dcaa061c2b4df6782877" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="1d864ae11e362329da4731cbf31eca7b" category="summary">durabilité, sla, accord de niveau de service</block>
+  <block id="4bcbaed6ba1519c1f0036c82537ffc1f" category="doc">SLA de performance</block>
+  <block id="8c9a4601149bbf6f607b6419227dc5e3" category="paragraph">NetApp Keystone propose un SLA basé sur la latence par niveau de service, comme décrit dans l'ordre Keystone, pour la capacité consommée jusqu'à la limite de capacité supplémentaire, selon les conditions générales suivantes.</block>
+  <block id="23f04236d1f84e52d087f768059adbbe" category="list-text">*Performances dégradées* : temps, en minutes, par incident, pendant lequel la cible de latence de 90^th^ percentile n'est pas atteinte.</block>
+  <block id="3fe43b4ffa54563c104bbdf1eeea2b59" category="list-text">La latence * de *90^th^ percentile est mesurée par volume, par niveau de performance, pour tous les volumes d'une commande Keystone. La latence est échantillonnée toutes les cinq minutes et la valeur de 90^e^ percentile calculée sur une période de 24 heures est utilisée comme mesure quotidienne, en tenant compte des points suivants :</block>
+  <block id="35254eb51c71659b3cf343855354b8b1" category="list-text">Les volumes qui enregistrent au moins cinq IOPS au moment de la collecte des metrics sont pris en compte pour un échantillon.</block>
+  <block id="0e0e9d5bae73de26860af74cb8fc6ac2" category="list-text">Les volumes dont les opérations d'écriture sont supérieures à 30 % au moment de la collecte des metrics sont exclus de l'échantillon.</block>
+  <block id="ab4c900b0e1430edc1bd09939be8859a" category="list-text">La latence ajoutée par AQoS pour les IOPS/Tio demandées qui est supérieure aux IOPS/Tio cible est exclue de l'échantillon.</block>
+  <block id="565d8433df6c6c23be6de8fd7871abae" category="list-text">La latence ajoutée par AQoS pour maintenir un nombre minimal d'IOPS par volume est exclue de l'échantillon.</block>
+  <block id="f901dbc53f8dea2d74e68635ec84a298" category="list-text">Pour les volumes sur lesquels FabricPool est activé, la latence due au transfert des données vers et depuis le stockage cible (à froid) n'est pas comptabilisée.</block>
+  <block id="23ca5c8d56457bbd625ff236b3c706ef" category="list-text">La latence causée par l'application, l'hôte ou le réseau du client en dehors du cluster ONTAP n'est pas comptabilisée.</block>
+  <block id="57d56dc842f4da79392d5bc2178582dc" category="list-text">Lors de l'utilisation du service complémentaire de protection avancée des données, la latence cible inclut uniquement les opérations d'E/S vers et depuis la baie de stockage locale.</block>
+  <block id="efbd8d78a7008161e0e4f42c63d84ad6" category="list-text">Au cours d'une période de 24 heures, au moins dix mesures valides doivent être disponibles. Si ce n'est pas le cas, les mesures seront ignorées.</block>
+  <block id="5b8e1d393a8c6bf1b5c0be8eb268aba3" category="list-text">Si une règle AQoS valide n'est pas appliquée sur un ou plusieurs volumes d'une baie de stockage, le nombre d'IOPS disponibles pour les autres volumes peut être affecté et NetApp ne sera pas responsable du ciblage ou de la satisfaction des niveaux de performance de cette baie de stockage.</block>
+  <block id="d8ace9c4f3c105767c7ec01ce669eca3" category="list-text">Dans les configurations FabricPool, les niveaux de performance s'appliquent lorsque tous les blocs de données demandés sont sur le stockage source FabricPool (actif) et que le stockage source n'est pas dans une relation synchrone SnapMirror.</block>
+  <block id="711c8ebd035f0ec5d70c9afa8d3996ba" category="paragraph">Tous les niveaux de service pris en charge par les baies de stockage Flash ONTAP sont éligibles au SLA de performance et à une garantie répondant à la latence cible suivante :</block>
+  <block id="ce8f4bd254d7fa591c64caccc3aa3eeb" category="cell">&lt; 1 ms.</block>
+  <block id="101d21e523f12f01303be5acdf4141d9" category="cell">&lt; 2 ms.</block>
+  <block id="65e7d97f5e59814284d01d2b0cd62581" category="cell">&lt; 4 ms.</block>
+  <block id="898c79ff0b480671f7fa964d846a9316" category="paragraph">Pour en savoir plus sur les exigences de latence des niveaux de service, reportez-vous à <block ref="7ea66a5a0ec24dd88c60fc26a094a732" category="inline-link-macro-rx"></block>la section .</block>
+  <block id="4528f5e882cc88c8842dcf9b1ac1b1bc" category="paragraph">NetApp émet des crédits de service pour la dégradation des performances :</block>
+  <block id="72c2dabc519f204563247ef9d2fd1c7a" category="cell">*Seuil de performance*</block>
+  <block id="133c2090971805c26a4b7780a43a4e1f" category="paragraph">90^th^ percentile de latence &gt; latence cible</block>
+  <block id="1ec8365151cced34dc67c0dcce455e5e" category="cell">3 % pour chaque jour civil de l'événement</block>
+  <block id="68bff7f600a4d4bddae207bf52b8dbdb" category="paragraph">Crédits de service = (capacité impactée / capacité totale allouée) X frais de capacité X jours affectés X pourcentage de crédit</block>
+  <block id="518fb0e9794f4b9e14b0dc061ac61fda" category="list-text">*Frais de capacité*: Les frais pour le niveau de rendement affecté selon la commande Keystone.</block>
+  <block id="9bd7cf79d77a54ab7c62e80f778e9d2a" category="list-text">*Jours touchés*: Le nombre de jours civils touchés.</block>
+  <block id="b452a2e7bf15034c9bd63c001b3e6e64" category="cell">*Jours calendaires touchés*</block>
+  <block id="a22d50cab82690cbdc8113c3ff9c2076" category="cell">10 Tib</block>
+  <block id="58f24a17f570c7949880710fdf616d32" category="cell">50 Tib</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
+  <block id="dcfe0b3ef8eb8156a5e83949c2e2f7b6" category="cell">3%</block>
+  <block id="b9ad6821bc2a0e4300b5b91ca5245476" category="paragraph">En utilisant la formule: Crédits de service = ( 10 / 50 ) X 1000 x 2 x 0.03</block>
+  <block id="732192040cca36723308ae6b02982093" category="paragraph">Selon le calcul, les crédits de service seront de 12 $.</block>
+  <block id="fed70707a2e768c22f4b0fc06a401786" category="summary">En cas d'attaque par ransomware, NetApp garantit la restauration des données Snapshot à partir des volumes SnapLock Compliance avec le programme de garantie de restauration anti-ransomware</block>
+  <block id="30a37a729e8d5bdf11c9e3c6965f6872" category="doc">Garantie de restauration contre les ransomwares</block>
+  <block id="c314df61fd93029a87d16eb15b842e7d" category="paragraph">En cas d'attaque par ransomware, NetApp garantit la restauration des données Snapshot à partir des volumes SnapLock Compliance avec le programme de garantie de restauration anti-ransomware. Le service d'assurance de restauration NetApp anti-ransomware est requis pour prendre en charge le programme de garantie de restauration anti-ransomware et doit être acheté séparément de la commande Keystone associée.</block>
+  <block id="99b0e05699c63fe883231037a5d59d8c" category="paragraph">Un service d'assurance de restauration par ransomware est requis pour tout le matériel prenant en charge l'abonnement Keystone pendant la durée de l'abonnement applicable.</block>
+  <block id="28a098f372ec3073fc5e647934157274" category="paragraph">Si SnapLock Compliance est déployé conformément aux bonnes pratiques, et que les services professionnels de NetApp le configurent ou le valident à l'achat du service d'assurance de restauration contre les ransomwares, NetApp émet des crédits de service si les données protégées par SnapLock ne sont pas récupérables. Les critères de ces crédits sont les suivants :</block>
+  <block id="7624fb3c672dd8786b7b17fae31c1f0c" category="list-text">Les crédits de service peuvent être appliqués aux factures futures. Les crédits sont plafonnés à 10 % de la valeur du contrat engagé (CCV) et sont payés sur la base d'un abonnement.</block>
+  <block id="edb32d0cffb273251a459f28452610a9" category="list-text">Les crédits sont fournis pendant la période d'abonnement actif de la commande Keystone concernée.</block>
+  <block id="a5c0e3b5e544c9e98cfff04374762f87" category="list-text">Pour les abonnements avec facturation mensuelle, les crédits seront répartis sur les 12 prochains mois et peuvent être utilisés pour toutes les factures Keystone jusqu'à la fin de la période d'abonnement. Si l'abonnement prend fin dans moins de 12 mois, vous pouvez le renouveler pour continuer à utiliser les crédits. Vous pouvez également appliquer les crédits aux autres factures NetApp.</block>
+  <block id="accb4d9ec21427fc3d795090c44c8639" category="list-text">Pour les abonnements annuels, les crédits seront appliqués à la prochaine facture Keystone, si disponible. S'il n'y a pas de factures Keystone à venir, les crédits peuvent être appliqués aux autres factures NetApp.</block>
+  <block id="c45f003136d304ebcf90c3d9ef36e2a5" category="doc">SLA de durabilité</block>
+  <block id="8098263ee670c19264303ffd6cc934c8" category="paragraph">NetApp Keystone mesure avec garantie le nombre maximal de watts par tébioctet (W/Tio) pour les services de stockage basés sur les baies de stockage Flash ONTAP dans le cadre des SLA de durabilité. Les SLA de durabilité définissent la consommation maximale de W/Tio pour chaque niveau de service éligible, aidant les entreprises à atteindre leurs objectifs de durabilité.</block>
+  <block id="864c642a56d20e6430164211b9f12588" category="list-text">*Watts* : consommation électrique signalée par le AutoSupport quotidien, y compris l'utilisation par le contrôleur et les tiroirs disques connectés.</block>
+  <block id="fbce2f0375e75ac94f7d2ed62924d9bc" category="list-text">*Tebibyte*: Le maximum de:</block>
+  <block id="4d3ea8c46694851a5676d28d94c2044b" category="list-text">la capacité allouée + la capacité supplémentaire allouée pour le niveau de service, ou</block>
+  <block id="359b2a968ad487e93ac13bd70001517c" category="list-text">la capacité effective déployée, en supposant un facteur d'efficacité du stockage de<block ref="6af2d30e671ebc9deaa134b9f0a1e248" prefix=" " category="inline-code"></block>.</block>
+  <block id="7c6137cde05014e7fab83f78a553dffa" category="inline-link">Analysez les économies de capacité et d'efficacité du stockage</block>
+  <block id="f113a645920e8735b32ceb02f13e8f0e" category="paragraph">Pour en savoir plus sur le ratio d'efficacité du stockage, consultez<block ref="0b320c60938d31987498bfd27213b133" category="inline-link-rx"></block>.</block>
+  <block id="7cb67ea6d99999bbcfd14f6aaa5c5f1c" category="paragraph">Les SLA de durabilité reposent sur les critères de consommation suivants :</block>
+  <block id="d2cd9e2adbaf4876955be264272e3e87" category="cell">*Critères SLA*</block>
+  <block id="1319573781151fa1f86a29da308f602f" category="cell">*Capacité minimale engagée*</block>
+  <block id="b86f7ac7010a768aee36fc0e592eceed" category="cell">*Plate-forme*</block>
+  <block id="3c541a9c0b82dd48b86975ee394b3ee3" category="cell">&lt;=8 W/Tio</block>
+  <block id="7d2e99b7f21ff40f996fbbab5c1d6feb" category="cell">200 Tio</block>
+  <block id="72c62eae5362784360f3e531446bec41" category="cell">AFF A800 et AFF A900</block>
+  <block id="3291342846d33d69a17f1d4cdac855f0" category="cell">&lt;=4 W/Tio</block>
+  <block id="4dd4655034851cefb46869bef690cc22" category="cell">300 Tio</block>
+  <block id="0d671512d24f669e4da894030bfdf975" category="paragraph">Pour en savoir plus, reportez-vous <block ref="5ac7feee2bb1965f2cc5b973896ee439" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="27bddf685047b887365f1db06595c078" category="paragraph">Si la consommation en Tio pendant une période de facturation ne répond pas aux critères du SLA, NetApp émet les crédits de service comme suit :</block>
+  <block id="ecbb890e24d251759ba476b9c893862e" category="cell">Jours SLA manqués dans la période de facturation</block>
+  <block id="499023bc51a126935827ef29f6bd520b" category="cell">Crédit de service</block>
+  <block id="5aebd95c292f266eb59b8073d99a7699" category="paragraph">1 à 2</block>
+  <block id="1190761e382695cb9416b27ee7eed4d3" category="paragraph">3 à 7</block>
+  <block id="f5c2de6939fdeaa3904b08a1fad7a2d3" category="paragraph">15%</block>
+  <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14</block>
+  <block id="87b656ee6c82131afa7ac0871d8168e8" category="paragraph">En cas de non-respect du SLA, ouvrez un ticket de support de priorité 3 (P3) avec le Centre de services et de support Keystone Global Services (GSSC) et fournissez les détails demandés dans la feuille Excel, comme illustré ci-dessous :</block>
+  <block id="b16f882170095725eb371909f87f469f" category="paragraph">Les graphiques à barres affichent des rafales à court terme et vous pouvez afficher ces rafales à l'aide de la fonction de zoom avant. Lorsqu'une rafale à court terme est présente, elle est indiquée par un point bleu sur la barre correspondante ou directement sur l'axe X si aucune donnée n'est consommée. Pour afficher les détails, cliquez sur la barre ou sur l'axe des x où apparaît le point bleu et maintenez-le enfoncé, puis faites glisser le curseur sur la carte pour sélectionner l'intervalle de temps souhaité, puis relâchez pour confirmer votre sélection. Cette action effectue un zoom sur les données, offrant ainsi une vue plus granulaire de la capacité utilisée à ce niveau de service pour l'intervalle sélectionné. Vous pouvez cliquer sur le bouton *Réinitialiser le zoom* pour revenir à la vue de carte d'origine.</block>
+  <block id="78a0f8f91a436c9b95253697658f1b15" category="inline-image-macro">Onglet tendance de consommation avec détails</block>
+  <block id="0dd96295669c1478814661e7ab071d6e" category="paragraph"><block ref="0dd96295669c1478814661e7ab071d6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a7d38300f41bba6c7ac41d2b9c6de4c3" category="section-title">Fonction de zoom avant pour les pics à court terme</block>
+  <block id="adc169249aa5bb5c38a27b4a1c617bcd" category="paragraph">L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des pics à court terme dans les graphiques d'utilisation. Pour plus d'informations, voir <block ref="45b36c44a7c4fb4ef2168b619f60755c" category="inline-link-macro-rx"></block>.</block>
+  <block id="9cda68e54ae42ad7708b87ba7d09426f" category="sidebar">SLA de STaaS Keystone</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="sidebar">Disponibilité</block>
+  <block id="19bea5bec76c66ef8bd189aa23a4c860" category="sidebar">Durabilité</block>
 </blocks>
