@@ -17,6 +17,9 @@ summary: disponibilité, sla, contrat de niveau de service
 Le SLA de disponibilité cible une disponibilité de 99.999 % au cours d'une période de facturation pour toutes les baies de stockage Flash NetApp ONTAP déployées pour délivrer la commande Keystone.
 
 
+NOTE: Les SLA et garanties sont disponibles sur la base d'une nomination.
+
+
 
 == Métriques
 

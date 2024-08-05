@@ -17,6 +17,9 @@ summary: durabilité, sla, accord de niveau de service
 NetApp Keystone propose un SLA basé sur la latence par niveau de service, comme décrit dans l'ordre Keystone, pour la capacité consommée jusqu'à la limite de capacité supplémentaire, selon les conditions générales suivantes.
 
 
+NOTE: Les SLA et garanties sont disponibles sur la base d'une nomination.
+
+
 
 == Métriques
 

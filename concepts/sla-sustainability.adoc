@@ -17,6 +17,9 @@ summary: durabilité, sla, accord de niveau de service
 NetApp Keystone mesure avec garantie le nombre maximal de watts par tébioctet (W/Tio) pour les services de stockage basés sur les baies de stockage Flash ONTAP dans le cadre des SLA de durabilité. Les SLA de durabilité définissent la consommation maximale de W/Tio pour chaque niveau de service éligible, aidant les entreprises à atteindre leurs objectifs de durabilité.
 
 
+NOTE: Les SLA et garanties sont disponibles sur la base d'une nomination.
+
+
 
 == Métriques
 

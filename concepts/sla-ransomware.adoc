@@ -17,6 +17,9 @@ summary: 'En cas d"attaque par ransomware, NetApp garantit la restauration des d
 En cas d'attaque par ransomware, NetApp garantit la restauration des données Snapshot à partir des volumes SnapLock Compliance avec le programme de garantie de restauration anti-ransomware. Le service d'assurance de restauration NetApp anti-ransomware est requis pour prendre en charge le programme de garantie de restauration anti-ransomware et doit être acheté séparément de la commande Keystone associée.
 
 
+NOTE: Les SLA et garanties sont disponibles sur la base d'une nomination.
+
+
 
 == Niveaux de services
 
