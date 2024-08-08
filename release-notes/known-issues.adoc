@@ -16,18 +16,4 @@ summary: 'Les problèmes connus identifient les problèmes susceptibles de vous 
 [role="lead"]
 Les problèmes connus identifient les problèmes susceptibles de vous empêcher d'utiliser efficacement les services d'abonnement Keystone.
 
-Le problème connu suivant est signalé :
-
-[cols="3*"]
-|===
-| Problème connu | Description | Solution de contournement 
-
-
- a| 
-L'interface TUI de gestion du collecteur Keystone ne répond plus lors de la configuration des règles AQoS.
- a| 
-Lors de la tentative de création de stratégies AQoS via l'interface TUI, l'interface utilisateur peut rencontrer un problème et cesser de répondre.
- a| 
-Contactez le support NetApp.
-
-|===
+Il n'y a pas de problème connu pour le moment.

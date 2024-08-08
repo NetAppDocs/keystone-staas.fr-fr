@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+L'interface TUI de gestion du collecteur Keystone ne répond plus lors de la configuration des règles AQoS.
+ a| 
+Fixe
+ a| 
+7 août 2024
+
+
+
+ a| 
 Les graphiques d'utilisation affichent les données au-delà de la période d'une journée spécifiée lorsque la date correspondant au jour en cours est sélectionnée comme date de début et de fin pour le mois précédent à partir de l'option *Capacity Trend* de l'onglet *Capacity Trends*.
  a| 
 Les graphiques d'utilisation affichent désormais correctement les données pour la période d'une journée spécifiée.
