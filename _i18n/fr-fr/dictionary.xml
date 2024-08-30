@@ -550,7 +550,6 @@
   <block id="c52919f8e1a989864d933795a6103494" category="paragraph">Mises à jour logicielles Keystone Collector et rapports d'utilisation</block>
   <block id="0dc1066c9360d7e2bbaf4bb6e9c5ebe1" category="paragraph">Siège de NetApp, pour la facturation et la livraison AutoSupport</block>
   <block id="2f0d22e6971fda1cbc3411961fec8360" category="doc">Besoins de l'infrastructure virtuelle</block>
-  <block id="080838bb01c5d3b3c97a54a92d98023d" category="list-text">Système d'exploitation : serveur VMware vCenter et ESXi 6.5 ou version ultérieure</block>
   <block id="a1c9c4a1979d4de63c959aa0eb8db228" category="doc">Déployez Keystone Collector sur des systèmes VMware vSphere</block>
   <block id="5636c5e292ad15c979ccdf35d4ddd63f" category="paragraph">Le déploiement de Keystone Collector sur des systèmes VMware vSphere inclut le téléchargement du modèle OVA, le déploiement du modèle à l'aide de l'assistant *Deploy OVF Template*, la vérification de l'intégrité des certificats et la vérification de l'état de préparation de la machine virtuelle.</block>
   <block id="9f42f344107d0334c53b7214197ab946" category="section-title">Déploiement du modèle OVA</block>
@@ -1794,4 +1793,5 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI pour afficher le message d'erreur pour la création de la stratégie</block>
   <block id="224dfc2fadc284cf45249b5ddb7bc7cd" category="admonition">Si un PSL pour le niveau de service sélectionné existe déjà sur le serveur Active IQ Unified Manager spécifié, vous ne pouvez pas le recréer. Si vous essayez de le faire, vous recevrez un message d'erreur. <block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">Système d'exploitation : serveur VMware vCenter et ESXi 6.7 ou version ultérieure</block>
 </blocks>
