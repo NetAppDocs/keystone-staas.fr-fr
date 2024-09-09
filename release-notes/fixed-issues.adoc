@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Le champ *de la date* pour sélectionner la plage de dates affiche une date future par défaut lorsque vous accédez à l'onglet *tendance de consommation*.
+ a| 
+Fixe
+ a| 
+4 septembre 2024
+
+
+
+ a| 
 L'interface TUI de gestion du collecteur Keystone ne répond plus lors de la configuration des règles AQoS.
  a| 
 Fixe
