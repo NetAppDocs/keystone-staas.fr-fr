@@ -1796,4 +1796,135 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">Système d'exploitation : serveur VMware vCenter et ESXi 6.7 ou version ultérieure</block>
   <block id="f7e13857abd03bc318b89fe886669d7d" category="paragraph">Le champ *de la date* pour sélectionner la plage de dates affiche une date future par défaut lorsque vous accédez à l'onglet *tendance de consommation*.</block>
   <block id="443c63f2975d5902a80f1597e417d9f2" category="paragraph">4 septembre 2024</block>
+  <block id="3564049af4b6d8549eeccf2c18fc9bb7" category="summary">Effectuez quelques tâches de configuration pour permettre à Keystone Collector de collecter des données d'utilisation dans un environnement qui ne dispose pas d'un accès à Internet, également connu sous le nom de _site_sombre_ ou de _mode_privé_.</block>
+  <block id="ac1824aafbc93ef9f076e8c86d829ea7" category="doc">Configurez Keystone Collector en mode privé</block>
+  <block id="4725d6ccb258fcebc2d1c40c828efdad" category="paragraph">Effectuez quelques tâches de configuration pour permettre à Keystone Collector de collecter des données d'utilisation dans un environnement qui ne dispose pas d'un accès à Internet, également connu sous le nom de _site_sombre_ ou de _mode_privé_. Il s'agit d'une activité unique qui permet d'activer et d'associer les composants requis à votre environnement de stockage. Une fois configuré, Keystone Collector surveille tous les clusters ONTAP gérés par Active IQ Unified Manager.</block>
+  <block id="091f26e937a9d40df8650aa04378561d" category="list-text">Démarrez l'utilitaire TUI de gestion du collecteur Keystone :</block>
+  <block id="94cefb0a79f9c3f84bd04977a81563ca" category="paragraph"><block ref="a38cb024a2fa677a71e9a8148df3dbeb" prefix="" category="inline-code"></block></block>
+  <block id="5e59f93ec115cbf6c1706dafd6e0a394" category="list-text">Accédez à *configurer &gt; Avancé*.</block>
+  <block id="73b977b85895cbcd73d5cae7b659f22e" category="list-text">Activez/désactivez l'option *Darksite mode*.</block>
+  <block id="3a1a1f72fb5c80286671617e3f2e15fe" category="inline-image-macro">Mode Darksite</block>
+  <block id="d34b0bfdc6b7445e829382e924943f47" category="paragraph"><block ref="d34b0bfdc6b7445e829382e924943f47" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">Sélectionnez *Enregistrer*.</block>
+  <block id="f453453ec2e0d84c0efecd53364a2ac8" category="list-text">Accédez à *Configure &gt; KS-Collector* pour configurer Keystone Collector.</block>
+  <block id="07f0f6576397dde30e86f684caff5918" category="list-text">Activez/désactivez le champ *Start KS Collector with System*.</block>
+  <block id="289603a0abeee13d0d3d3bedfbc870ef" category="list-text">Activez/désactivez le champ *Collect ONTAP usage*. Ajoutez les détails du serveur Active IQ Unified Manager (Unified Manager) et du compte d'utilisateur.</block>
+  <block id="8974c2e7306c3a08fe35287aa40fe159" category="list-text">*Facultatif* : activez le champ *utilisation des plans tarifaires de Tiering* si la hiérarchisation des données est requise pour l'abonnement.</block>
+  <block id="561de8cab3868c6dd56aab581ba0aced" category="paragraph">En fonction du type d'abonnement acheté, mettez à jour le *Type d'utilisation*.</block>
+  <block id="bd9d5764503a3efdfcbf0ab33d03c4d5" category="admonition">Avant de configurer, confirmez le type d'utilisation associé à l'abonnement dans NetApp.</block>
+  <block id="e4bb43b60b06d1c96c946d586acf8d29" category="inline-image-macro">Option de type d'utilisation</block>
+  <block id="bf3773602f7e291e23f1fc28bed24fcc" category="paragraph"><block ref="bf3773602f7e291e23f1fc28bed24fcc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7247045253ce8f5029d0a8b1a0c88283" category="list-text">Accédez à *Configure &gt; KS-Collector* pour générer le Keyair du collecteur Keystone.</block>
+  <block id="7f850c80ec6362c7a0008d2e68c3bfb5" category="list-text">Accédez à *Encryption Key Manager* et appuyez sur entrée.</block>
+  <block id="96c8e57baa05bd2263ce2848104e20ca" category="inline-image-macro">Option Encryption Key Manager</block>
+  <block id="a105220c548eaedd5039d83d50e5fb25" category="paragraph"><block ref="a105220c548eaedd5039d83d50e5fb25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9989d5f558b00b14637eded383066d8f" category="list-text">Sélectionnez *Generate Collector Keyair* et appuyez sur entrée.</block>
+  <block id="ef06e7851efacc91e9c529b6e422d6c8" category="inline-image-macro">Générer l'option Collector Keyair</block>
+  <block id="216db5e98775635c45af8fd76d3f120f" category="paragraph"><block ref="216db5e98775635c45af8fd76d3f120f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="63eb3f8b8783ba2307d650252c320fc0" category="list-text">Assurez-vous que le collecteur Keystone est en bon état en revenant à l'écran principal de l'interface TUI et en vérifiant les informations *Etat du service*. Le système devrait montrer que les services sont dans un état *globalement: Sain*. Patientez jusqu'à 10 minutes. Si l'état global reste défectueux après cette période, passez en revue les étapes de configuration précédentes et contactez l'équipe de support NetApp.</block>
+  <block id="095b2736fda36d0222656cf6f4c5be55" category="inline-image-macro">État du service</block>
+  <block id="fdc583538b94d7a1b00a631fea6a48d1" category="paragraph"><block ref="fdc583538b94d7a1b00a631fea6a48d1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="355f50922b8f701f647de7da778ad2c7" category="list-text">Quittez l'interface utilisateur de gestion du collecteur Keystone en sélectionnant l'option *Quitter vers Shell* sur l'écran d'accueil.</block>
+  <block id="73851b479605eb5d7961a4f17abc4861" category="list-text">Récupérez la clé publique générée :</block>
+  <block id="1fb69ffa43c5d2393747fb8591908923" category="paragraph"><block ref="0aa1845efe7a628c5cf5087616257084" prefix="" category="inline-code"></block></block>
+  <block id="e3f489c24017dacebdfc4336a7c526f6" category="list-text">Envoyez un e-mail contenant ce fichier à keystone.services@NetApp.com.</block>
+  <block id="b9a6d96820187805409aa2a1c60142ae" category="section-title">Exporter le rapport d'utilisation</block>
+  <block id="7213bdfaef9f90b96334939108353cdc" category="paragraph">Vous devez envoyer le rapport mensuel de synthèse de l'utilisation à NetApp à la fin de chaque mois. Vous pouvez générer ce rapport manuellement.</block>
+  <block id="9229403d63b77e4aef85fd68e230e0ad" category="paragraph">Pour générer le rapport d'utilisation, procédez comme suit :</block>
+  <block id="d28319812905a38f64e9f59d61f93d22" category="list-text">Accédez à *Export usage* sur l'écran d'accueil de Keystone Collector TUI.</block>
+  <block id="712c8cee897bc7d934e369862f1de46f" category="list-text">Collectez les fichiers et envoyez-les à keystone.services@NetApp.com.</block>
+  <block id="06c85910e7b6c5d744082a8b771fd05e" category="paragraph">Keystone Collector génère à la fois un fichier clair et un fichier chiffré, qui doit être envoyé manuellement à NetApp. Le rapport Clear file contient les détails suivants qui peuvent être validés par le client.</block>
+  <block id="75d8461b47629d5f6688144d087a37f1" category="inline-image-macro">Effacer le rapport de fichier</block>
+  <block id="37cc95117623c08b2d6c6fec6aa2e8a1" category="paragraph"><block ref="37cc95117623c08b2d6c6fec6aa2e8a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d04e5f519989e5f2ca95f9541ffe17a0" category="section-title">Surclassement ONTAP</block>
+  <block id="7da296afc06722d4011bf107449ce811" category="paragraph">Le collecteur Keystone prend en charge les mises à niveau ONTAP via l'interface TUI.</block>
+  <block id="ab3523caa55cc430ce23c9d121772ed2" category="paragraph">Pour mettre à niveau ONTAP, procédez comme suit :</block>
+  <block id="71ece05e2541d5310d5c42e32226e091" category="list-text">Accédez à *Maintenance &gt; mise à niveau du serveur Web ONTAP*.</block>
+  <block id="35f01f8a1c6a4619b0104f40d24a4086" category="list-text">Copiez le fichier image de mise à niveau ONTAP dans */opt/NetApp/ONTAP-upgrade/*, puis sélectionnez *Démarrer le serveur Web* pour démarrer le serveur Web.</block>
+  <block id="fb123a7b444cd374b7ac10caba50e88b" category="inline-image-macro">Option Démarrer le serveur Web</block>
+  <block id="cf04058d80eac818246874f910eb2ab2" category="paragraph"><block ref="cf04058d80eac818246874f910eb2ab2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8044aea994fa3363bcd4c256ce5d88e" category="list-text">Accédez à<block ref="1c23bf18bce0ce7f2bb813cdd6798bbd" category="inline-link-rx"></block> utilisation d'un navigateur Web pour obtenir de l'aide sur la mise à niveau.</block>
+  <block id="f650c6d8e69bf10094accbd07b391694" category="section-title">Redémarrez le collecteur Keystone</block>
+  <block id="93317cb239ead322a8c1e1452ffcabe3" category="paragraph">Vous pouvez redémarrer le service Keystone Collector via l'interface TUI. Accédez à *Maintenance &gt; redémarrer les services Collector* dans l'interface utilisateur. Tous les services du collecteur seront redémarrés et leur état peut être surveillé à partir de l'écran d'accueil de l'interface utilisateur.</block>
+  <block id="9bc0cd001c38d64376373002ab821fad" category="inline-image-macro">Redémarrez Collector Services</block>
+  <block id="036ef23275f196562d13518b49a2ed83" category="paragraph"><block ref="036ef23275f196562d13518b49a2ed83" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="80024926366ce6db30555b19701d4fe9" category="summary">Procédez en quelques étapes pour installer Keystone Collector dans un environnement qui ne dispose pas d'un accès à Internet, également appelé _site_sombre_ ou _mode_privé_.</block>
+  <block id="349f0971d9198a978df2459caa0ed3a3" category="doc">Installez le collecteur Keystone en mode privé</block>
+  <block id="81cbee7d67c9cedc8a890b0c496df593" category="paragraph">Procédez en quelques étapes pour installer Keystone Collector dans un environnement qui ne dispose pas d'un accès à Internet, également appelé _site_sombre_ ou _mode_privé_. Ce type d'installation est parfait pour vos sites sécurisés.</block>
+  <block id="0c7e29e635f61377d7a6044b730f88fc" category="paragraph">Vous pouvez déployer Keystone Collector sur les systèmes VMware vSphere ou l'installer sur des systèmes Linux, selon vos besoins. Suivez les étapes d'installation correspondant à l'option sélectionnée.</block>
+  <block id="03472404912f6a4900008ff71e6be88c" category="inline-link">Portail Web NetApp Keystone</block>
+  <block id="03cf869353768af577873ac5a5393829" category="list-text">Téléchargez le fichier de modèle OVA à partir de<block ref="8582f110f3aed6db1f6b0e4620b46e9b" category="inline-link-rx"></block>.</block>
+  <block id="c48f5f946b5abf4863a3512b8938574a" category="list-text">Pour connaître les étapes de déploiement du collecteur Keystone avec fichier OVA, reportez-vous à la section <block ref="726f88f126ebc7cf88d58154fb14e877" category="inline-link-macro-rx"></block>.</block>
+  <block id="153a56a20cb1cbcc19b94c5a567c3860" category="paragraph">Le logiciel Keystone Collector est installé sur le serveur Linux à l'aide des fichiers .deb ou .rpm fournis, en fonction de la distribution Linux.</block>
+  <block id="a06bf6f43e34c7dd3517f972707a7c17" category="list-text">Téléchargez ou transférez le fichier d'installation de Keystone Collector vers le serveur Linux :</block>
+  <block id="c94a810e155f05157eaa0fceb22bc3eb" category="paragraph"><block ref="4465d493622bd977095276c975cc599a" prefix="" category="inline-code"></block></block>
+  <block id="b9ba2f26adabe79a75845086e6174811" category="list-text">Ouvrez un terminal sur le serveur et exécutez les commandes suivantes pour commencer l'installation.</block>
+  <block id="2f751f6e597627ca4c25edfb593985d5" category="list-text">*En utilisant le paquet Debian*</block>
+  <block id="007a583aba8753b37fab84d5e966b042" category="paragraph"><block ref="213c9f7b141d8cc940793f40c6be1481" prefix="" category="inline-code"></block></block>
+  <block id="cba2bf24a5b589d36a5d208734fe763d" category="list-text">*Utilisation du fichier RPM*</block>
+  <block id="a7795c5340aa0dff7aa9758ca37f0d72" category="paragraph"><block ref="27afd863ef5dc2599a8f584f1f225361" prefix="" category="inline-code"></block></block>
+  <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">ou</block>
+  <block id="ea516f02b3d88684b3027a26744d53bd" category="paragraph"><block ref="2c4ca7d1c139ade286c991f2ba3b1c55" prefix="" category="inline-code"></block></block>
+  <block id="cda45047bd90a14f3c7cd26f36a536a2" category="list-text">Entrez<block ref="415290769594460e2e485922904f345d" prefix=" " category="inline-code"></block> lorsque vous êtes invité à installer le package.</block>
+  <block id="406ef11c23672cacf561d90b1786b09c" category="doc">Surveillance de l'état du collecteur Keystone en mode privé</block>
+  <block id="08a24a041433562dcebc0e73add29ce1" category="paragraph">Vous pouvez contrôler l'état de santé du collecteur Keystone à l'aide de n'importe quel système de surveillance qui prend en charge les requêtes HTTP.</block>
+  <block id="a6bc86a175b0bd6759a0bd21f3a8a22b" category="list-text">*403* : indique que le client HTTP qui demande l'état de santé ne figure pas dans la liste _Allow_, qui est une liste des CIDR réseau autorisés. Pour ce statut, aucune information d'intégrité n'est renvoyée.</block>
+  <block id="9e13a8a51b852397f2122dddc40009ae" category="paragraph">La liste _allow_ utilise la méthode CIDR du réseau pour contrôler les périphériques réseau autorisés à interroger le système d'intégrité Keystone. Si vous recevez l'erreur 403, ajoutez votre système de surveillance à la liste _allow_ depuis *Keystone Collector Management TUI &gt; Configure &gt; Health Monitoring*.</block>
+  <block id="1bd81da74d0a5fc1f56e3b9597ac78c1" category="inline-image-macro">cidrs réseau autorisés</block>
+  <block id="69b9b7ddff09b5bf16de75d0dc3e0ffc" category="paragraph"><block ref="69b9b7ddff09b5bf16de75d0dc3e0ffc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34a3f29ecab2ec81c0b4e49e2c46c196" category="paragraph">Pour résoudre les problèmes avec le collecteur Keystone, vous pouvez faire appel au support NetApp qui peut demander un fichier _.tar_. Vous pouvez générer ce fichier via l'utilitaire TUI de gestion du collecteur Keystone.</block>
+  <block id="5c1d8eca83e13d1f2c6940ebed9b840f" category="paragraph">Pour générer un fichier _.tar_, procédez comme suit :</block>
+  <block id="8ed752b8463949393c5cdb5045d7fef4" category="list-text">Accédez à *Troubleshooting &gt; Generate support Bundle*.</block>
+  <block id="9617b78d46da392d051df4c7fe3b1d94" category="list-text">Sélectionnez l'emplacement d'enregistrement du bundle, puis cliquez sur *générer le bundle de support*.</block>
+  <block id="d8d50c12bd11a2109a7a384f43b0930a" category="inline-image-macro">Générez un bundle de support</block>
+  <block id="7605fc3bbddce380c28f25b5327f5fab" category="paragraph"><block ref="7605fc3bbddce380c28f25b5327f5fab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="572eb7b481dd9edd4e8e79e98f5702e7" category="paragraph">Ce processus crée un<block ref="db5570bf61464b46e2bde31ed61a7dc6" prefix=" " category="inline-code"></block> package à l'emplacement mentionné qui peut être partagé avec NetApp pour résoudre les problèmes.</block>
+  <block id="df607436cb358c9158c17df17c648c95" category="summary">Keystone propose un mode de déploiement _privé_, également appelé _site_invisible_, pour répondre à vos exigences métier et de sécurité.</block>
+  <block id="89776fa991dc9a854be133c1980588a2" category="doc">En savoir plus sur Keystone (mode privé)</block>
+  <block id="5580118283395cf4a34aae1cbd8449f9" category="paragraph">Keystone propose un mode de déploiement _privé_, également appelé _site_invisible_, pour répondre à vos exigences métier et de sécurité. Ce mode est disponible pour les organisations avec des restrictions de connectivité.</block>
+  <block id="992dbd3c9033c22e0a3a71601032b203" category="paragraph">NetApp propose un déploiement spécialisé Keystone STaaS personnalisé pour les environnements avec une connectivité Internet limitée ou inexistante (ou sites invisibles). Il s'agit d'environnements sécurisés ou isolés dans lesquels les communications externes sont restreintes en raison d'exigences opérationnelles, de sécurité ou de conformité.</block>
+  <block id="875907ebe59351ce3319b9b573d3a1a4" category="paragraph">Pour NetApp Keystone, proposer des services pour les sites invisibles signifie fournir le service d'abonnement Keystone flexible au stockage en respectant les contraintes de ces environnements. Cela implique :</block>
+  <block id="863f823abfea772036833b72009a8512" category="list-text">*Déploiement local* : Keystone peut être configuré indépendamment au sein d'environnements isolés, ce qui évite la nécessité d'une connectivité Internet ou de personnel externe pour l'accès à la configuration.</block>
+  <block id="78adfdd834784260d5b8244517bdf390" category="list-text">*Opérations hors ligne* : toutes les fonctionnalités de gestion du stockage avec vérification de l'état de santé et facturation sont disponibles hors ligne pour les opérations.</block>
+  <block id="d3993a5abe0b6a23304df783ff4c8274" category="list-text">*Sécurité et conformité* : Keystone garantit que le déploiement répond aux exigences de sécurité et de conformité des sites invisibles, qui peuvent inclure un chiffrement avancé, des contrôles d'accès sécurisés et des fonctionnalités d'audit détaillées.</block>
+  <block id="03c2aad4e03233252313fd2a0a64a404" category="list-text">*Aide et support* : NetApp offre un support mondial 24h/24/7, 7j/7 avec un responsable de la réussite Keystone dédié assigné à chaque compte pour obtenir de l'aide et résoudre les problèmes.</block>
+  <block id="f36f18853fa52bc729eb0fe8a16e4565" category="admonition">Le collecteur Keystone peut être configuré sans restrictions de connectivité, également appelé _standard_ mode. Pour en savoir plus, reportez-vous <block ref="b0296221493226383d9c4765d8ebec27" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="6312d7e5601c4666e99485375665a5c4" category="section-title">Collecteur Keystone en mode privé</block>
+  <block id="5e88a9702083984bc1d9e155cd42bc21" category="paragraph">Keystone Collector est chargé de collecter régulièrement les données d'utilisation des systèmes de stockage et d'exporter les metrics vers un rapport d'utilisation hors ligne et un magasin de fichiers local. Les fichiers générés, qui sont créés au format crypté et au format texte brut, sont ensuite transmis manuellement à NetApp par l'utilisateur après les vérifications de validation. À réception, la plateforme de facturation Keystone de NetApp authentifie et traite ces fichiers et les intègre dans les systèmes de facturation et de gestion de l'abonnement pour calculer les frais mensuels.</block>
+  <block id="eec5cd5bddb59148f9317bbbcbb08a0b" category="inline-image-macro">Schéma d'un système informatique</block>
+  <block id="0aebbe7a6b0f46b9b7ec57efee94cbba" category="paragraph"><block ref="0aebbe7a6b0f46b9b7ec57efee94cbba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="aab07ba36c285520f2929a739b4a3c91" category="paragraph">Le service Keystone Collector sur le serveur est chargé de collecter régulièrement les données d'utilisation, de traiter ces informations et de générer un fichier d'utilisation localement sur le serveur. Le service d'état effectue des vérifications de l'état du système et est conçu pour s'interfacer avec les systèmes de contrôle de l'état utilisés par le client. Ces rapports sont disponibles pour l'accès hors ligne par les utilisateurs, ce qui permet la validation et l'aide au dépannage des problèmes.</block>
+  <block id="faedc5ec46a38871a78be1ed37e01e63" category="inline-image-macro">site du client</block>
+  <block id="1d43476b2c183791ba51d56636a41b1c" category="paragraph"><block ref="1d43476b2c183791ba51d56636a41b1c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ddedaabf1afb461a6e3d2fe1320dcca0" category="summary">Avant d'installer Keystone Collector dans un environnement sans accès à Internet, également appelé _site_sombre_ ou _mode_privé_, assurez-vous que vos systèmes sont préparés avec les logiciels nécessaires et répondent à toutes les conditions requises.</block>
+  <block id="fd7fae83015d688b86a7ec1ed256864e" category="doc">Préparez l'installation en mode privé</block>
+  <block id="2b9854b0330b42530e0aaf8e893e2f28" category="section-title">Configuration requise pour VMware vSphere</block>
+  <block id="4b78be970b5500221a819608df5616e7" category="list-text">Système d'exploitation : serveur VMware vCenter et ESXi 6.7 ou version ultérieure</block>
+  <block id="0a07fd95ca9bf6935ce5e61609730be6" category="list-text">RAM : 2 GO</block>
+  <block id="c53de6b17f1d8da5e4d60aca127be380" category="section-title">Configuration requise pour Linux</block>
+  <block id="839c50014246079994053b486bb0f80c" category="list-text">Système d'exploitation : Debian v12 ou Red Hat Enterprise Linux 8.6 ou version ultérieure</block>
+  <block id="6adf0487ff5b4dadf30c70a5107314fc" category="list-text">Cœur : 2 processeur</block>
+  <block id="9b254436141f0faf599283567283dff9" category="list-text">RAM : 4 GO</block>
+  <block id="52bef7e9917e522c1436572ddc5a3a3f" category="list-text">Au moins 2 Go disponibles dans<block ref="9854ed422bddbda845d9be18e5812dbc" prefix=" " category="inline-code"></block></block>
+  <block id="3db3f2076eb3e58b05c6ae1e6accb36e" category="list-text">Au moins 48 Go disponibles dans<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block></block>
+  <block id="574288454beb0127b5c5892882343abf" category="paragraph">Les modules tiers suivants doivent également être installés sur le même serveur. S'ils sont disponibles via le référentiel, ces packages seront automatiquement installés comme prérequis :</block>
+  <block id="131e01e2ecbd7de2f9b3f16afa129bcd" category="list-text">RHEL8</block>
+  <block id="9a1a91cd8e61e7975513444f1156020d" category="list-text">python3 &gt;=v3.6.8, python3 \&lt;=v3.9.13</block>
+  <block id="abe31bcfb59f2265c2fb97dde407366c" category="list-text">podman</block>
+  <block id="964ff658eeb150fa1ca6d823c1c0c1a7" category="list-text">yum-utils</block>
+  <block id="8813c65f21a446bf554bec3604466fff" category="list-text">python3-dnf-plugin-versionnlock</block>
+  <block id="d1017bbf5ca9632f130271f7d6ed04fd" category="list-text">Debian v12</block>
+  <block id="2c2d19cda9d3644fca17a9ca3bc09d0b" category="list-text">python3 &gt;= v3.9.0, python3 \&lt;= v3.12.0</block>
+  <block id="7fbcd4e7fad4671c547f823bdaeba2b6" category="list-text">sosreport</block>
+  <block id="9251700e586dc1a410f2e755a8643751" category="section-title">Configuration réseau requise</block>
+  <block id="a044d8f85fe2375b7be98e59d8a6ee02" category="paragraph">La configuration réseau requise pour Keystone Collector est la suivante :</block>
+  <block id="84d581305434aa96d1aa4a8a716b2b80" category="list-text">Active IQ Unified Manager (Unified Manager) 9.10 ou version ultérieure, configuré sur un serveur avec la fonctionnalité de passerelle d'API activée.</block>
+  <block id="f9017eb4d160c5625e2911de7136c2fe" category="list-text">Le serveur Unified Manager doit être accessible par le serveur Keystone Collector sur le port 443 (HTTPS).</block>
+  <block id="c55d18e0937cb0a3844d2da3ecbc7e82" category="list-text">Un compte de service avec des autorisations utilisateur d'application doit être configuré pour le collecteur Keystone sur le serveur Unified Manager.</block>
+  <block id="4be679fb0c05782454656e48556dab1d" category="list-text">Une connexion Internet externe n'est pas requise.</block>
+  <block id="9fc9a5ce8278ada254052c62e048d22b" category="list-text">Chaque mois, exportez un fichier depuis le collecteur Keystone et envoyez-le par e-mail à l'équipe de support NetApp. Pour plus d'informations sur la façon de contacter l'équipe de support, reportez-vous <block ref="77e2a4ca04ba16c3bb0a4c8df0385121" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="b7e3d459da53b2456951d0a5d3237300" category="inline-link-macro">Keystone en mode privé</block>
+  <block id="d94b27c65b00f48ddf2590d54d34311d" category="list-text">Keystone Collector peut être configuré pour les entreprises qui ne disposent pas d'un accès à Internet, également appelées _site_sombre_ ou _mode_privé_. Pour en savoir plus sur, reportez-vous <block ref="a6faf1739dac35fa9b42259f2ec27ee2" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="70746148197a1842a9455cddc0c18adc" category="paragraph">Le collecteur Keystone peut être configuré en _standard_ mode, qui fonctionne sans restriction de connectivité, ou en _private_ mode, conçu pour les entreprises avec des restrictions de connectivité. Pour installer le collecteur Keystone en mode standard, reportez-vous à la section <block ref="a9306132ed6aac4cbc6f1e3f3feb8703" category="inline-link-macro-rx"></block>; pour le mode privé, reportez-vous <block ref="a6faf1739dac35fa9b42259f2ec27ee2" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="67f289221dc2b8315be57c85a28e0619" category="sidebar">Avant l'installation</block>
 </blocks>
