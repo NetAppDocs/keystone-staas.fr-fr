@@ -137,6 +137,21 @@ sidebar:
       url: "/dark-sites/configure-collector.html"
     - title: Surveillez l'état du collecteur Keystone
       url: "/dark-sites/monitor.html"
+  - title: Accédez à Keystone à partir de l'API REST de Digital Advisor
+    entries:
+    - title: Commencez à utiliser l'API REST de Digital Advisor pour récupérer les
+        données Keystone
+      url: "/rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html"
+    - title: Générer des jetons d'actualisation et d'accès
+      url: "/rest-api/generate-tokens.html"
+    - title: Obtenez une liste de tous les clients utilisant l'API REST de Digital
+        Advisor
+      url: "/rest-api/get-customer-list.html"
+    - title: Obtenez des abonnements clients à l'aide de l'API REST de Digital Advisor
+      url: "/rest-api/get-customer-subscriptions.html"
+    - title: Obtenez les détails de consommation des clients à l'aide de l'API REST
+        de Digital Advisor
+      url: "/rest-api/get-customer-consumption.html"
   - title: Facturation
     entries:
     - title: Tarification Keystone

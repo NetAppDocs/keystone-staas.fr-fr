@@ -52,22 +52,22 @@ Il arrive que des volumes temporaires soient créés par ONTAP lors du déplacem
 
 == Facturation et règles de QoS adaptatives
 
-Keystone mesure la consommation en fonction des niveaux de service. Chaque niveau de service est associé à une règle de qualité de service (QoS) adaptative spécifique. Vous serez informé des détails de chaque politique de QoS pour vos services Keystone abonnés lors du déploiement. Lors des opérations de gestion du stockage, assurez-vous que vos volumes disposent des règles de QoS appropriées attribuées selon les niveaux de service que vous avez souscrits, afin d'éviter toute facturation inattendue. Pour plus d'informations sur les règles de QoS dans ONTAP, reportez-vous à link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Débit garanti avec les QoS"^].
+Keystone mesure la consommation en fonction des niveaux de service. Chaque niveau de service est associé à une règle de qualité de service (QoS) adaptative spécifique. Au cours du déploiement, vous serez informé des détails de chaque règle de QoS adaptative pour les services Keystone auxquels vous avez souscrit. Lors des opérations de gestion du stockage, assurez-vous que vos volumes disposent des règles de QoS adaptatives appropriées attribuées selon les niveaux de service souscrits pour éviter toute facturation inattendue. Pour plus d'informations sur les règles de QoS adaptative dans ONTAP, reportez-vous à link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Débit garanti avec les QoS"^]la section .
 
 
 
 == Facturation des destinations SnapMirror
 
-Le prix du volume de destination SnapMirror est régi par la règle de QoS du niveau de service attribué à la source. Toutefois, si la source n'a pas de règle de QoS associée, la destination est facturée en fonction du niveau de service le plus bas disponible.
+Les tarifs du volume de destination SnapMirror sont régis par la politique de QoS adaptative pour le niveau de services attribué à la source. Toutefois, si la source ne dispose pas d'une règle de QoS adaptative associée, la destination est facturée en fonction du niveau de service le plus bas disponible.
 
 
 
 == Facturation des LUN
 
-Pour les LUN, le même modèle de facturation est suivi de pour les volumes régis par les règles de QoS. Si des règles de QoS distinctes sont définies sur les LUN, alors :
+Pour les LUN, le même modèle de facturation est suivi que pour les volumes régis par des règles de QoS adaptatives. Si des règles de QoS adaptative distinctes sont définies sur les LUN, alors :
 
 * La taille de la LUN est comptabilisée pour consommation en fonction du niveau de service associé à cette LUN.
-* Le reste de l'espace du volume, le cas échéant, est facturé conformément à la politique de QoS définie au niveau de service du volume.
+* Le reste de l'espace du volume, le cas échéant, est facturé conformément à la règle de QoS adaptative du niveau de services défini sur le volume.
 
 
 
