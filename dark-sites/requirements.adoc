@@ -30,7 +30,7 @@ Avant d'installer Keystone Collector dans un environnement sans accès à Intern
 
 == Configuration requise pour Linux
 
-* Système d'exploitation : Debian v12 ou Red Hat Enterprise Linux 8.6 ou version ultérieure
+* Système d'exploitation : Debian v12, Red Hat Enterprise Linux (RHEL) 8.6 ou versions ultérieures de la série RHEL 8.x.
 * Cœur : 2 processeur
 * RAM : 4 GO
 * Espace disque : 50 Go de vDisk
