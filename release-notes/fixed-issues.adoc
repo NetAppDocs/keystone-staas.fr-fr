@@ -10,7 +10,7 @@ summary: Les problèmes détectés dans les versions précédentes des services 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

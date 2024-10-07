@@ -856,20 +856,16 @@
   <block id="bc26ba2885b2bd7d8c41202e1d58b847" category="section-title">Paramètres de QoS adaptative</block>
   <block id="d2c88ef05da757a3aeaaf8bc9fe70038" category="paragraph">Les paramètres de QoS adaptative (AQoS) varient en fonction des niveaux de service.</block>
   <block id="3e1621011a15ff9b858d144dd8b32184" category="cell">*Nom de la politique*</block>
-  <block id="e61bad254169eaf696462c655e0bb47a" category="cell">*IOPS attendues*</block>
   <block id="911c903acff40c3f442bbae7f73ea081" category="cell">6,144</block>
   <block id="a980f22074119d4103953f70f2fd69ce" category="cell">1,024</block>
   <block id="f718499c1c8cef6730f9fd03c8125cab" category="cell">256</block>
   <block id="8dea0526cd966f1d2b8537ec99d156b6" category="cell">*Allocation d'IOPS attendue*</block>
   <block id="d948b8bd026bed9e90e7989a41fdbb46" category="cell">Espace alloué</block>
-  <block id="7954bc4f3c43f3e699c2169329a71b4b" category="cell">*Pic d'IOPS*</block>
   <block id="13533e52f2c161b3cad8ec91b2a8bc26" category="cell">*Allocation maximale d'IOPS*</block>
   <block id="aa06850d5c9d77127d7340a724cb89be" category="cell">Espace utilisé</block>
   <block id="fd5c2880a704553c642b2e60a6ff5cf2" category="cell">*Taille de bloc*</block>
   <block id="de66b0668daa0803e4322ddd80158d6c" category="cell">32 KO</block>
   <block id="1485819d1bb1109d78f142c11b8e830d" category="paragraph">Vous pouvez configurer des règles de QoS adaptative (AQoS) pour faire évoluer automatiquement un plafond de débit ou un volume au sol en fonction de sa taille. Tous les niveaux de service de Keystone ne sont pas alignés sur les règles de QoS ONTAP par défaut. Vous pouvez créer des règles de QoS personnalisées pour ces règles. Pour configurer une stratégie, vous devez connaître les éléments suivants :</block>
-  <block id="d87e8cd2516a937506841a2ee6710603" category="list-text">*IOPS attendues* : nombre minimal d'IOPS, par Tio allouée par volume, que le système tente de fournir lorsque suffisamment d'IOPS système sont disponibles.</block>
-  <block id="35c0bb4205f89d0eddba85d9bda132b6" category="list-text">*Peak IOPS* : nombre maximal d'IOPS par Tio utilisé par volume que le système autorise à atteindre avant d'étrangle les IOPS par injection de latence.</block>
   <block id="be53c8157b32393bccd2e22d0b1536aa" category="list-text">*Allocation d'IOPS attendue* : ce paramètre détermine si les IOPS attendues disponibles pour le volume sont basées sur la taille allouée ou utilisée du volume. Dans Keystone, il s'agit de la base de l'espace alloué.</block>
   <block id="14d0dc302a669d6a99952e49afc7861a" category="list-text">*Allocation d'IOPS de pic* : ce paramètre détermine si les IOPS de pic disponibles pour le volume sont basées sur la taille allouée ou utilisée du volume. Dans Keystone, il s'agit de l'espace utilisé.</block>
   <block id="4d5ef2163c192509afec8de9ab79da82" category="paragraph">Chaque niveau de services est défini par sa densité d'E/S, à savoir IOPS/Tio/volume. Il s'agit du rapport entre les performances (opérations d'entrée/sortie par seconde [IOPS]) et la capacité de stockage utilisée (Tio), qui correspond au nombre d'IOPS/Tio à la latence moyenne par volume.</block>
@@ -1833,7 +1829,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="35f01f8a1c6a4619b0104f40d24a4086" category="list-text">Copiez le fichier image de mise à niveau ONTAP dans */opt/NetApp/ONTAP-upgrade/*, puis sélectionnez *Démarrer le serveur Web* pour démarrer le serveur Web.</block>
   <block id="fb123a7b444cd374b7ac10caba50e88b" category="inline-image-macro">Option Démarrer le serveur Web</block>
   <block id="cf04058d80eac818246874f910eb2ab2" category="paragraph"><block ref="cf04058d80eac818246874f910eb2ab2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a8044aea994fa3363bcd4c256ce5d88e" category="list-text">Accédez à<block ref="1c23bf18bce0ce7f2bb813cdd6798bbd" category="inline-link-rx"></block> utilisation d'un navigateur Web pour obtenir de l'aide sur la mise à niveau.</block>
   <block id="f650c6d8e69bf10094accbd07b391694" category="section-title">Redémarrez le collecteur Keystone</block>
   <block id="93317cb239ead322a8c1e1452ffcabe3" category="paragraph">Vous pouvez redémarrer le service Keystone Collector via l'interface TUI. Accédez à *Maintenance &gt; redémarrer les services Collector* dans l'interface utilisateur. Tous les services du collecteur seront redémarrés et leur état peut être surveillé à partir de l'écran d'accueil de l'interface utilisateur.</block>
   <block id="9bc0cd001c38d64376373002ab821fad" category="inline-image-macro">Redémarrez Collector Services</block>
@@ -1938,13 +1933,11 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="28ed9b5b5df5d633073f9cca1d10bee9" category="cell">*Méthode*</block>
   <block id="a02439ec229d8be0e74b0c1602392310" category="cell">POST</block>
   <block id="55322ba3b4cd3b7782949a6debd00e1c" category="cell">*Point final*</block>
-  <block id="111ffa9d375a47f985e5a930df93acad" category="cell"><block ref="111ffa9d375a47f985e5a930df93acad" category="inline-link-rx"></block></block>
   <block id="904069365b298cc4d7103f93cb31dbfc" category="cell">*En-têtes*</block>
   <block id="542ec3d8c98f371802d8fd77096ac7b2" category="list-text">accepter : application/json</block>
   <block id="30de7c9b045a8fbe02ed2b9d4ffe4425" category="list-text">Content-Type : application/json</block>
   <block id="b7fa10c6a4149a93a4eaaba61e0f23e1" category="cell">*Corps de la demande*</block>
   <block id="13bdfec6f8b9e7cc7abb43fab0b6b384" category="paragraph">{ "refresh_token": "&lt;refresh-token&gt;" }</block>
-  <block id="7893264e0d59291df9deafb0e9f1b841" category="admonition">Vous devez disposer d'un Privileges administratif pour que Digital Advisor puisse accéder à ce noeud final.</block>
   <block id="49fdcb561eb10ce1bc7df051ca7f8d08" category="paragraph">*Réponse :*</block>
   <block id="746b4a10356112a607ace0b2038463aa" category="paragraph">L'API renvoie un jeton d'accès et un jeton d'actualisation au format JSON en tant que réponse.</block>
   <block id="fb024c1026b3468fe6493e58895bb1d2" category="paragraph">*Code d'état*: 200 – demande réussie</block>
@@ -1955,7 +1948,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="8bc9e7b2eb702a14a34a24bcc32c172d" category="doc">Obtenez les détails de consommation des clients à l'aide de l'API REST de Digital Advisor</block>
   <block id="7528035a93ee69cedb1dbddb2f0bfcc8" category="cell">OBTENEZ</block>
   <block id="41d2da547ce3e763f6eead2948c7bce6" category="cell">*Point final*</block>
-  <block id="7390986cba8738a130d09a1ae8c7619d" category="cell"><block ref="7390986cba8738a130d09a1ae8c7619d" category="inline-link-rx"></block></block>
   <block id="ff42ec92d6bd64c6ab6d1f0800017eef" category="cell">*Paramètres*</block>
   <block id="5ee9048a2df6bae318564eb60313820f" category="list-text">type : « client »</block>
   <block id="b6fcb149db1c33db8b3446e2f7582d90" category="list-text">id : &lt;customer-id&gt;</block>
@@ -1963,19 +1955,15 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="3d19254bb03e315d634fc0986c9eb4f0" category="paragraph">*Réponse:* l'API répond avec un objet JSON contenant une liste de toutes les souscriptions avec les mesures d'utilisation de service actuelles pour le client donné. Voici un exemple de réponse :</block>
   <block id="d3f7bd75a02cbe1c2370c78a86417b77" category="section-title">Consultez l'historique de consommation d'un client</block>
   <block id="aa781d0910bba8a0c595fe9b0cd9d3b8" category="paragraph">Cette API récupère les détails de consommation historiques pour tous les abonnements associés à l'ID de client donné, conformément à la plage de temps spécifiée.</block>
-  <block id="1c706be136f0541b294fcc885fde1a63" category="cell"><block ref="1c706be136f0541b294fcc885fde1a63" category="inline-link-rx"></block></block>
   <block id="72ce780c61cc8fc26c3fc393d965f9b7" category="list-text">From_date_utc : &lt;date de début (au format RFC3339)&gt;</block>
   <block id="d4232bc3d79f7c2651bc3b089aa822c1" category="list-text">To_date_utc : &lt;date de fin (au format RFC3339)&gt;</block>
   <block id="eb53e4bff92730b260ff2452a158fac7" category="paragraph">L'API répond avec un objet JSON contenant une liste de tous les abonnements avec les metrics d'utilisation des services historiques pour le client donné dans la plage de temps sélectionnée. Voici un exemple de réponse :</block>
   <block id="20fa5f9b2d4cd9672cce24531c8f1666" category="summary">Cette API extrait une liste de tous les ID de client associés à l'utilisateur.</block>
   <block id="2a2abaabc17b5a91d82e82303642b09c" category="doc">Obtenez une liste de tous les clients utilisant l'API REST de Digital Advisor</block>
-  <block id="b6c5a11b232c98606fb9ada3ec62627d" category="cell"><block ref="b6c5a11b232c98606fb9ada3ec62627d" category="inline-link-rx"></block></block>
   <block id="5b7e7d763cd7702a1e75085674fe6768" category="paragraph">L'API répond avec un objet JSON contenant une liste de noms de clients et d'identifiants respectifs. Voici un exemple de réponse :</block>
   <block id="796057698de87bb393ab8b61e5aff5f2" category="summary">Cette API extrait une liste de tous les abonnements et niveaux de service associés à l'ID de client donné.</block>
   <block id="9b6c21a9e3f04a27506fa4a5eb0cd41f" category="doc">Obtenez des abonnements clients à l'aide de l'API REST de Digital Advisor</block>
-  <block id="bb50b1b9a7f23ddec00f27c428c363f2" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" category="inline-link-rx"></block></block>
   <block id="7dad8be1becd1cd3fe4d2ec1306c3b82" category="paragraph">L'API répond avec un objet JSON contenant la liste de toutes les souscriptions et les détails de niveau de service associés pour le client donné. Voici un exemple de réponse :</block>
-  <block id="4add8177bc48d8ace8e3bcec902454ad" category="summary">Les API Active IQ Digital Advisor de NetApp Keystone fournissent une interface de programmation pour l'extraction des détails et des metrics du service Keystone.</block>
   <block id="0a076b1454da01faf38e4805c15570ee" category="doc">Commencez à utiliser l'API REST de Digital Advisor pour récupérer les données Keystone</block>
   <block id="e29debe73c0e9065a4267dfae6adefe9" category="paragraph">L'API REST de Digital Advisor propose une interface de programmation pour récupérer les informations d'abonnement et de consommation Keystone.</block>
   <block id="c3091c7f241015a003ff982080a072b0" category="paragraph">À un niveau élevé, le workflow d'interaction avec l'API REST de Digital Advisor implique les étapes suivantes :</block>
@@ -1990,4 +1978,25 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="4bfa7642bccc7e1047a0f5b699a01631" category="paragraph">L'accès sortant à _Keystone.NetApp.com_ est requis pour les mises à jour logicielles et les téléchargements de données d'utilisation, essentiels pour le fonctionnement et la maintenance du collecteur Keystone et de la passerelle de la solution AIOps.</block>
   <block id="f9d3d3159cdb3dcf297f1a90d133e474" category="list-text">Système d'exploitation : Debian v12, Red Hat Enterprise Linux (RHEL) 8.6 ou versions ultérieures de la série RHEL 8.x.</block>
   <block id="2604f9447676294c730c1410115fcdc0" category="list-text">Système d'exploitation : CentOS 7, Red Hat Enterprise Linux (RHEL) 8.6 ou version ultérieure dans la série RHEL 8.x.</block>
+  <block id="04e5e9b2304d0098895d9985c9a8ea89" category="cell">*IOPS/Tio attendu*</block>
+  <block id="66add2975320c187fa0c68a862f9277b" category="cell">*Pic IOPS/Tio*</block>
+  <block id="44c1604c68364a078a1faa312c3f1fca" category="list-text">*IOPS/Tio attendu* : nombre minimal d'IOPS par Tio allouée par volume que le système tente de fournir lorsque suffisamment d'IOPS système sont disponibles.</block>
+  <block id="a7eb9e3e2db26f418ff1bd33758058b5" category="list-text">*Pic IOPS/Tio* : nombre maximal d'IOPS par Tio utilisé par volume que le système autorise le volume à atteindre avant qu'il n'accélère les IOPS par injection de latence.</block>
+  <block id="f661dc3165fc7dcc25ae3a0d950ce6ac" category="list-text">Accédez à<block ref="3db77c7f8084c19af25e224539c526e1" prefix=" " category="inline-code"></block> utilisation d'un navigateur Web pour obtenir de l'aide sur la mise à niveau.</block>
+  <block id="3e0da19ae0755de400b746f325485a60" category="section-title">Échec de l'authentification du collecteur Keystone avec SSO StorageGRID activé</block>
+  <block id="19717f3367e97979df17a62a0de1d760" category="paragraph">Le collecteur Keystone ne prend pas en charge les mesures lorsque la connexion unique (SSO) est activée sur le système StorageGRID. Le message d'erreur suivant s'affiche dans les journaux :</block>
+  <block id="0e690a868c62119e2856f2a1fe116b2c" category="paragraph"><block ref="61e95538e67afefe4554fdced79f1dc3" prefix="" category="inline-code"></block></block>
+  <block id="2885bdeaa1cab112dcc8c381c30f671f" category="inline-link-macro">Le collecteur Keystone ne parvient pas à s'authentifier auprès de StorageGRID en mode SSO</block>
+  <block id="b2d1bca2132e220619802a2a119eaf61" category="paragraph">Consultez l'article de  la base de connaissances <block ref="81af88b2d9bce20dafc4743c5a7c77b4" category="inline-link-macro-rx"></block>pour obtenir des informations et des solutions.</block>
+  <block id="d5afb45b1c0b33a5b19d72191f0ca7ab" category="summary">Générez un jeton d'actualisation pour acquérir de nouveaux jetons d'accès. Elle authentifie les requêtes d'API et reste valide pendant une semaine ou jusqu'au remplacement. Vous pouvez obtenir le jeton d'accès via la console ou un appel d'API.</block>
+  <block id="675e00b57381caeda6a7676bb22f6ad5" category="cell"><block ref="111ffa9d375a47f985e5a930df93acad" prefix="" category="inline-code"></block></block>
+  <block id="ef9242902d0aabcf93b46f524d5c682d" category="admonition">Pour accéder à ce point final, vous devez disposer de Privileges d'administration pour le conseiller numérique.</block>
+  <block id="b5db1df1ea6118ca7ac1ab438161410f" category="summary">L'API REST de Digital Advisor récupère les détails de consommation actuels pour tous les abonnements associés à l'ID de client donné.</block>
+  <block id="f6eaec28d0ffb80012d221c3532274f6" category="cell"><block ref="7390986cba8738a130d09a1ae8c7619d" prefix="" category="inline-code"></block></block>
+  <block id="9fefb0959caba046858531046deeebac" category="cell"><block ref="1c706be136f0541b294fcc885fde1a63" prefix="" category="inline-code"></block></block>
+  <block id="f9758d05812567489fe8755ed9e896cf" category="summary">L'API REST de Digital Advisor extrait une liste de tous les ID de client associés à l'utilisateur.</block>
+  <block id="beadb7936ab29d8bd492fb93114101f3" category="cell"><block ref="b6c5a11b232c98606fb9ada3ec62627d" prefix="" category="inline-code"></block></block>
+  <block id="b964b33b06c664e35c5f043238992fba" category="summary">L'API REST de Digital Advisor récupère une liste de tous les abonnements et niveaux de service associés à l'ID client donné.</block>
+  <block id="2c74d7df1fc4058a6a46b83d4b38bb2a" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" prefix="" category="inline-code"></block></block>
+  <block id="67b63898a05fe3ab08e6c0690cc73ca3" category="summary">Les API Digital Advisor fournissent une interface de programmation pour l'extraction des metrics et des détails du service Keystone.</block>
 </blocks>

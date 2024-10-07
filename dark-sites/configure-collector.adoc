@@ -97,7 +97,7 @@ Pour mettre à niveau ONTAP, procédez comme suit :
 +
 image:dark-site-start-webserver-1.png["Option Démarrer le serveur Web"]
 
-. Accédez à http://<collector-ip>:8000[] utilisation d'un navigateur Web pour obtenir de l'aide sur la mise à niveau.
+. Accédez à `http://<collector-ip>:8000` utilisation d'un navigateur Web pour obtenir de l'aide sur la mise à niveau.
 
 
 

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest-api/generate-tokens.html 
-keywords: Refresh token, AIQ Digital Advisor portal,access 
-summary: 'Un jeton d"actualisation est utilisé pour obtenir un nouvel ensemble de jetons d"accès par programmation et est valable pendant une semaine ou jusqu"à ce qu"il ait été utilisé pour obtenir un nouvel ensemble de jetons.' 
+keywords: Refresh token, Digital Advisor portal,access 
+summary: 'Générez un jeton d"actualisation pour acquérir de nouveaux jetons d"accès. Elle authentifie les requêtes d"API et reste valide pendant une semaine ou jusqu"au remplacement. Vous pouvez obtenir le jeton d"accès via la console ou un appel d"API.' 
 ---
 = Générer des jetons d'actualisation et d'accès
 :hardbreaks:
@@ -51,7 +51,7 @@ Le jeton d'accès est utilisé pour authentifier les requêtes de l'API Digital 
 | *Méthode* | POST 
 
 
-| *Point final* | https://api.activeiq.netapp.com/v1/tokens/accessToken[] 
+| *Point final* | `https://api.activeiq.netapp.com/v1/tokens/accessToken` 
 
 
 | *En-têtes*  a| 
@@ -66,7 +66,7 @@ Le jeton d'accès est utilisé pour authentifier les requêtes de l'API Digital 
 
 |===
 
-NOTE: Vous devez disposer d'un Privileges administratif pour que Digital Advisor puisse accéder à ce noeud final.
+NOTE: Pour accéder à ce point final, vous devez disposer de Privileges d'administration pour le conseiller numérique.
 
 *Réponse :*
 

@@ -43,13 +43,13 @@ Les paramètres de QoS adaptative (AQoS) varient en fonction des niveaux de serv
 | *Nom de la politique* | *Extrême* | *Premium* | *Performance* | *Standard* | *Valeur* 
 
 
-| *IOPS attendues* | 6,144 | 2,048 | 1,024 | 256 | 64 
+| *IOPS/Tio attendu* | 6,144 | 2,048 | 1,024 | 256 | 64 
 
 
 | *Allocation d'IOPS attendue* 5+| Espace alloué 
 
 
-| *Pic d'IOPS* | 12,288 | 4,096 | 2,048 | 512 | 128 
+| *Pic IOPS/Tio* | 12,288 | 4,096 | 2,048 | 512 | 128 
 
 
 | *Allocation maximale d'IOPS* 5+| Espace utilisé 
@@ -65,8 +65,8 @@ Vous pouvez configurer des règles de QoS adaptative (AQoS) pour faire évoluer 
 
 * *Nom du groupe de règles* : le nom du groupe de stratégies AQoS. Par exemple : `Keystone_extreme`.
 * *VServer* : nom de la machine virtuelle de stockage ou VServer (machine virtuelle de stockage).
-* *IOPS attendues* : nombre minimal d'IOPS, par Tio allouée par volume, que le système tente de fournir lorsque suffisamment d'IOPS système sont disponibles.
-* *Peak IOPS* : nombre maximal d'IOPS par Tio utilisé par volume que le système autorise à atteindre avant d'étrangle les IOPS par injection de latence.
+* *IOPS/Tio attendu* : nombre minimal d'IOPS par Tio allouée par volume que le système tente de fournir lorsque suffisamment d'IOPS système sont disponibles.
+* *Pic IOPS/Tio* : nombre maximal d'IOPS par Tio utilisé par volume que le système autorise le volume à atteindre avant qu'il n'accélère les IOPS par injection de latence.
 * *Allocation d'IOPS attendue* : ce paramètre détermine si les IOPS attendues disponibles pour le volume sont basées sur la taille allouée ou utilisée du volume. Dans Keystone, il s'agit de la base de l'espace alloué.
 * *Allocation d'IOPS de pic* : ce paramètre détermine si les IOPS de pic disponibles pour le volume sont basées sur la taille allouée ou utilisée du volume. Dans Keystone, il s'agit de l'espace utilisé.
 * *IOPS minimum absolu* : le nombre le plus faible d'IOPS attendu qui sera appliqué à un volume si sa taille est très petite, ce qui se traduit par un nombre inacceptable d'IOPS. Cette valeur est par défaut de 1,000 pour `Extreme`, 500 pour `Premium`, et 250 pour `Performance`, et 75 pour `Standard` et `Value` niveaux de services

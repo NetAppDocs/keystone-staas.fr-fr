@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: rest-api/get-customer-list.html 
-keywords: customer, keystone, api, IDs 
-summary: 'Cette API extrait une liste de tous les ID de client associés à l"utilisateur.' 
+keywords: customer, keystone, api, IDs,  Digital Advisor 
+summary: 'L"API REST de Digital Advisor extrait une liste de tous les ID de client associés à l"utilisateur.' 
 ---
 = Obtenez une liste de tous les clients utilisant l'API REST de Digital Advisor
 :hardbreaks:
@@ -25,7 +25,7 @@ Cette API extrait une liste de tous les ID de client associés à l'utilisateur.
 | *Méthode* | OBTENEZ 
 
 
-| *Point final* | https://api.activeiq.netapp.com/v1/keystone/customers[] 
+| *Point final* | `https://api.activeiq.netapp.com/v1/keystone/customers` 
 
 
 | *En-têtes*  a| 

@@ -10,7 +10,7 @@ summary: Services Keystone STaaS sur Keystone Flex Subscription
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

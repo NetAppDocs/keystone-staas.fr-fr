@@ -10,7 +10,7 @@ summary: 'Les problèmes connus identifient les problèmes susceptibles de vous 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

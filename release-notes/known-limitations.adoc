@@ -10,7 +10,7 @@ summary: Les limitations connues identifient les plateformes, les périphérique
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
@@ -19,6 +19,16 @@ Les limitations connues identifient les plateformes, les dispositifs ou les fonc
 
 
 == Limitations de Keystone Collector
+
+
+
+=== Échec de l'authentification du collecteur Keystone avec SSO StorageGRID activé
+
+Le collecteur Keystone ne prend pas en charge les mesures lorsque la connexion unique (SSO) est activée sur le système StorageGRID. Le message d'erreur suivant s'affiche dans les journaux :
+
+`panic: json: cannot unmarshal object into Go struct field AuthResponse.data of type string`
+
+Consultez l'article de  la base de connaissances link:https://kb.netapp.com/hybrid/Keystone/Collector/Keystone_Collector_fails_to_authenticate_with_StorageGRID_in_SSO_Mode["Le collecteur Keystone ne parvient pas à s'authentifier auprès de StorageGRID en mode SSO"^]pour obtenir des informations et des solutions.
 
 
 
