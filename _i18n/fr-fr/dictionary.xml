@@ -1751,7 +1751,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="sidebar">Durabilité</block>
   <block id="0fa7096028e231171f86212b096254bd" category="admonition">Les SLA et garanties sont disponibles sur la base d'une nomination.</block>
   <block id="90c1605e73fc10bc5c46dc4183664885" category="paragraph">7 août 2024</block>
-  <block id="5b56041030df17cc6aeb8d87e04d16db" category="paragraph">Il n'y a pas de problème connu pour le moment.</block>
   <block id="1e4eb13a6a1b07eeb2e7895fbc7a1bb1" category="section-title">Créez des niveaux de services de performance</block>
   <block id="5053594f32aa62a7113e670df7c0dcf6" category="paragraph">Vous pouvez créer des niveaux de service de performance à l'aide de l'utilitaire TUI de gestion du collecteur Keystone. La création de LSIPs à l'aide de l'interface TUI sélectionne automatiquement les valeurs par défaut définies pour chaque niveau de service, ce qui réduit le risque d'erreurs pouvant survenir lors de la définition manuelle de ces valeurs lors de la création de LSIPs via Active IQ Unified Manager.</block>
   <block id="9dc46e9b8e8e3325a5f950ba6b189e61" category="inline-link-macro">Niveaux de services de performances</block>
@@ -1999,4 +1998,12 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="b964b33b06c664e35c5f043238992fba" category="summary">L'API REST de Digital Advisor récupère une liste de tous les abonnements et niveaux de service associés à l'ID client donné.</block>
   <block id="2c74d7df1fc4058a6a46b83d4b38bb2a" category="cell"><block ref="bb50b1b9a7f23ddec00f27c428c363f2" prefix="" category="inline-code"></block></block>
   <block id="67b63898a05fe3ab08e6c0690cc73ca3" category="summary">Les API Digital Advisor fournissent une interface de programmation pour l'extraction des metrics et des détails du service Keystone.</block>
+  <block id="6bd41c7ebef51543eb0a67b1eb2cabc1" category="paragraph">Les problèmes connus suivants sont rapportés dans NetApp Keystone STaaS :</block>
+  <block id="e83464ce8bd634efb1f099c956ec64a8" category="cell">Problème connu</block>
+  <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">Description</block>
+  <block id="7aebfa1e2291377e040de92d7f7f335f" category="cell">Solution de contournement</block>
+  <block id="3156e09a94461db7bf19fe1f351546ed" category="paragraph">Détails de volume non disponibles pour les abonnements principaux et liés</block>
+  <block id="98b4e51c8dbd4ac2829fdf8a44b9eac2" category="paragraph">L'onglet *Volume Summary* affiche zéro pour le nombre total de volumes, l'état de conformité QoS, le nombre de volumes protégés et la capacité totale consommée pour les abonnements principaux et secondaires liés.</block>
+  <block id="e50629aea15eaa890e9555d823c3aa0e" category="paragraph">*Résumé du volume* le sous-onglet ne se charge pas pour les abonnements StorageGRID</block>
+  <block id="d57b1938a7f40139b0f6f6a8312cab9d" category="paragraph">Le sous-onglet *Volume Summary* de l'onglet *volumes et objets* ne se charge pas pour les abonnements StorageGRID.</block>
 </blocks>

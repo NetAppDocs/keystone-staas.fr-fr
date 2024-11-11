@@ -16,4 +16,27 @@ summary: 'Les problèmes connus identifient les problèmes susceptibles de vous 
 [role="lead"]
 Les problèmes connus identifient les problèmes susceptibles de vous empêcher d'utiliser efficacement les services d'abonnement Keystone.
 
-Il n'y a pas de problème connu pour le moment.
+Les problèmes connus suivants sont rapportés dans NetApp Keystone STaaS :
+
+[cols="3*"]
+|===
+| Problème connu | Description | Solution de contournement 
+
+
+ a| 
+Détails de volume non disponibles pour les abonnements principaux et liés
+ a| 
+L'onglet *Volume Summary* affiche zéro pour le nombre total de volumes, l'état de conformité QoS, le nombre de volumes protégés et la capacité totale consommée pour les abonnements principaux et secondaires liés.
+ a| 
+Aucune
+
+
+
+ a| 
+*Résumé du volume* le sous-onglet ne se charge pas pour les abonnements StorageGRID
+ a| 
+Le sous-onglet *Volume Summary* de l'onglet *volumes et objets* ne se charge pas pour les abonnements StorageGRID.
+ a| 
+Aucune
+
+|===
