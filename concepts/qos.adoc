@@ -96,8 +96,8 @@ Paramètres et commandes du niveau de service Extreme :
 ....
 qos adaptive-policy-group create -policy-group <Keystone_extreme> -vserver <SVM_name> -expected-iops 6144 -peak-iops 12288 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 1000
 ....
-* Taille minimale du volume : 100 Gio, 0,Tio
-* Taille maximale du volume : 10 Tio
+* Taille minimale recommandée : 100 Gio, 0,1 Tio
+* Taille maximale recommandée : 10 Tio
 
 
 
@@ -112,8 +112,8 @@ Paramètres et commandes du niveau de service Premium :
 ....
 qos adaptive-policy-group create -policy-group <Keystone_premium> -vserver <SVM_name> -expected-iops 2048 -peak-iops 4096 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 500
 ....
-* Taille minimale du volume : 500 Gio, 0,5 Tio
-* Taille maximale du volume : 50 Tio
+* Taille minimale recommandée : 500 Gio, 0,5 Tio
+* Taille maximale recommandée : 50 Tio
 
 
 
@@ -128,8 +128,8 @@ Paramètres et commandes du niveau de service Performance :
 ....
 qos adaptive-policy-group create -policy-group <Keystone_performance> -vserver <SVM_name> -expected-iops 1024 -peak-iops 2048 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 250
 ....
-* Taille minimale du volume : 500 Gio, 0,5 Tio
-* Taille maximale du volume : 80 Tio
+* Taille minimale recommandée : 500 Gio, 0,5 Tio
+* Taille maximale recommandée : 80 Tio
 
 
 
@@ -144,8 +144,8 @@ Paramètres et commandes du niveau de service Standard :
 ....
 qos adaptive-policy-group create -policy-group <Keystone_standard> -vserver <SVM_name> -expected-iops 256 -peak-iops 512 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
-* Taille minimale du volume : Tio
-* Taille maximale du volume : 100 Tio
+* Taille minimale recommandée : 1 Tio
+* Taille maximale recommandée : 100 Tio
 
 
 
@@ -160,8 +160,8 @@ Paramètres et commandes du niveau de service de valeur :
 ....
 qos adaptive-policy-group create -policy-group <Keystone_value> -vserver <SVM_name> -expected-iops 64 -peak-iops 128 -expected-iops-allocation allocated-space -peak-iops-allocation used-space -block-size 32K -absolute-min-iops 75
 ....
-* Taille minimale du volume : Tio
-* Taille maximale du volume : 100 Tio
+* Taille minimale recommandée : 1 Tio
+* Taille maximale recommandée : 100 Tio
 
 
 

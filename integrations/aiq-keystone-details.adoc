@@ -60,6 +60,22 @@ image:report_1.png["csv de rapport"]
 
 
 
+== Générer un rapport consolidé
+
+Vous pouvez générer et afficher un rapport consolidé pour vos abonnements, l'historique d'utilisation, l'utilisation en rafale, les performances, les ressources, les volumes et les objets. Pour ce faire, sélectionnez *abonnements Keystone* comme type de rapport dans la fonction Rapport de Digital Advisor. Vous pouvez générer ces rapports au niveau du client, du cluster, de la liste de suivi ou de l'abonnement.
+
+image:report-generation.png["Créer un rapport"]
+
+Le rapport est généré au format Excel, chaque type d'informations, telles que les détails de l'abonnement ou l'historique d'utilisation, étant affiché sur des feuilles séparées. Ces feuilles sont nommées en fonction des onglets de la page *abonnements Keystone* pour faciliter leur affichage. Vous pouvez enregistrer le rapport pour une utilisation ultérieure.
+
+Exemple de rapport consolidé avec les détails des abonnements sur une seule feuille :
+
+image:report-consolidated.png["Rapport généré au format Excel affichant des feuilles séparées"]
+
+Pour en savoir plus sur la génération de rapports, reportez-vous link:https://docs.netapp.com/us-en/active-iq/task_generate_reports.html["Générer des rapports personnalisés"^]à la section .
+
+
+
 == Afficher les alertes
 
 Le tableau de bord fournit des notifications d'alerte qui vous permettent de comprendre les problèmes survenant dans votre environnement de stockage. Ces notifications peuvent s'afficher sous forme d'alertes ou d'avertissements informatifs. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Vous pouvez cliquer sur le lien du message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *volumes et objets*.

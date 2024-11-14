@@ -20,6 +20,16 @@ Les améliorations suivantes sont introduites dans l'écran *abonnements Keyston
 
 
 
+== 11 novembre 2024
+
+
+
+=== Génération de rapports améliorée
+
+Vous pouvez désormais générer un rapport consolidé pour afficher les détails de vos données Keystone à l'aide de la fonctionnalité de rapport de Digital Advisor. Pour en savoir plus, reportez-vous link:../integrations/aiq-keystone-details.html#generate-consolidated-report["Générer un rapport consolidé"^]à la section .
+
+
+
 == 10 juillet 2024
 
 

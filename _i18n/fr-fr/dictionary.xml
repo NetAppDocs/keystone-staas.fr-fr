@@ -49,16 +49,9 @@
   <block id="2da83d8f6744d94e4db3195a4a4edfc0" category="section-title">Paramètres des règles de QoS adaptative</block>
   <block id="547c4738072689a91e04dc9c9c8f6c84" category="section-title">Des paramètres pour le niveau de service extrême</block>
   <block id="5fd300737b7909532dc522634d75def5" category="list-text">Exemple de commande :</block>
-  <block id="eec649d0629c0d4daca55ba4f12c8e0d" category="list-text">Taille minimale du volume : 100 Gio, 0,Tio</block>
-  <block id="92583c0936263d9a68a3fd624b7b24db" category="list-text">Taille maximale du volume : 10 Tio</block>
   <block id="25720426b4f9400d825effad9cc98cf4" category="section-title">Paramètres du niveau de service Premium</block>
-  <block id="1e8543e81fe8622a8aa785a23448ce74" category="list-text">Taille minimale du volume : 500 Gio, 0,5 Tio</block>
-  <block id="f59d8a930f65f82d8f21450de71784f2" category="list-text">Taille maximale du volume : 50 Tio</block>
   <block id="c335b79291cf3c370f0819292ea37103" category="section-title">Paramètres du niveau de service Performance</block>
-  <block id="647b2fc1150676057fa08112aa455c76" category="list-text">Taille maximale du volume : 80 Tio</block>
   <block id="43384bba14e9ac0e1e3604da457dacd3" category="section-title">Paramètres du niveau de service valeur</block>
-  <block id="c5dd4ef3a979aa464f4d87ea8ac7b398" category="list-text">Taille minimale du volume : Tio</block>
-  <block id="d80459bf7c52b9b618a3832a91b72964" category="list-text">Taille maximale du volume : 100 Tio</block>
   <block id="e8cf569a737f3c6ca0de02023bb45074" category="section-title">Calcul de la taille de bloc</block>
   <block id="b77f85f9490573cc674ceb0b9512f811" category="paragraph">Notez ces points avant de calculer la taille du bloc à l'aide des paramètres suivants :</block>
   <block id="5cf0d288a8f6413cd5081b042a609034" category="list-text">IOPS/Tio = Mbit/s/Tio divisé par (taille de bloc * 1024)</block>
@@ -2006,4 +1999,24 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="98b4e51c8dbd4ac2829fdf8a44b9eac2" category="paragraph">L'onglet *Volume Summary* affiche zéro pour le nombre total de volumes, l'état de conformité QoS, le nombre de volumes protégés et la capacité totale consommée pour les abonnements principaux et secondaires liés.</block>
   <block id="e50629aea15eaa890e9555d823c3aa0e" category="paragraph">*Résumé du volume* le sous-onglet ne se charge pas pour les abonnements StorageGRID</block>
   <block id="d57b1938a7f40139b0f6f6a8312cab9d" category="paragraph">Le sous-onglet *Volume Summary* de l'onglet *volumes et objets* ne se charge pas pour les abonnements StorageGRID.</block>
+  <block id="51f4eff2679d00a84e768ca09b950896" category="list-text">Taille minimale recommandée : 100 Gio, 0,1 Tio</block>
+  <block id="0a972e42bf2862708f1b761f38f43097" category="list-text">Taille maximale recommandée : 10 Tio</block>
+  <block id="15338332b8fcdeeb5cf2e61fbed1f587" category="list-text">Taille minimale recommandée : 500 Gio, 0,5 Tio</block>
+  <block id="b153328fc34aa79250fe1cd04b633016" category="list-text">Taille maximale recommandée : 50 Tio</block>
+  <block id="1fd6dacdb284abe9cc20a2bbb9c6a535" category="list-text">Taille maximale recommandée : 80 Tio</block>
+  <block id="cf94268a733259e784ff458e2880c445" category="list-text">Taille minimale recommandée : 1 Tio</block>
+  <block id="b28606b9957df145a655531d978d4f7a" category="list-text">Taille maximale recommandée : 100 Tio</block>
+  <block id="13c09ed2290110fb23f7ef738098a6ce" category="section-title">Générer un rapport consolidé</block>
+  <block id="b5c31f8fc651c0b6091927bd1388396c" category="paragraph">Vous pouvez générer et afficher un rapport consolidé pour vos abonnements, l'historique d'utilisation, l'utilisation en rafale, les performances, les ressources, les volumes et les objets. Pour ce faire, sélectionnez *abonnements Keystone* comme type de rapport dans la fonction Rapport de Digital Advisor. Vous pouvez générer ces rapports au niveau du client, du cluster, de la liste de suivi ou de l'abonnement.</block>
+  <block id="d9c75c79440b3db3ac3e86ae04bc9f19" category="inline-image-macro">Créer un rapport</block>
+  <block id="ad127b553d070e603bcca75c99aa0aa4" category="paragraph"><block ref="ad127b553d070e603bcca75c99aa0aa4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1ac17aa812b21fe2bbdc58cbe5d6efa" category="paragraph">Le rapport est généré au format Excel, chaque type d'informations, telles que les détails de l'abonnement ou l'historique d'utilisation, étant affiché sur des feuilles séparées. Ces feuilles sont nommées en fonction des onglets de la page *abonnements Keystone* pour faciliter leur affichage. Vous pouvez enregistrer le rapport pour une utilisation ultérieure.</block>
+  <block id="9fe5e0c0b5051c9c5712e923a00cc8c1" category="paragraph">Exemple de rapport consolidé avec les détails des abonnements sur une seule feuille :</block>
+  <block id="2badbe4f31c12aae368f255a571f80b1" category="inline-image-macro">Rapport généré au format Excel affichant des feuilles séparées</block>
+  <block id="a273e12df0b06489ccec9e5faa39deae" category="paragraph"><block ref="a273e12df0b06489ccec9e5faa39deae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8b00815fc5298212e3dc28a279ed4a10" category="inline-link-macro">Générer des rapports personnalisés</block>
+  <block id="05ae21f139b4223ee2536ce651cf54b9" category="paragraph">Pour en savoir plus sur la génération de rapports, reportez-vous <block ref="5ee515b7098121299290c8d9ddbc9e18" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="8a1116f55c6659c55d506df698030041" category="section-title">11 novembre 2024</block>
+  <block id="1503d912784bec55335f32e3c747c9df" category="section-title">Génération de rapports améliorée</block>
+  <block id="bab5e70b8fca6215bd90bf396708d647" category="paragraph">Vous pouvez désormais générer un rapport consolidé pour afficher les détails de vos données Keystone à l'aide de la fonctionnalité de rapport de Digital Advisor. Pour en savoir plus, reportez-vous <block ref="f3fd429c1c2a13f9f8f5c8d4ec2129e6" category="inline-link-macro-rx"></block>à la section .</block>
 </blocks>
