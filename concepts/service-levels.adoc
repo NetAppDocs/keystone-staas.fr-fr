@@ -55,6 +55,9 @@ Les niveaux de service de base des types de stockage, des services fichier, bloc
 
 
 | *Taille de bloc* 5+| 32 KO 
+
+
+| *Type de capacité engagée et mesurée* 5+| Logique 
 |===
 
 
@@ -101,6 +104,9 @@ Les indicateurs de niveau de service de base dépendent des conditions suivantes
 
 
 | * Latence moyenne* | S/O 
+
+
+| *Type de capacité engagée et mesurée* | Physique 
 |===
 
 NOTE: La latence n'inclut pas les surcharges associées au transfert de données vers le magasin d'objets en cas de stockage FabricPool.

@@ -2019,4 +2019,7 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="8a1116f55c6659c55d506df698030041" category="section-title">11 novembre 2024</block>
   <block id="1503d912784bec55335f32e3c747c9df" category="section-title">Génération de rapports améliorée</block>
   <block id="bab5e70b8fca6215bd90bf396708d647" category="paragraph">Vous pouvez désormais générer un rapport consolidé pour afficher les détails de vos données Keystone à l'aide de la fonctionnalité de rapport de Digital Advisor. Pour en savoir plus, reportez-vous <block ref="f3fd429c1c2a13f9f8f5c8d4ec2129e6" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="70852ac05a65501c650a9135c4a2ab17" category="cell">*Type de capacité engagée et mesurée*</block>
+  <block id="e7a731a6342f126055b89b80d800a180" category="cell">Logique</block>
+  <block id="ce898d62ed9ca7653a01fe0c781e97e9" category="cell">Physique</block>
 </blocks>
