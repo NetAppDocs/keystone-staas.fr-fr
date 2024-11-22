@@ -92,18 +92,24 @@ L'augmentation correspond à la différence entre la capacité consommée et la 
 
 == Afficher les frais supplémentaires facturés
 
-Si vous avez sélectionné l'option *facturé Burst cumulé*, par défaut, vous pouvez voir les données d'utilisation de la capacité supplémentaire cumulée mensuelle des 12 derniers mois qui ont été facturés. Vous pouvez effectuer une requête par période allant jusqu'à 30 mois. Les graphiques à barres sont affichés pour les données facturées et si l'utilisation n'a pas encore été facturée, vous voyez _Pending_ pour ce mois-ci.
+Si vous avez sélectionné l'option *facturé frais supplémentaires*, vous pouvez afficher les données d'utilisation de la capacité supplémentaire accumulée sur une base mensuelle ou trimestrielle, en fonction de la période de facturation sélectionnée. Ces données sont disponibles pour les 12 derniers mois qui ont été facturés, et vous pouvez les interroger par plage de dates jusqu'aux 30 derniers mois. Les graphiques à barres affichent les données facturées. Si l'utilisation n'a pas encore été facturée, elle sera marquée comme _en attente_ pour cette période.
 
 
 TIP: L'utilisation de capacité supplémentaire facturée accumulée est calculée par période de facturation en fonction de la capacité allouée et consommée pour un niveau de service.
 
 image:accr-burst-1.png["graphiques d'utilisation des ressources supplémentaires cumulées"]
 
+Pour une période de facturation trimestrielle, si l'abonnement commence à une date autre que 1^St^ du mois, la facture trimestrielle couvrira la période de 90 jours suivante. Par exemple, si votre abonnement commence le 15 août, la facture sera générée pour la période du 15 août au 14 octobre.
+
+Si vous passez d'une facturation trimestrielle à une facturation mensuelle, la facture trimestrielle couvrira toujours la période de 90 jours, avec deux factures générées au cours du dernier mois du trimestre : une pour la période de facturation trimestrielle et une autre pour les jours restants de ce mois. Cette transition permet à la période de facturation mensuelle de commencer le 1^St^ du mois suivant. Par exemple, si votre abonnement commence le 15 octobre, vous recevrez deux factures en janvier, l'une pour le 15 octobre au 14 janvier et l'autre pour le 15 au 31 janvier, avant que la période de facturation mensuelle commence le 1er février.
+
+image:accr-burst-2.png["augmentation de l'utilisation cumulée chaque trimestre"]
+
 Cette fonctionnalité est disponible en mode d'aperçu uniquement. Contactez votre KSM pour en savoir plus sur cette fonctionnalité.
 
 
 
-== Des graphiques de référence pour la protection avancée des données
+== Graphiques de référence pour la protection avancée des données pour MetroCluster
 
 Si vous vous êtes abonné au service complémentaire de protection avancée des données, vous pouvez afficher l'éclatement des données de consommation pour les sites partenaires MetroCluster dans l'onglet *tendance de consommation*.
 

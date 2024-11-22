@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Le sous-onglet *Volume Summary* de l'onglet *volumes et objets* ne se charge pas pour les abonnements StorageGRID.
+ a| 
+Fixe
+ a| 
+21 novembre 2024
+
+
+
+ a| 
 Le champ *de la date* pour sélectionner la plage de dates affiche une date future par défaut lorsque vous accédez à l'onglet *tendance de consommation*.
  a| 
 Fixe

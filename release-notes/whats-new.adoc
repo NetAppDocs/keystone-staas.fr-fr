@@ -20,6 +20,28 @@ Les améliorations suivantes sont introduites dans l'écran *abonnements Keyston
 
 
 
+== 21 novembre 2024
+
+
+
+=== Augmentation supplémentaire facturée
+
+Vous pouvez maintenant afficher les données d'utilisation de dépassement accumulées sur une base trimestrielle via l'option *facturé cumulé Burst* si vous avez opté pour une période de facturation trimestrielle. Pour en savoir plus, reportez-vous link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Afficher les frais supplémentaires facturés"^]à la section .
+
+
+
+=== Nouvelles colonnes de l'onglet Détails des volumes
+
+Pour améliorer la clarté du calcul de l'utilisation logique, deux nouvelles colonnes ont été ajoutées à l'onglet *Détails du volume* dans l'onglet *volumes et objets* :
+
+* *AFS logique* : affiche la capacité logique utilisée par le système de fichiers actif du volume.
+* *Instantané physique* : affiche l'espace physique utilisé par les instantanés.
+
+
+Ces colonnes offrent une meilleure clarté dans la colonne *logique utilisée*, qui indique la capacité logique combinée utilisée par le système de fichiers actif du volume et l'espace physique utilisé par les snapshots.
+
+
+
 == 11 novembre 2024
 
 
