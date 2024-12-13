@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: concepts/uscs.html 
-keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
-summary: Le support avec personnel américain est un service complémentaire qui fournit la prestation et le support des services Keystone en continu de citoyens américains sur le sol américain. 
+permalink: concepts/usps.html 
+keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
+summary: Le support protégé des États-Unis est un service complémentaire qui fournit la livraison et le support des services Keystone en continu de citoyens américains sur le sol américain. 
 ---
-= En savoir plus sur USCS
+= En savoir plus sur USPS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: Le support avec personnel américain est un service complémentaire qui
 
 
 [role="lead"]
-Le service d'assistance aux citoyens américains (USCS) est un module complémentaire pour les abonnements NetApp Keystone. Elle vous donne le droit de recevoir les prestations et le support des services Keystone en cours de la part des États-Unis Citoyens américains américain.
+Le support protégé aux États-Unis (USPS) est une offre complémentaire aux abonnements NetApp Keystone. Elle vous donne droit à la livraison et à l'assistance des services Keystone en cours de la part de citoyens américains sur le sol américain.
 
 Lisez les sections suivantes pour comprendre quels éléments de vos abonnements sont liés par ce service complémentaire et sont fournis conformément aux termes de l'Accord de NetApp Keystone.Note de bas de page:disréclamation 1[les services et offres décrits ici sont sujets, limités et régis par un contrat Keystone pleinement exécuté.]
 
 
 
-== La surveillance du centre de support NetApp Global Services
+== Surveillance NetApp USPS
 
-Le centre de support et de services NetApp Global Services (GSSC) surveille l'état de vos produits et services abonnés, fournit un support à distance et collabore avec votre responsable de la réussite Keystone. Toutes les personnes qui surveillent les produits associés aux bons d'abonnement Keystone appartiennent aux États-Unis au américain.
+L'équipe de support NetApp USPS Keystone surveille l'état de vos produits et services souscrits, fournit un support à distance et collabore avec Keystone Success Manager. L'ensemble du personnel chargé de surveiller les produits associés aux commandes d'abonnement Keystone correspondantes est de type U. S citoyens opérant sur le sol américain.
 
 
 

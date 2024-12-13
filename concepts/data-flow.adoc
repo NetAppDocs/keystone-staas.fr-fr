@@ -14,7 +14,7 @@ summary: 'Les données des systèmes Keystone STaaS transitent par Keystone Coll
 
 
 [role="lead"]
-Les données des systèmes Keystone STaaS transitent par Keystone Collector et l'outil de solution AIO, qui est le système de surveillance associé.
+Les données des systèmes Keystone STaaS transitent par Keystone Collector et la solution de surveillance ITOM, qui est le système de surveillance associé.
 
 
 
@@ -22,7 +22,7 @@ Les données des systèmes Keystone STaaS transitent par Keystone Collector et l
 
 Keystone Collector lance les appels de l'API REST vers les contrôleurs de stockage et obtient périodiquement les détails d'utilisation des contrôleurs, comme indiqué dans ce schéma de flux :
 
-image:collector-data-flow.png["affiche le flux de données dans les composants du collecteur"]
+image:collector-data-flow-2.png["affiche le flux de données dans les composants du collecteur"]
 
 .Légende
 . NetApp Collector lance une session HTTPS vers le portail cloud Active-IQ.
@@ -35,15 +35,21 @@ image:collector-data-flow.png["affiche le flux de données dans les composants d
 
 == Surveillance des flux de données
 
-La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour la surveillance et le reporting, Keystone utilise une solution AIO qui nécessite un accès distant au réseau du client. L'image suivante décrit comment l'accès à distance à l'emplacement du client est sécurisé par l'outil de solution tout-en-un.
+La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour la surveillance et le reporting, Keystone utilise la solution de surveillance ITOM. L'image suivante décrit comment l'accès à distance à l'emplacement du client est sécurisé par la solution de surveillance ITOM. Les clients peuvent choisir d'activer la fonctionnalité de session à distance, ce qui permet à l'équipe de support Keystone de se connecter à des appareils surveillés à des fins de résolution de problèmes.
 
-image:monitoring-flow.png["flux de données"]
+image:monitoring-flow-1.png["flux de données"]
 
 .Légende
-. La passerelle de la solution tout-en-un initie une session TLS vers le portail cloud.
+. La passerelle de la solution de surveillance ITOM initie une session TLS vers le portail cloud.
 . Le pare-feu actionné par le client autorise la connexion.
-. Le serveur de solutions tout-en-un dans le cloud accepte la connexion.
-. Un tunnel TLS est établi entre le portail cloud et la passerelle locale.
-. Les contrôleurs NetApp envoient des alertes via le protocole SNMP ou répondent aux requêtes d'API à la passerelle locale.
+. Le serveur de solution de surveillance ITOM dans le cloud accepte la connexion.
+. Une session TLS est établie entre le portail cloud et la passerelle locale.
+. Les contrôleurs NetApp envoient des alertes via le protocole SNMP/Syslog ou répondent aux requêtes d'API à la passerelle locale.
 . La passerelle locale envoie ces alertes à son portail cloud à l'aide de la session TLS établie précédemment.
 
+
+
+
+== Normes de conformité
+
+La solution de surveillance Keystone ITOM est conforme au Règlement général de l'Union européenne sur la protection des données (RGPD) et à la loi californienne relative à la protection de la vie privée des consommateurs (CCPA). Il fournit également un link:https://www.logicmonitor.com/legal/data-processing-addendum["Annexe sur la protection des données (DPA)"^] pour documenter ces engagements. La solution de surveillance ITOM ne collecte ni ne stocke de données personnelles.

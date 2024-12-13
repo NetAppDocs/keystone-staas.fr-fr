@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: installation/itom-prereqs.html 
+keywords: prerequisites, ITOM, 
+summary: Vos systèmes doivent répondre à plusieurs exigences avant de pouvoir installer le collecteur ITOM. 
+---
+= Conditions requises pour l'installation du collecteur ITOM
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant d'installer ITOM Collector, assurez-vous que vos systèmes sont préparés avec le logiciel nécessaire et qu'ils répondent à toutes les conditions préalables requises.
+
+.Conditions préalables pour la machine virtuelle du serveur ITOM Collector :
+* Système d'exploitation pris en charge : Debian 12, Windows Server 2016, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Amazon Linux 2023 ou versions ultérieures de ces systèmes d'exploitation.
++
+
+NOTE: Les systèmes d'exploitation recommandés sont Debian 12, Windows Server 2016 ou des versions plus récentes.
+
+* Ressources requises : les ressources requises pour les VM basées sur le nombre de nœuds NetApp surveillés sont les suivantes :
++
+** 2-10 nœuds : 4 processeurs, 8 Go de RAM, 40 Go de disque
+** 12-20 nœuds : 8 processeurs, 16 Go de RAM, 40 Go de disque
+
+
+* Configuration requise : assurez-vous qu'un compte en lecture seule et SNMP sont configurés sur les périphériques surveillés. Le serveur virtuel du collecteur ITOM doit également être configuré en tant qu'hôte d'interruption SNMP et serveur Syslog sur le cluster NetApp et les commutateurs de cluster, le cas échéant.
+
+
+
+
+== Configuration réseau requise
+
+Les exigences de mise en réseau du collecteur ITOM sont répertoriées dans le tableau suivant.
+
+|===
+
+
+| Source | Destination | Protocole | Ports | Description 
+
+
+| Collecteur ITOM | Adresses IP de gestion de cluster NetApp ONTAP | HTTPS, SNMP | TCP 443, UDP 161 | Surveillance des contrôleurs ONTAP 
+
+
+| Adresses IP de gestion de nœuds et de clusters NetApp ONTAP | Collecteur ITOM | SNMP, Syslog | UDP 162, UDP 514 | Traps SNMP et Syslogs des contrôleurs 
+
+
+| Collecteur ITOM | Commutateurs de cluster | SNMP | UDP 161 | Surveillance des commutateurs 
+
+
+| Commutateurs de cluster | Collecteur ITOM | SNMP, Syslog | UDP 162, UDP 514 | Traps SNMP et Syslogs à partir des switches 
+
+
+| Collecteur ITOM | Adresses IP des nœuds StorageGRID | HTTPS, SNMP | TCP 443, UDP 161 | Surveillance SNMP de StorageGRID 
+
+
+| Adresses IP des nœuds StorageGRID | Collecteur ITOM | SNMP, Syslog | UDP 162, UDP 514 | Traps SNMP de StorageGRID 
+
+
+| Collecteur ITOM | Collecteur Keystone | SSH, HTTPS, SNMP | TCP 22, TCP 443, UDP 161 | Surveillance et gestion à distance du collecteur Keystone 
+
+
+| Collecteur ITOM | DNS local | DNS | UDP 53 | Services DNS publics ou privés 
+
+
+| Collecteur ITOM | Serveur(s) NTP au choix | NTP | UDP 123 | La gestion du temps 
+|===
