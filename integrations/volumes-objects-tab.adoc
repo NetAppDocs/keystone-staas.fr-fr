@@ -51,6 +51,9 @@ image:volume-summary-2.png["Onglet Volume Summary"]
 Vous pouvez consulter la liste tabulaire des volumes, telle que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et les niveaux de service Keystone attribués. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques.
 
 +
+Vous pouvez utiliser *Masquer/Afficher les colonnes* pour ajouter ou supprimer des colonnes affichées dans le tableau. Par défaut, toutes les colonnes sont sélectionnées, à l'exception de la colonne *Département*. Vous pouvez sélectionner ou désélectionner n'importe quelle colonne, y compris la colonne *Département*, et vos préférences seront enregistrées pour une utilisation ultérieure. Lors du téléchargement du rapport CSV, les détails de la colonne *Département* seront inclus si cette option est sélectionnée, tandis que d'autres colonnes apparaîtront quel que soit l'état de sélection dans le tableau.
+
++
 
 NOTE: Pour le service complémentaire de protection avancée des données, une colonne supplémentaire apparaît pour indiquer si le volume est un volume primaire ou miroir dans la configuration MetroCluster. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
 

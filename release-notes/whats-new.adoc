@@ -20,6 +20,28 @@ Les améliorations suivantes sont introduites dans l'écran *abonnements Keyston
 
 
 
+== 12 décembre 2024
+
+
+
+=== Colonne utilisé logique renommée
+
+La colonne *logique utilisée* de l'onglet *Détails du volume* dans *volumes et objets* est maintenant renommée *Keystone logique utilisée*.
+
+
+
+=== Onglet Ressources améliorées
+
+L'onglet *Assets* de l'écran *abonnements Keystone* comporte maintenant deux nouveaux sous-onglets : *ONTAP* et *StorageGRID*. Ces sous-onglets offrent des informations détaillées au niveau du cluster pour ONTAP et des informations au niveau du grid pour StorageGRID en fonction de vos abonnements. Pour en savoir plus, reportez-vous link:../integrations/assets-tab.html["Onglet actifs"^]à la section .
+
+
+
+=== Nouvelle option Masquer/Afficher les colonnes
+
+L'onglet *Détails du volume* de *volumes et objets* inclut désormais une option *Masquer/Afficher les colonnes*. Cette option vous permet de sélectionner ou de désélectionner des colonnes pour personnaliser la liste tabulaire des volumes en fonction de vos préférences. Pour en savoir plus, reportez-vous link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^]à la section .
+
+
+
 == 21 novembre 2024
 
 

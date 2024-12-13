@@ -34,3 +34,7 @@ Les services de Tiering supplémentaires s'appliquent pendant toute la durée de
 
 
 NOTE: Les services de calcul, de stockage et de réseau basés sur des hyperscalers requis par Cloud Volumes ONTAP ne sont pas fournis par NetApp dans le cadre d'abonnements Keystone. Ces services doivent être achetés directement auprès de fournisseurs de services cloud hyperscales.
+
+*Informations connexes*
+
+link:https://kb.netapp.com/hybrid/Keystone/AIQ_Dashboard/How_to_approximate_Keystone_Consumption_with_Data_Tiering_(FabricPool)_through_the_ONTAP_cli["Comment estimer la consommation de Keystone avec le Tiering des données (FabricPool) à l'aide de l'interface de ligne de commande ONTAP"^]
