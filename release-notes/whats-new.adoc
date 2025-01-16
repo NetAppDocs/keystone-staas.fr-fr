@@ -20,6 +20,16 @@ Les améliorations suivantes sont introduites dans l'écran *abonnements Keyston
 
 
 
+== 8 janvier 2025
+
+
+
+=== Ajout d'options d'affichage de l'utilisation quotidienne des données accumulées
+
+Vous pouvez désormais afficher l'utilisation quotidienne des données de dépassement accumulées sous forme de graphique ou de tableau pour une période de facturation mensuelle ou trimestrielle en cliquant sur la barre qui affiche les données facturées. Pour en savoir plus, reportez-vous link:../integrations/capacity-trend-tab.html#view-daily-accrued-burst-data-usage["Afficher l'utilisation quotidienne des données de bursting accumulées"]à la section .
+
+
+
 == 12 décembre 2024
 
 

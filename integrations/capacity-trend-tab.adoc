@@ -92,7 +92,7 @@ L'augmentation correspond à la différence entre la capacité consommée et la 
 
 == Afficher les frais supplémentaires facturés
 
-Si vous avez sélectionné l'option *facturé frais supplémentaires*, vous pouvez afficher les données d'utilisation de la capacité supplémentaire accumulée sur une base mensuelle ou trimestrielle, en fonction de la période de facturation sélectionnée. Ces données sont disponibles pour les 12 derniers mois qui ont été facturés, et vous pouvez les interroger par plage de dates jusqu'aux 30 derniers mois. Les graphiques à barres affichent les données facturées. Si l'utilisation n'a pas encore été facturée, elle sera marquée comme _en attente_ pour cette période.
+Si vous avez sélectionné l'option *facturé Burst*, vous pouvez voir l'utilisation des données de dépassement accumulées sur une base mensuelle ou trimestrielle, selon la période de facturation sélectionnée. Ces données sont disponibles pour les 12 derniers mois qui ont été facturés, et vous pouvez les interroger par plage de dates jusqu'aux 30 derniers mois. Les graphiques à barres affichent les données facturées. Si l'utilisation n'a pas encore été facturée, elle sera marquée comme _en attente_ pour cette période.
 
 
 TIP: L'utilisation de capacité supplémentaire facturée accumulée est calculée par période de facturation en fonction de la capacité allouée et consommée pour un niveau de service.
@@ -106,6 +106,22 @@ Si vous passez d'une facturation trimestrielle à une facturation mensuelle, la 
 image:accr-burst-2.png["augmentation de l'utilisation cumulée chaque trimestre"]
 
 Cette fonctionnalité est disponible en mode d'aperçu uniquement. Contactez votre KSM pour en savoir plus sur cette fonctionnalité.
+
+
+
+== Afficher l'utilisation quotidienne des données de bursting accumulées
+
+Vous pouvez afficher l'utilisation quotidienne des données de dépassement pour une période de facturation mensuelle ou trimestrielle. Lorsque vous cliquez sur la barre qui affiche les données facturées, la section capacité approvisionnée facturable s'affiche sous le graphique à barres, offrant des options d'affichage *Graph* et *Table*. La vue graphique par défaut affiche l'utilisation quotidienne des données en rafale accumulées sous forme de graphique linéaire, indiquant les changements d'utilisation au fil du temps.
+
+image:invoiced-daily-accr-burst-1.png["capture d'écran montrant le graphique à barres"]
+
+Un exemple d'image illustrant l'utilisation quotidienne des données en rafale accumulées dans un graphique linéaire :
+
+image:invoiced-daily-accr-burst-2.png["capture d'écran affichant les données d'utilisation de rafale au format graphique linéaire"]
+
+Vous pouvez passer à une vue de tableau en cliquant sur l'option *Table* dans le coin supérieur droit du graphique. Le tableau fournit des mesures détaillées de l'utilisation quotidienne, notamment le niveau de service, l'horodatage, la capacité allouée, la capacité consommée et la capacité provisionnée facturable. Vous pouvez également générer un rapport de ces détails au format CSV pour une utilisation et une comparaison futures.
+
+image:invoiced-daily-accr-burst-3.png["capture d'écran affichant les données d'utilisation de rafale au format tableau"]
 
 
 

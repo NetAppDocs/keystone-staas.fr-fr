@@ -60,7 +60,7 @@ Internet (conformément aux exigences d'URL fournies ultérieurement)
  a| 
 HTTPS
  a| 
-TCP 80, TCP 443
+TCP 443
  a| 
 Obligatoire (connectivité Internet)
  a| 

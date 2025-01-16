@@ -40,7 +40,7 @@ Pendant la durée d'un abonnement, vous pouvez modifier les capacités engagées
 
 * La capacité engagée peut être réduite en fonction de certaines conditions. Pour plus d'informations, reportez-vous à la section link:../concepts/capacity-requirements.html["Réduction de capacité"].
 * La capacité allouée ne peut pas être augmentée 90 jours avant l'expiration de votre abonnement, sauf si l'abonnement doit être renouvelé pour une durée supplémentaire de 12 mois.
-* Vous pouvez demander des modifications de la capacité engagée via l'interface BlueXP ou via Keystone Success Manager (KSM). Pour plus d'informations sur la demande de modifications, reportez-vous à la section link:../concepts/gssc.html["Centre de support NetApp Global Services"].
+* Vous pouvez demander des modifications de la capacité engagée via l'interface BlueXP ou via Keystone Success Manager (KSM). Pour plus d'informations sur la demande de modifications, reportez-vous à link:../concepts/gssc.html["Prise en charge de NetApp Keystone"]la section .
 
 
 

@@ -24,18 +24,18 @@ Les problèmes connus suivants sont rapportés dans NetApp Keystone STaaS :
 
 
  a| 
-Détails de volume non disponibles pour les abonnements principaux et liés
+Affichage du type de politique QoS incorrect
  a| 
-L'onglet *Volume Summary* affiche zéro pour le nombre total de volumes, l'état de conformité QoS, le nombre de volumes protégés et la capacité totale consommée pour les abonnements principaux et secondaires liés.
+Dans l'onglet *Détails du volume*, la colonne *QoS Policy Type* affiche _QoS_ lorsqu'aucune stratégie QoS n'est appliquée, et la colonne compatible affiche _NOT SET_, ce qui provoque une incohérence dans l'état de la stratégie QoS affichée.
  a| 
 Aucune
 
 
 
  a| 
-Impossible de générer des rapports pour les abonnements
+Détails de volume non disponibles pour les abonnements principaux et liés
  a| 
-Lorsque plus de 10-12 abonnements sont sélectionnés dans l'onglet *abonnements* de la page *abonnements Keystone*, le rapport ne peut pas être généré en cliquant sur le bouton *Télécharger CSV* avec l'option *inclure les données pour chaque niveau de service*.
+L'onglet *Volume Summary* affiche zéro pour le nombre total de volumes, l'état de conformité QoS, le nombre de volumes protégés et la capacité totale consommée pour les abonnements principaux et secondaires liés.
  a| 
 Aucune
 

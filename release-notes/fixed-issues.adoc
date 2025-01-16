@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Impossible de générer des rapports pour les abonnements lorsque vous sélectionnez plus de 10-12 abonnements dans l'onglet *abonnements* de la page *abonnements Keystone*.
+ a| 
+Fixe
+ a| 
+8 janvier 2025
+
+
+
+ a| 
 Le sous-onglet *Volume Summary* de l'onglet *volumes et objets* ne se charge pas pour les abonnements StorageGRID.
  a| 
 Fixe
