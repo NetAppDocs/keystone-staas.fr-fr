@@ -19,7 +19,13 @@ La préparation de votre système Linux avec le logiciel requis garantit une ins
 Assurez-vous que votre VM serveur Linux et Keystone Collector possède ces configurations.
 
 .Serveur Linux :
-* Système d'exploitation : CentOS 7, Red Hat Enterprise Linux (RHEL) 8.6 ou version ultérieure dans la série RHEL 8.x.
+* Système d'exploitation : l'un des systèmes suivants :
++
+** Debian 12
+** Red Hat Enterprise Linux 8.6 ou versions ultérieures 8.x.
+** CentOS 7 (pour les environnements existants uniquement)
+
+
 * Temps Chronyd synchronisé
 * Accès aux référentiels logiciels Linux standard
 

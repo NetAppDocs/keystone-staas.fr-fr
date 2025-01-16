@@ -542,7 +542,6 @@
   <block id="ea0dbfc6ab6c0af39db6e8b2db365d7f" category="list-text">Configurez le nom d'hôte du système, l'emplacement et le serveur NTP dans la section *Configuration &gt; système*.</block>
   <block id="f5dfacf7a95f4945b3caa091e27ec747" category="doc">Présentation du collecteur Keystone</block>
   <block id="082821bd60f72deca861daa75a2c3020" category="paragraph">Ce diagramme d'architecture présente les composants constitutifs et leur connectivité dans un environnement Keystone standard.</block>
-  <block id="1fb4cbb275f095e6c7e8f914d27ed735" category="paragraph">Le logiciel Keystone Collector est distribué par un référentiel logiciel YUM en ligne. Vous devez importer et installer le fichier sur un serveur Linux.</block>
   <block id="ea74ae761acf4f1176f873f6437675f6" category="paragraph">Procédez comme suit pour installer le logiciel sur votre serveur Linux :</block>
   <block id="6b0c7fd3768c26e569ee5662bdcc2738" category="list-text">SSH vers le serveur Keystone Collector et passez à<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> privilège.</block>
   <block id="fafcabb6e961377fe2b62d0f1d2e62be" category="list-text">Importer la signature publique Keystone :<block ref="ccf45be91ebaeda977037b149762acbd" prefix=" " category="inline-code"></block></block>
@@ -1914,10 +1913,7 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="2242d62d3e8be601b23d94ea56e90d58" category="list-text">*Générer un jeton d'accès* : le jeton d'actualisation est utilisé pour générer des jetons d'accès. Un jeton d'accès est requis pour autoriser les appels d'API au service Keystone et reste valide pendant une heure.</block>
   <block id="f8f8242a29d5eb9256ae05747db07412" category="list-text">Exécutez un appel d'API pour récupérer les données souhaitées.vous pouvez récupérer par programmation des listes de clients, des données d'abonnement client et des informations sur la consommation des clients.</block>
   <block id="fad1e832526fa7449bfff5b810826110" category="sidebar">Accédez à Keystone à partir de l'API REST de Digital Advisor</block>
-  <block id="aef0601039f80516fbc2cefd134a7b42" category="list-text">Le client fournit un serveur Linux s'exécutant sur Red Hat Enterprise Linux 8.6, ou versions 8.x ultérieures, ou CentOS 7. Le logiciel Keystone est installé via le<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block> processus d'installation.</block>
   <block id="4bfa7642bccc7e1047a0f5b699a01631" category="paragraph">L'accès sortant à _Keystone.NetApp.com_ est requis pour les mises à jour logicielles et les téléchargements de données d'utilisation, essentiels pour le fonctionnement et la maintenance du collecteur Keystone et de la passerelle de la solution AIOps.</block>
-  <block id="f9d3d3159cdb3dcf297f1a90d133e474" category="list-text">Système d'exploitation : Debian v12, Red Hat Enterprise Linux (RHEL) 8.6 ou versions ultérieures de la série RHEL 8.x.</block>
-  <block id="2604f9447676294c730c1410115fcdc0" category="list-text">Système d'exploitation : CentOS 7, Red Hat Enterprise Linux (RHEL) 8.6 ou version ultérieure dans la série RHEL 8.x.</block>
   <block id="04e5e9b2304d0098895d9985c9a8ea89" category="cell">*IOPS/Tio attendu*</block>
   <block id="66add2975320c187fa0c68a862f9277b" category="cell">*Pic IOPS/Tio*</block>
   <block id="44c1604c68364a078a1faa312c3f1fca" category="list-text">*IOPS/Tio attendu* : nombre minimal d'IOPS par Tio allouée par volume que le système tente de fournir lorsque suffisamment d'IOPS système sont disponibles.</block>
@@ -2172,4 +2168,18 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="196d7c712c7c6a9911f2d9bbb5f61bf7" category="sidebar">Allez plus loin avec les services Keystone</block>
   <block id="ff7a737bcab804124f1d48754e14170d" category="sidebar">Apprenez à connaître votre équipe de support</block>
   <block id="84b3e771654397ccc8ec23cf38bfc805" category="sidebar">Surveillez, dépannez et optimisez le stockage</block>
+  <block id="7fe1234c016df317c9bb2796b94c80c3" category="list-text">Le client fournit un serveur Linux s'exécutant sur l'un des systèmes d'exploitation suivants : Debian 12, Red Hat Enterprise Linux 8.6 ou versions ultérieures 8.x ou CentOS 7 (pour les environnements existants uniquement). Le logiciel Keystone est installé à l'aide du<block ref="27b0f8226ae1a7f1b973155b13221df6" prefix=" " category="inline-code"></block> pack ou<block ref="a0d068ed6db680cb6ae54d799e889954" prefix=" " category="inline-code"></block>, selon la distribution Linux.</block>
+  <block id="af1726e663445fca1780939dd8437580" category="list-text">Système d'exploitation : Debian 12, Red Hat Enterprise Linux (RHEL) 8.6 ou versions ultérieures de la série RHEL 8.x.</block>
+  <block id="4082fa09d81cb2bcef02087304b3c30e" category="paragraph">Vous pouvez installer le logiciel Keystone Collector sur un serveur Linux à l'aide d'un RPM ou d'un paquet Debian. Suivez les étapes d'installation en fonction de votre distribution Linux.</block>
+  <block id="3fc1f45d72a49b590c944fab8aac1e82" category="open-title">Utilisation de RPM</block>
+  <block id="162a9e33a865943694a11b0031d84b66" category="open-title">Utilisation de Debian</block>
+  <block id="a98e37707079fc949c91ca051e0dcead" category="list-text">SSH sur le serveur Keystone Collector et élever au<block ref="63a9f0ea7bb98050796b649e85481845" prefix=" " category="inline-code"></block> privilège.<block ref="e73620038e8b54deb176b2581c7558a7" prefix=" " category="inline-code"></block></block>
+  <block id="5d4cb7a4cf862260849df5175a34c215" category="list-text">Télécharger le<block ref="f86119adbf6f60ddd66d8af50a026122" prefix=" " category="inline-code"></block> fichier :<block ref="4228c57e26dcb7e788f67e6f9e02ceb5" prefix=" " category="inline-code"></block></block>
+  <block id="6ff4e4466ce735d11d88c1194817f0d7" category="list-text">Installez le fichier de référentiel du logiciel Keystone :<block ref="071fc003590c05068b84e2edffcea01e" prefix=" " category="inline-code"></block></block>
+  <block id="1f55f1a8efb6267e6c92c68a37d05869" category="list-text">Mettre à jour la liste des packages :<block ref="e4d1bfabfe93077d65c8642e0205cfbf" prefix=" " category="inline-code"></block></block>
+  <block id="f3c8438664647f9d220cbfd1625a0edd" category="list-text">Une fois le référentiel Keystone installé, installez le package de collecteur Keystone :<block ref="29b04259d51ea73a795fc3c2452196f4" prefix=" " category="inline-code"></block></block>
+  <block id="d830024e9ce7615651460580909fdc44" category="list-text">Système d'exploitation : l'un des systèmes suivants :</block>
+  <block id="653181dc830ebbf1153310c93a009c52" category="list-text">Debian 12</block>
+  <block id="015c84a3348885955ce882f1beed478e" category="list-text">Red Hat Enterprise Linux 8.6 ou versions ultérieures 8.x.</block>
+  <block id="bcd6ed294af34e837c537b83a1a3de21" category="list-text">CentOS 7 (pour les environnements existants uniquement)</block>
 </blocks>
