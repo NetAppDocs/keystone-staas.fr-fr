@@ -4,7 +4,7 @@ permalink: release-notes/fixed-issues.html
 keywords: fixed issues 
 summary: Les problèmes détectés dans les versions précédentes des services de stockage en tant que service NetApp Keystone ont été résolus dans les versions ultérieures. 
 ---
-= Problèmes résolus
+= Résolution des problèmes dans Keystone STaaS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

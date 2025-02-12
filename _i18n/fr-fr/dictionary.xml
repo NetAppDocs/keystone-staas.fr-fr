@@ -2193,4 +2193,9 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="2fd8a3db64e08617acb19923d6feb044" category="paragraph">Dans l'onglet *Détails du volume*, la colonne *QoS Policy Type* affiche _QoS_ lorsqu'aucune stratégie QoS n'est appliquée, et la colonne compatible affiche _NOT SET_, ce qui provoque une incohérence dans l'état de la stratégie QoS affichée.</block>
   <block id="6fac87c4e304acd1c313d83787f9b7bd" category="section-title">Ajout d'options d'affichage de l'utilisation quotidienne des données accumulées</block>
   <block id="bce353c38d140a9c3cfcff4f836af86f" category="paragraph">Vous pouvez désormais afficher l'utilisation quotidienne des données de dépassement accumulées sous forme de graphique ou de tableau pour une période de facturation mensuelle ou trimestrielle en cliquant sur la barre qui affiche les données facturées. Pour en savoir plus, reportez-vous <block ref="2773c8880a0c489f5c889cad1b1aa49a" category="inline-link-macro-rx"></block>à la section .</block>
+  <block id="0488df5729275bc610c775109a5e97ed" category="doc">Résolution des problèmes dans Keystone STaaS</block>
+  <block id="e3cdc936dac2c0ff066e39a4166c9208" category="doc">Problèmes connus dans le stockage en tant que service Keystone</block>
+  <block id="cf456956bf4b18082e3ed1243aff31f5" category="paragraph">Impossible d'afficher les données historiques</block>
+  <block id="7b19f6e9d0fb85adf96f95ba11a7325e" category="paragraph">Dans l'onglet *tendance de consommation*, les niveaux de service associés à l'abonnement précédent ne sont pas affichés une fois l'abonnement expiré et se renouvelle avec le même ID de suivi mais des niveaux de service différents. Cela entraîne une perte d'accès aux données historiques de consommation.</block>
+  <block id="1dd6b840b80d1691b68b67682f45c121" category="doc">Limitations connues du stockage en tant que service Keystone</block>
 </blocks>
