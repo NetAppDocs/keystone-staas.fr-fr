@@ -22,6 +22,33 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Option *abonnements Keystone* manquante dans *liste de surveillance* et option *Numéro d'abonnement* dans *Rapports* sur le tableau de bord Digital Advisor.
+ a| 
+Fixe
+ a| 
+2025-03-19
+
+
+
+ a| 
+Il manque quelques abonnements Keystone dans *Watchlist* après avoir créé ou modifié la liste de surveillance à partir du tableau de bord de Digital Advisor.
+ a| 
+Fixe
+ a| 
+2025-03-19
+
+
+
+ a| 
+Impossible d'afficher les données historiques dans l'onglet *tendance de consommation* pour les niveaux de service associés à un abonnement qui a expiré et qui a été renouvelé avec le même ID de suivi mais des niveaux de service différents.
+ a| 
+Fixe
+ a| 
+2025-03-19
+
+
+
+ a| 
 Impossible de générer des rapports pour les abonnements lorsque vous sélectionnez plus de 10-12 abonnements dans l'onglet *abonnements* de la page *abonnements Keystone*.
  a| 
 Fixe

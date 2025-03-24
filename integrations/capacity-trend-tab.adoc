@@ -117,7 +117,7 @@ image:invoiced-daily-accr-burst-1.png["capture d'écran montrant le graphique à
 
 Un exemple d'image illustrant l'utilisation quotidienne des données en rafale accumulées dans un graphique linéaire :
 
-image:invoiced-daily-accr-burst-2.png["capture d'écran affichant les données d'utilisation de rafale au format graphique linéaire"]
+image:invoiced-daily-accr-burst-date.png["capture d'écran affichant les données d'utilisation de rafale au format graphique linéaire"]
 
 Vous pouvez passer à une vue de tableau en cliquant sur l'option *Table* dans le coin supérieur droit du graphique. Le tableau fournit des mesures détaillées de l'utilisation quotidienne, notamment le niveau de service, l'horodatage, la capacité allouée, la capacité consommée et la capacité provisionnée facturable. Vous pouvez également générer un rapport de ces détails au format CSV pour une utilisation et une comparaison futures.
 
