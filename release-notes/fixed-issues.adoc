@@ -22,6 +22,24 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Les valeurs de consommation pour les abonnements liés affichent des nombres négatifs incorrects, ce qui entraîne un affichage incorrect de l'utilisation totale engagée.
+ a| 
+Fixe
+ a| 
+2025-04-14
+
+
+
+ a| 
+Impossible d'afficher les données historiques dans l'onglet *tendance de consommation* pour les niveaux de service pour quelques abonnements.
+ a| 
+Fixe
+ a| 
+2025-04-14
+
+
+
+ a| 
 Option *abonnements Keystone* manquante dans *liste de surveillance* et option *Numéro d'abonnement* dans *Rapports* sur le tableau de bord Digital Advisor.
  a| 
 Fixe

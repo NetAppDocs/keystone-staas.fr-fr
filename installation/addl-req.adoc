@@ -26,6 +26,34 @@ Avant de commencer à utiliser Keystone, vous devez vous assurer que les cluster
 
 
 .Avant de commencer
+Si vous prévoyez de collecter des données d'utilisation uniquement via ONTAP, respectez les exigences suivantes :
+
+. Assurez-vous que ONTAP 9.8 ou version ultérieure est configuré. Pour plus d'informations sur la configuration d'un nouveau cluster, reportez-vous aux liens suivants :
++
+** https://docs.netapp.com/us-en/ontap/task_configure_ontap.html["Configurez ONTAP sur un nouveau cluster avec System Manager"]
+** https://docs.netapp.com/us-en/ontap/software_setup/task_create_the_cluster_on_the_first_node.html["Configuration d'un cluster via l'interface de ligne de commandes"]
+
+
+. Créez des comptes de connexion ONTAP avec des rôles spécifiques. Pour en savoir plus, reportez-vous https://docs.netapp.com/us-en/ontap/authentication/create-svm-user-accounts-task.html#cluster-and-svm-administrators["En savoir plus sur la création de comptes de connexion ONTAP"] à la section .
++
+** *Interface utilisateur Web*
++
+... Connectez-vous à ONTAP System Manager à l'aide de vos informations d'identification par défaut. Pour en savoir plus, reportez-vous https://docs.netapp.com/us-en/ontap/concept_administration_overview.html["Gestion du cluster avec System Manager"] à la section .
+... Créez un utilisateur ONTAP avec le rôle « lecture seule » et le type d'application « http », puis activez l'authentification par mot de passe en accédant à *Cluster > Paramètres > sécurité > utilisateurs*.
+
+
+** *CLI*
++
+... Connectez-vous à l'interface de ligne de commande ONTAP à l'aide de vos identifiants par défaut. Pour en savoir plus, reportez-vous https://docs.netapp.com/us-en/ontap/system-admin/index.html["Gestion du cluster avec interface de ligne de commande"] à la section .
+... Créez un utilisateur ONTAP avec le rôle « lecture seule » et le type d'application « http », puis activez l'authentification par mot de passe. Pour en savoir plus sur l'authentification, reportez-vous https://docs.netapp.com/us-en/ontap/authentication/enable-password-account-access-task.html["Activez l'accès par mot de passe du compte ONTAP"] à la section .
+
+
+
+
+
+
+Si vous prévoyez de collecter des données d'utilisation via Active IQ Unified Manager, respectez les exigences suivantes :
+
 . Assurez-vous que Unified Manager 9.10 ou version ultérieure est configuré. Pour plus d'informations sur l'installation de Unified Manager, consultez les liens suivants :
 +
 ** https://docs.netapp.com/us-en/active-iq-unified-manager/install-vapp/concept_requirements_for_installing_unified_manager.html["Installation de Unified Manager sur des systèmes VMware vSphere"^]

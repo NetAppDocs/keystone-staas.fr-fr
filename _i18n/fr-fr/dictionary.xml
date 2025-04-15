@@ -2200,4 +2200,27 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="738bb3187467e21f957b2120a45e356a" category="paragraph">2025-03-19</block>
   <block id="f2c2ba26aedbdce8dba144e80789d0b1" category="paragraph">Il manque quelques abonnements Keystone dans *Watchlist* après avoir créé ou modifié la liste de surveillance à partir du tableau de bord de Digital Advisor.</block>
   <block id="dd3b859a25ffcf974732975af6e5a4e9" category="paragraph">Impossible d'afficher les données historiques dans l'onglet *tendance de consommation* pour les niveaux de service associés à un abonnement qui a expiré et qui a été renouvelé avec le même ID de suivi mais des niveaux de service différents.</block>
+  <block id="b2a3bf9896e977dfd8243da5ea25ed44" category="paragraph">Si vous prévoyez de collecter des données d'utilisation uniquement via ONTAP, respectez les exigences suivantes :</block>
+  <block id="3e53b7d63056b7201f19b650655aad66" category="list-text">Assurez-vous que ONTAP 9.8 ou version ultérieure est configuré. Pour plus d'informations sur la configuration d'un nouveau cluster, reportez-vous aux liens suivants :</block>
+  <block id="16b35791c547ec7b12d2d1bc88d72f59" category="inline-link">Configurez ONTAP sur un nouveau cluster avec System Manager</block>
+  <block id="8c6eef0a3d7e69df22688da3d1e6d26e" category="list-text"><block ref="8c6eef0a3d7e69df22688da3d1e6d26e" category="inline-link-rx"></block></block>
+  <block id="ec797c5e4fe95fdba62563dda4040b7c" category="inline-link">Configuration d'un cluster via l'interface de ligne de commandes</block>
+  <block id="bf1c2cef91760714f3d41ccff2cdf9bb" category="list-text"><block ref="bf1c2cef91760714f3d41ccff2cdf9bb" category="inline-link-rx"></block></block>
+  <block id="e8f64c2c9954152b2bdf07515fefcbf3" category="inline-link">En savoir plus sur la création de comptes de connexion ONTAP</block>
+  <block id="38b5a2c7a8d52f27b8f9ac286e00f48d" category="list-text">Créez des comptes de connexion ONTAP avec des rôles spécifiques. Pour en savoir plus, reportez-vous<block ref="e69e255c042cc41ab7a6547befcd4b4a" category="inline-link-rx"></block> à la section .</block>
+  <block id="d1d5b0ca67cfe96cd1bace50b8b15cbd" category="list-text">*Interface utilisateur Web*</block>
+  <block id="53b500e941f815e0da37832bbbb3f265" category="inline-link">Gestion du cluster avec System Manager</block>
+  <block id="249c3b3c6a9f619b64fc657020594eb4" category="list-text">Connectez-vous à ONTAP System Manager à l'aide de vos informations d'identification par défaut. Pour en savoir plus, reportez-vous<block ref="6093e0d65a9e5cab5ae1ba1e186de22d" category="inline-link-rx"></block> à la section .</block>
+  <block id="d07c5d1cca8977c9165277aa366fcad7" category="list-text">Créez un utilisateur ONTAP avec le rôle « lecture seule » et le type d'application « http », puis activez l'authentification par mot de passe en accédant à *Cluster &gt; Paramètres &gt; sécurité &gt; utilisateurs*.</block>
+  <block id="1ad46d8f16866c3c58ccf12d81ea41ba" category="list-text">*CLI*</block>
+  <block id="0ac6939a607b25b41877b7739b73fac6" category="inline-link">Gestion du cluster avec interface de ligne de commande</block>
+  <block id="2aba549c4aa954187b9066ac9b8e6f24" category="list-text">Connectez-vous à l'interface de ligne de commande ONTAP à l'aide de vos identifiants par défaut. Pour en savoir plus, reportez-vous<block ref="80681c6be3483d3efa48f0733e30d252" category="inline-link-rx"></block> à la section .</block>
+  <block id="da7599bcceca45d5f685a0c9ca169dd1" category="inline-link">Activez l'accès par mot de passe du compte ONTAP</block>
+  <block id="ce5996c36dc9e027cc9e9e6ac10b3c9f" category="list-text">Créez un utilisateur ONTAP avec le rôle « lecture seule » et le type d'application « http », puis activez l'authentification par mot de passe. Pour en savoir plus sur l'authentification, reportez-vous<block ref="ff30655b37a4a92ad3dccbb4dd39b63c" category="inline-link-rx"></block> à la section .</block>
+  <block id="6fccd3079eed02626646a383fcba9c32" category="paragraph">Si vous prévoyez de collecter des données d'utilisation via Active IQ Unified Manager, respectez les exigences suivantes :</block>
+  <block id="ad822ed3350baf5e919fd093d9fce7c6" category="paragraph">Les valeurs de consommation pour les abonnements liés affichent des nombres négatifs incorrects, ce qui entraîne un affichage incorrect de l'utilisation totale engagée.</block>
+  <block id="1570fe5c09c488b2521f2eadf2c94b4a" category="paragraph">2025-04-14</block>
+  <block id="16fc27e61eb7cb21d80ac46bae8bf3c2" category="paragraph">Impossible d'afficher les données historiques dans l'onglet *tendance de consommation* pour les niveaux de service pour quelques abonnements.</block>
+  <block id="cb0b0f23652246b2cc88085920b86963" category="paragraph">Facture incorrecte en raison d'une incompatibilité des données</block>
+  <block id="5bf5a6c38d050a01f149d67dba290961" category="paragraph">Une incohérence dans les données de consommation pour les abonnements AutoSupport entraîne la génération de factures incorrectes, ce qui entraîne des imprécisions de facturation.</block>
 </blocks>
