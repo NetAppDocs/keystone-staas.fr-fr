@@ -34,9 +34,7 @@ image:dark-site-mode-1.png["Mode Darksite"]
 . Activez/désactivez le champ *Start KS Collector with System*.
 . Activez/désactivez le champ *Collect ONTAP usage*. Ajoutez les détails du serveur Active IQ Unified Manager (Unified Manager) et du compte d'utilisateur.
 . *Facultatif* : activez le champ *utilisation des plans tarifaires de Tiering* si la hiérarchisation des données est requise pour l'abonnement.
-+
-En fonction du type d'abonnement acheté, mettez à jour le *Type d'utilisation*.
-
+. En fonction du type d'abonnement acheté, mettez à jour le *Type d'utilisation*.
 +
 
 NOTE: Avant de configurer, confirmez le type d'utilisation associé à l'abonnement dans NetApp.
