@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Le collecteur Keystone ne parvient pas à collecter les données d'utilisation pour les clusters ONTAP exécutant des versions inférieures à 9.11.
+ a| 
+Fixe
+ a| 
+2025-04-30
+
+
+
+ a| 
 Les valeurs de consommation pour les abonnements liés affichent des nombres négatifs incorrects, ce qui entraîne un affichage incorrect de l'utilisation totale engagée.
  a| 
 Fixe
