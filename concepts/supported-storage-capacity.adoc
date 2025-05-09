@@ -47,7 +47,13 @@ Pendant la durée d'un abonnement, vous pouvez modifier les capacités engagées
 
 == Capacité consommée
 
-La capacité consommée fait référence à la capacité (en Tio de stockage) actuellement consommée sur le service. Le service Keystone prend en compte la somme des tailles logiques utilisées (et non de la capacité physique utilisée) de tous les volumes d'un niveau de services spécifique pour calculer la capacité consommée pour ce niveau de service.
+La capacité consommée fait référence à la capacité (en Tio de stockage) actuellement consommée sur le service. Il s'agit de la somme de :
+
+* Capacité logique utilisée pour stocker toutes les instances et tous les types de données utilisateur (telles que les copies, les copies en miroir et les versions).
+* Capacité logique utilisée pour stocker des volumes clones de plus de 10 % de la taille du volume d'origine.
+* Capacité physique utilisée pour stocker les données différentielles des copies Snapshot.
+* La capacité physique allouée.
+
 
 
 
