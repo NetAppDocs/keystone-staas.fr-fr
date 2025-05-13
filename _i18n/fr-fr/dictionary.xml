@@ -2229,4 +2229,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="b2a0ad297e26236d750246160723aa4e" category="list-text">Capacité logique utilisée pour stocker des volumes clones de plus de 10 % de la taille du volume d'origine.</block>
   <block id="93fcc6bc4dfbcffb60fef19d3e82a054" category="list-text">Capacité physique utilisée pour stocker les données différentielles des copies Snapshot.</block>
   <block id="92103b58e95f2c7bb6f6903f55f4e0ca" category="list-text">La capacité physique allouée.</block>
+  <block id="b972ea8fcf6c823010b9b37178b9d608" category="paragraph">Le collecteur Keystone pour StorageGRID ne parvient pas à se configurer correctement en raison de paramètres communs manquants.</block>
+  <block id="3af3083ee373e5ebbb20d7719411dd4c" category="paragraph">2025-05-12</block>
 </blocks>
