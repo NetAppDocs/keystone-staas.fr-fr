@@ -2231,4 +2231,6 @@ Les détails des abonnements, des graphiques d'utilisation pour chaque niveau de
   <block id="92103b58e95f2c7bb6f6903f55f4e0ca" category="list-text">La capacité physique allouée.</block>
   <block id="b972ea8fcf6c823010b9b37178b9d608" category="paragraph">Le collecteur Keystone pour StorageGRID ne parvient pas à se configurer correctement en raison de paramètres communs manquants.</block>
   <block id="3af3083ee373e5ebbb20d7719411dd4c" category="paragraph">2025-05-12</block>
+  <block id="e52daa0a0f5a4268d3b3cd4835eb59fa" category="paragraph">Lorsque le collecteur Keystone existant installé à l'aide d'un paquet Debian tente de configurer un proxy HTTP ou d'activer Unified Manager via l'interface utilisateur de gestion du collecteur Keystone, l'interface utilisateur multilingue ne répond plus.</block>
+  <block id="2d8e5cb76ecb9ff05fdec5e05251eb14" category="paragraph">2025-05-19</block>
 </blocks>
