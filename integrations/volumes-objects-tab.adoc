@@ -14,7 +14,9 @@ summary: Affichez les détails de la capacité au niveau du volume ou du stockag
 
 
 [role="lead"]
-Si vous souhaitez afficher les détails de la capacité au niveau du stockage du volume ou de l'objet, vous pouvez naviguer jusqu'au *volumes et objets*. Pour StorageGRID, vous pouvez utiliser cet onglet pour lire l'utilisation par les différents nœuds de votre environnement de stockage objet.
+Si vous souhaitez afficher les détails de capacité au niveau du volume ou du stockage d'objets, vous pouvez accéder à l'onglet *Volumes et objets* dans Digital Advisor. Pour StorageGRID, vous pouvez utiliser cet onglet pour lire l'utilisation par les différents nœuds de votre environnement de stockage objet.
+
+Vous pouvez consulter ces informations dans l'onglet *Actifs* de BlueXP. Pour consulter les détails d'un abonnement Keystone STaaS spécifique, consultez link:../integrations/assets-tab.html["Afficher les actifs associés à un abonnement Keystone"] . Si vous souhaitez afficher les détails de plusieurs abonnements Keystone, reportez-vous à link:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"] .
 
 
 NOTE: Le titre de cet onglet varie selon la nature du déploiement sur votre site. Si vous disposez à la fois de ONTAP et du stockage objet, le titre de l'onglet apparaît sous la forme *volumes et objets*. Pour ONTAP uniquement, le nom apparaît *volumes*. Pour le stockage d'objets StorageGRID, vous pouvez voir l'onglet *objets*.
@@ -23,16 +25,13 @@ NOTE: Le titre de cet onglet varie selon la nature du déploiement sur votre sit
 
 == Consultez les volumes ONTAP et les détails du stockage objet
 
-L'onglet *volumes et objets* offre des informations sur les volumes système ONTAP et le stockage objet à différents niveaux de détail. Pour les volumes ONTAP, il existe deux sous-onglets : *Résumé du volume*, qui fournit un nombre total de volumes mappés aux niveaux de service souscrits, et *Détails du volume*, qui répertorie ces volumes avec leurs informations spécifiques. Le sous-onglet *Objects* fournit des détails sur le stockage d'objets pour les abonnements qui incluent des niveaux de service pour le stockage de fichiers et d'objets.
-
-
-NOTE: Le sous-onglet *objets* n'est pas disponible sous l'onglet *volumes* et dans l'onglet *objets*, les sous-onglets *Volume Summary* et *Volume Details* ne contiennent aucune donnée.
+L'onglet *volumes et objets* offre des informations sur les volumes système ONTAP et le stockage objet à différents niveaux de détail. Pour les volumes ONTAP, il existe deux sous-onglets : *Résumé des volumes*, qui fournit le nombre total de volumes mappés aux niveaux de service de performance souscrits, et *Détails des volumes*, qui répertorie ces volumes avec leurs caractéristiques spécifiques. Le sous-onglet *Objets* fournit des détails sur le stockage d'objets pour les abonnements incluant des niveaux de service de performance pour le stockage de fichiers et d'objets.
 
 [role="tabbed-block"]
 ====
 .Résumé du volume
 --
-. Cliquez sur *GÉNÉRAL > abonnements Keystone > volumes et objets > Récapitulatif du volume*.
+. Dans le volet de navigation de gauche de Digital Advisor, accédez à *Général > Abonnements Keystone > Volumes et objets > Résumé du volume*.
 . Sélectionnez le numéro d'abonnement.
 +
 L'abonnement Keystone STaaS sélectionné permet d'afficher le nombre total de volumes, leur état de conformité QoS, le nombre de volumes protégés et la capacité totale allouée, consommée et disponible de tous ces volumes. Si vous cliquez sur le nombre de volumes non conformes ou protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée indiquant les volumes non conformes ou les volumes protégés, en fonction de votre sélection.
@@ -45,10 +44,10 @@ image:volume-summary-2.png["Onglet Volume Summary"]
 --
 .Détails du volume
 --
-. Cliquez sur *GÉNÉRAL > abonnements Keystone > volumes > Détails du volume*.
+. Dans le volet de navigation de gauche de Digital Advisor, accédez à *Général > Abonnements Keystone > Volumes > Détails du volume*.
 . Sélectionnez le numéro d'abonnement.
 +
-Vous pouvez consulter la liste tabulaire des volumes, telle que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et les niveaux de service Keystone attribués. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques.
+Vous pouvez voir la liste tabulaire des volumes, tels que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et les niveaux de service de performances Keystone attribués. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques.
 
 +
 Vous pouvez utiliser *Masquer/Afficher les colonnes* pour ajouter ou supprimer des colonnes affichées dans le tableau. Par défaut, toutes les colonnes sont sélectionnées, à l'exception de la colonne *Département*. Vous pouvez sélectionner ou désélectionner n'importe quelle colonne, y compris la colonne *Département*, et vos préférences seront enregistrées pour une utilisation ultérieure. Lors du téléchargement du rapport CSV, les détails de la colonne *Département* seront inclus si cette option est sélectionnée, tandis que d'autres colonnes apparaîtront quel que soit l'état de sélection dans le tableau.
@@ -65,8 +64,8 @@ image:volume-details-3.png["Onglet Détails des volumes"]
 --
 .Objets
 --
-. Cliquez sur *GÉNÉRAL > abonnements Keystone > objets*.
-. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné si l'abonnement précédemment sélectionné n'inclut pas les niveaux de service pour le stockage fichier et objet.
+. Dans le volet de navigation de gauche de Digital Advisor, accédez à *Général > Abonnements Keystone > Objets*.
+. Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement disponible est sélectionné si l'abonnement précédemment sélectionné n'inclut pas les niveaux de service de performances pour le stockage de fichiers et d'objets.
 +
 
 NOTE: Pour StorageGRID, cet onglet affiche l'utilisation physique des nœuds pour le stockage objet.
@@ -80,10 +79,12 @@ image:objects-details.png["Onglet objets"]
 ====
 *Informations connexes*
 
-* link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
-* link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/current-usage-tab.html["Consommation de courant"]
-* link:../integrations/capacity-trend-tab.html["Tendance de consommation"]
-* link:../integrations/assets-tab.html["Ressources"]
-* link:../integrations/performance-tab.html["Performance"]
+* link:../integrations/dashboard-overview.html["Comprendre le tableau de bord Keystone"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+* link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
+* link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+* link:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"]
+* link:../integrations/performance-tab.html["Affichez les mesures de performances"]
 

@@ -18,10 +18,10 @@ La facturation du STaaS de Keystone repose sur la _capacité supplémentaire_, q
 
 Votre limite de rafale est déterminée et spécifiée dans votre contrat Keystone. En général, elle est supérieure de 20 % à la capacité allouée.
 
-La capacité dédiée correspond à la capacité qui vous est engagée lors de l'achat de l'abonnement. La capacité engagée et la capacité en rafale sont mesurées par niveau de service. La capacité consommée est la capacité que vos charges de travail utilisent réellement.
+La capacité dédiée correspond à la capacité qui vous est engagée lors de l'achat de l'abonnement. La capacité engagée et la capacité de pointe sont mesurées par niveau de service de performance. La capacité consommée est la capacité que vos charges de travail utilisent réellement.
 
-Lorsque la capacité consommée est supérieure à la capacité allouée d'un niveau de services, la consommation supplémentaire est enregistrée et facturée en conséquence. En général, elle est supérieure de 20 % à la capacité allouée. L'utilisation au-dessus de la capacité de rafale est indiquée comme « au-dessus de la limite de rafale ».
+Lorsque la capacité consommée est supérieure à la capacité engagée pour un niveau de service de performance, la consommation en rafale est enregistrée et facturée en conséquence. En général, elle est supérieure de 20 % à la capacité allouée. L'utilisation au-dessus de la capacité de rafale est indiquée comme « au-dessus de la limite de rafale ».
 
-Ce processus se produit pour chaque enregistrement de consommation généré. La consommation en rafale reflète donc à la fois le montant et la durée de vos capacités surconsommées en plus de vos capacités engagées. Pour en savoir plus, reportez-vous link:../integrations/capacity-trend-tab.html["Onglet tendances de consommation"]à la section .
+Ce processus se produit pour chaque enregistrement de consommation généré. La consommation en rafale reflète donc à la fois le montant et la durée de vos capacités surconsommées en plus de vos capacités engagées. Pour en savoir plus, reportez-vous link:../integrations/consumption-tab.html["Consultez les tendances de consommation de vos abonnements Keystone"]à la section .
 
 Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"].

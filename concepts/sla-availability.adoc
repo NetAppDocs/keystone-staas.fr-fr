@@ -30,9 +30,9 @@ NOTE: Les SLA et garanties sont disponibles sur la base d'une nomination.
 
 
 
-== Niveaux de services
+== Niveaux de service de performance
 
-Tous les niveaux de service pris en charge par les baies de stockage Flash ONTAP sont éligibles pour les SLA de disponibilité. Pour en savoir plus, reportez-vous link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Niveaux de service dans Keystone"]à la section .
+Tous les niveaux de service de performances pris en charge par les baies de stockage flash ONTAP sont éligibles au SLA de disponibilité. Pour en savoir plus, reportez-vous link:https://docs.netapp.com/us-en/keystone-staas/concepts/service-levels.html#service-levels-for-file-and-block-storage["Niveaux de service de performance dans Keystone"]à la section .
 
 
 
@@ -82,8 +82,8 @@ Crédits de service = (capacité impactée / capacité totale allouée) X frais 
 Où ?
 
 * *Capacité impactée* : la quantité de capacité stockée affectée.
-* *Capacité totale allouée* : capacité allouée du niveau de service pour la commande Keystone.
-* *Frais de capacité*: Les frais pour le niveau de service affecté pour le mois.
+* *capacité totale engagée* : La capacité engagée pour le niveau de service de performance pour la commande Keystone.
+* *frais de capacité* : Les frais pour le niveau de service de performance affecté pour le mois.
 * *Pourcentage de crédit* : pourcentage prédéterminé pour le crédit de service.
 
 

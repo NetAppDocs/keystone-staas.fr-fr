@@ -22,6 +22,24 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Dans l'onglet *Actifs*, les actifs pour StorageGRID ne sont pas visibles.
+ a| 
+Fixe
+ a| 
+2025-06-19
+
+
+
+ a| 
+Pour le niveau de service Advance Data-Protect, dans l'onglet *Tendance de consommation*, le graphique affiche une répartition entre les sites principaux et miroirs.
+ a| 
+Le graphique n’affiche plus de répartition entre les sites principaux et miroirs.
+ a| 
+2025-06-19
+
+
+
+ a| 
 Lorsque le collecteur Keystone existant installé à l'aide d'un paquet Debian tente de configurer un proxy HTTP ou d'activer Unified Manager via l'interface utilisateur de gestion du collecteur Keystone, l'interface utilisateur multilingue ne répond plus.
  a| 
 Fixe

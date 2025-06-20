@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/current-usage-tab.html 
-keywords: keystone-aiq, digital advisor keystone, current consumption tab 
+keywords: keystone-aiq, digital advisor keystone, current consumption tab, performance service levels, subscriptions 
 summary: 'Pour comprendre l"utilisation de votre abonnement, vous pouvez afficher la capacité allouée, la capacité consommée, la capacité disponible, etc.' 
 ---
-= Afficher la consommation actuelle de vos abonnements
+= Consultez la consommation actuelle de vos abonnements Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,27 +14,62 @@ summary: 'Pour comprendre l"utilisation de votre abonnement, vous pouvez affiche
 
 
 [role="lead"]
-Pour comprendre l'utilisation de votre abonnement, vous pouvez afficher les informations d'utilisation telles que la capacité allouée, la capacité consommée, la capacité disponible, etc.
+Vous pouvez obtenir des informations sur l'utilisation de votre abonnement en consultant des informations détaillées telles que la capacité engagée, la capacité consommée et la capacité disponible, avec l'état de consommation actuel affiché et séparé par niveaux de service de performance.
 
-Pour afficher cet onglet, dans le volet de navigation de gauche, accédez à *GÉNÉRAL > abonnements Keystone > consommation actuelle*, puis sélectionnez le numéro d'abonnement requis.
+Pour consulter l'état de consommation actuel de vos abonnements via BlueXP ou Digital Advisor, suivez ces étapes :
 
+[role="tabbed-block"]
+====
+.BlueXP
+--
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone > Abonnements*.
+. Sélectionnez le numéro d'abonnement dans la colonne *Numéro d'abonnement* du tableau pour afficher la consommation actuelle.
++
+Vous êtes redirigé vers l'onglet *Consommation actuelle*.
+
++
+image:bxp-current-consumption-graph.png["détails de la consommation actuelle au format graphique"]
+
++
+Pour l'abonnement sélectionné, vous pouvez consulter les détails de consommation sous forme de tableau ou de graphique grâce à l'option *Tableau* ou *Graphique* du menu déroulant *Afficher comme*. La vue graphique affiche la consommation actuelle par niveau de service de performance, y compris la capacité utilisée, la capacité provisionnée, la limite de capacité engagée et la limite de capacité en rafale.
+
++
+Dans le tableau, vous pouvez consulter des informations telles que la capacité maximale consommée et le nombre de jours restant avant l'expiration. Dans le cadre du suivi de l'utilisation de votre abonnement, vous pouvez consulter le nom du niveau de service de performance, l'état de consommation, les capacités engagées et utilisées, les capacités provisionnées et en rafale, la capacité disponible et les volumes. image:column-selector.png["icône de sélecteur de colonne"] icône.
+
++
+image:bxp-current-consumption-table.png["détails de la consommation actuelle sous forme de tableau"]
+
+
+
+--
+.Conseiller digital
+--
+.Étapes
+. Dans le volet de navigation de gauche de Digital Advisor, accédez à *Général > Abonnements Keystone > Consommation actuelle*.
+. Sélectionnez ou recherchez le numéro d'abonnement requis dans la liste déroulante *Abonnement*.
++
 image:aiq-ks-dtls-3.png["Consommation actuelle"]
 
-Pour l'abonnement sélectionné, vous pouvez afficher des détails, tels que les dates de début et de fin de l'abonnement et la période de facturation, par exemple mensuelle ou annuelle. Dans le cadre de l'utilisation de l'abonnement, vous pouvez afficher le nom du niveau de service, l'engagement, la consommation, la capacité disponible et l'utilisation en rafale actuelle et accumulée (en Tio).
++
+Pour l'abonnement sélectionné, vous pouvez afficher des détails, tels que les dates de début et de fin de l'abonnement et la période de facturation, par exemple mensuelle ou annuelle. Dans le cadre de l'utilisation de l'abonnement, vous pouvez consulter le nom du niveau de service de performance, les capacités engagées, consommées et disponibles, ainsi que l'utilisation actuelle et cumulée en rafales (en Tio). Les niveaux de service de performance spécifiques enregistrant une consommation plus élevée sont mis en évidence. Vous pouvez également afficher les avertissements et les alertes générés pour vos volumes.
 
-
-TIP: Le image:icon-info.png["icône informations"] l'icône en regard de chaque colonne fournit des informations complètes sur cette colonne. Les niveaux de service spécifiques qui enregistrent une plus forte consommation sont mis en évidence. Vous pouvez également afficher les avertissements et les alertes générés pour vos volumes.
-
-Pour plus d'informations sur vos services de stockage Keystone et sur les niveaux de service appropriés, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
-
++
 Associé à la consommation actuelle, vous pouvez afficher l'historique des données d'utilisation pour les comparer. Cliquez sur le bouton *Afficher les données historiques* pour accéder à l'onglet *tendances de consommation* et afficher les données historiques pour le même abonnement.
+
+
+
+--
+====
+Pour plus d'informations sur vos services de stockage Keystone et les niveaux de service de performance pertinents, consultez link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
 
 *Informations connexes*
 
-* link:../integrations/aiq-keystone-details.html["Utilisez le tableau de bord et le reporting Keystone"]
-* link:../integrations/subscriptions-tab.html["Abonnements"]
-* link:../integrations/capacity-trend-tab.html["Tendance de consommation"]
-* link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"]
-* link:../integrations/assets-tab.html["Onglet actifs"]
-* link:../integrations/performance-tab.html["Performance"]
+* link:../integrations/dashboard-overview.html["Comprendre le tableau de bord Keystone"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+* link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
+* link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+* link:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"]
+* link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
 

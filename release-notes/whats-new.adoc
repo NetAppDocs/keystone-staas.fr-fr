@@ -16,7 +16,24 @@ summary: NetApp vous offre des fonctionnalités nouvelles et améliorées dans c
 [role="lead"]
 NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque version des services de stockage en tant que service Keystone.
 
-Les améliorations suivantes sont introduites dans l'écran *abonnements Keystone* du conseiller digital Active IQ (également appelé conseiller digital) :
+
+
+== 2025-06-19
+
+
+
+=== Tableau de bord Keystone dans BlueXP
+
+Vous pouvez désormais accéder au tableau de bord Keystone directement depuis BlueXP. Cette intégration vous offre un emplacement unique pour surveiller, gérer et suivre tous vos abonnements Keystone ainsi que vos autres services NetApp.
+
+Avec le tableau de bord Keystone dans BlueXP, vous pouvez :
+
+* Affichez tous les détails de votre abonnement, l'utilisation de la capacité et les ressources en un seul endroit.
+* Gérez facilement vos abonnements et demandez des modifications à mesure que vos besoins évoluent.
+* Restez au courant des dernières informations concernant votre environnement de stockage.
+
+
+Pour commencer, accédez à *Stockage > Keystone* dans le menu de navigation de gauche de BlueXP. Pour en savoir plus, reportez-vous link:../integrations/dashboard-overview.html["Présentation du tableau de bord Keystone"^]à la section .
 
 
 
@@ -26,7 +43,7 @@ Les améliorations suivantes sont introduites dans l'écran *abonnements Keyston
 
 === Ajout d'options d'affichage de l'utilisation quotidienne des données accumulées
 
-Vous pouvez désormais afficher l'utilisation quotidienne des données de dépassement accumulées sous forme de graphique ou de tableau pour une période de facturation mensuelle ou trimestrielle en cliquant sur la barre qui affiche les données facturées. Pour en savoir plus, reportez-vous link:../integrations/capacity-trend-tab.html#view-daily-accrued-burst-data-usage["Afficher l'utilisation quotidienne des données de bursting accumulées"]à la section .
+Vous pouvez désormais afficher l'utilisation quotidienne des données de dépassement accumulées sous forme de graphique ou de tableau pour une période de facturation mensuelle ou trimestrielle en cliquant sur la barre qui affiche les données facturées. Pour en savoir plus, reportez-vous link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Afficher l'utilisation quotidienne des données de bursting accumulées"]à la section .
 
 
 
@@ -58,7 +75,7 @@ L'onglet *Détails du volume* de *volumes et objets* inclut désormais une optio
 
 === Augmentation supplémentaire facturée
 
-Vous pouvez maintenant afficher les données d'utilisation de dépassement accumulées sur une base trimestrielle via l'option *facturé cumulé Burst* si vous avez opté pour une période de facturation trimestrielle. Pour en savoir plus, reportez-vous link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Afficher les frais supplémentaires facturés"^]à la section .
+Vous pouvez maintenant afficher les données d'utilisation de dépassement accumulées sur une base trimestrielle via l'option *facturé cumulé Burst* si vous avez opté pour une période de facturation trimestrielle. Pour en savoir plus, reportez-vous link:../integrations/consumption-tab.html#view-accrued-burst["Afficher les frais supplémentaires facturés"^]à la section .
 
 
 
@@ -80,7 +97,7 @@ Ces colonnes offrent une meilleure clarté dans la colonne *logique utilisée*, 
 
 === Génération de rapports améliorée
 
-Vous pouvez désormais générer un rapport consolidé pour afficher les détails de vos données Keystone à l'aide de la fonctionnalité de rapport de Digital Advisor. Pour en savoir plus, reportez-vous link:../integrations/aiq-keystone-details.html#generate-consolidated-report["Générer un rapport consolidé"^]à la section .
+Vous pouvez désormais générer un rapport consolidé pour afficher les détails de vos données Keystone à l'aide de la fonctionnalité de rapport de Digital Advisor. Pour en savoir plus, reportez-vous à link:../integrations/options.html#generate-consolidated-report-from-digital-advisor["Générer un rapport consolidé"^] .
 
 
 
@@ -136,7 +153,7 @@ Les niveaux de service *CVO Primary* et *CVO Secondary* sont inclus pour prendre
 
 === Fonction de zoom avant pour les pics à court terme
 
-L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des pics à court terme dans les graphiques d'utilisation. Pour plus d'informations, voir link:../integrations/capacity-trend-tab.html["Onglet tendances de capacité"^].
+L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des pics à court terme dans les graphiques d'utilisation. Pour plus d'informations, voir link:../integrations/consumption-tab.html["Onglet tendances de capacité"^].
 
 
 
@@ -254,7 +271,7 @@ Certains de vos abonnements principaux peuvent avoir des abonnements secondaires
 
 === Données facturées renvoyées pour le cumul de capacité supplémentaire
 
-Les étiquettes de *Accrued Burst* sont maintenant modifiées en *facturé Burst cumulé* dans l'onglet *Capacity Trend*. La sélection de cette option vous permet d'afficher les graphiques mensuels des données de dépassement cumulées facturées. Pour plus d'informations, voir link:../integrations/capacity-trend-tab.html#view-invoiced-accrued-burst["Afficher les frais supplémentaires facturés"^].
+Les étiquettes de *Accrued Burst* sont maintenant modifiées en *facturé Burst cumulé* dans l'onglet *Capacity Trend*. La sélection de cette option vous permet d'afficher les graphiques mensuels des données de dépassement cumulées facturées. Pour plus d'informations, voir link:../integrations/consumption-tab.html#view-accrued-burst["Afficher les frais supplémentaires facturés"^].
 
 
 
@@ -276,4 +293,4 @@ La prise en charge des listes de suivi dans Digital Advisor a été étendue aux
 
 === Date convertie en fuseau horaire UTC
 
-Les données renvoyées dans les onglets de l'écran *Keystone Subscriptions* de Digital Advisor s'affichent en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir link:../integrations/aiq-keystone-details.html["Tableau de bord et reporting des abonnements Keystone"^].
+Les données renvoyées sur les onglets de l'écran *Abonnements Keystone* de Digital Advisor sont affichées en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir link:../integrations/keystone-aiq.html["Tableau de bord et reporting des abonnements Keystone"^].

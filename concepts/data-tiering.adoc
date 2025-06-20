@@ -16,7 +16,7 @@ summary: Le service complémentaire de Tiering des données identifie les donné
 [role="lead"]
 Les services standard Keystone STaaS pour le stockage des fichiers et blocs incluent des fonctionnalités de Tiering qui identifient les données moins utilisées et les répartissent à l'aide de Keystone STaaS (stockage à froid NetApp pris en charge). Si vous souhaitez transférer vos données inactives vers un stockage Keystone STaaS non NetApp, le Tiering des données inactives est possible en tant que service complémentaire.
 
-Pour plus d'informations sur les services standard et complémentaires, reportez-vous à la section link:../concepts/supported-storage-services.html["Services STaaS Keystone"]. Pour plus d'informations sur les niveaux de service, reportez-vous à la section link:../concepts/service-levels.html["Niveaux de service dans Keystone"].
+voir link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
 
 Le service d'extension de Tiering n'est requis que lorsque les données sont hiérarchisées vers un système de stockage non NetApp tel qu'Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) et d'autres systèmes de stockage objet tiers compatibles Keystone STaaS.
 

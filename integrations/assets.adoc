@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: integrations/assets.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone assets tab, ONTAP, StorageGRID 
+summary: 'Utilisez l"onglet Assets pour afficher le détail des clusters et nœuds ONTAP, ainsi que des grilles, sites et nœuds StorageGRID gérés par vos abonnements Keystone.' 
+---
+= Afficher les ressources sur plusieurs abonnements Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau de bord Keystone de BlueXP vous permet d'afficher des informations détaillées sur les nœuds des clusters, les volumes provisionnés et les nœuds StorageGRID de plusieurs abonnements Keystone, en fonction de vos autorisations d'accès. Cette vue n'est pas disponible dans Digital Advisor.
+
+[role="tabbed-block"]
+====
+.Nœuds dans les clusters
+--
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone > Ressources*.
++
+L'onglet *Actifs* affiche le sous-onglet *Nœuds du cluster*.
+
++
+image:bxp-nodes-clusters-multiple-subscription.png["Une capture d'écran des nœuds dans les clusters pour plusieurs abonnements"]
+
++
+Vous pouvez consulter des informations détaillées sur tous les nœuds des clusters des abonnements Keystone, notamment leurs numéros de série, leur état, leurs paramètres d'efficacité de stockage, leur type de plateforme et leurs capacités. Vous obtenez également un aperçu des éléments suivants :
+
++
+** Nombre total d'abonnements et de nœuds ONTAP.
+** Consommation de capacité des nœuds, avec un bouton *Afficher* cliquable pour filtrer le tableau et afficher les actifs qui répondent à des critères spécifiques (> 90 % consommés ou < 50 % consommés).
+** Nœuds basés sur les versions ONTAP, avec le bouton *Afficher* pour filtrer les nœuds dans les trois dernières versions ou plus anciennes.
++
+
+TIP: Vous pouvez personnaliser le tableau à l'aide du sélecteur de colonnes image:column-selector.png["icône de sélecteur de colonne"] icône et utilisez la barre de recherche en haut pour rechercher et filtrer les données Keystone en fonction des paramètres de la colonne.
+
+
+
+
+
+--
+.Volumes en clusters
+--
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone > Ressources*.
+. Sélectionnez l'onglet *Volumes en clusters*.
++
+image:bxp-volumes-clusters-multiple-sub.png["Une capture d'écran des volumes en clusters pour plusieurs abonnements"]
+
++
+Vous pouvez consulter des informations détaillées sur tous les volumes des clusters des abonnements Keystone, notamment le nom du volume, le numéro d'abonnement, le numéro de série du nœud, la conformité aux politiques de qualité de service (QoS), le nom du cluster, le nom de l'hôte et les niveaux de service de performance. Vous pouvez surveiller la capacité provisionnée, l'utilisation logique et physique, ainsi que les données non utilisées. Vous obtenez également un aperçu des éléments suivants :
+
++
+** Le nombre total d’abonnements, de clusters et de volumes.
+** État de conformité et de protection du volume, avec un bouton *Afficher* pour filtrer le tableau et afficher les actifs en fonction de critères tels que conforme, non conforme ou non protégé.
++
+
+TIP: Vous pouvez personnaliser le tableau à l'aide du sélecteur de colonnes image:column-selector.png["icône de sélecteur de colonne"] icône et utilisez la barre de recherche en haut pour rechercher et filtrer les données Keystone en fonction des paramètres de la colonne.
+
++
+Vous pouvez cliquer sur un numéro d'abonnement dans la colonne *Numéro d'abonnement* pour accéder à l'onglet *Abonnements*, où vous pouvez afficher les détails de consommation d'abonnement, les échéanciers et les informations sur les actifs associés. Pour en savoir plus, reportez-vous link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]à la section .
+
+
+
+
+
+--
+.Nœuds dans les grilles
+--
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone > Ressources*.
+. Sélectionnez l'onglet *Nœuds dans les grilles*.
++
+image:bxp-nodes-grids-multiple-sub.png["Une capture d'écran des nœuds dans les grilles pour plusieurs abonnements"]
+
++
+Vous pouvez consulter des informations détaillées sur tous les nœuds des grilles des abonnements Keystone, notamment le nom et l'identifiant du nœud, le numéro d'abonnement, le nom de la grille, le type de nœud et le client. Vous pouvez surveiller la capacité de données consommée et disponible, l'utilisation du processeur et la capacité de données utilisable.
+
++
+
+TIP: Vous pouvez personnaliser le tableau à l'aide du sélecteur de colonnes image:column-selector.png["icône de sélecteur de colonne"] icône et utilisez la barre de recherche en haut pour rechercher et filtrer les données Keystone en fonction des paramètres de la colonne.
+
++
+Vous pouvez cliquer sur un numéro d'abonnement dans la colonne *Numéro d'abonnement* pour accéder à l'onglet *Abonnements*, où vous pouvez afficher les détails de consommation d'abonnement, les échéanciers et les informations sur les actifs associés. Pour en savoir plus, reportez-vous link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]à la section .
+
+
+
+--
+====
+*Informations connexes*
+
+* link:../integrations/dashboard-overview.html["Comprendre le tableau de bord Keystone"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+* link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
+* link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+* link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
+

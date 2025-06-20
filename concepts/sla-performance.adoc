@@ -14,7 +14,7 @@ summary: durabilité, sla, accord de niveau de service
 
 
 [role="lead"]
-NetApp Keystone propose un SLA basé sur la latence par niveau de service, comme décrit dans l'ordre Keystone, pour la capacité consommée jusqu'à la limite de capacité supplémentaire, selon les conditions générales suivantes.
+NetApp Keystone propose un SLA basé sur la latence par niveau de service de performance, comme décrit dans la commande Keystone pour la capacité consommée jusqu'à la limite de rafale, conformément aux conditions générales répertoriées ci-dessous.
 
 
 NOTE: Les SLA et garanties sont disponibles sur la base d'une nomination.
@@ -42,9 +42,9 @@ NOTE: Les SLA et garanties sont disponibles sur la base d'une nomination.
 
 
 
-== Niveaux de services
+== Niveaux de service de performance
 
-Tous les niveaux de service pris en charge par les baies de stockage Flash ONTAP sont éligibles au SLA de performance et à une garantie répondant à la latence cible suivante :
+Tous les niveaux de service de performance pris en charge par les baies de stockage flash ONTAP sont éligibles au SLA de performance et garantissent le respect de la latence cible suivante :
 
 |===
 
@@ -56,7 +56,7 @@ Tous les niveaux de service pris en charge par les baies de stockage Flash ONTAP
 *Cible 90^TH^ latence percentile*
 | < 1 ms. | < 2 ms. | < 4 ms. | < 4 ms. 
 |===
-Pour en savoir plus sur les exigences de latence des niveaux de service, reportez-vous à link:../concepts/service-levels.html["Niveaux de service dans Keystone"]la section .
+Pour en savoir plus sur les exigences de latence des niveaux de service de performance, reportez-vous à link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
 
 
 
@@ -85,7 +85,7 @@ Crédits de service = (capacité impactée / capacité totale allouée) X frais 
 Où ?
 
 * *Capacité impactée* : la quantité de capacité stockée affectée.
-* *Capacité totale allouée* : capacité allouée du niveau de service pour la commande Keystone.
+* *capacité totale engagée* : La capacité engagée pour le niveau de service de performance pour la commande Keystone.
 * *Frais de capacité*: Les frais pour le niveau de rendement affecté selon la commande Keystone.
 * *Jours touchés*: Le nombre de jours civils touchés.
 * *Pourcentage de crédit* : pourcentage prédéterminé pour le crédit de service.

@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: integrations/keystone-bluexp.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
+summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez obtenir un aperçu de vos abonnements depuis NetApp BlueXP.' 
+---
+= Tableau de bord Keystone dans BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'onglet *Aperçu* vous permet d'identifier rapidement les charges de travail à risque, de consulter la capacité et l'état d'expiration des abonnements, d'identifier les alertes non résolues et de visualiser les abonnements dont la capacité est la plus utilisée. Vous pouvez également consulter l'état de vos abonnements dans différentes versions de Keystone, en mettant en évidence les problèmes nécessitant votre attention.
+
+Pour afficher l'onglet *Aperçu*, à partir du menu de navigation de gauche de BlueXP, accédez à *Stockage > Keystone > Aperçu*.
+
+image:bxp-dashboard-overview.png["une capture d'écran de l'onglet Aperçu"]
+
+L'onglet *Aperçu* offre les informations suivantes :
+
+* *Résumé* : Affiche le nombre total d'abonnements, de clusters ONTAP, de nœuds StorageGRID et de nœuds ONTAP. Chaque catégorie dispose d'un bouton *Afficher* permettant d'accéder facilement aux sections détaillées de l'onglet *Abonnements* ou *Actifs*.
+* *Demandes ouvertes* : Le nombre total de demandes de service ouvertes.
+* *État de la capacité d'abonnement* : État de consommation de capacité pour les abonnements en surcapacité, en utilisation intensive et sous-utilisés. Chaque catégorie comprend un bouton *Afficher* permettant d'accéder à l'onglet *Abonnements* avec les filtres appropriés.
+* *État d'expiration de l'abonnement* : nombre d'abonnements expirés et sur le point d'expirer dans les 90 jours. Chaque catégorie comprend un bouton *Afficher* permettant d'accéder à l'onglet *Abonnements* avec les filtres appropriés.
+* *Version Keystone selon vos abonnements* : Détail de vos abonnements Keystone par version. Les règles de performance des forfaits peuvent varier selon les versions d'abonnement. Vous pouvez filtrer les abonnements par version grâce au bouton *Afficher*, qui vous redirige vers l'onglet *Abonnements* avec les filtres appropriés. Pour en savoir plus sur la version v1, consultez  https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^] .
++
+image:version-across-subscriptions.png["Un graphique à secteurs des abonnements Keystone sur les versions v1, v2 et v3."]
+
+* *Top 5 des abonnements avec la plus forte utilisation de la capacité* : affiche un tableau des cinq abonnements Keystone avec le pourcentage d'utilisation de la capacité le plus élevé. Cliquez sur le numéro d'abonnement dans la colonne *Abonnement* pour obtenir des informations détaillées.
+
+
+*Informations connexes*
+
+* link:../integrations/dashboard-overview.html["En savoir plus sur le tableau de bord Keystone"]
+* link:../integrations/dashboard-access.html["Démarrer avec le tableau de bord Keystone"]
+* link:..//integrations/keystone-aiq.html["Tableau de bord Keystone dans Digital Advisor"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+

@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: integrations/subscription-timeline.html 
+keywords: keystone, BlueXP, subscriptions, timeline, lifecycle, activation, modification, renewal 
+summary: 'Consultez la chronologie des abonnements de BlueXP, qui comprend des événements tels que les dates d"activation, de modification et de renouvellement.' 
+---
+= Consultez la chronologie de vos abonnements Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau de bord Keystone de BlueXP offre une vue chronologique de vos abonnements Keystone, affichant les événements tels que les dates d'activation, de modification et de renouvellement. Cette vue chronologique n'est pas disponible dans Digital Advisor.
+
+Pour consulter la chronologie des abonnements, suivez ces étapes :
+
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone > Abonnements*.
+. Sélectionnez le numéro d'abonnement dans la colonne *Numéro d'abonnement* pour afficher la chronologie de l'abonnement.
++
+Vous êtes redirigé vers l'onglet *Consommation actuelle*.
+
+. Sélectionnez l'onglet *Chronologie d'abonnement*.
++
+image:bxp-subscription-timeline-graph.png["une capture d'écran pour afficher la chronologie des abonnements sous forme de graphique linéaire avec les événements importants"]
+
++
+La chronologie des abonnements s'affiche par défaut sous forme de graphique linéaire, avec des icônes indiquant les événements importants. Survolez un événement pour afficher des informations détaillées, telles que la date et les modifications apportées à la capacité engagée lors d'une modification. Pour afficher ces événements sous forme de tableau, sélectionnez l'option *Tableau* dans le menu déroulant *Afficher comme*. Vous pouvez également consulter la chronologie des autres abonnements en sélectionnant ou en effectuant une recherche dans le menu déroulant *ID de suivi*.
+
++
+image:bxp-subscription-timeline.png["une capture d'écran pour afficher la chronologie des abonnements sous forme de graphique de tableau avec les événements importants"]
+
+
+
+*Informations connexes*
+
+* link:../integrations/dashboard-overview.html["Comprendre le tableau de bord Keystone"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+* link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+* link:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"]
+* link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
+

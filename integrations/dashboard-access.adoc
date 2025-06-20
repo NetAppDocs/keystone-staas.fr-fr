@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: integrations/dashboard-access.html 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions 
+summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez accéder au tableau de bord Keystone via NetApp BlueXP ou Digital Advisor' 
+---
+= Démarrer avec le tableau de bord Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez accéder au tableau de bord Keystone via NetApp BlueXP ou Digital Advisor après avoir souscrit aux services NetApp Keystone.
+
+[role="tabbed-block"]
+====
+.BlueXP
+--
+Pour vous connecter à BlueXP, vous pouvez utiliser vos informations d'identification du site de support NetApp ou vous inscrire à BlueXP à l'aide de votre e-mail et d'un mot de passe. En savoir plus sur link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Connexion à BlueXP"^].
+
+.Étapes
+. Connectez-vous à BlueXP.
+. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone*.
++
+Le tableau de bord Keystone apparaît.
+
++
+image:discover-subscriptions-1.png["la page du tableau de bord Keystone"]
+
++
+
+NOTE: Contactez le support NetApp Keystone si vos informations de connexion ne sont liées à aucun abonnement Keystone.
+
+
+
+--
+.Conseiller digital
+--
+Le tableau de bord Digital Advisor vous permet de consulter les détails de vos abonnements Keystone. Pour vous connecter à Digital Advisor, vous pouvez utiliser vos informations d'identification du site du support NetApp.
+
+.Étapes
+. Ouvrez un navigateur Web et accédez à link:https://activeiq.netapp.com/?source=onlinedocs["Conseiller digital"^] page de connexion.
+. Indiquez votre nom d'utilisateur et votre mot de passe, puis cliquez sur *connexion*.
++
+Vous pouvez consulter les détails de votre abonnement et de votre utilisation, ainsi qu'un résumé de la capacité utilisée par rapport aux services Keystone que vous avez achetés, sur le widget *Abonnements Keystone* du tableau de bord Digital Advisor. Pour en savoir plus sur le widget *Abonnements Keystone*, consultez link:../integrations/keystone-aiq.html["Tableau de bord Keystone dans Digital Advisor"] .
+
+
+
+--
+====
+*Informations connexes*
+
+* link:../integrations/keystone-bluexp.html["Tableau de bord Keystone dans BlueXP"]
+* link:..//integrations/keystone-aiq.html["Tableau de bord Keystone dans Digital Advisor"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+

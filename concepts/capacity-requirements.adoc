@@ -4,7 +4,7 @@ permalink: concepts/capacity-requirements.html
 keywords: storage capacity requirement for service levels, capacity definition per PSL, 
 summary: 'Les exigences de capacité pour les niveaux de service diffèrent selon le stockage cloud, fichier, bloc, objet ou pris en charge par l"abonnement Keystone STaaS.' 
 ---
-= Exigences de capacité pour les niveaux de service
+= Exigences de capacité pour les niveaux de service de performance
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 'Les exigences de capacité pour les niveaux de service diffèrent selo
 
 
 [role="lead"]
-Les exigences de capacité des niveaux de service STaaS Keystone diffèrent avec le stockage de fichiers, bloc, objet ou cloud pris en charge par l'abonnement Keystone STaaS.
+Les exigences de capacité pour les niveaux de service de performances Keystone STaaS diffèrent selon le stockage de fichiers, de blocs, d'objets ou de cloud pris en charge par l'abonnement Keystone STaaS.
 
 
 
 == Exigences minimales en matière de capacité pour les services de fichiers et de blocs
 
-Le tableau suivant décrit la capacité minimale et la capacité incrémentale autorisées par abonnement. La capacité minimale par niveau de service est définie de la même manière pour les différentes propositions de vente de Keystone. La capacité au-delà de la capacité minimale, soit au début de l'abonnement, soit en tant que service d'extension dans l'abonnement, soit après réaffectation pendant l'abonnement, est également structurée dans le tableau.
+Le tableau suivant décrit la capacité minimale et la capacité incrémentale autorisées par abonnement. La capacité minimale par niveau de service de performance est définie comme étant la même pour tous les mouvements de vente Keystone. La capacité au-delà de la capacité minimale, soit au début de l'abonnement, soit en tant que service d'extension dans l'abonnement, soit après réaffectation pendant l'abonnement, est également structurée dans le tableau.
 
 |===
 
@@ -98,10 +98,10 @@ Sans objet
 
 Prenez note des clauses suivantes pour les ajustements de capacité :
 
-* La capacité peut être ajoutée à tout moment pendant la durée du contrat, sauf pour les 90 derniers jours de la durée du contrat, par incréments par niveau de service comme indiqué dans les tableaux de la section précédente. L'ajout de capacités et/ou de services est autorisé dans les 90 derniers jours de la durée du contrat, tant qu'il y a consentement au renouvellement du service. Tout ajout de capacité ou de nouveaux services sur site ou dans le cloud peut co-term avec l'échéance actuelle. La facture qui vous a été envoyée après l'activation des nouveaux services reflète la facture révisée. La capacité engagée des services cloud ne peut en aucun cas être réduite pendant la durée de l'abonnement. Pendant ce temps, la capacité engagée et les dépenses engagées dans les services sur site pendant la durée du contrat peuvent être réduites en fonction de certains critères définis dans la section suivante _réduction de la capacité_.
-* Une capacité en rafale est disponible sur chaque site, en fonction du contrat Keystone. En règle générale, elle est supérieure de 20 % à la capacité allouée d'un niveau de service. Toute utilisation en rafale est facturée uniquement pour cette période de facturation. Si vous avez besoin de capacité supplémentaire supérieure à la capacité convenue, contactez le support.
+* La capacité peut être ajoutée à tout moment pendant la durée du contrat, à l'exception des 90 derniers jours de la durée du contrat, par incréments par niveau de service de performance comme décrit dans les tableaux de la section précédente. L'ajout de capacités et/ou de services est autorisé dans les 90 derniers jours de la durée du contrat, tant qu'il y a consentement au renouvellement du service. Tout ajout de capacité ou de nouveaux services sur site ou dans le cloud peut co-term avec l'échéance actuelle. La facture qui vous a été envoyée après l'activation des nouveaux services reflète la facture révisée. La capacité engagée des services cloud ne peut en aucun cas être réduite pendant la durée de l'abonnement. Pendant ce temps, la capacité engagée et les dépenses engagées dans les services sur site pendant la durée du contrat peuvent être réduites en fonction de certains critères définis dans la section suivante _réduction de la capacité_.
+* Une capacité en rafale est disponible sur chaque site, en fonction du contrat Keystone. En général, elle est supérieure de 20 % à la capacité engagée pour un niveau de service de performance. Toute utilisation en rafale est facturée uniquement pour cette période de facturation. Si vous avez besoin de capacité supplémentaire supérieure à la capacité convenue, contactez le support.
 * La capacité engagée peut être modifiée pendant une durée du contrat, seulement dans certaines conditions, comme décrit dans la section suivante _réduction de la capacité_.
-* Il est possible d'augmenter la capacité ou de passer à un niveau de service supérieur pendant une période d'abonnement. Toutefois, il est interdit de passer d'un niveau de service supérieur à un niveau de service inférieur.
+* L'augmentation de la capacité ou le passage à un niveau de service plus performant en cours d'abonnement sont autorisés. En revanche, le passage d'un niveau de service plus performant à un niveau moins performant est interdit.
 * Toute demande de changement au cours des 90 derniers jours de la durée du service nécessite le renouvellement du service pour un an minimum.
 
 
@@ -131,7 +131,7 @@ Conditions requises au niveau de l'abonnement :
 * Les nouvelles demandes ne sont prises en compte qu'à partir du cycle de facturation consécutif.
 
 
-Une partie de vos dépenses peut être allouée aux niveaux de service de stockage fichier, bloc ou objet auxquels vous avez souscrit aux services de stockage de cloud hybride. Jusqu'à 25 % de la valeur annuelle du contrat (VAC) peuvent être réaffectés chaque trimestre aux Cloud Volumes ONTAP services primaires et secondaires Cloud Volumes ONTAP :
+Vous pouvez allouer une partie de vos dépenses à vos niveaux de service de performance de stockage de fichiers, de blocs ou d'objets souscrits aux services de stockage cloud hybride. Jusqu'à 25 % de la valeur annuelle du contrat (VAC) peuvent être réaffectés chaque trimestre aux Cloud Volumes ONTAP services primaires et secondaires Cloud Volumes ONTAP :
 
 image:reallocation.png["explication de la logique de réaffectation"]
 
@@ -157,6 +157,6 @@ Ce tableau fournit un ensemble d'exemples de valeurs qui démontrent le fonction
 
 |  |  | 37,376 
 |===
-La réduction est de (125-108) = 17 Tio de la capacité allouée au niveau de services Extreme. En cas de réaffectation des dépenses, le stockage de cloud hybride attribué n'est pas de 17 To, mais une capacité équivalente à celle achetée 5000 $. Dans cet exemple, pour 5000 $, vous pouvez obtenir une capacité de stockage sur site de 17 To pour le niveau de services Extreme et une capacité de cloud hybride de 47 To pour le niveau de service Cloud Volumes ONTAP. Par conséquent, la réaffectation concerne les dépenses et non la capacité.
+La réduction est de (125-108) = 17 Tio de capacité allouée au niveau de service de performance Extreme. En cas de réaffectation des dépenses, le stockage de cloud hybride attribué n'est pas de 17 To, mais une capacité équivalente à celle achetée 5000 $. Dans cet exemple, pour 5 000 $, vous pouvez obtenir 17 Tio de capacité de stockage sur site pour le niveau de service de performance Extreme et 47 Tio de capacité cloud hybride pour le niveau de service de performance Cloud Volumes ONTAP. Par conséquent, la réaffectation concerne les dépenses et non la capacité.
 
 Si vous souhaitez réaffecter les dépenses de vos services sur site vers des services cloud, contactez votre responsable Keystone Success Manager (KSM).

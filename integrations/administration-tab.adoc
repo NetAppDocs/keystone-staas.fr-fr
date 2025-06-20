@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: integrations/administration-tab.html 
+keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription 
+summary: 'Afficher ou annuler une demande de service d"abonnement Keystone.' 
+---
+= Afficher les demandes de service pour les abonnements Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher et suivre les demandes de service de modification des abonnements Keystone via BlueXP, en fournissant un résumé rapide et en surveillant la progression.
+
+Pour visualiser la progression ou annuler une demande, suivez ces étapes :
+
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone > Administration*.
++
+Vous voyez une liste de toutes les demandes de service, y compris le numéro de demande, le type de demande et l'état actuel.
+
+. Vous pouvez cliquer sur le image:down-arrow.png["icône de flèche vers le bas"] Cliquez sur l'icône à côté de la colonne *Date de soumission* pour développer le numéro de la demande et afficher les détails. Vous pouvez ainsi visualiser les niveaux de service de performance correspondants.
++
+image:bxp-service-request-list.png["une capture d'écran montre pour quels niveaux de service de performance les demandes de modification sont émises"]
+
+. Sélectionnez le numéro de demande pour afficher des informations détaillées, y compris les détails de modification de l'abonnement demandé et l'état d'avancement actuel.
++
+image:bxp-service-progress.png["une capture d'écran qui montre l'état d'avancement actuel"]
+
+
