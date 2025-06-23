@@ -65,7 +65,7 @@ image:watchlist.png["écran liste de surveillance"]
 
 *Informations connexes*
 
-* link:../integrations/dashboard-access.html["Démarrer avec le tableau de bord Keystone"]
+* link:../integrations/dashboard-access.html["Commencez avec le tableau de bord Keystone"]
 * link:../integrations/keystone-bluexp.html["Tableau de bord Keystone dans BlueXP"]
 * link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
 * link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]

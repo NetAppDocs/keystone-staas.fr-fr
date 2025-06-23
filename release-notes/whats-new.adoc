@@ -33,7 +33,7 @@ Avec le tableau de bord Keystone dans BlueXP, vous pouvez :
 * Restez au courant des dernières informations concernant votre environnement de stockage.
 
 
-Pour commencer, accédez à *Stockage > Keystone* dans le menu de navigation de gauche de BlueXP. Pour en savoir plus, reportez-vous link:../integrations/dashboard-overview.html["Présentation du tableau de bord Keystone"^]à la section .
+Pour commencer, accédez à *Stockage > Keystone* dans le menu de navigation de gauche de BlueXP. Pour en savoir plus, reportez-vous link:../integrations/dashboard-overview.html["Présentation du tableau de bord Keystone"]à la section .
 
 
 
@@ -245,7 +245,7 @@ Pour plus de clarté sur les volumes de votre système ONTAP, deux nouveaux bout
 
 === Expérience de recherche améliorée sur Digital Advisor
 
-Les paramètres de recherche de l'écran *Digital Advisor* incluent désormais les numéros d'abonnement Keystone et les listes de contrôle créées pour les abonnements Keystone. Vous pouvez entrer les trois premiers caractères d'un numéro d'abonnement ou d'un nom de liste de contrôle. Pour plus d'informations, voir link:../integrations/keystone-aiq.html["Affichez le tableau de bord Keystone sur le conseiller digital Active IQ"^].
+Les paramètres de recherche de l'écran *Digital Advisor* incluent désormais les numéros d'abonnement Keystone et les listes de contrôle créées pour les abonnements Keystone. Vous pouvez entrer les trois premiers caractères d'un numéro d'abonnement ou d'un nom de liste de contrôle. Pour plus d'informations, voir link:../integrations/keystone-aiq.html["Consultez le tableau de bord Keystone sur Active IQ Digital Advisor"^].
 
 
 

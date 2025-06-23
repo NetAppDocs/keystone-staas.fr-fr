@@ -96,7 +96,7 @@ link:../integrations/performance-tab.html["Affichez les mesures de performances"
 |===
 *Informations connexes*
 
-* link:../integrations/dashboard-access.html["Démarrer avec le tableau de bord Keystone"]
+* link:../integrations/dashboard-access.html["Commencez avec le tableau de bord Keystone"]
 * link:../integrations/keystone-bluexp.html["Tableau de bord Keystone dans BlueXP"]
 * link:..//integrations/keystone-aiq.html["Tableau de bord Keystone dans Digital Advisor"]
 

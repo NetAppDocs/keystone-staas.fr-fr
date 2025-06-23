@@ -4,7 +4,7 @@ permalink: integrations/dashboard-access.html
 keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions 
 summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez accéder au tableau de bord Keystone via NetApp BlueXP ou Digital Advisor' 
 ---
-= Démarrer avec le tableau de bord Keystone
+= Commencez avec le tableau de bord Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

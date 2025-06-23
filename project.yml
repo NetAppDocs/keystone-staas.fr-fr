@@ -93,7 +93,7 @@ sidebar:
       entries:
       - title: En savoir plus sur le tableau de bord Keystone
         url: "/integrations/dashboard-overview.html"
-      - title: Démarrer avec le tableau de bord Keystone
+      - title: Commencez avec le tableau de bord Keystone
         url: "/integrations/dashboard-access.html"
       - title: Tableau de bord Keystone dans BlueXP
         url: "/integrations/keystone-bluexp.html"
