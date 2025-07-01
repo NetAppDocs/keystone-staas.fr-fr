@@ -1,19 +1,19 @@
 ---
 indexpage:
   title: Documentation Keystone
-  summary: NetApp Keystone est une offre de stockage en tant que service avec paiement
-    basé sur l'utilisation. Disponible sous forme d'un seul abonnement, elle couvre
-    à la fois les services de stockage de données sur site et dans le cloud. Elle
-    permet de réaffecter les dépenses de stockage sur plusieurs clouds.
+  summary: NetApp Keystone est une offre de stockage en tant que service à la carte
+    pour les services de stockage de données sur site et dans le cloud sous un seul
+    abonnement avec la possibilité de réaffecter les dépenses de stockage entre les
+    clouds.
   keywords: Keystone STaaS
-  lead: NetApp Keystone est un service d'abonnement flexible avec paiement à l'utilisation.
-    Il offre aux clients une expérience fluide, similaire à celle du cloud hybride,
-    s'ils préfèrent un modèle OpEx plutôt que CapEx ou leasing. Grâce à ce service,
+  lead: NetApp Keystone est un service flexible par abonnement, avec paiement à l'utilisation,
+    qui offre une expérience cloud hybride fluide aux clients qui privilégient les
+    dépenses d'exploitation aux investissements ou à la location. Grâce à ce service,
     vous pouvez accélérer le retour sur investissement en éliminant la charge IT qui
     pèse sur la gestion des ressources, raccourcir les cycles d'approvisionnement
-    Parcourez les documents de cette bibliothèque pour en savoir plus sur l'offre
-    de stockage en tant que service NetApp Keystone dans votre environnement ONTAP
-    ou StorageGRID.
+    Consultez la documentation de cette bibliothèque pour en savoir plus sur l'offre
+    STaaS (Stockage en tant que service) de NetApp Keystone dans votre environnement
+    ONTAP ou StorageGRID.
   tiles:
   - title: Commencez
     links:
@@ -66,6 +66,8 @@ indexpage:
     links:
     - title: Apprenez à connaître votre équipe de support
       url: "/concepts/gssc.html"
+    - title: Augmenter la capacité d'éclatement
+      url: "/concepts/burst-capacity.html"
     - title: Que puis-je faire avec mes données inactives ou moins utilisées ?
       url: "/concepts/data-tiering.html"
     - title: Comment protéger les données Keystone ?

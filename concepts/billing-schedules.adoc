@@ -14,7 +14,7 @@ summary: Les abonnements Keystone STaaS sont facturés chaque mois et chaque ann
 
 
 [role="lead"]
-Les abonnements Keystone STaaS sont facturés chaque mois et chaque année.
+Les abonnements Keystone STaaS en version 3 (v3) sont facturés sur une base mensuelle, trimestrielle, semestrielle ou annuelle.
 
 
 
@@ -24,6 +24,13 @@ Les factures sont envoyées chaque mois. Pour le mois au cours duquel les servic
 
 
 
-== Facturation annuelle
+== Facturation trimestrielle, semestrielle et annuelle
 
-Une facture est générée au début de chaque année d'abonnement pour le paiement minimum de la capacité engagée. Il est généré à la date de début de l'abonnement. Une autre facture est envoyée à la fin d'un trimestre d'abonnement, qui comprend les frais applicables relatifs à toute utilisation en rafale accumulée au cours de ce trimestre. Si la capacité engagée est modifiée au cours d'un abonnement, une facture est envoyée le même jour pour les paiements minimums calculés au prorata pour le reste de l'année d'abonnement. La facturation est calculée à partir du jour où la modification de la capacité engagée est effective.
+Pour la facturation trimestrielle, semestrielle et annuelle, le processus est similaire avec de légères variations de calendrier :
+
+* *Facturation trimestrielle* : Une facture est générée au début de chaque trimestre d'abonnement pour le paiement minimum de la capacité engagée. Une autre facture est envoyée en fin de trimestre pour toute utilisation en rafale cumulée.
+* *Facturation semestrielle* : Une facture est émise au début de chaque semestre pour le paiement minimum de la capacité engagée. Une autre facture est envoyée à la fin de chaque trimestre pour toute utilisation supplémentaire cumulée.
+* *Facturation annuelle* : Une facture est générée au début de chaque année d'abonnement pour le paiement minimum de la capacité engagée. Une autre facture est envoyée à la fin de chaque trimestre pour toute utilisation en rafale cumulée.
+
+
+Pour la facturation trimestrielle, semestrielle et annuelle, si la capacité engagée est modifiée au cours d'un abonnement, une facture est envoyée le même jour pour les paiements minimums au prorata pour le reste de cette année d'abonnement. La facturation est calculée à partir du jour où la modification de la capacité engagée est effective.

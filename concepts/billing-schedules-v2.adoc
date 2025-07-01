@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concepts/billing-schedules-v2.html 
+keywords: billing schedules, schedule for payment 
+summary: Les abonnements Keystone STaaS sont facturés chaque mois et chaque année. 
+---
+= Calendriers de facturation
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les abonnements Keystone STaaS en version 2 (v2) sont facturés sur une base mensuelle ou annuelle.
+
+
+
+== Facturation mensuelle
+
+Les factures sont envoyées chaque mois. Pour le mois au cours duquel les services sont disponibles, une facture est envoyée le mois suivant. Par exemple, la facture des services que vous avez utilisés en janvier est livrée au début de février. Cette facture comprend les frais liés à la capacité engagée et, le cas échéant, à l'utilisation en rafale.
+
+
+
+== Facturation annuelle
+
+Une facture est générée au début de chaque année d'abonnement pour le paiement minimum de la capacité engagée. Il est généré à la date de début de l'abonnement. Une autre facture est envoyée à la fin d'un trimestre d'abonnement, qui comprend les frais applicables relatifs à toute utilisation en rafale accumulée au cours de ce trimestre. Si la capacité engagée est modifiée au cours d'un abonnement, une facture est envoyée le même jour pour les paiements minimums calculés au prorata pour le reste de l'année d'abonnement. La facturation est calculée à partir du jour où la modification de la capacité engagée est effective.

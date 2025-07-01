@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/adp.html 
+permalink: concepts/adp-v2.html 
 keywords: data protection advanced 
 summary: Utilisez le service complémentaire de protection avancée des données pour assurer une protection efficace des données des workloads stratégiques. 
 ---

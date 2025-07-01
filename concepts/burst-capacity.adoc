@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: concepts/burst-capacity.html 
+keywords: burst consumption, add-on service, burst capacity, burst limit, NetApp Keystone 
+summary: 'Permet aux clients d"utiliser une capacité de stockage supplémentaire au-delà de leur capacité engagée.' 
+---
+= Options de capacité d'éclatement
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez opter pour le service complémentaire de capacité de pointe dans le cadre de votre abonnement NetApp Keystone. Ce service vous permet d'augmenter vos limites de capacité de pointe de 40 % ou 60 % au-dessus de votre capacité engagée, vous offrant ainsi la flexibilité nécessaire pour gérer les pics de charge de travail inattendus.
+
+La capacité de stockage supplémentaire correspond à la capacité de stockage supplémentaire utilisable au-delà de la capacité souscrite dans votre abonnement. Elle est mesurée et facturée selon le niveau de service de performance. Par défaut, votre limite de capacité supplémentaire est fixée à 20 % au-dessus de la capacité souscrite. Cependant, avec ce service complémentaire, vous pouvez augmenter cette limite à 40 % ou 60 %.
+
+Pour modifier votre limite de rafale à 40 % ou 60 %, contactez l'équipe de support NetApp Keystone.
+
+Pour en savoir plus sur la facturation de la capacité de rafale, reportez-vous à link:../concepts/burst-consumption-billing.html["Facturation en fonction de la consommation en rafale"] .

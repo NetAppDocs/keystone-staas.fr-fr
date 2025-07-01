@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/sla-availability.html 
+permalink: concepts/sla-availability-v2.html 
 keywords: availability, sla, service level agreement, slo, service level objectives 
 summary: 'Le SLO de disponibilité cible une disponibilité de 99.999 % au cours d"une période de facturation pour toutes les baies de stockage Flash NetApp ONTAP déployées pour délivrer la commande Keystone.' 
 ---

@@ -42,15 +42,15 @@ Vous pouvez afficher et comparer les mesures de performances dans les sections s
 
 
 
-== IOPS/Tio
+== D'IOPS
 
-Cette section affiche les graphiques d'entrées-sorties des charges de travail du volume en fonction de la plage de dates de la requête. Les IOPS de pointe pour le niveau de service de performances et les IOPS actuels (au cours des cinq dernières minutes, non basés sur la plage de dates de la requête) sont affichés, ainsi que les IOPS minimum, maximum et moyen pour la plage de temps, en IOPS/Tio.
+Cette section affiche les graphiques d'entrées-sorties des charges de travail du volume en fonction de la plage de dates de la requête. Les IOPS de pointe pour le niveau de service de performance et les IOPS actuels (au cours des cinq dernières minutes, non basés sur la plage de dates de la requête) sont affichés, ainsi que les IOPS minimum, maximum et moyen pour la plage de temps, en IOPS/Tib.
 
 image:perf-iops.png["Section IOPS du graphique"]
 
 
 
-== Débit (Mbit/s/Tio)
+== Débit
 
 Cette section affiche les graphiques de débit des charges de travail du volume en fonction de la plage de dates de la requête. Le débit maximal pour le niveau de service de performance (SLO Max) et le débit actuel (au cours des cinq dernières minutes, non basé sur la plage de dates de la requête) sont affichés, ainsi que le débit minimum, maximum et moyen pour la plage de temps, en Mbit/s/s.
 

@@ -23,7 +23,7 @@ Digital Advisor offre un tableau de bord unifié qui fournit des informations su
 .Tableau de bord par défaut (ancien)
 Vous pouvez voir votre nom de client et votre numéro d'abonnement, le nom de votre compte, les dates de début et de fin de l'abonnement, ainsi que les graphiques d'utilisation de la capacité en fonction de vos niveaux de service de performance souscrits. Vous pouvez voir l'horodatage de collecte des données de consommation en heure UTC.
 
-image:old-db-2.png["ancien tableau de bord"]
+image:old-db-3.png["ancien tableau de bord"]
 
 .Tableau de bord alternatif (nouveau)
 Vous pouvez voir l'éclatement de l'utilisation de la capacité selon vos abonnements, ainsi que les avertissements et alertes qui requièrent une intervention immédiate ou immédiate. Les informations s'affichent de manière sélective, en fonction de vos abonnements et de l'état de votre utilisation. Vous pouvez afficher ces informations :
@@ -65,7 +65,7 @@ image:watchlist.png["écran liste de surveillance"]
 
 *Informations connexes*
 
-* link:../integrations/dashboard-access.html["Commencez avec le tableau de bord Keystone"]
+* link:../integrations/dashboard-access.html["Démarrer avec le tableau de bord Keystone"]
 * link:../integrations/keystone-bluexp.html["Tableau de bord Keystone dans BlueXP"]
 * link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
 * link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]

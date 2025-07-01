@@ -28,15 +28,8 @@ Vous pouvez affiner vos recherches en utilisant l'option de filtre avancé, le c
 
 == Générer des rapports à partir de BlueXP ou de Digital Advisor
 
-Vous pouvez générer et consulter des rapports sur vos données Keystone grâce au bouton de téléchargement disponible dans les onglets de BlueXP ou Digital Advisor. Ces onglets vous permettent de générer des rapports sur vos abonnements, votre historique d'utilisation, vos pics d'utilisation, vos performances, vos actifs, vos volumes et vos objets.
+Vous pouvez générer et afficher des rapports pour vos données Keystone à l'aide du bouton de téléchargement image:bluexp-download-report-2.png["icône de téléchargement du rapport 2 dans BlueXP"] disponible dans les onglets de BlueXP ou Digital Advisor. Ces onglets vous permettent de générer des rapports sur vos abonnements, votre historique d'utilisation, vos pics d'utilisation, vos performances, vos actifs, vos volumes et vos objets.
 
-[cols="1,1"]
-|===
-| Bouton de téléchargement dans BlueXP | Bouton de téléchargement dans Digital Advisor 
-
-
-| image:bluexp-download-report-1.png["icône de téléchargement du rapport 1 dans BlueXP"] ou image:bluexp-download-report-2.png["icône de téléchargement du rapport 2 dans BlueXP"] | image:download-report-da.png["icône de téléchargement de rapport"] 
-|===
 Les détails sont générés au format CSV que vous pouvez enregistrer pour une utilisation ultérieure et une comparaison.
 
 
@@ -55,7 +48,7 @@ Pour en savoir plus sur la génération de rapports, reportez-vous link:https://
 
 == Afficher les alertes de Digital Advisor
 
-Dans Digital Advisor, le tableau de bord Keystone fournit des notifications d'alerte qui vous permettent de comprendre les problèmes survenant dans votre environnement de stockage. Ces notifications peuvent s'afficher sous forme d'alertes ou d'avertissements informatifs. Par exemple, si des volumes dans vos clusters gérés ne sont pas associés à des règles AQoS adaptative (Adaptive QoS), un message d'avertissement s'affiche. Sélectionnez le message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *Volumes et objets*.
+Dans Digital Advisor, le tableau de bord Keystone fournit des notifications d'alerte qui vous permettent de comprendre les problèmes survenant dans votre environnement de stockage. Ces notifications peuvent s'afficher sous forme d'alertes ou d'avertissements informatifs. Par exemple, avec Keystone version 2 (v2), s'il existe des volumes dans vos clusters gérés qui ne disposent pas de stratégies QoS adaptatives (AQoS) associées, vous pouvez voir un message d'avertissement. Sélectionnez le message d'avertissement pour afficher la liste des volumes non conformes dans l'onglet *Volumes et objets*.
 
 
 NOTE: Si vous êtes abonné à un seul niveau de service de performance ou à un seul forfait, vous ne pourrez pas voir l'alerte pour les volumes non conformes.

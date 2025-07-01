@@ -34,7 +34,13 @@ Vous pouvez installer le logiciel Keystone Collector sur un serveur Linux à l'a
 . Installez le fichier de référentiel du logiciel YUM :
 `# yum install keystonerepo.rpm`
 . Lorsque Keystone repo est installé, installez le package trapèze-Collector via le gestionnaire de package YUM :
++
 `# yum install keystone-collector`
+
++
+Pour Red Hat Enterprise Linux 9, exécutez la commande suivante pour installer le package keystone-collector : 
+`# yum install keystone-collector-rhel9`
+
 
 
 --

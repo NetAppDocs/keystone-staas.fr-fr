@@ -22,13 +22,13 @@ Les données des systèmes Keystone STaaS transitent par Keystone Collector et l
 
 Keystone Collector lance les appels de l'API REST vers les contrôleurs de stockage et obtient périodiquement les détails d'utilisation des contrôleurs, comme indiqué dans ce schéma de flux :
 
-image:collector-data-flow-2.png["affiche le flux de données dans les composants du collecteur"]
+image:data-collector-flow.png["affiche le flux de données dans les composants du collecteur"]
 
 .Légende
-. NetApp Collector lance une session HTTPS vers le portail cloud Active-IQ.
+. NetApp Keystone Collector initie la connexion au cloud Keystone.
 . Le pare-feu actionné par le client autorise la connexion.
-. Le portail cloud Active IQ accepte la connexion et établit un tunnel vers le collecteur NetApp.
-. Le collecteur NetApp établit une session d'API REST vers la connexion de gestion du contrôleur de stockage, obtient les données environnementales et les envoie vers le portail Active IQ.
+. Keystone Collector établit une connexion API REST directement à la connexion de gestion du contrôleur de stockage ou des tunnels via Active IQ Unified Manager pour collecter des données d'utilisation et de performances.
+. Ces données sont envoyées en toute sécurité aux composants cloud de Keystone via HTTPS.
 
 
 
@@ -37,7 +37,7 @@ image:collector-data-flow-2.png["affiche le flux de données dans les composants
 
 La surveillance continue de l'état de santé de l'infrastructure de stockage est l'une des fonctionnalités les plus importantes du service Keystone. Pour la surveillance et le reporting, Keystone utilise la solution de surveillance ITOM. L'image suivante décrit comment l'accès à distance à l'emplacement du client est sécurisé par la solution de surveillance ITOM. Les clients peuvent choisir d'activer la fonctionnalité de session à distance, ce qui permet à l'équipe de support Keystone de se connecter à des appareils surveillés à des fins de résolution de problèmes.
 
-image:monitoring-flow-1.png["flux de données"]
+image:monitoring-flow-2.png["flux de données"]
 
 .Légende
 . La passerelle de la solution de surveillance ITOM initie une session TLS vers le portail cloud.

@@ -14,7 +14,7 @@ summary: Installez le logiciel ITOM Collector sur les systèmes Linux.
 
 
 [role="lead"]
-Procédez en quelques étapes pour installer le collecteur ITOM, qui recueillera les données de mesure dans votre environnement de stockage. Vous pouvez l'installer sur des systèmes Windows ou Linux, selon vos besoins.
+Suivez quelques étapes pour installer ITOM Collector, qui collecte les données de métriques dans votre environnement de stockage. Vous pouvez l'installer sur des systèmes Windows ou Linux, selon vos besoins.
 
 
 NOTE: L'équipe de support Keystone fournit un lien dynamique pour télécharger le fichier d'installation du collecteur ITOM, qui expire dans deux heures.

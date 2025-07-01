@@ -14,14 +14,14 @@ summary: 'Keystone propose un modèle de paiement à l"utilisation pour répondr
 
 
 [role="lead"]
-Si vous préférez un modèle de consommation OpEx plutôt que CapEx ou leasing, vous pouvez opter pour le modèle de paiement en tant que service NetApp Keystone qui assure une consommation flexible et évolutive avec des tarifs prévisibles et initiaux pour votre abonnement de stockage.
+Le service d'abonnement à la carte NetApp Keystone STaaS offre une consommation flexible et évolutive avec une tarification prévisible et à l'avance pour vos besoins de stockage.
 
-Keystone vous fournit les fonctionnalités de facturation suivantes :
+Keystone pour la version 3 (v3) vous offre les fonctionnalités de facturation suivantes :
 
-* Vous pouvez payer en fonction des IOPS et de la capacité qui est dédiée à la latence pour répondre aux différents besoins des charges de travail. Les différents tiers de service de performance : Extreme, Premium, Performance, Standard, Value Et objet vous permettent de gérer le stockage en fonction du niveau de service que vous avez acheté.
+* Vous pouvez payer en fonction des IOPS et de la capacité qui est dédiée à la latence pour répondre aux différents besoins des charges de travail. Les différents niveaux de service de performance - Extreme, Premium, Standard, Value, Object et Cloud Volumes ONTAP vous permettent de gérer votre stockage en fonction du niveau de service que vous avez acheté.
 * Il présente une facturation prévisible de la capacité engagée et du paiement à l'utilisation pour l'utilisation variable (en rafale).
-* Vous pouvez sélectionner un prix de bundle pour le matériel, le système d'exploitation de base et le support pour un prix unitaire. Vous disposez d'une seule facture pour chaque type de stockage, service de fichier, bloc, objet ou service de stockage cloud.
-* Sélectionnez une durée flexible pour les services et le paiement : vous pouvez choisir entre 12 mois, 25 Tio ou plus par site. Par la suite, vous pouvez procéder au renouvellement automatique pendant 12 mois.
+* Vous pouvez sélectionner un prix de bundle pour le matériel, le système d'exploitation de base et le support pour un prix unitaire. Vous disposez d'une facture unique pour chaque type de stockage, unifié, en bloc, optimisé, objet ou services de stockage cloud.
+* Vous pouvez sélectionner une durée flexible pour les services et les options de paiement, telles que mensuelle, trimestrielle, semestrielle ou annuelle.
 
 
 La facturation de Keystone repose sur la capacité engagement et sur la consommation en rafale variable.

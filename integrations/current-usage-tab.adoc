@@ -49,10 +49,14 @@ image:bxp-current-consumption-table.png["détails de la consommation actuelle so
 . Dans le volet de navigation de gauche de Digital Advisor, accédez à *Général > Abonnements Keystone > Consommation actuelle*.
 . Sélectionnez ou recherchez le numéro d'abonnement requis dans la liste déroulante *Abonnement*.
 +
-image:aiq-ks-dtls-3.png["Consommation actuelle"]
+image:aiq-ks-dtls-4.png["Consommation actuelle"]
 
 +
 Pour l'abonnement sélectionné, vous pouvez afficher des détails, tels que les dates de début et de fin de l'abonnement et la période de facturation, par exemple mensuelle ou annuelle. Dans le cadre de l'utilisation de l'abonnement, vous pouvez consulter le nom du niveau de service de performance, les capacités engagées, consommées et disponibles, ainsi que l'utilisation actuelle et cumulée en rafales (en Tio). Les niveaux de service de performance spécifiques enregistrant une consommation plus élevée sont mis en évidence. Vous pouvez également afficher les avertissements et les alertes générés pour vos volumes.
+
++
+
+NOTE: Avec Keystone version 3 (v3), vous pouvez consulter les détails de consommation actuels pour chaque instance de niveau de service de performance. Par exemple, si vous avez deux instances du niveau de service de performance Extreme dans un abonnement, chaque instance affichera séparément ses capacités engagées, consommées et disponibles. Pour en savoir plus sur les niveaux de service de performance, consultez la page link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
 
 +
 Associé à la consommation actuelle, vous pouvez afficher l'historique des données d'utilisation pour les comparer. Cliquez sur le bouton *Afficher les données historiques* pour accéder à l'onglet *tendances de consommation* et afficher les données historiques pour le même abonnement.

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: concepts/capacity-requirements.html 
+permalink: concepts/capacity-requirements-v2.html 
 keywords: storage capacity requirement for service levels, capacity definition per PSL, 
 summary: 'Les exigences de capacité pour les niveaux de service diffèrent selon le stockage cloud, fichier, bloc, objet ou pris en charge par l"abonnement Keystone STaaS.' 
 ---
@@ -14,60 +14,34 @@ summary: 'Les exigences de capacité pour les niveaux de service diffèrent selo
 
 
 [role="lead"]
-Les exigences de capacité pour les niveaux de service de performances Keystone STaaS dans la version 3 (v3) diffèrent entre les offres de stockage unifiées, optimisées par blocs, d'objets ou cloud prises en charge par l'abonnement Keystone STaaS.
+Les exigences de capacité pour les niveaux de service de performances Keystone STaaS dans la version 2 (v2) diffèrent entre les offres de stockage de fichiers, de blocs, d'objets ou de cloud prises en charge par l'abonnement Keystone STaaS.
 
 
 
-== Exigences de capacité minimale pour un stockage unifié et optimisé par blocs
+== Exigences minimales en matière de capacité pour les services de fichiers et de blocs
 
-Vous pouvez voir la capacité minimale et la capacité incrémentielle autorisées par abonnement pour le stockage unifié et optimisé par bloc dans les tableaux suivants :
-
-*Stockage unifié*
+Le tableau suivant décrit la capacité minimale et la capacité incrémentale autorisées par abonnement. La capacité minimale par niveau de service de performance est définie comme étant la même pour tous les mouvements de vente Keystone. La capacité au-delà de la capacité minimale, soit au début de l'abonnement, soit en tant que service d'extension dans l'abonnement, soit après réaffectation pendant l'abonnement, est également structurée dans le tableau.
 
 |===
 
 
-| Puissance | Extrême | Premium | Standard | Valeur 
+| Puissance | Extrême | Premium | Performance | Standard | Valeur 
 
 
  a| 
 Capacité minimale [en Tio]
-2+| 50 2+| 100 
+3+| 25 2+| 100 
 
 
  a| 
 Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
-4+| 25 
+3+| 25 2+| 25 
 
 
  a| 
 Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
-4+| 25 
+3+| 25 2+| 25 
 |===
-*Stockage optimisé en bloc*
-
-|===
-
-
-| Puissance | Extrême | Premium 
-
-
- a| 
-Capacité minimale [en Tio]
-2+| 50 
-
-
- a| 
-Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
-2+| 25 
-
-
- a| 
-Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
-2+| 25 
-|===
-La capacité minimale pour chaque niveau de service de performance est la même pour toutes les ventes Keystone.
-
 
 
 == Exigences de capacité minimale pour le stockage objet
@@ -77,48 +51,46 @@ Vous trouverez les exigences de capacité minimale pour le stockage objet dans l
 |===
 
 
-| Puissance | Standard | Valeur 
+| Puissance | Tiering des données | Objet | Cloud Volumes ONTAP | Cloud Backup Service 
 
 
  a| 
-Capacité minimale [en Tio] par commande
-| 200 | 500 
-
-
+Capacité minimale [en Tio]
  a| 
-Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
-| 25 | 100 
-
-
+Sans objet
  a| 
-Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
-| 25 | 100 
-|===
-
-
-== Exigences minimales de capacité pour les services cloud
-
-Vous pouvez voir les exigences de capacité minimale pour les services cloud dans le tableau suivant :
-
-|===
-
-
-| Puissance | Cloud Volumes ONTAP 
-
-
+500
  a| 
-Capacité minimale [en Tio] par commande
-| 4 
+4
+ a| 
+4
+
 
 
  a| 
 Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
-| 1 
+ a| 
+Sans objet
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
 
 
  a| 
 Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
-| 1 
+ a| 
+Sans objet
+ a| 
+100
+ a| 
+1
+ a| 
+1
+
 |===
 
 
@@ -127,7 +99,7 @@ Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pend
 En savoir plus sur les ajustements de capacité :
 
 * La capacité peut être ajoutée à tout moment pendant la durée du contrat, à l'exception des 90 derniers jours de la durée du contrat, par incréments par niveau de service de performance comme décrit dans les tableaux de la section précédente. L'ajout de capacité ou de services est autorisé dans les 90 derniers jours de la durée du contrat à condition qu'il y ait un consentement de renouvellement du service. Tout ajout de capacité ou de nouveaux services sur site ou dans le cloud peut co-term avec l'échéance actuelle. La facture qui vous a été envoyée après l'activation des nouveaux services reflète la facture révisée. La capacité engagée des services cloud ne peut en aucun cas être réduite pendant la durée de l'abonnement. Pendant ce temps, la capacité engagée et les dépenses engagées dans les services sur site pendant la durée du contrat peuvent être réduites en fonction de certains critères définis dans la section suivante _réduction de la capacité_.
-* Une capacité en rafale est disponible sur chaque site, en fonction du contrat Keystone. En général, elle est fixée à 20 % au-dessus de la capacité engagée pour un niveau de service de performance. Toute utilisation en rafale est facturée uniquement pour cette période de facturation. Si vous avez besoin de capacité supplémentaire supérieure à la capacité convenue, contactez le support.
+* Une capacité en rafale est disponible sur chaque site, en fonction du contrat Keystone. En général, elle est supérieure de 20 % à la capacité engagée pour un niveau de service de performance. Toute utilisation en rafale est facturée uniquement pour cette période de facturation. Si vous avez besoin de capacité supplémentaire supérieure à la capacité convenue, contactez le support.
 * La capacité engagée peut être modifiée pendant une durée du contrat, seulement dans certaines conditions, comme décrit dans la section suivante _réduction de la capacité_.
 * L'augmentation de la capacité ou le passage à un niveau de service plus performant en cours d'abonnement sont autorisés. En revanche, le passage d'un niveau de service plus performant à un niveau moins performant est interdit.
 * Toute demande de changement au cours des 90 derniers jours de la durée du service nécessite le renouvellement du service pour un an minimum.

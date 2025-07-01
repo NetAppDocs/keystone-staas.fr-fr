@@ -1,0 +1,105 @@
+---
+sidebar: sidebar 
+permalink: concepts/supported-storage-services-v2.html 
+keywords: storage, service, service definition, keystone STaaS services, 
+summary: Les services Keystone de stockage en tant que service prennent en charge ONTAP et StorageGRID. 
+---
+= Stockage pris en charge dans Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les services Keystone STaaS pour la version 2 (v2) prennent en charge le stockage de fichiers et de blocs avec ONTAP, le stockage d'objets avec StorageGRID et Cloud Volumes ONTAP.
+
+Le service STaaS Keystone propose des services standard et facultatifs pour votre stockage.
+
+*Les services STaaS standard Keystone* : les services standard sont inclus dans l'abonnement de base et ne sont pas facturés séparément.
+
+*Les services complémentaires Keystone STaaS* : ce sont des services facultatifs payants qui offrent des utilitaires et des avantages supplémentaires en plus des services d'abonnement Keystone STaaS standard.
+
+Les services Keystone STaaS peuvent être utilisés simultanément. Par exemple, un abonnement de stockage cloud peut avoir la même durée que les abonnements de stockage de fichiers, de blocs et d'objets. Un service Cloud peut être inclus à tout moment pendant la durée de service d'un abonnement au stockage existant. Cependant, si vous ne prévoyez pas de renouveler un abonnement existant au fichier, au bloc et à l'objet, un abonnement au stockage cloud ne peut pas être ajouté au cours des 90 derniers jours de l'abonnement.
+
+
+
+== Services pour le stockage fichier, bloc et objet
+
+Les services Keystone de stockage en tant que service pour le stockage fichier et bloc ONTAP, ainsi que le stockage objet StorageGRID, prennent en charge plusieurs fonctionnalités et protocoles. Description détaillée dans le tableau suivant :
+
+|===
+| Stockage | Plateforme | Protocoles | Fonctionnalités prises en charge 
+
+
+ a| 
+Stockage de fichiers
+ a| 
+ONTAP
+ a| 
+NFS et CIFS
+ a| 
+Fonctionnalités ONTAP prises en charge :
+
+* FlexVol
+* FlexGroup
+* Copies Snapshot
+* SnapMirror (asynchrone)
+* SnapVault
+* SnapLock Enterprise
+* Tiering dans le cloud/FabricPool
+* SnapRestore
+* FlexClone
+* SnapCenter (la licence est incluse, mais ne fait pas partie des services Keystone et la gestion n'est pas garantie)
+* Protection anti-ransomware autonome^1^
+
+
+
+
+ a| 
+Stockage basé sur des blocs
+ a| 
+ONTAP
+ a| 
+FC et iSCSI
+ a| 
+Fonctionnalités ONTAP prises en charge :
+
+* FlexVol
+* FlexGroup
+* Copies Snapshot
+* SnapMirror (asynchrone)
+* SnapVault
+* SnapLock Enterprise
+* Tiering dans le cloud/FabricPool
+* SnapRestore
+* FlexClone
+* SnapCenter (la licence est incluse, mais ne fait pas partie des services Keystone et la gestion n'est pas garantie)
+
+
+
+
+ a| 
+Stockage objet
+ a| 
+StorageGRID
+ a| 
+S3
+ a| 
+Prise en charge de plusieurs règles de gestion du cycle de vie des informations (ILM) sur plusieurs sites^2^
+
+|===
+
+NOTE: ^1^ pour plus d’informations sur la protection contre les ransomware dans ONTAP, voir https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protection autonome contre les ransomwares"^].
+^2^ chaque site requiert un abonnement distinct.
+
+
+
+== Services pour le stockage cloud
+
+Le service STaaS Keystone propose des services de stockage cloud. Le service STaaS prend en charge les fonctionnalités de gestion des données Cloud Volumes ONTAP sur Amazon Web Services (AWS), Microsoft Azure et Google Cloud Platform.
+
+
+NOTE: Les services de calcul, de stockage et de réseau basés sur des hyperscalers requis par Cloud Volumes ONTAP ne sont pas fournis par NetApp dans le cadre d'abonnements Keystone. Ces abonnements doivent être achetés directement auprès de fournisseurs de services cloud hyperscales.

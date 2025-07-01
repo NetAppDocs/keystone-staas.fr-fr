@@ -75,13 +75,8 @@ Les graphiques à barres affichent des rafales à court terme et vous pouvez aff
 image:aiq-ks-subtime-7.png["Onglet tendance de consommation avec détails"]
 
 +
-Les couleurs suivantes dans les graphiques à barres indiquent la capacité consommée telle que définie dans le niveau de service de performance. Les données mensuelles dans les graphiques sont séparées par une ligne verticale.
+Les données mensuelles dans les graphiques sont séparées par une ligne verticale.
 
-+
-** Vert : à moins de 80 %.
-** Ambre: 80% - 100%.
-** Rouge : utilisation en rafale (100 % de la capacité validée par rapport à la limite de rafale convenue)
-** Violet : au-dessus de la limite d'éclatement ou `Above Limit`.
 +
 
 NOTE: Un graphique vide indique qu'aucune donnée n'est disponible dans votre environnement à ce point de collecte de données.
@@ -90,24 +85,22 @@ NOTE: Un graphique vide indique qu'aucune donnée n'est disponible dans votre en
 Vous pouvez cliquer sur le bouton à bascule *Afficher l'utilisation actuelle* pour afficher la consommation, l'utilisation en rafale et les données de rafale accumulées pour la période de facturation en cours. Ces détails ne sont pas basés sur la plage de dates de la requête.
 
 +
-*** *Courant consommé* : Indicateur de la capacité consommée (en Tio) définie pour le niveau de service de performance. Ce champ utilise des couleurs spécifiques :
+** *Courant consommé* : Indicateur de la capacité consommée (en Tio) définie pour le niveau de service de performance. Ce champ utilise des couleurs spécifiques :
 +
-**** Pas de couleur : utilisation en rafale ou supérieure.
-**** Gris : aucune utilisation.
-**** Vert : dans un délai de 80 % de la capacité allouée.
-**** Orange : 80 % de la capacité allouée à la capacité de rafale.
+*** Pas de couleur : utilisation en rafale ou supérieure.
+*** Gris : aucune utilisation.
+*** Vert : dans un délai de 80 % de la capacité allouée.
+*** Orange : 80 % de la capacité allouée à la capacité de rafale.
 
 
-*** *Burst courant* : indicateur de la capacité consommée dans la limite de rafale définie ou au-dessus. Toute utilisation comprise dans la limite de capacité supplémentaire pour votre abonnement, par exemple, 20 % de plus que la capacité allouée se situe dans la limite de capacité supplémentaire. Autre utilisation : utilisation supérieure à la limite d'augmentation. Ce champ affiche des couleurs spécifiques :
+** *Burst courant* : indicateur de la capacité consommée dans la limite de rafale définie ou au-dessus. Toute utilisation comprise dans la limite de capacité supplémentaire pour votre abonnement, par exemple, 20 % de plus que la capacité allouée se situe dans la limite de capacité supplémentaire. Autre utilisation : utilisation supérieure à la limite d'augmentation. Ce champ affiche des couleurs spécifiques :
 +
-**** Pas de couleur : pas d'utilisation de rafale.
-**** Rouge : utilisation en rafale.
-**** Violet : au-dessus de la limite d'éclatement.
+*** Pas de couleur : pas d'utilisation de rafale.
+*** Rouge : utilisation en rafale.
+*** Violet : au-dessus de la limite d'éclatement.
 
 
-*** *Burst cumulé* : indicateur de la capacité totale de rafale (en Tio) accumulée au cours de chaque intervalle de 2 minutes au cours d'un mois pour le cycle de facturation actuel.
-
-
+** *Burst cumulé* : indicateur de la capacité totale de rafale (en Tio) accumulée au cours de chaque intervalle de 2 minutes au cours d'un mois pour le cycle de facturation actuel.
 
 
 

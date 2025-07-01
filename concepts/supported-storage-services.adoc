@@ -14,7 +14,14 @@ summary: Les services Keystone de stockage en tant que service prennent en charg
 
 
 [role="lead"]
-Les services Keystone STaaS prennent en charge le stockage des fichiers et des blocs d'ONTAP, le stockage objet de la plateforme StorageGRID et les fonctionnalités de gestion des données d'Cloud Volumes ONTAP.
+Les services Keystone STaaS pour la version 3 (v3) prennent en charge le stockage unifié, optimisé par blocs et objet de NetApp et Cloud Volumes ONTAP.
+
+Chaque type de stockage comprend :
+
+* *Stockage unifié* : inclut le stockage de fichiers, de blocs et d'objets S3, disponible sur les systèmes NetApp ONTAP AFF et FAS.
+* *Stockage optimisé en bloc* : inclut le stockage en bloc disponible sur les systèmes NetApp ONTAP ASA.
+* *Stockage d'objets* : inclut le stockage d'objets disponible sur les systèmes NetApp StorageGRID.
+
 
 Le service STaaS Keystone propose des services standard et facultatifs pour votre stockage.
 
@@ -22,62 +29,37 @@ Le service STaaS Keystone propose des services standard et facultatifs pour votr
 
 *Les services complémentaires Keystone STaaS* : ce sont des services facultatifs payants qui offrent des utilitaires et des avantages supplémentaires en plus des services d'abonnement Keystone STaaS standard.
 
-Les services STaaS Keystone peuvent coexister les uns avec les autres. Par exemple, un abonnement au stockage cloud peut co-term avec des abonnements au stockage objet, bloc et fichier. Un service Cloud peut être inclus à tout moment pendant la durée de service d'un abonnement au stockage existant. Cependant, si vous ne prévoyez pas de renouveler un abonnement existant au fichier, au bloc et à l'objet, un abonnement au stockage cloud ne peut pas être ajouté au cours des 90 derniers jours de l'abonnement.
+Les services Keystone STaaS peuvent être utilisés simultanément. Par exemple, un abonnement de stockage cloud peut avoir la même durée que les abonnements de stockage unifié, optimisé par blocs ou objet. Un service Cloud peut être inclus à tout moment pendant la durée de service d'un abonnement au stockage existant. Cependant, si vous ne prévoyez pas de renouveler un abonnement de stockage unifié, optimisé par blocs ou objet existant, aucun abonnement de stockage cloud ne peut être ajouté pendant les 90 derniers jours de l'abonnement.
 
 
 
-== Services pour le stockage fichier, bloc et objet
+== Services de stockage unifié, optimisé par blocs et d'objets
 
-Les services Keystone de stockage en tant que service pour le stockage fichier et bloc ONTAP, ainsi que le stockage objet StorageGRID, prennent en charge plusieurs fonctionnalités et protocoles. Description détaillée dans le tableau suivant :
+Les services Keystone STaaS pour le stockage unifié, optimisé par blocs et d'objets prennent en charge plusieurs fonctionnalités et protocoles et sont décrits dans le tableau suivant :
 
 |===
 | Stockage | Plateforme | Protocoles | Fonctionnalités prises en charge 
 
 
  a| 
-Stockage de fichiers
+Le stockage unifié
  a| 
 ONTAP
  a| 
 NFS et CIFS
  a| 
-Fonctionnalités ONTAP prises en charge :
-
-* FlexVol
-* FlexGroup
-* Copies Snapshot
-* SnapMirror (asynchrone)
-* SnapVault
-* SnapLock Enterprise
-* Tiering dans le cloud/FabricPool
-* SnapRestore
-* FlexClone
-* SnapCenter (la licence est incluse, mais ne fait pas partie des services Keystone et la gestion n'est pas garantie)
-* Protection anti-ransomware autonome^1^
-
+Prend en charge toutes les fonctionnalités d'ONTAP One
 
 
 
  a| 
-Stockage basé sur des blocs
+Stockage optimisé par blocs
  a| 
 ONTAP
  a| 
 FC et iSCSI
  a| 
-Fonctionnalités ONTAP prises en charge :
-
-* FlexVol
-* FlexGroup
-* Copies Snapshot
-* SnapMirror (asynchrone)
-* SnapVault
-* SnapLock Enterprise
-* Tiering dans le cloud/FabricPool
-* SnapRestore
-* FlexClone
-* SnapCenter (la licence est incluse, mais ne fait pas partie des services Keystone et la gestion n'est pas garantie)
-
+Prend en charge toutes les fonctionnalités d'ONTAP One
 
 
 
@@ -88,12 +70,10 @@ StorageGRID
  a| 
 S3
  a| 
-Prise en charge de plusieurs règles de gestion du cycle de vie des informations (ILM) sur plusieurs sites^2^
+Prend en charge toutes les fonctionnalités d'ONTAP One
 
 |===
-
-NOTE: ^1^ pour plus d’informations sur la protection contre les ransomware dans ONTAP, voir https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["Protection autonome contre les ransomwares"^].
-^2^ chaque site requiert un abonnement distinct.
+Pour en savoir plus sur ONTAP One, consultez link:https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["Présentation des licences ONTAP"^] et link:https://www.netapp.com/blog/ontap-one/["ONTAP One : toute la puissance d'ONTAP, désormais tout en un"^] .
 
 
 
