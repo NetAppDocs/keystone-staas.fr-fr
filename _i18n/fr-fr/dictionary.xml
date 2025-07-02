@@ -2536,4 +2536,5 @@ Voici un exemple :</block>
   <block id="3bae5d9e115e99cbd9c3f56c7214ff02" category="sidebar">Concepts Keystone STaaS pour v3</block>
   <block id="66fb046e2c5f18ee0925adc05ac14d1f" category="sidebar">SLO de STaaS Keystone</block>
   <block id="af7cd0085fe6b7c0200fe4c5a018cbdc" category="sidebar">Concepts Keystone STaaS pour v2</block>
+  <block id="cfa9db7c89ff68cb147c3dad7e8b0b59" category="section-title">Sortie Keystone version 3 (v3)</block>
 </blocks>
