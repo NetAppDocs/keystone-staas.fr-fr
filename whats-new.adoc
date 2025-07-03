@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: release-notes/whats-new.html 
+permalink: whats-new.html 
 keywords: 'new features, release notes, enhancements, what"s new' 
 summary: NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque version des services de stockage en tant que service Keystone. 
 ---
@@ -10,7 +10,7 @@ summary: NetApp vous offre des fonctionnalités nouvelles et améliorées dans c
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -24,7 +24,7 @@ NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque ver
 
 === Sortie Keystone version 3 (v3)
 
-Vous pouvez désormais vous abonner à Keystone version 3 (v3), la dernière version de l'offre NetApp Keystone STaaS. Cette version apporte plusieurs améliorations, notamment des niveaux de service de performance simplifiés, des options de capacité de pointe supplémentaires et des fréquences de facturation flexibles. Ces améliorations simplifient la gestion, l'optimisation et la mise à l'échelle des solutions de stockage. Pour en savoir plus, reportez-vous link:../concepts/metrics.html["Services STaaS Keystone pour la v3"]à la section .
+Vous pouvez désormais vous abonner à Keystone version 3 (v3), la dernière version de l'offre NetApp Keystone STaaS. Cette version apporte plusieurs améliorations, notamment des niveaux de service de performance simplifiés, des options de capacité de pointe supplémentaires et des fréquences de facturation flexibles. Ces améliorations simplifient la gestion, l'optimisation et la mise à l'échelle des solutions de stockage. Pour en savoir plus, reportez-vous link:./concepts/metrics.html["Services STaaS Keystone pour la v3"]à la section .
 
 
 
@@ -53,7 +53,7 @@ Pour commencer, accédez à *Stockage > Keystone* dans le menu de navigation de 
 
 === Ajout d'options d'affichage de l'utilisation quotidienne des données accumulées
 
-Vous pouvez désormais afficher l'utilisation quotidienne des données de dépassement accumulées sous forme de graphique ou de tableau pour une période de facturation mensuelle ou trimestrielle en cliquant sur la barre qui affiche les données facturées. Pour en savoir plus, reportez-vous link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Afficher l'utilisation quotidienne des données de bursting accumulées"]à la section .
+Vous pouvez désormais afficher l'utilisation quotidienne des données de dépassement accumulées sous forme de graphique ou de tableau pour une période de facturation mensuelle ou trimestrielle en cliquant sur la barre qui affiche les données facturées. Pour en savoir plus, reportez-vous link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Afficher l'utilisation quotidienne des données de bursting accumulées"]à la section .
 
 
 
@@ -69,13 +69,13 @@ La colonne *logique utilisée* de l'onglet *Détails du volume* dans *volumes et
 
 === Onglet Ressources améliorées
 
-L'onglet *Assets* de l'écran *abonnements Keystone* comporte maintenant deux nouveaux sous-onglets : *ONTAP* et *StorageGRID*. Ces sous-onglets offrent des informations détaillées au niveau du cluster pour ONTAP et des informations au niveau du grid pour StorageGRID en fonction de vos abonnements. Pour en savoir plus, reportez-vous link:../integrations/assets-tab.html["Onglet actifs"^]à la section .
+L'onglet *Assets* de l'écran *abonnements Keystone* comporte maintenant deux nouveaux sous-onglets : *ONTAP* et *StorageGRID*. Ces sous-onglets offrent des informations détaillées au niveau du cluster pour ONTAP et des informations au niveau du grid pour StorageGRID en fonction de vos abonnements. Pour en savoir plus, reportez-vous link:./integrations/assets-tab.html["Onglet actifs"^]à la section .
 
 
 
 === Nouvelle option Masquer/Afficher les colonnes
 
-L'onglet *Détails du volume* de *volumes et objets* inclut désormais une option *Masquer/Afficher les colonnes*. Cette option vous permet de sélectionner ou de désélectionner des colonnes pour personnaliser la liste tabulaire des volumes en fonction de vos préférences. Pour en savoir plus, reportez-vous link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^]à la section .
+L'onglet *Détails du volume* de *volumes et objets* inclut désormais une option *Masquer/Afficher les colonnes*. Cette option vous permet de sélectionner ou de désélectionner des colonnes pour personnaliser la liste tabulaire des volumes en fonction de vos préférences. Pour en savoir plus, reportez-vous link:./integrations/volumes-objects-tab.html["Volumes  amp; objets"^]à la section .
 
 
 
@@ -85,7 +85,7 @@ L'onglet *Détails du volume* de *volumes et objets* inclut désormais une optio
 
 === Augmentation supplémentaire facturée
 
-Vous pouvez maintenant afficher les données d'utilisation de dépassement accumulées sur une base trimestrielle via l'option *facturé cumulé Burst* si vous avez opté pour une période de facturation trimestrielle. Pour en savoir plus, reportez-vous link:../integrations/consumption-tab.html#view-accrued-burst["Afficher les frais supplémentaires facturés"^]à la section .
+Vous pouvez maintenant afficher les données d'utilisation de dépassement accumulées sur une base trimestrielle via l'option *facturé cumulé Burst* si vous avez opté pour une période de facturation trimestrielle. Pour en savoir plus, reportez-vous link:./integrations/consumption-tab.html#view-accrued-burst["Afficher les frais supplémentaires facturés"^]à la section .
 
 
 
@@ -107,7 +107,7 @@ Ces colonnes offrent une meilleure clarté dans la colonne *logique utilisée*, 
 
 === Génération de rapports améliorée
 
-Vous pouvez désormais générer un rapport consolidé pour afficher les détails de vos données Keystone à l'aide de la fonctionnalité de rapport de Digital Advisor. Pour en savoir plus, reportez-vous à link:../integrations/options.html#generate-consolidated-report-from-digital-advisor["Générer un rapport consolidé"^] .
+Vous pouvez désormais générer un rapport consolidé pour afficher les détails de vos données Keystone à l'aide de la fonctionnalité de rapport de Digital Advisor. Pour en savoir plus, reportez-vous à link:./integrations/options.html#generate-consolidated-report-from-digital-advisor["Générer un rapport consolidé"^] .
 
 
 
@@ -163,7 +163,7 @@ Les niveaux de service *CVO Primary* et *CVO Secondary* sont inclus pour prendre
 
 === Fonction de zoom avant pour les pics à court terme
 
-L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des pics à court terme dans les graphiques d'utilisation. Pour plus d'informations, voir link:../integrations/consumption-tab.html["Onglet tendances de capacité"^].
+L'onglet *Capacity Trend* inclut désormais une fonction de zoom avant pour afficher les détails des pics à court terme dans les graphiques d'utilisation. Pour plus d'informations, voir link:./integrations/consumption-tab.html["Onglet tendances de capacité"^].
 
 
 
@@ -207,14 +207,14 @@ L'onglet *Détails du volume* de l'onglet *volumes et objets* fournit désormais
 
 === L'amélioration de la conformité à la règle QoS s'affiche dans l'onglet Détails du volume
 
-L'onglet *Détails du volume* de l'onglet *volumes et objets* offre désormais une meilleure visibilité sur la conformité aux règles de qualité de service (QoS). La colonne précédemment connue sous le nom de *AQoS* est renommée *compatible*, ce qui indique si la stratégie QoS est conforme. En outre, une nouvelle colonne *QoS Policy Type* est ajoutée, qui indique si la règle est fixe ou adaptative. Si aucune de ces deux conditions ne s'applique, la colonne affiche _not available_. Pour plus d'informations, voir link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
+L'onglet *Détails du volume* de l'onglet *volumes et objets* offre désormais une meilleure visibilité sur la conformité aux règles de qualité de service (QoS). La colonne précédemment connue sous le nom de *AQoS* est renommée *compatible*, ce qui indique si la stratégie QoS est conforme. En outre, une nouvelle colonne *QoS Policy Type* est ajoutée, qui indique si la règle est fixe ou adaptative. Si aucune de ces deux conditions ne s'applique, la colonne affiche _not available_. Pour plus d'informations, voir link:./integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
 
 
 
 === Nouvelle colonne et affichage simplifié de l'abonnement dans l'onglet Volume Summary
 
 * L'onglet *Volume Summary* de l'onglet *volumes et objets* inclut désormais une nouvelle colonne intitulée *Protected*. Cette colonne indique le nombre de volumes protégés associés aux niveaux de service auxquels vous êtes abonné. Si vous cliquez sur le nombre de volumes protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée de volumes protégés.
-* L'onglet *Volume Summary* est mis à jour pour afficher uniquement les abonnements de base, à l'exclusion des services complémentaires. Pour plus d'informations, voir link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
+* L'onglet *Volume Summary* est mis à jour pour afficher uniquement les abonnements de base, à l'exclusion des services complémentaires. Pour plus d'informations, voir link:./integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
 
 
 
@@ -243,19 +243,19 @@ Les données sont affichées en fonction de la date de début sélectionnée de 
 
 === Ajout de l'onglet actifs
 
-L'écran *abonnements Keystone* comprend maintenant l'onglet *actifs*. Ce nouvel onglet fournit des informations au niveau du cluster en fonction de vos abonnements. Pour plus d'informations, voir link:../integrations/assets-tab.html["Onglet actifs"^].
+L'écran *abonnements Keystone* comprend maintenant l'onglet *actifs*. Ce nouvel onglet fournit des informations au niveau du cluster en fonction de vos abonnements. Pour plus d'informations, voir link:./integrations/assets-tab.html["Onglet actifs"^].
 
 
 
 === Améliorations apportées à l'onglet volumes et objets
 
-Pour plus de clarté sur les volumes de votre système ONTAP, deux nouveaux boutons d'onglet, *Volume Summary* et *Volume Details*, ont été ajoutés à l'onglet *volumes*. L'onglet *Volume Summary* fournit un nombre global de volumes associés aux niveaux de service auxquels vous êtes abonné, y compris leur état de conformité AQoS et leurs informations de capacité. L'onglet *Détails du volume* répertorie tous les volumes et leurs détails. Pour plus d'informations, voir link:../integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
+Pour plus de clarté sur les volumes de votre système ONTAP, deux nouveaux boutons d'onglet, *Volume Summary* et *Volume Details*, ont été ajoutés à l'onglet *volumes*. L'onglet *Volume Summary* fournit un nombre global de volumes associés aux niveaux de service auxquels vous êtes abonné, y compris leur état de conformité AQoS et leurs informations de capacité. L'onglet *Détails du volume* répertorie tous les volumes et leurs détails. Pour plus d'informations, voir link:./integrations/volumes-objects-tab.html["Volumes  amp; objets"^].
 
 
 
 === Expérience de recherche améliorée sur Digital Advisor
 
-Les paramètres de recherche de l'écran *Digital Advisor* incluent désormais les numéros d'abonnement Keystone et les listes de contrôle créées pour les abonnements Keystone. Vous pouvez entrer les trois premiers caractères d'un numéro d'abonnement ou d'un nom de liste de contrôle. Pour plus d'informations, voir link:../integrations/keystone-aiq.html["Consultez le tableau de bord Keystone sur Active IQ Digital Advisor"^].
+Les paramètres de recherche de l'écran *Digital Advisor* incluent désormais les numéros d'abonnement Keystone et les listes de contrôle créées pour les abonnements Keystone. Vous pouvez entrer les trois premiers caractères d'un numéro d'abonnement ou d'un nom de liste de contrôle. Pour plus d'informations, voir link:./integrations/keystone-aiq.html["Consultez le tableau de bord Keystone sur Active IQ Digital Advisor"^].
 
 
 
@@ -281,7 +281,7 @@ Certains de vos abonnements principaux peuvent avoir des abonnements secondaires
 
 === Données facturées renvoyées pour le cumul de capacité supplémentaire
 
-Les étiquettes de *Accrued Burst* sont maintenant modifiées en *facturé Burst cumulé* dans l'onglet *Capacity Trend*. La sélection de cette option vous permet d'afficher les graphiques mensuels des données de dépassement cumulées facturées. Pour plus d'informations, voir link:../integrations/consumption-tab.html#view-accrued-burst["Afficher les frais supplémentaires facturés"^].
+Les étiquettes de *Accrued Burst* sont maintenant modifiées en *facturé Burst cumulé* dans l'onglet *Capacity Trend*. La sélection de cette option vous permet d'afficher les graphiques mensuels des données de dépassement cumulées facturées. Pour plus d'informations, voir link:./integrations/consumption-tab.html#view-accrued-burst["Afficher les frais supplémentaires facturés"^].
 
 
 
@@ -297,10 +297,10 @@ Si vous disposez d'un abonnement avec des abonnements ayant une capacité allou�
 
 === Possibilité de rechercher par listes de surveillance
 
-La prise en charge des listes de suivi dans Digital Advisor a été étendue aux systèmes Keystone. Vous pouvez maintenant afficher les détails des abonnements de plusieurs clients en effectuant une recherche à l'aide de listes de contrôle. Pour plus d'informations sur l'utilisation des listes de suivi dans Keystone STaaS, consultez la section link:../integrations/keystone-aiq.html#search-by-keystone-watchlists["Rechercher par listes de surveillance Keystone"^].
+La prise en charge des listes de suivi dans Digital Advisor a été étendue aux systèmes Keystone. Vous pouvez maintenant afficher les détails des abonnements de plusieurs clients en effectuant une recherche à l'aide de listes de contrôle. Pour plus d'informations sur l'utilisation des listes de suivi dans Keystone STaaS, consultez la section link:./integrations/keystone-aiq.html#search-by-keystone-watchlists["Rechercher par listes de surveillance Keystone"^].
 
 
 
 === Date convertie en fuseau horaire UTC
 
-Les données renvoyées sur les onglets de l'écran *Abonnements Keystone* de Digital Advisor sont affichées en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir link:../integrations/keystone-aiq.html["Tableau de bord et reporting des abonnements Keystone"^].
+Les données renvoyées sur les onglets de l'écran *Abonnements Keystone* de Digital Advisor sont affichées en heure UTC (fuseau horaire du serveur). Lorsque vous saisissez une date pour la requête, elle est automatiquement considérée comme étant en heure UTC. Pour plus d'informations, voir link:./integrations/keystone-aiq.html["Tableau de bord et reporting des abonnements Keystone"^].

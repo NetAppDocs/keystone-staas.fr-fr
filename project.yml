@@ -14,7 +14,7 @@ sidebar:
   - title: Notes de mise à jour
     entries:
     - title: Nouveautés du stockage en tant que service Keystone
-      url: "/release-notes/whats-new.html"
+      url: "/whats-new.html"
     - title: Problèmes résolus
       url: "/release-notes/fixed-issues.html"
     - title: Problèmes connus
