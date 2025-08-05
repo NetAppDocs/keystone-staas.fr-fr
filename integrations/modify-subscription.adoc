@@ -36,7 +36,7 @@ La page *Modifier l'abonnement* affiche les détails des niveaux de service de p
 NOTE: En option, vous pouvez accéder à la page *Modifier l'abonnement* en cliquant sur *Gérer l'abonnement* dans la section des détails de l'abonnement, puis en sélectionnant *Modifier*.
 
 +
-image:bxp-modify-subscription.png["une capture d'écran affichant l'option de modification de la liste d'abonnement"]
+image:bxp-modify-subscription-1.png["une capture d'écran affichant l'option de modification de la liste d'abonnement"]
 
 . Cliquez sur *Modifier la capacité* pour modifier la capacité engagée pour les niveaux de service de performance, fournissez les détails nécessaires et cliquez sur *Soumettre*.
 +

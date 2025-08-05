@@ -14,12 +14,12 @@ summary: Les services Keystone de stockage en tant que service prennent en charg
 
 
 [role="lead"]
-Les services Keystone STaaS pour la version 3 (v3) prennent en charge le stockage unifié, optimisé par blocs et objet de NetApp et Cloud Volumes ONTAP.
+Le service Keystone STaaS prend en charge le stockage unifié, optimisé par blocs et d'objets de NetApp et Cloud Volumes ONTAP.
 
-Chaque type de stockage comprend :
+Les options de stockage prises en charge sont :
 
 * *Stockage unifié* : inclut le stockage de fichiers, de blocs et d'objets S3, disponible sur les systèmes NetApp ONTAP AFF et FAS.
-* *Stockage optimisé en bloc* : inclut le stockage en bloc disponible sur les systèmes NetApp ONTAP ASA.
+* *Stockage optimisé par bloc* : inclut le stockage par bloc disponible sur les systèmes NetApp ONTAP ASA .
 * *Stockage d'objets* : inclut le stockage d'objets disponible sur les systèmes NetApp StorageGRID.
 
 

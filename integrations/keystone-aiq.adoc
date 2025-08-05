@@ -31,13 +31,8 @@ Vous pouvez voir l'éclatement de l'utilisation de la capacité selon vos abonne
 * *Utilisation de la capacité* : données de consommation telles que l'absence d'utilisation, la consommation dépassant 80 % de la capacité engagée, l'utilisation en rafale et la consommation supérieure à la capacité en rafale.
 * *Alertes* : vous voyez des alertes pour différents scénarios s'ils vous concernent.
 +
-** *Expire bientôt* : en cas d'expiration de vos abonnements dans un délai de 90 jours.
-** *QoS Warnings* : vous avez des volumes sans stratégies AQoS attribuées.
-+
 
 TIP: Cliquez sur le lien *abonnements* pour afficher la liste des abonnements filtrés dans l'onglet *abonnements*.
-
-
 
 
 

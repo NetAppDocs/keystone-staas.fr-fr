@@ -20,7 +20,7 @@ Un abonnement peut comporter plusieurs forfaits, chacun correspondant à un nive
 
 Un niveau de service de performance peut comporter plusieurs instances, chacune représentant une baie de stockage distincte affectée à ce niveau de service dans l'environnement du client. Chaque niveau de service de performance est défini par le nombre d'opérations d'entrée/sortie par seconde (IOPS), le débit (Gbps) et la latence (ms), ces mesures étant mesurées et appliquées par instance de niveau de service de performance.
 
-Vous sélectionnez les niveaux de service de performance en fonction de votre environnement de stockage et de vos besoins de stockage et de consommation. Les niveaux de service de performance de base sont disponibles par défaut. Des niveaux de service de performance spécifiques sont également disponibles si vous avez opté pour des services complémentaires. Par exemple, pour le service complémentaire de protection avancée des données, le niveau de service de performance _Advanced Data-Protect_ est attribué à votre abonnement.
+Vous sélectionnez les niveaux de service de performances en fonction de votre environnement de stockage et de vos besoins de stockage et de consommation. Les niveaux de service de performances de base sont disponibles pour vous par défaut. Des niveaux de service de performance spécifiques sont également disponibles, si vous avez opté pour des services complémentaires.
 
 
 TIP: Une description détaillée du service pour les niveaux de service de performance NetApp Keystone STaaS est disponible  https://www.netapp.com/services/keystone/terms-and-conditions/["ici"^] .

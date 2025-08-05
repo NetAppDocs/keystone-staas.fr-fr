@@ -18,18 +18,14 @@ L'onglet *Aperçu* vous permet d'identifier rapidement les charges de travail à
 
 Pour afficher l'onglet *Aperçu*, à partir du menu de navigation de gauche de BlueXP, accédez à *Stockage > Keystone > Aperçu*.
 
-image:bxp-dashboard-overview.png["une capture d'écran de l'onglet Aperçu"]
+image:bxp-dashboard-overview-1.png["une capture d'écran de l'onglet Aperçu"]
 
 L'onglet *Aperçu* offre les informations suivantes :
 
 * *Résumé* : Affiche le nombre total d'abonnements, de clusters ONTAP, de nœuds StorageGRID et de nœuds ONTAP. Chaque catégorie dispose d'un bouton *Afficher* permettant d'accéder facilement aux sections détaillées de l'onglet *Abonnements* ou *Actifs*.
+* *Expiration prochaine* : Nombre d'abonnements expirant dans les 6 mois. Cliquez sur *Afficher* pour voir ces abonnements dans l'onglet *Abonnements*.
 * *Demandes ouvertes* : Le nombre total de demandes de service ouvertes.
-* *État de la capacité d'abonnement* : État de consommation de capacité pour les abonnements en surcapacité, en utilisation intensive et sous-utilisés. Chaque catégorie comprend un bouton *Afficher* permettant d'accéder à l'onglet *Abonnements* avec les filtres appropriés.
-* *État d'expiration de l'abonnement* : nombre d'abonnements expirés et sur le point d'expirer dans les 90 jours. Chaque catégorie comprend un bouton *Afficher* permettant d'accéder à l'onglet *Abonnements* avec les filtres appropriés.
-* *Version Keystone selon vos abonnements* : Détail de vos abonnements Keystone par version. Les règles de performance des forfaits peuvent varier selon les versions d'abonnement. Vous pouvez filtrer les abonnements par version grâce au bouton *Afficher*, qui vous redirige vers l'onglet *Abonnements* avec les filtres appropriés. Pour en savoir plus sur la version v1, consultez  https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^] .
-+
-image:version-across-subscriptions.png["Un graphique à secteurs des abonnements Keystone sur les versions v1, v2 et v3."]
-
+* *Utilisation de la capacité* : état de consommation de capacité pour les abonnements qui sont au-dessus du seuil de saturation, qui utilisent le seuil de saturation et qui sont sous-utilisés. Chaque catégorie comprend un bouton *Afficher* pour accéder à l'onglet *Abonnements* avec les filtres pertinents appliqués.
 * *Top 5 des abonnements avec la plus forte utilisation de la capacité* : affiche un tableau des cinq abonnements Keystone avec le pourcentage d'utilisation de la capacité le plus élevé. Cliquez sur le numéro d'abonnement dans la colonne *Abonnement* pour obtenir des informations détaillées.
 
 

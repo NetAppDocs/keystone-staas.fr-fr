@@ -34,14 +34,10 @@ L'onglet *volumes et objets* offre des informations sur les volumes système ONT
 . Dans le volet de navigation de gauche de Digital Advisor, accédez à *Général > Abonnements Keystone > Volumes et objets > Résumé du volume*.
 . Sélectionnez le numéro d'abonnement.
 +
-L'abonnement Keystone STaaS sélectionné permet d'afficher le nombre total de volumes, leur état de conformité QoS, le nombre de volumes protégés et la capacité totale allouée, consommée et disponible de tous ces volumes. Si vous cliquez sur le nombre de volumes non conformes ou protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée indiquant les volumes non conformes ou les volumes protégés, en fonction de votre sélection.
+Pour l'abonnement Keystone STaaS sélectionné, vous pouvez voir le nombre total de volumes, le nombre de volumes protégés, l'état de la protection anti-ransomware et la capacité totale engagée, consommée et disponible dans tous ces volumes.  Si vous cliquez sur le nombre de volumes protégés, vous accédez à l'onglet *Détails du volume*, où vous pouvez afficher une liste filtrée affichant les volumes protégés, en fonction de votre sélection.
 
 +
-
-NOTE: Les politiques QoS ne sont pas applicables dans Keystone version 3 (v3).
-
-+
-image:volume-summary-2.png["Onglet Volume Summary"]
+image:volume-summary-3.png["Onglet Volume Summary"]
 
 
 
@@ -54,18 +50,10 @@ image:volume-summary-2.png["Onglet Volume Summary"]
 Vous pouvez voir la liste tabulaire des volumes, tels que l'utilisation de la capacité, le type de volume, le cluster, l'agrégat et les niveaux de service de performances Keystone attribués. Vous pouvez faire défiler les colonnes et en savoir plus en passant votre souris sur les icônes d'information à côté des en-têtes de colonne. Vous pouvez trier les différentes colonnes et filtrer les listes pour afficher des informations spécifiques.
 
 +
-
-NOTE: Les politiques QoS ne sont pas applicables dans la version 3 de Keystone.
-
-+
 Vous pouvez utiliser *Masquer/Afficher les colonnes* pour ajouter ou supprimer des colonnes affichées dans le tableau. Par défaut, toutes les colonnes sont sélectionnées, à l'exception de la colonne *Département*. Vous pouvez sélectionner ou désélectionner n'importe quelle colonne, y compris la colonne *Département*, et vos préférences seront enregistrées pour une utilisation ultérieure. Lors du téléchargement du rapport CSV, les détails de la colonne *Département* seront inclus si cette option est sélectionnée, tandis que d'autres colonnes apparaîtront quel que soit l'état de sélection dans le tableau.
 
 +
-
-NOTE: Pour le service complémentaire de protection avancée des données, une colonne supplémentaire apparaît pour indiquer si le volume est un volume primaire ou miroir dans la configuration MetroCluster. Vous pouvez copier des numéros de série de nœud individuels en cliquant sur le bouton *Copier les séries de nœud*.
-
-+
-image:volume-details-3.png["Onglet Détails des volumes"]
+image:volume-details-4.png["Onglet Détails des volumes"]
 
 
 

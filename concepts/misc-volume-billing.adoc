@@ -14,7 +14,7 @@ summary: Découvrez la facturation Keystone pour des configurations spécifiques
 
 
 [role="lead"]
-Comprendre la facturation Keystone pour des configurations spécifiques de la version 3 (v3) peut vous aider à optimiser l'utilisation des services et à gérer les coûts. Ces configurations incluent les volumes clonés, la protection avancée des données, les volumes temporaires, les destinations SnapMirror, les LUN et les volumes système/racine.
+Comprendre la facturation Keystone pour des configurations spécifiques dans la version 3 (v3) peut vous aider à optimiser l’utilisation du service et à gérer les coûts.  Les configurations incluent des volumes clonés, des volumes temporaires, des destinations SnapMirror , des LUN et des volumes système/racine.
 
 
 
@@ -28,19 +28,6 @@ Notez ce qui suit :
 * Il n'existe pas de délai de grâce de 24 heures pour les volumes clonés. Seule la taille du clone est prise en compte.
 * Une fois que le volume clone dépasse 10 % de la taille physique du parent, le clone est facturé comme volume standard (capacité logique utilisée).
 
-
-
-
-== Facturation pour la protection avancée des données
-
-La protection avancée des données exploite NetApp MetroCluster pour mettre en miroir les données entre deux clusters séparés physiquement. Pour les agrégats MetroCluster en miroir, les données sont écrites deux fois, une fois sur chaque cluster. Le service Keystone facture la consommation de chaque côté de manière indépendante, ce qui engendre deux enregistrements de consommation identiques. Les frais d'extension sont appliqués à toutes les capacités de l'abonnement, que les données soient à la source ou qu'elles soient mises en miroir ou non.
-
-Si vous surveillez les clusters via ONTAP System Manager (System Manager) ou Active IQ Unified Manager (Unified Manager), vous risquez de ne pas concorder avec le taux de consommation signalé sur ces outils et sur Keystone. System Manager et Unified Manager ne signalent pas les volumes sur le cluster (distant) en miroir, et ce faisant, indiquent la moitié des metrics de consommation que le service Keystone fournit.
-
-.Exemple :
-Les sites A et B sont configurés dans une configuration MetroCluster. Lorsqu'un utilisateur crée un volume de 10 To sur le site A, un volume identique de 10 To est créé sur le site B. Keystone identifie les 10 To de consommation sur chaque site pour une augmentation totale de 20 To. System Manager et Unified Manager signalent un volume de 10 To créé sur le site A, mais ne signalent pas un volume de 10 To sur le site B.
-
-En outre, tous les volumes créés sur un système Keystone avec protection avancée des données sont pris en compte dans la consommation de la protection avancée des données, que ces volumes soient ou non mis en miroir.
 
 
 

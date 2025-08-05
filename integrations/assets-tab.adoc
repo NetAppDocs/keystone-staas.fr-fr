@@ -40,10 +40,10 @@ Vous êtes redirigé vers l'onglet *Consommation actuelle*.
 . Sélectionnez l’onglet *Actifs*.
 . Sélectionnez *Volumes du cluster* dans la liste déroulante *Affichage*.
 +
-image:bxp-volumes-clusters-single-subscription.png["Une capture d'écran des volumes en clusters pour un abonnement"]
+image:bxp-volumes-clusters-single-subscription-1.png["Une capture d'écran des volumes en clusters pour un abonnement"]
 
 +
-Vous pouvez consulter des informations détaillées sur les volumes des clusters, notamment leur nom, leur numéro de série, leur conformité aux politiques de qualité de service (QoS), leur nom de cluster, leur nom d'hôte et leurs niveaux de performance. Vous pouvez également surveiller la capacité provisionnée, l'utilisation logique et physique, ainsi que les données non utilisées.
+Vous voyez les informations détaillées sur les volumes dans les clusters, y compris le nom du volume, le numéro de série du nœud, le nom du cluster, le nom de l'hôte et les niveaux de service de performances. Vous pouvez également surveiller la capacité provisionnée, l’utilisation logique et physique et les données froides.
 
 +
 

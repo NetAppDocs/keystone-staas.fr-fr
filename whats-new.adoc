@@ -14,7 +14,17 @@ summary: NetApp vous offre des fonctionnalités nouvelles et améliorées dans c
 
 
 [role="lead"]
-NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque version des services de stockage en tant que service Keystone.
+Découvrez les dernières fonctionnalités et améliorations des services Keystone STaaS.
+
+
+
+== 05 août 2025
+
+
+
+=== Afficher les données de consommation au niveau de l'instance
+
+Vous pouvez afficher la consommation actuelle et les données historiques pour chaque instance de niveau de service de performance via le tableau de bord Keystone dans BlueXP. Cette fonctionnalité est disponible pour les niveaux de service de performances avec plusieurs instances, à condition que vous disposiez d'un abonnement Keystone version 3 (v3). Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Consultez la consommation de vos abonnements Keystone"] .
 
 
 
@@ -24,7 +34,7 @@ NetApp vous offre des fonctionnalités nouvelles et améliorées dans chaque ver
 
 === Sortie Keystone version 3 (v3)
 
-Vous pouvez désormais vous abonner à Keystone version 3 (v3), la dernière version de l'offre NetApp Keystone STaaS. Cette version apporte plusieurs améliorations, notamment des niveaux de service de performance simplifiés, des options de capacité de pointe supplémentaires et des fréquences de facturation flexibles. Ces améliorations simplifient la gestion, l'optimisation et la mise à l'échelle des solutions de stockage. Pour en savoir plus, reportez-vous link:./concepts/metrics.html["Services STaaS Keystone pour la v3"]à la section .
+Vous pouvez désormais vous abonner à Keystone version 3 (v3), la dernière version de l'offre NetApp Keystone STaaS. Cette version introduit plusieurs améliorations, notamment des niveaux de service de performances simplifiés, des options de capacité de pointe supplémentaires et des fréquences de facturation flexibles. Ces améliorations simplifient la gestion, l’optimisation et la mise à l’échelle des solutions de stockage. Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["Services STaaS Keystone pour la v3"] .
 
 
 

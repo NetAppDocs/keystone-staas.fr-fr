@@ -25,10 +25,10 @@ L'onglet *Abonnements* de BlueXP est divisé en deux sections : *Abonnements* e
 .Étapes
 . Dans le menu de navigation de gauche de BlueXP, accédez à *Stockage > Keystone > Abonnements*.
 +
-image:bxp-subscription- list.png["afficher les détails de l'onglet abonnement"]
+image:bxp-subscription-list-1.png["afficher les détails de l'onglet abonnement"]
 
 +
-Vous voyez les indicateurs clés tels que l'état de la capacité, l'état d'expiration de l'abonnement et la version Keystone sur tous les abonnements. Pour en savoir plus, reportez-vous link:../integrations/keystone-bluexp.html["Tableau de bord Keystone dans BlueXP"]à la section .
+Vous voyez les indicateurs clés tels que l'utilisation de la capacité, l'état d'expiration de l'abonnement et la version Keystone sur tous les abonnements. Pour en savoir plus, consultezlink:../integrations/keystone-bluexp.html["Tableau de bord Keystone dans BlueXP"] .
 
 +
 Vous pouvez voir les détails suivants dans le tableau :
@@ -38,7 +38,7 @@ Vous pouvez voir les détails suivants dans le tableau :
 ** *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
 ** *Nom du client* : Le nom du client associé à l'abonnement Keystone.
 ** *Abonnements liés* : Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros d'abonnement liés à l'abonnement principal. Ce numéro peut être celui de votre abonnement principal ou secondaire (lié).
-** *Version Keystone* : la version du service Keystone utilisée pour l'abonnement.
+** * Version Keystone * : La version du service Keystone utilisée pour l'abonnement. Les règles du plan tarifaire pour les niveaux de service de performance peuvent différer selon les versions d'abonnement. Pour en savoir plus sur la version v1, reportez-vous à https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^] .
 ** *Période de facturation* : La période de facturation de l'abonnement.
 ** *Niveaux de service de performance* : Le nombre de forfaits associés à l'abonnement, chaque forfait correspondant à un niveau de service de performance spécifique et à une capacité engagée.
 ** *Capacité la plus élevée* : La capacité maximale consommée dans le cadre de l'abonnement.
@@ -57,7 +57,7 @@ image:bxp-performance-levels.png["afficher les niveaux de service de performance
 ** *Niveaux de service de performances sur les abonnements* : affiche le nombre de niveaux de service de performances sur les abonnements.
 ** *Cohérence de provisionnement entre les abonnements* : affiche le nombre de niveaux de service de performances surprovisionnés et sous-provisionnés.
 +
-Vous pouvez consulter la liste des niveaux de service de performance, y compris des informations clés telles que le nom du client, le numéro d'abonnement, le type de niveau de service de performance, le nombre total de volumes et leur état de conformité QoS. Le tableau affiche également le nombre de volumes protégés, la capacité totale engagée, consommée, provisionnée, disponible (avec et sans rafale) et la capacité rafale accumulée.
+Vous pouvez voir la liste des niveaux de service de performance, y compris les détails clés tels que le nom du client, le numéro d'abonnement, le type de niveau de service de performance et le nombre total de volumes. Le tableau affiche également le nombre de volumes protégés, la capacité totale engagée, consommée, provisionnée, disponible (avec et sans rafale) et la capacité de rafale accumulée.
 
 
 
@@ -74,18 +74,15 @@ Pour consulter vos abonnements dans Digital Advisor, suivez ces étapes :
 Vous pouvez consulter tous vos abonnements ici, avec des informations détaillées pour chacun d'eux.
 
 +
-image:all-subs-3.png["Image de l'onglet abonnements"]
+image:all-subs-4.png["Image de l'onglet abonnements"]
 
 +
 Pour certains champs et certaines colonnes, vous pouvez voir des informations ou des icônes d'avertissement et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
 
 +
 ** *Numéro d'abonnement* : numéro d'abonnement de l'abonnement Keystone attribué par NetApp.
+** *Abonnements liés* : Cette colonne est disponible en option. Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros d'abonnement liés à l'abonnement principal. Ce numéro d'abonnement peut être celui de votre abonnement principal ou secondaire (lié).
 ** *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site.
-+
-
-TIP: Si vous avez souscrit à un service complémentaire de protection avancée des données, cliquez sur l'info-bulle correspondant à votre numéro d'abonnement pour afficher l'ID de suivi de l'abonnement partenaire dans une configuration MetroCluster. Pour afficher la consommation détaillée par abonnement partenaire dans une configuration MetroCluster, voir link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Des graphiques de référence pour la protection avancée des données"] .
-
 ** *Type d'utilisation* : Vous êtes peut-être abonné à plusieurs versions de Keystone. Les règles de tarification relatives aux niveaux de service de performance peuvent différer selon les versions d'abonnement. La valeur de cette colonne vous permet de savoir si le type d'utilisation est facturé selon l'utilisation provisionnée, physique ou logique. Pour en savoir plus sur la version 1, consultez  https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^] .
 ** *Période de facturation* : La période de facturation de l'abonnement.
 ** *Date de début* : la date de début de l'abonnement.

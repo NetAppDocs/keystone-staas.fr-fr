@@ -29,16 +29,20 @@ Pour consulter l'état de consommation actuel de vos abonnements via BlueXP ou D
 Vous êtes redirigé vers l'onglet *Consommation actuelle*.
 
 +
-image:bxp-current-consumption-graph.png["détails de la consommation actuelle au format graphique"]
+image:bxp-current-consumption-graph-1.png["détails de la consommation actuelle au format graphique"]
 
 +
 Pour l'abonnement sélectionné, vous pouvez consulter les détails de consommation sous forme de tableau ou de graphique grâce à l'option *Tableau* ou *Graphique* du menu déroulant *Afficher comme*. La vue graphique affiche la consommation actuelle par niveau de service de performance, y compris la capacité utilisée, la capacité provisionnée, la limite de capacité engagée et la limite de capacité en rafale.
 
 +
+
+NOTE: Si un niveau de service de performance comporte plusieurs instances, vous pouvez développer *Afficher par instances* dans l'une ou l'autre vue pour afficher les détails de consommation actuels pour chaque instance séparément.  Par exemple, si vous disposez de deux instances du niveau de service de performances Extreme dans un abonnement, chaque instance affichera séparément ses propres capacités engagées, consommées et disponibles.
+
++
 Dans le tableau, vous pouvez consulter des informations telles que la capacité maximale consommée et le nombre de jours restant avant l'expiration. Dans le cadre du suivi de l'utilisation de votre abonnement, vous pouvez consulter le nom du niveau de service de performance, l'état de consommation, les capacités engagées et utilisées, les capacités provisionnées et en rafale, la capacité disponible et les volumes. image:column-selector.png["icône de sélecteur de colonne"] icône.
 
 +
-image:bxp-current-consumption-table.png["détails de la consommation actuelle sous forme de tableau"]
+image:bxp-current-consumption-table-1.png["détails de la consommation actuelle sous forme de tableau"]
 
 
 
@@ -56,7 +60,7 @@ Pour l'abonnement sélectionné, vous pouvez afficher des détails, tels que les
 
 +
 
-NOTE: Avec Keystone version 3 (v3), vous pouvez consulter les détails de consommation actuels pour chaque instance de niveau de service de performance. Par exemple, si vous avez deux instances du niveau de service de performance Extreme dans un abonnement, chaque instance affichera séparément ses capacités engagées, consommées et disponibles. Pour en savoir plus sur les niveaux de service de performance, consultez la page link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
+NOTE: Si un niveau de service de performances comporte plusieurs instances, vous pouvez sélectionner l'onglet *Instances* pour afficher les détails de consommation actuels de chaque instance.  Par exemple, si vous disposez de deux instances du niveau de service de performances Extreme dans un abonnement, chaque instance affichera séparément ses propres capacités engagées, consommées et disponibles.  Pour en savoir plus sur les niveaux de service de performance, consultezlink:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
 
 +
 Associé à la consommation actuelle, vous pouvez afficher l'historique des données d'utilisation pour les comparer. Cliquez sur le bouton *Afficher les données historiques* pour accéder à l'onglet *tendances de consommation* et afficher les données historiques pour le même abonnement.

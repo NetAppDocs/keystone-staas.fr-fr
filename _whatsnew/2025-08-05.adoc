@@ -1,0 +1,9 @@
+= Afficher les données de consommation au niveau de l'instance
+:allow-uri-read: 
+
+
+
+
+=== Afficher les données de consommation au niveau de l'instance
+
+Vous pouvez afficher la consommation actuelle et les données historiques pour chaque instance de niveau de service de performance via le tableau de bord Keystone dans BlueXP. Cette fonctionnalité est disponible pour les niveaux de service de performances avec plusieurs instances, à condition que vous disposiez d'un abonnement Keystone version 3 (v3). Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Consultez la consommation de vos abonnements Keystone"] .
