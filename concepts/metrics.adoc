@@ -14,11 +14,11 @@ summary: Le service STaaS de NetApp Keystone utilise plusieurs termes pour mesur
 
 
 [role="lead"]
-Le service STaaS de NetApp Keystone utilise plusieurs termes pour mesurer les mesures. Vous souhaiterez peut-être en savoir plus sur ces termes lorsque vous utiliserez Keystone pour la version 3 (v3).
+Le service NetApp Keystone STaaS utilise plusieurs termes pour mesurer les métriques. Vous souhaiterez peut-être en savoir plus sur ces termes lorsque vous utilisez Keystone.
 
 Les termes et définitions suivants sont utilisés dans le service de stockage en tant que service Keystone pour mesurer les metrics :
 
-* Unités de mesure de la capacité : Gio, Tio et Pio
+* Capacité : mesurée en GiB, TiB et PiB.
 * IOPS : nombre d'opérations d'entrée/sortie traitées par seconde.
 * Disponibilité du service
 * Durabilité dans un accès précis aux données
@@ -29,7 +29,7 @@ Les termes et définitions suivants sont utilisés dans le service de stockage e
 
 == Mesure des metrics
 
-* *Mesure de la capacité en gibibyte (Gio), tébibyte (Tio) et pebibyte (Pio)* : mesures de la capacité de stockage des données utilisant la base de 1024 (1 Gio = 1024^3^ octets, 1 = 1024^4^ octets et 1 Tio = 1024^5^ octets).
+* *Mesure de capacité en GiB, TiB et PiB* : Mesures de la capacité de stockage de données en utilisant la base de 1024 (1 GiB = 1024^3^ octets, 1 TiB = 1024^4^ octets et 1 PiB = 1024^5^ octets).
 * *Graphique du compteur d'opérations en IOPS* : Les opérations de protocole par seconde, demandées par l'application.
 * *Disponibilité* : mesuré en pourcentage du nombre de demandes d'E/S auxquelles le service a répondu avec succès, divisé par le nombre total de demandes d'E/S faites au service. Cette valeur est mesurée au moment de la délimitation du service dans un mois et ne comprend pas les temps d'arrêt planifiés ou d'indisponibilité des installations, du réseau ou d'autres services fournis par le client.
 * *Durabilité* : pourcentage de données consultées sans perte de fidélité, à l'exclusion de la suppression ou de la corruption causées par le client.

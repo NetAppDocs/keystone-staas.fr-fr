@@ -36,6 +36,8 @@ Vous pouvez afficher la consommation actuelle et les données historiques pour c
 
 Vous pouvez désormais vous abonner à Keystone version 3 (v3), la dernière version de l'offre NetApp Keystone STaaS. Cette version introduit plusieurs améliorations, notamment des niveaux de service de performances simplifiés, des options de capacité de pointe supplémentaires et des fréquences de facturation flexibles. Ces améliorations simplifient la gestion, l’optimisation et la mise à l’échelle des solutions de stockage. Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/concepts/metrics.html["Services STaaS Keystone pour la v3"] .
 
+Vous pouvez contacter l'équipe d'assistance Keystone pour vous abonner à Keystone version 3 (v3). Pour plus de détails, reportez-vous àlink:https://docs.netapp.com/us-en/keystone-staas/concepts/gssc.html["Obtenez de l'aide avec Keystone"] .
+
 
 
 == 19 juin 2025

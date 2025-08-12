@@ -14,7 +14,7 @@ summary: 'Les exigences de capacité pour les niveaux de service diffèrent selo
 
 
 [role="lead"]
-Les exigences de capacité pour les niveaux de service de performances Keystone STaaS dans la version 3 (v3) diffèrent entre les offres de stockage unifiées, optimisées par blocs, d'objets ou cloud prises en charge par l'abonnement Keystone STaaS.
+Les exigences de capacité pour les niveaux de service de performances Keystone STaaS diffèrent entre les offres de stockage unifiées, optimisées par blocs, d'objets ou cloud prises en charge par l'abonnement Keystone STaaS.
 
 
 

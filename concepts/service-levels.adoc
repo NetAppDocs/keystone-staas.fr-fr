@@ -14,7 +14,7 @@ summary: Keystone STaaS pour la version 3 offre une capacité de stockage à des
 
 
 [role="lead"]
-Keystone STaaS pour la version 3 (v3) offre une capacité de stockage de données à des niveaux de service de performances prédéfinis. Chaque volume géré par les services Keystone est associé à un niveau de service de performance.
+Keystone STaaS offre une capacité de stockage de données à des niveaux de service de performance prédéfinis. Chaque volume géré par les services Keystone est associé à un niveau de service de performance.
 
 Un abonnement peut comporter plusieurs forfaits, chacun correspondant à un niveau de service de performance. Chaque forfait dispose d'une capacité garantie par niveau de service de performance.
 

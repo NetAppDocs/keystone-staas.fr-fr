@@ -16,7 +16,7 @@ summary: 'Keystone propose un modèle de paiement à l"utilisation pour répondr
 [role="lead"]
 Le service d'abonnement à la carte NetApp Keystone STaaS offre une consommation flexible et évolutive avec une tarification prévisible et à l'avance pour vos besoins de stockage.
 
-Keystone pour la version 3 (v3) vous offre les fonctionnalités de facturation suivantes :
+Keystone vous propose les services de facturation suivants :
 
 * Vous pouvez payer en fonction des IOPS et de la capacité qui est dédiée à la latence pour répondre aux différents besoins des charges de travail. Les différents niveaux de service de performance - Extreme, Premium, Standard, Value, Object et Cloud Volumes ONTAP vous permettent de gérer votre stockage en fonction du niveau de service que vous avez acheté.
 * Il présente une facturation prévisible de la capacité engagée et du paiement à l'utilisation pour l'utilisation variable (en rafale).

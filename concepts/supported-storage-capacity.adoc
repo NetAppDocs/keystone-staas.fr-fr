@@ -14,7 +14,7 @@ summary: Découvrez les types de capacités de stockage prises en charge par le 
 
 
 [role="lead"]
-Le service NetApp Keystone STaaS pour la version 3 (v3) prend en charge plusieurs types de capacités de stockage. La compréhension de ces différents termes de capacité peut vous être utile lorsque vous utilisez Keystone.
+Le service NetApp Keystone STaaS prend en charge plusieurs types de capacités de stockage. Comprendre ces différents termes de capacité peut vous aider lorsque vous utilisez Keystone.
 
 
 
@@ -49,7 +49,7 @@ Pendant la durée d'un abonnement, vous pouvez modifier les capacités engagées
 
 La capacité consommée fait référence à la capacité (en Tio de stockage) actuellement consommée sur le service. Il est calculé différemment en fonction du type de stockage :
 
-* *Stockage unifié ou optimisé par blocs* : la capacité consommée est calculée en fonction du type de capacité sélectionné dans la commande, qui peut être logique ou physique. Le calcul est effectué par instance de niveau de service de performance.
+* *Stockage unifié ou optimisé par bloc* : La capacité consommée est calculée en fonction du type de capacité (logique ou physique) sélectionné lors du processus de commande.  Le calcul est effectué par instance de niveau de service de performance.
 +
 .. *Capacité logique* : C'est la somme de :
 +
