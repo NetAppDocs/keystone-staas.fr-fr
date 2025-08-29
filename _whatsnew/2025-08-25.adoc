@@ -1,0 +1,15 @@
+= Suivi d'utilisation logique amélioré avec une nouvelle colonne
+:allow-uri-read: 
+
+
+
+
+=== Suivi d'utilisation logique amélioré avec une nouvelle colonne
+
+Une nouvelle colonne, Empreinte totale, est ajoutée pour améliorer le suivi de la consommation Keystone pour les volumes FabricPool :
+
+* * Tableau de bord Keystone dans BlueXP*: Vous pouvez voir la colonne *Empreinte totale* dans l'onglet *Volumes dans les clusters* dans l'onglet *Actifs*.
+* * Digital Advisor*: Vous pouvez voir la colonne *Empreinte totale* dans l'onglet *Détails du volume* dans l'onglet *Volumes et objets*.
+
+
+Cette colonne affiche l'empreinte logique totale des volumes utilisant la hiérarchisation FabricPool , y compris les données des niveaux de performances et de froid, afin que vous puissiez calculer avec précision la consommation de Keystone .

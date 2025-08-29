@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Ligne de seuil de rafale manquante dans les graphiques de tendance de consommation pour les abonnements configurés avec une configuration MetroCluster dans le tableau de bord Digital Advisor , affichant un statut *Au-dessus de la limite de rafale* incorrect.
+ a| 
+Fixe
+ a| 
+28/08/2025
+
+
+
+ a| 
 Dans l'onglet *Actifs*, les actifs pour StorageGRID ne sont pas visibles.
  a| 
 Fixe
