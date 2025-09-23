@@ -1,0 +1,21 @@
+= Ajout de la surveillance des alertes
+:allow-uri-read: 
+
+
+
+
+=== Ajout de la surveillance des alertes
+
+Le tableau de bord Keystone de BlueXP inclut désormais un onglet *Surveillance* pour gérer les alertes et les surveillances sur vos abonnements.  Ce nouvel onglet vous permet de :
+
+* Affichez et résolvez les alertes actives, y compris les alertes générées par le système et définies par l'utilisateur concernant l'utilisation de la capacité et l'expiration de l'abonnement.
+* Créez des moniteurs d’alerte pour suivre l’utilisation de la capacité et les événements d’expiration de l’abonnement.
+
+
+Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"] .
+
+
+
+=== Affichage simplifié des niveaux de service de performance
+
+Vous pouvez afficher les informations sur les niveaux de service de performances, désormais déplacées d'un onglet séparé vers une vue extensible, dans l'onglet *Abonnements*.  Cliquez sur la flèche vers le bas à côté de la colonne *Date d'expiration* pour les afficher pour chaque abonnement. Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Afficher les détails de vos abonnements Keystone"] .

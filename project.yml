@@ -122,6 +122,12 @@ sidebar:
         url: "/integrations/assets-tab.html"
       - title: Afficher les ressources sur plusieurs abonnements
         url: "/integrations/assets.html"
+    - title: Afficher et gérer les alertes et les moniteurs
+      entries:
+      - title: Afficher et gérer les alertes
+        url: "/integrations/monitoring-alerts.html"
+      - title: Afficher et créer des moniteurs d'alerte
+        url: "/integrations/monitoring-alert-monitors.html"
     - title: Modifiez vos abonnements
       url: "/integrations/modify-subscription.html"
     - title: Consultez votre demande de service

@@ -31,7 +31,7 @@ Vous êtes redirigé vers l'onglet *Consommation actuelle*.
 . Sélectionnez l'onglet *Tendance de consommation*.
 . Sélectionnez *Consommation historique* dans la liste déroulante *Affichage* et choisissez la plage horaire à l'aide de l'icône de calendrier dans le champ *Période* pour analyser les tendances d'utilisation de la capacité.
 +
-Les données de consommation historiques pour chaque niveau de service de performance sont affichées dans un graphique linéaire en fonction de la plage de temps sélectionnée.
+Les données de consommation historiques pour chaque niveau de service de performance sont affichées dans un graphique linéaire en fonction de la plage de temps sélectionnée. Si un abonnement Keystone est modifié ou renouvelé, vous pouvez définir la date de début sur une date antérieure pour afficher les données de consommation passées.
 
 +
 

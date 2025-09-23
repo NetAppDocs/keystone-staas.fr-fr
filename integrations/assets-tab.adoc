@@ -150,5 +150,6 @@ image:assets-tab-storagegrid.png["Capture d'écran pour afficher les information
 * link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
 * link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
 * link:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"]
+* link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"]
 * link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
 

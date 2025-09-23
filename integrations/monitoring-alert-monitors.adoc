@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: integrations/monitoring-alert-monitors.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+summary: Utilisez l’onglet Surveillance pour afficher et créer des moniteurs d’alerte pour vos abonnements Keystone . 
+---
+= Afficher et créer des moniteurs d'alerte pour les abonnements Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez afficher et créer des moniteurs d'alerte pour vos abonnements Keystone à partir du tableau de bord Keystone dans BlueXP.  Le tableau de bord affiche les moniteurs générés par le système et définis par l'utilisateur pour l'utilisation de la capacité et l'expiration de l'abonnement.  Vous pouvez créer des moniteurs pour définir des seuils, choisir la gravité des alertes et ajouter des destinataires de courrier électronique pour les notifications.  Cette fonctionnalité n'est pas disponible dans Digital Advisor.
+
+
+
+== Afficher les moniteurs d'alerte
+
+Pour afficher les moniteurs d’alerte, suivez ces étapes :
+
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP , sélectionnez *Stockage > Keystone > Surveillance > Moniteurs d'alerte*.
++
+image:monitoring-alert-monitors-default-view.png["Une capture d'écran des moniteurs d'alerte pour les abonnements Keystone"]
+
++
+Vous pouvez afficher une liste des moniteurs d'alerte sur vos abonnements Keystone , y compris les noms des moniteurs, les conditions d'alerte qui déclenchent des notifications, les niveaux de gravité, les numéros d'abonnement, les niveaux de service de performances et l'état.  Vous pouvez vérifier la colonne *Créé par* pour déterminer si les moniteurs d'alerte sont générés par le système ou définis par l'utilisateur.
+
+
+
+
+
+== Créer et gérer des moniteurs d'alerte
+
+À partir de l'onglet *Moniteurs d'alerte*, vous pouvez créer des moniteurs pour suivre l'utilisation de la capacité et l'expiration de l'abonnement.  Vous pouvez également modifier, dupliquer ou supprimer des moniteurs existants selon vos besoins.
+
+[role="tabbed-block"]
+====
+.Créer un moniteur
+--
+Pour créer un moniteur d’alerte, suivez ces étapes :
+
+.Étapes
+. Cliquez sur le bouton *Créer un moniteur*.
++
+La page *Créer un moniteur d’alerte* apparaît.
+
++
+image:create-alert-monitor.png["Capture d'écran de la création d'un moniteur d'alerte pour les abonnements Keystone"]
+
+. Sélectionnez *Utilisation de la capacité* ou *Expiration de l'abonnement* pour définir le type de moniteur.  En fonction de votre sélection, fournissez les détails suivants :
++
+** *Détails généraux* : Indiquez un nom d'alerte et sélectionnez le niveau de gravité.
+** *Sélection de ressources* : Choisissez de créer le moniteur pour des abonnements spécifiques.  En fonction de votre sélection de type de moniteur, remplissez les champs obligatoires qui s'affichent, tels que les numéros d'abonnement et les niveaux de service de performances pour les moniteurs d'utilisation de la capacité, ou uniquement les numéros d'abonnement pour les moniteurs d'expiration d'abonnement.
++
+image:resource-selection.png["Une capture d'écran de la sélection des ressources pour le moniteur d'utilisation de la capacité"]
+
+** *Condition* : Définissez la condition de seuil qui déclenche l'alerte.  Par exemple, déclenchez une alerte lorsque l’utilisation de la capacité dépasse un pourcentage spécifié.
+** *Notifications* : Sélectionnez les utilisateurs qui doivent recevoir des notifications d'alerte.
+
+
+. Cliquez sur *Créer*.
++
+Après avoir créé le moniteur, le système vous renvoie à la page *Moniteurs d'alertes* et affiche le nouveau moniteur d'alerte dans la liste avec l'état actif.
+
+
+
+--
+.Modifier le moniteur
+--
+.Étapes
+. Sélectionnez l’icône représentant des points de suspension pour le moniteur d’alerte que vous souhaitez modifier.
++
+image:edit-alert-monitor.png["Capture d'écran de la modification d'un moniteur d'alerte pour les abonnements Keystone"]
+
+. Sélectionnez *Modifier*.
++
+La page *Modifier le moniteur d'alerte* apparaît avec la configuration actuelle du moniteur.
+
+. Modifiez les champs nécessaires.  Pour les descriptions de champs, reportez-vous àlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Créer un moniteur"] .
++
+
+NOTE: Pour les moniteurs d'alerte générés par le système, vous pouvez uniquement modifier les numéros d'abonnement et les niveaux de service de performances pour les moniteurs d'utilisation de la capacité, et uniquement les numéros d'abonnement pour les moniteurs d'expiration d'abonnement.
+
+. Sélectionnez *Enregistrer les modifications*.
++
+Le système vous renvoie à la page *Moniteurs d'alerte*, où le moniteur mis à jour apparaît dans la liste.
+
+
+
+--
+.Moniteur en double
+--
+.Étapes
+. Sélectionnez l’icône représentant des points de suspension pour le moniteur que vous souhaitez copier.
+. Sélectionnez *Dupliquer*.
++
+La page *Créer un moniteur d'alerte* apparaît avec les valeurs de champ existantes déjà renseignées.
+
+. Modifiez les champs selon vos besoins et cliquez sur *Créer*.
++
+Un nouveau moniteur d'alerte est créé avec la configuration mise à jour et apparaît dans la liste *Moniteurs d'alerte*.
+
+
+
+--
+.Supprimer le moniteur
+--
+.Étapes
+. Sélectionnez l’icône représentant des points de suspension pour le moniteur que vous souhaitez supprimer.
+. Sélectionnez *Supprimer* et confirmez la suppression.
++
+Après la suppression, les abonnements connectés au moniteur cessent de recevoir des notifications.
+
++
+
+NOTE: Les moniteurs générés par le système ne peuvent pas être supprimés par les utilisateurs.
+
+
+
+--
+====
+*Informations connexes*
+
+* link:../integrations/dashboard-overview.html["Comprendre le tableau de bord Keystone"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+* link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
+* link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+* link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes"]
+* link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
+* link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes pour les abonnements Keystone"]
+

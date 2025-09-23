@@ -100,5 +100,6 @@ Vous pouvez cliquer sur un numéro d'abonnement dans la colonne *Numéro d'abonn
 * link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
 * link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
 * link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+* link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"]
 * link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
 

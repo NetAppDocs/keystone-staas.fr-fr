@@ -43,5 +43,6 @@ image:bxp-subscription-timeline.png["une capture d'écran pour afficher la chron
 * link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
 * link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
 * link:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"]
+* link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"]
 * link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
 

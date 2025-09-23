@@ -36,5 +36,6 @@ L'onglet *Aperçu* offre les informations suivantes :
 * link:..//integrations/keystone-aiq.html["Tableau de bord Keystone dans Digital Advisor"]
 * link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
 * link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
+* link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"]
 * link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
 

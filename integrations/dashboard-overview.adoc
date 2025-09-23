@@ -76,6 +76,11 @@ link:../integrations/assets-tab.html["Afficher les actifs associés à un abonne
 
 
  a| 
+link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"]
+| Oui | Non 
+
+
+ a| 
 link:../integrations/modify-subscription.html["Modifiez vos abonnements"] (uniquement pour les administrateurs Keystone)
 | Oui | Non 
 

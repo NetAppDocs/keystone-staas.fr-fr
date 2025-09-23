@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: integrations/monitoring-alerts.html 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+summary: Utilisez l’onglet Surveillance pour afficher et gérer les alertes pour vos abonnements Keystone . 
+---
+= Afficher et gérer les alertes pour les abonnements Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le tableau de bord Keystone dans BlueXP vous permet d'afficher et de gérer les alertes actives dans votre environnement de stockage Keystone .  Vous pouvez voir à la fois les alertes générées par le système et les alertes définies par l'utilisateur concernant l'utilisation de la capacité et l'expiration de l'abonnement.  À partir de cette vue, vous pouvez rapidement évaluer la gravité des alertes, identifier les problèmes de stockage et prendre des mesures correctives. Cette vue n'est pas disponible dans Digital Advisor.
+
+Pour configurer des alertes définies par l'utilisateur, reportez-vous àlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Créer et gérer des moniteurs d'alerte"] .
+
+
+
+== Afficher les alertes
+
+Pour afficher les alertes actives, suivez ces étapes :
+
+.Étapes
+. Dans le menu de navigation de gauche de BlueXP , sélectionnez *Stockage > Keystone > Surveillance > Alertes*.
++
+image:monitoring-alerts-default-view.png["Une capture d'écran des alertes actives pour les abonnements Keystone"]
+
++
+Vous pouvez afficher les détails de l'alerte tels que la gravité, l'ID, la description, l'heure de déclenchement, le numéro d'abonnement, l'ID de suivi, le niveau de service de performances et l'état.  La page affiche également le nombre total d'alertes non résolues par gravité et par type.
+
+
+
+
+
+== Gérer les alertes
+
+Depuis l'onglet *Alertes*, vous pouvez effectuer les actions suivantes :
+
+* * Examiner et résoudre les alertes * : Sélectionnez le numéro d’ID d’alerte pour ouvrir une vue détaillée de l’alerte.  Cette vue affiche la description de l'alerte et les étapes de résolution suggérées.  À partir de cette vue détaillée, vous pouvez :
++
+** Marquez l'alerte comme résolue en sélectionnant le bouton *Modifier* après avoir résolu le problème.
+** Ajoutez des notes d’appui en sélectionnant le bouton *Ajouter une note* si nécessaire.
+
+
+* *Filtrer les alertes* : utilisez l'icône de filtre dans la colonne *Statut* pour afficher uniquement les alertes actives, les alertes résolues ou les deux.
+* *Afficher les détails de l'abonnement* : sélectionnez le numéro d'abonnement dans la colonne *Abonnement* pour accéder aux détails de l'abonnement, aux tendances de consommation et aux informations sur les actifs qui peuvent vous aider à comprendre et à traiter l'alerte. Pour plus d'informations, reportez-vous à link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"] .
+
+
+*Informations connexes*
+
+* link:../integrations/dashboard-overview.html["Comprendre le tableau de bord Keystone"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+* link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
+* link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+* link:../integrations/monitoring-alert-monitors.html["Afficher et créer des moniteurs d'alerte"]
+* link:../integrations/volumes-objects-tab.html["Afficher les détails des volumes et des objets"]
+
