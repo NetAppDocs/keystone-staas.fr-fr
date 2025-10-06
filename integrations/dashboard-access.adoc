@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/dashboard-access.html 
-keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions 
-summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez accéder au tableau de bord Keystone via NetApp BlueXP ou Digital Advisor' 
+keywords: Keystone, Digital Advisor, keystone-aiq, aiq, BlueXP, Keystone dashboard, Keystone subscriptions, NetApp Console, Console 
+summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez accéder au tableau de bord Keystone via NetApp Console ou Digital Advisor' 
 ---
 = Commencez avec le tableau de bord Keystone
 :hardbreaks:
@@ -14,22 +14,22 @@ summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez accéder au tabl
 
 
 [role="lead"]
-Vous pouvez accéder au tableau de bord Keystone via NetApp BlueXP ou Digital Advisor après avoir souscrit aux services NetApp Keystone.
+Vous pouvez accéder au tableau de bord Keystone via la console NetApp ou Digital Advisor après vous être abonné aux services NetApp Keystone .
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.Console NetApp
 --
-Pour vous connecter à BlueXP, vous pouvez utiliser vos informations d'identification du site de support NetApp ou vous inscrire à BlueXP à l'aide de votre e-mail et d'un mot de passe. En savoir plus sur link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["Connexion à BlueXP"^].
+Connectez-vous à la console à l'aide de vos informations d'identification du site de support NetApp ou inscrivez-vous pour une connexion au cloud NetApp à l'aide de votre e-mail et d'un mot de passe. Pour plus de détails, consultez la section link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["connexion à la console"^] .
 
 .Étapes
-. Connectez-vous à BlueXP.
-. Dans le menu de navigation de gauche de BlueXP, sélectionnez *Stockage > Keystone*.
+. Connectez-vous à la console.
+. Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone*.
 +
 Le tableau de bord Keystone apparaît.
 
 +
-image:discover-subscriptions-1.png["la page du tableau de bord Keystone"]
+image:discover-subscriptions-2.png["la page du tableau de bord Keystone"]
 
 +
 
@@ -54,7 +54,7 @@ Vous pouvez consulter les détails de votre abonnement et de votre utilisation, 
 ====
 *Informations connexes*
 
-* link:../integrations/keystone-bluexp.html["Tableau de bord Keystone dans BlueXP"]
+* link:../integrations/keystone-console.html["Tableau de bord Keystone dans la console NetApp"]
 * link:..//integrations/keystone-aiq.html["Tableau de bord Keystone dans Digital Advisor"]
 * link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/monitoring-alerts.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp, console 
 summary: Utilisez l’onglet Surveillance pour afficher et gérer les alertes pour vos abonnements Keystone . 
 ---
 = Afficher et gérer les alertes pour les abonnements Keystone
@@ -14,7 +14,7 @@ summary: Utilisez l’onglet Surveillance pour afficher et gérer les alertes po
 
 
 [role="lead"]
-Le tableau de bord Keystone dans BlueXP vous permet d'afficher et de gérer les alertes actives dans votre environnement de stockage Keystone .  Vous pouvez voir à la fois les alertes générées par le système et les alertes définies par l'utilisateur concernant l'utilisation de la capacité et l'expiration de l'abonnement.  À partir de cette vue, vous pouvez rapidement évaluer la gravité des alertes, identifier les problèmes de stockage et prendre des mesures correctives. Cette vue n'est pas disponible dans Digital Advisor.
+Le tableau de bord Keystone de la console NetApp vous permet d'afficher et de gérer les alertes actives dans votre environnement de stockage Keystone . Vous pouvez voir à la fois les alertes générées par le système et les alertes définies par l'utilisateur concernant l'utilisation de la capacité et l'expiration de l'abonnement. À partir de cette vue, vous pouvez rapidement évaluer la gravité des alertes, identifier les problèmes de stockage et prendre des mesures correctives. Cette vue n'est pas disponible dans Digital Advisor.
 
 Pour configurer des alertes définies par l'utilisateur, reportez-vous àlink:../integrations/monitoring-alert-monitors.html#create-and-manage-alert-monitors["Créer et gérer des moniteurs d'alerte"] .
 
@@ -25,9 +25,9 @@ Pour configurer des alertes définies par l'utilisateur, reportez-vous àlink:..
 Pour afficher les alertes actives, suivez ces étapes :
 
 .Étapes
-. Dans le menu de navigation de gauche de BlueXP , sélectionnez *Stockage > Keystone > Surveillance > Alertes*.
+. Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Surveillance > Alertes*.
 +
-image:monitoring-alerts-default-view.png["Une capture d'écran des alertes actives pour les abonnements Keystone"]
+image:monitoring-alerts-default-view-1.png["Une capture d'écran des alertes actives pour les abonnements Keystone"]
 
 +
 Vous pouvez afficher les détails de l'alerte tels que la gravité, l'ID, la description, l'heure de déclenchement, le numéro d'abonnement, l'ID de suivi, le niveau de service de performances et l'état.  La page affiche également le nombre total d'alertes non résolues par gravité et par type.

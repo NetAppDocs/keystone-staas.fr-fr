@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: integrations/modify-subscription.html 
-keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription 
-summary: Modifiez votre abonnement Keystone pour modifier la capacité engagée pour les niveaux de service de performance associés via BlueXP. 
+keywords: performance service levels, keystone-bluexp, modify subscription, edit capacity, manage subscription, NetApp Console, Console 
+summary: Modifiez votre abonnement Keystone pour modifier la capacité engagée pour les niveaux de service de performances associés via la console NetApp . 
 ---
-= Modifiez votre abonnement Keystone depuis BlueXP
+= Modifiez votre abonnement Keystone depuis la console NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,19 @@ summary: Modifiez votre abonnement Keystone pour modifier la capacité engagée 
 
 
 [role="lead"]
-Vous pouvez modifier la capacité engagée de votre abonnement Keystone pour les niveaux de service de performance associés via BlueXP.
+Vous pouvez modifier la capacité engagée de votre abonnement Keystone pour les niveaux de service de performances associés via la console NetApp .
 
 [NOTE]
 ====
 * Vous pouvez modifier la capacité engagée si l'abonnement a plus de 90 jours restants avant son expiration.
-* Vous devez être affecté au rôle *administrateur Keystone* pour modifier la capacité engagée. Pour en savoir plus, reportez-vous link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès BlueXP"^]à la section .
+* Vous devez être affecté au rôle * Keystone admin* pour modifier la capacité engagée. Pour en savoir plus, consultezlink:https://docs.netapp.com/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès à la console NetApp"^] .
 
 
 ====
 Pour modifier la capacité engagée, suivez ces étapes :
 
 .Étapes
-. Dans le menu BlueXP, sélectionnez *Stockage > Keystone > Abonnements*.
+. Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Abonnements*.
 . Cliquez sur l'icône représentant des points de suspension dans le tableau correspondant à l'abonnement que vous souhaitez modifier, puis sélectionnez *Modifier*.
 +
 La page *Modifier l'abonnement* affiche les détails des niveaux de service de performance souscrits associés au numéro d'abonnement sélectionné.
@@ -36,7 +36,7 @@ La page *Modifier l'abonnement* affiche les détails des niveaux de service de p
 NOTE: En option, vous pouvez accéder à la page *Modifier l'abonnement* en cliquant sur *Gérer l'abonnement* dans la section des détails de l'abonnement, puis en sélectionnant *Modifier*.
 
 +
-image:bxp-modify-subscription-1.png["une capture d'écran affichant l'option de modification de la liste d'abonnement"]
+image:console-modify-subscription.png["une capture d'écran affichant l'option de modification de la liste d'abonnement"]
 
 . Cliquez sur *Modifier la capacité* pour modifier la capacité engagée pour les niveaux de service de performance, fournissez les détails nécessaires et cliquez sur *Soumettre*.
 +

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/subscriptions-tab.html 
-keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp 
+keywords: keystone-aiq, digital advisor keystone, subscriptions-tab, performance levels, keystone-bluexp, NetApp Console, Console 
 summary: 'Pour en savoir plus sur vos abonnements Keystone, vous pouvez afficher la liste de tous vos abonnements dans l"onglet abonnements.' 
 ---
 = Afficher les détails de vos abonnements Keystone
@@ -14,21 +14,24 @@ summary: 'Pour en savoir plus sur vos abonnements Keystone, vous pouvez afficher
 
 
 [role="lead"]
-Vous pouvez consulter la liste de tous vos abonnements depuis l'onglet *Abonnements* de BlueXP et Digital Advisor. Cet onglet fournit des informations claires et compréhensibles en fonction de l'état de votre abonnement et de votre utilisation, vous permettant de rester informé et d'agir en cas de besoin.
+Vous pouvez afficher une liste de tous vos abonnements à partir de *Abonnements* dans la console NetApp et Digital Advisor. Cette vue fournit des informations faciles à comprendre en fonction de l'état de votre abonnement et de votre utilisation, vous aidant à rester informé et à agir en cas de besoin.
 
 [role="tabbed-block"]
 ====
-.BlueXP
+.Console NetApp
 --
 Pour afficher les informations détaillées de vos abonnements, suivez ces étapes :
 
 .Étapes
-. Dans le menu de navigation de gauche de BlueXP, accédez à *Stockage > Keystone > Abonnements*.
+. Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Abonnements*.
 +
-image:bxp-subscription-list-2.png["afficher les détails de l'onglet abonnement"]
+image:bxp-subscription-list-3.png["afficher les détails de l'onglet abonnement"]
 
 +
-Vous voyez les indicateurs clés tels que l’utilisation de la capacité, l’état d’expiration de l’abonnement et les alertes non résolues. Vous pouvez voir les détails suivants dans le tableau :
+Vous voyez les indicateurs clés tels que l’utilisation de la capacité, l’état d’expiration de l’abonnement et les alertes non résolues.
+
++
+Vous pouvez voir les détails suivants dans le tableau :
 
 +
 ** *Numéro d'abonnement* : le numéro d'abonnement de l'abonnement Keystone attribué par NetApp.

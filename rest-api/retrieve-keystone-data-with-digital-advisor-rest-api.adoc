@@ -21,7 +21,7 @@ L'API REST de Digital Advisor propose une interface de programmation pour récup
 . Configurez votre compte Digital Advisor. Vous devez disposer d'informations d'identification valides sur le site de support NetApp pour vous connecter à Digital Advisor. Pour en savoir plus, reportez-vous à la section https://docs.netapp.com/us-en/active-iq/task_login_activeiq.html["Connectez-vous à Digital Advisor."]
 . Comprendre le processus d'authentification en deux étapes.
 +
-.. *Générer un jeton d'actualisation* : un jeton d'actualisation est obtenu via la console Digital Advisor à l'aide des informations d'identification NetApp. Ce jeton est utilisé pour assurer un accès continu sans nécessiter de connexions répétées.
+.. *Générer un jeton d'actualisation* : un jeton d'actualisation est obtenu via la console Digital Advisor à l'aide des informations d'identification NetApp . Ce jeton est utilisé pour garantir un accès continu sans nécessiter de connexions répétées.
 .. *Générer un jeton d'accès* : le jeton d'actualisation est utilisé pour générer des jetons d'accès. Un jeton d'accès est requis pour autoriser les appels d'API au service Keystone et reste valide pendant une heure.
 
 

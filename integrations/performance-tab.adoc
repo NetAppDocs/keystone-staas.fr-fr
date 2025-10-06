@@ -17,12 +17,12 @@ summary: Pour contrôler les performances de vos systèmes, vous pouvez consulte
 Pour contrôler les performances de vos systèmes, vous pouvez consulter les metrics de performance des volumes ONTAP gérés par vos abonnements Keystone.
 
 
-TIP: Cet onglet est disponible en option dans Digital Advisor. Contactez le support technique pour afficher cet onglet. Il n'est pas disponible dans BlueXP.
+TIP: Cet onglet est disponible en option dans Digital Advisor. Contactez le support pour visualiser cet onglet. Il n'est pas disponible dans la console NetApp .
 
 Pour afficher cet onglet dans Digital Advisor, suivez ces étapes :
 
 .Étapes
-. Cliquez sur *Général > Abonnements Keystone > Performances*.
+. Sélectionnez *Général > Abonnements Keystone > Performances*.
 . Sélectionnez le numéro d'abonnement. Par défaut, le premier numéro d'abonnement est sélectionné.
 . Sélectionnez le nom du volume souhaité dans la liste.
 +

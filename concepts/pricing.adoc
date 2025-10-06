@@ -18,7 +18,7 @@ Le service d'abonnement à la carte NetApp Keystone STaaS offre une consommation
 
 Keystone vous propose les services de facturation suivants :
 
-* Vous pouvez payer en fonction des IOPS et de la capacité qui est dédiée à la latence pour répondre aux différents besoins des charges de travail. Les différents niveaux de service de performance - Extreme, Premium, Standard, Value, Object et Cloud Volumes ONTAP vous permettent de gérer votre stockage en fonction du niveau de service que vous avez acheté.
+* Vous pouvez payer en fonction des IOPS et de la capacité de latence engagée pour répondre à divers besoins de charge de travail. Les différents niveaux de service de performances (Extreme, Premium, Standard, Value, Object et Cloud Volumes ONTAP) vous permettent de gérer votre stockage en fonction du niveau de service de performances que vous avez acheté.
 * Il présente une facturation prévisible de la capacité engagée et du paiement à l'utilisation pour l'utilisation variable (en rafale).
 * Vous pouvez sélectionner un prix de bundle pour le matériel, le système d'exploitation de base et le support pour un prix unitaire. Vous disposez d'une facture unique pour chaque type de stockage, unifié, en bloc, optimisé, objet ou services de stockage cloud.
 * Vous pouvez sélectionner une durée flexible pour les services et les options de paiement, telles que mensuelle, trimestrielle, semestrielle ou annuelle.

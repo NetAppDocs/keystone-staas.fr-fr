@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/options.html 
-keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor 
+keywords: Keystone, BlueXP, Keystone dashboard, search and filter, Keystone data, generate reports, view alerts, digital advisor, NetApp Console, Console 
 summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez rechercher et filtrer vos données, générer des rapports sur les abonnements et l"utilisation, vérifier les horodatages et afficher les alertes.' 
 ---
 = Recherchez des données Keystone, générez des rapports et affichez des alertes
@@ -18,17 +18,17 @@ Vous pouvez rechercher et filtrer vos données, générer des rapports sur les a
 
 
 
-== Rechercher et filtrer les données de BlueXP
+== Rechercher et filtrer les données depuis la console NetApp
 
-Dans BlueXP, vous pouvez rechercher et filtrer les données Keystone en fonction des paramètres de colonne disponibles dans le tableau d'un onglet. Par exemple, dans le sous-onglet *Abonnements* de l'onglet *Abonnements*, vous pouvez filtrer les données en saisissant la version Keystone dans le champ de recherche. De même, dans l'onglet *Volumes en clusters* de l'onglet *Actifs*, vous pouvez filtrer les volumes en saisissant leur nom dans le champ de recherche.
+Dans la console, vous pouvez rechercher et filtrer les données Keystone en fonction des paramètres de colonne disponibles dans le tableau d'un onglet. Par exemple, dans l’onglet *Abonnements* sous la page *Abonnements*, vous pouvez filtrer les données en saisissant la version Keystone dans la zone de recherche. De même, dans l’onglet *Volumes dans les clusters* sous la page *Actifs*, vous pouvez filtrer les volumes en saisissant le nom du volume dans la zone de recherche.
 
-Vous pouvez affiner vos recherches en utilisant l'option de filtre avancé lorsqu'elle est disponible. Par exemple, dans le sous-onglet *Abonnements*, vous pouvez filtrer les données par version Keystone , période de facturation, capacité maximale et jours avant l'expiration de l'abonnement, et dans l'onglet *Volumes dans les clusters*, vous pouvez filtrer par nom de volume, nom de cluster, type de volume, etc. Plusieurs filtres peuvent être appliqués simultanément pour affiner vos résultats avec précision.image:bxp-filter-search.png["option de filtre avancé"]
+Vous pouvez affiner vos recherches en utilisant l'option de filtre avancé lorsqu'elle est disponible. Par exemple, dans l'onglet *Abonnements*, vous pouvez filtrer les données par version Keystone , période de facturation, capacité maximale et jours avant l'expiration de l'abonnement, et dans l'onglet *Volumes dans les clusters*, vous pouvez filtrer par nom de volume, nom de cluster, type de volume, etc. Plusieurs filtres peuvent être appliqués simultanément pour affiner vos résultats avec précision.image:bxp-filter-search.png["option de filtre avancé"]
 
 
 
-== Générer des rapports à partir de BlueXP ou de Digital Advisor
+== Générer des rapports à partir de la console NetApp ou de Digital Advisor
 
-Vous pouvez générer et afficher des rapports pour vos données Keystone à l'aide du bouton de téléchargement image:bluexp-download-report-2.png["icône de téléchargement du rapport 2 dans BlueXP"] disponible dans les onglets de BlueXP ou Digital Advisor. Ces onglets vous permettent de générer des rapports sur vos abonnements, votre historique d'utilisation, vos pics d'utilisation, vos performances, vos actifs, vos volumes et vos objets.
+Vous pouvez générer et afficher des rapports pour vos données Keystone à l'aide du bouton de téléchargementimage:bluexp-download-report-2.png["icône de téléchargement du rapport 2 dans la console"] disponible dans les onglets de la console ou du Digital Advisor. Ces onglets vous permettent de générer des rapports sur vos abonnements, votre utilisation historique, votre utilisation en rafale, vos performances, vos actifs, vos volumes et vos objets.
 
 Les détails sont générés au format CSV que vous pouvez enregistrer pour une utilisation ultérieure et une comparaison.
 

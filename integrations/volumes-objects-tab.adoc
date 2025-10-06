@@ -16,7 +16,7 @@ summary: Affichez les détails de la capacité au niveau du volume ou du stockag
 [role="lead"]
 Si vous souhaitez afficher les détails de capacité au niveau du volume ou du stockage d'objets, vous pouvez accéder à l'onglet *Volumes et objets* dans Digital Advisor. Pour StorageGRID, vous pouvez utiliser cet onglet pour lire l'utilisation par les différents nœuds de votre environnement de stockage objet.
 
-Vous pouvez consulter ces informations dans l'onglet *Actifs* de BlueXP. Pour consulter les détails d'un abonnement Keystone STaaS spécifique, consultez link:../integrations/assets-tab.html["Afficher les actifs associés à un abonnement Keystone"] . Si vous souhaitez afficher les détails de plusieurs abonnements Keystone, reportez-vous à link:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"] .
+Vous pouvez vous référer à la page *Actifs* dans la console NetApp pour afficher ces détails. Pour afficher les détails d'un abonnement Keystone STaaS spécifique, reportez-vous àlink:../integrations/assets-tab.html["Afficher les actifs associés à un abonnement Keystone"] . Si vous souhaitez afficher les détails de plusieurs abonnements Keystone , reportez-vous àlink:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"] .
 
 
 NOTE: Le titre de cet onglet varie selon la nature du déploiement sur votre site. Si vous disposez à la fois de ONTAP et du stockage objet, le titre de l'onglet apparaît sous la forme *volumes et objets*. Pour ONTAP uniquement, le nom apparaît *volumes*. Pour le stockage d'objets StorageGRID, vous pouvez voir l'onglet *objets*.

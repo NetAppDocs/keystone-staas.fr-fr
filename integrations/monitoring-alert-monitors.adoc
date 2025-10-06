@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: integrations/monitoring-alert-monitors.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp. console 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, monitoring, bluexp, netapp console 
 summary: Utilisez l’onglet Surveillance pour afficher et créer des moniteurs d’alerte pour vos abonnements Keystone . 
 ---
 = Afficher et créer des moniteurs d'alerte pour les abonnements Keystone
@@ -14,7 +14,7 @@ summary: Utilisez l’onglet Surveillance pour afficher et créer des moniteurs 
 
 
 [role="lead"]
-Vous pouvez afficher et créer des moniteurs d'alerte pour vos abonnements Keystone à partir du tableau de bord Keystone dans BlueXP.  Le tableau de bord affiche les moniteurs générés par le système et définis par l'utilisateur pour l'utilisation de la capacité et l'expiration de l'abonnement.  Vous pouvez créer des moniteurs pour définir des seuils, choisir la gravité des alertes et ajouter des destinataires de courrier électronique pour les notifications.  Cette fonctionnalité n'est pas disponible dans Digital Advisor.
+Vous pouvez afficher et créer des moniteurs d’alerte pour vos abonnements Keystone à partir du tableau de bord Keystone dans la console NetApp . Le tableau de bord affiche les moniteurs générés par le système et définis par l'utilisateur pour l'utilisation de la capacité et l'expiration de l'abonnement. Vous pouvez créer des moniteurs pour définir des seuils, choisir la gravité des alertes et ajouter des destinataires de courrier électronique pour les notifications. Cette fonctionnalité n'est pas disponible dans Digital Advisor.
 
 
 
@@ -23,9 +23,9 @@ Vous pouvez afficher et créer des moniteurs d'alerte pour vos abonnements Keyst
 Pour afficher les moniteurs d’alerte, suivez ces étapes :
 
 .Étapes
-. Dans le menu de navigation de gauche de BlueXP , sélectionnez *Stockage > Keystone > Surveillance > Moniteurs d'alerte*.
+. Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Surveillance > Moniteurs d'alerte*.
 +
-image:monitoring-alert-monitors-default-view.png["Une capture d'écran des moniteurs d'alerte pour les abonnements Keystone"]
+image:monitoring-alert-monitors-default-view-1.png["Une capture d'écran des moniteurs d'alerte pour les abonnements Keystone"]
 
 +
 Vous pouvez afficher une liste des moniteurs d'alerte sur vos abonnements Keystone , y compris les noms des moniteurs, les conditions d'alerte qui déclenchent des notifications, les niveaux de gravité, les numéros d'abonnement, les niveaux de service de performances et l'état.  Vous pouvez vérifier la colonne *Créé par* pour déterminer si les moniteurs d'alerte sont générés par le système ou définis par l'utilisateur.

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: integrations/keystone-bluexp.html 
-keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor 
-summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez obtenir un aperçu de vos abonnements depuis NetApp BlueXP.' 
+permalink: integrations/keystone-console.html 
+keywords: Keystone, BlueXP, Keystone dashboard, overview, subscription manage, monitor, NetApp Console, Console 
+summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez obtenir un aperçu de vos abonnements depuis NetApp Console.' 
 ---
-= Tableau de bord Keystone dans BlueXP
+= Tableau de bord Keystone dans la console NetApp
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez obtenir un aper�
 
 
 [role="lead"]
-L'onglet *Aperçu* vous permet d'identifier rapidement les charges de travail à risque, de consulter la capacité et l'état d'expiration des abonnements, d'identifier les alertes non résolues et de visualiser les abonnements dont la capacité est la plus utilisée. Vous pouvez également consulter l'état de vos abonnements dans différentes versions de Keystone, en mettant en évidence les problèmes nécessitant votre attention.
+Vous pouvez utiliser la page *Aperçu* pour déterminer rapidement les charges de travail à risque, afficher la capacité et l'état d'expiration des abonnements, identifier les alertes non résolues et afficher les abonnements avec l'utilisation de capacité la plus élevée. Vous pouvez également consulter l'état de vos abonnements sur différentes versions de Keystone, en mettant en évidence les problèmes qui nécessitent votre attention.
 
-Pour afficher l'onglet *Aperçu*, à partir du menu de navigation de gauche de BlueXP, accédez à *Stockage > Keystone > Aperçu*.
+Pour afficher la page *Aperçu*, à partir du menu de navigation de gauche de la console, accédez à *Stockage > Keystone > Aperçu*.
 
-image:bxp-dashboard-overview-1.png["une capture d'écran de l'onglet Aperçu"]
+image:bxp-dashboard-overview-2.png["une capture d'écran de la page Aperçu"]
 
-L'onglet *Aperçu* offre les informations suivantes :
+La page *Aperçu* offre les informations suivantes :
 
 * *Résumé* : Affiche le nombre total d'abonnements, de clusters ONTAP, de nœuds StorageGRID et de nœuds ONTAP. Chaque catégorie dispose d'un bouton *Afficher* permettant d'accéder facilement aux sections détaillées de l'onglet *Abonnements* ou *Actifs*.
 * *Expiration prochaine* : Nombre d'abonnements expirant dans les 6 mois. Cliquez sur *Afficher* pour voir ces abonnements dans l'onglet *Abonnements*.
@@ -36,6 +36,5 @@ L'onglet *Aperçu* offre les informations suivantes :
 * link:..//integrations/keystone-aiq.html["Tableau de bord Keystone dans Digital Advisor"]
 * link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
 * link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
-* link:../integrations/monitoring-alerts.html["Afficher et gérer les alertes et les moniteurs"]
 * link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
 

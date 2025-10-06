@@ -100,8 +100,8 @@ sidebar:
         url: "/integrations/dashboard-overview.html"
       - title: Commencez avec le tableau de bord Keystone
         url: "/integrations/dashboard-access.html"
-      - title: Tableau de bord Keystone dans BlueXP
-        url: "/integrations/keystone-bluexp.html"
+      - title: Tableau de bord Keystone dans la console NetApp
+        url: "/integrations/keystone-console.html"
       - title: Tableau de bord Keystone dans Digital Advisor
         url: "/integrations/keystone-aiq.html"
       - title: Rechercher des données, générer des rapports et afficher des alertes
