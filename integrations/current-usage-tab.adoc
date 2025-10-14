@@ -29,7 +29,7 @@ Pour afficher l'état de consommation actuel de vos abonnements via la console N
 Vous êtes redirigé vers l'onglet *Consommation actuelle*.
 
 +
-image:bxp-current-consumption-graph-1.png["détails de la consommation actuelle au format graphique"]
+image:console-current-consumption-graph.png["détails de la consommation actuelle au format graphique"]
 
 +
 Pour l'abonnement sélectionné, vous pouvez consulter les détails de consommation sous forme de tableau ou de graphique grâce à l'option *Tableau* ou *Graphique* du menu déroulant *Afficher comme*. La vue graphique affiche la consommation actuelle par niveau de service de performance, y compris la capacité utilisée, la capacité provisionnée, la limite de capacité engagée et la limite de capacité en rafale.
@@ -39,10 +39,10 @@ Pour l'abonnement sélectionné, vous pouvez consulter les détails de consommat
 NOTE: Si un niveau de service de performance comporte plusieurs instances, vous pouvez développer *Afficher par instances* dans l'une ou l'autre vue pour afficher les détails de consommation actuels pour chaque instance séparément.  Par exemple, si vous disposez de deux instances du niveau de service de performances Extreme dans un abonnement, chaque instance affichera séparément ses propres capacités engagées, consommées et disponibles.
 
 +
-Dans le tableau, vous pouvez consulter des informations telles que la capacité maximale consommée et le nombre de jours restant avant l'expiration. Dans le cadre du suivi de l'utilisation de votre abonnement, vous pouvez consulter le nom du niveau de service de performance, l'état de consommation, les capacités engagées et utilisées, les capacités provisionnées et en rafale, la capacité disponible et les volumes. image:column-selector.png["icône de sélecteur de colonne"] icône.
+Dans la vue tableau, vous pouvez voir des détails tels que la capacité maximale consommée et les jours restants jusqu'à l'expiration. Dans le cadre de la surveillance de l'utilisation de votre abonnement, vous pouvez afficher le nom du niveau de service de performances, l'utilisation de la capacité, les capacités engagées et utilisées, les capacités provisionnées et en rafale, la capacité disponible et les volumes. Vous pouvez personnaliser le tableau à l'aide du sélecteur de colonnesimage:column-selector.png["icône de sélecteur de colonne"] icône.
 
 +
-image:bxp-current-consumption-table-1.png["détails de la consommation actuelle sous forme de tableau"]
+image:console-current-consumption-table.png["détails de la consommation actuelle sous forme de tableau"]
 
 
 

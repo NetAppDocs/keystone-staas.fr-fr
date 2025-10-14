@@ -18,14 +18,16 @@ Vous pouvez utiliser la page *Aperçu* pour déterminer rapidement les charges d
 
 Pour afficher la page *Aperçu*, à partir du menu de navigation de gauche de la console, accédez à *Stockage > Keystone > Aperçu*.
 
-image:bxp-dashboard-overview-2.png["une capture d'écran de la page Aperçu"]
+image:console-overview.png["une capture d'écran de la page Aperçu"]
 
 La page *Aperçu* offre les informations suivantes :
 
 * *Résumé* : Affiche le nombre total d'abonnements, de clusters ONTAP, de nœuds StorageGRID et de nœuds ONTAP. Chaque catégorie dispose d'un bouton *Afficher* permettant d'accéder facilement aux sections détaillées de l'onglet *Abonnements* ou *Actifs*.
 * *Expiration prochaine* : Nombre d'abonnements expirant dans les 6 mois. Cliquez sur *Afficher* pour voir ces abonnements dans l'onglet *Abonnements*.
 * *Demandes ouvertes* : Le nombre total de demandes de service ouvertes.
+* *Alertes non résolues par gravité* : répertorie le nombre total d'alertes non résolues en fonction de leur gravité : critique, avertissement et informative.  Chaque catégorie comprend un bouton *Afficher* pour consulter les détails et prendre d'autres mesures.
 * *Utilisation de la capacité* : état de consommation de capacité pour les abonnements qui sont au-dessus du seuil de saturation, qui utilisent le seuil de saturation et qui sont sous-utilisés. Chaque catégorie comprend un bouton *Afficher* pour accéder à l'onglet *Abonnements* avec les filtres pertinents appliqués.
+* *Alertes Keystone non résolues les plus anciennes* : affiche un tableau des alertes critiques non résolues les plus anciennes parmi les abonnements.
 * *Top 5 des abonnements avec la plus forte utilisation de la capacité* : affiche un tableau des cinq abonnements Keystone avec le pourcentage d'utilisation de la capacité le plus élevé. Cliquez sur le numéro d'abonnement dans la colonne *Abonnement* pour obtenir des informations détaillées.
 
 

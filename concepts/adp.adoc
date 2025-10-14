@@ -1,39 +1,8 @@
 ---
-sidebar: sidebar 
 permalink: concepts/adp.html 
-keywords: data protection advanced 
-summary: Utilisez le service complémentaire de protection avancée des données pour assurer une protection efficace des données des workloads stratégiques. 
+redirect: keystone-staas/concepts/metrics.html 
 ---
-= Découvrez la protection avancée des données
-:hardbreaks:
+= 
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ../media/
 
 
-[role="lead"]
-Vous pouvez vous abonner au service complémentaire de protection avancée des données avec votre abonnement Keystone STaaS. Ce service complémentaire utilise la technologie NetApp MetroCluster pour garantir une protection efficace des données de vos charges de travail critiques avec un objectif de point de récupération (RPO) de 0.
-
-
-NOTE: Les services standard Keystone STaaS pour le stockage de fichiers et de blocs offrent des services de protection des données par défaut en utilisant les technologies NetApp , telles que SnapMirror, SnapVault et Snapshot.
-
-Pour plus d'informations sur le service standard et cloud, voir link:../concepts/supported-storage-services.html["Services STaaS Keystone"].
-
-Le service avancé de protection des données Keystone peut mettre en miroir les données de manière synchrone sur un site secondaire. En cas d'incident sur le site primaire, le site secondaire peut prendre le contrôle sans perte de données. Cette fonctionnalité exploite le link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"] configuration entre deux sites pour permettre la protection des données. Vous pouvez bénéficier des services d'extension avancée de protection des données pour uniquement vos services de stockage bloc et de fichiers. Dans le cadre de ce service complémentaire, le  `Advanced Data-Protect` Un niveau de service de performance est attribué à votre abonnement.
-
-Pour plus d'informations sur l'affichage de la consommation dans une configuration MetroCluster, reportez-vous à la section link:../integrations/consumption-tab.html#reference-charts-for-advanced-data-protection-for-metrocluster["Des graphiques de référence pour la protection avancée des données"].
-
-Les frais d'extension sont applicables à toutes les capacités de l'abonnement : la source, la copie en miroir et les données non mises en miroir.
-
-Notez ce qui suit :
-
-* Pour ce service, 100 % de la capacité dédiée sur un stockage associé est configurée en tant que capacité engagée.
-* L'espace de stockage est facturé pour les clusters source et de destination. Ce service d'extension est également chargé à la fois pour les volumes primaires et secondaires (en miroir).
-* Les frais ne s'appliquent qu'à votre stockage de fichiers et de blocs.
-
-
-Les scénarios MetroCluster suivants sont pris en charge :
-
-image:mcc.png["Configurations MetroCluster prises en charge par Keystone"]

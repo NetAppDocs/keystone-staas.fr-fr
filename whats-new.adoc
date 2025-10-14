@@ -18,6 +18,27 @@ Découvrez les dernières fonctionnalités et améliorations des services Keysto
 
 
 
+== 13 octobre 2025
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Colonne de remplacement de la politique QoS dans l'onglet Ressources
+
+L'onglet *Volumes dans les clusters* dans l'onglet *Actifs* inclut désormais une colonne *Remplacement de la politique QoS* qui indique si les règles QoS sont contournées pour les volumes de sauvegarde et de miroir, affichant *vrai* (règles ignorées), *faux* (règles appliquées) ou *N/A* (pour les volumes miroir).
+
+
+NOTE: Pour les abonnements Keystone v3, cette colonne affiche *N/A* car les politiques QoS ne sont pas applicables dans l'offre v3.
+
+
+
+=== Visibilité améliorée des alertes dans la page Aperçu
+
+La page *Aperçu* inclut désormais deux nouvelles sections d'alerte nommées *Alertes non résolues par gravité* et *Alertes Keystone non résolues les plus anciennes*. Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/keystone-staas/integrations/keystone-console.html["Tableau de bord Keystone dans la console NetApp"] .
+
+
+
 == 06 octobre 2025
 
 

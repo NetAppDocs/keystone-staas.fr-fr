@@ -19,7 +19,7 @@ Vous pouvez modifier la capacité engagée de votre abonnement Keystone pour les
 [NOTE]
 ====
 * Vous pouvez modifier la capacité engagée si l'abonnement a plus de 90 jours restants avant son expiration.
-* Vous devez être affecté au rôle * Keystone admin* pour modifier la capacité engagée. Pour en savoir plus, consultezlink:https://docs.netapp.com/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès à la console NetApp"^] .
+* Vous devez être affecté au rôle * Keystone admin* pour modifier la capacité engagée. Pour en savoir plus, consultezlink:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès à la console NetApp"^] .
 
 
 ====

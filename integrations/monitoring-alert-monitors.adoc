@@ -55,9 +55,9 @@ image:create-alert-monitor.png["Capture d'écran de la création d'un moniteur d
 . Sélectionnez *Utilisation de la capacité* ou *Expiration de l'abonnement* pour définir le type de moniteur.  En fonction de votre sélection, fournissez les détails suivants :
 +
 ** *Détails généraux* : Indiquez un nom d'alerte et sélectionnez le niveau de gravité.
-** *Sélection de ressources* : Choisissez de créer le moniteur pour des abonnements spécifiques.  En fonction de votre sélection de type de moniteur, remplissez les champs obligatoires qui s'affichent, tels que les numéros d'abonnement et les niveaux de service de performances pour les moniteurs d'utilisation de la capacité, ou uniquement les numéros d'abonnement pour les moniteurs d'expiration d'abonnement.
+** *Sélection de ressources* : Choisissez de créer le moniteur pour des abonnements spécifiques ou pour tous les abonnements. En fonction de votre sélection de type de moniteur, remplissez les champs obligatoires qui s'affichent, tels que les numéros d'abonnement et les niveaux de service de performances pour les moniteurs d'utilisation de la capacité, ou uniquement les numéros d'abonnement pour les moniteurs d'expiration d'abonnement.
 +
-image:resource-selection.png["Une capture d'écran de la sélection des ressources pour le moniteur d'utilisation de la capacité"]
+image:resource-selection-1.png["Une capture d'écran de la sélection des ressources pour le moniteur d'utilisation de la capacité"]
 
 ** *Condition* : Définissez la condition de seuil qui déclenche l'alerte.  Par exemple, déclenchez une alerte lorsque l’utilisation de la capacité dépasse un pourcentage spécifié.
 ** *Notifications* : Sélectionnez les utilisateurs qui doivent recevoir des notifications d'alerte.

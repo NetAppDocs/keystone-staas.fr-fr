@@ -78,6 +78,10 @@ La liste suivante présente un échantillon représentatif des données de conso
 ** StorageType
 ** Nom de l'agrégat
 ** UUID d'agrégat
+** Physique utilisé
+** Taille disponible
+** Taille
+** Taille utilisée
 
 
 * Agrégez les magasins d'objets
@@ -174,6 +178,17 @@ La liste suivante présente un échantillon représentatif des données de conso
 ** VolumeBlocksFootprintBin1
 
 
+* MetroCluster
++
+** Nœud
+** Agrégat
+** Les LIF
+** Réplication de configuration
+** Relations
+** Clusters
+** Volumes
+
+
 * Clusters MetroCluster
 +
 ** UUID de cluster
@@ -182,6 +197,36 @@ La liste suivante présente un échantillon représentatif des données de conso
 ** RemoteCluserName
 ** LocalConfigurationState
 ** Etat de configuration distant
+
+
+* Nœuds MetroCluster
++
+** État de mise en miroir DR
+** LIF intercluster
+** Accessibilité des nœuds
+** Nœud partenaire DR
+** Nœud partenaire auxiliaire DR
+** Relation symétrique entre les nœuds DR, DR Aux et HA
+** Commutation automatique non planifiée
+
+
+* Réplication de configuration MetroCluster
++
+** Battement de cœur à distance
+** Dernier battement de cœur envoyé
+** Dernier battement de cœur reçu
+** Flux de serveur virtuel
+** Flux de cluster
+** Stockage
+** Volume de stockage en cours d'utilisation
+
+
+* Médiateurs du MetroCluster
++
+** Discours du médiateur
+** Port médiateur
+** Médiateur configuré
+** Médiateur joignable
 ** Mode
 
 
@@ -243,6 +288,13 @@ La liste suivante présente un échantillon représentatif des données de perfo
 * QoSPolicyGroupLatency
 * Lecture MBps
 * QoSSyncSnapmirrorLatency
+* Données au niveau du système
++
+** Écriture/Lecture/Autre/Total IOPS
+** Écriture/Lecture/Autre/Débit total
+** Écriture/Lecture/Autre/Latence totale
+
+
 * Écrire les IOPS
 
 
@@ -298,6 +350,11 @@ La liste suivante est un échantillon représentatif du `Physical Data` Collect�
 * Fréquence
 * Octets d'utilisation du stockage StorageGRID
 * Octets de métadonnées d'utilisation du stockage StorageGRID
+
+
+La liste suivante est un échantillon représentatif des `Availability/Uptime Data` collecté pour StorageGRID:
+
+* Pourcentage de disponibilité du SLA
 
 
 ====
