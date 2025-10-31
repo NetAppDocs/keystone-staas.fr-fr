@@ -38,9 +38,9 @@ Les versions vCenter antérieures à 7.0u2 ne peuvent pas vérifier automatiquem
 VCenter valide l'intégrité du contenu du fichier OVA et qu'un résumé de signature de code valide est fourni pour les fichiers contenus dans le fichier OVA. Toutefois, il ne valide pas l'authenticité du certificat de signature de code. Pour vérifier l'intégrité, téléchargez le certificat de signature complète et vérifiez-le par rapport au certificat public publié par Keystone.
 
 .. Cliquez sur le lien *Publisher* pour télécharger le certificat de signature complet.
-.. Téléchargez le certificat public _Keystone Billing_ sur https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20221101.pem["ce lien"^].
-.. Vérifiez l'authenticité du certificat de signature OVA par rapport au certificat public en utilisant OpenSSL :
-`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20221101.pem keystone-collector.cert`
+.. Téléchargez le certificat public _Keystone Billing_ depuis https://keystone.netapp.com/downloads/OVA-SSL-NetApp-Keystone-20251020.pem["ce lien"^].
+.. Vérifiez l'authenticité du certificat de signature OVA par rapport au certificat public en utilisant OpenSSL :
+`openssl verify -CAfile OVA-SSL-NetApp-Keystone-20251020.pem keystone-collector.cert`
 
 
 ====
@@ -50,14 +50,13 @@ VCenter valide l'intégrité du contenu du fichier OVA et qu'un résumé de sign
 ====
 7.0u2 et versions ultérieures de vCenter sont capables de valider l'intégrité du contenu du fichier OVA et l'authenticité du certificat de signature de code, lorsqu'un résumé de signature de code valide est fourni. Le magasin de confiance racine vCenter contient uniquement des certificats VMware. NetApp utilise Entrust comme autorité de certification et ces certificats doivent être ajoutés au magasin de confiance vCenter.
 
-.. Téléchargez le certificat d'autorité de certification de signature de code depuis Entrust https://web.entrust.com/subca-certificates/OVCS2-CSBR1-crosscert.cer["ici"^].
+.. Téléchargez le certificat d'autorité de certification de signature de code depuis Sectigo https://comodoca.my.salesforce.com/sfc/p/1N000002Ljih/a/3l000000oAhy/QCCby12C7cYo50nNyic6AuG1KFcwe1rDn1EknfTaUzY["ici"^].
 .. Suivez les étapes de la section `Resolution` Article de la base de connaissances : https://kb.vmware.com/s/article/84240[].
 
 
 ====
 +
-Une fois l'intégrité et l'authenticité de l'OVA du collecteur Keystone validées, le texte s'affiche `(Trusted certificate)` avec l'éditeur.
-image:ova-deploy.png["Interface UTILISATEUR OVA affichant un certificat vérifié"]
+Lorsque l'intégrité et l'authenticité de l'OVA Keystone Collector sont validées, vous pouvez voir le texte `(Trusted certificate)` avec l'éditeur. image:ova-deploy-1.png["Interface UTILISATEUR OVA affichant un certificat vérifié"]
 
 . À l'étape _5_ de l'assistant *Deploy OVF Template*, indiquez l'emplacement de stockage de la machine virtuelle.
 . Sur _Step 6_, sélectionnez le réseau de destination de la machine virtuelle à utiliser.

@@ -104,6 +104,9 @@ NOTE: Les extensions de fichier prises en charge sont `.pem`, `.crt`, `.cert`. A
 . Sélectionnez *Enregistrer*. La configuration est appliquée.
 
 
+
+NOTE: Le certificat de l'autorité de certification est copié dans `/opt/netapp/ks-collector/ca.pem` sur le serveur Keystone Collector.
+
 image:kc-custom-ca.png["Ecran TUI pour la personnalisation de CA"]
 
 

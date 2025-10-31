@@ -21,16 +21,16 @@ Vous pouvez installer le logiciel Keystone Collector sur un serveur Linux à l'a
 .Utilisation de RPM
 --
 . SSH vers le serveur Keystone Collector et passez à `root` privilège.
-. Importer la signature publique Keystone :
-`# rpm --import https://keystone.netapp.com/repo/RPM-GPG-NetApp-Keystone-20221101`
-. Vérifiez que le bon certificat public a été importé en vérifiant l'empreinte de la plateforme de facturation Keystone dans la base de données RPM :
-`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint` l'empreinte correcte se présente comme suit :
-`90B3 83AF E07B 658A 6058 5B4E 76C2 45E4 33B6 C17D`
-. Téléchargez le `keystonerepo.rpm` fichier :
-`curl -O https://keystone.netapp.com/repo/keystonerepo.rpm`
-. Vérifiez l'authenticité du fichier :
-`rpm --checksig -v keystonerepo.rpm`La signature d'un fichier authentique se présente comme suit :
-`Header V4 RSA/SHA512 Signature, key ID 33b6c17d: OK`
+. Importer la signature publique de Keystone :
+`# rpm --import https://keystone.netapp.com/repo1/RPM-GPG-NetApp-Keystone-20251020`
+. Assurez-vous que le certificat public correct a été importé en vérifiant l'empreinte numérique de Keystone Billing Platform dans la base de données RPM :
+`# rpm -qa gpg-pubkey --qf '%{Description}'|gpg --show-keys --fingerprint` L'empreinte digitale correcte ressemble à ceci :
+`9297 0DB6 0867 22E7 7646 E400 4493 5CBB C9E9 FEDC`
+. Téléchargez le `keystonerepo.rpm` déposer:
+`curl -O https://keystone.netapp.com/repo1/keystonerepo.rpm`
+. Vérifiez l'authenticité du fichier :
+`rpm --checksig -v keystonerepo.rpm` La signature d'un fichier authentique ressemble à ceci :
+`Header V4 RSA/SHA512 Signature, key ID c9e9fedc: OK`
 . Installez le fichier de référentiel du logiciel YUM :
 `# yum install keystonerepo.rpm`
 . Lorsque Keystone repo est installé, installez le package trapèze-Collector via le gestionnaire de package YUM :
