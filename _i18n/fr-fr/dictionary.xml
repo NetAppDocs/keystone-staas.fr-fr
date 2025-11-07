@@ -2445,4 +2445,5 @@ Voici un exemple :</block>
   <block id="8dd9e9a8650be62b5350b1743ec0c25a" category="list-text">Vérifiez l'authenticité du certificat de signature OVA par rapport au certificat public en utilisant OpenSSL :<block ref="f41dec976ad8e65c3e38fceba0104101" prefix=" " category="inline-code"></block></block>
   <block id="b96ad4ab266c25b5492620bb2563d5d0" category="list-text">Téléchargez le certificat d'autorité de certification de signature de code depuis Sectigo<block ref="7342f89b7e38eb427d641531b8da4ba6" category="inline-link-rx"></block>.</block>
   <block id="5107c2f981fc9d221af2aedb4d9c3f10" category="paragraph">Lorsque l'intégrité et l'authenticité de l'OVA Keystone Collector sont validées, vous pouvez voir le texte<block ref="2e5f0dac7b8d485649c8f829e8ba09da" prefix=" " category="inline-code"></block> avec l'éditeur. <block ref="4bb910ce06804868c88e19dd6ff9e83c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4d3f733b36c05e3bcdf4287f293b20f" category="paragraph">Si le cluster est configuré en MetroCluster , exécutez la commande suivante :</block>
 </blocks>
