@@ -1,0 +1,11 @@
+= Remplissez votre case de notification de couverture
+:allow-uri-read: 
+
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Remplissez votre case de notification de couverture
+
+L'onglet *Surveillance des alertes* de la page *Surveillance* comprend une boîte de notification *Complétez votre couverture* qui apparaît en cas de lacunes de couverture.  Cette section répertorie les abonnements dont la capacité ou la date d'expiration est insuffisante, ainsi que les moniteurs sans abonnement.  Vous pouvez combler les lacunes en ajoutant des abonnements aux moniteurs existants, en créant de nouveaux moniteurs ou en supprimant les moniteurs inutilisés. Pour en savoir plus, consultez link:https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alert-monitors.html#manage-coverage-gaps["Gérer les lacunes de couverture pour les moniteurs d'alerte"].
