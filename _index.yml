@@ -62,7 +62,7 @@ indexpage:
   - title: Allez plus loin avec les services Keystone
     links:
     - title: En savoir plus sur votre équipe de soutien
-      url: "/concepts/gssc.html"
+      url: "/concepts/support-services.html"
     - title: Augmenter la capacité d'éclatement
       url: "/concepts/burst-capacity.html"
     - title: Que puis-je faire avec mes données inactives ou moins utilisées ?

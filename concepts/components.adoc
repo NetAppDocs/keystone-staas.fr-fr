@@ -65,12 +65,12 @@ Des machines virtuelles sont requises pour le déploiement du collecteur Keyston
 Keystone Collector peut être déployé via les méthodes suivantes :
 
 * Modèle VMware OVA (VMware vCenter Server 6.7 ou version ultérieure requis)
-* Le client fournit un serveur Linux s'exécutant sur l'un des systèmes d'exploitation suivants : Debian 12, Red Hat Enterprise Linux 8.6 ou versions ultérieures 8.x ou CentOS 7 (pour les environnements existants uniquement). Le logiciel Keystone est installé à l'aide du `.deb` pack ou `.rpm`, selon la distribution Linux.
+* Le client fournit un serveur Linux fonctionnant sous l'un des systèmes d'exploitation suivants : Debian 12, Red Hat Enterprise Linux 8.6 ou versions ultérieures 8.x, Red Hat Enterprise Linux 9.0 ou versions ultérieures, ou CentOS 7 (pour les environnements existants uniquement). Le logiciel Keystone est installé à l'aide de `.deb` ou `.rpm` paquet, selon la distribution Linux.
 
 
 Le collecteur ITOM peut être déployé via les méthodes suivantes :
 
-* Le client fournit un serveur Linux s'exécutant sur Debian 12, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Amazon Linux 2023 ou des versions plus récentes.
+* Le client fournit un serveur Linux fonctionnant sous Debian 12, Ubuntu 20.04 LTS, Red Hat Enterprise Linux (RHEL) 8.x, Red Hat Enterprise Linux 9.0, Amazon Linux 2023 ou des versions plus récentes.
 * Le client fournit un serveur Windows exécutant Windows Server 2016 ou des versions plus récentes.
 +
 

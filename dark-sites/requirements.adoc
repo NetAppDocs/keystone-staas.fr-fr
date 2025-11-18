@@ -30,7 +30,13 @@ Avant d'installer Keystone Collector dans un environnement sans accès à Intern
 
 == Configuration requise pour Linux
 
-* Système d'exploitation : Debian 12, Red Hat Enterprise Linux (RHEL) 8.6 ou versions ultérieures de la série RHEL 8.x.
+* Système d'exploitation (choisissez-en un) :
++
+** Red Hat Enterprise Linux (RHEL) 8.6 ou toute version ultérieure de la série 8.x
+** Red Hat Enterprise Linux 9.0 ou versions ultérieures
+** Debian 12
+
+
 * Cœur : 2 processeur
 * RAM : 4 GO
 * Espace disque : 50 Go de vDisk
@@ -43,9 +49,18 @@ Avant d'installer Keystone Collector dans un environnement sans accès à Intern
 
 Les modules tiers suivants doivent également être installés sur le même serveur. S'ils sont disponibles via le référentiel, ces packages seront automatiquement installés comme prérequis :
 
-* RHEL8
+* RHEL 8.6+ (8.x)
 +
 ** python3 >=v3.6.8, python3 \<=v3.9.13
+** podman
+** sos
+** yum-utils
+** python3-dnf-plugin-versionnlock
+
+
+* RHEL 9,0+
++
+** python3 >= v3.9.0, python3 \<= v3.9.13
 ** podman
 ** sos
 ** yum-utils
@@ -71,5 +86,5 @@ La configuration réseau requise pour Keystone Collector est la suivante :
 * Le serveur Unified Manager doit être accessible par le serveur Keystone Collector sur le port 443 (HTTPS).
 * Un compte de service avec des autorisations utilisateur d'application doit être configuré pour le collecteur Keystone sur le serveur Unified Manager.
 * Une connexion Internet externe n'est pas requise.
-* Chaque mois, exportez un fichier depuis le collecteur Keystone et envoyez-le par e-mail à l'équipe de support NetApp. Pour plus d'informations sur la façon de contacter l'équipe de support, reportez-vous link:../concepts/gssc.html["Obtenez de l'aide avec Keystone"]à la section .
+* Chaque mois, exportez un fichier depuis Keystone Collector et envoyez-le par e-mail à l'équipe de support NetApp . Pour plus d'informations sur la manière de contacter l'équipe d'assistance, veuillez consulter link:../concepts/support-services.html["Obtenez de l'aide avec Keystone"].
 
