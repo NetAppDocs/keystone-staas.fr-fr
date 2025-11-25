@@ -32,6 +32,10 @@ image:monitoring-alerts-default-view-1.png["Une capture d'écran des alertes act
 +
 Vous pouvez afficher les détails de l'alerte tels que la gravité, l'ID, la description, l'heure de déclenchement, le numéro d'abonnement, l'ID de suivi, le niveau de service de performances et l'état.  La page affiche également le nombre total d'alertes non résolues par gravité et par type.
 
++
+
+NOTE: L'onglet *Rapports* est actuellement indisponible pour les abonnements Keystone .
+
 
 
 

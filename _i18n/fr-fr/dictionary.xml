@@ -1684,7 +1684,6 @@ Voici un exemple :</block>
   <block id="98d28e0357b1d103f21ba89dd0d19e08" category="paragraph">Vous voyez une liste de toutes les demandes de service, y compris le numéro de demande, le type de demande et l'état actuel.</block>
   <block id="d47cec4b54da960eb97da1285dba00bf" category="inline-image-macro">icône de flèche vers le bas</block>
   <block id="b8915f85e20c41695f7695ce198af59a" category="list-text">Vous pouvez cliquer sur le <block ref="97aa861acb085111dcd2b43caf6c79a2" category="inline-image-macro-rx" type="image"></block> Cliquez sur l'icône à côté de la colonne *Date de soumission* pour développer le numéro de la demande et afficher les détails. Vous pouvez ainsi visualiser les niveaux de service de performance correspondants.</block>
-  <block id="de30be97e27dee0a131478825b7f19bd" category="inline-image-macro">une capture d'écran montre pour quels niveaux de service de performance les demandes de modification sont émises</block>
   <block id="6f611e4ccc824406e0de3f7a09110159" category="list-text">Sélectionnez le numéro de demande pour afficher des informations détaillées, y compris les détails de modification de l'abonnement demandé et l'état d'avancement actuel.</block>
   <block id="a92c0535191745976db8964221708fe4" category="inline-image-macro">une capture d'écran qui montre l'état d'avancement actuel</block>
   <block id="fc1597aa65903b595ab66b315f8b1878" category="paragraph"><block ref="fc1597aa65903b595ab66b315f8b1878" category="inline-image-macro-rx" type="image"></block></block>
@@ -2288,8 +2287,6 @@ Voici un exemple :</block>
   <block id="ca0d168dfc9d3eec3e502042fa77ec2f" category="admonition">Vous pouvez sélectionner plusieurs niveaux de service de performance simultanément pour créer des PSL.</block>
   <block id="b3eed4304ada05a16ec5ec8b501efe72" category="admonition">Si un PSL pour le niveau de service de performances sélectionné existe déjà sur le serveur Active IQ Unified Manager spécifié, vous ne pouvez pas le créer à nouveau. Si vous essayez de le faire, vous recevrez un message d’erreur.<block ref="b503f359d5754d7d4260112bc56a05d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea25018c2d045851b6c9e6567fb76051" category="paragraph">Vous pouvez afficher et suivre les demandes de service pour la modification des abonnements Keystone via la console NetApp , en fournissant un résumé rapide et en surveillant la progression.</block>
-  <block id="2fbcdf41574fdac1e466d4dad9bb3a55" category="list-text">Dans le menu de navigation de gauche de la console, sélectionnez *Stockage &gt; Keystone &gt; Administration*.</block>
-  <block id="26a02c6592f7d54ca37b8c1a48780136" category="paragraph"><block ref="26a02c6592f7d54ca37b8c1a48780136" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aaaea723208b33ae079e357878d9a9cb" category="paragraph">Vous pouvez afficher des informations détaillées sur les clusters et les nœuds ONTAP , ainsi que sur les grilles, les sites et les nœuds StorageGRID , gérés par un seul abonnement Keystone . Vous pouvez accéder à ces ressources d’abonnement dans le tableau de bord Keystone à partir de la console NetApp ou de Digital Advisor.</block>
   <block id="d1c3a83a967f6dcdc9a6ad9e94a8bbed" category="section-title">Afficher les ressources d'abonnement Keystone depuis la console NetApp</block>
   <block id="d79f885d7740bdd0320f954c06a36686" category="paragraph">L'onglet *Actifs* de la page *Abonnements* affiche des informations détaillées sur les volumes des clusters, les nœuds StorageGRID et les nœuds ONTAP associés à l'abonnement, y compris divers détails et l'état de la capacité.</block>
@@ -2443,7 +2440,6 @@ Voici un exemple :</block>
   <block id="15412d2b0949c1eabadcefaed9f6f8d0" category="list-text">Identifier et traiter les abonnements qui ne disposent pas de surveillance de l'utilisation de la capacité ou de l'expiration de l'abonnement.</block>
   <block id="72cf9e6c56443b9eb5c5d28a0a693ac1" category="list-text">Examiner et gérer les moniteurs qui ne sont actuellement associés à aucun abonnement.</block>
   <block id="4606189d5b77f103c0e503d8048ad8f7" category="inline-image-macro">Capture d'écran des zones non couvertes par les moniteurs d'alerte pour les abonnements Keystone</block>
-  <block id="db3c34c51d992294e98f857c62b4cf47" category="paragraph"><block ref="db3c34c51d992294e98f857c62b4cf47" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c84c1a10e1c87172a9fadb894dd8445" category="paragraph">Pour corriger les abonnements sans moniteurs ou avec des moniteurs inutilisés, suivez ces étapes :</block>
   <block id="ac81eda7e7da15651a4c3d6a60e8f290" category="open-title">Abonnements sans moniteurs</block>
   <block id="f9fc4f7dade8ed75242e3918921812c2" category="list-text">Sélectionnez l'onglet *Expiration des abonnements* ou *Utilisation de la capacité*.</block>
@@ -2480,4 +2476,13 @@ Voici un exemple :</block>
   <block id="45d6736fdd879f91b2a538e05e0a3b12" category="list-text">Red Hat Enterprise Linux 9.0 ou version ultérieure</block>
   <block id="cc20f1cec12842b9bed0a2fb4b579509" category="list-text">Amazon Linux 2023 ou version ultérieure</block>
   <block id="f0fc80440f66cd06e8621cfb9578824b" category="paragraph">Vous pouvez contacter l'équipe d'assistance Keystone pour vous abonner à Keystone version 3 (v3). Pour plus de détails, veuillez consulter <block ref="90d872d2a90e66f6330f06f20805c0ef" category="inline-link-macro-rx"></block>.</block>
+  <block id="18b429fb243989438d2e534cfa60ad10" category="doc">Identifiant de suivi pour les abonnements avec interruption de couverture</block>
+  <block id="b483bafe873ecad663b8e6c8949045d7" category="paragraph">Dans la boîte de notification *Complétez votre couverture* de *Surveillance &gt; Moniteurs d'alerte*, chaque abonnement affiche désormais son identifiant de suivi à côté du numéro d'abonnement.</block>
+  <block id="06d55ded719647ad67f379d0f9afc0e2" category="list-text">Dans le menu de navigation de gauche de la console, sélectionnez *Stockage &gt; Keystone &gt; Administration &gt; Requêtes*.</block>
+  <block id="21ffef0c637fd0891ae9b41f52742b09" category="admonition">Les onglets *Gestion des agents* et *Rapports* ne sont actuellement pas disponibles pour les abonnements Keystone .</block>
+  <block id="5d2cdc919ce893613b66b876a7c2782d" category="inline-image-macro">Une capture d'écran illustre les niveaux de performance du service pour les demandes de modification.</block>
+  <block id="a91bb8801531bd0f94f5726293b87485" category="paragraph"><block ref="a91bb8801531bd0f94f5726293b87485" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa37f1bdab27c9577ff178edf4ff4fef" category="admonition">L'onglet *Rapports* est actuellement indisponible pour les abonnements Keystone .</block>
+  <block id="2193640916b96caede95ed8f42c339e8" category="paragraph"><block ref="2193640916b96caede95ed8f42c339e8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3a51c5c35df88316b8d012c010e340f7" category="section-title">24 novembre 2025</block>
 </blocks>

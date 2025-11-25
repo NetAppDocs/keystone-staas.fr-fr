@@ -18,6 +18,18 @@ Découvrez les dernières fonctionnalités et améliorations des services Keysto
 
 
 
+== 24 novembre 2025
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Identifiant de suivi pour les abonnements avec interruption de couverture
+
+Dans la boîte de notification *Complétez votre couverture* de *Surveillance > Moniteurs d'alerte*, chaque abonnement affiche désormais son identifiant de suivi à côté du numéro d'abonnement.
+
+
+
 == 10 novembre 2025
 
 Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:

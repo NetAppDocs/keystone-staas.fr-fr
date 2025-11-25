@@ -30,6 +30,10 @@ image:monitoring-alert-monitors-default-view-1.png["Une capture d'écran des mon
 +
 Vous pouvez afficher une liste des moniteurs d'alerte sur vos abonnements Keystone , y compris les noms des moniteurs, les conditions d'alerte qui déclenchent des notifications, les niveaux de gravité, les numéros d'abonnement, les niveaux de service de performances et l'état. Vous pouvez consulter la colonne *Créé par* pour voir si les moniteurs d'alerte sont générés par le système ou définis par l'utilisateur.
 
++
+
+NOTE: L'onglet *Rapports* est actuellement indisponible pour les abonnements Keystone .
+
 
 
 
@@ -133,7 +137,7 @@ Une boîte de notification pliable *Complétez votre couverture* apparaît au-de
 * Identifier et traiter les abonnements qui ne disposent pas de surveillance de l'utilisation de la capacité ou de l'expiration de l'abonnement.
 * Examiner et gérer les moniteurs qui ne sont actuellement associés à aucun abonnement.
 +
-image:coverage-gaps.png["Capture d'écran des zones non couvertes par les moniteurs d'alerte pour les abonnements Keystone"]
+image:coverage-gaps-1.png["Capture d'écran des zones non couvertes par les moniteurs d'alerte pour les abonnements Keystone"]
 
 
 
