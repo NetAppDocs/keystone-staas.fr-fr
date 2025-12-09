@@ -18,6 +18,18 @@ Découvrez les dernières fonctionnalités et améliorations des services Keysto
 
 
 
+== 8 décembre 2025
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Étiquette renommée « Capacité de rupture accumulée »
+
+L'étiquette *Capacité de pointe cumulée* est renommée *Capacité de pointe cumulée*.
+
+
+
 == 24 novembre 2025
 
 Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:

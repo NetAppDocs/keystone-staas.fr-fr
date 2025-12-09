@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Les abonnements affichent incorrectement le statut *Dépassement de la limite de consommation* dans le tableau de bord Digital Advisor alors que la consommation reste dans les limites de consommation autorisées.
+ a| 
+Fixe
+ a| 
+08/12/2025
+
+
+
+ a| 
 Ligne de seuil de rafale manquante dans les graphiques de tendance de consommation pour les abonnements configurés avec une configuration MetroCluster dans le tableau de bord Digital Advisor , affichant un statut *Au-dessus de la limite de rafale* incorrect.
  a| 
 Fixe

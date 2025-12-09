@@ -1,0 +1,11 @@
+= Étiquette renommée « Capacité de rupture accumulée »
+:allow-uri-read: 
+
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Étiquette renommée « Capacité de rupture accumulée »
+
+L'étiquette *Capacité de pointe cumulée* est renommée *Capacité de pointe cumulée*.

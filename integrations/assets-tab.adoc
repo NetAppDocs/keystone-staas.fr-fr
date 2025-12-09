@@ -22,9 +22,13 @@ Vous pouvez afficher des informations détaillées sur les clusters et les nœud
 
 L'onglet *Actifs* de la page *Abonnements* affiche des informations détaillées sur les volumes des clusters, les nœuds StorageGRID et les nœuds ONTAP associés à l'abonnement, y compris divers détails et l'état de la capacité.
 
+[NOTE]
+====
+* Cette vue est limitée à un abonnement Keystone à la fois. Vous pouvez également voir les actifs d'autres abonnements en sélectionnant dans la liste déroulante *ID de suivi*. Le tableau de bord Keystone de la console NetApp vous permet d'afficher les ressources de plusieurs abonnements Keystone . Pour en savoir plus, consultezlink:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"] .
+* Les options du menu déroulant *Affichage* dépendent de votre plateforme d'abonnement Keystone . Les *volumes en clusters* et les *nœuds en clusters* sont disponibles pour ONTAP. Pour StorageGRID, le menu déroulant *View* n'est pas disponible, le tableau *Nodes in grids* s'affiche automatiquement. Si votre abonnement inclut les deux plateformes, les trois options sont disponibles.
 
-NOTE: Cette vue est limitée à un abonnement Keystone à la fois. Vous pouvez également voir les actifs d'autres abonnements en sélectionnant dans la liste déroulante *ID de suivi*. Le tableau de bord Keystone de la console NetApp vous permet d'afficher les ressources de plusieurs abonnements Keystone . Pour en savoir plus, consultezlink:../integrations/assets.html["Afficher les ressources de vos abonnements Keystone"] .
 
+====
 Vous pouvez consulter ces informations en suivant ces étapes :
 
 [role="tabbed-block"]
@@ -34,9 +38,6 @@ Vous pouvez consulter ces informations en suivant ces étapes :
 .Étapes
 . Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Abonnements*.
 . Sélectionnez le numéro d'abonnement dans la colonne *Numéro d'abonnement* du tableau.
-+
-Le système ouvre l'onglet *Consommation actuelle*.
-
 . Sélectionnez l’onglet *Actifs*.
 . Sélectionnez *Volumes du cluster* dans la liste déroulante *Affichage*.
 +

@@ -347,7 +347,6 @@
   <block id="9a87285999e76f01064e09d4163dacb4" category="list-text">À l'étape 1_ de l'assistant *déployer modèle OVF*, cliquez sur *Sélectionner et modèle OVF* pour sélectionner le fichier téléchargé<block ref="10e7fe8d7233c9952d9060893052d234" prefix=" " category="inline-code"></block> fichier.</block>
   <block id="eb2f786d0356dd1cd28f20f376d5da2b" category="list-text">Sous _Etape 2_, spécifiez le nom de la VM et sélectionnez le dossier VM.</block>
   <block id="ef93bcb8e06b73273019082b41d87115" category="list-text">Sur _Etape 3_, spécifiez la ressource de calcul requise pour exécuter la machine virtuelle.</block>
-  <block id="41466009ab38ed0e1dbd7f2358fa3825" category="list-text">Cliquez sur le lien *Publisher* pour télécharger le certificat de signature complet.</block>
   <block id="09ecce71a847e29076b9c49beb846dae" category="list-text">À l'étape _5_ de l'assistant *Deploy OVF Template*, indiquez l'emplacement de stockage de la machine virtuelle.</block>
   <block id="8cd29cf88dddb3b6287a9351d1b4c067" category="list-text">Sur _Etape 7 Personnaliser le modèle_, spécifiez l'adresse réseau initiale et le mot de passe du compte utilisateur admin.</block>
   <block id="4ff6b73315fa76bc8171f5548ebb79ef" category="list-text">À l'étape _8 prêt à compléter_ de l'assistant *déployer modèle OVF*, examinez la configuration et vérifiez que vous avez correctement défini les paramètres pour le déploiement OVA.</block>
@@ -602,10 +601,6 @@
   <block id="85701aafc47f53d769db3988637e595c" category="admonition">Un graphique vide indique qu'aucune donnée n'est disponible dans votre environnement à ce point de collecte de données.</block>
   <block id="c2e2fce3a995f59900d7afbbe58683f5" category="inline-link">ce lien</block>
   <block id="7656f92cecd653f72ca596d6def21867" category="list-text">Téléchargez le fichier OVA à partir de<block ref="6a1066e952a937beb3c2b32013fd7738" category="inline-link-rx"></block> Et stockez-les sur votre système VMware vSphere.</block>
-  <block id="6948cdf9e6c5bdc7d80925f15f8f873e" category="list-text">A l'étape 4 : vérifier les détails_, vérifier l'exactitude et l'authenticité du fichier OVA.
-Les versions vCenter antérieures à 7.0u2 ne peuvent pas vérifier automatiquement l'authenticité du certificat de signature de code. VCenter 7.0u2 et versions ultérieures peuvent effectuer les vérifications. Toutefois, pour cela, l'autorité de certification de signature doit être ajoutée à vCenter. Suivez ces instructions pour votre version de vCenter :</block>
-  <block id="8b6cfff06473c4cd5cde3fa4ab929f0a" category="paragraph">VCenter valide l'intégrité du contenu du fichier OVA et qu'un résumé de signature de code valide est fourni pour les fichiers contenus dans le fichier OVA. Toutefois, il ne valide pas l'authenticité du certificat de signature de code. Pour vérifier l'intégrité, téléchargez le certificat de signature complète et vérifiez-le par rapport au certificat public publié par Keystone.</block>
-  <block id="45c3e42547d79b15a504fc354a5ea227" category="paragraph">7.0u2 et versions ultérieures de vCenter sont capables de valider l'intégrité du contenu du fichier OVA et l'authenticité du certificat de signature de code, lorsqu'un résumé de signature de code valide est fourni. Le magasin de confiance racine vCenter contient uniquement des certificats VMware. NetApp utilise Entrust comme autorité de certification et ces certificats doivent être ajoutés au magasin de confiance vCenter.</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">ici</block>
   <block id="f35abf22d965c5c506fba6f9273a2895" category="list-text">Suivez les étapes de la section<block ref="b5a4b64b2aa505bd7c11f79b8a9f458d" prefix=" " category="inline-code"></block> Article de la base de connaissances :<block ref="2e578ca4f24dfc2cfe15357800b939d4" category="inline-link-rx"></block>.</block>
   <block id="6db4d1fb4f168710dad43e921e4fec52" category="inline-image-macro">Interface UTILISATEUR OVA affichant un certificat vérifié</block>
@@ -613,8 +608,6 @@ Les versions vCenter antérieures à 7.0u2 ne peuvent pas vérifier automatiquem
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Notez ce qui suit :</block>
   <block id="89daf59b9c591b51911d438bdad9f762" category="list-text">*Etat d'utilisation* : affiche l'indicateur d'utilisation pour indiquer si la consommation se situe dans la limite d'abonnement ou si elle dépasse cette limite. Vous pouvez trier la liste en fonction de cette colonne si vous souhaitez afficher les enregistrements de consommation les plus élevés.</block>
   <block id="6645e0ebb53d4b6e68be7936af3a8039" category="inline-link">AutoSupport</block>
-  <block id="ed55999d50b7451fbe4281de85f01c45" category="example-title">VCenter 7.0u1 et versions antérieures : en savoir plus</block>
-  <block id="ae33212e0f96fd19173ab021f7909861" category="example-title">VCenter 7.0u2 et versions ultérieures : en savoir plus</block>
   <block id="ee5ca5bbfae8b59d25890e341fb270f9" category="example-title">Données &lt;strong&gt; requises pour ONTAP : apprenez-en plus sur &lt;/strong&gt;</block>
   <block id="c1180c8c32ead64506dbcd62aa47c4c9" category="example-title">Données &lt;strong&gt; requises pour ONTAP : apprenez-en plus sur &lt;/strong&gt;</block>
   <block id="fb4c693ae1537fcd9bba0f68cbeef17b" category="example-title">&lt;strong&gt; : suppression des éléments limitant l'accès aux données privées : apprenez au mieux &lt;/strong&gt;</block>
@@ -1185,7 +1178,6 @@ Voici un exemple :</block>
   <block id="e481e00ab54faed62b9dea98ed860aea" category="inline-image-macro">Capture d'écran de l'interface utilisateur pour afficher les stratégies AQoS créées</block>
   <block id="43b019fa12d041b6c5cbfe89c5f52205" category="paragraph"><block ref="43b019fa12d041b6c5cbfe89c5f52205" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86e86c82820734a68c07adc56b6390a2" category="inline-image-macro">TUI pour afficher le message d'erreur pour la création de la stratégie</block>
-  <block id="1b787eed58abedc58337d9fef037fb67" category="list-text">Système d'exploitation : serveur VMware vCenter et ESXi 6.7 ou version ultérieure</block>
   <block id="f7e13857abd03bc318b89fe886669d7d" category="paragraph">Le champ *de la date* pour sélectionner la plage de dates affiche une date future par défaut lorsque vous accédez à l'onglet *tendance de consommation*.</block>
   <block id="443c63f2975d5902a80f1597e417d9f2" category="paragraph">4 septembre 2024</block>
   <block id="3564049af4b6d8549eeccf2c18fc9bb7" category="summary">Effectuez quelques tâches de configuration pour permettre à Keystone Collector de collecter des données d'utilisation dans un environnement qui ne dispose pas d'un accès à Internet, également connu sous le nom de _site_sombre_ ou de _mode_privé_.</block>
@@ -1287,7 +1279,6 @@ Voici un exemple :</block>
   <block id="ddedaabf1afb461a6e3d2fe1320dcca0" category="summary">Avant d'installer Keystone Collector dans un environnement sans accès à Internet, également appelé _site_sombre_ ou _mode_privé_, assurez-vous que vos systèmes sont préparés avec les logiciels nécessaires et répondent à toutes les conditions requises.</block>
   <block id="fd7fae83015d688b86a7ec1ed256864e" category="doc">Préparez l'installation en mode privé</block>
   <block id="2b9854b0330b42530e0aaf8e893e2f28" category="section-title">Configuration requise pour VMware vSphere</block>
-  <block id="4b78be970b5500221a819608df5616e7" category="list-text">Système d'exploitation : serveur VMware vCenter et ESXi 6.7 ou version ultérieure</block>
   <block id="0a07fd95ca9bf6935ce5e61609730be6" category="list-text">RAM : 2 GO</block>
   <block id="c53de6b17f1d8da5e4d60aca127be380" category="section-title">Configuration requise pour Linux</block>
   <block id="6adf0487ff5b4dadf30c70a5107314fc" category="list-text">Cœur : 2 processeur</block>
@@ -2423,8 +2414,6 @@ Voici un exemple :</block>
   <block id="b5e09b8913194b721a7e21626585dfc5" category="list-text">Assurez-vous que le certificat public correct a été importé en vérifiant l'empreinte numérique de Keystone Billing Platform dans la base de données RPM :<block ref="46ce6ee7c7afe96ac26dd093842fe062" prefix=" " category="inline-code"></block> L'empreinte digitale correcte ressemble à ceci :<block ref="b91be68b3b67e632293886e3790eccc7" prefix=" " category="inline-code"></block></block>
   <block id="f4baeef0e68eefa8ecbde2db1c9bb6af" category="list-text">Téléchargez le<block ref="5bec9e04971ed49ee2b3c939afa7a801" prefix=" " category="inline-code"></block> déposer:<block ref="55192ff2cd286fc1b545da5fb86c86fb" prefix=" " category="inline-code"></block></block>
   <block id="859d80b97dc3be93d17073cb53fd1183" category="list-text">Vérifiez l'authenticité du fichier :<block ref="50a551e75e87c897a8ad2128c42de747" prefix=" " category="inline-code"></block> La signature d'un fichier authentique ressemble à ceci :<block ref="ae3578a86bb737e9e2439ece85303ecb" prefix=" " category="inline-code"></block></block>
-  <block id="1eba34a29908de527656c195c6a4418a" category="list-text">Téléchargez le certificat public _Keystone Billing_ depuis<block ref="5520f333fe3958930d4ca351e896a12f" category="inline-link-rx"></block>.</block>
-  <block id="8dd9e9a8650be62b5350b1743ec0c25a" category="list-text">Vérifiez l'authenticité du certificat de signature OVA par rapport au certificat public en utilisant OpenSSL :<block ref="f41dec976ad8e65c3e38fceba0104101" prefix=" " category="inline-code"></block></block>
   <block id="b96ad4ab266c25b5492620bb2563d5d0" category="list-text">Téléchargez le certificat d'autorité de certification de signature de code depuis Sectigo<block ref="7342f89b7e38eb427d641531b8da4ba6" category="inline-link-rx"></block>.</block>
   <block id="5107c2f981fc9d221af2aedb4d9c3f10" category="paragraph">Lorsque l'intégrité et l'authenticité de l'OVA Keystone Collector sont validées, vous pouvez voir le texte<block ref="2e5f0dac7b8d485649c8f829e8ba09da" prefix=" " category="inline-code"></block> avec l'éditeur. <block ref="4bb910ce06804868c88e19dd6ff9e83c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4d3f733b36c05e3bcdf4287f293b20f" category="paragraph">Si le cluster est configuré en MetroCluster , exécutez la commande suivante :</block>
@@ -2485,4 +2474,16 @@ Voici un exemple :</block>
   <block id="fa37f1bdab27c9577ff178edf4ff4fef" category="admonition">L'onglet *Rapports* est actuellement indisponible pour les abonnements Keystone .</block>
   <block id="2193640916b96caede95ed8f42c339e8" category="paragraph"><block ref="2193640916b96caede95ed8f42c339e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3a51c5c35df88316b8d012c010e340f7" category="section-title">24 novembre 2025</block>
+  <block id="236430e108e8394ac19913076b10fb55" category="doc">Étiquette renommée « Capacité de rupture accumulée »</block>
+  <block id="73ba7647571e18c30e8b5b930b7d7ffb" category="paragraph">L'étiquette *Capacité de pointe cumulée* est renommée *Capacité de pointe cumulée*.</block>
+  <block id="a6145fbfb28ae332bb61854cc43b2999" category="list-text">Système d'exploitation : serveur VMware vCenter et ESXi 8.0 ou version ultérieure</block>
+  <block id="19c50fb6e1d8179976234d4afbeaf824" category="list-text">À l'étape 4 : Vérifier les détails, assurez-vous de l'exactitude et de l'authenticité du fichier OVA.</block>
+  <block id="89982b0af4c1ad3b86da7a82b021fed7" category="paragraph">Le magasin de certificats de confiance racine vCenter contient uniquement des certificats VMware. NetApp utilise Entrust comme autorité de certification et ces certificats doivent être ajoutés au magasin de confiance vCenter.</block>
+  <block id="6421324a362bee91e5fee16704e6b0e5" category="admonition">Pour les versions 7.x et antérieures de vCenter, vous devez mettre à jour vCenter et ESXi vers la version 8.0 ou ultérieure. Les versions antérieures ne sont plus prises en charge.</block>
+  <block id="21f65ffde9511843c6e3b86b7a0de865" category="list-text">Système d'exploitation : serveur VMware vCentre et ESXi 8.0 ou version ultérieure</block>
+  <block id="effa0f06c02c1da56e0eada86a5982ec" category="list-text">Les options du menu déroulant *Affichage* dépendent de votre plateforme d'abonnement Keystone . Les *volumes en clusters* et les *nœuds en clusters* sont disponibles pour ONTAP. Pour StorageGRID, le menu déroulant *View* n'est pas disponible, le tableau *Nodes in grids* s'affiche automatiquement. Si votre abonnement inclut les deux plateformes, les trois options sont disponibles.</block>
+  <block id="a71fbcfaa67815b8c0edea5059cb96fb" category="admonition">La page *Actifs* affiche des onglets en fonction des plateformes associées à vos abonnements Keystone . Pour ONTAP, les onglets *Nœuds dans les clusters* et *Volumes dans les clusters* sont tous deux disponibles. Pour StorageGRID, le tableau *Nœuds dans les grilles* s'affiche directement sans sélection d'onglet. Si l'abonnement inclut les deux plateformes, les trois onglets sont disponibles.</block>
+  <block id="7a29351a5aff62fec009044b13aad77f" category="paragraph">Les abonnements affichent incorrectement le statut *Dépassement de la limite de consommation* dans le tableau de bord Digital Advisor alors que la consommation reste dans les limites de consommation autorisées.</block>
+  <block id="81899b5a6230dd4cf7e0bff4dbc71dfb" category="paragraph">08/12/2025</block>
+  <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">8 décembre 2025</block>
 </blocks>

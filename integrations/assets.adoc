@@ -16,6 +16,9 @@ summary: 'Utilisez l"onglet Assets pour afficher le détail des clusters et nœu
 [role="lead"]
 Le tableau de bord Keystone de la console NetApp vous permet d'afficher des informations détaillées sur les nœuds des clusters, les volumes provisionnés et les nœuds StorageGRID sur plusieurs abonnements Keystone , en fonction de vos autorisations d'accès. Cette vue n'est pas disponible dans Digital Advisor.
 
+
+NOTE: La page *Actifs* affiche des onglets en fonction des plateformes associées à vos abonnements Keystone . Pour ONTAP, les onglets *Nœuds dans les clusters* et *Volumes dans les clusters* sont tous deux disponibles. Pour StorageGRID, le tableau *Nœuds dans les grilles* s'affiche directement sans sélection d'onglet. Si l'abonnement inclut les deux plateformes, les trois onglets sont disponibles.
+
 [role="tabbed-block"]
 ====
 .Nœuds dans les clusters
