@@ -286,7 +286,6 @@
   <block id="8a43eb05c3b74f093be84dcedec105e4" category="list-text">Podman (Manager POD)</block>
   <block id="431e077067178a6dd061f1e2ab20209d" category="list-text">sos</block>
   <block id="e284374909d82a81c5150b7908e00147" category="list-text">chrony</block>
-  <block id="3c048c264642c17c1d0bbd50b9e23bfe" category="list-text">python 3 (3.6.8 à 3.9.13)</block>
   <block id="8293f6bcd4201a597ff59371ddd65240" category="section-title">Autres exigences</block>
   <block id="ddd31bebd407467c40be40bf75366dbd" category="section-title">Exigences de mise en réseau</block>
   <block id="7ff386c96ae027b0684c69f8088eaa2b" category="admonition">Keystone Collector nécessite une connectivité Internet. Vous pouvez fournir une connectivité Internet par routage direct via la passerelle par défaut (via NAT) ou via le proxy HTTP. Les deux variantes sont décrites ici.</block>
@@ -2486,4 +2485,5 @@ Voici un exemple :</block>
   <block id="7a29351a5aff62fec009044b13aad77f" category="paragraph">Les abonnements affichent incorrectement le statut *Dépassement de la limite de consommation* dans le tableau de bord Digital Advisor alors que la consommation reste dans les limites de consommation autorisées.</block>
   <block id="81899b5a6230dd4cf7e0bff4dbc71dfb" category="paragraph">08/12/2025</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">8 décembre 2025</block>
+  <block id="ee53a2d144b153a8ad44855abe0429a8" category="list-text">Python 3 (3.9.14 à 3.11.8)</block>
 </blocks>
