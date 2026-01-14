@@ -4,7 +4,7 @@ permalink: rest-api/generate-tokens.html
 keywords: Refresh token, Digital Advisor portal,access 
 summary: 'Générez un jeton d"actualisation pour acquérir de nouveaux jetons d"accès. Elle authentifie les requêtes d"API et reste valide pendant une semaine ou jusqu"au remplacement. Vous pouvez obtenir le jeton d"accès via la console ou un appel d"API.' 
 ---
-= Générer des jetons d'actualisation et d'accès
+= Générer des jetons d'actualisation et d'accès pour Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

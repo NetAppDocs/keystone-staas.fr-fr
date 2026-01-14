@@ -4,7 +4,7 @@ permalink: concepts/burst-consumption-billing.html
 keywords: burst consumption billing 
 summary: La facturation du stockage en tant que service Keystone repose sur la capacité supplémentaire, qui correspond à la capacité consommée par vous, en plus de la capacité allouée de votre abonnement. 
 ---
-= Facturation en fonction de la consommation en rafale
+= Comprendre la facturation de la consommation en rafale de Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

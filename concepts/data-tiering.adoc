@@ -4,7 +4,7 @@ permalink: concepts/data-tiering.html
 keywords: add-on services, add-on, data tiering 
 summary: Le service complémentaire de Tiering des données identifie les données moins fréquemment utilisées et les hiérarchise en stockage pris en charge. 
 ---
-= En savoir plus sur le Tiering des données
+= Service complémentaire de hiérarchisation des données pour Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

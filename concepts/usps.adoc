@@ -4,7 +4,7 @@ permalink: concepts/usps.html
 keywords: netapp, keystone, US citizen support, USPS, Keystone Success Manager, USPS support 
 summary: Le support protégé des États-Unis est un service complémentaire qui fournit la livraison et le support des services Keystone en continu de citoyens américains sur le sol américain. 
 ---
-= En savoir plus sur USPS
+= Option USPS pour Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

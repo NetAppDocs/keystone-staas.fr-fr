@@ -4,7 +4,7 @@ permalink: concepts/sla-ransomware.html
 keywords: ransomware, recovery, guarantee, SLA, Keystone, assurance 
 summary: 'En cas d"attaque par ransomware, NetApp garantit la restauration des données Snapshot à partir des volumes SnapLock Compliance avec le programme de garantie de restauration anti-ransomware' 
 ---
-= Garantie de restauration contre les ransomwares
+= Garantie de récupération après une attaque de ransomware pour Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

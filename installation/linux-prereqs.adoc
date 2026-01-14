@@ -4,7 +4,7 @@ permalink: installation/linux-prereqs.html
 keywords: prerequisites, Linux 
 summary: 'Préparez votre système Linux avec les logiciels requis avant d"installer Keystone Collector.' 
 ---
-= Configuration système requise pour Linux
+= Configuration requise pour Keystone Collector sous Linux
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

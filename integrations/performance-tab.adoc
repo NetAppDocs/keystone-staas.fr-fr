@@ -4,7 +4,7 @@ permalink: integrations/performance-tab.html
 keywords: keystone-aiq, digital advisor keystone, performance tab 
 summary: Pour contrôler les performances de vos systèmes, vous pouvez consulter les metrics de performance des volumes ONTAP gérés par vos abonnements Keystone. 
 ---
-= Affichez les mesures de performances
+= Consultez les indicateurs de performance des abonnements Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

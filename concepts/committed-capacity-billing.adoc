@@ -4,7 +4,7 @@ permalink: concepts/committed-capacity-billing.html
 keywords: Billing based on committed capacity, committed capacity billing 
 summary: 'La capacité dédiée correspond à la capacité engagée pour un niveau de service donné lors de l"achat de l"abonnement.' 
 ---
-= Facturation en fonction de la capacité engagement
+= Comprendre la facturation de la capacité engagée de Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
