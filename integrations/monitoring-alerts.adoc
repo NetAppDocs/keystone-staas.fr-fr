@@ -48,6 +48,10 @@ Depuis l'onglet *Alertes*, vous pouvez effectuer les actions suivantes :
 +
 ** Marquez l'alerte comme résolue en sélectionnant le bouton *Modifier* après avoir résolu le problème.
 ** Ajoutez des notes d’appui en sélectionnant le bouton *Ajouter une note* si nécessaire.
++
+
+NOTE: La modification des alertes nécessite le rôle d'administrateur Keystone . Le rôle *Visionneuse Keystone * permet uniquement de consulter les détails des alertes. Pour en savoir plus, consultez link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["Rôles d'accès Keystone dans la NetApp Console"^].
+
 
 
 * *Filtrer les alertes* : utilisez l'icône de filtre dans la colonne *Statut* pour afficher uniquement les alertes actives, les alertes résolues ou les deux.

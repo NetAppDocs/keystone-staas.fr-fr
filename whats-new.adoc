@@ -18,6 +18,18 @@ Découvrez les dernières fonctionnalités et améliorations des services Keysto
 
 
 
+== 19 janvier 2026
+
+Mises à jour du tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Modification de l'abonnement impossible
+
+L'option permettant de modifier la capacité engagée pour les abonnements Keystone n'est actuellement pas disponible. Cette fonctionnalité sera réintroduite dans une prochaine version.
+
+
+
 == 8 décembre 2025
 
 Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:

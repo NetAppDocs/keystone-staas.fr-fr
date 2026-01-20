@@ -42,6 +42,9 @@ NOTE: L'onglet *Rapports* est actuellement indisponible pour les abonnements Key
 
 À partir de l'onglet *Moniteurs d'alerte*, vous pouvez créer des moniteurs pour suivre l'utilisation de la capacité et l'expiration de l'abonnement.  Vous pouvez également modifier, dupliquer ou supprimer des moniteurs existants selon vos besoins.
 
+
+NOTE: Vous devez être affecté au rôle d'administrateur Keystone pour créer et gérer les moniteurs d'alerte. Pour en savoir plus, consultez link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["Rôles d'accès Keystone dans la NetApp Console"^].
+
 [role="tabbed-block"]
 ====
 .Créer un moniteur
