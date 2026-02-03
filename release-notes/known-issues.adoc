@@ -24,6 +24,15 @@ Les problèmes connus suivants sont rapportés dans NetApp Keystone STaaS :
 
 
  a| 
+Modification de l'abonnement impossible
+ a| 
+L'option permettant de modifier la capacité engagée pour les abonnements Keystone est actuellement indisponible dans la NetApp Console. Cette fonctionnalité sera réintroduite dans une future version.
+ a| 
+Aucune
+
+
+
+ a| 
 Facture incorrecte en raison d'une incompatibilité des données
  a| 
 Une incohérence dans les données de consommation pour les abonnements AutoSupport entraîne la génération de factures incorrectes, ce qui entraîne des imprécisions de facturation.

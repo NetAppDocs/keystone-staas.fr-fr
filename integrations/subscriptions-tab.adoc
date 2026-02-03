@@ -25,7 +25,7 @@ Pour afficher les informations détaillées de vos abonnements, suivez ces étap
 .Étapes
 . Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Abonnements*.
 +
-image:bxp-subscription-list-3.png["afficher les détails de l'onglet abonnement"]
+image:bxp-subscription-list-4.png["afficher les détails de l'onglet abonnement"]
 
 +
 Vous voyez les indicateurs clés tels que l’utilisation de la capacité, l’état d’expiration de l’abonnement et les alertes non résolues.
@@ -39,13 +39,14 @@ Vous pouvez voir les détails suivants dans le tableau :
 ** *Nom du client* : Le nom du client associé à l'abonnement Keystone.
 ** *Abonnements liés* : Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros d'abonnement liés à l'abonnement principal. Ce numéro peut être celui de votre abonnement principal ou secondaire (lié).
 ** * Version Keystone * : La version du service Keystone utilisée pour l'abonnement. Les règles du plan tarifaire pour les niveaux de service de performance peuvent différer selon les versions d'abonnement. Pour en savoir plus sur la version v1, reportez-vous à https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^] .
+** *Type d'utilisation* : Vous avez peut-être souscrit à plusieurs versions de Keystone. Les règles tarifaires pour les niveaux de service de performance peuvent différer selon les versions d’abonnement. En regardant la valeur dans cette colonne, vous savez si le type d’utilisation est facturé selon l’utilisation provisionnée, physique ou logique. Pour en savoir plus sur la version 1, consultez  https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^].
 ** *Période de facturation* : La période de facturation de l'abonnement.
 ** *Niveaux de service de performance* : Le nombre de forfaits associés à l'abonnement, chaque forfait correspondant à un niveau de service de performance spécifique et à une capacité engagée.
 ** *Capacité la plus élevée* : La capacité maximale consommée dans le cadre de l'abonnement.
 ** *Jours avant l'expiration de l'abonnement* : Le nombre de jours restants avant l'expiration de l'abonnement.
 +
 
-NOTE: Vous pouvez cliquer sur la flèche vers le bas à côté de la colonne *Date d'expiration* pour afficher les informations sur les niveaux de service de performances pour chaque abonnement.  Cela affiche des informations détaillées sur la capacité, notamment l'utilisation actuelle, la capacité engagée, la capacité provisionnée, la capacité de pointe et la capacité disponible.
+NOTE: Vous pouvez cliquer sur la flèche vers le bas image:down-arrow.png["icône d’extension"] dans l'en-tête du tableau pour développer tous les abonnements et afficher les informations sur les niveaux de service de performance pour chaque abonnement simultanément. Cela affiche des informations détaillées sur la capacité, y compris l'utilisation actuelle, la capacité engagée, la capacité provisionnée, la capacité de pointe et la capacité disponible pour tous les abonnements. Vous pouvez également cliquer sur la flèche vers le bas à côté de la colonne *Expiration date* dans les lignes d'abonnement individuelles pour les développer une à la fois.
 
 +
 

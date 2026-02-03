@@ -1,0 +1,29 @@
+= Filtrage interactif des données de pointe quotidiennes accumulées
+:allow-uri-read: 
+
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Filtrage interactif des données de pointe quotidiennes accumulées
+
+Le tableau « Frais cumulés par jour » de l’onglet « Tendance de consommation » prend désormais en charge le filtrage interactif. Sélectionnez une barre du graphique de facturation des frais cumulés pour afficher uniquement les jours de cette période de facturation. Pour en savoir plus, consultez link:./integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Afficher l'utilisation quotidienne des données de bursting accumulées"].
+
+
+
+=== Affichage amélioré de la plage de dates dans le graphique des rafales cumulées
+
+Le graphique de facturation cumulée dans l’onglet *Tendance de consommation* affiche désormais des plages de dates complètes pour chaque période de facturation, telles que du 01 oct. 2025 au 31 oct. 2025, au lieu du mois et de l’année seulement.
+
+
+
+=== Vue détaillée extensible de l'abonnement
+
+L'onglet *Abonnements* propose une option permettant de développer tous les abonnements et d'afficher simultanément les informations relatives aux niveaux de performance de chaque abonnement. Pour en savoir plus, consultez link:./integrations/subscriptions-tab.html["Afficher les détails de vos abonnements Keystone"].
+
+
+
+=== Nouvelle colonne Usage type
+
+L'onglet *Abonnements* comprend une colonne *Type d'utilisation* qui indique si l'abonnement est facturé en fonction de l'utilisation provisionnée, physique ou logique. Pour en savoir plus, consultez link:./integrations/subscriptions-tab.html["Afficher les détails de vos abonnements Keystone"].
