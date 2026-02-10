@@ -34,7 +34,7 @@ Vous voyez les indicateurs clés tels que l’utilisation de la capacité, l’�
 Vous pouvez voir les détails suivants dans le tableau :
 
 +
-** *Numéro d'abonnement* : le numéro d'abonnement de l'abonnement Keystone attribué par NetApp.
+** *Numéro d’abonnement* : Le numéro d’abonnement Keystone attribué par NetApp. Les abonnements avec l’icône image:metrocluster-icon.png["MetroCluster subscription symbole"] sont des abonnements MetroCluster. Pour en savoir plus sur les abonnements MetroCluster, consultez link:../integrations/adp-tab.html["Consultez la consommation et la santé de vos abonnements Keystone MetroCluster"].
 ** *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
 ** *Nom du client* : Le nom du client associé à l'abonnement Keystone.
 ** *Abonnements liés* : Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros d'abonnement liés à l'abonnement principal. Ce numéro peut être celui de votre abonnement principal ou secondaire (lié).

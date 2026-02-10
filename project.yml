@@ -118,6 +118,8 @@ sidebar:
         url: "/integrations/consumption-tab.html"
       - title: Consultez la chronologie de votre abonnement
         url: "/integrations/subscription-timeline.html"
+      - title: Afficher la consommation et l'état des abonnements MetroCluster
+        url: "/integrations/adp-tab.html"
     - title: Afficher les ressources
       entries:
       - title: Afficher les actifs associés à un abonnement
@@ -150,8 +152,10 @@ sidebar:
         url: "/concepts/service-levels.html"
       - title: Exigences de capacité pour les niveaux de service de performance
         url: "/concepts/capacity-requirements.html"
-    - title: Découvrez nos services complémentaires
+    - title: Services complémentaires
       entries:
+      - title: Protection avancée des données
+        url: "/concepts/adp.html"
       - title: Options de capacité d'éclatement
         url: "/concepts/burst-capacity.html"
       - title: Informations exploitables sur l'infrastructure de données

@@ -1,8 +1,72 @@
 ---
+sidebar: sidebar 
 permalink: concepts/adp.html 
-redirect: keystone-staas/concepts/metrics.html 
+keywords: data protection advanced 
+summary: Utilisez le service complémentaire de protection des données avancée pour garantir une protection efficace des données des charges de travail critiques. 
 ---
-= 
+= Module complémentaire de protection des données avancée pour Keystone
+:hardbreaks:
 :allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
 
 
+[role="lead"]
+Vous pouvez souscrire au service complémentaire de protection avancée des données (ADP) avec votre abonnement Keystone STaaS. Alors que les services Keystone standard incluent la protection des données par défaut à l'aide de SnapMirror, SnapVault et Snapshot, ce service complémentaire utilise la technologie NetApp MetroCluster pour garantir une protection efficace des données de vos charges de travail critiques avec un objectif de point de récupération (RPO) de 0.
+
+Le service de protection avancée des données Keystone peut répliquer de façon synchrone les données vers un site secondaire. En cas de sinistre sur le site principal, le site secondaire peut prendre le relais, sans aucune perte de données. Cette fonctionnalité utilise la configuration link:https://docs.netapp.com/us-en/ontap-metrocluster["MetroCluster"^] entre deux sites pour permettre la protection des données. Vous pouvez utiliser les services complémentaires de protection avancée des données uniquement pour vos services de fichiers et de stockage bloc. Dans le cadre de ce service complémentaire, le niveau de service de performance  `Advanced Data-Protect` est attribué à votre abonnement.
+
+Vous pouvez surveiller les indicateurs de consommation et de santé de votre MetroCluster configuration. Pour plus d'informations, consultez link:../integrations/adp-tab.html["Consultez la consommation et la santé de vos abonnements MetroCluster"].
+
+
+
+== Comprendre la tarification
+
+Le service complémentaire de protection avancée des données est facturé en fonction de la capacité engagée sur chaque site. Cela permet de déterminer le coût réel du service de protection avancée des données en $/TiB. Les frais supplémentaires s'appliquent à toutes les capacités de votre abonnement, y compris les données sources, les copies miroir et les données non miroir.
+
+Pour la configuration MetroCluster, chaque site nécessite son propre abonnement, et vous êtes facturé pour la capacité engagée à chaque site indépendamment.
+
+Notez ce qui suit :
+
+* Le service utilise 100 % de la capacité engagée sur le stockage associé comme capacité engagée.
+* Des frais s'appliquent aux sites principaux et secondaires, couvrant à la fois les clusters source et de destination.
+* Les frais s'appliquent uniquement à vos services de stockage de fichiers et de stockage bloc.
+
+
+
+
+== Configurations MetroCluster prises en charge
+
+Keystone prend en charge les scénarios de déploiement MetroCluster suivants :
+
+Configuration active/passive:: Dans cette configuration, les données principales d'un site sont mises en miroir sur un site secondaire. Par exemple, si 100 Tio de données logiques sont consommées sur le site A, elles sont répliquées sur le site B. Les deux sites nécessitent des abonnements identiques :
++
+--
+* *Abonnement 1 (site A) :* Service de stockage de 100 Tio + 100 Tio ADP
+* *Abonnement 2 (site B) :* Service de stockage de 100 Tio + 100 Tio ADP
+
+
+--
+Configuration active/active avec mise en miroir complète:: Dans cette configuration, les deux sites hébergent des données primaires qui sont répliquées de manière bidirectionnelle. Par exemple, 100 TiB de données primaires au site A sont répliqués sur le site B, et 100 TiB de données primaires au site B sont répliqués sur le site A. Les deux sites nécessitent des abonnements pour la capacité combinée :
++
+--
+* *Abonnement 1 (site A) :* 200 Tio de service de stockage + 200 Tio d’ADP
+* *Abonnement 2 (site B) :* 200 Tio service de stockage + 200 Tio ADP
+
+
+--
+Configuration active/active avec mise en miroir partielle:: Dans cette configuration, un site héberge les données en miroir tandis que l'autre site héberge à la fois les données en miroir et les données non mises en miroir. Par exemple, 100 TiB de données primaires au site A sont mises en miroir sur le site B, tandis que le site B héberge également 100 TiB supplémentaires de données non mises en miroir. Les abonnements diffèrent en fonction de la capacité de chaque site :
++
+--
+* *Abonnement 1 (site A) :* Service de stockage de 100 Tio + 100 Tio ADP
+* *Abonnement 2 (site B) :* 200 Tio service de stockage + 200 Tio ADP
+
+
+--
+
+
+Le diagramme suivant illustre ces configurations MetroCluster prises en charge :
+
+image:mcc-1.png["Diagramme illustrant trois configurations MetroCluster : Active/Passive avec miroir symétrique, Active/Active avec miroir bidirectionnel complet, et Active/Active avec miroir partiel"]

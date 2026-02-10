@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: integrations/adp-tab.html 
+keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, bluexp, NetApp Console, Console 
+summary: 'Consultez les données de consommation et surveillez l"état de santé de vos sites partenaires MetroCluster lorsque vous souscrivez au service complémentaire de protection des données avancée dans Keystone.' 
+---
+= Consultez la consommation et la santé de vos abonnements Keystone MetroCluster
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Lorsque vous souscrivez au service complémentaire de protection avancée des données, vous pouvez consulter les données de consommation de vos sites partenaires MetroCluster dans la NetApp Console ou Digital Advisor. Dans la NetApp Console, vous pouvez également surveiller l'état de la réplication et la santé de votre configuration MetroCluster.
+
+
+
+== Consulter la consommation et l'état des abonnements MetroCluster et leur état de santé
+
+Suivez les étapes ci-dessous :
+
+[role="tabbed-block"]
+====
+.Console NetApp
+--
+.Étapes
+. Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Abonnements*.
+. Sélectionnez l'abonnement MetroCluster dans la colonne *Numéro d'abonnement*.
++
+
+TIP: MetroCluster subscriptions sont identifiés par l'icône image:metrocluster-icon.png["MetroCluster subscription symbole"].
+
++
+L'onglet *Consommation actuelle* s'ouvre et affiche des informations sur la consommation pour vos niveaux de service de performance de base souscrits et leurs niveaux de service de performance de protection des données avancés correspondants. Vous pouvez consulter ces informations sous forme de tableau ou de graphique. Pour en savoir plus, consultez link:../integrations/current-usage-tab.html["Consultez la consommation actuelle de vos abonnements Keystone"].
+
+. Sélectionnez l’onglet *Advanced data protection (ADP)*.
++
+Dans cet onglet, vous pouvez consulter les données de consommation de vos niveaux de service de performance de base sur les sites principaux et miroirs, surveiller l'état de santé de votre MetroCluster et suivre son état de synchronisation.
+
++
+** Consultez le graphique de répartition de la consommation pour la période sélectionnée.
++
+Le graphique illustre la consommation de vos sites principal et miroir. Survolez le graphique pour afficher le détail de la consommation en tébioctets (TiB) pour chaque site.
+
++
+
+NOTE: Pour les niveaux de service de performance de base, chaque volume est facturé tel que provisionné sur les sites principal et miroir. Le graphique est donc divisé pour refléter la consommation sur chaque site.
+
++
+*Exemple :* L’infobulle affiche des valeurs de consommation telles que 1.15 TiB pour le site principal et 4.22 TiB pour le site miroir.
+
++
+image:adp-consumption-chart.png["Graphique linéaire montrant la répartition de la consommation MetroCluster avec 1,15 TiB sur le site principal et 4,22 TiB sur le site miroir affichés dans l'infobulle"]
+
+** Surveillez l'état de santé de votre MetroCluster dans la vue *Topologie ADP*.
++
+La topologie affiche l'état de la connexion entre les sites principal et miroir (normal, dégradé, déconnecté ou en cours d'initialisation), l'état de la synchronisation des données (synchronisé ou non synchronisé), et l'état du ONTAP Mediator si configuré. Pour en savoir plus sur ONTAP Mediator, consultez link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Découvrez ONTAP Mediator"^].
+
++
+image:adp-topology.png["Image de la topologie ADP affichant le site principal (Cluster A), le site miroir (Cluster B), les indicateurs d'état de connexion, l'état de synchronisation et ONTAP Mediator"]
+
++
+
+TIP: Vous pouvez sélectionner l'abonnement Cluster B (miroir) dans la topologie ADP pour le visualiser comme site principal.
+
++
+
+TIP: Si l'état de la synchronisation indique « désynchronisé » ou si l'état de la connexion indique « dégradé », reportez-vous à link:../concepts/support-services.html["Obtenez de l'aide avec Keystone"] pour résoudre le problème.
+
+** Consultez les tendances de consommation historiques pour le site principal ou le site miroir.
++
+Sous *Utilisation de la capacité*, sélectionnez *Afficher* à côté de soit Cluster A (primary) soit Cluster B (mirror).
+
++
+L'onglet *Tendance de consommation* s'ouvre et affiche les données historiques de consommation pour le cluster sélectionné sur une période donnée. Vous pouvez analyser les tendances d'utilisation de la capacité pour les niveaux de service de performance de protection des données de base et avancés. Pour en savoir plus, consultez link:../integrations/consumption-tab.html["Consultez les tendances de consommation de vos abonnements Keystone"].
+
++
+*Exemple :* Le graphique suivant montre la consommation pour le niveau de service de performance _Premium_ (base) pour le site principal (Cluster A) :
+
++
+image:adp-base-consumption.png["Tableau de consommation du niveau de service Premium performance pour le site principal"]
+
++
+Pour le niveau de service de performance _Advanced Data-Protect premium_, le graphique apparaît comme ceci pour le site principal (Cluster A):
+
++
+image:adp-consumption.png["Tableau de consommation Advanced Data Protection Premium pour le site principal"]
+
++
+Pour le niveau de service _Advanced Data-Protect_, la consommation totale est répartie entre le site principal et le site miroir, et l'utilisation de chaque site est reflétée et facturée dans un abonnement distinct : un abonnement pour le site principal et un autre pour le site miroir. C'est la raison pour laquelle, lorsque vous sélectionnez le numéro d'abonnement du site principal dans l'onglet *Consumption trend*, les graphiques de consommation du service complémentaire de protection avancée des données affichent uniquement les détails de consommation du site principal. Étant donné que chaque site partenaire dans une configuration MetroCluster agit à la fois comme source et miroir, la consommation totale de chaque site inclut les volumes source et miroir créés sur ce site. Pour plus d'informations, consultez link:../concepts/adp.html["Module complémentaire de protection des données avancée pour Keystone"].
+
+
+
+
+
+Pour plus d'informations sur la façon dont MetroCluster protège vos données, consultez  https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["Comprendre la protection des données et la reprise après sinistre MetroCluster"^].
+
+--
+.Conseiller digital
+--
+.Étapes
+. Sélectionnez *General > Keystone Subscriptions > Consumption Trend*.
+. Sélectionnez l’abonnement MetroCluster.
++
+Si les clusters de votre environnement de stockage ONTAP sont configurés dans une configuration MetroCluster, les données de consommation de votre abonnement Keystone sont réparties dans le même graphique de données historiques afin d’afficher la consommation sur les sites principal et miroir pour les niveaux de service de performance de base.
+
++
+
+NOTE: Les graphiques à barres de consommation ne sont segmentés que pour les niveaux de service de performance de base. Pour le service complémentaire de protection avancée des données, c'est-à-dire le niveau de service de performance _Advanced Data-Protect_, cette segmentation n'apparaît pas.
+
++
+
+TIP: L'infobulle située à côté de l'identifiant de suivi de votre abonnement dans l'onglet *Consommation actuelle* vous aide à identifier l'abonnement partenaire dans la configuration MetroCluster.
+
++
+*Advanced data protection performance service level* Pour le niveau de service de performance de protection des données avancée, la consommation totale est répartie entre les sites partenaires, et l'utilisation à chaque site partenaire est reflétée et facturée dans un abonnement séparé : un abonnement pour le site principal, et un autre pour le site miroir. C'est la raison pour laquelle, lorsque vous sélectionnez le numéro d'abonnement pour le site principal dans l'onglet Tendance de consommation, les graphiques de consommation du service complémentaire de protection des données avancée affichent les détails de consommation distincts uniquement du site principal. Parce que chaque site partenaire dans une configuration MetroCluster agit à la fois comme source et miroir, la consommation totale à chaque site inclut les volumes source et miroir créés sur ce site.
+
++
+*Niveaux de service de performance de base* Pour les niveaux de service de performance de base, chaque volume est facturé tel que provisionné sur les sites principal et miroir, et par conséquent le même graphique à barres est divisé en fonction de la consommation sur les sites principal et miroir.
+
++
+*Vue principale de l’abonnement*
+
++
+L'image ci-dessous présente les graphiques du niveau de service _Performance_ (niveau de service de performance de base). Le même graphique de données historiques indique également la consommation du site miroir dans une teinte plus claire du même code couleur utilisé pour le site principal. Survolez le graphique pour afficher la répartition de la consommation en TiB pour chaque site. Dans cet exemple, les valeurs sont 95,04 TiB pour le site principal et 93,38 TiB pour le site miroir.
+
++
+image:mcc-chart-2.png["mcc primaire"]
+
++
+Pour le niveau de service de performance _Advanced Data-Protect_, le graphique se présente comme ceci :
+
++
+image:adp-src-2.png["base primaire de MetroCluster"]
+
++
+La consommation affichée de 94,21 Tio correspond à l'utilisation de l'abonnement principal. Étant donné que la protection avancée des données répartit la consommation entre les sites partenaires disposant d'abonnements distincts, ce graphique ne présente que l'utilisation du site principal. Pour en savoir plus sur les tarifs du service complémentaire de protection avancée des données, veuillez consulter link:../concepts/adp.html#understand-pricing["Comprendre la tarification"].
+
++
+*Vue d’abonnement miroir*
+
++
+Lorsque vous consultez l'abonnement miroir, vous pouvez constater que le graphique à barres du niveau de service _Performance_ (niveau de service de performance de base) au même point de collecte de données que le site partenaire est inversé, et que la répartition de la consommation sur les sites principal et miroir est respectivement de 93,38 TiB et 95,04 TiB.
+
++
+image:mcc-chart-mirror-2.png["mcc miroir"]
+
++
+Pour le niveau de service de performance _Advanced Data-Protect_, le graphique se présente comme ceci pour le même point de collecte que sur le site partenaire :
+
++
+image:adp-mir-2.png["base de miroir mcc"]
+
+
+
+Pour plus d'informations sur la façon dont MetroCluster protège vos données, consultez  https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["Comprendre la protection des données et la reprise après sinistre MetroCluster"^].
+
+--
+====
+*Informations connexes*
+
+* link:../integrations/dashboard-overview.html["Comprendre le tableau de bord Keystone"]
+* link:../integrations/subscriptions-tab.html["Consultez les détails de votre abonnement"]
+* link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
+* link:../integrations/consumption-tab.html["Affichez les tendances de consommation"]
+* link:../integrations/subscription-timeline.html["Consultez la chronologie de votre abonnement"]
+* link:../integrations/assets-tab.html["Consultez vos actifs d'abonnement Keystone"]
+
