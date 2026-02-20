@@ -152,7 +152,7 @@ sidebar:
         url: "/concepts/service-levels.html"
       - title: Exigences de capacité pour les niveaux de service de performance
         url: "/concepts/capacity-requirements.html"
-    - title: Services complémentaires
+    - title: En savoir plus sur les services complémentaires
       entries:
       - title: Protection avancée des données
         url: "/concepts/adp.html"

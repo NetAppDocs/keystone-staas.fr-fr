@@ -44,6 +44,10 @@ Dans la vue tableau, vous pouvez voir des détails tels que la capacité maximal
 +
 image:console-current-consumption-table.png["détails de la consommation actuelle sous forme de tableau"]
 
++
+
+NOTE: Si vous avez souscrit à des services complémentaires tels que protection des données (ADP) ou Data Infrastructure Insights (DII), la consommation actuelle de ces services s'affiche avec vos niveaux de service de performance de base, sous forme graphique et tabulaire. Pour en savoir plus sur les services complémentaires, consultez link:../concepts/adp.html["En savoir plus sur les services complémentaires"].
+
 
 
 --

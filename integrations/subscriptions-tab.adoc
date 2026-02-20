@@ -37,7 +37,7 @@ Vous pouvez voir les détails suivants dans le tableau :
 ** *Numéro d’abonnement* : Le numéro d’abonnement Keystone attribué par NetApp. Les abonnements avec l’icône image:metrocluster-icon.png["MetroCluster subscription symbole"] sont des abonnements MetroCluster. Pour en savoir plus sur les abonnements MetroCluster, consultez link:../integrations/adp-tab.html["Consultez la consommation et la santé de vos abonnements Keystone MetroCluster"].
 ** *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site, utilisé pour le suivi de l'abonnement.
 ** *Nom du client* : Le nom du client associé à l'abonnement Keystone.
-** *Abonnements liés* : Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros d'abonnement liés à l'abonnement principal. Ce numéro peut être celui de votre abonnement principal ou secondaire (lié).
+** *Abonnements liés* : Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros des abonnements liés à l’abonnement principal.
 ** * Version Keystone * : La version du service Keystone utilisée pour l'abonnement. Les règles du plan tarifaire pour les niveaux de service de performance peuvent différer selon les versions d'abonnement. Pour en savoir plus sur la version v1, reportez-vous à https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^] .
 ** *Type d'utilisation* : Vous avez peut-être souscrit à plusieurs versions de Keystone. Les règles tarifaires pour les niveaux de service de performance peuvent différer selon les versions d’abonnement. En regardant la valeur dans cette colonne, vous savez si le type d’utilisation est facturé selon l’utilisation provisionnée, physique ou logique. Pour en savoir plus sur la version 1, consultez  https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^].
 ** *Période de facturation* : La période de facturation de l'abonnement.
@@ -74,7 +74,7 @@ Pour certains champs et certaines colonnes, vous pouvez voir des informations ou
 
 +
 ** *Numéro d'abonnement* : numéro d'abonnement de l'abonnement Keystone attribué par NetApp.
-** *Abonnements liés* : Cette colonne est disponible en option. Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros d'abonnement liés à l'abonnement principal. Ce numéro d'abonnement peut être celui de votre abonnement principal ou secondaire (lié).
+** *Abonnements liés* : Si vous avez des abonnements secondaires liés à votre abonnement principal, cette colonne répertorie les numéros des abonnements liés à l’abonnement principal.
 ** *ID de suivi* : ID de suivi attribué au moment de l'activation de l'abonnement. Il s'agit d'un identifiant unique pour chaque abonnement et site.
 ** *Type d'utilisation* : Vous êtes peut-être abonné à plusieurs versions de Keystone. Les règles de tarification relatives aux niveaux de service de performance peuvent différer selon les versions d'abonnement. La valeur de cette colonne vous permet de savoir si le type d'utilisation est facturé selon l'utilisation provisionnée, physique ou logique. Pour en savoir plus sur la version 1, consultez  https://docs.netapp.com/us-en/keystone/index.html["Services d'abonnement Keystone | Documentation de la version 1"^] .
 ** *Période de facturation* : La période de facturation de l'abonnement.

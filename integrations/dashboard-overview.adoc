@@ -16,7 +16,7 @@ summary: 'En tant qu"abonné NetApp Keystone STaaS, vous pouvez obtenir un aper�
 [role="lead"]
 Le tableau de bord Keystone est la solution idéale pour surveiller, analyser et gérer efficacement vos abonnements Keystone. Grâce à lui, vous pouvez atteindre les objectifs suivants :
 
-* *Surveiller les détails de l'abonnement* : affichez des informations détaillées sur vos abonnements Keystone, notamment les niveaux de service de performance, l'utilisation de la capacité, les actifs et les alertes.
+* *Surveiller les détails de l'abonnement* : Consultez des informations détaillées sur vos abonnements Keystone, notamment les niveaux de service de performance (services de base et services complémentaires tels que la protection des données et Data Infrastructure Insights), l'utilisation de la capacité, les actifs et les alertes.
 * *Suivez l'utilisation de la capacité et générez des rapports* : Suivez l'utilisation actuelle et historique de la capacité et générez des rapports pour analyser les données d'abonnement et prendre des décisions éclairées.
 * *Consultez la chronologie des abonnements* : Restez informé des dates et événements clés en surveillant la chronologie de vos abonnements.
 * *Gérer les abonnements* : Soumettez des demandes de modification des niveaux de service de performance ou d'autres paramètres d'abonnement à mesure que vos besoins évoluent.
