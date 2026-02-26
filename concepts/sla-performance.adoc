@@ -21,16 +21,13 @@ NetApp Keystone propose un SLO basé sur la latence par niveau de service de per
 == Métriques
 
 * *Performances dégradées* : temps, en minutes, par incident, pendant lequel la cible de latence de 90^th^ percentile n'est pas atteinte.
-* La latence * de *90^th^ percentile est mesurée par volume, par niveau de performance, pour tous les volumes d'une commande Keystone. La latence est échantillonnée toutes les cinq minutes et la valeur de 90^e^ percentile calculée sur une période de 24 heures est utilisée comme mesure quotidienne, en tenant compte des points suivants :
+* La  est mesurée par volume, par instance de niveau de service de performance, pour tous les volumes au sein d'une commande Keystone. La latence est échantillonnée toutes les cinq minutes, et la valeur du 90 percentile calculée sur une période de 24 heures est utilisée comme mesure quotidienne, en tenant compte des points suivants :
 +
 ** Les volumes qui enregistrent au moins cinq IOPS au moment de la collecte des metrics sont pris en compte pour un échantillon.
 ** Les volumes dont les opérations d'écriture sont supérieures à 30 % au moment de la collecte des metrics sont exclus de l'échantillon.
-** La latence ajoutée par AQoS pour les IOPS/Tio demandées qui est supérieure aux IOPS/Tio cible est exclue de l'échantillon.
-** La latence ajoutée par AQoS pour maintenir un nombre minimal d'IOPS par volume est exclue de l'échantillon.
 ** Pour les volumes sur lesquels FabricPool est activé, la latence due au transfert des données vers et depuis le stockage cible (à froid) n'est pas comptabilisée.
 ** La latence causée par l'application, l'hôte ou le réseau du client en dehors du cluster ONTAP n'est pas comptabilisée.
-** Au cours d'une période de 24 heures, au moins dix mesures valides doivent être disponibles. Si ce n'est pas le cas, les mesures seront ignorées.
-** Si une règle AQoS valide n'est pas appliquée sur un ou plusieurs volumes d'une baie de stockage, le nombre d'IOPS disponibles pour les autres volumes peut être affecté et NetApp ne sera pas responsable du ciblage ou de la satisfaction des niveaux de performance de cette baie de stockage.
+** Au moins dix indicateurs valides doivent être disponibles sur une période de 24 heures. Si la condition n'est pas remplie, les indicateurs seront rejetés.
 ** Dans les configurations FabricPool, les niveaux de performance s'appliquent lorsque tous les blocs de données demandés sont sur le stockage source FabricPool (actif) et que le stockage source n'est pas dans une relation synchrone SnapMirror.
 
 
@@ -45,14 +42,14 @@ Tous les niveaux de service de performance pris en charge par les baies de stock
 |===
 
 
-| *Niveau de service* | Extrême | Premium | Performance | Standard 
+| *Niveau de service* | Extrême | Premium | Standard | Valeur 
 
 
  a| 
 *Cible 90^TH^ latence percentile*
-| < 1 ms. | < 2 ms. | < 4 ms. | < 4 ms. 
+| <=1ms | <=1ms | <=4ms | >=4ms 
 |===
-Pour en savoir plus sur les exigences de latence des niveaux de service de performance, reportez-vous à link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
+Pour en savoir plus sur les exigences de latence des niveaux de service de performance, reportez-vous à link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"].
 
 
 
@@ -97,7 +94,7 @@ L'exemple suivant illustre la méthode de calcul des crédits de service :
 |===
 
 
-| *Niveau de service* | *Capacité impactée* | *Capacité totale engagée* | *Frais de capacité* | *Jours calendaires touchés* | *Pourcentage de crédit* 
+| *Niveau de service* | *Capacité impactée* | *Capacité totale engagée* | *Frais de capacité* | *Jours du calendrier concernés* | *Pourcentage de crédit* 
 
 
  a| 
@@ -106,7 +103,7 @@ Extrême
 |===
 En utilisant la formule: Crédits de service = ( 10 / 50 ) X 1000 x 2 x 0.03
 
-Selon le calcul, les crédits de service seront de 12 $.
+D'après le calcul, les crédits de service seront de 12 $.
 
 
 
@@ -124,7 +121,7 @@ En cas de non-respect du SLA, ouvrez un ticket de support de priorité 3 (P3) au
 .. Tout autre document applicable
 
 
-* Fournissez les détails dans la feuille Excel comme indiqué ci-dessous pour un ticket P3 ouvert avec le support NetApp Keystone.
+* Fournissez les détails dans la feuille Excel comme indiqué ci-dessous pour un ticket P3 ouvert auprès du support NetApp Keystone.
 +
 image:sla-breach.png["modèle de feuille excel"]
 
@@ -133,7 +130,7 @@ image:sla-breach.png["modèle de feuille excel"]
 [NOTE]
 ====
 * Une demande de crédit de service doit être initiée dans les six semaines qui suivent la validation de l'infraction par le support NetApp Keystone. Tous les crédits de service doivent être validés et approuvés par NetApp.
-* Les crédits de service peuvent être appliqués à une future facture. Les crédits de service ne s'appliquent pas aux abonnements Keystone expirés. Pour en savoir plus, consultez link:../concepts/support-services.html["Prise en charge de NetApp Keystone"].
+* Les crédits de service peuvent être appliqués à une facture ultérieure. Les crédits de service ne s'appliquent pas aux abonnements Keystone expirés. Pour en savoir plus, consultez link:../concepts/support-services.html["Prise en charge de NetApp Keystone"].
 
 
 ====
