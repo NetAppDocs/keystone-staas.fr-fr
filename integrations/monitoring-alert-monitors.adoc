@@ -28,7 +28,7 @@ Pour afficher les moniteurs d’alerte, suivez ces étapes :
 image:monitoring-alert-monitors-default-view-1.png["Une capture d'écran des moniteurs d'alerte pour les abonnements Keystone"]
 
 +
-Vous pouvez afficher une liste des moniteurs d'alerte sur vos abonnements Keystone , y compris les noms des moniteurs, les conditions d'alerte qui déclenchent des notifications, les niveaux de gravité, les numéros d'abonnement, les niveaux de service de performances et l'état. Vous pouvez consulter la colonne *Créé par* pour voir si les moniteurs d'alerte sont générés par le système ou définis par l'utilisateur.
+Vous pouvez consulter une liste des moniteurs d'alertes de vos abonnements Keystone, y compris les noms des moniteurs, les conditions des moniteurs qui déclenchent les notifications, les niveaux de gravité, les numéros d'abonnement, les niveaux de service de performance et le statut. Vous pouvez vérifier la colonne *Créé par* pour voir si les moniteurs d'alertes sont générés par le système ou définis par l'utilisateur.
 
 +
 
@@ -84,6 +84,10 @@ Après avoir créé le moniteur, le système vous renvoie à la page *Moniteurs 
 +
 image:edit-alert-monitor.png["Capture d'écran de la modification d'un moniteur d'alerte pour les abonnements Keystone"]
 
++
+
+NOTE: Les moniteurs générés par le système ne peuvent pas être modifiés.
+
 . Sélectionnez *Modifier*.
 +
 La page *Modifier le moniteur d'alerte* apparaît avec la configuration actuelle du moniteur.
@@ -119,13 +123,13 @@ Un nouveau moniteur d'alerte est créé avec la configuration mise à jour et ap
 --
 .Étapes
 . Sélectionnez l’icône représentant des points de suspension pour le moniteur que vous souhaitez supprimer.
++
+
+NOTE: Les moniteurs générés par le système ne peuvent pas être supprimés.
+
 . Sélectionnez *Supprimer* et confirmez la suppression.
 +
 Après la suppression, les abonnements connectés au moniteur cessent de recevoir des notifications.
-
-+
-
-NOTE: Les moniteurs générés par le système ne peuvent pas être supprimés par les utilisateurs.
 
 
 

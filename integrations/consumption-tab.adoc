@@ -45,7 +45,11 @@ NOTE: Si vous avez souscrit à des services complémentaires tels que la protect
 image:bxp-consumption-trend-1.png["capture d'écran affichant l'historique de consommation"]
 
 +
-Le graphique linéaire affiche les données de consommation historiques et permet aux utilisateurs d'analyser les tendances sur une plage de dates sélectionnée. Le graphique affiche des mesures telles que la capacité utilisée (capacité de stockage totale, y compris les données et les données instantanées), les données (capacité de stockage utilisée par les données utilisateur) et l'instantané (capacité de stockage utilisée par les données instantanées), ainsi que la capacité engagée et en rafale. La date et l’heure de chaque point de données sont affichées au bas du graphique. En fonction de la plage de dates de votre requête, les graphiques d'utilisation affichent jusqu'à 30 points de collecte de données. Vous pouvez passer le curseur de votre souris sur le graphique pour afficher la répartition de l'utilisation à chaque point de collecte de données.
+Le graphique linéaire affiche les données historiques de consommation et permet aux utilisateurs d'analyser les tendances sur une plage de dates sélectionnée. Le graphique présente des indicateurs tels que la capacité utilisée (capacité de stockage totale, incluant à la fois les données et les données d'instantané), les données (capacité de stockage utilisée par les données utilisateur) et l'instantané (capacité de stockage utilisée par les données d'instantané), ainsi que la capacité engagée et la capacité de pointe. En fonction de la plage de dates de votre requête, les graphiques d'utilisation affichent jusqu'à 30 points de collecte de données. Vous pouvez survoler le graphique avec le curseur de votre souris pour afficher la répartition de l'utilisation à chaque point de collecte de données.
+
++
+
+NOTE: La plage de dates que vous sélectionnez détermine le niveau de détail affiché en bas du graphique. Pour les périodes de 30 jours ou moins, la date et l'heure sont affichées pour chaque point de données. Pour les périodes supérieures à 30 jours, seule la date est affichée.
 
 +
 
@@ -135,6 +139,10 @@ L'augmentation correspond à la différence entre la capacité consommée et la 
 
 Vous pouvez consulter la consommation de données de burst cumulée via la Console ou Digital Advisor. Si vous avez sélectionné *Accrued burst* dans le menu déroulant *View* de l’onglet *Consumption trend* dans la Console, ou l’option *Invoiced Accrued Burst* dans l’onglet *Consumption Trend* de Digital Advisor, vous pouvez voir la consommation de données de burst cumulée sur une base mensuelle ou trimestrielle, selon la période de facturation sélectionnée. Ces données sont disponibles pour les 12 derniers mois facturés, et vous pouvez effectuer une requête par plage de dates jusqu’à 30 mois en arrière.
 
+Dans la Console, en plus de la consommation en rafale facturée, vous pouvez également consulter la consommation en rafale non facturée (cumulée mais pas encore facturée) et la consommation en rafale provisoire (cumulée au cours de la période de facturation actuelle et pas encore facturée).
+
+image:accr-burst-provision-invoice.png["Capture d'écran montrant l'utilisation cumulée en rafale dans la Console"]
+
 [TIP]
 ====
 * Dans la Console, vous pouvez interagir avec le graphique de facturation cumulée pour filtrer la consommation de données quotidienne. Pour en savoir plus, consultez link:../integrations/consumption-tab.html#view-daily-accrued-burst-data-usage["Afficher l'utilisation quotidienne des données de bursting accumulées"].
@@ -157,6 +165,8 @@ Vous pouvez consulter l'utilisation quotidienne des données accumulées pour un
 Dans la Console, vous pouvez filtrer le tableau en sélectionnant une barre qui représente une période de facturation dans le graphique de facturation cumulée par rafale. Une fois filtré, le tableau affiche uniquement les jours de la période de facturation sélectionnée. Pour afficher à nouveau l'ensemble des données, utilisez l'option *Clear filters*. Si aucune donnée n'est disponible pour la période sélectionnée, un message indique qu'aucune donnée n'est disponible.
 
 image:bxp-accrued-burst-days-1.png["capture d'écran montrant le tableau des rafales accumulées par jour"]
+
+Vous pouvez également télécharger les données au format Excel, y compris le statut des burst (invoiced, uninvoiced ou provisional) et la période de facturation.
 
 Dans Digital Advisor, lorsque vous cliquez sur la barre qui affiche les données facturées à partir de l'option *Invoiced Accumulation Burst*, vous voyez la section Capacité provisionnée facturable sous le graphique à barres, offrant des options d'affichage de graphique et de tableau. La vue graphique par défaut affiche l'utilisation quotidienne des données en rafale accumulées sous forme de graphique linéaire, indiquant les changements d'utilisation au fil du temps.
 

@@ -1,0 +1,29 @@
+= Nouvelles colonnes dans l'onglet Volumes dans les clusters
+:allow-uri-read: 
+
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Nouvelles colonnes dans l'onglet Volumes dans les clusters
+
+Trois nouvelles colonnes, *Données actives*, *Niveau froid (%)* et *Niveau chaud (%)*, sont ajoutées à l’onglet *Volumes dans les clusters* dans *Actifs*. Pour en savoir plus, consultez link:./integrations/assets-tab.html["Afficher les actifs associés à un abonnement Keystone"] et link:./integrations/assets.html["Afficher les ressources de vos abonnements Keystone"].
+
+
+
+=== Utilisation facturée, non facturée et provisoire des pics dans la tendance de consommation
+
+Le graphique de facturation cumulée des pics de consommation dans l'onglet *Tendance de consommation* affiche désormais les pics de consommation facturés, non facturés et provisoires. Pour en savoir plus, consultez link:./integrations/consumption-tab.html#view-accrued-burst["Afficher les rafales accumulées"].
+
+
+
+=== Améliorations apportées à la vue Monitoring
+
+La vue *Monitoring* inclut les mises à jour suivantes :
+
+* *Onglet Alertes* : la colonne *Alert* est renommée *Alert type & condition*. Vous pouvez désormais utiliser l’icône en forme de points de suspension à côté de la colonne *Status* pour modifier une alerte, ajouter une note ou afficher les détails de l’alerte.
+* *Onglet Surveillance des alertes* : la colonne *Condition* est renommée *Type de surveillance et condition*.
+
+
+Pour en savoir plus, consultez link:./integrations/monitoring-alerts.html["Afficher et gérer les alertes pour les abonnements Keystone"] et link:./integrations/monitoring-alert-monitors.html["Afficher et créer des moniteurs d'alerte pour les abonnements Keystone"].

@@ -27,14 +27,18 @@ Pour afficher les alertes actives, suivez ces étapes :
 .Étapes
 . Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Surveillance > Alertes*.
 +
-image:monitoring-alerts-default-view-1.png["Une capture d'écran des alertes actives pour les abonnements Keystone"]
+image:monitoring-alerts-default-view-2.png["Une capture d'écran des alertes actives pour les abonnements Keystone"]
 
 +
-Vous pouvez afficher les détails de l'alerte tels que la gravité, l'ID, la description, l'heure de déclenchement, le numéro d'abonnement, l'ID de suivi, le niveau de service de performances et l'état.  La page affiche également le nombre total d'alertes non résolues par gravité et par type.
+Vous pouvez consulter les détails des alertes, tels que la gravité, l'ID, le type et la condition, la description, l'heure de déclenchement, le numéro d'abonnement, l'ID de suivi, le niveau de service de performance et le statut. La page affiche également le nombre total d'alertes non résolues par gravité et par type.
 
 +
 
 NOTE: L'onglet *Rapports* est actuellement indisponible pour les abonnements Keystone .
+
++
+
+TIP: Vous pouvez personnaliser le tableau à l'aide de l'icône de sélection des colonnes image:column-selector.png["icône de sélecteur de colonne"].
 
 
 
@@ -44,10 +48,14 @@ NOTE: L'onglet *Rapports* est actuellement indisponible pour les abonnements Key
 
 Depuis l'onglet *Alertes*, vous pouvez effectuer les actions suivantes :
 
-* * Examiner et résoudre les alertes * : Sélectionnez le numéro d’ID d’alerte pour ouvrir une vue détaillée de l’alerte.  Cette vue affiche la description de l'alerte et les étapes de résolution suggérées.  À partir de cette vue détaillée, vous pouvez :
+* *Consulter et résoudre les alertes* : Sélectionnez l’ID de l’alerte pour ouvrir une vue détaillée de l’alerte. Cette vue affiche la description de l’alerte et les étapes de résolution suggérées. Depuis cette vue détaillée, vous pouvez marquer l’alerte comme résolue à l’aide du bouton *Modifier* ou ajouter des notes de support avec le bouton *Ajouter une note*.
 +
-** Marquez l'alerte comme résolue en sélectionnant le bouton *Modifier* après avoir résolu le problème.
-** Ajoutez des notes d’appui en sélectionnant le bouton *Ajouter une note* si nécessaire.
+Vous pouvez également utiliser l'icône des points de suspension située à côté de la colonne *Status* pour effectuer les actions suivantes :
+
++
+** *Modifier* : Ouvre une fenêtre contextuelle pour changer le statut de l’alerte et ajouter des détails de résolution.
+** *Ajouter une note* : Ouvre une fenêtre contextuelle pour ajouter une note à l'alerte.
+** *Affichage* : Ouvre la même vue détaillée que la sélection de l’ID d’alerte.
 +
 
 NOTE: La modification des alertes nécessite le rôle d'administrateur Keystone . Le rôle *Visionneuse Keystone * permet uniquement de consulter les détails des alertes. Pour en savoir plus, consultez link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-keystone-roles.html["Rôles d'accès Keystone dans la NetApp Console"^].

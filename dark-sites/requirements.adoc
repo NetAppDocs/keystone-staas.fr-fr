@@ -77,6 +77,9 @@ Les modules tiers suivants doivent également être installés sur le même serv
 
 
 
+NOTE: Seuls les logiciels tiers mentionnés ci-dessus sont compatibles avec Keystone Collector. L'installation de logiciels supplémentaires n'est pas prise en charge et peut affecter les performances du collecteur, la collecte de données et la précision de la facturation.
+
+
 
 == Configuration réseau requise
 

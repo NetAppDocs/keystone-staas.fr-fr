@@ -39,6 +39,9 @@ Le même serveur doit également avoir les packages tiers suivants :
 * Python 3 (3.9.14 à 3.11.8)
 
 
+
+NOTE: Seuls les logiciels tiers mentionnés ci-dessus sont compatibles avec Keystone Collector. L'installation de logiciels supplémentaires n'est pas prise en charge et peut affecter les performances du collecteur, la collecte de données et la précision de la facturation.
+
 .Serveur virtuel Keystone Collector :
 * Cœur : 2 processeurs
 * RAM : 4 GO DE RAM
