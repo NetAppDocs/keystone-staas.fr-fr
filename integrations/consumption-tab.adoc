@@ -71,7 +71,7 @@ Vous pouvez également consulter un résumé de la consommation actuelle ainsi q
 
 NOTE: Vous pouvez sélectionner *Frais facturés cumulés* pour consulter l'historique des consommations facturées. Ces données vous permettent d'analyser l'utilisation facturée. Pour en savoir plus, reportez-vous link:../integrations/consumption-tab.html#view-accrued-burst["Afficher les rafales accumulées"]à la section .
 
-. Sélectionnez la plage horaire dans les icônes de calendrier des champs *Date de début* et *Date de fin*. Sélectionnez la plage de dates de la requête. La plage de dates peut être le début du mois, la date de début de l'abonnement à la date actuelle ou la date de fin de l'abonnement. Vous ne pouvez pas sélectionner une date future.
+. Sélectionnez la plage de dates à l'aide des icônes de calendrier dans les champs *From Date* et *To Date*. Par défaut, la plage de dates correspond aux 30 derniers jours à compter d'aujourd'hui. Vous pouvez modifier cette plage, mais vous ne pouvez pas sélectionner une date future.
 +
 
 TIP: Pour des performances et une expérience utilisateur optimales, limitez la plage de dates de votre requête à trois mois.
@@ -79,6 +79,10 @@ TIP: Pour des performances et une expérience utilisateur optimales, limitez la 
 . Cliquez sur *Afficher les détails*. Les données de consommation historiques de l'abonnement pour chaque niveau de service de performance sont affichées en fonction de la plage horaire sélectionnée.
 +
 Les graphiques à barres affichent le nom du niveau de service de performance et la capacité consommée par rapport à ce niveau de service de performance pour la plage de dates. La date et l'heure de la collection sont affichées en bas du graphique. En fonction de la plage de dates de votre requête, les graphiques d'utilisation sont affichés dans une plage de 30 points de collecte de données. Vous pouvez placer le curseur de la souris sur les graphiques pour afficher la répartition de l'utilisation en termes de données validées, consommées, en rafale et au-dessus de la limite de rafale à ce point de collecte de données.
+
++
+
+NOTE: Si vous sélectionnez une période inférieure à 30 jours, le graphique affiche un point de collecte de données par jour uniquement pour les jours sélectionnés. Par exemple, une période de 4 jours affiche 4 points de collecte de données, et non 30. Seule la date est affichée en bas du graphique pour toute période sélectionnée. Les horodatages ne sont visibles que lorsque vous effectuez un zoom avant sur le graphique à l'aide de la fonction de zoom décrite ci-dessous.
 
 +
 Les graphiques à barres affichent des rafales à court terme et vous pouvez afficher ces rafales à l'aide de la fonction de zoom avant. Lorsqu'une rafale à court terme est présente, elle est indiquée par un point bleu sur la barre correspondante ou directement sur l'axe X si aucune donnée n'est consommée. Pour afficher les détails, cliquez sur la barre ou sur l'axe des x où apparaît le point bleu et maintenez-le enfoncé, puis faites glisser le curseur sur la carte pour sélectionner l'intervalle de temps souhaité, puis relâchez pour confirmer votre sélection. Cette action effectue un zoom sur les données, offrant une vue plus granulaire de la capacité utilisée à ce niveau de service de performance pour l'intervalle sélectionné. Vous pouvez cliquer sur le bouton *Réinitialiser le zoom* pour revenir à la vue de carte d'origine.
