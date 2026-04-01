@@ -1,0 +1,29 @@
+= Au-dessus de la capacité de pointe sur le graphique de consommation historique
+:allow-uri-read: 
+
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Au-dessus de la capacité de pointe sur le graphique de consommation historique
+
+Le graphique de consommation historique de l'onglet *Tendance de consommation* met désormais en évidence les utilisations dépassant la limite de pointe. Pour en savoir plus, consultez link:./integrations/consumption-tab.html["Consultez les tendances de consommation de vos abonnements Keystone"].
+
+
+
+=== Prévisions d'utilisation des capacités
+
+Vous pouvez utiliser le bouton *Prévisions* dans la vue *Historique de consommation* de l'onglet *Tendance de consommation* pour projeter l'utilisation des capacités pour les 120 prochains jours à compter de la date actuelle. Pour en savoir plus, consultez link:./integrations/consumption-tab.html#view-forecast-data["Consulter les données prévisionnelles"].
+
+
+
+=== ID de suivi dans l'exportation d'abonnement
+
+Le rapport d'abonnements téléchargé depuis la page *Abonnements* inclut désormais l'*Tracking ID* dans les données de niveau de service de performance, aussi bien aux formats Excel que CSV.
+
+
+
+=== Mises à jour de la visibilité des colonnes de la page Subscriptions
+
+Sur la page *Abonnements*, la colonne *Version Keystone* est désormais masquée par défaut, et la colonne *Abonnements liés* n'apparaît que lorsque des abonnements liés sont disponibles.

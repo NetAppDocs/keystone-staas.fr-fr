@@ -42,10 +42,20 @@ NOTE: Vous pouvez sélectionner *Rampe cumulée* dans le menu déroulant *Affich
 NOTE: Si vous avez souscrit à des services complémentaires tels que la protection des données (ADP) ou Data Infrastructure Insights (DII), les données de consommation de ces services apparaissent avec vos niveaux de service de performance de base dans les vues de consommation historique et de pics cumulés. Pour en savoir plus sur les services complémentaires, consultez link:../concepts/adp.html["En savoir plus sur les services complémentaires"].
 
 +
-image:bxp-consumption-trend-1.png["capture d'écran affichant l'historique de consommation"]
+image:consumption-trend-burst.png["capture d'écran affichant l'historique de consommation"]
 
 +
-Le graphique linéaire affiche les données historiques de consommation et permet aux utilisateurs d'analyser les tendances sur une plage de dates sélectionnée. Le graphique présente des indicateurs tels que la capacité utilisée (capacité de stockage totale, incluant à la fois les données et les données d'instantané), les données (capacité de stockage utilisée par les données utilisateur) et l'instantané (capacité de stockage utilisée par les données d'instantané), ainsi que la capacité engagée et la capacité de pointe. En fonction de la plage de dates de votre requête, les graphiques d'utilisation affichent jusqu'à 30 points de collecte de données. Vous pouvez survoler le graphique avec le curseur de votre souris pour afficher la répartition de l'utilisation à chaque point de collecte de données.
+Le graphique linéaire affiche les données de consommation historiques et permet aux utilisateurs d'analyser les tendances sur une période sélectionnée. Le graphique présente les indicateurs suivants :
+
++
+** *Capacité utilisée* : Capacité de stockage totale utilisée, incluant les données et la capacité des instantanés.
+** *Données* : Capacité de stockage utilisée par les données utilisateur.
+** *Instantané* : Capacité de stockage utilisée par les données d’instantané.
+** *Engagé* : La capacité engagée sous contrat.
+** *Capacité de pointe* : La limite de pointe maximale autorisée pour votre abonnement.
+** *Dépassement de la capacité de pointe* : Consommation de stockage excédant la limite de pointe. Cette mesure s’affiche uniquement lorsque la limite de pointe est dépassée.
++
+En fonction de la plage de dates de votre requête, les graphiques d'utilisation affichent jusqu'à 30 points de collecte de données. Vous pouvez survoler le graphique avec le curseur de votre souris pour afficher la répartition de l'utilisation à chaque point de collecte de données.
 
 +
 
@@ -57,6 +67,8 @@ NOTE: Si un niveau de service de performances comporte plusieurs instances, vous
 
 +
 Vous pouvez également consulter un résumé de la consommation actuelle ainsi que la consommation historique pour avoir une compréhension claire de votre utilisation.
+
+
 
 
 
@@ -123,6 +135,20 @@ Vous pouvez cliquer sur le bouton à bascule *Afficher l'utilisation actuelle* p
 
 --
 ====
+
+
+== Consulter les données prévisionnelles
+
+Vous pouvez consulter les prévisions d'utilisation de la capacité pour les 120 prochains jours à compter de la date actuelle grâce à l'option *Prévisions* disponible dans la vue *Historique de consommation* de l'onglet *Tendance de consommation* de la Console. L'option est activée par défaut.
+
+Par défaut, le graphique affiche les 30 derniers jours de consommation historique et une projection sur 120 jours à partir de la date actuelle sur le même graphique. Jusqu'à 30 points de données sont tracés au total (20 pour les données historiques et 10 pour les données de prévision), avec une ligne verticale séparant les deux segments.
+
+image:forecast-1.png["capture d'écran montrant les données de prévision"]
+
+Si vous sélectionnez une période qui ne se termine pas à la date du jour, les prévisions sont automatiquement désactivées. Pour les réactiver, une boîte de dialogue de confirmation vous informe que les données de prévisions ne sont disponibles que lorsque la période sélectionnée se termine à la date du jour. La confirmation rétablit l'affichage par défaut, correspondant aux 30 derniers jours de données historiques plus les 120 prochains jours de prévisions.
+
+Si la consommation prévue devrait dépasser la capacité de pointe, un indicateur d'alerte apparaît sur le graphique, recommandant une mise à niveau de la capacité.
+
 
 
 == Calcul des rafales accumulées
