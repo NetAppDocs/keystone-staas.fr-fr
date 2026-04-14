@@ -36,12 +36,7 @@ La capacité logique minimale facturée chaque mois pendant l'abonnement :
 
 === Modifications de la capacité engagée
 
-Pendant la durée d'un abonnement, vous pouvez modifier les capacités engagées. Toutefois, il existe certaines conditions préalables :
-
-* La capacité engagée peut être réduite en fonction de certaines conditions. Pour plus d'informations, reportez-vous à la section link:../concepts/capacity-requirements.html["Réduction de capacité"].
-* La capacité allouée ne peut pas être augmentée 90 jours avant l'expiration de votre abonnement, sauf si l'abonnement doit être renouvelé pour une durée supplémentaire de 12 mois.
-* Vous pouvez demander des modifications de la capacité engagée via la Console ou depuis votre Keystone Success Manager (KSM). Pour plus d'informations sur la procédure de demande de modifications, veuillez consulter la section correspondante. link:../concepts/support-services.html["Prise en charge de NetApp Keystone"].
-
+Pendant la durée de votre abonnement, vous pouvez modifier les capacités engagées sous certaines conditions. Pour plus de détails sur les règles d'augmentation et de réduction des capacités, consultez link:../concepts/capacity-requirements.html["Exigences de capacité pour les niveaux de service de performance Keystone"]. Pour demander une modification, contactez votre Keystone Success Manager (KSM) ou consultez link:../concepts/support-services.html["Prise en charge de NetApp Keystone"].
 
 
 
