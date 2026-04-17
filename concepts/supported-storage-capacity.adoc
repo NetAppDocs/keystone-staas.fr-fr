@@ -4,7 +4,7 @@ permalink: concepts/supported-storage-capacity.html
 keywords: storage capacity, capacity definition, keystone STaaS storage capacity, 
 summary: Découvrez les types de capacités de stockage prises en charge par le service NetApp Keystone STaaS pour la version 3. 
 ---
-= Capacités de stockage prises en charge dans Keystone
+= Types de capacité de stockage dans Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Découvrez les types de capacités de stockage prises en charge par le 
 
 
 [role="lead"]
-Le service NetApp Keystone STaaS prend en charge plusieurs types de capacités de stockage. Comprendre ces différents termes de capacité peut vous aider lorsque vous utilisez Keystone.
+Keystone STaaS utilise plusieurs termes de capacité pour mesurer, réserver et facturer le stockage. Comprendre ces termes vous aidera à planifier votre abonnement et à interpréter vos rapports d'utilisation et vos factures.
 
 
 
@@ -28,7 +28,7 @@ Il s'agit de la quantité de capacité de stockage requise pour stocker les donn
 
 La capacité logique minimale facturée chaque mois pendant l'abonnement :
 
-* La capacité est engagée pour chaque niveau de service de performance.
+* La capacité est allouée à chaque instance de niveau de service de performance pour le stockage unifié ou optimisé par bloc, ou par cluster AFX.
 * Des capacités engagées et des niveaux de service de performance supplémentaires peuvent être ajoutés au cours de la durée.
 
 
@@ -36,13 +36,13 @@ La capacité logique minimale facturée chaque mois pendant l'abonnement :
 
 === Modifications de la capacité engagée
 
-Pendant la durée de votre abonnement, vous pouvez modifier les capacités engagées sous certaines conditions. Pour plus de détails sur les règles d'augmentation et de réduction des capacités, consultez link:../concepts/capacity-requirements.html["Exigences de capacité pour les niveaux de service de performance Keystone"]. Pour demander une modification, contactez votre Keystone Success Manager (KSM) ou consultez link:../concepts/support-services.html["Prise en charge de NetApp Keystone"].
+Pendant la durée de votre abonnement, vous pouvez modifier les capacités engagées sous certaines conditions. Pour plus de détails sur les règles d'augmentation et de réduction des capacités, consultez link:../concepts/capacity-requirements.html["Exigences de capacité pour les niveaux de service de performance Keystone"]. Pour demander une modification, contactez votre Keystone Success Manager (KSM) ou link:../concepts/support-services.html["Support NetApp"].
 
 
 
 == Capacité consommée
 
-La capacité consommée fait référence à la capacité (en Tio de stockage) actuellement consommée sur le service. Il est calculé différemment en fonction du type de stockage :
+La capacité consommée correspond à la capacité (en Tio de stockage) actuellement utilisée par le service. Elle est calculée différemment selon le type de stockage des données :
 
 * *Stockage unifié ou optimisé par bloc* : La capacité consommée est calculée en fonction du type de capacité (logique ou physique) sélectionné lors du processus de commande.  Le calcul est effectué par instance de niveau de service de performance.
 +
@@ -55,15 +55,22 @@ La capacité consommée fait référence à la capacité (en Tio de stockage) ac
 
 .. *Capacité physique* : C'est la somme de :
 +
-*** Capacité physique mesurée, après efficacité des données de la baie de stockage, pour stocker toutes les instances et tous les types de données client, telles que les copies, les copies en miroir, les versions, les clones.
+*** Capacité physique mesurée, après optimisation des données de la baie de stockage, pour stocker toutes les instances et tous les types de données client, tels que les copies, les copies en miroir, les versions et les clones.
 *** Capacité physique utilisée pour stocker les métadonnées et les données différentielles des instantanés.
 *** Toute capacité physique provisionnée de manière épaisse.
 
 
 
 
+* *Stockage AFX* : Il est calculé par cluster AFX comme la somme de :
++
+** Capacité physique mesurée, après optimisation des données de la baie de stockage, pour stocker toutes les instances et tous les types de données client, tels que les copies, les copies en miroir, les versions et les clones.
+** Capacité physique utilisée pour stocker les métadonnées et les données différentielles des instantanés.
+** Toute capacité physique provisionnée de manière épaisse.
+
+
 * *Stockage d'objets* : la capacité consommée correspond à la quantité de capacité physique mesurée utilisée pour stocker toutes les instances et tous les types de données client sur tous les nœuds. Ce calcul est basé sur les stratégies de gestion du cycle de vie de l'information (ILM) configurées.
-* *Cloud Volumes ONTAP* : la capacité consommée est calculée comme la quantité de capacité provisionnée mesurée de tous les volumes Cloud Volumes ONTAP.
+* *Cloud Volumes ONTAP* : La capacité consommée est calculée comme la quantité de capacité logique provisionnée mesurée de tous les volumes Cloud Volumes ONTAP.
 
 
 
@@ -74,8 +81,8 @@ Le service NetApp Keystone STaaS vous permet d'utiliser une capacité supplémen
 
 Notez ces points :
 
-* La capacité en rafale est convenue dans le contrat Keystone. Elle est généralement configurée jusqu'à 20 % au-dessus de la capacité engagée, par instance de niveau de service de performance, avec des options supplémentaires disponibles pour sélectionner des limites de capacité de rafale de 40 % ou 60 % de la capacité engagée.
-* La consommation de capacité en rafale est facturée au même tarif que la capacité engagée correspondant au niveau de service de performance sélectionné.
+* La limite de capacité de pointe est convenue dans la commande Keystone. Elle est généralement fixée par défaut à 20 % au-dessus de la capacité engagée par instance de niveau de service de performance ou par cluster AFX, avec des options supplémentaires disponibles pour le stockage unifié et optimisé par blocs permettant de sélectionner des limites de capacité de pointe de 40 % ou 60 % de la capacité engagée.
+* La consommation de capacité en rafale est facturée au même tarif que la capacité engagée correspondant au type de stockage des données (DST) et au niveau de service de performance sélectionnés.
 * Les services Keystone STaaS offrent une période de renonciation de 60 jours à compter de la date de début.
 
 

@@ -4,7 +4,7 @@ permalink: concepts/metrics.html
 keywords: metrics, GiB, IOPS, latency, durability, v3, version 3 
 summary: Le service STaaS de NetApp Keystone utilise plusieurs termes pour mesurer les mesures. Vous souhaiterez peut-être en savoir plus sur ces conditions lorsque vous utiliserez Keystone pour la version 3 du service. 
 ---
-= Metrics et définitions utilisés dans Keystone
+= Comprendre les indicateurs et les définitions de stockage dans Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,7 @@ summary: Le service STaaS de NetApp Keystone utilise plusieurs termes pour mesur
 
 
 [role="lead"]
-Le service NetApp Keystone STaaS utilise plusieurs termes pour mesurer les métriques. Vous souhaiterez peut-être en savoir plus sur ces termes lorsque vous utilisez Keystone.
-
-Les termes et définitions suivants sont utilisés dans le service de stockage en tant que service Keystone pour mesurer les metrics :
-
-* Capacité : mesurée en GiB, TiB et PiB.
-* IOPS : nombre d'opérations d'entrée/sortie traitées par seconde.
-* Disponibilité du service
-* Durabilité dans un accès précis aux données
-* Latence et vitesse
-
+Découvrez les termes clés utilisés par Keystone STaaS pour mesurer et rendre compte de votre abonnement de stockage, notamment les unités de capacité, les indicateurs de performance et les définitions de disponibilité.
 
 
 
@@ -34,22 +25,4 @@ Les termes et définitions suivants sont utilisés dans le service de stockage e
 * *Disponibilité* : mesuré en pourcentage du nombre de demandes d'E/S auxquelles le service a répondu avec succès, divisé par le nombre total de demandes d'E/S faites au service. Cette valeur est mesurée au moment de la délimitation du service dans un mois et ne comprend pas les temps d'arrêt planifiés ou d'indisponibilité des installations, du réseau ou d'autres services fournis par le client.
 * *Durabilité* : pourcentage de données consultées sans perte de fidélité, à l'exclusion de la suppression ou de la corruption causées par le client.
 * *Latence* : temps de traitement d'une demande d'E/S reçue d'un client, mesuré à la ligne de démarcation du service (port E/S du contrôleur de stockage).
-
-
-
-
-=== Mesures de performance
-
-Les mesures de performance suivantes s'appliquent aux services unifiés et optimisés par blocs :
-
-*Services unifiés :*
-
-* *IOPS* : pour ONTAP 9.16.1 avec NFS, chaque instance de niveau de performance prend en charge l'accès aléatoire avec un rapport de lecture de 70 % et d'écriture de 30 %, une taille de bloc de 8 Ko et une latence de 1 ms (4 ms pour Standard).
-* *Débit* : Pour ONTAP 9.16.1 avec NFS, chaque instance de niveau de performance prend en charge l'accès séquentiel avec 100 % de lecture et une taille de bloc de 32 Ko.
-
-
-*Bloquer les services optimisés :*
-
-* *IOPS* : pour ONTAP 9.16.1 avec FCP, chaque instance de niveau de performance prend en charge l'accès aléatoire avec un rapport de lecture de 70 % et d'écriture de 30 %, une taille de bloc de 8 Ko et une latence de 1 ms.
-* *Débit* : Pour ONTAP 9.16.1 avec FCP, chaque instance de niveau de performance prend en charge l'accès séquentiel avec 100 % de lecture et une taille de bloc de 64 Ko.
 

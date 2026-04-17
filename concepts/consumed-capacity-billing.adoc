@@ -18,4 +18,4 @@ Le service STaaS de Keystone offre des mesures basées sur la capacité consomm�
 
 Dans le cadre du déploiement du service Keystone, NetApp contrôle en continu et mesure la consommation du service. Au moins une fois toutes les cinq minutes, un enregistrement de consommation est généré par le système, détaillant la capacité consommée actuelle de votre abonnement. Ces enregistrements sont agrégés au cours de la période de facturation afin de générer des factures et des rapports d'utilisation.
 
-Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"].
+Pour plus d'informations sur les différentes capacités prises en charge dans Keystone, voir link:../concepts/supported-storage-capacity.html["Types de capacité de stockage dans Keystone"].

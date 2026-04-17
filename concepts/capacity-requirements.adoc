@@ -4,7 +4,7 @@ permalink: concepts/capacity-requirements.html
 keywords: storage capacity requirement for service levels, capacity definition per PSL, 
 summary: 'Les exigences de capacité pour les niveaux de service diffèrent selon le stockage cloud, fichier, bloc, objet ou pris en charge par l"abonnement Keystone STaaS.' 
 ---
-= Exigences de capacité pour les niveaux de service de performance Keystone
+= Exigences et ajustements de capacité dans Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Les exigences de capacité pour les niveaux de service diffèrent selo
 
 
 [role="lead"]
-Les exigences de capacité pour les niveaux de service de performances Keystone STaaS diffèrent entre les offres de stockage unifiées, optimisées par blocs, d'objets ou cloud prises en charge par l'abonnement Keystone STaaS.
+Les exigences minimales de capacité et les augmentations incrémentales pour les niveaux de service de performance Keystone STaaS varient selon le type de stockage. Cette page explique également comment la capacité engagée peut être augmentée, diminuée ou réallouée pendant la durée de l'abonnement.
 
 
 
@@ -31,7 +31,7 @@ Vous pouvez voir la capacité minimale et la capacité incrémentielle autorisé
 
 
  a| 
-Capacité minimale [en Tio]
+Capacité minimale par PSLI [en TiB]
 2+| 50 2+| 100 
 
 
@@ -49,24 +49,53 @@ Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pend
 |===
 
 
-| Puissance | Extrême | Premium 
+| Puissance | Extrême | Premium | Standard 
 
 
  a| 
-Capacité minimale [en Tio]
-2+| 50 
+Capacité minimale par PSLI [en TiB]
+| 50 | 50 | 100 
 
 
  a| 
 Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
-2+| 25 
+3+| 25 
 
 
  a| 
 Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
-2+| 25 
+3+| 25 
 |===
 La capacité minimale pour chaque niveau de service de performance est la même pour toutes les ventes Keystone.
+
+
+
+== Exigences minimales de capacité pour le stockage AFX
+
+Vous pouvez consulter les exigences minimales de capacité pour le stockage AFX dans le tableau suivant :
+
+|===
+
+
+| Puissance | Extrême 
+
+
+ a| 
+Capacité minimale [en Tio] par cluster AFX
+| 200 
+
+
+ a| 
+Capacité incrémentielle (et en multiples) autorisée au début de l'abonnement [en Tio]
+| 100 
+
+
+ a| 
+Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pendant l'abonnement [en Tio]
+| 100 
+|===
+
+NOTE: Pour le stockage AFX, la capacité est engagée et mesurée au niveau du cluster AFX, sur l'ensemble des baies de disques du cluster. Ceci est indépendant du nombre de contrôleurs de stockage AFX dans le cluster.
 
 
 
@@ -208,5 +237,3 @@ Ce tableau présente des exemples de valeurs illustrant le fonctionnement de la 
 La réduction est de (125-108) = 17 Tio de capacité allouée au niveau de service de performance Extreme. En cas de réaffectation des dépenses, le stockage de cloud hybride attribué n'est pas de 17 To, mais une capacité équivalente à celle achetée 5000 $. Dans cet exemple, pour 5 000 $, vous pouvez obtenir 17 Tio de capacité de stockage sur site pour le niveau de service de performance Extreme et 47 Tio de capacité cloud hybride pour le niveau de service de performance Cloud Volumes ONTAP. Par conséquent, la réaffectation concerne les dépenses et non la capacité.
 
 Contactez votre Keystone Success Manager (KSM) pour soumettre une demande de réaffectation.
-
-Pour en savoir plus, consultez le https://fieldportal.netapp.com/s/article/Changes-to-Keystone-STaaS-Service-Description-and-Supplement-v3-Reference-Guide["Keystone STaaS v3 Guide de référence et supplément de description du service"^].

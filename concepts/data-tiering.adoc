@@ -14,12 +14,12 @@ summary: Le service complémentaire de Tiering des données identifie les donné
 
 
 [role="lead"]
-Les services standard Keystone STaaS pour le stockage des fichiers et blocs incluent des fonctionnalités de Tiering qui identifient les données moins utilisées et les répartissent à l'aide de Keystone STaaS (stockage à froid NetApp pris en charge). Si vous souhaitez transférer vos données inactives vers un stockage Keystone STaaS non NetApp, le Tiering des données inactives est possible en tant que service complémentaire.
+Les services standard Keystone STaaS pour le stockage fichier et le stockage bloc incluent des fonctionnalités de hiérarchisation qui identifient les données les moins fréquemment utilisées et les déplacent vers le stockage à froid NetApp compatible avec Keystone STaaS. Vous pouvez utiliser la hiérarchisation des données en tant que service complémentaire si vous souhaitez déplacer vos données à froid vers tout stockage compatible avec Keystone STaaS, non-NetApp. Ce service complémentaire est pris en charge uniquement sur le type de stockage de données unifié.
 
 voir link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"] .
 
 
-NOTE: Le service complémentaire de hiérarchisation est requis uniquement lorsque les données sont hiérarchisées vers un stockage non NetApp tel qu'Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) et d'autres stockages d'objets tiers compatibles S3 et pris en charge par Keystone STaaS.
+NOTE: Le service complémentaire de hiérarchisation est requis uniquement lorsque les données sont hiérarchisées vers un stockage non-NetApp, tel qu’Amazon Web Services (AWS) S3, Azure Blob, Google Cloud Platform (GCP) ou tout autre stockage d’objets tiers compatible S3 pris en charge par Keystone STaaS. Ce service est disponible uniquement pour le type de stockage des données unifié.
 
 La fonctionnalité de Tiering exploite la technologie NetApp FabricPool pour le Tiering automatisé des données peu utilisées vers des tiers de stockage objet sur site et hors site.
 

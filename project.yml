@@ -146,7 +146,7 @@ sidebar:
         url: "/concepts/metrics.html"
       - title: Stockage pris en charge
         url: "/concepts/supported-storage-services.html"
-      - title: Capacité prise en charge
+      - title: Types de capacité de stockage
         url: "/concepts/supported-storage-capacity.html"
       - title: Niveaux de service de performance
         url: "/concepts/service-levels.html"

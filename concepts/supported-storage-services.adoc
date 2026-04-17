@@ -14,14 +14,11 @@ summary: Les services Keystone de stockage en tant que service prennent en charg
 
 
 [role="lead"]
-Le service Keystone STaaS prend en charge le stockage unifié, optimisé par blocs et d'objets de NetApp et Cloud Volumes ONTAP.
+Keystone STaaS prend en charge le stockage unifié, optimisé pour les blocs, AFX et objet sur les plateformes NetApp, ainsi que Cloud Volumes ONTAP. Chaque type de stockage est défini comme un type de stockage des données (DST) et est disponible avec les services standard inclus dans l’abonnement de base, ainsi qu’avec des services complémentaires optionnels.
 
-Les options de stockage prises en charge sont :
 
-* *Stockage unifié* : inclut le stockage de fichiers, de blocs et d'objets S3, disponible sur les systèmes NetApp ONTAP AFF et FAS.
-* *Stockage optimisé par bloc* : inclut le stockage par bloc disponible sur les systèmes NetApp ONTAP ASA .
-* *Stockage d'objets* : inclut le stockage d'objets disponible sur les systèmes NetApp StorageGRID.
 
+== Services standard et complémentaires Keystone STaaS
 
 Le service STaaS Keystone propose des services standard et facultatifs pour votre stockage.
 
@@ -29,48 +26,70 @@ Le service STaaS Keystone propose des services standard et facultatifs pour votr
 
 *Les services complémentaires Keystone STaaS* : ce sont des services facultatifs payants qui offrent des utilitaires et des avantages supplémentaires en plus des services d'abonnement Keystone STaaS standard.
 
-Les services Keystone STaaS peuvent être utilisés simultanément. Par exemple, un abonnement de stockage cloud peut avoir la même durée que les abonnements de stockage unifié, optimisé par blocs ou objet. Un service Cloud peut être inclus à tout moment pendant la durée de service d'un abonnement au stockage existant. Cependant, si vous ne prévoyez pas de renouveler un abonnement de stockage unifié, optimisé par blocs ou objet existant, aucun abonnement de stockage cloud ne peut être ajouté pendant les 90 derniers jours de l'abonnement.
+Vous pouvez souscrire à plusieurs services Keystone STaaS simultanément. Lorsque des services cloud sont ajoutés à un abonnement, ils partagent la même durée que le stockage unifié, le stockage optimisé par blocs et/ou le stockage objet. Un service cloud peut être ajouté à tout moment pendant la durée d'un abonnement de stockage actif. Toutefois, si vous ne prévoyez pas de renouveler un abonnement de stockage unifié, de stockage optimisé par blocs ou de stockage objet existant, aucun service cloud ne peut être ajouté durant les 90 derniers jours de cet abonnement.
+
+
+NOTE: Un abonnement AFX est indépendant et ne peut être combiné avec un stockage unifié, un stockage optimisé bloc ou un stockage objet au sein du même abonnement. Si vous avez besoin d'AFX en plus d'autres types de stockage, vous devez souscrire des abonnements distincts.
 
 
 
-== Services de stockage unifié, optimisé par blocs et d'objets
+== Types de stockage des données pris en charge
 
-Les services Keystone STaaS pour le stockage unifié, optimisé par blocs et d'objets prennent en charge plusieurs fonctionnalités et protocoles et sont décrits dans le tableau suivant :
+Les services Keystone STaaS pour le stockage unifié, optimisé pour le stockage bloc, objet et AFX prennent en charge de multiples fonctionnalités et protocoles, et sont décrits dans le tableau suivant :
 
 |===
-| Stockage | Plateforme | Protocoles | Fonctionnalités prises en charge 
+| Type de stockage de données | Description | Plateforme | Protocoles | Fonctionnalités prises en charge 
 
 
  a| 
-Le stockage unifié
+Unifié
  a| 
-ONTAP
+Inclut le stockage de fichiers, de blocs et d'objets S3
  a| 
-NFS et CIFS
+ONTAP sur les systèmes AFF et FAS
+ a| 
+FC, iSCSI, NFS, NFSv4/RDMA, NVMe/FC, NVMe/TCP, SMB, S3
  a| 
 Prend en charge toutes les fonctionnalités d'ONTAP One
 
 
 
  a| 
-Stockage optimisé par blocs
+Optimisé pour les blocs
  a| 
-ONTAP
+Comprend stockage bloc
+ a| 
+NVMe/TCP, NVMe/FC, FC, iSCSI
  a| 
 FC et iSCSI
  a| 
+Prend en charge toutes les fonctionnalités d'ONTAP One pour SAN
+
+
+
+ a| 
+AFX
+ a| 
+Inclut le stockage de fichiers et d'objets sur une plateforme de stockage désagrégée
+ a| 
+ONTAP sur les systèmes AFX
+ a| 
+NFSv3, NFSv4/RDMA, pNFS, SMB, S3
+ a| 
 Prend en charge toutes les fonctionnalités d'ONTAP One
 
 
 
  a| 
-Stockage objet
+Objet
+ a| 
+Comprend le stockage d'objets
  a| 
 StorageGRID
  a| 
 S3
  a| 
-Prend en charge toutes les fonctionnalités d'ONTAP One
+Prend en charge toutes les fonctionnalités de StorageGRID
 
 |===
 Pour en savoir plus sur ONTAP One, consultez link:https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["Présentation des licences ONTAP"^] et link:https://www.netapp.com/blog/ontap-one/["ONTAP One : toute la puissance d'ONTAP, désormais tout en un"^] .
@@ -82,4 +101,4 @@ Pour en savoir plus sur ONTAP One, consultez link:https://docs.netapp.com/us-en/
 Le service STaaS Keystone propose des services de stockage cloud. Le service STaaS prend en charge les fonctionnalités de gestion des données Cloud Volumes ONTAP sur Amazon Web Services (AWS), Microsoft Azure et Google Cloud Platform.
 
 
-NOTE: Les services de calcul, de stockage et de réseau basés sur des hyperscalers requis par Cloud Volumes ONTAP ne sont pas fournis par NetApp dans le cadre d'abonnements Keystone. Ces abonnements doivent être achetés directement auprès de fournisseurs de services cloud hyperscales.
+NOTE: Les services de calcul, de stockage et de réseau basés sur des hyperscalers et requis par Cloud Volumes ONTAP ne sont pas fournis par NetApp dans le cadre des abonnements Keystone STaaS ; ces abonnements doivent être obtenus directement auprès des fournisseurs de service cloud hyperscalers.

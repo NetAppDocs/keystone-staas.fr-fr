@@ -26,7 +26,7 @@ Keystone vous propose les services de facturation suivants :
 
 La facturation de Keystone repose sur la capacité engagement et sur la consommation en rafale variable.
 
-Pour plus d'informations sur les différentes capacités prises en charge par Keystone, reportez-vous à link:../concepts/supported-storage-capacity.html["Capacités de stockage prises en charge dans Keystone"].
+Pour plus d'informations sur les différentes capacités prises en charge dans Keystone, voir link:../concepts/supported-storage-capacity.html["Types de capacité de stockage dans Keystone"].
 
 *Informations connexes*
 
