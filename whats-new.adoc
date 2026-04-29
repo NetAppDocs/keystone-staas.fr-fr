@@ -18,6 +18,24 @@ Découvrez les dernières fonctionnalités et améliorations des services Keysto
 
 
 
+== 27 avril 2026
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Étiquette de capacité provisionnée renommée
+
+L'intitulé *Capacité provisionnée* est renommé *Capacité volumique provisionnée*. Le nouvel intitulé est également reflété dans les rapports CSV et Excel associés.
+
+
+
+=== Basculement des prévisions pour la rafale accumulée
+
+Vous pouvez désormais utiliser le bouton *Prévisions* dans la vue *Consommation cumulée des pics* de l’onglet *Tendance de consommation* pour projeter la consommation cumulée des pics pour les 120 prochains jours à compter de la date actuelle. Pour en savoir plus, consultez link:./integrations/consumption-tab.html#view-forecast-data["Consulter les données prévisionnelles"].
+
+
+
 == 30 mars 2026
 
 Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
