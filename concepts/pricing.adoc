@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/pricing.html 
-keywords: pricing, billing introduction, Keystone billing 
-summary: 'Keystone propose un modèle de paiement à l"utilisation pour répondre à vos besoins de consommation flexible et évolutif.' 
+keywords: pricing, Keystone billing, committed capacity, consumed capacity, burst consumption, billing schedules 
+summary: 'Avec NetApp Keystone STaaS, vous payez pour ce à quoi vous vous engagez et seulement un supplément pour ce que vous utilisez au-delà de cela. Cette page explique comment fonctionne le modèle pay-as-you-grow — depuis la tarification de votre engagement de stockage, jusqu"à la façon dont la capacité est mesurée et facturée, et jusqu"au moment où les factures sont générées.' 
 ---
-= En savoir plus sur les tarifs Keystone
+= Découvrez la facturation Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,13 @@ summary: 'Keystone propose un modèle de paiement à l"utilisation pour répondr
 
 
 [role="lead"]
-Le service d'abonnement à la carte NetApp Keystone STaaS offre une consommation flexible et évolutive avec une tarification prévisible et à l'avance pour vos besoins de stockage.
+Avec NetApp Keystone STaaS, vous payez pour ce à quoi vous vous engagez et seulement un supplément pour ce que vous utilisez au-delà de cet engagement. Cette page explique le fonctionnement du modèle de paiement à l'usage, y compris la façon dont votre engagement de stockage est tarifé, comment la capacité est mesurée et facturée, et quand les factures sont générées.
+
+
+
+== Modèle de tarification Keystone
+
+Votre abonnement Keystone vous garantit des coûts prévisibles et la flexibilité d'adapter vos ressources à la demande. Les frais Keystone sont basés sur le niveau de service de performance que vous sélectionnez et la capacité à laquelle vous vous engagez.
 
 Keystone vous propose les services de facturation suivants :
 
@@ -28,11 +34,77 @@ La facturation de Keystone repose sur la capacité engagement et sur la consomma
 
 Pour plus d'informations sur les différentes capacités prises en charge dans Keystone, voir link:../concepts/supported-storage-capacity.html["Types de capacité de stockage dans Keystone"].
 
-*Informations connexes*
 
-* link:../concepts/committed-capacity-billing.html["Facturation en fonction de la capacité engagement"]
-* link:../concepts/consumed-capacity-billing.html["Mesure basée sur la capacité consommée"]
-* link:../concepts/burst-consumption-billing.html["Facturation en fonction de la consommation en rafale"]
-* link:../concepts/misc-volume-billing.html["Facturation en fonction des divers types de volume"]
-* link:../concepts/billing-schedules.html["Calendriers de facturation"]
+
+== Comment Keystone mesure la capacité
+
+Keystone utilise trois concepts de capacité pour calculer votre facture. Les connaître vous permet d’éviter les frais imprévus.
+
+
+
+=== De la capacité
+
+La capacité engagée correspond à la capacité que vous vous engagez à acheter pour un niveau de service de performance spécifique lors de la souscription à votre abonnement Keystone. Ce montant est fixé sur votre commande Keystone et facturé intégralement à chaque période de facturation, indépendamment de la capacité réellement utilisée par vos charges de travail.
+
+Par exemple, si vous vous engagez sur 100 Tio au niveau de service Premium, vous êtes facturé pour 100 Tio même si l'utilisation réelle ce mois-là est de 80 Tio.
+
+La capacité engagée peut couvrir plusieurs niveaux de service de performance au sein d'un seul abonnement, comme convenu entre vous et NetApp ou votre partenaire.
+
+Pour consulter votre capacité engagée et suivre l'utilisation réelle par rapport à celle-ci, voir link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"].
+
+
+
+=== Capacité consommée
+
+La capacité consommée correspond à la capacité réellement utilisée par vos charges de travail à un instant donné. Keystone surveille et mesure en continu votre consommation pendant toute la période de facturation. Au moins toutes les cinq minutes, un enregistrement de consommation est généré, indiquant la capacité consommée actuelle pour votre abonnement. Ces enregistrements sont agrégés sur la période de facturation pour générer les factures et les rapports d'utilisation.
+
+L'intervalle de surveillance de cinq minutes assure un suivi précis, permettant ainsi de détecter et de facturer avec exactitude les pics de consommation, et non une estimation en fin de période.
+
+Lorsque la capacité consommée reste égale ou inférieure à votre capacité engagée, seul le tarif de la capacité engagée s'applique. Lorsque la capacité consommée dépasse votre capacité engagée, la facturation en mode burst s'applique.
+
+
+
+=== Consommation de pointe
+
+La consommation en pointe correspond à la capacité utilisée au-delà de votre capacité engagée. Votre limite de consommation en pointe est définie et spécifiée dans votre accord Keystone. Par défaut, elle est fixée à 20 % au-dessus de la capacité engagée. Vous pouvez également choisir des limites de capacité en pointe de 40 % ou 60 % de la capacité engagée. Pour en savoir plus, consultez link:../concepts/burst-capacity.html["Options de capacité d'éclatement"].
+
+Par exemple, si votre capacité engagée est de 100 Tio et que vous utilisez 115 Tio, les 15 Tio supplémentaires sont facturés au débit de pointe.
+
+Lorsque la capacité consommée dépasse la capacité garantie pour un niveau de service de performance, la consommation en rafale est enregistrée et facturée en conséquence. Toute utilisation dépassant la limite de capacité en rafale est signalée comme « Au-dessus de la limite en rafale ».
+
+La consommation en pointe est calculée pour chaque enregistrement de consommation généré au cours de la période de facturation. Elle reflète à la fois la quantité et la durée de votre surconsommation par rapport à votre capacité engagée. Pour consulter les tendances de consommation en pointe de votre abonnement, voir link:../integrations/consumption-tab.html["Consultez les tendances de consommation de vos abonnements Keystone"].
+
+
+
+== Calendriers de facturation
+
+La fréquence de votre facturation est définie dans votre accord Keystone. Le tableau ci-dessous indique la date de réception des factures pour la capacité engagée et la consommation ponctuelle, selon chaque option.
+
+[cols="1,2,2"]
+|===
+| Fréquence de facturation | Facture pour capacité engagée | Facture pour utilisation en rafale 
+
+
+| Mensuel | Envoyé le mois suivant | Inclus dans la même facture 
+
+
+| Trimestriel | Envoyé au début de chaque trimestre | Envoyé à la fin de chaque trimestre 
+
+
+| Semestriellement | Envoyé au début de chaque période de 6 mois | Envoyé à la fin de chaque trimestre 
+
+
+| Annuellement | Envoyé au début de chaque année d'abonnement | Envoyé à la fin de chaque trimestre 
+|===
+
+NOTE: Pour les facturations trimestrielles, semestrielles et annuelles, si votre capacité engagée change en cours d'abonnement, une facture est émise le jour même pour les paiements minimums au prorata du reste de cette année d'abonnement. La facturation est calculée à partir du jour où la modification de la capacité engagée prend effet.
+
+
+
+== Informations connexes
+
+* link:../concepts/supported-storage-capacity.html["Types de capacité de stockage dans Keystone"]
+* link:../concepts/burst-capacity.html["Options de capacité d'éclatement"]
+* link:../integrations/current-usage-tab.html["Consultez les détails de votre consommation actuelle"]
+* link:../integrations/consumption-tab.html["Consultez les tendances de consommation de vos abonnements Keystone"]
 

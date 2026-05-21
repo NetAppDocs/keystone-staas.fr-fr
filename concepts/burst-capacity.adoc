@@ -20,4 +20,4 @@ La capacité de stockage supplémentaire correspond à la capacité de stockage 
 
 Pour modifier votre limite de rafale à 40 % ou 60 %, contactez l'équipe de support NetApp Keystone.
 
-Pour en savoir plus sur la facturation de la capacité de rafale, reportez-vous à link:../concepts/burst-consumption-billing.html["Facturation en fonction de la consommation en rafale"] .
+Pour en savoir plus sur la façon dont la capacité de pointe est facturée, consultez link:../concepts/pricing.html["Découvrez la facturation Keystone"].

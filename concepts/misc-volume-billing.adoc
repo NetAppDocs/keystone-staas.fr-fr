@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concepts/misc-volume-billing.html 
-keywords: Billing and miscellaneous scenarios 
-summary: Découvrez la facturation Keystone pour des configurations spécifiques, notamment les volumes clonés, la protection avancée des données et bien plus encore. 
+keywords: Keystone billing, special volume types, cloned volumes, SnapMirror destinations, LUNs, temporary volumes 
+summary: Les règles de facturation de Keystone varient selon la configuration des volumes. Cette page explique la facturation des volumes clonés, des destinations SnapMirror, des LUN, des volumes temporaires et des volumes système. 
 ---
-= Découvrez la facturation Keystone pour des configurations de volume spécifiques.
+= Facturation Keystone pour des types de volumes spécifiques
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,20 +14,34 @@ summary: Découvrez la facturation Keystone pour des configurations spécifiques
 
 
 [role="lead"]
-Comprendre la facturation Keystone pour des configurations spécifiques peut vous aider à optimiser l’utilisation du service et à gérer les coûts. Les configurations incluent des volumes clonés, des volumes temporaires, des destinations SnapMirror , des LUN et des volumes système/racine.
+Les règles de facturation de Keystone varient selon certaines configurations de volumes. Connaître ces exceptions vous aide à éviter des frais imprévus lors de l'utilisation de volumes clonés, de destinations SnapMirror, de LUN ou de stockage temporaire.
 
+Le tableau suivant récapitule les règles de facturation pour chaque type de volume.
+
+[cols="1,2"]
+|===
+| Type de volume | Règle de facturation 
+
+
+| Volumes clonés | Facturés comme volumes standard 
+
+
+| Volumes temporaires | Non facturé 
+
+
+| Destinations SnapMirror | Facturé au niveau de service de performance de destination 
+
+
+| LUN | Facturé au niveau de service de performance du volume contenant 
+
+
+| Volumes racine et système | Suivi mais non facturé 
+|===
 
 
 == Facturation des volumes clonés
 
-Si les volumes sont clonés dans ONTAP et que vous les utilisez pour la sauvegarde et la restauration de vos données, vous pouvez continuer à utiliser ces clones sans paiements supplémentaires. Toutefois, les volumes clonés utilisés à d'autres fins dans votre entreprise pendant une durée étendue sont facturés.
-
-Notez ce qui suit :
-
-* Les volumes clones sont libres de se charger tant que leur taille est inférieure à 10 % du volume parent (capacité physique utilisée dans le volume clone par rapport à la capacité physique utilisée dans le volume parent).
-* Il n'existe pas de délai de grâce de 24 heures pour les volumes clonés. Seule la taille du clone est prise en compte.
-* Une fois que le volume clone dépasse 10 % de la taille physique du parent, le clone est facturé comme volume standard (capacité logique utilisée).
-
+Les volumes clonés sont facturés comme des volumes standards au même niveau de service de performance que le volume à partir duquel ils ont été clonés. Tous les volumes clonés sont mesurés et facturés, quelle que soit leur taille ou leur finalité.
 
 
 

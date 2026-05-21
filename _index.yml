@@ -50,15 +50,14 @@ indexpage:
     links:
     - title: En savoir plus sur les tarifs Keystone
       url: "/concepts/pricing.html"
-    - title: Mes calendriers de facturation
-      url: "/concepts/billing-schedules.html"
-    - title: Facturation en fonction de la capacité engagement
-      url: "/concepts/committed-capacity-billing.html"
-    - title: Mesure basée sur la capacité consommée
-      url: "/concepts/consumed-capacity-billing.html"
-    - title: Que se passe-t-il si j'ai consommé plus de capacité que ma capacité dédiée
-        ?
-      url: "/concepts/burst-consumption-billing.html"
+    - title: Comment Keystone mesure-t-il sa capacité ?
+      url: "/concepts/pricing.html#how-keystone-measures-capacity"
+    - title: Qu’est-ce que la capacité engagée ?
+      url: "/concepts/pricing.html#committed-capacity"
+    - title: Que se passe-t-il lorsque je dépasse ma capacité engagée ?
+      url: "/concepts/pricing.html#burst-consumption"
+    - title: Quand les factures sont-elles générées ?
+      url: "/concepts/pricing.html#billing-schedules"
   - title: Allez plus loin avec les services Keystone
     links:
     - title: En savoir plus sur votre équipe de soutien
