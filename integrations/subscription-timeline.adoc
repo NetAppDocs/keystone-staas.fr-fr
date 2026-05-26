@@ -26,13 +26,13 @@ Vous êtes redirigé vers l'onglet *Consommation actuelle*.
 
 . Sélectionnez l'onglet *Chronologie d'abonnement*.
 +
-image:bxp-subscription-timeline-graph.png["une capture d'écran pour afficher la chronologie des abonnements sous forme de graphique linéaire avec les événements importants"]
+image:console-subscription-timeline-graph.png["une capture d'écran pour afficher la chronologie des abonnements sous forme de graphique linéaire avec les événements importants"]
 
 +
-La chronologie des abonnements s'affiche par défaut sous forme de graphique linéaire, avec des icônes marquant les événements importants. Passez la souris sur un événement pour afficher les détails, y compris la date et les modifications de capacité engagées. Pour afficher ces événements dans un tableau, sélectionnez l'option *Tableau* dans la liste déroulante *Afficher sous*. Pour afficher d'autres chronologies d'abonnement, sélectionnez ou effectuez une recherche dans la liste déroulante *ID de suivi*.
+L'historique des abonnements s'affiche par défaut sous forme de graphique linéaire, avec des icônes signalant les événements importants. Lorsque plusieurs mises à jour d'abonnements de types différents ont lieu le même jour, le graphique affiche un nombre au lieu d'icônes distinctes. Survolez ce nombre pour afficher tous les types de mises à jour survenus ce jour-là, ou survolez une icône d'événement pour obtenir des détails tels que la date et les modifications de capacité engagée. Pour afficher ces événements dans un tableau, sélectionnez l'option *Table* dans le menu déroulant *View as*. Pour consulter d'autres historiques d'abonnements, sélectionnez ou effectuez une recherche dans le menu déroulant *Tracking ID*.
 
 +
-image:bxp-subscription-timeline.png["une capture d'écran pour afficher la chronologie des abonnements sous forme de graphique de tableau avec les événements importants"]
+image:console-subscription-timeline.png["une capture d'écran pour afficher la chronologie des abonnements sous forme de graphique de tableau avec les événements importants"]
 
 
 

@@ -18,6 +18,18 @@ Découvrez les dernières fonctionnalités et améliorations des services Keysto
 
 
 
+== 25 mai 2026
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Affichage amélioré des mises à jour multiples effectuées le même jour dans la chronologie de l'abonnement
+
+Le graphique de l'historique des abonnements affiche désormais un chiffre lorsque plusieurs mises à jour d'abonnements de types différents ont lieu le même jour, au lieu d'icônes distinctes. Survolez le chiffre pour afficher tous les types de mises à jour de ce jour-là. Le rapport téléchargé comprend une ligne distincte pour chaque mise à jour, vous offrant ainsi un historique complet de toutes les modifications. Pour en savoir plus, consultez link:./integrations/subscription-timeline.html["Consultez la chronologie de vos abonnements Keystone"].
+
+
+
 == 27 avril 2026
 
 Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:

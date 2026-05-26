@@ -24,6 +24,15 @@ Les problèmes connus suivants sont rapportés dans NetApp Keystone STaaS :
 
 
  a| 
+Date d'expiration incorrecte pour les abonnements expirés
+ a| 
+Dans l'onglet *Abonnements*, les abonnements expirés affichent la date d'hier comme date d'expiration au lieu de la date de fin réelle de l'abonnement.
+ a| 
+Aucune
+
+
+
+ a| 
 Tendance à la baisse inexacte dans les données de prévision de consommation
  a| 
 Dans l'onglet *Tendance de consommation*, lorsque l'option *Prévisions* est activée dans la vue *Consommation historique*, la projection de l'utilisation de la capacité affiche une tendance à la baisse significative et inexacte.
