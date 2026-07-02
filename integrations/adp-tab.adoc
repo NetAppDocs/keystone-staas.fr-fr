@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: integrations/adp-tab.html 
-keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, bluexp, NetApp Console, Console 
-summary: 'Consultez les données de consommation et surveillez l"état de santé de vos sites partenaires MetroCluster lorsque vous souscrivez au service complémentaire de protection des données avancée dans Keystone.' 
+keywords: keystone-aiq, digital advisor keystone, advanced data protection, ADP, MetroCluster, consumption data, health status, primary site, mirror site, sync status, ONTAP Mediator, capacity utilization, consumption trends, license distribution, usage insights, license types, v1, v2, v3, bluexp, NetApp Console, Console 
+summary: 'Consultez les données de consommation, surveillez l"état de santé et suivez la distribution des licences ADP pour vos sites partenaires MetroCluster lorsque vous souscrivez au service complémentaire de protection des données avancée dans Keystone.' 
 ---
 = Consultez la consommation et la santé de vos abonnements Keystone MetroCluster
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Consultez les données de consommation et surveillez l"état de santé
 
 
 [role="lead"]
-Lorsque vous souscrivez au service complémentaire de protection avancée des données, vous pouvez consulter les données de consommation de vos sites partenaires MetroCluster dans la NetApp Console ou Digital Advisor. Dans la NetApp Console, vous pouvez également surveiller l'état de la réplication et la santé de votre configuration MetroCluster.
+Lorsque vous souscrivez au service complémentaire de protection avancée des données, vous pouvez consulter les données de consommation de vos sites partenaires MetroCluster dans la NetApp Console ou Digital Advisor. Dans la NetApp Console, vous pouvez également surveiller l’état de votre configuration MetroCluster et suivre la distribution de vos licences de protection avancée des données.
 
 
 
@@ -38,7 +38,7 @@ L'onglet *Consommation actuelle* s'ouvre et affiche des informations sur la cons
 
 . Sélectionnez l’onglet *Advanced data protection (ADP)*.
 +
-Dans cet onglet, vous pouvez consulter les données de consommation de vos niveaux de service de performance de base sur les sites principaux et miroirs, surveiller l'état de santé de votre MetroCluster et suivre son état de synchronisation.
+Dans cet onglet, vous pouvez consulter les données de consommation de vos niveaux de service de performance de base sur les sites principaux et miroirs, surveiller l'état de santé et de synchronisation de votre MetroCluster et visualiser l'utilisation et la répartition des licences ADP sur les deux clusters.
 
 +
 ** Consultez le graphique de répartition de la consommation pour la période sélectionnée.
@@ -50,10 +50,20 @@ Le graphique illustre la consommation de vos sites principal et miroir. Survolez
 NOTE: Pour les niveaux de service de performance de base, chaque volume est facturé tel que provisionné sur les sites principal et miroir. Le graphique est donc divisé pour refléter la consommation sur chaque site.
 
 +
-*Exemple :* L’infobulle affiche des valeurs de consommation telles que 1.15 TiB pour le site principal et 4.22 TiB pour le site miroir.
+*Exemple :* L’infobulle affiche des valeurs de consommation telles que 109,29 Tio pour le site principal et 111,97 Tio pour le site miroir.
 
 +
-image:adp-consumption-chart.png["Graphique linéaire montrant la répartition de la consommation MetroCluster avec 1,15 TiB sur le site principal et 4,22 TiB sur le site miroir affichés dans l'infobulle"]
+image:adp-consumption-chart-1.png["Graphique linéaire montrant la répartition de la consommation MetroCluster avec 1,15 TiB sur le site principal et 4,22 TiB sur le site miroir affichés dans l'infobulle"]
+
+** Consultez le tableau de répartition des licences pour la période sélectionnée.
++
+Le graphique illustre la consommation de licences ADP entre le cluster A (principal) et le cluster B (miroir). Selon la version de licence associée à votre abonnement, le graphique affiche la consommation pour chaque niveau de service de performance des modules complémentaires ADP, tels que _Advanced data-protect premium tiering_ et Data-protect premium tiering, sur chaque site.
+
++
+image:adp-license-distribution.png["Graphique à barres empilées illustrant la répartition des licences ADP entre Cluster A et Cluster B pour différentes versions de licence"]
+
++
+Vous pouvez utiliser ces données pour vérifier si la facturation d'une date donnée est correcte et pour recouper les valeurs de débit de votre abonnement.
 
 ** Surveillez l'état de santé de votre MetroCluster dans la vue *Topologie ADP*.
 +

@@ -18,6 +18,42 @@ Découvrez les dernières fonctionnalités et améliorations des services Keysto
 
 
 
+== 29 juin 2026
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+=== Consultez la répartition des licences ADP pour les abonnements MetroCluster
+
+Un nouveau sous-onglet *Distribution des licences* est désormais disponible dans l’onglet *Advanced data protection (ADP)*, vous offrant une visibilité sur l’utilisation des licences ADP au sein de vos clusters partenaires MetroCluster. Pour en savoir plus, consultez link:./integrations/adp-tab.html["Consultez la consommation et la santé de vos abonnements Keystone MetroCluster"].
+
+
+
+=== Consultez l'état de la protection contre les ransomwares pour vos volumes
+
+L'onglet *Volumes dans les clusters* de la section *Actifs* inclut désormais une colonne *État ARP* indiquant si la protection autonome contre les ransomwares (ARP) est activée ou désactivée pour chaque volume, vous offrant ainsi une visibilité sur votre niveau de protection contre les ransomwares sur l'ensemble des actifs gérés. Pour en savoir plus sur l'ARP, consultez link:https://docs.netapp.com/us-en/ontap/anti-ransomware/["Protection autonome contre les ransomwares (ARP) dans ONTAP"].
+
+
+
+=== Partagez vos commentaires à l'aide de l'onglet Feedback
+
+Vous pouvez désormais donner votre avis depuis n'importe quel écran du tableau de bord Keystone grâce au nouvel onglet *Feedback*, ancré au bord inférieur droit de l'écran. En cliquant dessus, un panneau s'ouvre où vous pouvez partager votre expérience et soumettre des commentaires directement à NetApp.
+
+
+
+=== Améliorez les alertes concernant l'utilisation des capacités et l'expiration des abonnements
+
+Les moniteurs générés par le système fournissent désormais des alertes plus précises concernant l'utilisation des capacités et l'expiration des abonnements.
+
+Pour l'expiration des abonnements, les alertes se déclenchent désormais à cinq seuils : 180, 90, 60, 30 et 7 jours avant l'expiration, la gravité augmentant d'informative à critique à mesure que la date approche.
+
+Concernant l'utilisation de la capacité, le seuil d'alerte de saturation est désormais basé sur le pourcentage de saturation garanti de votre abonnement, et non plus sur un montant fixe de 20 %. Par exemple, si votre saturation garantie est de 40 %, l'alerte critique se déclenche à 140 % de l'utilisation de la capacité garantie.
+
+Pour en savoir plus, consultez link:./integrations/monitoring-alert-monitors.html["Afficher et créer des moniteurs d'alerte pour les abonnements Keystone"].
+
+
+
 == 25 mai 2026
 
 Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
