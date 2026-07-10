@@ -18,6 +18,7 @@ Avant d'installer Keystone Collector dans un environnement sans accès à Intern
 
 
 
+[[requirements-for-vmware-vsphere]]
 == Configuration requise pour VMware vSphere
 
 * Système d'exploitation : serveur VMware vCenter et ESXi 8.0 ou version ultérieure
@@ -28,6 +29,7 @@ Avant d'installer Keystone Collector dans un environnement sans accès à Intern
 
 
 
+[[requirements-for-linux]]
 == Configuration requise pour Linux
 
 * Système d'exploitation (choisissez-en un) :
@@ -81,6 +83,7 @@ NOTE: Seuls les logiciels tiers mentionnés ci-dessus sont compatibles avec Keys
 
 
 
+[[networking-requirements]]
 == Configuration réseau requise
 
 La configuration réseau requise pour Keystone Collector est la suivante :

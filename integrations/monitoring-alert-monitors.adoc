@@ -18,6 +18,7 @@ Vous pouvez consulter et créer des moniteurs d'alerte pour vos abonnements Keys
 
 
 
+[[view-alert-monitors]]
 == Afficher les moniteurs d'alerte
 
 Pour afficher les moniteurs d’alerte, suivez ces étapes :
@@ -38,6 +39,7 @@ NOTE: L'onglet *Rapports* est actuellement indisponible pour les abonnements Key
 
 
 
+[[create-and-manage-alert-monitors]]
 == Créer et gérer des moniteurs d'alerte
 
 À partir de l'onglet *Moniteurs d'alerte*, vous pouvez créer des moniteurs pour suivre l'utilisation de la capacité et l'expiration de l'abonnement.  Vous pouvez également modifier, dupliquer ou supprimer des moniteurs existants selon vos besoins.
@@ -137,6 +139,7 @@ Après la suppression, les abonnements connectés au moniteur cessent de recevoi
 ====
 
 
+[[manage-coverage-gaps]]
 == Gérer les lacunes de couverture
 
 Une boîte de notification pliable *Complétez votre couverture* apparaît au-dessus de la liste des moniteurs d'alerte lorsqu'une action est requise.  Cela vous aide :

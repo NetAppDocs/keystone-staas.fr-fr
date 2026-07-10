@@ -42,6 +42,7 @@ Vous pouvez afficher et comparer les mesures de performances dans les sections s
 
 
 
+[[iops]]
 == D'IOPS
 
 Cette section affiche les graphiques d'entrées-sorties des charges de travail du volume en fonction de la plage de dates de la requête. Les IOPS de pointe pour le niveau de service de performance et les IOPS actuels (au cours des cinq dernières minutes, non basés sur la plage de dates de la requête) sont affichés, ainsi que les IOPS minimum, maximum et moyen pour la plage de temps, en IOPS/Tib.
@@ -50,6 +51,7 @@ image:perf-iops.png["Section IOPS du graphique"]
 
 
 
+[[throughput]]
 == Débit
 
 Cette section affiche les graphiques de débit des charges de travail du volume en fonction de la plage de dates de la requête. Le débit maximal pour le niveau de service de performance (SLO Max) et le débit actuel (au cours des cinq dernières minutes, non basé sur la plage de dates de la requête) sont affichés, ainsi que le débit minimum, maximum et moyen pour la plage de temps, en Mbit/s/s.
@@ -58,6 +60,7 @@ image:perf-thr.png["Graphiques de débit"]
 
 
 
+[[latency-ms]]
 == Latence (ms)
 
 Cette section affiche les graphiques de latence des charges de travail du volume en fonction de la plage de dates de la requête. La latence maximale pour le niveau de service de performance (SLO Target) et la latence actuelle (au cours des cinq dernières minutes, non basée sur la plage de dates de la requête) sont affichées, ainsi que la latence minimale, maximale et moyenne pour la plage de temps, en millisecondes.
@@ -72,6 +75,7 @@ image:perf-lat.png["graphiques de performances"]
 
 
 
+[[logical-used-tib]]
 == Logique utilisée (Tio)
 
 Cette section affiche les capacités provisionnées et logiques utilisées du volume. La capacité logique utilisée actuelle (au cours des cinq dernières minutes, non basée sur la plage de dates de la requête), ainsi que l'utilisation minimale, maximale et moyenne de la plage de temps sont affichées en Tibs. Sur ce graphique, la zone grise représente la capacité allouée et le graphique jaune indique l'utilisation logique.

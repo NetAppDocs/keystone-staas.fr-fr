@@ -47,6 +47,7 @@ NOTE: La consommation de capacité dans les abonnements Keystone est affichée e
 
 
 
+[[search-by-keystone-watchlists]]
 == Rechercher par listes de surveillance Keystone
 
 La liste de surveillance est une fonctionnalité disponible dans Digital Advisor. Pour plus d'informations, voir https://docs.netapp.com/us-en/active-iq/concept_overview_dashboard.html["Comprendre la liste de surveillance"^]. Pour plus d'informations sur la création de listes de surveillance, consultez la page  https://docs.netapp.com/us-en/active-iq/task_add_watchlist.html["Créer une liste de surveillance"^] .

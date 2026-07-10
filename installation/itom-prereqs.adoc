@@ -42,6 +42,7 @@ NOTE: Les systèmes d'exploitation recommandés sont Debian 12, Windows Server 2
 
 
 
+[[networking-requirements]]
 == Configuration réseau requise
 
 Les exigences de mise en réseau du collecteur ITOM sont répertoriées dans le tableau suivant.

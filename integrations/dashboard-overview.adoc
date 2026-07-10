@@ -25,6 +25,7 @@ Le tableau de bord Keystone est la solution idéale pour surveiller, analyser et
 
 
 
+[[access-the-keystone-dashboard]]
 == Accéder au tableau de bord Keystone
 
 Vous pouvez accéder au tableau de bord Keystone via :
@@ -35,6 +36,7 @@ Vous pouvez accéder au tableau de bord Keystone via :
 
 
 
+[[about-netapp-console]]
 == À propos de la console NetApp
 
 Keystone est accessible via la console NetApp .
@@ -53,6 +55,7 @@ Notez ce qui suit :
 
 
 
+[[keystone-features-in-netapp-console-and-digital-advisor]]
 == Fonctionnalités Keystone dans NetApp Console et Digital Advisor
 
 Le tableau suivant indique la disponibilité des fonctionnalités de la console NetApp et de Digital Advisor, vous aidant à identifier rapidement la plateforme adaptée à vos besoins :

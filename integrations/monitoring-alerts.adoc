@@ -20,6 +20,7 @@ Pour configurer des alertes définies par l'utilisateur, reportez-vous àlink:..
 
 
 
+[[view-alerts]]
 == Afficher les alertes
 
 Pour afficher les alertes actives, suivez ces étapes :
@@ -44,6 +45,7 @@ TIP: Vous pouvez personnaliser le tableau à l'aide de l'icône de sélection de
 
 
 
+[[manage-alerts]]
 == Gérer les alertes
 
 Depuis l'onglet *Alertes*, vous pouvez effectuer les actions suivantes :

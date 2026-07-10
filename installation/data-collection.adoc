@@ -18,6 +18,7 @@ Keystone collecte les informations de configuration, d'état et d'utilisation de
 
 
 
+[[ontap-data-collection]]
 == Collecte de données ONTAP
 
 .Données <strong> requises pour ONTAP : apprenez-en plus sur </strong>
@@ -325,6 +326,7 @@ Lorsque l'option *Supprimer les données privées* est activée sur le collecteu
 ====
 
 
+[[storagegrid-data-collection]]
 == Collecte de données StorageGRID
 
 .Données <strong> requises pour StorageGRID : apprenez-en plus sur </strong>
@@ -372,6 +374,7 @@ Lorsque l'option *Supprimer les données privées* est activée sur le collecteu
 ====
 
 
+[[telemetry-data-collection]]
 == Collecte de données de télémétrie
 
 .Données de télémétrie collectées à partir de Keystone Collector VM : En savoir plus

@@ -55,6 +55,7 @@ Vous devez effectuer quelques tâches de configuration pour permettre à Keyston
 
 
 
+[[configure-http-proxy-on-keystone-collector]]
 == Configurez le proxy HTTP sur le collecteur Keystone
 
 Le logiciel Collector prend en charge l'utilisation d'un proxy HTTP pour communiquer avec Internet. Ceci peut être configuré dans la TUI.
@@ -68,6 +69,7 @@ Le logiciel Collector prend en charge l'utilisation d'un proxy HTTP pour communi
 
 
 
+[[limit-collection-of-private-data]]
 == Limite la collecte de données privées
 
 Keystone Collector collecte des informations limitées sur la configuration, l'état et les performances requises pour effectuer les mesures des abonnements. Il existe une option permettant de limiter davantage les informations recueillies en masquant les informations sensibles du contenu téléchargé. Cela n'a aucune incidence sur le calcul de la facturation. Toutefois, la limitation des informations peut avoir un impact sur la facilité d'utilisation des informations de reporting, car certains éléments, facilement identifiables par les utilisateurs, tels que le nom du volume, sont remplacés par des UUID.
@@ -80,6 +82,7 @@ Pour plus d'informations sur les éléments supprimés lors de la limitation de 
 
 
 
+[[trust-a-custom-root-ca]]
 == Faites confiance à une autorité de certification racine personnalisée
 
 La vérification des certificats par rapport à une autorité de certification (CA) racine publique fait partie des fonctionnalités de sécurité du collecteur Keystone. Toutefois, si nécessaire, vous pouvez configurer Keystone Collector pour qu'il puisse faire confiance à une autorité de certification racine personnalisée.
@@ -111,6 +114,7 @@ image:kc-custom-ca.png["Ecran TUI pour la personnalisation de CA"]
 
 
 
+[[create-performance-service-levels]]
 == Créez des niveaux de services de performance
 
 Vous pouvez créer des niveaux de service de performance (PSL) à l'aide de l'utilitaire TUI de gestion Keystone Collector. La création de PSL via l'interface utilisateur tactile sélectionne automatiquement les valeurs par défaut définies pour chaque niveau de service de performances, réduisant ainsi le risque d'erreurs pouvant survenir lors de la définition manuelle de ces valeurs lors de la création de PSL via Active IQ Unified Manager.

@@ -23,6 +23,7 @@ NOTE: Un abonnement AFX est limité au type de stockage AFX et ne propose actuel
 
 
 
+[[performance-service-levels-instances]]
 == instances de niveaux de service de performance
 
 Un niveau de service de performance (PSL) peut comporter plusieurs instances, appelées instances de niveau de service de performance (PSLI), au sein de votre environnement. Chaque PSLI est un système de stockage distinct affecté à ce niveau de service de performance, avec une capacité engagée mesurée par PSLI.
@@ -40,6 +41,7 @@ Les niveaux de service de performance de base pour les types de stockage des don
 
 
 
+[[performance-service-levels-for-unified-storage]]
 == Niveaux de service de performance pour le stockage unifié
 
 |===
@@ -76,6 +78,7 @@ Les niveaux de service de performance de base pour les types de stockage des don
 |===
 
 
+[[performance-service-levels-for-block-optimized-storage]]
 == Niveaux de service de performance pour le stockage optimisé par blocs
 
 |===
@@ -112,6 +115,7 @@ Les niveaux de service de performance de base pour les types de stockage des don
 |===
 
 
+[[performance-service-levels-for-afx-storage]]
 == Niveaux de service de performance pour le stockage AFX
 
 |===
@@ -155,6 +159,7 @@ Les niveaux de service de performance de base pour les types de stockage des don
 ====
 
 
+[[performance-measurement-conditions-for-unified-block-optimized-and-afx-storage]]
 == Conditions de mesure des performances pour le stockage unifié, optimisé par blocs et AFX
 
 Les mesures de niveau de service de performance de base dépendent des conditions suivantes :
@@ -191,6 +196,7 @@ Les mesures de niveau de service de performance de base dépendent des condition
 
 
 
+[[performance-service-levels-for-object-storage]]
 == Niveaux de service de performance pour le stockage d'objets
 
 |===
@@ -215,6 +221,7 @@ Les mesures de niveau de service de performance de base dépendent des condition
 |===
 
 
+[[cloud-storage]]
 == Le stockage cloud
 
 |===

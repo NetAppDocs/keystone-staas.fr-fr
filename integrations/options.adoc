@@ -18,6 +18,7 @@ Vous pouvez rechercher et filtrer vos données, générer des rapports sur les a
 
 
 
+[[search-and-filter-data-from-netapp-console]]
 == Rechercher et filtrer les données depuis la console NetApp
 
 Dans la console, vous pouvez rechercher et filtrer les données Keystone en fonction des paramètres de colonne disponibles dans le tableau d'un onglet. Par exemple, dans l’onglet *Abonnements* sous la page *Abonnements*, vous pouvez filtrer les données en saisissant la version Keystone dans la zone de recherche. De même, dans l’onglet *Volumes dans les clusters* sous la page *Actifs*, vous pouvez filtrer les volumes en saisissant le nom du volume dans la zone de recherche.
@@ -26,6 +27,7 @@ Vous pouvez affiner vos recherches en utilisant l'option de filtre avancé lorsq
 
 
 
+[[generate-reports-from-netapp-console-or-digital-advisor]]
 == Générer des rapports à partir de la console NetApp ou de Digital Advisor
 
 Vous pouvez générer et afficher des rapports pour vos données Keystone à l'aide du bouton de téléchargementimage:bluexp-download-report-2.png["icône de téléchargement du rapport 2 dans la console"] disponible dans les onglets de la console ou du Digital Advisor. Ces onglets vous permettent de générer des rapports sur vos abonnements, votre utilisation historique, votre utilisation en rafale, vos performances, vos actifs, vos volumes et vos objets.
@@ -34,6 +36,7 @@ Les détails sont générés au format CSV que vous pouvez enregistrer pour une 
 
 
 
+[[generate-consolidated-report-from-digital-advisor]]
 == Générer un rapport consolidé à partir de Digital Advisor
 
 Dans Digital Advisor, vous pouvez générer et afficher un rapport consolidé pour vos abonnements, votre utilisation historique, votre utilisation en rafale, vos performances, vos actifs, vos volumes et vos objets. Pour ce faire, sélectionnez *abonnements Keystone* comme type de rapport dans la fonction Rapport de Digital Advisor. Vous pouvez générer ces rapports au niveau du client, du cluster, de la liste de suivi ou de l'abonnement.

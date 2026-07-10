@@ -6,18 +6,21 @@ Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console
 
 
 
+[[new-columns-in-the-volumes-in-clusters-tab]]
 === Nouvelles colonnes dans l'onglet Volumes dans les clusters
 
-Trois nouvelles colonnes, *Données actives*, *Niveau froid (%)* et *Niveau chaud (%)*, sont ajoutées à l’onglet *Volumes dans les clusters* dans *Actifs*. Pour en savoir plus, consultez link:./integrations/assets-tab.html["Afficher les actifs associés à un abonnement Keystone"] et link:./integrations/assets.html["Afficher les ressources de vos abonnements Keystone"].
+Trois nouvelles colonnes, *Données actives*, *Niveau froid (%)* et *Niveau chaud (%)*, ont été ajoutées à l’onglet *Volumes dans les clusters* dans *Actifs*. Pour en savoir plus, consultez  https://docs.netapp.com/us-en/keystone-staas/integrations/assets-tab.html["Afficher les actifs associés à un abonnement Keystone"] et  https://docs.netapp.com/us-en/keystone-staas/integrations/assets.html["Afficher les ressources de vos abonnements Keystone"].
 
 
 
+[[invoiced-uninvoiced-and-provisional-burst-usage-in-consumption-trend]]
 === Utilisation facturée, non facturée et provisoire des pics dans la tendance de consommation
 
-Le graphique de facturation cumulée des pics de consommation dans l'onglet *Tendance de consommation* affiche désormais les pics de consommation facturés, non facturés et provisoires. Pour en savoir plus, consultez link:./integrations/consumption-tab.html#view-accrued-burst["Afficher les rafales accumulées"].
+Le graphique de facturation cumulée des pics de consommation dans l'onglet *Tendance de consommation* affiche désormais les pics de consommation facturés, non facturés et provisoires. Pour en savoir plus, consultez  https://docs.netapp.com/us-en/keystone-staas/integrations/consumption-tab.html#view-accrued-burst["Afficher les rafales accumulées"].
 
 
 
+[[enhancements-to-the-monitoring-view]]
 === Améliorations apportées à la vue Monitoring
 
 La vue *Monitoring* inclut les mises à jour suivantes :
@@ -26,4 +29,4 @@ La vue *Monitoring* inclut les mises à jour suivantes :
 * *Onglet Surveillance des alertes* : la colonne *Condition* est renommée *Type de surveillance et condition*.
 
 
-Pour en savoir plus, consultez link:./integrations/monitoring-alerts.html["Afficher et gérer les alertes pour les abonnements Keystone"] et link:./integrations/monitoring-alert-monitors.html["Afficher et créer des moniteurs d'alerte pour les abonnements Keystone"].
+Pour en savoir plus, consultez  https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alerts.html["Afficher et gérer les alertes pour les abonnements Keystone"] et  https://docs.netapp.com/us-en/keystone-staas/integrations/monitoring-alert-monitors.html["Afficher et créer des moniteurs d'alerte pour les abonnements Keystone"].

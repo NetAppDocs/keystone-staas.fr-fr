@@ -4,6 +4,7 @@
 
 
 
+[[keystone-dashboard-in-bluexp]]
 === Tableau de bord Keystone dans BlueXP
 
 Vous pouvez désormais accéder au tableau de bord Keystone directement depuis BlueXP. Cette intégration vous offre un emplacement unique pour surveiller, gérer et suivre tous vos abonnements Keystone ainsi que vos autres services NetApp.

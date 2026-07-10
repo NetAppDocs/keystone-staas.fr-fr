@@ -18,6 +18,7 @@ Keystone STaaS propose un objectif de niveau de service (SLO) basé sur la laten
 
 
 
+[[metrics]]
 == Métriques
 
 * *Performances dégradées* : temps, en minutes, par incident, pendant lequel la cible de latence de 90^th^ percentile n'est pas atteinte.
@@ -39,6 +40,7 @@ Keystone STaaS propose un objectif de niveau de service (SLO) basé sur la laten
 
 
 
+[[service-credits]]
 == Crédits de service
 
 
@@ -58,6 +60,7 @@ NetApp émet des crédits de service pour la dégradation des performances :
 |===
 
 
+[[service-credit-calculation]]
 === Calcul du crédit de service
 
 Les crédits de service sont déterminés selon la formule suivante :
@@ -93,6 +96,7 @@ D'après nos calculs, les crédits de service s'élèvent à 12 $.
 
 
 
+[[service-credit-request]]
 === Demande de crédit de service
 
 En cas de non-respect du SLA, ouvrez un ticket de support de priorité 3 (P3) auprès du support NetApp Keystone.

@@ -18,6 +18,7 @@ L'objectif de niveau de service (SLO) de durabilité vise à limiter la consomma
 
 
 
+[[metrics]]
 == Métriques
 
 * *Watts* : Puissance consommée par les baies de stockage ou le cluster AFX, telle que mesurée par l’outil de surveillance. Les limites de consommation électrique maximales de référence sont fournies dans le link:https://hwu.netapp.com["NetApp Hardware Universe"^].
@@ -33,6 +34,7 @@ Pour en savoir plus sur le ratio d'efficacité du stockage, consultez https://do
 
 
 
+[[supported-configurations]]
 === Configurations prises en charge
 
 L'objectif de niveau de service (SLO) en matière de durabilité s'applique aux commandes standard Keystone STaaS avec les configurations prises en charge suivantes :
@@ -47,6 +49,7 @@ L'objectif de niveau de service (SLO) en matière de durabilité s'applique aux 
 
 
 
+[[service-credits]]
 == Crédits de service
 
 
@@ -80,6 +83,7 @@ Si la consommation électrique pendant une période de facturation dépasse la p
 |===
 
 
+[[service-credit-request]]
 === Demande de crédit de service
 
 Pour demander un crédit de service, ouvrez un ticket d'assistance de priorité 3 (P3) auprès du support NetApp Keystone dans les 7 jours suivant la fin du mois de service et fournissez les détails demandés dans la feuille Excel comme indiqué ci-dessous :

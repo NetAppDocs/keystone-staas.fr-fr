@@ -18,6 +18,7 @@ Avec NetApp Keystone STaaS, vous payez pour ce à quoi vous vous engagez et seul
 
 
 
+[[keystone-pricing-model]]
 == Modèle de tarification Keystone
 
 Votre abonnement Keystone vous garantit des coûts prévisibles et la flexibilité d'adapter vos ressources à la demande. Les frais Keystone sont basés sur le niveau de service de performance que vous sélectionnez et la capacité à laquelle vous vous engagez.
@@ -36,12 +37,14 @@ Pour plus d'informations sur les différentes capacités prises en charge dans K
 
 
 
+[[how-keystone-measures-capacity]]
 == Comment Keystone mesure la capacité
 
 Keystone utilise trois concepts de capacité pour calculer votre facture. Les connaître vous permet d’éviter les frais imprévus.
 
 
 
+[[committed-capacity]]
 === De la capacité
 
 La capacité engagée correspond à la capacité que vous vous engagez à acheter pour un niveau de service de performance spécifique lors de la souscription à votre abonnement Keystone. Ce montant est fixé sur votre commande Keystone et facturé intégralement à chaque période de facturation, indépendamment de la capacité réellement utilisée par vos charges de travail.
@@ -54,6 +57,7 @@ Pour consulter votre capacité engagée et suivre l'utilisation réelle par rapp
 
 
 
+[[consumed-capacity]]
 === Capacité consommée
 
 La capacité consommée correspond à la capacité réellement utilisée par vos charges de travail à un instant donné. Keystone surveille et mesure en continu votre consommation pendant toute la période de facturation. Au moins toutes les cinq minutes, un enregistrement de consommation est généré, indiquant la capacité consommée actuelle pour votre abonnement. Ces enregistrements sont agrégés sur la période de facturation pour générer les factures et les rapports d'utilisation.
@@ -64,6 +68,7 @@ Lorsque la capacité consommée reste égale ou inférieure à votre capacité e
 
 
 
+[[burst-consumption]]
 === Consommation de pointe
 
 La consommation en pointe correspond à la capacité utilisée au-delà de votre capacité engagée. Votre limite de consommation en pointe est définie et spécifiée dans votre accord Keystone. Par défaut, elle est fixée à 20 % au-dessus de la capacité engagée. Vous pouvez également choisir des limites de capacité en pointe de 40 % ou 60 % de la capacité engagée. Pour en savoir plus, consultez link:../concepts/burst-capacity.html["Options de capacité d'éclatement"].
@@ -76,6 +81,7 @@ La consommation en pointe est calculée pour chaque enregistrement de consommati
 
 
 
+[[billing-schedules]]
 == Calendriers de facturation
 
 La fréquence de votre facturation est définie dans votre accord Keystone. Le tableau ci-dessous indique la date de réception des factures pour la capacité engagée et la consommation ponctuelle, selon chaque option.
@@ -101,6 +107,7 @@ NOTE: Pour les facturations trimestrielles, semestrielles et annuelles, si votre
 
 
 
+[[related-information]]
 == Informations connexes
 
 * link:../concepts/supported-storage-capacity.html["Types de capacité de stockage dans Keystone"]

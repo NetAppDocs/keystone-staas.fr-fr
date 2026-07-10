@@ -18,12 +18,14 @@ Keystone STaaS utilise plusieurs termes de capacité pour mesurer, réserver et 
 
 
 
+[[logical-capacity]]
 == Capacité logique
 
 Il s'agit de la quantité de capacité de stockage requise pour stocker les données utilisateur avant que les gains d'efficacité des données fournis par la baie de stockage ne soient appliqués.
 
 
 
+[[committed-capacity]]
 == De la capacité
 
 La capacité logique minimale facturée chaque mois pendant l'abonnement :
@@ -34,12 +36,14 @@ La capacité logique minimale facturée chaque mois pendant l'abonnement :
 
 
 
+[[changes-to-committed-capacity]]
 === Modifications de la capacité engagée
 
 Pendant la durée de votre abonnement, vous pouvez modifier les capacités engagées sous certaines conditions. Pour plus de détails sur les règles d'augmentation et de réduction des capacités, consultez link:../concepts/capacity-requirements.html["Exigences de capacité pour les niveaux de service de performance Keystone"]. Pour demander une modification, contactez votre Keystone Success Manager (KSM) ou link:../concepts/support-services.html["Support NetApp"].
 
 
 
+[[consumed-capacity]]
 == Capacité consommée
 
 La capacité consommée correspond à la capacité (en Tio de stockage) actuellement utilisée par le service. Elle est calculée différemment selon le type de stockage des données :
@@ -75,6 +79,7 @@ La capacité consommée correspond à la capacité (en Tio de stockage) actuelle
 
 
 
+[[burst-capacity]]
 == Capacité en rafale
 
 Le service NetApp Keystone STaaS vous permet d'utiliser une capacité supplémentaire en plus de la capacité engagée pour un niveau de service de performance donné. C'est ce qu'on appelle l'utilisation de capacité en rafale.
@@ -88,6 +93,7 @@ Notez ces points :
 
 
 
+[[billed-capacity]]
 == Capacité facturée
 
 Facture mensuelle = (capacité de production [Tio] * taux d'engagement [$/Tio]) + (capacité moyenne approvisionnée par jour [Tio] * taux de bursting [$/Tio]). La facture mensuelle contient un montant minimal en fonction de la capacité engagée.

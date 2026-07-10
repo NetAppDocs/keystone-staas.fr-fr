@@ -18,6 +18,7 @@ Les exigences minimales de capacité et les augmentations incrémentales pour le
 
 
 
+[[minimum-capacity-requirements-for-unified-and-block-optimized-storage]]
 == Exigences de capacité minimale pour un stockage unifié et optimisé par blocs
 
 Vous pouvez voir la capacité minimale et la capacité incrémentielle autorisées par abonnement pour le stockage unifié et optimisé par bloc dans les tableaux suivants :
@@ -70,6 +71,7 @@ La capacité minimale pour chaque niveau de service de performance est la même 
 
 
 
+[[minimum-capacity-requirements-for-afx-storage]]
 == Exigences minimales de capacité pour le stockage AFX
 
 Vous pouvez consulter les exigences minimales de capacité pour le stockage AFX dans le tableau suivant :
@@ -99,6 +101,7 @@ NOTE: Pour le stockage AFX, la capacité est engagée et mesurée au niveau du c
 
 
 
+[[minimum-capacity-requirements-for-object-storage]]
 == Exigences de capacité minimale pour le stockage objet
 
 Vous trouverez les exigences de capacité minimale pour le stockage objet dans le tableau ci-dessous :
@@ -125,6 +128,7 @@ Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pend
 |===
 
 
+[[minimum-capacity-requirements-for-cloud-services]]
 == Exigences minimales de capacité pour les services cloud
 
 Vous pouvez voir les exigences de capacité minimale pour les services cloud dans le tableau suivant :
@@ -151,6 +155,7 @@ Capacité incrémentielle (et en multiples) autorisée en tant qu'extension pend
 |===
 
 
+[[capacity-adjustments]]
 == Ajustements de capacité
 
 Toute modification de capacité prévue doit être communiquée à NetApp en temps opportun afin de permettre la planification et le déploiement. Les conditions suivantes s'appliquent à tous les ajustements de capacité :
@@ -164,6 +169,7 @@ Toute modification de capacité prévue doit être communiquée à NetApp en tem
 
 
 
+[[capacity-reduction]]
 === Réduction de capacité
 
 La réduction de capacité engagée s'applique uniquement au modèle de paiement  et aux déploiements Keystone sur site. Un abonnement d'une durée minimale de 24 mois est requis pour être éligible. Les services cloud et les déploiements de cloud hybride ne sont pas éligibles à la réduction de capacité.
@@ -192,6 +198,7 @@ Dans cet exemple, la capacité initialement engagée est de 300 Tio (paiement an
 
 
 
+[[quarterly-spend-reallocation]]
 === Réattribution des dépenses trimestrielles
 
 La réaffectation trimestrielle des dépenses est disponible uniquement pour les services de cloud hybride. Elle vous permet de réaffecter les dépenses des services sur site vers les services cloud chaque trimestre. La réaffectation des services cloud vers les services sur site n'est pas autorisée.

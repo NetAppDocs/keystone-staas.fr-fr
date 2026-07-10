@@ -23,6 +23,7 @@ NOTE: Le titre de cet onglet varie selon la nature du déploiement sur votre sit
 
 
 
+[[view-ontap-volumes-and-object-storage-details]]
 == Consultez les volumes ONTAP et les détails du stockage objet
 
 L'onglet *volumes et objets* offre des informations sur les volumes système ONTAP et le stockage objet à différents niveaux de détail. Pour les volumes ONTAP, il existe deux sous-onglets : *Résumé des volumes*, qui fournit le nombre total de volumes mappés aux niveaux de service de performance souscrits, et *Détails des volumes*, qui répertorie ces volumes avec leurs caractéristiques spécifiques. Le sous-onglet *Objets* fournit des détails sur le stockage d'objets pour les abonnements incluant des niveaux de service de performance pour le stockage de fichiers et d'objets.

@@ -50,12 +50,14 @@ NOTE: Seuls les logiciels tiers mentionnés ci-dessus sont compatibles avec Keys
 
 
 
+[[other-requirements]]
 == Autres exigences
 
 S'assurer que les exigences génériques suivantes sont respectées :
 
 
 
+[[networking-requirements]]
 === Exigences de mise en réseau
 
 Les exigences de mise en réseau de Keystone Collector sont répertoriées dans le tableau suivant.
@@ -223,6 +225,7 @@ NOTE: Le port par défaut de MySQL, 3306, est limité à localhost uniquement lo
 
 
 
+[[url-access]]
 === Accès à l'URL
 
 Le collecteur Keystone doit accéder aux hôtes Internet suivants :

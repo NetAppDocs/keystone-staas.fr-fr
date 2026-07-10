@@ -38,6 +38,7 @@ NOTE: *Description du problème* : Keystone Collector exécute un certain nombre
 
 
 
+[[view-system-logs]]
 == Afficher les journaux système
 
 Vous pouvez afficher les journaux système Keystone Collector pour consulter les informations système et effectuer un dépannage en utilisant ces journaux. Keystone Collector utilise le système de consignation _journald_ de l'hôte et les journaux système peuvent être consultés via l'utilitaire système _journalctl_ standard. Vous pouvez utiliser les services clés suivants pour examiner les journaux :
@@ -96,6 +97,7 @@ Voici un exemple de travail réussi pour la collecte facultative de données de 
 ----
 
 
+[[generate-and-collect-support-bundles]]
 == Générer et collecter des bundles de support
 
 L'interface utilisateur du collecteur Keystone vous permet de générer des packs de support, puis d'ajouter des demandes de service pour résoudre des problèmes de support. Suivre cette procédure :

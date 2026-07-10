@@ -18,6 +18,7 @@ Vous pouvez afficher des informations détaillées sur les clusters et les nœud
 
 
 
+[[view-keystone-subscription-assets-from-netapp-console]]
 == Afficher les ressources d'abonnement Keystone depuis la console NetApp
 
 L'onglet *Actifs* de la page *Abonnements* affiche des informations détaillées sur les volumes des clusters, les nœuds StorageGRID et les nœuds ONTAP associés à l'abonnement, y compris divers détails et l'état de la capacité.
@@ -106,6 +107,7 @@ TIP: Vous pouvez personnaliser le tableau à l'aide du sélecteur de colonnes im
 ====
 
 
+[[view-keystone-subscription-assets-from-digital-advisor]]
 == Consultez les actifs d'abonnement Keystone de Digital Advisor
 
 L'onglet *Actifs* du tableau de bord Keystone de Digital Advisor comprend deux sous-onglets : *ONTAP* et *StorageGRID*. Cet onglet accumule les informations de niveau cluster pour ONTAP et les informations de niveau grille pour StorageGRID en fonction de vos abonnements, en séparant et en présentant les données avec des détails précis. Vous pouvez consulter ces informations en cliquant sur les sous-onglets correspondants.

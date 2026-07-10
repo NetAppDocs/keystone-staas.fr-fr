@@ -18,12 +18,14 @@ En cas d'attaque par ransomware, NetApp garantit la restauration des données Sn
 
 
 
+[[service-levels]]
 == Niveaux de services
 
 Un service d'assurance de restauration par ransomware est requis pour tout le matériel prenant en charge l'abonnement Keystone pendant la durée de l'abonnement applicable.
 
 
 
+[[service-credits]]
 == Crédits de service
 
 

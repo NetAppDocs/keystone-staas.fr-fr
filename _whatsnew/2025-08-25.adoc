@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-logical-usage-tracking-with-a-new-column]]
 === Suivi d'utilisation logique amélioré avec une nouvelle colonne
 
 Une nouvelle colonne, Empreinte totale, est ajoutée pour améliorer le suivi de la consommation Keystone pour les volumes FabricPool :
