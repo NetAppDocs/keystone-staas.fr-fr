@@ -59,7 +59,7 @@ NetApp utilise la solution de surveillance ITOM pour surveiller de manière proa
 
 Pour en savoir plus sur les services Keystone, consultez :
 
-* link:https://www.netapp.com/us/solutions/keystone/index.aspx["NetApp Keystone"^]
+* link:https://www.netapp.com/keystone/["NetApp Keystone"^]
 * link:https://docs.netapp.com["Documentation produit NetApp"^]
 
 

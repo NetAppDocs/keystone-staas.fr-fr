@@ -25,7 +25,7 @@ Pour afficher les informations détaillées de vos abonnements, suivez ces étap
 .Étapes
 . Dans le menu de navigation de gauche de la console, sélectionnez *Stockage > Keystone > Abonnements*.
 +
-image:bxp-subscription-list-4.png["afficher les détails de l'onglet abonnement"]
+image:console-subscription.png["afficher les détails de l'onglet abonnement"]
 
 +
 Vous voyez les indicateurs clés tels que l’utilisation de la capacité, l’état d’expiration de l’abonnement et les alertes non résolues.
@@ -43,7 +43,18 @@ Vous pouvez voir les détails suivants dans le tableau :
 ** *Période de facturation* : La période de facturation de l'abonnement.
 ** *Niveaux de service de performance* : Le nombre de forfaits associés à l'abonnement, chaque forfait correspondant à un niveau de service de performance spécifique et à une capacité engagée.
 ** *Capacité la plus élevée* : La capacité maximale consommée dans le cadre de l'abonnement.
-** *Jours avant l'expiration de l'abonnement* : Le nombre de jours restants avant l'expiration de l'abonnement.
+** *Jours restants avant l'expiration de l'abonnement* : Une icône s'affiche à côté de la date d'expiration pour indiquer la proximité de l'expiration de l'abonnement et s'il sera renouvelé automatiquement. Ce statut est en lecture seule et reflète les conditions de votre contrat. Pour consulter les détails du contrat, reportez-vous à link:../integrations/subscription-timeline.html["Consultez la chronologie de vos abonnements Keystone"].
++
+Lorsque le renouvellement automatique est désactivé, la couleur de l'icône indique la proximité de l'expiration :
+
++
+*** *Vert* : Il reste plus de 120 jours avant l’expiration.
+*** *Orange* : Il reste entre 91 et 120 jours avant l’expiration.
+*** *Rouge* : Moins de 90 jours avant l’expiration. Pour éviter toute interruption de service, veuillez soumettre une demande de renouvellement au support NetApp Keystone.
+*** *Gris* : L’abonnement a expiré.
++
+Pour les abonnements avec renouvellement automatique activé, une icône de renouvellement automatique s'affiche, indiquant que l'abonnement sera renouvelé automatiquement à la fin de la période en cours.
+
 +
 
 NOTE: Vous pouvez cliquer sur la flèche vers le bas image:down-arrow.png["icône d’extension"] dans l'en-tête du tableau pour développer tous les abonnements et afficher les informations sur les niveaux de service de performance pour chaque abonnement simultanément. Cela affiche des informations détaillées sur la capacité, y compris l'utilisation actuelle, la capacité engagée, la capacité provisionnée, la capacité de pointe et la capacité disponible pour tous les abonnements. Vous pouvez également cliquer sur la flèche vers le bas à côté de la colonne *Expiration date* dans les lignes d'abonnement individuelles pour les développer une à la fois.
@@ -51,6 +62,8 @@ NOTE: Vous pouvez cliquer sur la flèche vers le bas image:down-arrow.png["icôn
 +
 
 TIP: Vous pouvez personnaliser les colonnes affichées dans le tableau à l'aide du sélecteur de colonnes image:column-selector.png["icône de sélecteur de colonne"] icône. Pour certains champs et certaines colonnes, vous pouvez voir des informations ou des icônes d'avertissement et des info-bulles qui vous fournissent des informations supplémentaires sur les données.
+
+
 
 
 

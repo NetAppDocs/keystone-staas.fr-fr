@@ -1,0 +1,14 @@
+= Consultez l’état d’expiration et de renouvellement automatique de l’abonnement
+:allow-uri-read: 
+
+
+Nouvelles améliorations dans le tableau de bord Keystone dans la NetApp Console:
+
+
+
+[[view-subscription-expiry-and-auto-renewal-status]]
+=== Consultez l’état d’expiration et de renouvellement automatique de l’abonnement
+
+La colonne « Jours restants avant l'expiration de l'abonnement » du tableau des abonnements (*Stockage > Keystone > Abonnements*) affiche désormais une icône à côté de la date d'expiration. La couleur de l'icône indique la proximité de l'expiration lorsque le renouvellement automatique est désactivé : vert (>120 jours), orange (91–120 jours), rouge (<90 jours) ou gris (expiré). Pour les abonnements avec renouvellement automatique activé, une icône de renouvellement automatique s'affiche, indiquant que l'abonnement sera renouvelé automatiquement à la fin de la période en cours. Ce statut est en lecture seule et reflète les conditions de votre contrat. Une fois que vous ouvrez un abonnement, ces icônes apparaissent dans l'en-tête des détails de l'abonnement, dans les onglets *Consommation actuelle*, *Tendance de consommation*, *Chronologie de l'abonnement* et *Actifs*, vous donnant ainsi une visibilité sur le statut d'expiration et de renouvellement lors de votre navigation.
+
+Pour en savoir plus, consultez  https://docs.netapp.com/us-en/keystone-staas/integrations/subscriptions-tab.html["Afficher les détails de vos abonnements Keystone"].
