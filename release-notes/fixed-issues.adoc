@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Dans l'onglet *Tendance de consommation* de Digital Advisor, le graphique de tendance de consommation n'affiche pas les données de consommation du jour même, mais uniquement celles de la veille.
+ a| 
+Fixe
+ a| 
+2026-08-10
+
+
+
+ a| 
 Les abonnements affichent incorrectement le statut *Dépassement de la limite de consommation* dans le tableau de bord Digital Advisor alors que la consommation reste dans les limites de consommation autorisées.
  a| 
 Fixe
