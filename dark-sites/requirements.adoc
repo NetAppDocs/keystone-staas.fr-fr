@@ -4,7 +4,7 @@ permalink: dark-sites/requirements.html
 keywords: installation, private mode, requirement, vmware vsphere, linux, networking,disk, space 
 summary: 'Avant d"installer Keystone Collector dans un environnement sans accès à Internet, également appelé _site_sombre_ ou _mode_privé_, assurez-vous que vos systèmes sont préparés avec les logiciels nécessaires et répondent à toutes les conditions requises.' 
 ---
-= Préparation de l'installation du collecteur Keystone en mode privé
+= Configuration requise pour Keystone Collector en mode privé
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -92,5 +92,5 @@ La configuration réseau requise pour Keystone Collector est la suivante :
 * Le serveur Unified Manager doit être accessible par le serveur Keystone Collector sur le port 443 (HTTPS).
 * Un compte de service avec des autorisations utilisateur d'application doit être configuré pour le collecteur Keystone sur le serveur Unified Manager.
 * Une connexion Internet externe n'est pas requise.
-* Chaque mois, exportez un fichier depuis Keystone Collector et envoyez-le par e-mail à l'équipe de support NetApp . Pour plus d'informations sur la manière de contacter l'équipe d'assistance, veuillez consulter link:../concepts/support-services.html["Obtenez de l'aide avec Keystone"].
+* Chaque mois, exportez un fichier depuis Keystone Collector et envoyez-le par courriel à l’équipe d’assistance NetApp. Pour plus d’informations sur la façon de contacter l’équipe d’assistance, consultez link:../concepts/support-services.html["Services de support pour Keystone"].
 

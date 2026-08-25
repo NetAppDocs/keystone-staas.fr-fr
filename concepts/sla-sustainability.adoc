@@ -95,5 +95,5 @@ Veuillez noter les conditions suivantes relatives aux demandes de crédit de ser
 * NetApp détermine si une violation du niveau de service s'est produite.
 * Vous devez fournir les informations complémentaires demandées par NetApp, notamment vos données de consommation en watts et votre méthode de mesure.
 * Les crédits de service sont calculés uniquement sur la base de la capacité engagée.
-* Les crédits de service sont valables uniquement pour la facture du mois suivant. Ils ne s'appliquent pas aux abonnements Keystone expirés. Pour contacter le support NetApp et ouvrir le dossier de support requis pour une demande de crédit de service, voir link:../concepts/support-services.html["Obtenez de l'aide avec Keystone"].
+* Les crédits de service sont valables uniquement pour la facture du mois suivant. Ils ne s'appliquent pas aux abonnements Keystone expirés. Pour contacter le support NetApp et ouvrir le dossier de support requis pour une demande de crédit de service, voir link:../concepts/support-services.html["Services de support pour Keystone"].
 

@@ -4,7 +4,7 @@ permalink: concepts/support-services.html
 keywords: Keystone support, service request, support ticket 
 summary: 'Utilisez le site d"assistance NetApp pour créer une demande d"assistance ou trouver les informations de contact relatives à vos abonnements Keystone.' 
 ---
-= Obtenez de l'aide avec Keystone
+= Services de support pour Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

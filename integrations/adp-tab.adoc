@@ -79,7 +79,7 @@ TIP: Vous pouvez sélectionner l'abonnement Cluster B (miroir) dans la topologie
 
 +
 
-TIP: Si l'état de la synchronisation indique « désynchronisé » ou si l'état de la connexion indique « dégradé », reportez-vous à link:../concepts/support-services.html["Obtenez de l'aide avec Keystone"] pour résoudre le problème.
+TIP: Si l'état de la synchronisation indique « désynchronisé » ou si l'état de la connexion indique « dégradé », reportez-vous à link:../concepts/support-services.html["Services de support pour Keystone"] pour résoudre le problème.
 
 ** Consultez les tendances de consommation historiques pour le site principal ou le site miroir.
 +

@@ -4,7 +4,7 @@ permalink: dark-sites/overview.html
 keywords: keystone, dark, site, staas, security, deployment, collector, encryption, access 
 summary: Keystone propose un mode de déploiement _privé_, également appelé _site_invisible_, pour répondre à vos exigences métier et de sécurité. 
 ---
-= En savoir plus sur Keystone (mode privé)
+= Découvrez Keystone en mode privé
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

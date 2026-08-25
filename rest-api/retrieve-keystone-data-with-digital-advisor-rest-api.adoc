@@ -4,7 +4,7 @@ permalink: rest-api/retrieve-keystone-data-with-digital-advisor-rest-api.html
 keywords: Keystone, Active IQ, Digital Advisor, APIs, programmatic interface 
 summary: 'Les API Digital Advisor fournissent une interface de programmation pour l"extraction des metrics et des détails du service Keystone.' 
 ---
-= Commencez à utiliser l'API REST de Digital Advisor pour récupérer les données Keystone
+= Récupérez les données Keystone avec l'API REST de Digital Advisor
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
