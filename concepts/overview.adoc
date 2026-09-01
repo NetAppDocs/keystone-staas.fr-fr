@@ -40,7 +40,7 @@ Les offres de stockage en tant que service (STaaS) permettent de proposer un mod
 *Informations connexes*
 
 * link:../concepts/pricing.html["Tarification Keystone"]
-* link:../concepts/add-on.html["Services complémentaires dans Keystone STaaS"]
+* link:../concepts/adp.html["Services complémentaires dans Keystone STaaS"]
 * link:../concepts/service-levels.html["Niveaux de service de performance dans Keystone"]
 * link:../concepts/infra.html["Découvrez l'infrastructure Keystone"]
 * link:../concepts/operational-models.html["Modèles opérationnels dans Keystone"]

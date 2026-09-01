@@ -22,6 +22,15 @@ Les problèmes détectés dans les versions précédentes des services de stocka
 
 
  a| 
+Dans l'onglet *Tendance de consommation* de Digital Advisor, le graphique des pics de consommation facturés affiche des valeurs différentes pour une même période de facturation selon les plages de dates sélectionnées.
+ a| 
+Fixe
+ a| 
+2026-08-31
+
+
+
+ a| 
 Dans l'onglet *Tendance de consommation* de Digital Advisor, le graphique de tendance de consommation n'affiche pas les données de consommation du jour même, mais uniquement celles de la veille.
  a| 
 Fixe
